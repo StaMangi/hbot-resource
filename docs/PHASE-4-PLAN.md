@@ -8,7 +8,7 @@
 
 ## Prerequisites — confirm before kickoff
 
-1. **Source PDF in the repo.** `Other_HBOT_applications.pdf` (covering long COVID, fibromyalgia, dermatology, plastic surgery, women's health) was referenced in conversation but is **not yet in the working tree**. Before 4.A starts, it must be committed at `docs/sources/Other_HBOT_applications.pdf` (or path of Stamos's choosing) so the research methodology can extract claims and citations from it.
+1. **Source PDF in the repo — satisfied.** `docs/sources/Other_HBOT_applications.pdf` is committed and is the canonical research base for long COVID, fibromyalgia, dermatology, plastic surgery, and women's health. All claim verification in 4.B–4.F runs against this file.
 
 2. **Phase 3.E cross-link patterns landed.** Phase 4 indications inherit Phase 3.E's MedicalCondition / MedicalProcedure / ScholarlyArticle JSON-LD. If 3.E is incomplete when Phase 4 kicks off, the new indications can't yet emit the right schema.
 
@@ -53,6 +53,8 @@ If Stamos disagrees, propose a 4.X cluster grouping per the wider list and I'll 
 | **Total** | | **~37–48 sessions (50–65 hours)** | 4 stop points |
 
 Cluster splitting note: dermatology has 4 indications and is the first new department, so it's the largest cluster. If a sub-step starts to exceed ~12 sessions of estimated effort, I'll propose splitting it (e.g. 4.D.1 dept + Burns, 4.D.2 the three remaining derm indications).
+
+**Note on the 4.B stop point.** Stamos reviews the Long COVID cluster with extra care because Long COVID sets the editorial tone for the entire site, and `/indications/long-covid/` will be the most-trafficked and most-scrutinised page in the Phase 4 set (high public interest, freshest research, journalists/clinicians/patients all searching the term). The cluster pattern (research methodology, claim verification, bilingual write-up, schema.org, cross-links) must be tight before 4.C onwards reuses it mechanically. **4.B is also not complete until `docs/research/el-glossary.md` is committed** — see "i18n process" below for the rationale.
 
 ---
 
@@ -232,7 +234,7 @@ If Stamos has a different priority order, I'll re-sequence.
 
 - **Write EN first.** Research, citations, prose all anchored in the source paper's language (typically English).
 - **Translate EL.** I draft Greek translations using the same medical-term register as existing collection content (`src/i18n/el.ts` + `src/content/*/*.yaml`). For technical or medicalterms unfamiliar to my training data, flag for Stamos before commit.
-- **Greek glossary.** `docs/research/el-glossary.md` — small reference of EN→EL mappings for HBOT-specific medical terms used across new content. Built up as 4.B/4.C/etc. land. Ensures consistency across cluster.
+- **Greek glossary.** `docs/research/el-glossary.md` — canonical EN→EL mapping of HBOT-specific medical terminology. **Locked at the end of 4.B**, before 4.C starts. Long COVID's translations establish the medical-term register; subsequent clusters reference the glossary to maintain consistency. Updates to the glossary after 4.C require explicit Stamos approval. Adding the glossary commit is part of 4.B's acceptance criteria — without it, 4.B is not complete.
 - **Quality control:**
   - Each cluster PR includes a "Translations to verify" section listing any phrasings I'm uncertain about.
   - Stamos's review explicitly checks the EL counterpart pages on the preview URL.
@@ -391,4 +393,4 @@ After 4.J, Phase 5 (polish) and/or Phase 6 (launch) become eligible.
 
 3. **Reviewable unit.** Approve "per-cluster PR + per-cluster preview deploy" as the editorial review unit (rather than per-indication)? Splits to per-indication only when a cluster is large or controversial.
 
-Source PDF still needs to be committed to the repo before 4.A starts. Either upload to `docs/sources/Other_HBOT_applications.pdf` or specify another path.
+Source PDF prerequisite: ✅ satisfied. `docs/sources/Other_HBOT_applications.pdf` is committed.
