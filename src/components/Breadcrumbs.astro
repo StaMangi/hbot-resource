@@ -1,0 +1,42 @@
+---
+/**
+ * Visual breadcrumb trail for detail pages. The matching BreadcrumbList
+ * JSON-LD schema is added in Phase 3.E (BaseHead is being extended to
+ * accept a breadcrumbs prop in that phase).
+ *
+ * Structure: Home › Index › Detail (current). Last item is non-link,
+ * marked aria-current="page" for assistive tech.
+ */
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav aria-label="Breadcrumb" class="text-sm mb-6">
+  <ol class="flex flex-wrap items-center gap-2 text-slate-500">
+    {
+      items.map((item, i) => (
+        <li class="flex items-center gap-2">
+          {i > 0 && <span aria-hidden="true" class="text-slate-300">›</span>}
+          {item.href ? (
+            <a href={item.href} class="hover:text-teal-700 transition-colors">
+              {item.label}
+            </a>
+          ) : (
+            <span class="text-slate-700 font-medium" aria-current="page">
+              {item.label}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

@@ -1,20 +1,76 @@
 ---
+import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ProtocolPanel from "@/components/ProtocolPanel.astro";
+import RefTags from "@/components/RefTags.astro";
+import { verifyRefs } from "@/lib/refs";
+import { t } from "@/i18n";
 
 const locale = "en" as const;
+const prefix = "";
 
 export async function getStaticPaths() {
   const entries = await getCollection("departments");
-  return entries.map((entry) => ({
-    params: { slug: entry.id },
-    props: { entry },
-  }));
+  for (const e of entries) {
+    for (const app of e.data.applications) {
+      await verifyRefs(app.refs, `departments/${e.id} → ${app.title.en}`);
+    }
+  }
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const pathname = Astro.url.pathname;
+
+const iconMap: Record<string, string> = {
+  Scissors: "lucide:scissors",
+  Brain: "lucide:brain",
+  Activity: "lucide:activity",
+  Stethoscope: "lucide:stethoscope",
+  Zap: "lucide:zap",
+  Ear: "lucide:ear",
+  Eye: "lucide:eye",
+  HeartHandshake: "lucide:heart-handshake",
+  Users: "lucide:users",
+};
+
+const fdaCount = entry.data.applications.filter((a) => a.type === "FDA-Approved").length;
+const researchCount = entry.data.applications.length - fdaCount;
+
+const typeBadge = (type: string) =>
+  type === "FDA-Approved"
+    ? "bg-emerald-100 text-emerald-800"
+    : type === "Under Research"
+      ? "bg-sky-100 text-sky-800"
+      : "bg-slate-100 text-slate-700";
+
+const typeLabel = (type: string) => {
+  if (type === "FDA-Approved") return t("dept.type.approved", locale);
+  if (type === "Under Research") return t("dept.type.research", locale);
+  if (type === "Emerging Evidence") return t("dept.type.emerging", locale);
+  return t("dept.type.investigational", locale);
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: entry.data.name[locale],
+  description: entry.data.shortDesc[locale],
+  inLanguage: locale,
+  mainContentOfPage: {
+    "@type": "MedicalSpecialty",
+    name: entry.data.name[locale],
+    description: entry.data.shortDesc[locale],
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
 ---
 
 <DetailLayout
@@ -24,8 +80,71 @@ const pathname = Astro.url.pathname;
   pathname={pathname}
   pageHeading={entry.data.name[locale]}
   eyebrow="Department"
+  jsonLd={jsonLd}
   noindex={true}
 >
-  <p class="text-lg text-slate-700 leading-relaxed">{entry.data.shortDesc[locale]}</p>
-  <StubContent phase="3.D" locale={locale} />
+  <Breadcrumbs
+    slot="breadcrumbs"
+    items={[
+      { label: "Home", href: "/" },
+      { label: t("dept.section.title", locale), href: `${prefix}/departments/` },
+      { label: entry.data.name[locale] },
+    ]}
+  />
+
+  <!-- Header card with department colour + counts -->
+  <div
+    class="rounded-xl text-white p-6 mb-10"
+    style={`background: linear-gradient(135deg, ${entry.data.color}, ${entry.data.color}cc)`}
+  >
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center backdrop-blur-sm">
+        <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-6 h-6" />
+      </div>
+      <div>
+        <p class="text-sm text-white/85">{entry.data.shortDesc[locale]}</p>
+        <div class="mt-2 flex gap-3 text-sm">
+          <span class="bg-white/15 rounded-md px-2.5 py-1 backdrop-blur-sm">
+            <strong>{fdaCount}</strong> FDA-approved
+          </span>
+          <span class="bg-white/15 rounded-md px-2.5 py-1 backdrop-blur-sm">
+            <strong>{researchCount}</strong> research
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-xl font-semibold text-slate-900 mb-6" style="font-family: var(--font-display)">
+    {t("dept.applications.title", locale)}
+  </h2>
+
+  <div class="space-y-6">
+    {
+      entry.data.applications.map((app) => (
+        <article class="rounded-lg bg-white border border-slate-200 p-6">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <span class:list={["inline-block px-2 py-0.5 text-xs font-semibold rounded-md", typeBadge(app.type)]}>
+              {typeLabel(app.type)}
+            </span>
+            <span class="text-xs text-slate-500">{app.evidence}</span>
+          </div>
+          <h3 class="text-base font-semibold text-slate-900 mb-2" style="font-family: var(--font-display)">
+            {app.title[locale]}
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            {app.description[locale]}
+          </p>
+          <ProtocolPanel protocol={app.protocol} locale={locale} />
+          {app.refs.length > 0 && (
+            <div class="mt-4">
+              <RefTags refs={app.refs} label={t("dept.refs.label", locale)} />
+            </div>
+          )}
+        </article>
+      ))
+    }
+  </div>
+
+  <Fragment slot="aside" />
 </DetailLayout>
