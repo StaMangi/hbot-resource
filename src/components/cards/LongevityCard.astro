@@ -1,0 +1,51 @@
+---
+import { Icon } from "astro-icon/components";
+import type { CollectionEntry } from "astro:content";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  entry: CollectionEntry<"longevity">;
+  locale: Locale;
+  prefix?: string;
+}
+const { entry, locale, prefix = "" } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  Dna: "lucide:dna",
+  Trash2: "lucide:trash-2",
+  Brain: "lucide:brain",
+  Sparkles: "lucide:sparkles",
+  Zap: "lucide:zap",
+  Layers: "lucide:layers",
+};
+
+const isTeal = entry.data.color === "teal";
+const accent = isTeal ? "bg-teal-100 text-teal-700" : "bg-slate-200 text-slate-700";
+---
+
+<a
+  href={`${prefix}/longevity/${entry.id}/`}
+  class="group block rounded-xl border border-slate-200 bg-white hover:border-teal-300 hover:shadow-md transition-all p-6 flex flex-col"
+>
+  <div class="flex items-start justify-between gap-3 mb-3">
+    <div class:list={["w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0", accent]}>
+      <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+    </div>
+    <p
+      class="text-2xl font-bold text-teal-700"
+      style="font-family: var(--font-display)"
+    >
+      {entry.data.stat}
+    </p>
+  </div>
+  <h3
+    class="text-base font-semibold text-slate-900 leading-snug group-hover:text-teal-700 transition-colors"
+    style="font-family: var(--font-display)"
+  >
+    {entry.data.title[locale]}
+  </h3>
+  <p class="mt-1 text-xs text-slate-500 mb-3">{entry.data.statLabel[locale]}</p>
+  <p class="text-sm text-slate-600 leading-relaxed line-clamp-3">
+    {entry.data.summary[locale]}
+  </p>
+</a>

@@ -1,10 +1,27 @@
 ---
+import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import DepartmentCard from "@/components/cards/DepartmentCard.astro";
 import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "el" as const;
+
+const all = await getCollection("departments");
+const order = [
+  "surgery",
+  "neurology",
+  "oncology",
+  "gastroenterology",
+  "endocrinology",
+  "ent",
+  "ophthalmology",
+  "psychiatry",
+  "geriatrics",
+];
+const entries = order
+  .map((id) => all.find((d) => d.id === id))
+  .filter((d): d is NonNullable<typeof d> => d !== undefined);
 ---
 
 <IndexLayout
@@ -18,5 +35,16 @@ const locale = "el" as const;
   badgeColor="teal"
   noindex={true}
 >
-  <StubContent phase="3.C" locale={locale} />
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {entries.map((entry) => <DepartmentCard entry={entry} locale={locale} prefix="/el" />)}
+  </div>
+
+  <div class="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+    <p class="text-sm text-slate-700">
+      Ψάχνετε για τμήματα όπου η HBOT <em>δεν</em> εφαρμόζεται;{" "}
+      <a href="/el/departments/without-hbot/" class="text-teal-700 hover:underline font-semibold">
+        Τμήματα χωρίς εφαρμογές HBOT →
+      </a>
+    </p>
+  </div>
 </IndexLayout>

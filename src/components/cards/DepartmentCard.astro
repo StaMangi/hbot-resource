@@ -1,0 +1,59 @@
+---
+import { Icon } from "astro-icon/components";
+import type { CollectionEntry } from "astro:content";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  entry: CollectionEntry<"departments">;
+  locale: Locale;
+  prefix?: string;
+}
+const { entry, locale, prefix = "" } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  Scissors: "lucide:scissors",
+  Brain: "lucide:brain",
+  Activity: "lucide:activity",
+  Stethoscope: "lucide:stethoscope",
+  Zap: "lucide:zap",
+  Ear: "lucide:ear",
+  Eye: "lucide:eye",
+  HeartHandshake: "lucide:heart-handshake",
+  Users: "lucide:users",
+};
+
+const fdaCount = entry.data.applications.filter((a) => a.type === "FDA-Approved").length;
+const researchCount = entry.data.applications.length - fdaCount;
+
+const fdaLabel = locale === "en" ? "FDA" : "FDA";
+const researchLabel = locale === "en" ? "Research" : "Έρευνα";
+---
+
+<a
+  href={`${prefix}/departments/${entry.id}/`}
+  class="group block rounded-xl border border-slate-200 bg-white hover:border-teal-300 hover:shadow-md transition-all overflow-hidden"
+>
+  <div class="p-5">
+    <div class="flex items-start gap-3 mb-3">
+      <div
+        class="w-10 h-10 rounded-lg flex items-center justify-center text-white flex-shrink-0"
+        style={`background: ${entry.data.color}`}
+      >
+        <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+      </div>
+      <div class="min-w-0 flex-1">
+        <h3
+          class="text-base font-semibold text-slate-900 group-hover:text-teal-700 transition-colors"
+          style="font-family: var(--font-display)"
+        >
+          {entry.data.name[locale]}
+        </h3>
+        <p class="mt-0.5 text-xs text-slate-500">{entry.data.shortDesc[locale]}</p>
+      </div>
+    </div>
+    <div class="flex gap-3 text-xs text-slate-500">
+      <span><strong class="text-emerald-700">{fdaCount}</strong> {fdaLabel}</span>
+      <span><strong class="text-sky-700">{researchCount}</strong> {researchLabel}</span>
+    </div>
+  </div>
+</a>

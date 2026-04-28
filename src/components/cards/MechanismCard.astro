@@ -1,0 +1,46 @@
+---
+import { Icon } from "astro-icon/components";
+import type { CollectionEntry } from "astro:content";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  entry: CollectionEntry<"mechanisms">;
+  locale: Locale;
+  /** Path prefix for locale-aware href (default empty for EN). */
+  prefix?: string;
+}
+const { entry, locale, prefix = "" } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  Droplets: "lucide:droplets",
+  GitBranch: "lucide:git-branch",
+  Shield: "lucide:shield",
+  Minimize2: "lucide:minimize-2",
+  RefreshCw: "lucide:refresh-cw",
+};
+
+const isTeal = entry.data.color === "teal";
+const accent = isTeal ? "bg-teal-500" : "bg-slate-700";
+const iconBg = isTeal ? "bg-teal-100 text-teal-700" : "bg-slate-100 text-slate-700";
+---
+
+<a
+  href={`${prefix}/mechanisms/${entry.id}/`}
+  class="group block rounded-xl bg-white border border-slate-200 hover:border-teal-300 hover:shadow-md transition-all overflow-hidden"
+>
+  <div class={`h-1 ${accent}`} aria-hidden="true"></div>
+  <div class="p-6">
+    <div class={`w-10 h-10 rounded-lg ${iconBg} flex items-center justify-center mb-4`}>
+      <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+    </div>
+    <h3
+      class="text-lg font-semibold text-slate-900 leading-snug group-hover:text-teal-700 transition-colors"
+      style="font-family: var(--font-display)"
+    >
+      {entry.data.title[locale]}
+    </h3>
+    <p class="mt-2 text-sm text-slate-600 leading-relaxed line-clamp-3">
+      {entry.data.summary[locale]}
+    </p>
+  </div>
+</a>

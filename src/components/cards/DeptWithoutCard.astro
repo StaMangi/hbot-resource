@@ -1,0 +1,51 @@
+---
+import { Icon } from "astro-icon/components";
+import type { CollectionEntry } from "astro:content";
+import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
+
+interface Props {
+  entry: CollectionEntry<"departments-without-hbot">;
+  locale: Locale;
+}
+const { entry, locale } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  FlaskConical: "lucide:flask-conical",
+  ScanLine: "lucide:scan-line",
+  Monitor: "lucide:monitor",
+  Droplet: "lucide:droplet",
+  Dna: "lucide:dna",
+  Layers: "lucide:layers",
+};
+---
+
+<article class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+  <div
+    class="h-1"
+    style="background: repeating-linear-gradient(45deg, #cbd5e1 0 8px, #f1f5f9 8px 16px)"
+    aria-hidden="true"
+  ></div>
+  <div class="p-6">
+    <div class="flex items-center gap-3 mb-3">
+      <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+        <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+      </div>
+      <h3
+        class="text-base font-semibold text-slate-900"
+        style="font-family: var(--font-display)"
+      >
+        {entry.data.name[locale]}
+      </h3>
+    </div>
+    <p class="text-sm text-slate-600 leading-relaxed">
+      {entry.data.rationale[locale]}
+    </p>
+    <div class="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3">
+      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
+        {t("nohbot.role.label", locale)}
+      </p>
+      <p class="text-sm text-slate-700">{entry.data.role[locale]}</p>
+    </div>
+  </div>
+</article>

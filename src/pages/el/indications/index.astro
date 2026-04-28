@@ -1,10 +1,24 @@
 ---
+import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import IndicationCard from "@/components/cards/IndicationCard.astro";
 import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "el" as const;
+
+const all = await getCollection("indications");
+const sorted = all.sort((a, b) => a.data.legacyId - b.data.legacyId);
+
+const byCategory = new Map<string, typeof sorted>();
+for (const entry of sorted) {
+  const key = entry.data.category[locale];
+  const existing = byCategory.get(key) ?? [];
+  existing.push(entry);
+  byCategory.set(key, existing);
+}
+
+const categories = Array.from(byCategory.entries());
 ---
 
 <IndexLayout
@@ -18,5 +32,25 @@ const locale = "el" as const;
   badgeColor="emerald"
   noindex={true}
 >
-  <StubContent phase="3.C" locale={locale} />
+  <div class="space-y-12">
+    {
+      categories.map(([category, items]) => (
+        <section>
+          <h2
+            class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-4 pb-2 border-b border-slate-200"
+            style="font-family: var(--font-display)"
+          >
+            {category}
+          </h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {items.map((entry) => <IndicationCard entry={entry} locale={locale} prefix="/el" />)}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <p class="mt-12 text-sm text-slate-500 max-w-3xl">
+    {t("fda.note", locale)}
+  </p>
 </IndexLayout>

@@ -1,10 +1,14 @@
 ---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import DeptWithoutCard from "@/components/cards/DeptWithoutCard.astro";
 import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "el" as const;
+
+const entries = await getCollection("departments-without-hbot");
 ---
 
 <IndexLayout
@@ -18,5 +22,21 @@ const locale = "el" as const;
   badgeColor="amber"
   noindex={true}
 >
-  <StubContent phase="3.C" locale={locale} />
+  <div class="rounded-xl bg-amber-50 border border-amber-200 p-5 mb-8 flex gap-4">
+    <Icon name="lucide:info" class="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+    <div>
+      <p class="font-semibold text-amber-900 mb-1">{t("nohbot.criteria.title", locale)}</p>
+      <p class="text-sm text-amber-900/80 leading-relaxed">
+        {t("nohbot.criteria.body", locale)}
+      </p>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    {entries.map((entry) => <DeptWithoutCard entry={entry} locale={locale} />)}
+  </div>
+
+  <p class="mt-10 text-sm text-slate-500 max-w-3xl mx-auto text-center">
+    {t("nohbot.note", locale)}
+  </p>
 </IndexLayout>

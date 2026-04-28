@@ -1,10 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import LongevityCard from "@/components/cards/LongevityCard.astro";
 import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
+
+const all = await getCollection("longevity");
+const order = ["telomere", "senescence", "cognitive", "stemcells", "athletic", "collagen"];
+const entries = order
+  .map((id) => all.find((a) => a.id === id))
+  .filter((a): a is NonNullable<typeof a> => a !== undefined);
 ---
 
 <IndexLayout
@@ -18,5 +25,15 @@ const locale = "en" as const;
   badgeColor="violet"
   noindex={true}
 >
-  <StubContent phase="3.C" locale={locale} />
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {entries.map((entry) => <LongevityCard entry={entry} locale={locale} />)}
+  </div>
+
+  <!-- Hyperoxic-Hypoxic Paradox callout -->
+  <div class="mt-12 rounded-xl border border-teal-200 bg-teal-50/50 p-6 md:p-8">
+    <h3 class="text-xl font-semibold text-slate-900 mb-3" style="font-family: var(--font-display)">
+      {t("longevity.callout.title", locale)}
+    </h3>
+    <p class="text-sm text-slate-700 leading-relaxed">{t("longevity.callout.body", locale)}</p>
+  </div>
 </IndexLayout>
