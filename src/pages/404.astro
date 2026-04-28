@@ -1,19 +1,24 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
+
+const pathname = Astro.url.pathname;
 ---
 
 <BaseLayout
-  title="Page not found — HBOT Resource"
+  title="Page not found — HBOT Science"
   description="The page you requested could not be found."
   locale="en"
-  pathname="/404/"
+  pathname={pathname}
   noindex={true}
 >
+  <Nav slot="nav" locale="en" pathname={pathname} />
+  <Footer slot="footer" locale="en" pathname={pathname} />
+
   <section class="max-w-2xl mx-auto px-6 py-24">
     <h1 class="text-4xl font-semibold text-slate-900">404 — Page not found</h1>
-    <p class="mt-6 text-slate-700">
-      The page you requested does not exist.
-    </p>
+    <p class="mt-6 text-slate-700">The page you requested does not exist.</p>
     <p class="mt-8">
       <a href="/" class="text-teal-700 underline">Back to home</a>
     </p>

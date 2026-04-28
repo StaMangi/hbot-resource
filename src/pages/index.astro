@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
 import { SITE_NAME } from "@/lib/seo";
 
+const pathname = Astro.url.pathname;
 const title = `${SITE_NAME} — Evidence-Based Hyperbaric Oxygen Therapy Reference`;
 const description =
   "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.";
@@ -28,25 +31,27 @@ const jsonLd = {
   title={title}
   description={description}
   locale="en"
-  pathname="/"
+  pathname={pathname}
   ogType="website"
   jsonLd={jsonLd}
   noindex={true}
 >
+  <Nav slot="nav" locale="en" pathname={pathname} />
+  <Footer slot="footer" locale="en" pathname={pathname} />
+
   <section class="max-w-3xl mx-auto px-6 py-24">
-    <p class="text-sm uppercase tracking-widest text-slate-500">Phase 2.A — Bootstrap</p>
-    <h1 class="mt-4 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
-      HBOT Resource
+    <p class="text-sm uppercase tracking-widest text-slate-500">
+      Phase 2.C — Base shell
+    </p>
+    <h1
+      class="mt-4 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      HBOT Science
     </h1>
     <p class="mt-6 text-lg text-slate-700">
-      Evidence-based hyperbaric oxygen therapy reference. Bare Astro shell — content
-      migration follows in sub-step 2.B.
-    </p>
-    <p class="mt-4 text-sm text-slate-500">
-      Editorial publisher: IN2050 Ltd · Cyprus · Reg. HE416406
-    </p>
-    <p class="mt-8 text-sm">
-      <a href="/el/" class="text-teal-700 underline">Ελληνικά</a>
+      Evidence-based hyperbaric oxygen therapy reference. De-branded shell —
+      section content arrives in sub-step 2.D.
     </p>
   </section>
 </BaseLayout>

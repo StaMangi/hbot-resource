@@ -1,0 +1,40 @@
+---
+import { localePath, type Locale } from "@/lib/seo";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+
+const { locale, pathname } = Astro.props;
+const altLocale: Locale = locale === "en" ? "el" : "en";
+const altPath = localePath(pathname, altLocale);
+const altLabel = altLocale === "el" ? "Ελληνικά" : "English";
+
+// Editorial publisher line — locked, do not localise.
+// Single source of attribution for the entire site.
+const editorialLine = "Editorial publisher: IN2050 Ltd · Cyprus · Reg. HE416406";
+
+const aboutPath = locale === "en" ? "/about/" : "/el/about/";
+const aboutLabel = locale === "en" ? "Editorial policy" : "Εκδοτική πολιτική";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-slate-200 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600 space-y-3">
+    <p class="text-slate-700">{editorialLine}</p>
+
+    <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500">
+      <a href={aboutPath} class="hover:text-teal-700 transition-colors">
+        {aboutLabel}
+      </a>
+      <span aria-hidden="true">·</span>
+      <a href={altPath} class="hover:text-teal-700 transition-colors" hreflang={altLocale}>
+        {altLabel}
+      </a>
+    </p>
+
+    <p class="text-xs text-slate-400">© {year} IN2050 Ltd</p>
+  </div>
+</footer>

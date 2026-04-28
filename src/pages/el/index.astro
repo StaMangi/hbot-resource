@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
 import { SITE_NAME } from "@/lib/seo";
 
+const pathname = Astro.url.pathname;
 const title = `${SITE_NAME} — Τεκμηριωμένος Οδηγός Υπερβαρικής Οξυγονοθεραπείας`;
 const description =
   "Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Μηχανισμοί, εγκεκριμένες ενδείξεις FDA, κλινικά πρωτόκολλα, εφαρμογές μακροζωίας και αξιολογημένη βιβλιογραφία.";
@@ -28,25 +31,27 @@ const jsonLd = {
   title={title}
   description={description}
   locale="el"
-  pathname="/el/"
+  pathname={pathname}
   ogType="website"
   jsonLd={jsonLd}
   noindex={true}
 >
+  <Nav slot="nav" locale="el" pathname={pathname} />
+  <Footer slot="footer" locale="el" pathname={pathname} />
+
   <section class="max-w-3xl mx-auto px-6 py-24">
-    <p class="text-sm uppercase tracking-widest text-slate-500">Φάση 2.A — Εκκίνηση</p>
-    <h1 class="mt-4 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
-      HBOT Resource
+    <p class="text-sm uppercase tracking-widest text-slate-500">
+      Φάση 2.C — Βασικό κέλυφος
+    </p>
+    <h1
+      class="mt-4 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      HBOT Science
     </h1>
     <p class="mt-6 text-lg text-slate-700">
-      Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Βασικό κέλυφος Astro —
-      η μεταφορά περιεχομένου ακολουθεί στο υποβήμα 2.B.
-    </p>
-    <p class="mt-4 text-sm text-slate-500">
-      Εκδότης: IN2050 Ltd · Κύπρος · Αρ. Μητρώου HE416406
-    </p>
-    <p class="mt-8 text-sm">
-      <a href="/" class="text-teal-700 underline">English</a>
+      Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Καθαρισμένο κέλυφος —
+      το περιεχόμενο των ενοτήτων προστίθεται στο υποβήμα 2.D.
     </p>
   </section>
 </BaseLayout>
