@@ -56,6 +56,9 @@
 - **EN/EL asymmetry:** EL has 14 longevity strings (`longevity.landmark.*`, `longevity.stat.*`, `longevity.wellness.athletic.*`, `longevity.wellness.cognitive.*`) not present in EN. Inherited from the Henry Dunant codebase. Decide in Phase 3: (a) backfill EN translations, or (b) remove dead EL keys.
 - **Missing components for `strategy.market.stat2`:** key was deleted in 2.C. Strategy section component (Phase 2.D) must rebuild this stat block thoughtfully — placeholder text would have rotted.
 
+## Phase 5 polish items
+- **Mobile language-toggle redundancy.** Nav and Footer both expose language toggles. On mobile narrow viewports this creates duplicated friction. Decide: hide Nav toggle on mobile (keep Footer), hide Footer toggle on mobile (keep Nav), or accept both. Phase 5 polish.
+
 ## What's next (waiting on Stamos)
 1. **Review 2.C output** — sample HTML inline below + on GitHub. Sanity-check rendered Nav and Footer in EN and EL.
 2. Approve **2.D (section content rendering)** — convert the 9 Henry-Dunant-era section components (Hero, Mechanisms, FDA, Departments, NoHBOT, Longevity, Evidence, Strategy, References) into Astro components that read from the content collections. Long-scroll homepage parity with the current Henry Dunant site.
