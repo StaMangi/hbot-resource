@@ -8,7 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 2.D — Section content rendering.** Complete. Waiting for Stamos review before 2.E.
+**Phase 2.F — Cloudflare Pages preview + Lighthouse.** Deployed and measured. Waiting for Stamos decision on the mobile-Performance fix before 2.E.
+
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase)
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -73,9 +75,29 @@
 - **Lighthouse local run blocked:** Brave headless consistently rejects HTTP localhost with `CHROME_INTERSTITIAL_ERROR` (Brave's Shields/HTTPS-only behaviour, not overrideable via flags). Tried multiple flag combinations including `--unsafely-treat-insecure-origin-as-secure`, fresh user-data-dirs, disabled Brave features. Formal Lighthouse measurement is **deferred to 2.F** when Cloudflare Pages serves over HTTPS (proven working in Phase 1 baselines).
   - Architecture-derived expectations against the Phase 1 baseline (mobile 59 perf): zero-JS static rendering should deliver ≥95 across all four pillars on both mobile and desktop. Verified in 2.F.
 
+## Phase 2.F (Pages preview + Lighthouse) — done (this session)
+- Cloudflare Pages connected to `StaMangi/hbot-resource` (Stamos via dashboard). Preview URL: https://hbot-resource.pages.dev. Build settings: Astro preset, `pnpm build`, `dist/` output, `NODE_VERSION=22`.
+- First deploy succeeded. Auto-deploys on every push to `main`.
+- Lighthouse mobile + desktop run against the preview URL. Reports saved to `docs/2d-lighthouse-{mobile,desktop}.report.{html,json}` and human-readable summary to `docs/2d-lighthouse-summary.md`.
+
+### Scores (preview URL, HTTPS)
+| Pillar | Mobile (was) | Desktop (was) | Target |
+|---|---|---|---|
+| Performance | **81** (59) | **96** (88) | ≥95 |
+| Accessibility | **95** (75) | **95** (82) | ≥95 |
+| Best Practices | **100** (82) | **100** (81) | ≥95 |
+| SEO | **66** (92) | **66** (92) | ≥95 |
+
+- SEO drop is **artificial** — only failing audit is `is-crawlable`, caused by the deliberate `noindex` during preview. Will return to ≥95 when domain is attached and `noindex` flips off at Phase 6 launch.
+- **Mobile Performance 81 is below target.** Diagnosis: render-blocking external stylesheets (Google Fonts ~992ms + own _astro CSS ~450ms). Page weight only 110 KiB total; zero JS; zero unused CSS. The bottleneck is the font CDN, not the architecture. Four fix-path options written up in summary doc.
+
 ## What's next (waiting on Stamos)
-1. **Review 2.D output** — full long-scroll site at `pnpm dev` locally or in the GitHub repo. Spot-check any of the 9 sections.
-2. Approve **2.E (React islands)** — port `ApplicationsExplorer` and `ProtocolComparison` as `client:visible` React islands. PDF export survives. The static long-scroll keeps working alongside.
+1. **Decide mobile-Performance fix path** (see `docs/2d-lighthouse-summary.md`):
+   - Option A: self-host fonts (recommended)
+   - Option B: inline critical CSS
+   - Option C: A + B (highest score, ~400 KB repo cost) — **my recommendation**
+   - Option D: defer to Phase 5 polish
+2. After decision, proceed with **2.E (React islands)** — port `ApplicationsExplorer` and `ProtocolComparison` as `client:visible` islands.
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -88,4 +110,5 @@
 - **2026-04-28** — Domain corrected to `hbotscience.org`.
 - **2026-04-28** — Phase 2.B complete (80 content entries migrated to YAML, de-branded, Zod-validated, build clean).
 - **2026-04-28** — Phase 2.C complete (i18n ported with de-brand, Nav + Footer built, Red Cross stealth reference caught and dropped, all four forbidden patterns clean in shippable code).
-- **2026-04-28** — Phase 2.D complete (9 section components rendering from content collections, long-scroll homepage in EN + EL, 80 content entries surfaced, gzipped pages 27/33 KB, build clean). Lighthouse-local blocked on Brave headless quirk; deferred to 2.F. Waiting for review before 2.E.
+- **2026-04-28** — Phase 2.D complete (9 section components rendering from content collections, long-scroll homepage in EN + EL, 80 content entries surfaced, gzipped pages 27/33 KB, build clean). Lighthouse-local blocked on Brave headless quirk; deferred to 2.F.
+- **2026-04-28** — Phase 2.F complete (Cloudflare Pages connected, hbot-resource.pages.dev live, Lighthouse measured against HTTPS preview). Mobile Performance 81 flagged as below target — render-blocking font/CSS issue. Awaiting fix-path decision before 2.E.
