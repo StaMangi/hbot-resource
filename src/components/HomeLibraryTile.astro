@@ -1,0 +1,35 @@
+---
+/**
+ * Smaller library preview tile on the homepage — one per top library page.
+ * Four of these in a 2x2 grid below the path cards.
+ */
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  href: string;
+  icon: string;
+  title: string;
+  body: string;
+}
+const { href, icon, title, body } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group block rounded-xl border border-slate-200 bg-white p-5 hover:border-teal-300 hover:shadow-sm transition-all"
+>
+  <div class="flex items-start gap-4">
+    <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0 group-hover:bg-teal-100 group-hover:text-teal-700 transition-colors">
+      <Icon name={icon} class="w-5 h-5" />
+    </div>
+    <div class="min-w-0">
+      <h3
+        class="text-base font-semibold text-slate-900 group-hover:text-teal-700 transition-colors"
+        style="font-family: var(--font-display)"
+      >
+        {title}
+      </h3>
+      <p class="mt-1 text-sm text-slate-600 leading-relaxed">{body}</p>
+    </div>
+  </div>
+</a>

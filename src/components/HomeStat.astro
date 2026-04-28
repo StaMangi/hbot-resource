@@ -1,0 +1,23 @@
+---
+/**
+ * Single stat tile used in the homepage hero (4 across) and elsewhere.
+ * Accepts value + label + sub. No icon (kept minimal for the hero block).
+ */
+interface Props {
+  value: string;
+  label: string;
+  sub: string;
+}
+const { value, label, sub } = Astro.props;
+---
+
+<div class="text-center sm:text-left">
+  <p
+    class="text-3xl sm:text-4xl font-bold text-teal-700"
+    style="font-family: var(--font-display)"
+  >
+    {value}
+  </p>
+  <p class="mt-1 text-sm font-semibold text-slate-700">{label}</p>
+  <p class="mt-0.5 text-xs text-slate-500">{sub}</p>
+</div>

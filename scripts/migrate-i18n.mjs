@@ -63,6 +63,15 @@ const EL_REPLACEMENTS = {
   "strategy.market.body":
     "Η παγκόσμια αγορά ιατρικής μακροζωίας αναμένεται να φτάσει τα $44,2 δισεκατομμύρια έως το 2030. Η HBOT, με τον μοναδικό συνδυασμό εγκεκριμένων κλινικών εφαρμογών FDA και αναδυόμενων στοιχείων για υγιή γήρανση, βρίσκεται στη συμβολή κλινικής ενσωμάτωσης και premium ευεξίας. Μια αφιερωμένη Μονάδα Υπερβαρικής Ιατρικής δημιουργεί σαφή ανταγωνιστική θέση για νοσοκομεία και κέντρα μακροζωίας που εισέρχονται στην αγορά της ιατρικής μακροζωίας.",
   "refs.footer.pill": "HBOT Science — Βιβλιογραφία",
+
+  // 3.B Flag #1 — drop "Premium" framing for editorial-credibility tone.
+  "longevity.wellness.cognitive.tag": "Πρόγραμμα Ευεξίας",
+
+  // 3.B Flag #2 — drop unsourced "30-50%" figure (no citation in research-
+  // studies / references collections). Keep the qualitative claim, which
+  // IS supported by ref-22 (Fife 2022 meta-analysis).
+  "longevity.wellness.athletic.desc":
+    "Πρωτόκολλα HBOT για επαγγελματίες και ερασιτέχνες αθλητές — επιταχυνόμενη μυϊκή αποκατάσταση, μειωμένη φλεγμονή, ενισχυμένη αντοχή.",
 };
 
 const DELETES = new Set(["nav.subtitle", "strategy.market.stat2"]);
@@ -82,10 +91,38 @@ const EL_ADDITIONS = {
   "strategy.market.stat2": "Αξιολογημένες αναφορές",
 };
 
+// Phase 3.B EN backfill of 14 longevity strings that previously existed in EL
+// only. Approved by Stamos with two amendments applied directly here:
+//   - "Premium Wellness" tag dropped → "Wellness Programme" (Flag #1).
+//   - Athletic recovery percentage dropped → qualitative framing only
+//     (Flag #2). Same edit landed in EL_REPLACEMENTS above.
+// All EN strings use British English spelling (programme, favour, etc.).
+// Inserted after the EL anchor key so order matches across both files.
+const EN_LONGEVITY_BACKFILL = {
+  "longevity.landmark.badge": "Landmark Study — Aging (Albany NY), 2020",
+  "longevity.landmark.quote":
+    '"First human evidence of non-pharmacological telomere lengthening"',
+  "longevity.landmark.body":
+    "A prospective clinical study demonstrated that 60 HBOT sessions (90 min/day, 5 days/week, 2.0 ATA) in healthy adults aged 64+ produced a statistically significant >20% increase in PBMC telomere length, alongside a 37% reduction in senescent T-helper cells.",
+  "longevity.stat.telomere": "Telomere Lengthening",
+  "longevity.stat.senescent": "Senescent Cell Reduction",
+  "longevity.stat.sessions": "Treatment Sessions",
+  "longevity.stat.pressure": "Treatment Pressure",
+  "longevity.mechanism.label": "Mechanism",
+  "longevity.wellness.cognitive.title": "Cognitive Enhancement Programme",
+  "longevity.wellness.cognitive.desc":
+    "60 sessions at 2.0 ATA for memory, processing speed, and executive function in healthy older adults. Based on the 2020 RCT protocol.",
+  "longevity.wellness.cognitive.tag": "Wellness Programme",
+  "longevity.wellness.athletic.title": "Athletic Performance & Recovery",
+  "longevity.wellness.athletic.desc":
+    "HBOT protocols for professional and amateur athletes — accelerated muscle recovery, reduced inflammation, enhanced endurance.",
+  "longevity.wellness.athletic.tag": "Sports Medicine",
+};
+
 // ────────────────────────────────────────────────────────────────────────────
 // Apply: build new dictionaries
 // ────────────────────────────────────────────────────────────────────────────
-function applyReplacements(source, replacements, additions) {
+function applyReplacements(source, replacements, additions, longevityBackfill) {
   const out = {};
   for (const [key, value] of Object.entries(source)) {
     if (DELETES.has(key)) continue;
@@ -97,12 +134,25 @@ function applyReplacements(source, replacements, additions) {
         out[aKey] = aVal;
       }
     }
+    // 3.B EN backfill: insert 14 longevity strings into EN immediately after
+    // longevity.callout.body (the last EL/EN-shared longevity key), so order
+    // matches the EL file structure exactly.
+    if (longevityBackfill && key === "longevity.callout.body") {
+      for (const [bKey, bVal] of Object.entries(longevityBackfill)) {
+        out[bKey] = bVal;
+      }
+    }
   }
   return out;
 }
 
-const enFinal = applyReplacements(data.en, EN_REPLACEMENTS, EN_ADDITIONS);
-const elFinal = applyReplacements(data.el, EL_REPLACEMENTS, EL_ADDITIONS);
+const enFinal = applyReplacements(
+  data.en,
+  EN_REPLACEMENTS,
+  EN_ADDITIONS,
+  EN_LONGEVITY_BACKFILL,
+);
+const elFinal = applyReplacements(data.el, EL_REPLACEMENTS, EL_ADDITIONS, null);
 
 // ────────────────────────────────────────────────────────────────────────────
 // Serialise: write TS files with literal types via `as const`.

@@ -1,4 +1,13 @@
 ---
+/**
+ * Top navigation. Zero JS — desktop renders flat horizontal nav, mobile uses
+ * native <details>/<summary> for the hamburger menu (accessible by default,
+ * animates with CSS, dismissible).
+ *
+ * Active link highlighting: the current path's nav entry gets a bottom border
+ * + darker text on desktop and a teal background pill on mobile. Computed at
+ * build time from Astro.props.pathname; no runtime state.
+ */
 import { localePath, type Locale } from "@/lib/seo";
 import { t } from "@/i18n";
 
@@ -10,23 +19,117 @@ interface Props {
 const { locale, pathname } = Astro.props;
 const altLocale: Locale = locale === "en" ? "el" : "en";
 const altPath = localePath(pathname, altLocale);
-const home = locale === "en" ? "/" : "/el/";
 const altLabel = altLocale === "el" ? "Ελληνικά" : "English";
+
+const home = locale === "en" ? "/" : "/el/";
+const prefix = locale === "en" ? "" : "/el";
+
+// Two-tier nav: paths (Clinical / Wellness) and library (the 6 collection indices).
+// Visual separator between them. Active state matches if pathname starts with href.
+const paths = [
+  { href: `${prefix}/clinical/`, label: locale === "en" ? "Clinical" : "Κλινικό" },
+  { href: `${prefix}/wellness/`, label: locale === "en" ? "Wellness" : "Ευεξία" },
+];
+
+const library = [
+  { href: `${prefix}/mechanisms/`, label: t("mechanisms.section.title", locale).split(" ")[0] || "Mechanisms" },
+  { href: `${prefix}/indications/`, label: locale === "en" ? "Indications" : "Ενδείξεις" },
+  { href: `${prefix}/departments/`, label: locale === "en" ? "Departments" : "Τμήματα" },
+  { href: `${prefix}/longevity/`, label: locale === "en" ? "Longevity" : "Μακροζωία" },
+  { href: `${prefix}/evidence/`, label: locale === "en" ? "Evidence" : "Τεκμηρίωση" },
+  { href: `${prefix}/references/`, label: locale === "en" ? "References" : "Βιβλιογραφία" },
+];
+
+const allLinks = [...paths, ...library];
+
+const isActive = (href: string): boolean => {
+  // Exact match for / paths; prefix match (must be followed by /) for everything else
+  if (href === "/" || href === "/el/") return pathname === href;
+  return pathname === href || pathname.startsWith(href);
+};
 ---
 
-<nav class="border-b border-slate-200 bg-white">
-  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+<nav class="border-b border-slate-200 bg-white sticky top-0 z-30">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
     <a
       href={home}
-      class="text-xl font-semibold text-slate-900 hover:text-teal-700 transition-colors"
+      class="text-lg font-semibold text-slate-900 hover:text-teal-700 transition-colors flex-shrink-0"
       style="font-family: var(--font-display)"
     >
       {t("nav.brand", locale)}
     </a>
 
+    {/* Desktop nav (md+) */}
+    <ul class="hidden lg:flex items-center gap-5 text-sm font-medium">
+      {paths.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              "transition-colors py-1 border-b-2",
+              isActive(link.href)
+                ? "text-teal-700 border-teal-700"
+                : "text-slate-700 border-transparent hover:text-teal-700 hover:border-teal-200",
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li class="text-slate-300" aria-hidden="true">|</li>
+      {library.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              "transition-colors py-1 border-b-2",
+              isActive(link.href)
+                ? "text-teal-700 border-teal-700"
+                : "text-slate-700 border-transparent hover:text-teal-700 hover:border-teal-200",
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    {/* Mobile menu (under lg) */}
+    <details class="lg:hidden relative ml-auto">
+      <summary
+        class="list-none cursor-pointer p-2 -m-2 text-slate-700 hover:text-teal-700 transition-colors"
+        aria-label={locale === "en" ? "Open menu" : "Άνοιγμα μενού"}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </summary>
+      <ul
+        class="absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 text-sm font-medium"
+      >
+        {allLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class:list={[
+                "block px-4 py-2 transition-colors",
+                isActive(link.href)
+                  ? "bg-teal-50 text-teal-700"
+                  : "text-slate-700 hover:bg-slate-50 hover:text-teal-700",
+              ]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
+
     <a
       href={altPath}
-      class="text-sm font-medium text-slate-600 hover:text-teal-700 transition-colors"
+      class="text-sm font-medium text-slate-600 hover:text-teal-700 transition-colors flex-shrink-0"
       hreflang={altLocale}
       aria-label={`Switch language to ${altLabel}`}
     >
@@ -34,3 +137,9 @@ const altLabel = altLocale === "el" ? "Ελληνικά" : "English";
     </a>
   </div>
 </nav>
+
+<style>
+  /* Hide the default disclosure triangle on the hamburger summary */
+  summary::-webkit-details-marker { display: none; }
+  summary { list-style: none; }
+</style>

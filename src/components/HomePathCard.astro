@@ -1,0 +1,82 @@
+---
+/**
+ * Large clickable soft-routing card on the homepage. Two of these sit below
+ * the hero — Clinical and Wellness — and they're the primary navigation
+ * gesture on the homepage.
+ */
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  href: string;
+  icon: string;
+  eyebrow: string;
+  title: string;
+  body: string;
+  cta: string;
+  /** Visual variant — "clinical" = teal, "wellness" = navy */
+  variant: "clinical" | "wellness";
+}
+const { href, icon, eyebrow, title, body, cta, variant } = Astro.props;
+
+const accent =
+  variant === "clinical"
+    ? {
+        gradient: "from-teal-50 to-white",
+        border: "border-teal-200 hover:border-teal-400",
+        iconBg: "bg-teal-100 text-teal-700",
+        eyebrowColor: "text-teal-700",
+        cta: "text-teal-700 group-hover:text-teal-800",
+      }
+    : {
+        gradient: "from-slate-50 to-white",
+        border: "border-slate-200 hover:border-slate-400",
+        iconBg: "bg-slate-200 text-slate-700",
+        eyebrowColor: "text-slate-700",
+        cta: "text-slate-800 group-hover:text-teal-700",
+      };
+---
+
+<a
+  href={href}
+  class:list={[
+    "group block rounded-2xl border-2 p-8 md:p-10 bg-gradient-to-br transition-all hover:shadow-lg",
+    accent.gradient,
+    accent.border,
+  ]}
+>
+  <div
+    class:list={[
+      "w-12 h-12 rounded-xl flex items-center justify-center mb-5",
+      accent.iconBg,
+    ]}
+  >
+    <Icon name={icon} class="w-6 h-6" />
+  </div>
+
+  <p
+    class:list={[
+      "text-xs font-semibold uppercase tracking-widest mb-2",
+      accent.eyebrowColor,
+    ]}
+  >
+    {eyebrow}
+  </p>
+
+  <h2
+    class="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight mb-3"
+    style="font-family: var(--font-display)"
+  >
+    {title}
+  </h2>
+
+  <p class="text-slate-600 leading-relaxed mb-6">
+    {body}
+  </p>
+
+  <p
+    class:list={["inline-flex items-center gap-1.5 text-sm font-semibold transition-colors", accent.cta]}
+  >
+    <span>{cta}</span>
+    <Icon name="lucide:arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+  </p>
+</a>

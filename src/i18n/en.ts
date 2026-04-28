@@ -2,7 +2,7 @@
 // Source: data-export/hbot-i18n.json (de-branding applied at port-time).
 // This file is the canonical source of truth — edit here, NOT in the script.
 // Re-running the migration overwrites local edits.
-// EN keys: 136.
+// EN keys: 150.
 // Deletions vs source: nav.subtitle, strategy.market.stat2.
 // Replacements: nav.brand, hero.badge, hero.exec.body (last sentence),
 // dept.section.subtitle, nohbot.section.subtitle, strategy.section.subtitle,
@@ -93,6 +93,20 @@ export const en = {
   "longevity.refs.label": "Key References:",
   "longevity.callout.title": "The Hyperoxic-Hypoxic Paradox",
   "longevity.callout.body": "HBOT creates a unique biological environment: repeated cycles of high-pressure oxygen followed by return to normal pressure generate a hormetic stress response. This paradox — using oxygen to fight oxidative aging — activates the body's most powerful endogenous repair mechanisms, including telomerase activation, senolytic pathways, and stem cell mobilization.",
+  "longevity.landmark.badge": "Landmark Study — Aging (Albany NY), 2020",
+  "longevity.landmark.quote": "\"First human evidence of non-pharmacological telomere lengthening\"",
+  "longevity.landmark.body": "A prospective clinical study demonstrated that 60 HBOT sessions (90 min/day, 5 days/week, 2.0 ATA) in healthy adults aged 64+ produced a statistically significant >20% increase in PBMC telomere length, alongside a 37% reduction in senescent T-helper cells.",
+  "longevity.stat.telomere": "Telomere Lengthening",
+  "longevity.stat.senescent": "Senescent Cell Reduction",
+  "longevity.stat.sessions": "Treatment Sessions",
+  "longevity.stat.pressure": "Treatment Pressure",
+  "longevity.mechanism.label": "Mechanism",
+  "longevity.wellness.cognitive.title": "Cognitive Enhancement Programme",
+  "longevity.wellness.cognitive.desc": "60 sessions at 2.0 ATA for memory, processing speed, and executive function in healthy older adults. Based on the 2020 RCT protocol.",
+  "longevity.wellness.cognitive.tag": "Wellness Programme",
+  "longevity.wellness.athletic.title": "Athletic Performance & Recovery",
+  "longevity.wellness.athletic.desc": "HBOT protocols for professional and amateur athletes — accelerated muscle recovery, reduced inflammation, enhanced endurance.",
+  "longevity.wellness.athletic.tag": "Sports Medicine",
   "evidence.section.badge": "Scientific Literature",
   "evidence.section.title": "Evidence-Based Research",
   "evidence.section.subtitle": "Key peer-reviewed studies supporting HBOT applications across clinical specialties and longevity medicine, with evidence levels and direct links to source publications.",

@@ -1,22 +1,196 @@
 ---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
 import LandingLayout from "@/layouts/LandingLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import { SITE_NAME } from "@/lib/seo";
 
 const pathname = Astro.url.pathname;
+const locale = "en" as const;
+
+const title = `Wellness & Longevity — ${SITE_NAME}`;
+const description =
+  "HBOT for wellness and longevity programmes — telomere lengthening, senescent cell reduction, cognitive enhancement, athletic recovery — protocols, evidence, and operator reference architecture.";
+
+const longevityAll = await getCollection("longevity");
+const order = ["telomere", "senescence", "cognitive", "stemcells", "athletic", "collagen"];
+const apps = order
+  .map((id) => longevityAll.find((a) => a.id === id))
+  .filter((a): a is NonNullable<typeof a> => a !== undefined);
+
+const longevityIcons: Record<string, string> = {
+  Dna: "lucide:dna",
+  Trash2: "lucide:trash-2",
+  Brain: "lucide:brain",
+  Sparkles: "lucide:sparkles",
+  Zap: "lucide:zap",
+  Layers: "lucide:layers",
+};
+
+const operatorLinks = [
+  { href: "/programme-design/", icon: "lucide:clipboard-list", title: "60-Session Programme Design", body: "Member journey, biomarker tracking, protocol cadence, and integration with adjunct modalities." },
+  { href: "/operator-blueprint/", icon: "lucide:building-2", title: "Operator Blueprint", body: "Space requirements, staffing model, regulatory checklist, member journey design." },
+  { href: "/mechanisms/antiaging/", icon: "lucide:atom", title: "Anti-Ageing Mechanism", body: "The hyperoxic-hypoxic paradox — hormetic stress, telomerase activation, senolytic pathways." },
+  { href: "/evidence/", icon: "lucide:book-open", title: "Longevity Evidence Base", body: "Hadanny 2020 RCT and downstream meta-analyses on HBOT for healthy ageing and cognition." },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: title,
+  inLanguage: "en",
+  description,
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
 ---
 
 <LandingLayout
-  title="For wellness and longevity operators — HBOT Science"
-  description="HBOT for wellness and longevity programmes — outcomes, member journey design, programme protocols, and operator reference architecture."
-  locale="en"
+  title={title}
+  description={description}
+  locale={locale}
   pathname={pathname}
+  ogType="website"
+  jsonLd={jsonLd}
   noindex={true}
 >
-  <section class="max-w-4xl mx-auto px-6 py-16">
-    <p class="text-xs uppercase tracking-widest text-slate-500">For wellness & longevity operators</p>
-    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
-      Wellness & Longevity
-    </h1>
-    <StubContent phase="3.B" locale="en" />
+  {/* Hero */}
+  <section class="bg-gradient-to-br from-slate-50 via-white to-cyan-50/40">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase rounded-full bg-violet-100 text-violet-800">
+        For wellness & longevity operators
+      </span>
+      <h1
+        class="mt-4 text-4xl md:text-5xl font-bold text-slate-900 leading-tight max-w-3xl"
+        style="font-family: var(--font-display)"
+      >
+        Wellness & Longevity Applications of HBOT
+      </h1>
+      <p class="mt-5 text-lg text-slate-600 leading-relaxed max-w-3xl">
+        Telomere lengthening, senescent cell reduction, cognitive enhancement,
+        athletic recovery — protocols, evidence base, and operator reference
+        architecture for hotels and longevity centres.
+      </p>
+    </div>
+  </section>
+
+  {/* Longevity applications grid */}
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <div class="max-w-2xl mb-10">
+      <h2
+        class="text-2xl md:text-3xl font-semibold text-slate-900"
+        style="font-family: var(--font-display)"
+      >
+        Six longevity applications
+      </h2>
+      <p class="mt-3 text-slate-600 leading-relaxed">
+        Each of the six longevity applications has its own page covering
+        mechanism, protocol parameters, supporting studies, and key references.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {
+        apps.map((app) => {
+          const isTeal = app.data.color === "teal";
+          const accent = isTeal ? "bg-teal-100 text-teal-700" : "bg-slate-200 text-slate-700";
+          return (
+            <a
+              href={`/longevity/${app.id}/`}
+              class="group block rounded-xl border border-slate-200 bg-white p-5 hover:border-teal-300 hover:shadow-sm transition-all"
+            >
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class:list={[`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0`, accent]}>
+                  <Icon name={longevityIcons[app.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+                </div>
+                <p
+                  class="text-2xl font-bold text-teal-700"
+                  style="font-family: var(--font-display)"
+                >
+                  {app.data.stat}
+                </p>
+              </div>
+              <h3
+                class="text-base font-semibold text-slate-900 group-hover:text-teal-700 transition-colors"
+                style="font-family: var(--font-display)"
+              >
+                {app.data.title[locale]}
+              </h3>
+              <p class="mt-1 text-xs text-slate-500 mb-3">{app.data.statLabel[locale]}</p>
+              <p class="text-sm text-slate-600 leading-relaxed line-clamp-3">
+                {app.data.summary[locale]}
+              </p>
+            </a>
+          );
+        })
+      }
+    </div>
+
+    <p class="mt-8 text-sm text-slate-500">
+      Looking for the full longevity index?{" "}
+      <a href="/longevity/" class="text-teal-700 hover:underline font-semibold">Browse all applications →</a>
+    </p>
+  </section>
+
+  {/* Operator references */}
+  <section class="bg-slate-50 py-16 md:py-20 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2
+        class="text-2xl md:text-3xl font-semibold text-slate-900 mb-10"
+        style="font-family: var(--font-display)"
+      >
+        Programme design & operator architecture
+      </h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        {
+          operatorLinks.map((link) => (
+            <a
+              href={link.href}
+              class="group block rounded-xl border border-slate-200 bg-white p-5 hover:border-teal-300 hover:shadow-sm transition-all"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0 group-hover:bg-teal-100 group-hover:text-teal-700 transition-colors">
+                  <Icon name={link.icon} class="w-5 h-5" />
+                </div>
+                <div class="min-w-0">
+                  <h3
+                    class="text-base font-semibold text-slate-900 group-hover:text-teal-700 transition-colors"
+                    style="font-family: var(--font-display)"
+                  >
+                    {link.title}
+                  </h3>
+                  <p class="mt-1 text-sm text-slate-600 leading-relaxed">{link.body}</p>
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
+    <h2
+      class="text-2xl md:text-3xl font-semibold text-slate-900 mb-3"
+      style="font-family: var(--font-display)"
+    >
+      Designing a longevity programme?
+    </h2>
+    <p class="text-slate-600 leading-relaxed mb-8">
+      Editorial publisher IN2050 Ltd offers operator briefings covering programme
+      design, member journey, regulatory pathways, and clinical-supervision
+      structure for hotels and longevity centres adopting HBOT.
+    </p>
+    <a
+      href="mailto:info@hbotscience.org?subject=Operator%20briefing%20enquiry"
+      class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-semibold transition-colors"
+    >
+      <Icon name="lucide:mail" class="w-4 h-4" />
+      Request an operator briefing
+    </a>
   </section>
 </LandingLayout>

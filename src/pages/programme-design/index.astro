@@ -1,0 +1,23 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "en" as const;
+---
+
+<LandingLayout
+  title="60-Session Programme Design — HBOT Science"
+  description="Member journey design for longevity HBOT programmes — assessment, protocol cadence, biomarker tracking, integration with adjunct modalities, maintenance phase."
+  locale={locale}
+  pathname={pathname}
+  noindex={true}
+>
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Operator reference</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      60-Session Programme Design
+    </h1>
+    <StubContent phase="4" locale={locale} />
+  </section>
+</LandingLayout>
