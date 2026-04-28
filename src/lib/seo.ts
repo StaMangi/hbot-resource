@@ -1,7 +1,7 @@
 // Site-wide SEO constants and helpers.
 // Single source of truth for canonical site URL, default OG image, etc.
 
-export const SITE_URL = "https://hbotresource.com";
+export const SITE_URL = "https://hbotscience.org";
 export const SITE_NAME = "HBOT Resource";
 export const SITE_DEFAULT_DESCRIPTION = {
   en: "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.",

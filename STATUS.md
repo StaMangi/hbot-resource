@@ -5,7 +5,7 @@
 **Forked from:** [StaMangi/hbot_clinical_resource](https://github.com/StaMangi/hbot_clinical_resource) — preserved at `_henry-dunant-source/`
 **Live source site:** https://hbotresource-wcjp4x3h.manus.space
 **Target hosting:** Cloudflare Pages
-**Target domain:** `hbotresource.com` (placeholder until registered)
+**Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
 **Phase 2.A — Bootstrap.** Complete. Waiting for Stamos review before 2.B.
@@ -33,7 +33,7 @@
 2. Approve **2.B (content migration)** — Zod schemas + script that splits `hbot-content.json` into per-entry YAML files in `src/content/`.
 
 ## Open issues / risks
-- **Domain not yet registered.** `hbotresource.com` is hard-coded in `src/lib/seo.ts` as the canonical URL. If we change domain, it's a single-line edit + rebuild (no widespread find/replace needed thanks to centralised constant).
+- **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
 - **Cloudflare Pages connection deferred** — Stamos to set up via dashboard at sub-step 2.F.
 - **`@astrojs/mdx` 5.x and `@astrojs/react` 5.x are available** but require Astro 6. We pinned to Astro 5.18.1 for stability. Revisit when Astro 6 is more battle-tested.
 

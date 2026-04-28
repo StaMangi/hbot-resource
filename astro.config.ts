@@ -4,9 +4,10 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import tailwindcss from "@tailwindcss/vite";
 
-// Canonical site URL — placeholder until hbotresource.com is registered.
-// Global find/replace if domain changes.
-const SITE = "https://hbotresource.com";
+// Canonical site URL. Domain registered with Namecheap, pointing to Cloudflare
+// nameservers (ken.ns.cloudflare.com, nena.ns.cloudflare.com), awaiting activation.
+// If this changes, also update src/lib/seo.ts (single source of truth there).
+const SITE = "https://hbotscience.org";
 
 export default defineConfig({
   site: SITE,

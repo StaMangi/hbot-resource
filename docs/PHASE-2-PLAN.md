@@ -172,7 +172,7 @@ Note: most of these files won't carry over verbatim — they get rewritten as `.
   - Remove email, website, WhatsApp, "exclusively for Henry Dunant", "not for public distribution"
 - `ProtocolComparison.tsx` (kept as React island)
   - Line 58: `pdfSubtitle: "Henry Dunant Hospital Center — Clinical Resource Platform"` → `pdfSubtitle: "HBOT Resource — Protocol Comparison"`
-  - Line 60: `pdfSource: "Source: HBOT Clinical Resource · Henry Dunant Hospital Center, Athens"` → `pdfSource: "Source: HBOT Resource (hbotresource.com)"` *(domain TBC — keep placeholder until registered)*
+  - Line 60: `pdfSource: "Source: HBOT Clinical Resource · Henry Dunant Hospital Center, Athens"` → `pdfSource: "Source: HBOT Resource (hbotscience.org)"`
   - Line 92: Greek mirror — `pdfSubtitle: "Νοσοκομείο Henry Dunant — Κλινική Πλατφόρμα Πόρων"` → `pdfSubtitle: "HBOT Resource — Σύγκριση Πρωτοκόλλων"`
 
 ### i18n strings — REWRITE in `src/i18n/{en,el}.ts`
@@ -336,7 +336,7 @@ I'd suggest pausing for your review after 2.A (does the bootstrap look right?), 
 
 1. **Approval of this plan** (or amendments).
 2. **Cloudflare Pages access**: either you connect the GitHub repo via the Cloudflare dashboard yourself (15-minute one-time task), or I do it via `wrangler login` from a Terminal where you've authenticated.
-3. **Domain decision** — `hbotresource.com`? Doesn't need to be registered yet, but knowing the target lets me set canonical URL placeholders correctly in `BaseLayout.astro` from day one.
+3. **Domain decision** — confirmed `hbotscience.org` (registered, DNS at Cloudflare).
 4. **Editorial policy text** — the footer links to `/about/` (which exists in the brief). Phase 6 deliverable. For Phase 2 we just stub the link — no text needed yet.
 
 ---
