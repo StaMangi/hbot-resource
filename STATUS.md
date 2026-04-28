@@ -8,9 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 3.A — Foundation (font fix + URL stubs + 3 reusable layouts).** Complete and deployed. Waiting for Stamos approval before 3.B.
+**Phase 3.B — Tier 1 + 2 landings + Nav redesign + i18n parity.** Complete and deployed. Waiting for Stamos approval before 3.C.
 
-**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). 93 routes deployed (3 existing + 6 landings + 16 indexes + 68 dynamic detail).
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -130,9 +130,64 @@ Mobile FCP / LCP halved: 3.6 s → 1.8 s. Reports in `docs/3a-lighthouse-{mobile
 - Sitemap: 92 routes (404 excluded), EN/EL alternates wired.
 - Quadruple-grep clean in `src/`, `dist/`, `public/`.
 
+## Phase 3.B — done (this session)
+
+### i18n parity achieved (150 EN / 150 EL keys)
+- 14 EL-only longevity strings backfilled into EN with British English spelling. `migrate-i18n.mjs` updated with `EN_LONGEVITY_BACKFILL` map; re-run produces matching output.
+- Stamos approved 12 verbatim and amended 2:
+  - **Flag #1**: `longevity.wellness.cognitive.tag` → "Wellness Programme" (EN) and "Πρόγραμμα Ευεξίας" (EL). Drops "Premium" framing for editorial-credibility tone.
+  - **Flag #2**: `longevity.wellness.athletic.desc` — drops the unsourced "30-50%" figure in BOTH languages. Qualitative claim retained (supported by ref-22 / Fife 2022 meta-analysis). **Editorial-integrity precedent established**: every claim citable, no exceptions, no asymmetry between languages.
+- Quadruple-grep verification still clean.
+
+### Nav redesign (zero JS, accessible)
+- Brand · Clinical / Wellness · | · Mechanisms / Indications / Departments / Longevity / Evidence / References · language toggle.
+- Active-link highlighting via build-time pathname comparison.
+- Sticky position so nav stays visible on deep pages.
+- Mobile menu: native `<details>`/`<summary>` — hamburger opens a flat list, dismissible, accessible. No JS.
+
+### Tier 1 — new homepage (replaces long-scroll)
+- 3-screen short home: hero with 4 stats · two soft-routing path cards (Clinical, Wellness) · 4-tile library preview.
+- New components: `HomeStat.astro`, `HomePathCard.astro`, `HomeLibraryTile.astro`.
+- Old `HomePage.astro` and `src/components/sections/*.astro` stay in src/ (per amendment B) — code-level fallback until 3.F deletion.
+
+### Tier 2 — /clinical/ and /wellness/ landings (replaces 3.A stubs)
+- Both EN + EL.
+- Clinical: hero · 9-department grid (cards link to `/departments/<slug>/` with FDA/research counts from collection) · 4-tile reference-material section · mailto CTA.
+- Wellness: hero · 6-application grid (cards link to `/longevity/<slug>/` with stat + summary) · 4-tile operator-architecture section · mailto CTA.
+- Both use `mailto:info@hbotscience.org` with prefilled subject lines. No forms, no JS.
+- `MedicalAudience` schema.org on /clinical/ targeting MedicalProfessional.
+
+### 6 Phase 4 route stubs added
+- `/safety/`, `/programme-design/`, `/operator-blueprint/` × EN + EL.
+- Real content arrives in Phase 4. Routes exist now so /wellness/ + /clinical/ can link to them without 404s.
+
+### Lighthouse — better than 3.A baseline
+| Pillar | Mobile (3.A → 3.B) | Desktop (3.A → 3.B) |
+|---|---|---|
+| Performance | 98 → 98 | 100 → 100 |
+| Accessibility | 95 → **100** (+5) | 95 → **100** (+5) |
+| Best Practices | 100 → 100 | 100 → 100 |
+| SEO | 66 (noindex) | 66 (noindex) |
+
+`/clinical/` Lighthouse spot-check: 100 / 100 / 100 / 66. New layouts deliver consistent performance.
+
+A11y regression caught + fixed mid-session: `Footer.astro` copyright `text-slate-400` had 2.51 contrast on `bg-slate-50` (below WCAG AA 4.5). Bumped to `text-slate-600` (~7:1, AAA). Bug was inherited from 2.D — 3.B's shorter homepage just made it visible to Lighthouse.
+
+### Build status
+- `astro check`: 0/0/0 across **69 files**.
+- `pnpm build`: **99 routes** in 1.52 s.
+- Sitemap: 98 routes (404 excluded), EN/EL alternates wired.
+
 ## What's next (waiting on Stamos)
-1. **Review 3.A** — visit https://hbot-resource.pages.dev (long-scroll still at /, but try /clinical/, /wellness/, /mechanisms/, /mechanisms/hyperoxygenation/, etc. to see the stub structure and three layouts in action).
-2. Approve **3.B** — homepage + /clinical/ + /wellness/ + Nav redesign. Includes EN backfill of the 14 EL-only longevity strings (per Stamos amendment 2).
+1. **Review 3.B**:
+   - https://hbot-resource.pages.dev/ — new homepage
+   - https://hbot-resource.pages.dev/clinical/ — clinical landing
+   - https://hbot-resource.pages.dev/wellness/ — wellness landing
+   - https://hbot-resource.pages.dev/el/ — Greek mirror
+   - Test the Nav: hamburger on mobile, language toggle, active-state highlighting on deep pages
+   - Click through department/longevity grids to confirm soft-routing works
+2. Once 3.B is approved, **before 3.C kicks off, I write `docs/PHASE-4-PLAN.md`** per the locked Phase 4 decisions in memory (source PDF, DOI verification standard, omit menopause).
+3. Then **3.C** — 8 collection index pages (`/mechanisms/`, `/indications/`, `/departments/`, `/longevity/`, `/evidence/`, `/references/`, `/protocols/`, `/about/`).
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -148,4 +203,5 @@ Mobile FCP / LCP halved: 3.6 s → 1.8 s. Reports in `docs/3a-lighthouse-{mobile
 - **2026-04-28** — Phase 2.D complete (9 section components rendering from content collections, long-scroll homepage in EN + EL, 80 content entries surfaced, gzipped pages 27/33 KB, build clean). Lighthouse-local blocked on Brave headless quirk; deferred to 2.F.
 - **2026-04-28** — Phase 2.F complete (Cloudflare Pages connected, hbot-resource.pages.dev live, Lighthouse measured against HTTPS preview). Mobile Performance 81 flagged as below target — render-blocking font/CSS issue. Decision: defer Option C font fix into Phase 3.A.
 - **2026-04-28** — Phase 3 plan written and approved (`docs/PHASE-3-PLAN.md`). 6 sub-steps (3.A through 3.F), 4 stop points, ~18 sessions, ~90 routes target. Zero React islands.
-- **2026-04-28** — Phase 3.A complete (self-hosted fonts + inline critical CSS + 3 reusable layouts + 30 URL stubs / 76 routes). Mobile Performance lifted 81 → 98, FCP/LCP halved to 1.8 s. All real-target pillars ≥95. 93 pages now deploying. Existing long-scroll homepage preserved as fallback per amendment B. Awaiting Stamos review before 3.B.
+- **2026-04-28** — Phase 3.A complete (self-hosted fonts + inline critical CSS + 3 reusable layouts + 30 URL stubs / 76 routes). Mobile Performance lifted 81 → 98, FCP/LCP halved to 1.8 s. All real-target pillars ≥95. 93 pages now deploying. Existing long-scroll homepage preserved as fallback per amendment B.
+- **2026-04-28** — Phase 3.B complete (homepage redesign · /clinical/ + /wellness/ landings · Nav redesign · 14 EL longevity strings backfilled into EN · 6 Phase 4 stubs · A11y contrast regression caught and fixed). Mobile A11y 95 → 100. Editorial-integrity precedent locked: never ship unsourced claims, even inherited ones, in either language. 99 routes deploying. Awaiting Stamos review before 3.C.
