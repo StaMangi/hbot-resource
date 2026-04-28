@@ -1,0 +1,84 @@
+---
+// Site-wide head element. Every page goes through BaseLayout, which uses this.
+// Wires every SEO requirement from Phase 5 — they're populated here from props.
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  canonicalUrl,
+  alternateLocaleUrl,
+  type Locale,
+} from "@/lib/seo";
+
+export interface Props {
+  title: string;
+  description?: string;
+  locale: Locale;
+  pathname: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+  /** Optional schema.org JSON-LD object for this page. */
+  jsonLd?: Record<string, unknown>;
+  /** Set true for pages we don't want indexed (e.g. preview-only). */
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = SITE_DEFAULT_DESCRIPTION[Astro.props.locale],
+  locale,
+  pathname,
+  ogImage = DEFAULT_OG_IMAGE,
+  ogType = "website",
+  jsonLd,
+  noindex = false,
+} = Astro.props;
+
+const canonical = canonicalUrl(pathname);
+const enUrl = alternateLocaleUrl(pathname, "en");
+const elUrl = alternateLocaleUrl(pathname, "el");
+const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<link rel="canonical" href={canonical} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="el" href={elUrl} />
+<link rel="alternate" hreflang="x-default" href={enUrl} />
+
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageAbsolute} />
+<meta property="og:locale" content={locale === "el" ? "el_GR" : "en_US"} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageAbsolute} />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+  rel="stylesheet"
+/>
+
+{
+  jsonLd && (
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  )
+}

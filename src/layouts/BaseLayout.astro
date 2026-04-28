@@ -1,0 +1,32 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import "@/styles/global.css";
+import type { Locale } from "@/lib/seo";
+
+export interface Props {
+  title: string;
+  description?: string;
+  locale: Locale;
+  pathname: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
+}
+
+const props = Astro.props;
+---
+
+<!doctype html>
+<html lang={props.locale}>
+  <head>
+    <BaseHead {...props} />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <slot name="nav" />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <slot name="footer" />
+  </body>
+</html>

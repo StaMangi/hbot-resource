@@ -1,0 +1,175 @@
+export const en: Record<string, string> = {
+  // ── NavBar ──────────────────────────────────────────────────
+  "nav.overview": "Overview",
+  "nav.mechanisms": "Mechanisms",
+  "nav.fda": "FDA",
+  "nav.explorer": "Explorer",
+  "nav.departments": "Depts.",
+  "nav.longevity": "Longevity",
+  "nav.evidence": "Evidence",
+  "nav.strategy": "Strategy",
+  "nav.references": "References",
+  "nav.compare": "Compare",
+  "nav.more": "More",
+  "nav.contact": "Contact Us",
+  "nav.cta": "Explore Departments",
+  "nav.brand": "HBOT Clinical",
+  "nav.subtitle": "Henry Dunant Hospital",
+
+  // ── Hero ────────────────────────────────────────────────────
+  "hero.badge": "Clinical Resource Platform · Henry Dunant Hospital Center",
+  "hero.title1": "Hyperbaric Oxygen",
+  "hero.title2": "Therapy",
+  "hero.title3": "Clinical Integration Guide",
+  "hero.description":
+    "A comprehensive evidence-based resource mapping HBOT applications across all clinical departments — from FDA-approved indications to emerging longevity and wellness protocols. Structured for clinical and executive decision-making.",
+  "hero.cta.departments": "Explore Department Applications",
+  "hero.cta.fda": "View FDA Indications",
+  "hero.scroll": "Scroll to explore",
+  "hero.exec.title": "Executive Summary",
+  "hero.exec.body":
+    "Hyperbaric Oxygen Therapy (HBOT) involves the administration of 100% oxygen at pressures exceeding 1.4 atmospheres absolute (ATA), typically between 2.0 and 3.0 ATA. This creates a hyperoxic environment that dramatically increases dissolved oxygen in plasma — independent of hemoglobin — enabling oxygen delivery to ischemic, infected, and radiation-damaged tissues. With 14 FDA-approved indications, robust evidence across surgical, neurological, oncological, and metabolic specialties, and emerging data on telomere lengthening and cellular rejuvenation, HBOT represents a uniquely versatile therapeutic modality. This resource maps current evidence to the specific departments of Henry Dunant Hospital Center, providing a strategic framework for clinical integration and wellness program development.",
+  "hero.exec.highlight1": "14 FDA-approved indications",
+  "hero.exec.highlight2": "telomere lengthening and cellular rejuvenation",
+
+  // ── Stats ───────────────────────────────────────────────────
+  "stat.fda.label": "FDA-Approved Indications",
+  "stat.fda.sub": "UHMS recognized conditions",
+  "stat.telomere.label": "Telomere Lengthening",
+  "stat.telomere.sub": "In healthy older adults (60 sessions)",
+  "stat.citations.label": "Peer-Reviewed Citations",
+  "stat.citations.sub": "Supporting the evidence base",
+  "stat.pressure.label": "Treatment Pressure",
+  "stat.pressure.sub": "Standard therapeutic range",
+
+  // ── Mechanisms ──────────────────────────────────────────────
+  "mechanisms.section.badge": "Physiological Basis",
+  "mechanisms.section.title": "Mechanisms of Action",
+  "mechanisms.section.subtitle":
+    "HBOT exerts its therapeutic effects through five distinct and complementary physiological mechanisms, each contributing to its broad clinical applicability.",
+  "mechanisms.detail.label": "Detailed Mechanism",
+  "mechanisms.collapse.label": "Show less",
+  "mechanisms.refs.label": "Key References:",
+  "mechanisms.banner.badge": "Clinical Significance",
+  "mechanisms.banner.title": "The Hyperoxic-Hypoxic Paradox",
+  "mechanisms.banner.body": "A key insight in modern HBOT research is the hyperoxic-hypoxic paradox — the observation that repeated cycles of hyperoxia followed by return to normoxia generate a hormetic stress response. This paradox activates protective antioxidant pathways (SOD, catalase, glutathione peroxidase), stimulates angiogenesis, and drives the anti-aging effects including telomere lengthening and senescent cell clearance. The therapeutic benefit lies not in sustained hyperoxia, but in the dynamic oscillation between states.",
+  "mechanisms.stat1.label": "Plasma O\u2082 Increase",
+  "mechanisms.stat1.sub": "at 3.0 ATA",
+  "mechanisms.stat2.label": "Bubble Volume Reduction",
+  "mechanisms.stat2.sub": "at 2.8 ATA",
+  "mechanisms.stat3.label": "VEGF Upregulation",
+  "mechanisms.stat3.value": "Significant",
+  "mechanisms.stat3.sub": "angiogenesis",
+
+  // ── FDA ─────────────────────────────────────────────────────
+  "fda.section.badge": "Regulatory Framework",
+  "fda.section.title": "FDA-Approved Indications",
+  "fda.section.subtitle":
+    "The Undersea and Hyperbaric Medical Society (UHMS) recognizes 14 conditions for which HBOT is approved as a standard-of-care treatment, with evidence levels ranging from A (strong RCT evidence) to B (observational/expert consensus).",
+  "fda.view.table": "Table View",
+  "fda.view.cards": "Card View",
+  "fda.table.id": "#",
+  "fda.table.category": "Category",
+  "fda.table.condition": "Condition",
+  "fda.table.evidence": "Evidence",
+  "fda.table.level": "Level",
+  "fda.evidence.standard": "Standard of Care",
+  "fda.filter.all": "All",
+  "fda.btn.more": "More",
+  "fda.btn.less": "Less",
+  "fda.note":
+    "All 14 indications are recognized by the Undersea and Hyperbaric Medical Society (UHMS) and covered by Medicare/Medicaid in the United States. Evidence levels follow UHMS grading criteria.",
+
+  // ── Departments ─────────────────────────────────────────────
+  "dept.section.badge": "Clinical Integration",
+  "dept.section.title": "Department Application Mapping",
+  "dept.section.subtitle":
+    "Select a department to explore HBOT applications, evidence levels, and clinical protocols relevant to each specialty at Henry Dunant Hospital Center.",
+  "dept.select.prompt": "Select a department from the list to view its HBOT applications.",
+  "dept.applications.title": "HBOT Applications",
+  "dept.evidence.label": "Evidence",
+  "dept.refs.label": "References:",
+  "dept.type.approved": "FDA-Approved",
+  "dept.type.research": "Under Research",
+  "dept.type.emerging": "Emerging Evidence",
+  "dept.type.investigational": "Investigational / Preclinical",
+  "dept.counter.fda": "FDA",
+  "dept.counter.research": "Research",
+
+  // ── Longevity ───────────────────────────────────────────────
+  "longevity.section.badge": "Anti-Aging & Wellness",
+  "longevity.section.title": "Longevity & Wellness Applications",
+  "longevity.section.subtitle":
+    "Beyond established clinical indications, HBOT demonstrates compelling evidence for healthy aging, cognitive enhancement, and performance optimization — positioning it as a cornerstone of modern longevity medicine.",
+  "longevity.protocol.label": "Protocol:",
+  "longevity.refs.label": "Key References:",
+  "longevity.callout.title": "The Hyperoxic-Hypoxic Paradox",
+  "longevity.callout.body":
+    "HBOT creates a unique biological environment: repeated cycles of high-pressure oxygen followed by return to normal pressure generate a hormetic stress response. This paradox — using oxygen to fight oxidative aging — activates the body's most powerful endogenous repair mechanisms, including telomerase activation, senolytic pathways, and stem cell mobilization.",
+
+  // ── Evidence ────────────────────────────────────────────────
+  "evidence.section.badge": "Scientific Literature",
+  "evidence.section.title": "Evidence-Based Research",
+  "evidence.section.subtitle":
+    "Key peer-reviewed studies supporting HBOT applications across clinical specialties and longevity medicine, with evidence levels and direct links to source publications.",
+  "evidence.legend.title": "Evidence Levels:",
+  "evidence.level1": "Level I — Systematic reviews, meta-analyses, RCTs",
+  "evidence.level2": "Level II — Prospective cohort, clinical studies",
+  "evidence.level3": "Level III — Retrospective, case series",
+  "evidence.doi.label": "View Full Study",
+  "evidence.finding.label": "Key Finding",
+  "evidence.citations.label": "citations",
+  "evidence.summary.title": "Evidence Summary",
+  "evidence.summary.body": "The HBOT evidence base spans over 258 peer-reviewed publications, including multiple Level I randomized controlled trials and systematic reviews. The strongest evidence supports wound healing, decompression sickness, and carbon monoxide poisoning, while emerging Level I evidence now supports longevity and cognitive enhancement applications.",
+  "evidence.stat.rcts": "Level I RCTs",
+  "evidence.stat.rcts.sub": "Highest evidence",
+  "evidence.stat.meta": "Meta-Analyses",
+  "evidence.stat.meta.sub": "Pooled evidence",
+  "evidence.stat.citations": "Total Citations",
+  "evidence.stat.citations.sub": "Comprehensive base",
+  "evidence.banner.title": "Evidence Quality Note",
+  "evidence.banner.body":
+    "HBOT research quality has improved substantially in the past decade. Multiple Level I studies (RCTs and meta-analyses) now support applications in longevity, wound healing, and inflammatory conditions. Emerging indications are supported by Level II evidence with ongoing RCTs expected to upgrade evidence quality.",
+
+  // ── No HBOT ─────────────────────────────────────────────────
+  "nohbot.section.badge": "Scope Clarification",
+  "nohbot.section.title": "Departments Without Current HBOT Applications",
+  "nohbot.section.subtitle":
+    "The following departments at Henry Dunant Hospital Center do not currently have direct HBOT applications based on available evidence. This does not preclude future research or indirect roles in patient care pathways.",
+  "nohbot.criteria.title": "Exclusion Criteria",
+  "nohbot.criteria.body":
+    "Departments are listed here when: (1) no peer-reviewed evidence supports direct HBOT application in their primary scope of practice; (2) the department's function is diagnostic or supportive rather than therapeutic; or (3) HBOT would be managed by a referring department rather than the listed specialty itself.",
+  "nohbot.role.label": "Role in HBOT Program:",
+  "nohbot.note":
+    "This list reflects the evidence base as of 2025. Ongoing research may establish new indications. Departments listed here may still play important roles in patient selection, monitoring, and follow-up within a comprehensive HBOT program.",
+
+  // ── Strategy ────────────────────────────────────────────────
+  "strategy.section.badge": "Hospital Integration",
+  "strategy.section.title": "Strategic Recommendations",
+  "strategy.section.subtitle":
+    "A phased framework for integrating HBOT services at Henry Dunant Hospital Center, addressing clinical, operational, and market positioning dimensions.",
+  "strategy.priority.high": "High Priority",
+  "strategy.priority.medium": "Medium Priority",
+  "strategy.actions.label": "Key Actions:",
+  "strategy.market.badge": "Market Positioning",
+  "strategy.market.title": "The Longevity Medicine Market Opportunity",
+  "strategy.market.body": "The global longevity medicine market is projected to reach $44.2 billion by 2030. HBOT, with its unique combination of FDA-approved clinical applications and emerging evidence for healthy aging, positions Henry Dunant Hospital to capture both the clinical and premium wellness segments. A dedicated Hyperbaric Medicine Unit would be the first of its kind in Athens, establishing a significant competitive advantage in the Eastern Mediterranean healthcare market.",
+  "strategy.market.stat1": "Longevity Market by 2030",
+  "strategy.market.stat2": "In Athens (opportunity)",
+  "strategy.market.stat3.val": "Dual",
+  "strategy.market.stat3": "Clinical + Wellness Revenue",
+
+  // ── References ──────────────────────────────────────────────
+  "refs.section.badge": "Bibliography",
+  "refs.section.title": "Complete References",
+  "refs.section.subtitle":
+    "All 24 peer-reviewed sources cited in this clinical resource, with direct links to original publications.",
+  "refs.stat.sources": "Total Sources",
+  "refs.stat.rcts": "RCTs & Meta-Analyses",
+  "refs.stat.reviews": "Systematic Reviews",
+  "refs.stat.guidelines": "Clinical Guidelines",
+  "refs.doi.label": "View Source",
+  "refs.footer.pill": "HBOT Clinical Resource — Henry Dunant Hospital Center, Athens",
+  "refs.footer":
+    "All references accessed April 2025. DOI links direct to original publications. This resource is intended for clinical and educational purposes only and does not constitute medical advice.",
+};
