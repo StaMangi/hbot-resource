@@ -8,9 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 3.C — Tier 3 collection index pages.** Complete and deployed. Phase 4 plan written and committed (awaiting async Stamos review). Stamos has dropped `docs/sources/Other HBOT applications.pdf` into the repo — Phase 4 prerequisite satisfied.
+**Phase 3.D — Detail pages via dynamic routes.** Complete and deployed. Per the no-pause-after-3.D cadence, proceeding directly to 3.E (cross-links + BreadcrumbList schema + schema.org formalisation). 3.E is the next pause point.
 
-**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed; all 8 collection indexes now serve real content.
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed; all detail pages now serve real content.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -242,4 +242,6 @@ All real-target pillars ≥95. Compressed page weight across all 8 index pages: 
 - **2026-04-28** — Phase 3.B complete (homepage redesign · /clinical/ + /wellness/ landings · Nav redesign · 14 EL longevity strings backfilled into EN · 6 Phase 4 stubs · A11y contrast regression caught and fixed). Mobile A11y 95 → 100. Editorial-integrity precedent locked: never ship unsourced claims, even inherited ones, in either language. 99 routes deploying.
 - **2026-04-28** — `docs/PHASE-4-PLAN.md` committed. 10 sub-steps, ~37–48 sessions, scope locked to 5 PDF clusters + 3 standalone pages.
 - **2026-04-28** — Source PDF `docs/sources/Other HBOT applications.pdf` committed by Stamos. Phase 4.A prerequisite satisfied.
-- **2026-04-28** — Phase 3.C complete (7 reusable card components · 8 collection index pages × 2 locales = 16 routes built). Lighthouse spot-checks on /indications/ and /references/: 100/100/100/66 and 98/100/100/66. Compressed page weights 35–37 KB across all 8 indexes. Awaiting Stamos review before 3.D.
+- **2026-04-28** — Phase 3.C complete (7 reusable card components · 8 collection index pages × 2 locales = 16 routes built). Lighthouse spot-checks on /indications/ and /references/: 100/100/100/66 and 98/100/100/66. Compressed page weights 35–37 KB across all 8 indexes.
+- **2026-04-28** — Phase 4 plan amendments applied (PDF rename satisfied, 4.B extra-care note added, Greek glossary locked at end-of-4.B).
+- **2026-04-28** — Phase 3.D complete (`Breadcrumbs.astro` + `src/lib/refs.ts` cross-ref validator + 4 dynamic-route detail templates × 2 locales = 8 files generating 68 routes). Lighthouse on `/indications/refractory-osteomyelitis/`: 100/100/100/66 mobile + desktop after a11y contrast fix on inline text links (text-teal-700 hover:underline → always-underline pattern, applied across 12 files). FCP/LCP 1.0 s mobile. Proceeding to 3.E.
