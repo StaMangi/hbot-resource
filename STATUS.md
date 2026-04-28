@@ -8,9 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 2.F — Cloudflare Pages preview + Lighthouse.** Deployed and measured. Waiting for Stamos decision on the mobile-Performance fix before 2.E.
+**Phase 3.A — Foundation (font fix + URL stubs + 3 reusable layouts).** Complete and deployed. Waiting for Stamos approval before 3.B.
 
-**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase)
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). 93 routes deployed (3 existing + 6 landings + 16 indexes + 68 dynamic detail).
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -91,13 +91,48 @@
 - SEO drop is **artificial** — only failing audit is `is-crawlable`, caused by the deliberate `noindex` during preview. Will return to ≥95 when domain is attached and `noindex` flips off at Phase 6 launch.
 - **Mobile Performance 81 is below target.** Diagnosis: render-blocking external stylesheets (Google Fonts ~992ms + own _astro CSS ~450ms). Page weight only 110 KiB total; zero JS; zero unused CSS. The bottleneck is the font CDN, not the architecture. Four fix-path options written up in summary doc.
 
+## Phase 3.A (foundation) — done (this session)
+### 3.A.1 — Font fix (deferred Option C from 2.F)
+- `@fontsource/montserrat` (4 weights) + `@fontsource/lato` (3 weights), Latin + Latin-Ext subsets, total 14 woff2 files / 312 KB. Browser fetches only 3-4 based on weight + unicode-range.
+- Greek subsets not available in fontsource for either typeface (same as the original site — Lato never had Greek; Montserrat had it on Google CDN but fontsource omits it). Greek text on `/el/` falls back to system Greek fonts cleanly. Phase 5 polish can self-host Noto Sans Greek if visual fidelity on Greek pages becomes a concern.
+- `build.inlineStylesheets: 'always'` in `astro.config.ts` — all CSS inlined into per-page `<style>` block; eliminated the 2.F-flagged 450 ms render-blocking external CSS.
+- Google Fonts CDN `<link>` + preconnects removed from `BaseHead.astro`. Confirmed zero references to fonts.googleapis.com / fonts.gstatic.com in any built page.
+
+### 3.A.3 — Three reusable layouts
+- `src/layouts/LandingLayout.astro` — tier 1 + 2 (homepage, clinical, wellness). Hero slot + main slot.
+- `src/layouts/IndexLayout.astro` — collection index pages with built-in SectionHeader + breadcrumbs slot.
+- `src/layouts/DetailLayout.astro` — per-entry pages with two-column desktop (main + aside), single-column mobile, breadcrumbs/eyebrow/h1/main/aside slots.
+
+### 3.A.2 — URL stubs (30 new files, 76 routes generated)
+- 6 static landing stubs: `/clinical/`, `/wellness/`, `/about/` × EN + EL.
+- 16 index stubs: `/mechanisms/`, `/indications/`, `/departments/`, `/departments/without-hbot/`, `/longevity/`, `/evidence/`, `/references/`, `/protocols/` × EN + EL.
+- 8 dynamic `[slug].astro` stubs (4 collections × 2 locales) generating 68 detail routes.
+- Each stub renders `StubContent` placeholder labelled with its expected phase (3.B / 3.C / 3.D / 6).
+- All `noindex={true}` during preview.
+
+### Existing 2.D pages preserved (per Stamos amendment B)
+- `/`, `/el/`, `/404` continue to render the long-scroll homepage as fallback.
+- `src/components/sections/*.astro` and `src/components/HomePage.astro` stay in place; deletion happens at end of 3.F after card primitives are extracted.
+
+### Lighthouse — pass criterion met
+| Pillar | Mobile | Desktop | Target |
+|---|---|---|---|
+| Performance | **98** (was 81) | **100** (was 96) | ≥95 ✅ |
+| Accessibility | 95 | 95 | ≥95 ✅ |
+| Best Practices | 100 | 100 | ≥95 ✅ |
+| SEO | 66 | 66 | (deliberate noindex; flips at Phase 6) |
+
+Mobile FCP / LCP halved: 3.6 s → 1.8 s. Reports in `docs/3a-lighthouse-{mobile,desktop}.report.{html,json}` + `docs/3a-lighthouse-summary.md`.
+
+### Build verification
+- `astro check`: 0 errors / 0 warnings / 0 hints across 60 files.
+- `pnpm build`: 93 routes built in 1.43 s.
+- Sitemap: 92 routes (404 excluded), EN/EL alternates wired.
+- Quadruple-grep clean in `src/`, `dist/`, `public/`.
+
 ## What's next (waiting on Stamos)
-1. **Decide mobile-Performance fix path** (see `docs/2d-lighthouse-summary.md`):
-   - Option A: self-host fonts (recommended)
-   - Option B: inline critical CSS
-   - Option C: A + B (highest score, ~400 KB repo cost) — **my recommendation**
-   - Option D: defer to Phase 5 polish
-2. After decision, proceed with **2.E (React islands)** — port `ApplicationsExplorer` and `ProtocolComparison` as `client:visible` islands.
+1. **Review 3.A** — visit https://hbot-resource.pages.dev (long-scroll still at /, but try /clinical/, /wellness/, /mechanisms/, /mechanisms/hyperoxygenation/, etc. to see the stub structure and three layouts in action).
+2. Approve **3.B** — homepage + /clinical/ + /wellness/ + Nav redesign. Includes EN backfill of the 14 EL-only longevity strings (per Stamos amendment 2).
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -111,4 +146,6 @@
 - **2026-04-28** — Phase 2.B complete (80 content entries migrated to YAML, de-branded, Zod-validated, build clean).
 - **2026-04-28** — Phase 2.C complete (i18n ported with de-brand, Nav + Footer built, Red Cross stealth reference caught and dropped, all four forbidden patterns clean in shippable code).
 - **2026-04-28** — Phase 2.D complete (9 section components rendering from content collections, long-scroll homepage in EN + EL, 80 content entries surfaced, gzipped pages 27/33 KB, build clean). Lighthouse-local blocked on Brave headless quirk; deferred to 2.F.
-- **2026-04-28** — Phase 2.F complete (Cloudflare Pages connected, hbot-resource.pages.dev live, Lighthouse measured against HTTPS preview). Mobile Performance 81 flagged as below target — render-blocking font/CSS issue. Awaiting fix-path decision before 2.E.
+- **2026-04-28** — Phase 2.F complete (Cloudflare Pages connected, hbot-resource.pages.dev live, Lighthouse measured against HTTPS preview). Mobile Performance 81 flagged as below target — render-blocking font/CSS issue. Decision: defer Option C font fix into Phase 3.A.
+- **2026-04-28** — Phase 3 plan written and approved (`docs/PHASE-3-PLAN.md`). 6 sub-steps (3.A through 3.F), 4 stop points, ~18 sessions, ~90 routes target. Zero React islands.
+- **2026-04-28** — Phase 3.A complete (self-hosted fonts + inline critical CSS + 3 reusable layouts + 30 URL stubs / 76 routes). Mobile Performance lifted 81 → 98, FCP/LCP halved to 1.8 s. All real-target pillars ≥95. 93 pages now deploying. Existing long-scroll homepage preserved as fallback per amendment B. Awaiting Stamos review before 3.B.
