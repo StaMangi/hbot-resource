@@ -1,0 +1,25 @@
+legacyId: 11
+category:
+  en: "Wound Healing"
+  el: "Επούλωση Τραυμάτων"
+condition:
+  en: "Delayed Radiation Injury (Soft Tissue & Bony Necrosis)"
+  el: "Καθυστερημένη Ακτινοβολική Βλάβη (Νέκρωση Μαλακών Ιστών & Οστού)"
+description:
+  en: "Treatment for osteoradionecrosis and soft tissue radiation necrosis. Promotes angiogenesis in hypoxic, hypovascular, hypocellular tissue."
+  el: "Θεραπεία για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "30 – 60"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[12]"

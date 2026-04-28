@@ -1,0 +1,25 @@
+title:
+  en: "Collagen Production & Skin Health"
+  el: "Παραγωγή Κολλαγόνου & Υγεία Δέρματος"
+icon: "Layers"
+stat: "3×"
+statLabel:
+  en: "Increase in collagen III formation"
+  el: "Αύξηση σχηματισμού κολλαγόνου τύπου ΙΙΙ"
+color: "navy"
+summary:
+  en: "HBOT stimulates collagen III formation and increases overall collagen production through growth factor upregulation, supporting skin elasticity, joint health, and connective tissue integrity."
+  el: "Η HBOT διεγείρει σχηματισμό κολλαγόνου τύπου ΙΙΙ και αυξάνει συνολική παραγωγή κολλαγόνου μέσω ανύψωσης αυξητικών παραγόντων, υποστηρίζοντας ελαστικότητα δέρματος, υγεία αρθρώσεων και ακεραιότητα συνδετικού ιστού."
+mechanism:
+  en: "Hyperoxia upregulates VEGF, PDGF, and FGF, promoting fibroblast proliferation and collagen synthesis. HBOT also enhances hydroxylation of proline and lysine residues, critical steps in collagen cross-linking and tissue strength."
+  el: "Η υπεροξία ανεβάζει VEGF, PDGF και FGF, προάγοντας πολλαπλασιασμό ινοβλαστών και σύνθεση κολλαγόνου. Η HBOT επίσης ενισχύει υδροξυλίωση καταλοίπων προλίνης και λυσίνης, κρίσιμα βήματα στη διασύνδεση κολλαγόνου και αντοχή ιστού."
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "20 – 40"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "Clinical Research"
+    el: "Κλινική Έρευνα"
+refs:
+  - "[11]"

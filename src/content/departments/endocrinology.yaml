@@ -1,0 +1,67 @@
+name:
+  en: "Endocrinology & Metabolism"
+  el: "Ενδοκρινολογία & Μεταβολισμός"
+icon: "Zap"
+color: "#d97706"
+shortDesc:
+  en: "Diabetic Foot, Metabolic Syndrome, Nephropathy"
+  el: "Διαβητικό Πόδι, Μεταβολικό Σύνδρομο, Νεφροπάθεια"
+applications:
+  - title:
+      en: "Diabetic Foot Ulcers"
+      el: "Διαβητικά Έλκη Ποδιού"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Most recognized HBOT application. Significantly improves complete healing rates in ischemic diabetic foot ulcers, reducing amputation rates when combined with standard wound care."
+      el: "Η πιο αναγνωρισμένη εφαρμογή HBOT. Βελτιώνει σημαντικά ποσοστά πλήρους επούλωσης σε ισχαιμικά διαβητικά έλκη ποδιού, μειώνοντας ποσοστά ακρωτηριασμού σε συνδυασμό με τυπική φροντίδα τραύματος."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "30 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+      - "[13]"
+  - title:
+      en: "Diabetic Nephropathy"
+      el: "Διαβητική Νεφροπάθεια"
+    type: "Research"
+    typeColor: "orange"
+    description:
+      en: "Preclinical and early clinical studies demonstrate HBOT suppresses biomarkers of cell stress and kidney injury in diabetic models, suggesting renoprotective effects."
+      el: "Προκλινικές και πρώιμες κλινικές μελέτες δείχνουν ότι η HBOT καταστέλλει βιοδείκτες κυτταρικού στρες και νεφρικής βλάβης σε διαβητικά μοντέλα, υποδηλώνοντας νεφροπροστατευτικά αποτελέσματα."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 30"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Clinical Research"
+        el: "Κλινική Έρευνα"
+    refs:
+      - "[18]"
+  - title:
+      en: "Insulin Sensitivity & Metabolic Syndrome"
+      el: "Ευαισθησία Ινσουλίνης & Μεταβολικό Σύνδρομο"
+    type: "Research"
+    typeColor: "orange"
+    description:
+      en: "Emerging evidence suggests HBOT may improve insulin sensitivity and reduce metabolic syndrome markers through enhanced mitochondrial function and reduced inflammation."
+      el: "Αναδυόμενα στοιχεία υποδηλώνουν ότι η HBOT μπορεί να βελτιώσει ευαισθησία ινσουλίνης και να μειώσει δείκτες μεταβολικού συνδρόμου μέσω ενισχυμένης μιτοχονδριακής λειτουργίας και μειωμένης φλεγμονής."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "20 – 30"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Investigational"
+        el: "Ερευνητικό"
+    refs:
+      - "[18]"

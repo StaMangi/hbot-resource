@@ -8,7 +8,7 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 2.A — Bootstrap.** Complete. Waiting for Stamos review before 2.B.
+**Phase 2.B — Content migration.** Complete. Waiting for Stamos review before 2.C.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -28,9 +28,19 @@
 - GitHub repo created: https://github.com/StaMangi/hbot-resource (public)
 - Initial commit pushed to `main`. CHANGELOG attributes Henry Dunant source.
 
+## Phase 2.B (content migration) — done (this session)
+- Domain placeholder fixed (`hbotresource.com` → `hbotscience.org`) before content migration.
+- `src/content.config.ts` defines Zod schemas for 9 collections with bilingual EN/EL fields.
+- `scripts/migrate-content.mjs` reads `data-export/hbot-content.json`, applies de-branding rewrites, generates per-entry YAML files.
+- **80 entries written** across 9 collections:
+  - mechanisms (5) · indications (14) · departments (9) · departments-without-hbot (6) · longevity (6) · research-studies (8) · strategic-recommendations (4) · references (24) · site-stats (4)
+- De-branding pass rewrote one entry (`strategic-recommendations/research`) to drop "Henry Dunant Hospital" and "Eastern Mediterranean region" — both EN and EL.
+- Verification: zero "Henry Dunant" or "Νοσοκομείο Henry" matches anywhere in `src/content/`.
+- Build clean: Astro loads + validates all 80 entries against Zod schemas, ~1 second.
+
 ## What's next (waiting on Stamos)
-1. **Review the 2.A output** — clone the repo locally, run `pnpm install && pnpm dev`, visit http://localhost:4321 and http://localhost:4321/el/. Or just review the GitHub repo.
-2. Approve **2.B (content migration)** — Zod schemas + script that splits `hbot-content.json` into per-entry YAML files in `src/content/`.
+1. **Review the 2.B output** — sample YAML files in chat, full tree on GitHub at `src/content/`.
+2. Approve **2.C (i18n + base shell)** — port EN/EL strings into `src/i18n/`, build de-branded `Nav.astro` and `Footer.astro`, set up language toggle, ensure every existing page still passes through `BaseLayout`/`BaseHead` cleanly.
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -39,4 +49,6 @@
 
 ## Phase log
 - **2026-04-28** — Phase 1 complete (inventory + baseline + content export + Phase 2 plan).
-- **2026-04-28** — Phase 2.A complete (Astro shell + repo + initial commit pushed). Waiting for review before 2.B.
+- **2026-04-28** — Phase 2.A complete (Astro shell + repo + initial commit pushed).
+- **2026-04-28** — Domain corrected to `hbotscience.org`.
+- **2026-04-28** — Phase 2.B complete (80 content entries migrated to YAML, de-branded, Zod-validated, build clean). Waiting for review before 2.C.

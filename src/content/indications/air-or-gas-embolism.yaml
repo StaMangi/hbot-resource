@@ -1,0 +1,25 @@
+legacyId: 1
+category:
+  en: "Acute Ischemias"
+  el: "Οξείες Ισχαιμίες"
+condition:
+  en: "Air or Gas Embolism"
+  el: "Αεροεμβολή ή Εμβολή Αερίου"
+description:
+  en: "Intravascular gas bubbles causing arterial obstruction. HBOT reduces bubble volume and promotes nitrogen elimination."
+  el: "Ενδοαγγειακές φυσαλίδες αερίου που προκαλούν αρτηριακή απόφραξη. Η HBOT μειώνει τον όγκο φυσαλίδων και προάγει αποβολή αζώτου."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.8 – 3.0 ATA"
+  duration: "90 min"
+  sessions: "1 – 3 (emergency)"
+  frequency: "Continuous until stable"
+  basis:
+    en: "UHMS / Emergency Standard"
+    el: "UHMS / Επείγον Πρότυπο"
+refs:
+  - "[1]"
+  - "[2]"

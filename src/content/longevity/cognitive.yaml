@@ -1,0 +1,26 @@
+title:
+  en: "Cognitive Enhancement"
+  el: "Γνωστική Ενίσχυση"
+icon: "Brain"
+stat: "16.5%"
+statLabel:
+  en: "Improvement in attention & processing speed"
+  el: "Βελτίωση προσοχής & ταχύτητας επεξεργασίας"
+color: "teal"
+summary:
+  en: "Randomized controlled trial in healthy older adults showed significant cognitive enhancements including memory, processing speed, and executive function improvements correlated with increased cerebral blood flow."
+  el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή σε υγιείς ηλικιωμένους έδειξε σημαντικές γνωστικές ενισχύσεις συμπεριλαμβανομένης βελτίωσης μνήμης, ταχύτητας επεξεργασίας και εκτελεστικής λειτουργίας που συσχετίζονται με αυξημένη εγκεφαλική αιματική ροή."
+mechanism:
+  en: "HBOT increases regional cerebral blood flow, promotes neuroplasticity through BDNF upregulation, reduces neuroinflammation, and supports hippocampal neurogenesis — all mechanisms diminished with normal aging."
+  el: "Η HBOT αυξάνει περιφερειακή εγκεφαλική αιματική ροή, προάγει νευροπλαστικότητα μέσω ανύψωσης BDNF, μειώνει νευροφλεγμονή και υποστηρίζει ιπποκαμπική νευρογένεση — όλοι μηχανισμοί που μειώνονται με την κανονική γήρανση."
+protocol:
+  ata: "2.0 ATA"
+  duration: "90 min"
+  sessions: "60"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "Hadanny et al., 2020 (RCT)"
+    el: "Hadanny et al., 2020 (ΤΕΔ)"
+refs:
+  - "[4]"
+  - "[8]"

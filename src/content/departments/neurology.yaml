@@ -1,0 +1,104 @@
+name:
+  en: "Neurology"
+  el: "Νευρολογία"
+icon: "Brain"
+color: "#7c3aed"
+shortDesc:
+  en: "TBI, Stroke, Dementia, Cognitive Enhancement"
+  el: "ΕΚΤ, Εγκεφαλικό, Άνοια, Γνωστική Ενίσχυση"
+applications:
+  - title:
+      en: "Mild Traumatic Brain Injury (mTBI)"
+      el: "Ήπια Κρανιοεγκεφαλική Κάκωση (ΗΚΕ)"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "B-level evidence from clinical trials demonstrating improvements in neurocognitive deficits, post-concussion symptoms, and brain microstructure in mTBI patients."
+      el: "Τεκμηρίωση επιπέδου Β από κλινικές δοκιμές που αποδεικνύουν βελτιώσεις σε νευρογνωστικά ελλείμματα, συμπτώματα μετά από διάσειση και μικροδομή εγκεφάλου σε ασθενείς με ΗΚΕ."
+    evidence: "Level B"
+    protocol:
+      ata: "1.5 – 2.0 ATA"
+      duration: "60 – 90 min"
+      sessions: "40 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Level B Evidence"
+        el: "Τεκμηρίωση Επιπέδου Β"
+    refs:
+      - "[15]"
+  - title:
+      en: "Stroke Recovery"
+      el: "Αποκατάσταση Εγκεφαλικού"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Investigational adjunctive therapy for ischemic stroke recovery. HBOT promotes neuroplasticity, reduces peri-infarct hypoxia, and may improve functional outcomes."
+      el: "Ερευνητική επικουρική θεραπεία για αποκατάσταση ισχαιμικού εγκεφαλικού. Η HBOT προάγει νευροπλαστικότητα, μειώνει περι-εμφρακτική υποξία και μπορεί να βελτιώσει λειτουργικά αποτελέσματα."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "40 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Clinical Research"
+        el: "Κλινική Έρευνα"
+    refs:
+      - "[16]"
+  - title:
+      en: "Vascular Dementia"
+      el: "Αγγειακή Άνοια"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "HBOT reverses chronic cerebral hypoperfusion and promotes angiogenesis in brain tissue. Clinical studies show improvements in cognitive function in vascular dementia patients."
+      el: "Η HBOT αντιστρέφει χρόνια εγκεφαλική υποαιμάτωση και προάγει αγγειογένεση σε εγκεφαλικό ιστό. Κλινικές μελέτες δείχνουν βελτιώσεις σε γνωστική λειτουργία σε ασθενείς με αγγειακή άνοια."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Clinical Research"
+        el: "Κλινική Έρευνα"
+    refs:
+      - "[16]"
+  - title:
+      en: "Cognitive Enhancement in Healthy Aging"
+      el: "Γνωστική Ενίσχυση στην Υγιή Γήρανση"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Randomized controlled trial demonstrated significant cognitive enhancements in healthy older adults, including memory and processing speed improvements correlated with increased cerebral blood flow."
+      el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή απέδειξε σημαντικές γνωστικές ενισχύσεις σε υγιείς ηλικιωμένους, συμπεριλαμβανομένης βελτίωσης μνήμης και ταχύτητας επεξεργασίας που συσχετίζονται με αυξημένη εγκεφαλική αιματική ροή."
+    evidence: "Level A (RCT)"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "RCT (Hadanny et al., 2020)"
+        el: "ΤΕΔ (Hadanny et al., 2020)"
+    refs:
+      - "[4]"
+  - title:
+      en: "Neurodegenerative Diseases"
+      el: "Νευροεκφυλιστικές Παθήσεις"
+    type: "Research"
+    typeColor: "orange"
+    description:
+      en: "Emerging preclinical and early clinical evidence for Alzheimer's disease and Parkinson's disease. HBOT reduces neuroinflammation and promotes neurogenesis."
+      el: "Αναδυόμενα προκλινικά και πρώιμα κλινικά στοιχεία για νόσο Alzheimer και Parkinson. Η HBOT μειώνει νευροφλεγμονή και προάγει νευρογένεση."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "40 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Preclinical / Early Phase"
+        el: "Προκλινικό / Πρώιμη Φάση"
+    refs:
+      - "[8]"

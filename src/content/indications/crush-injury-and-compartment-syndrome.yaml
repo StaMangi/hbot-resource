@@ -1,0 +1,25 @@
+legacyId: 4
+category:
+  en: "Acute Ischemias"
+  el: "Οξείες Ισχαιμίες"
+condition:
+  en: "Crush Injury & Compartment Syndrome"
+  el: "Τραύμα Σύνθλιψης & Σύνδρομο Διαμερίσματος"
+description:
+  en: "Reduces post-ischemic edema, preserves threatened tissue, and accelerates healing in traumatic crush injuries."
+  el: "Μειώνει μετα-ισχαιμικό οίδημα, διατηρεί απειλούμενο ιστό και επιταχύνει επούλωση σε τραυματικές κακώσεις σύνθλιψης."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "30 – 40"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / FDA-Approved"
+    el: "UHMS / FDA-Εγκεκριμένο"
+refs:
+  - "[1]"
+  - "[5]"

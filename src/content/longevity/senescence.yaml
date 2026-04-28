@@ -1,0 +1,25 @@
+title:
+  en: "Senescent Cell Clearance"
+  el: "Εκκαθάριση Γηρασμένων Κυττάρων"
+icon: "Trash2"
+stat: "37%"
+statLabel:
+  en: "Reduction in senescent T-cells"
+  el: "Μείωση γηρασμένων T-κυττάρων"
+color: "navy"
+summary:
+  en: "The same landmark study demonstrated significant reduction in senescent (dysfunctional) immune cells — the first senolytic effect demonstrated through a non-pharmacological intervention."
+  el: "Η ίδια σταθμός μελέτη απέδειξε σημαντική μείωση γηρασμένων (δυσλειτουργικών) ανοσοκυττάρων — το πρώτο σενολυτικό αποτέλεσμα που αποδείχθηκε μέσω μη φαρμακολογικής παρέμβασης."
+mechanism:
+  en: "HBOT induces selective apoptosis of senescent cells through ROS-mediated signaling pathways. Senescent cells accumulate with age and drive the 'inflammaging' phenotype associated with age-related diseases."
+  el: "Η HBOT επάγει εκλεκτική απόπτωση γηρασμένων κυττάρων μέσω σηματοδοτικών μονοπατιών μεσολαβούμενων από ROS. Τα γηρασμένα κύτταρα συσσωρεύονται με την ηλικία και οδηγούν τον φαινότυπο 'φλεγμονώδους γήρανσης' που σχετίζεται με ηλικιακές παθήσεις."
+protocol:
+  ata: "2.0 ATA"
+  duration: "90 min"
+  sessions: "60"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "Hadanny et al., 2020 (RCT)"
+    el: "Hadanny et al., 2020 (ΤΕΔ)"
+refs:
+  - "[3]"

@@ -1,0 +1,25 @@
+title:
+  en: "Stem Cell Mobilization"
+  el: "Κινητοποίηση Βλαστοκυττάρων"
+icon: "Sparkles"
+stat: "8×"
+statLabel:
+  en: "Increase in circulating stem cells"
+  el: "Αύξηση κυκλοφορούντων βλαστοκυττάρων"
+color: "navy"
+summary:
+  en: "HBOT mobilizes bone marrow stem cells into circulation at rates up to 8-fold above baseline, enhancing the body's regenerative capacity for tissue repair and organ maintenance."
+  el: "Η HBOT κινητοποιεί βλαστοκύτταρα μυελού οστών στην κυκλοφορία σε ρυθμούς έως 8 φορές πάνω από τη βάση, ενισχύοντας αναγεννητική ικανότητα του σώματος για επισκευή ιστών και συντήρηση οργάνων."
+mechanism:
+  en: "Hyperoxia activates endothelial nitric oxide synthase (eNOS), which triggers stem cell mobilization from bone marrow niches. Increased circulating stem progenitor cells (SPCs) differentiate into various cell types to repair damaged tissues."
+  el: "Η υπεροξία ενεργοποιεί ενδοθηλιακή συνθάση μονοξειδίου αζώτου (eNOS), η οποία ενεργοποιεί κινητοποίηση βλαστοκυττάρων από θέσεις μυελού οστών. Αυξημένα κυκλοφορούντα πρόδρομα βλαστοκύτταρα (SPCs) διαφοροποιούνται σε διάφορους τύπους κυττάρων για επισκευή κατεστραμμένων ιστών."
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "20 – 40"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "Thom et al., 2006 / Clinical Research"
+    el: "Thom et al., 2006 / Κλινική Έρευνα"
+refs:
+  - "[6]"

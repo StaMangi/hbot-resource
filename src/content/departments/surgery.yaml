@@ -1,0 +1,123 @@
+name:
+  en: "Surgery Sector"
+  el: "Χειρουργικός Τομέας"
+icon: "Scissors"
+color: "#0e7490"
+shortDesc:
+  en: "Orthopedics, Plastic, Cardiothoracic, Vascular"
+  el: "Ορθοπεδική, Πλαστική, Καρδιοθωρακοχειρουργική, Αγγειοχειρουργική"
+applications:
+  - title:
+      en: "Refractory Osteomyelitis"
+      el: "Ανθεκτική Οστεομυελίτιδα"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Standard-of-care adjunctive treatment for chronic osteomyelitis unresponsive to conventional therapy. HBOT enhances leukocyte killing in avascular bone and promotes neovascularization."
+      el: "Επικουρική θεραπεία πρότυπου φροντίδας για χρόνια οστεομυελίτιδα μη ανταποκρινόμενη σε συμβατική θεραπεία. Η HBOT ενισχύει λευκοκυτταρική θανάτωση σε αναίμακτο οστό και προάγει νεοαγγείωση."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "30 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+  - title:
+      en: "Crush Injuries & Compartment Syndrome"
+      el: "Κακώσεις Σύνθλιψης & Σύνδρομο Διαμερίσματος"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Approved for acute traumatic ischemias. Reduces post-ischemic edema and preserves threatened tissue in severe crush injuries."
+      el: "Εγκεκριμένη για οξείες τραυματικές ισχαιμίες. Μειώνει μετα-ισχαιμικό οίδημα και διατηρεί απειλούμενο ιστό σε σοβαρές κακώσεις σύνθλιψης."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "10 – 20"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+  - title:
+      en: "Compromised Skin Grafts & Flaps"
+      el: "Επικινδυνεύοντα Δερματικά Μοσχεύματα & Κρημνοί"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Salvage therapy for ischemic reconstructive flaps and skin grafts. Reduces hypoxic necrosis through enhanced tissue oxygenation and angiogenesis."
+      el: "Σωτήρια θεραπεία για ισχαιμικούς ανακατασκευαστικούς κρημνούς και δερματικά μοσχεύματα. Μειώνει υποξική νέκρωση μέσω ενισχυμένης οξυγόνωσης ιστών και αγγειογένεσης."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 30"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+  - title:
+      en: "Postoperative Recovery (TKA)"
+      el: "Μετεγχειρητική Αποκατάσταση (ΟΑΓ)"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Emerging evidence shows HBOT accelerates recovery and reduces muscle damage following total knee arthroplasty and major orthopedic procedures."
+      el: "Αναδυόμενα στοιχεία δείχνουν ότι η HBOT επιταχύνει αποκατάσταση και μειώνει μυϊκή βλάβη μετά από ολική αρθροπλαστική γόνατος και μεγάλες ορθοπεδικές επεμβάσεις."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "10 – 20"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Clinical Research"
+        el: "Κλινική Έρευνα"
+    refs:
+      - "[10]"
+  - title:
+      en: "Thermal Burns"
+      el: "Θερμικά Εγκαύματα"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Adjunctive treatment for acute thermal burns. Reduces edema, promotes epithelialization, and decreases infection risk."
+      el: "Επικουρική θεραπεία για οξεία θερμικά εγκαύματα. Μειώνει οίδημα, προάγει επιθηλιοποίηση και μειώνει κίνδυνο λοίμωξης."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 30"
+      frequency: "Once or twice daily"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[1]"
+  - title:
+      en: "Therapeutic Angiogenesis (Cardiac)"
+      el: "Θεραπευτική Αγγειογένεση (Καρδιακή)"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Investigational use for chronic stable ischemic heart disease and post-MI left ventricular function improvement through VEGF-mediated angiogenesis."
+      el: "Ερευνητική χρήση για χρόνια σταθερή ισχαιμική καρδιοπάθεια και βελτίωση λειτουργίας αριστερής κοιλίας μετά από ΕΜ μέσω αγγειογένεσης μεσολαβούμενης από VEGF."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "30 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Investigational"
+        el: "Ερευνητικό"
+    refs:
+      - "[12]"

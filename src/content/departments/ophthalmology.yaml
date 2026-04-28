@@ -1,0 +1,48 @@
+name:
+  en: "Ophthalmology"
+  el: "Οφθαλμολογία"
+icon: "Eye"
+color: "#4f46e5"
+shortDesc:
+  en: "Retinal Artery Occlusion, Retinal Ischemia"
+  el: "Απόφραξη Αμφιβληστροειδικής Αρτηρίας, Ισχαιμία Αμφιβληστροειδούς"
+applications:
+  - title:
+      en: "Central Retinal Artery Occlusion (CRAO)"
+      el: "Απόφραξη Κεντρικής Αρτηρίας Αμφιβληστροειδούς (ΑΚΑΑ)"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Emergency FDA-approved treatment. Early HBOT intervention (within 24 hours) preserves retinal layers and improves visual acuity by reversing acute retinal ischemia."
+      el: "Επείγουσα εγκεκριμένη θεραπεία FDA. Η έγκαιρη παρέμβαση HBOT (εντός 24 ωρών) διατηρεί στρώματα αμφιβληστροειδούς και βελτιώνει οπτική οξύτητα αντιστρέφοντας οξεία αμφιβληστροειδική ισχαιμία."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.8 ATA"
+      duration: "90 min"
+      sessions: "1 – 3 (emergency)"
+      frequency: "Immediately, then daily"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+      - "[19]"
+  - title:
+      en: "Diabetic Retinopathy"
+      el: "Διαβητική Αμφιβληστροειδοπάθεια"
+    type: "Research"
+    typeColor: "orange"
+    description:
+      en: "Investigational use for early-stage diabetic retinopathy. HBOT may reduce retinal hypoxia and slow progression of vascular changes."
+      el: "Ερευνητική χρήση για πρώιμο στάδιο διαβητικής αμφιβληστροειδοπάθειας. Η HBOT μπορεί να μειώσει αμφιβληστροειδική υποξία και να επιβραδύνει εξέλιξη αγγειακών αλλαγών."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 30"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Investigational"
+        el: "Ερευνητικό"
+    refs:
+      - "[2]"

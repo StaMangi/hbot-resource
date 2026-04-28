@@ -1,0 +1,10 @@
+name:
+  en: "Kidney Dialysis Unit"
+  el: "Μονάδα Νεφρικής Αιμοκάθαρσης"
+icon: "Droplet"
+rationale:
+  en: "While emerging research explores HBOT for chronic kidney disease and diabetic nephropathy, it is not currently a treatment modality utilized within a standard dialysis unit. Dialysis patients have complex vascular access requirements and hemodynamic instability that complicate hyperbaric treatment. This remains a preclinical area of investigation."
+  el: "Ενώ αναδυόμενη έρευνα εξερευνά την HBOT για χρόνια νεφρική νόσο και διαβητική νεφροπάθεια, δεν αποτελεί επί του παρόντος θεραπευτική μέθοδο που χρησιμοποιείται εντός τυπικής μονάδας αιμοκάθαρσης. Ασθενείς αιμοκάθαρσης έχουν σύνθετες απαιτήσεις αγγειακής πρόσβασης και αιμοδυναμική αστάθεια που περιπλέκουν υπερβαρική θεραπεία."
+role:
+  en: "No current clinical application; preclinical research ongoing"
+  el: "Καμία τρέχουσα κλινική εφαρμογή· προκλινική έρευνα σε εξέλιξη"

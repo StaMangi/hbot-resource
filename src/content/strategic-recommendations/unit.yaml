@@ -1,0 +1,19 @@
+title:
+  en: "Establish a Dedicated Hyperbaric Medicine Unit"
+  el: "Ίδρυση Αφιερωμένης Μονάδας Υπερβαρικής Ιατρικής"
+icon: "Building2"
+priority: "High"
+description:
+  en: "Create a specialized department staffed with certified hyperbaric physicians, trained nurses, and hyperbaric technicians. A multiplace chamber (6–12 seats) enables simultaneous treatment of multiple patients and allows full monitoring of critically ill patients."
+  el: "Δημιουργία εξειδικευμένου τμήματος με πιστοποιημένους υπερβαρικούς ιατρούς, εκπαιδευμένες νοσηλεύτριες και υπερβαρικούς τεχνικούς. Ένας πολυθέσιος θάλαμος (6–12 θέσεις) επιτρέπει ταυτόχρονη θεραπεία πολλαπλών ασθενών και πλήρη παρακολούθηση κρίσιμα ασθενών."
+actions:
+  en:
+    - "Recruit a board-certified hyperbaric medicine physician"
+    - "Install multiplace chamber with full ICU monitoring capability"
+    - "Establish UHMS-compliant safety protocols and staff training"
+    - "Integrate with existing surgical and internal medicine departments"
+  el:
+    - "Πρόσληψη πιστοποιημένου ιατρού υπερβαρικής ιατρικής"
+    - "Εγκατάσταση πολυθέσιου θαλάμου με πλήρη δυνατότητα παρακολούθησης ΜΕΘ"
+    - "Καθιέρωση πρωτοκόλλων ασφαλείας συμβατών με UHMS και εκπαίδευση προσωπικού"
+    - "Ενσωμάτωση με υπάρχοντα χειρουργικά και παθολογικά τμήματα"

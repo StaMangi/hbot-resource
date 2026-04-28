@@ -1,0 +1,19 @@
+title:
+  en: "Clinical Research Initiatives"
+  el: "Κλινικές Ερευνητικές Πρωτοβουλίες"
+icon: "FlaskConical"
+priority: "Medium"
+description:
+  en: "Establish clinical research partnerships to conduct trials on emerging indications, contributing to the international hyperbaric medicine evidence base."
+  el: "Καθιέρωση κλινικών ερευνητικών συνεργασιών για διεξαγωγή δοκιμών σε αναδυόμενες ενδείξεις, συμβάλλοντας στη διεθνή βάση τεκμηρίωσης της υπερβαρικής ιατρικής."
+actions:
+  en:
+    - "IBD clinical trial with Gastroenterology"
+    - "Neurological disorders research program"
+    - "Cognitive enhancement in aging cohort study"
+    - "Longevity biomarker tracking program"
+  el:
+    - "Κλινική δοκιμή ΦΝΕ με Γαστρεντερολογία"
+    - "Ερευνητικό πρόγραμμα νευρολογικών διαταραχών"
+    - "Μελέτη κοόρτης γνωστικής ενίσχυσης στη γήρανση"
+    - "Πρόγραμμα παρακολούθησης βιοδεικτών μακροζωίας"

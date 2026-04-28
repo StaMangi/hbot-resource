@@ -1,0 +1,25 @@
+title:
+  en: "Athletic Performance & Recovery"
+  el: "Αθλητική Απόδοση & Αποκατάσταση"
+icon: "Zap"
+stat: "50%"
+statLabel:
+  en: "Faster muscle recovery"
+  el: "Ταχύτερη μυϊκή αποκατάσταση"
+color: "teal"
+summary:
+  en: "Systematic review and meta-analysis demonstrates consistent benefits including 30-50% faster muscle recovery, reduced exercise-induced muscle damage, decreased inflammation markers, and enhanced endurance capacity."
+  el: "Συστηματική ανασκόπηση και μετα-ανάλυση αποδεικνύει συνεπή οφέλη συμπεριλαμβανομένης 30-50% ταχύτερης μυϊκής αποκατάστασης, μειωμένης μυϊκής βλάβης από άσκηση, μειωμένων δεικτών φλεγμονής και ενισχυμένης ικανότητας αντοχής."
+mechanism:
+  en: "HBOT increases oxygen availability to muscle tissue, accelerating ATP production and enhancing natural repair mechanisms. It reduces pro-inflammatory cytokines (IL-6, TNF-α) that impede recovery and promotes satellite cell activation for muscle regeneration."
+  el: "Η HBOT αυξάνει διαθεσιμότητα οξυγόνου στον μυϊκό ιστό, επιταχύνοντας παραγωγή ATP και ενισχύοντας φυσικούς μηχανισμούς επισκευής. Μειώνει προ-φλεγμονώδεις κυτοκίνες (IL-6, TNF-α) που εμποδίζουν αποκατάσταση και προάγει ενεργοποίηση δορυφορικών κυττάρων για μυϊκή αναγέννηση."
+protocol:
+  ata: "1.5 – 2.4 ATA"
+  duration: "60 – 90 min"
+  sessions: "10 – 20 per cycle"
+  frequency: "Post-exercise or daily"
+  basis:
+    en: "Systematic Review & Meta-Analysis"
+    el: "Συστηματική Ανασκόπηση & Μετα-Ανάλυση"
+refs:
+  - "[22]"

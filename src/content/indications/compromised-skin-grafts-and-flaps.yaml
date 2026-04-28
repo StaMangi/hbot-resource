@@ -1,0 +1,25 @@
+legacyId: 12
+category:
+  en: "Acute Ischemias"
+  el: "Οξείες Ισχαιμίες"
+condition:
+  en: "Compromised Skin Grafts & Flaps"
+  el: "Επικινδυνεύοντα Δερματικά Μοσχεύματα & Κρημνοί"
+description:
+  en: "Salvage therapy for ischemic skin grafts and flaps. Reduces hypoxic necrosis and promotes graft survival through enhanced oxygenation."
+  el: "Σωτήρια θεραπεία για ισχαιμικά δερματικά μοσχεύματα και κρημνούς. Μειώνει υποξική νέκρωση και προάγει επιβίωση μοσχεύματος μέσω ενισχυμένης οξυγόνωσης."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "20 – 30"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[13]"

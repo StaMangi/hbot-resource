@@ -1,0 +1,14 @@
+title:
+  en: "Neovascularization & Angiogenesis"
+  el: "Νεοαγγείωση & Αγγειογένεση"
+icon: "GitBranch"
+color: "navy"
+summary:
+  en: "Hyperoxia stimulates VEGF, PDGF, and FGF release, promoting capillary budding and granulation tissue formation in chronic wounds."
+  el: "Η υπεροξία διεγείρει την απελευθέρωση VEGF, PDGF και FGF, προάγοντας τη δημιουργία τριχοειδών και σχηματισμό κοκκιώδους ιστού σε χρόνια τραύματα."
+detail:
+  en: "Vascular endothelial growth factor (VEGF), platelet-derived growth factor (PDGF), and fibroblast growth factor (FGF) are upregulated under hyperoxic conditions. This cascade promotes new blood vessel formation, critical for wound healing and tissue regeneration."
+  el: "Ο αγγειακός ενδοθηλιακός αυξητικός παράγοντας (VEGF), ο παράγοντας ανάπτυξης αιμοπεταλίων (PDGF) και ο αυξητικός παράγοντας ινοβλαστών (FGF) ενεργοποιούνται υπό υπεροξικές συνθήκες. Αυτή η καταρράκτης προάγει τη δημιουργία νέων αιμοφόρων αγγείων, κρίσιμη για την επούλωση τραυμάτων και αναγέννηση ιστών."
+refs:
+  - "[1]"
+  - "[2]"

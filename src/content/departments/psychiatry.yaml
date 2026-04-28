@@ -1,0 +1,47 @@
+name:
+  en: "Psychiatry & Psychology"
+  el: "Ψυχιατρική & Ψυχολογία"
+icon: "HeartHandshake"
+color: "#be185d"
+shortDesc:
+  en: "PTSD, Depression, Anxiety"
+  el: "ΔΜΤΣ, Κατάθλιψη, Άγχος"
+applications:
+  - title:
+      en: "Post-Traumatic Stress Disorder (PTSD)"
+      el: "Διαταραχή Μετατραυματικού Στρες (ΔΜΤΣ)"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Clinical trials demonstrate HBOT improves brain microstructure functionality and alleviates PTSD symptoms in veterans with treatment-resistant PTSD. Significant improvements in PTSD checklist scores."
+      el: "Κλινικές δοκιμές αποδεικνύουν ότι η HBOT βελτιώνει λειτουργικότητα μικροδομής εγκεφάλου και ανακουφίζει συμπτώματα ΔΜΤΣ σε βετεράνους με ανθεκτική στη θεραπεία ΔΜΤΣ. Σημαντικές βελτιώσεις στις βαθμολογίες ελέγχου ΔΜΤΣ."
+    evidence: "Level B"
+    protocol:
+      ata: "1.5 – 2.0 ATA"
+      duration: "60 – 90 min"
+      sessions: "40 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Level B Evidence (RCT)"
+        el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
+    refs:
+      - "[20]"
+  - title:
+      en: "Treatment-Resistant Depression"
+      el: "Ανθεκτική στη Θεραπεία Κατάθλιψη"
+    type: "Research"
+    typeColor: "orange"
+    description:
+      en: "Emerging research investigates HBOT for treatment-resistant depression through neuroplasticity enhancement, BDNF upregulation, and reduction of neuroinflammation."
+      el: "Αναδυόμενη έρευνα διερευνά την HBOT για ανθεκτική στη θεραπεία κατάθλιψη μέσω ενίσχυσης νευροπλαστικότητας, ανύψωσης BDNF και μείωσης νευροφλεγμονής."
+    evidence: "Level C"
+    protocol:
+      ata: "1.5 – 2.0 ATA"
+      duration: "60 – 90 min"
+      sessions: "20 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Investigational"
+        el: "Ερευνητικό"
+    refs:
+      - "[8]"

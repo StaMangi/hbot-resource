@@ -1,0 +1,67 @@
+name:
+  en: "Geriatric Assessment"
+  el: "Γηριατρική Αξιολόγηση"
+icon: "Users"
+color: "#065f46"
+shortDesc:
+  en: "Physical Performance, Cognitive Aging"
+  el: "Φυσική Απόδοση, Γνωστική Γήρανση"
+applications:
+  - title:
+      en: "Physical Performance Enhancement"
+      el: "Ενίσχυση Φυσικής Απόδοσης"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Randomized controlled trial demonstrated HBOT improves maximal physical performance and cardiac perfusion in sedentary older adults, enhancing exercise capacity and cardiovascular function."
+      el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή απέδειξε ότι η HBOT βελτιώνει μέγιστη φυσική απόδοση και καρδιακή αιμάτωση σε καθιστικούς ηλικιωμένους, ενισχύοντας ικανότητα άσκησης και καρδιαγγειακή λειτουργία."
+    evidence: "Level A (RCT)"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "40 – 60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "RCT (Doenyas-Barak et al., 2024)"
+        el: "ΤΕΔ (Doenyas-Barak et al., 2024)"
+    refs:
+      - "[21]"
+  - title:
+      en: "Cognitive Decline Prevention"
+      el: "Πρόληψη Γνωστικής Έκπτωσης"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "HBOT reverses age-related cerebral hypoperfusion and promotes angiogenesis in brain tissue, potentially preventing or slowing cognitive decline in aging populations."
+      el: "Η HBOT αντιστρέφει ηλικιακή εγκεφαλική υποαιμάτωση και προάγει αγγειογένεση σε εγκεφαλικό ιστό, ενδεχομένως αποτρέποντας ή επιβραδύνοντας γνωστική έκπτωση σε γηράσκοντες πληθυσμούς."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "RCT (Hadanny et al., 2020)"
+        el: "ΤΕΔ (Hadanny et al., 2020)"
+    refs:
+      - "[4]"
+      - "[5]"
+  - title:
+      en: "Cellular Aging Reversal"
+      el: "Αντιστροφή Κυτταρικής Γήρανσης"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "First human evidence of telomere lengthening (>20%) and senescent cell clearance through 60 HBOT sessions in healthy older adults, representing a novel anti-aging intervention."
+      el: "Πρώτη ανθρώπινη απόδειξη επιμήκυνσης τελομερών (>20%) και εκκαθάρισης γηρασμένων κυττάρων μέσω 60 συνεδριών HBOT σε υγιείς ηλικιωμένους, αντιπροσωπεύοντας νέα παρέμβαση κατά της γήρανσης."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "60"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Hadanny et al., 2020 (RCT)"
+        el: "Hadanny et al., 2020 (ΤΕΔ)"
+    refs:
+      - "[3]"

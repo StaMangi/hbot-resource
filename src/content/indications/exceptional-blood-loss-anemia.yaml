@@ -1,0 +1,25 @@
+legacyId: 7
+category:
+  en: "Infectious Diseases"
+  el: "Λοιμώδη Νοσήματα"
+condition:
+  en: "Exceptional Blood Loss Anemia"
+  el: "Αναιμία Εξαιρετικής Απώλειας Αίματος"
+description:
+  en: "When transfusion is not possible due to religious beliefs or unavailability, HBOT provides sufficient dissolved plasma oxygen to sustain life."
+  el: "Όταν η μετάγγιση δεν είναι δυνατή λόγω θρησκευτικών πεποιθήσεων ή έλλειψης, η HBOT παρέχει επαρκές διαλυμένο οξυγόνο πλάσματος για διατήρηση ζωής."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 – 2.5 ATA"
+  duration: "90 min"
+  sessions: "20 – 40"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[8]"

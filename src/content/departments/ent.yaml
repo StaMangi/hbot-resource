@@ -1,0 +1,47 @@
+name:
+  en: "ENT (Otolaryngology)"
+  el: "ΩΡΛ (Ωτορινολαρυγγολογία)"
+icon: "Ear"
+color: "#0891b2"
+shortDesc:
+  en: "Sudden Hearing Loss, Tinnitus"
+  el: "Αιφνίδια Απώλεια Ακοής, Εμβοές"
+applications:
+  - title:
+      en: "Idiopathic Sudden Sensorineural Hearing Loss"
+      el: "Ιδιοπαθής Αιφνίδια Αισθητηριονευρική Απώλεια Ακοής"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "FDA-approved adjunctive treatment (2011) when corticosteroid therapy fails. Reverses cochlear hypoxia and reduces endolymphatic hydrops, improving hearing recovery rates."
+      el: "Εγκεκριμένη επικουρική θεραπεία FDA (2011) όταν αποτυγχάνει η θεραπεία με κορτικοστεροειδή. Αντιστρέφει κοχλιακή υποξία και μειώνει ενδολεμφικό ύδρωπα, βελτιώνοντας ποσοστά αποκατάστασης ακοής."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "90 min"
+      sessions: "10 – 20"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "UHMS / FDA-Approved"
+        el: "UHMS / FDA-Εγκεκριμένο"
+    refs:
+      - "[9]"
+  - title:
+      en: "Tinnitus"
+      el: "Εμβοές"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Investigational use for chronic tinnitus associated with cochlear hypoxia. Some clinical studies show improvement in tinnitus severity scores."
+      el: "Ερευνητική χρήση για χρόνιες εμβοές που σχετίζονται με κοχλιακή υποξία. Ορισμένες κλινικές μελέτες δείχνουν βελτίωση στις βαθμολογίες σοβαρότητας εμβοών."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "90 min"
+      sessions: "10 – 20"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Clinical Research"
+        el: "Κλινική Έρευνα"
+    refs:
+      - "[2]"

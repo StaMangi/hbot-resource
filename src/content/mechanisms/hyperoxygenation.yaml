@@ -1,0 +1,13 @@
+title:
+  en: "Hyperoxygenation & Vasoconstriction"
+  el: "Υπεροξυγόνωση & Αγγειοσύσπαση"
+icon: "Droplets"
+color: "teal"
+summary:
+  en: "HBOT reverses tissue hypoxia while simultaneously inducing vasoconstriction, reducing edema without compromising oxygen delivery."
+  el: "Η HBOT αντιστρέφει την ιστική υποξία ενώ παράλληλα προκαλεί αγγειοσύσπαση, μειώνοντας το οίδημα χωρίς να διακυβεύεται η παροχή οξυγόνου."
+detail:
+  en: "At 3.0 ATA breathing 100% oxygen, dissolved plasma oxygen increases by approximately 42%, providing sufficient oxygen to sustain cellular respiration even in the absence of hemoglobin. This is particularly beneficial in compartment syndrome and traumatic brain injury."
+  el: "Στα 3,0 ATA με αναπνοή 100% οξυγόνου, το διαλυμένο οξυγόνο πλάσματος αυξάνεται κατά ~42%, παρέχοντας επαρκές οξυγόνο για κυτταρική αναπνοή ακόμα και χωρίς αιμοσφαιρίνη. Αυτό είναι ιδιαίτερα ωφέλιμο στο σύνδρομο διαμερίσματος και στο τραυματικό εγκεφαλικό τραύμα."
+refs:
+  - "[1]"

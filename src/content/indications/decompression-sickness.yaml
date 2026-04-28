@@ -1,0 +1,25 @@
+legacyId: 5
+category:
+  en: "Gas/Bubble Disorders"
+  el: "Διαταραχές Αερίου/Φυσαλίδων"
+condition:
+  en: "Decompression Sickness"
+  el: "Νόσος Αποσυμπίεσης"
+description:
+  en: "Primary treatment for nitrogen bubble formation in divers and compressed-air workers. Reduces bubble volume and promotes nitrogen elimination."
+  el: "Κύρια θεραπεία για σχηματισμό φυσαλίδων αζώτου σε δύτες και εργαζόμενους με συμπιεσμένο αέρα. Μειώνει όγκο φυσαλίδων και προάγει αποβολή αζώτου."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.0 – 2.5 ATA"
+  duration: "90 min"
+  sessions: "20 – 30"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[6]"

@@ -1,0 +1,25 @@
+legacyId: 13
+category:
+  en: "Sensory Disorders"
+  el: "Αισθητηριακές Διαταραχές"
+condition:
+  en: "Idiopathic Sudden Sensorineural Hearing Loss"
+  el: "Ιδιοπαθής Αιφνίδια Αισθητηριονευρική Απώλεια Ακοής"
+description:
+  en: "Adjunctive treatment when corticosteroids fail. Reverses cochlear hypoxia and reduces endolymphatic hydrops."
+  el: "Επικουρική θεραπεία όταν αποτυγχάνουν τα κορτικοστεροειδή. Αντιστρέφει κοχλιακή υποξία και μειώνει ενδολεμφικό ύδρωπα."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 – 2.5 ATA"
+  duration: "90 min"
+  sessions: "10 – 20"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[14]"

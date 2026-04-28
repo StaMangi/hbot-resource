@@ -1,0 +1,25 @@
+legacyId: 6
+category:
+  en: "Wound Healing"
+  el: "Επούλωση Τραυμάτων"
+condition:
+  en: "Enhancement of Healing in Selected Problem Wounds"
+  el: "Ενίσχυση Επούλωσης Επιλεγμένων Προβληματικών Τραυμάτων"
+description:
+  en: "Adjunctive treatment for chronic non-healing wounds, particularly diabetic foot ulcers with transcutaneous oxygen measurements <40 mmHg."
+  el: "Επικουρική θεραπεία για χρόνια μη επουλούμενα τραύματα, ιδίως διαβητικά έλκη ποδιού με διαδερμικές μετρήσεις οξυγόνου <40 mmHg."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.0 – 2.4 ATA"
+  duration: "90 min"
+  sessions: "20 – 30"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[7]"

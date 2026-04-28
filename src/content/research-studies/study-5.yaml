@@ -1,0 +1,14 @@
+legacyId: 5
+title:
+  en: "Hyperbaric oxygen therapy in inflammatory bowel disease: a systematic review and meta-analysis"
+  el: "Θεραπεία με υπερβαρικό οξυγόνο στη φλεγμονώδη νόσο εντέρου: συστηματική ανασκόπηση και μετα-ανάλυση"
+authors: "Singh AK, Jha DK, Jena A, et al."
+journal: "European Journal of Gastroenterology & Hepatology"
+year: 2021
+type: "Systematic Review & Meta-Analysis"
+evidenceLevel: "Level I (Meta-Analysis)"
+keyFinding:
+  en: "HBOT achieved response rates exceeding 80% in both ulcerative colitis and Crohn's disease, with significant mucosal healing demonstrated."
+  el: "Η HBOT επέτυχε ποσοστά ανταπόκρισης >80% τόσο στην ελκώδη κολίτιδα όσο και στη νόσο Crohn, με αποδεδειγμένη σημαντική επούλωση βλεννογόνου."
+doi: "https://pubmed.ncbi.nlm.nih.gov/33156066/"
+ref: "[14]"

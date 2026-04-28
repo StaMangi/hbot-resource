@@ -1,0 +1,25 @@
+legacyId: 8
+category:
+  en: "Infectious Diseases"
+  el: "Λοιμώδη Νοσήματα"
+condition:
+  en: "Intracranial Abscess"
+  el: "Ενδοκρανιακό Απόστημα"
+description:
+  en: "Adjunctive therapy for brain abscesses, particularly those caused by anaerobic organisms. Enhances antibiotic efficacy and immune response."
+  el: "Επικουρική θεραπεία για εγκεφαλικά αποστήματα, ιδίως από αναερόβιους οργανισμούς. Ενισχύει αποτελεσματικότητα αντιβιοτικών και ανοσολογική απόκριση."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 – 2.5 ATA"
+  duration: "90 min"
+  sessions: "30 – 60"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[9]"

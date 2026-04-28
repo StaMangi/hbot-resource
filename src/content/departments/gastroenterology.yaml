@@ -1,0 +1,66 @@
+name:
+  en: "Gastroenterology"
+  el: "Γαστρεντερολογία"
+icon: "Stethoscope"
+color: "#0f766e"
+shortDesc:
+  en: "IBD, Ulcerative Colitis, Crohn's Disease"
+  el: "ΦΝΕ, Ελκώδης Κολίτιδα, Νόσος Crohn"
+applications:
+  - title:
+      en: "Ulcerative Colitis"
+      el: "Ελκώδης Κολίτιδα"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Systematic reviews indicate HBOT may achieve response rates exceeding 80% in acute severe ulcerative colitis refractory to conventional therapy, reversing chronic intestinal hypoxia."
+      el: "Συστηματικές ανασκοπήσεις υποδεικνύουν ότι η HBOT μπορεί να επιτύχει ποσοστά ανταπόκρισης >80% σε οξεία σοβαρή ελκώδη κολίτιδα ανθεκτική σε συμβατική θεραπεία, αντιστρέφοντας χρόνια εντερική υποξία."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Level A Meta-Analysis"
+        el: "Μετα-Ανάλυση Επιπέδου Α"
+    refs:
+      - "[14]"
+  - title:
+      en: "Crohn's Disease"
+      el: "Νόσος Crohn"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "Meta-analyses demonstrate significant mucosal healing and clinical remission in Crohn's disease patients treated with HBOT, particularly for perianal fistulizing disease."
+      el: "Μετα-αναλύσεις αποδεικνύουν σημαντική επούλωση βλεννογόνου και κλινική ύφεση σε ασθενείς με νόσο Crohn που θεραπεύτηκαν με HBOT, ιδίως για περιπρωκτική νόσο με συρίγγια."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Level A Meta-Analysis"
+        el: "Μετα-Ανάλυση Επιπέδου Α"
+    refs:
+      - "[14]"
+  - title:
+      en: "Inflammatory Bowel Disease (IBD)"
+      el: "Φλεγμονώδης Νόσος Εντέρου (ΦΝΕ)"
+    type: "Research"
+    typeColor: "blue"
+    description:
+      en: "HBOT reverses chronic intestinal hypoxia, reduces mucosal inflammation, and promotes epithelial healing. Considered a promising adjunctive therapy for IBD management."
+      el: "Η HBOT αντιστρέφει χρόνια εντερική υποξία, μειώνει φλεγμονή βλεννογόνου και προάγει επιθηλιακή επούλωση. Θεωρείται υποσχόμενη επικουρική θεραπεία για διαχείριση ΦΝΕ."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions: "20 – 40"
+      frequency: "Once daily, 5×/week"
+      basis:
+        en: "Level A Meta-Analysis"
+        el: "Μετα-Ανάλυση Επιπέδου Α"
+    refs:
+      - "[14]"

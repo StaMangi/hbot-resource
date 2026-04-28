@@ -1,0 +1,25 @@
+legacyId: 3
+category:
+  en: "Infectious Diseases"
+  el: "Λοιμώδη Νοσήματα"
+condition:
+  en: "Clostridial Myositis & Myonecrosis (Gas Gangrene)"
+  el: "Κλωστριδιακή Μυοσίτιδα & Μυονέκρωση (Αέρια Γάγγραινα)"
+description:
+  en: "HBOT is directly lethal to Clostridium perfringens and inhibits toxin production, used adjunctively with surgery and antibiotics."
+  el: "Η HBOT είναι άμεσα θανατηφόρα για Clostridium perfringens και αναστέλλει παραγωγή τοξινών, χρησιμοποιείται επικουρικά με χειρουργική επέμβαση και αντιβιοτικά."
+evidence:
+  en: "Standard of Care"
+  el: "Πρότυπο Θεραπείας"
+evidenceLevel: "A"
+protocol:
+  ata: "2.0 – 2.5 ATA"
+  duration: "90 min"
+  sessions: "20 – 30"
+  frequency: "Once daily, 5×/week"
+  basis:
+    en: "UHMS / Standard of Care"
+    el: "UHMS / Πρότυπο Θεραπείας"
+refs:
+  - "[1]"
+  - "[4]"
