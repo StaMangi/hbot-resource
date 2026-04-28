@@ -1,0 +1,35 @@
+---
+// Static reference badges. Each badge is a plain anchor link to #ref-{N},
+// which works without JavaScript. Animated highlight on click is deferred to
+// Phase 2.E (would be a small React island wrapping these).
+
+interface Props {
+  refs: string[];
+  label?: string;
+}
+
+const { refs, label } = Astro.props;
+
+// Source format is "[1]" — strip brackets for display + slug.
+function parse(raw: string): string {
+  return raw.replace(/[\[\]]/g, "");
+}
+---
+
+<div class="flex flex-wrap items-center gap-2">
+  {label && <span class="text-xs text-slate-500">{label}</span>}
+  {
+    refs.map((raw) => {
+      const num = parse(raw);
+      return (
+        <a
+          href={`#ref-${num}`}
+          class="inline-flex items-center justify-center min-w-[1.75rem] h-7 px-2 rounded-md text-xs font-semibold border border-teal-300 bg-teal-50 text-teal-800 hover:bg-teal-700 hover:text-white transition-colors"
+          aria-label={`Reference ${num}`}
+        >
+          {num}
+        </a>
+      );
+    })
+  }
+</div>

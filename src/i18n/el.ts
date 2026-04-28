@@ -2,7 +2,7 @@
 // Source: data-export/hbot-i18n.json (de-branding applied at port-time).
 // This file is the canonical source of truth — edit here, NOT in the script.
 // Re-running the migration overwrites local edits.
-// EL keys: 148.
+// EL keys: 150.
 // Deletions vs source: nav.subtitle (stealth Red Cross / Hellenic-Red-Cross-
 // Society reference, dropped per de-brand policy), strategy.market.stat2.
 // Replacements: nav.brand, hero.badge, dept.section.subtitle,
@@ -149,6 +149,8 @@ export const el = {
   "strategy.market.title": "Η Ευκαιρία Αγοράς Ιατρικής Μακροζωίας",
   "strategy.market.body": "Η παγκόσμια αγορά ιατρικής μακροζωίας αναμένεται να φτάσει τα $44,2 δισεκατομμύρια έως το 2030. Η HBOT, με τον μοναδικό συνδυασμό εγκεκριμένων κλινικών εφαρμογών FDA και αναδυόμενων στοιχείων για υγιή γήρανση, βρίσκεται στη συμβολή κλινικής ενσωμάτωσης και premium ευεξίας. Μια αφιερωμένη Μονάδα Υπερβαρικής Ιατρικής δημιουργεί σαφή ανταγωνιστική θέση για νοσοκομεία και κέντρα μακροζωίας που εισέρχονται στην αγορά της ιατρικής μακροζωίας.",
   "strategy.market.stat1": "Αγορά Μακροζωίας έως 2030",
+  "strategy.market.stat2.val": "258+",
+  "strategy.market.stat2": "Αξιολογημένες αναφορές",
   "strategy.market.stat3.val": "Διπλό",
   "strategy.market.stat3": "Κλινικά + Έσοδα Ευεξίας",
   "refs.section.badge": "Βιβλιογραφία",

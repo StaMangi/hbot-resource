@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
+import HomePage from "@/components/HomePage.astro";
 import { SITE_NAME } from "@/lib/seo";
 
 const pathname = Astro.url.pathname;
@@ -18,10 +19,7 @@ const jsonLd = {
   publisher: {
     "@type": "Organization",
     name: "IN2050 Ltd",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "CY",
-    },
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
     identifier: "HE416406",
   },
 };
@@ -38,20 +36,5 @@ const jsonLd = {
 >
   <Nav slot="nav" locale="el" pathname={pathname} />
   <Footer slot="footer" locale="el" pathname={pathname} />
-
-  <section class="max-w-3xl mx-auto px-6 py-24">
-    <p class="text-sm uppercase tracking-widest text-slate-500">
-      Φάση 2.C — Βασικό κέλυφος
-    </p>
-    <h1
-      class="mt-4 text-4xl font-semibold text-slate-900"
-      style="font-family: var(--font-display)"
-    >
-      HBOT Science
-    </h1>
-    <p class="mt-6 text-lg text-slate-700">
-      Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Καθαρισμένο κέλυφος —
-      το περιεχόμενο των ενοτήτων προστίθεται στο υποβήμα 2.D.
-    </p>
-  </section>
+  <HomePage locale="el" />
 </BaseLayout>

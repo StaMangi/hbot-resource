@@ -17,4 +17,14 @@ export function t(key: string, locale: Locale): string {
   return dicts[locale][key] ?? dicts.en[key] ?? key;
 }
 
+/**
+ * Returns true only if the key is genuinely defined in the requested locale's
+ * dictionary. Used by sections that contain locale-only content (e.g. EL has
+ * 14 longevity keys EN doesn't — see Phase 3 audit) so we render those
+ * sub-blocks conditionally rather than fall back to the literal key string.
+ */
+export function has(key: string, locale: Locale): boolean {
+  return key in dicts[locale];
+}
+
 export { en, el };

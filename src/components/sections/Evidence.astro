@@ -1,0 +1,138 @@
+---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
+import SectionHeader from "@/components/SectionHeader.astro";
+import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const all = await getCollection("research-studies");
+const studies = all.sort((a, b) => a.data.legacyId - b.data.legacyId);
+
+const evidenceColor = (level: string) => {
+  if (level.includes("I (Review)") || level.includes("Meta-Analysis")) {
+    return "bg-emerald-100 text-emerald-800 border-emerald-200";
+  }
+  if (level.startsWith("Level I")) return "bg-violet-100 text-violet-800 border-violet-200";
+  if (level.startsWith("Level II")) return "bg-sky-100 text-sky-800 border-sky-200";
+  return "bg-slate-100 text-slate-700 border-slate-200";
+};
+---
+
+<section id="evidence" class="py-20 bg-slate-50 scroll-mt-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionHeader
+      badge={t("evidence.section.badge", locale)}
+      title={t("evidence.section.title", locale)}
+      subtitle={t("evidence.section.subtitle", locale)}
+      badgeColor="violet"
+    />
+
+    <!-- Evidence level legend -->
+    <div class="mb-8 rounded-lg border border-slate-200 bg-white p-4">
+      <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+        {t("evidence.legend.title", locale)}
+      </p>
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="inline-flex px-2 py-1 rounded border border-violet-200 bg-violet-100 text-violet-800">
+          {t("evidence.level1", locale)}
+        </span>
+        <span class="inline-flex px-2 py-1 rounded border border-sky-200 bg-sky-100 text-sky-800">
+          {t("evidence.level2", locale)}
+        </span>
+        <span class="inline-flex px-2 py-1 rounded border border-slate-200 bg-slate-100 text-slate-700">
+          {t("evidence.level3", locale)}
+        </span>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      {
+        studies.map((study) => (
+          <article class="rounded-xl bg-white border border-slate-200 p-5 flex flex-col md:flex-row gap-4">
+            <div class="flex md:flex-col items-start gap-3 md:w-16 flex-shrink-0">
+              <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-violet-100 text-violet-800 flex items-center justify-center font-bold">
+                {study.data.legacyId}
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <span class={`inline-block px-2 py-0.5 text-xs font-semibold rounded border ${evidenceColor(study.data.evidenceLevel)}`}>
+                  {study.data.evidenceLevel}
+                </span>
+                <span class="inline-block px-2 py-0.5 text-xs font-medium rounded border border-slate-200 bg-slate-50 text-slate-600">
+                  {study.data.type}
+                </span>
+              </div>
+
+              <h3 class="text-base font-semibold text-slate-900 leading-snug mb-1">
+                {study.data.title[locale]}
+              </h3>
+
+              <p class="text-xs text-slate-500 mb-3">
+                {study.data.authors} · {study.data.journal} · {study.data.year}
+              </p>
+
+              <div class="rounded-lg border border-teal-200 bg-teal-50/50 p-3">
+                <p class="text-xs font-semibold uppercase tracking-wider text-teal-800 mb-1">
+                  {t("evidence.finding.label", locale)}
+                </p>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                  {study.data.keyFinding[locale]}
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-shrink-0 self-start">
+              <a
+                href={study.data.doi}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-xs font-semibold border border-slate-200 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800 transition-colors"
+              >
+                <Icon name="lucide:external-link" class="w-3.5 h-3.5" />
+                <span>{t("evidence.doi.label", locale)}</span>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <!-- Evidence summary banner -->
+    <div class="mt-12 rounded-2xl bg-gradient-to-r from-slate-900 to-violet-900 text-white p-8 md:p-10">
+      <div class="grid md:grid-cols-3 gap-6 items-center">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-semibold mb-3" style="font-family: var(--font-display)">
+            {t("evidence.summary.title", locale)}
+          </h3>
+          <p class="text-sm text-slate-200 leading-relaxed">
+            {t("evidence.summary.body", locale)}
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-3 text-sm">
+          <div class="bg-white/5 border border-white/10 rounded-lg p-3">
+            <p class="text-2xl font-bold text-teal-300">8+</p>
+            <p class="text-xs font-semibold">{t("evidence.stat.rcts", locale)}</p>
+            <p class="text-xs text-slate-300">{t("evidence.stat.rcts.sub", locale)}</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-lg p-3">
+            <p class="text-2xl font-bold text-teal-300">5+</p>
+            <p class="text-xs font-semibold">{t("evidence.stat.meta", locale)}</p>
+            <p class="text-xs text-slate-300">{t("evidence.stat.meta.sub", locale)}</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-lg p-3">
+            <p class="text-2xl font-bold text-teal-300">258+</p>
+            <p class="text-xs font-semibold">{t("evidence.stat.citations", locale)}</p>
+            <p class="text-xs text-slate-300">{t("evidence.stat.citations.sub", locale)}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

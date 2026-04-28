@@ -1,0 +1,33 @@
+---
+// Long-scroll homepage — composes all 9 section components.
+// Used by /index.astro (EN) and /el/index.astro (EL) with a locale prop.
+// Per scope discipline: no React islands here. Phase 2.E adds interactive
+// islands (ApplicationsExplorer, ProtocolComparison) — those bolt onto the
+// existing static structure rather than replace it.
+
+import Hero from "@/components/sections/Hero.astro";
+import Mechanisms from "@/components/sections/Mechanisms.astro";
+import FDA from "@/components/sections/FDA.astro";
+import Departments from "@/components/sections/Departments.astro";
+import NoHBOT from "@/components/sections/NoHBOT.astro";
+import Longevity from "@/components/sections/Longevity.astro";
+import Evidence from "@/components/sections/Evidence.astro";
+import Strategy from "@/components/sections/Strategy.astro";
+import References from "@/components/sections/References.astro";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+
+<Hero locale={locale} />
+<Mechanisms locale={locale} />
+<FDA locale={locale} />
+<Departments locale={locale} />
+<NoHBOT locale={locale} />
+<Longevity locale={locale} />
+<Evidence locale={locale} />
+<Strategy locale={locale} />
+<References locale={locale} />

@@ -2,7 +2,7 @@
 // Source: data-export/hbot-i18n.json (de-branding applied at port-time).
 // This file is the canonical source of truth — edit here, NOT in the script.
 // Re-running the migration overwrites local edits.
-// EN keys: 134.
+// EN keys: 136.
 // Deletions vs source: nav.subtitle, strategy.market.stat2.
 // Replacements: nav.brand, hero.badge, hero.exec.body (last sentence),
 // dept.section.subtitle, nohbot.section.subtitle, strategy.section.subtitle,
@@ -130,6 +130,8 @@ export const en = {
   "strategy.market.title": "The Longevity Medicine Market Opportunity",
   "strategy.market.body": "The global longevity medicine market is projected to reach $44.2 billion by 2030. HBOT, with its unique combination of FDA-approved clinical applications and emerging evidence for healthy aging, sits at the intersection of clinical integration and premium wellness. A dedicated Hyperbaric Medicine Unit creates a clear competitive position for hospitals and longevity operators entering the longevity-medicine market.",
   "strategy.market.stat1": "Longevity Market by 2030",
+  "strategy.market.stat2.val": "258+",
+  "strategy.market.stat2": "Peer-reviewed citations",
   "strategy.market.stat3.val": "Dual",
   "strategy.market.stat3": "Clinical + Wellness Revenue",
   "refs.section.badge": "Bibliography",

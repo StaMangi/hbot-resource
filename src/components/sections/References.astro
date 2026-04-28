@@ -1,0 +1,108 @@
+---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
+import SectionHeader from "@/components/SectionHeader.astro";
+import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const all = await getCollection("references");
+const refs = all.sort((a, b) => a.data.num - b.data.num);
+
+const typeBadge = (type: string) => {
+  const t = type.toLowerCase();
+  if (t.includes("rct") || t.includes("review") || t.includes("meta-analysis")) {
+    return "bg-emerald-100 text-emerald-800";
+  }
+  if (t.includes("guideline")) return "bg-violet-100 text-violet-800";
+  return "bg-slate-100 text-slate-700";
+};
+
+// Stats counted from the actual collection.
+const total = refs.length;
+const rcts = refs.filter((r) => /RCT|Meta-Analysis/i.test(r.data.type)).length;
+const reviews = refs.filter((r) => /Review/i.test(r.data.type)).length;
+const guidelines = refs.filter((r) => /Guideline/i.test(r.data.type)).length;
+---
+
+<section id="references" class="py-20 bg-white scroll-mt-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionHeader
+      badge={t("refs.section.badge", locale)}
+      title={t("refs.section.title", locale)}
+      subtitle={t("refs.section.subtitle", locale)}
+      badgeColor="slate"
+    />
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center">
+        <p class="text-3xl font-bold text-teal-700" style="font-family: var(--font-display)">{total}</p>
+        <p class="text-xs text-slate-500 mt-1">{t("refs.stat.sources", locale)}</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center">
+        <p class="text-3xl font-bold text-teal-700" style="font-family: var(--font-display)">{rcts}</p>
+        <p class="text-xs text-slate-500 mt-1">{t("refs.stat.rcts", locale)}</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center">
+        <p class="text-3xl font-bold text-teal-700" style="font-family: var(--font-display)">{reviews}</p>
+        <p class="text-xs text-slate-500 mt-1">{t("refs.stat.reviews", locale)}</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 bg-white p-4 text-center">
+        <p class="text-3xl font-bold text-teal-700" style="font-family: var(--font-display)">{guidelines}</p>
+        <p class="text-xs text-slate-500 mt-1">{t("refs.stat.guidelines", locale)}</p>
+      </div>
+    </div>
+
+    <ol class="space-y-3">
+      {
+        refs.map((ref) => (
+          <li
+            id={`ref-${ref.data.num}`}
+            class="rounded-lg border border-slate-200 bg-white p-4 flex flex-col sm:flex-row gap-4 scroll-mt-20"
+          >
+            <div class="flex sm:flex-col items-start gap-3 sm:w-12 flex-shrink-0">
+              <div class="w-9 h-9 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center font-semibold text-sm">
+                {ref.data.num}
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <span class={`inline-block px-2 py-0.5 text-xs font-medium rounded mb-2 ${typeBadge(ref.data.type)}`}>
+                {ref.data.type}
+              </span>
+              <h3 class="text-sm font-semibold text-slate-900 leading-snug mb-1">
+                {ref.data.title}
+              </h3>
+              <p class="text-xs text-slate-500">
+                {ref.data.authors} · {ref.data.journal} · {ref.data.year}
+              </p>
+            </div>
+            <div class="flex-shrink-0 self-start">
+              <a
+                href={ref.data.doi}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold border border-slate-200 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-800 transition-colors"
+              >
+                <Icon name="lucide:external-link" class="w-3 h-3" />
+                <span>{t("refs.doi.label", locale)}</span>
+              </a>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <div class="mt-10 text-center">
+      <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-teal-100 text-teal-800">
+        {t("refs.footer.pill", locale)}
+      </span>
+      <p class="mt-3 text-xs text-slate-500 max-w-3xl mx-auto leading-relaxed">
+        {t("refs.footer", locale)}
+      </p>
+    </div>
+  </div>
+</section>

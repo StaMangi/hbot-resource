@@ -1,0 +1,41 @@
+---
+// Repeating section header pattern: small uppercase badge + large heading + subtitle.
+
+interface Props {
+  badge: string;
+  title: string;
+  subtitle: string;
+  /** Section anchor id (e.g. "mechanisms"). Becomes id of the wrapping element. */
+  id?: string;
+  align?: "center" | "left";
+  badgeColor?: "teal" | "navy" | "amber" | "violet" | "emerald" | "slate";
+}
+
+const { badge, title, subtitle, align = "center", badgeColor = "teal" } = Astro.props;
+
+const badgeColors = {
+  teal: "bg-teal-100 text-teal-800",
+  navy: "bg-slate-900 text-white",
+  amber: "bg-amber-100 text-amber-800",
+  violet: "bg-violet-100 text-violet-800",
+  emerald: "bg-emerald-100 text-emerald-800",
+  slate: "bg-slate-100 text-slate-700",
+};
+
+const alignClass = align === "center" ? "text-center mx-auto" : "text-left";
+---
+
+<div class={`max-w-3xl ${alignClass} mb-12`}>
+  <span
+    class={`inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase rounded-full ${badgeColors[badgeColor]}`}
+  >
+    {badge}
+  </span>
+  <h2
+    class="mt-4 text-3xl md:text-4xl font-semibold text-slate-900 leading-tight"
+    style="font-family: var(--font-display)"
+  >
+    {title}
+  </h2>
+  <p class="mt-4 text-lg text-slate-600 leading-relaxed">{subtitle}</p>
+</div>

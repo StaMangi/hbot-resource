@@ -67,20 +67,42 @@ const EL_REPLACEMENTS = {
 
 const DELETES = new Set(["nav.subtitle", "strategy.market.stat2"]);
 
+// Phase 2.D additions: rebuild the strategy stat2 slot with a real,
+// evidence-grounded value (per Stamos's instruction not to leave a stub
+// that would rot). The original "In Athens (opportunity)" was deleted;
+// replaced with "258+ peer-reviewed citations" — references the existing
+// 258-citations claim already in evidence.summary.body and refs.stat content.
+// Inserted after strategy.market.stat1 to preserve nav ordering.
+const EN_ADDITIONS = {
+  "strategy.market.stat2.val": "258+",
+  "strategy.market.stat2": "Peer-reviewed citations",
+};
+const EL_ADDITIONS = {
+  "strategy.market.stat2.val": "258+",
+  "strategy.market.stat2": "Αξιολογημένες αναφορές",
+};
+
 // ────────────────────────────────────────────────────────────────────────────
 // Apply: build new dictionaries
 // ────────────────────────────────────────────────────────────────────────────
-function applyReplacements(source, replacements) {
+function applyReplacements(source, replacements, additions) {
   const out = {};
   for (const [key, value] of Object.entries(source)) {
     if (DELETES.has(key)) continue;
     out[key] = key in replacements ? replacements[key] : value;
+    // Insert additions immediately after strategy.market.stat1 so dictionary
+    // order matches the visual ordering of the stats in the strategy section.
+    if (key === "strategy.market.stat1") {
+      for (const [aKey, aVal] of Object.entries(additions)) {
+        out[aKey] = aVal;
+      }
+    }
   }
   return out;
 }
 
-const enFinal = applyReplacements(data.en, EN_REPLACEMENTS);
-const elFinal = applyReplacements(data.el, EL_REPLACEMENTS);
+const enFinal = applyReplacements(data.en, EN_REPLACEMENTS, EN_ADDITIONS);
+const elFinal = applyReplacements(data.el, EL_REPLACEMENTS, EL_ADDITIONS);
 
 // ────────────────────────────────────────────────────────────────────────────
 // Serialise: write TS files with literal types via `as const`.

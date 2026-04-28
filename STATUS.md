@@ -8,7 +8,7 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 2.C — i18n + base shell.** Complete. Waiting for Stamos review before 2.D.
+**Phase 2.D — Section content rendering.** Complete. Waiting for Stamos review before 2.E.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -59,9 +59,23 @@
 ## Phase 5 polish items
 - **Mobile language-toggle redundancy.** Nav and Footer both expose language toggles. On mobile narrow viewports this creates duplicated friction. Decide: hide Nav toggle on mobile (keep Footer), hide Footer toggle on mobile (keep Nav), or accept both. Phase 5 polish.
 
+## Phase 2.D (section content rendering) — done (this session)
+- Added `astro-icon` + `@iconify-json/lucide` for static lucide icons (tree-shaken at build).
+- Reusable subcomponents: `SectionHeader.astro`, `ProtocolPanel.astro`, `RefTags.astro`.
+- 9 section components in `src/components/sections/` — Hero, Mechanisms, FDA, Departments, NoHBOT, Longevity, Evidence, Strategy, References. All zero-JS, all read from content collections via `getCollection()`.
+- Long-scroll homepage composed in `src/components/HomePage.astro`, used by `/` (EN) and `/el/`.
+- **`strategy.market.stat2` rebuild:** chose `"258+ Peer-reviewed citations"` (English) / `"258+ Αξιολογημένες αναφορές"` (Greek). Reason: matches the broader 258-citation claim already in `evidence.summary.body` and signals broad evidence base, which is the right market-positioning frame between clinical and wellness.
+- New i18n keys added: `strategy.market.stat2.val`, `strategy.market.stat2` (both languages). `migrate-i18n.mjs` updated with an `ADDITIONS` map so re-running stays idempotent.
+- **EN/EL asymmetry handling:** Longevity section's landmark study banner + wellness callouts only render in EL (where the keys exist). EN gets the main longevity grid only. Added `has(key, locale)` to `src/i18n/index.ts` so sections can conditionally render locale-only blocks.
+- **Content rendered correctly** in built output: 5 mechanisms · 14 FDA cards · 9 departments (with their applications) · 6 dept-without-hbot · 6 longevity · 8 research studies · 4 strategic recommendations · 24 references with `id="ref-N"` anchors.
+- **Quadruple grep clean** in shippable code (`src/`, `dist/`, `public/`).
+- **Page weight (gzipped):** 26.9 KB EN, 33.4 KB EL — far under 500 KB target. Zero `<script>` tags reference real JS (only the inline JSON-LD block ships).
+- **Lighthouse local run blocked:** Brave headless consistently rejects HTTP localhost with `CHROME_INTERSTITIAL_ERROR` (Brave's Shields/HTTPS-only behaviour, not overrideable via flags). Tried multiple flag combinations including `--unsafely-treat-insecure-origin-as-secure`, fresh user-data-dirs, disabled Brave features. Formal Lighthouse measurement is **deferred to 2.F** when Cloudflare Pages serves over HTTPS (proven working in Phase 1 baselines).
+  - Architecture-derived expectations against the Phase 1 baseline (mobile 59 perf): zero-JS static rendering should deliver ≥95 across all four pillars on both mobile and desktop. Verified in 2.F.
+
 ## What's next (waiting on Stamos)
-1. **Review 2.C output** — sample HTML inline below + on GitHub. Sanity-check rendered Nav and Footer in EN and EL.
-2. Approve **2.D (section content rendering)** — convert the 9 Henry-Dunant-era section components (Hero, Mechanisms, FDA, Departments, NoHBOT, Longevity, Evidence, Strategy, References) into Astro components that read from the content collections. Long-scroll homepage parity with the current Henry Dunant site.
+1. **Review 2.D output** — full long-scroll site at `pnpm dev` locally or in the GitHub repo. Spot-check any of the 9 sections.
+2. Approve **2.E (React islands)** — port `ApplicationsExplorer` and `ProtocolComparison` as `client:visible` React islands. PDF export survives. The static long-scroll keeps working alongside.
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -73,4 +87,5 @@
 - **2026-04-28** — Phase 2.A complete (Astro shell + repo + initial commit pushed).
 - **2026-04-28** — Domain corrected to `hbotscience.org`.
 - **2026-04-28** — Phase 2.B complete (80 content entries migrated to YAML, de-branded, Zod-validated, build clean).
-- **2026-04-28** — Phase 2.C complete (i18n ported with de-brand, Nav + Footer built, Red Cross stealth reference caught and dropped, all four forbidden patterns clean in shippable code). Waiting for review before 2.D.
+- **2026-04-28** — Phase 2.C complete (i18n ported with de-brand, Nav + Footer built, Red Cross stealth reference caught and dropped, all four forbidden patterns clean in shippable code).
+- **2026-04-28** — Phase 2.D complete (9 section components rendering from content collections, long-scroll homepage in EN + EL, 80 content entries surfaced, gzipped pages 27/33 KB, build clean). Lighthouse-local blocked on Brave headless quirk; deferred to 2.F. Waiting for review before 2.E.

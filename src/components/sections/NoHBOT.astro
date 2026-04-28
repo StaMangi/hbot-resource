@@ -1,0 +1,84 @@
+---
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
+import SectionHeader from "@/components/SectionHeader.astro";
+import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const departments = await getCollection("departments-without-hbot");
+
+const iconMap: Record<string, string> = {
+  FlaskConical: "lucide:flask-conical",
+  ScanLine: "lucide:scan-line",
+  Monitor: "lucide:monitor",
+  Droplet: "lucide:droplet",
+  Dna: "lucide:dna",
+  Layers: "lucide:layers",
+};
+---
+
+<section id="no-hbot" class="py-20 bg-white scroll-mt-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <SectionHeader
+      badge={t("nohbot.section.badge", locale)}
+      title={t("nohbot.section.title", locale)}
+      subtitle={t("nohbot.section.subtitle", locale)}
+      badgeColor="amber"
+    />
+
+    <!-- Disclaimer banner -->
+    <div class="rounded-xl bg-amber-50 border border-amber-200 p-5 mb-8 flex gap-4">
+      <Icon name="lucide:info" class="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+      <div>
+        <p class="font-semibold text-amber-900 mb-1">
+          {t("nohbot.criteria.title", locale)}
+        </p>
+        <p class="text-sm text-amber-900/80 leading-relaxed">
+          {t("nohbot.criteria.body", locale)}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5">
+      {
+        departments.map((dept) => (
+          <article class="rounded-xl border border-slate-200 bg-white overflow-hidden">
+            <div
+              class="h-1"
+              style="background: repeating-linear-gradient(45deg, #cbd5e1 0 8px, #f1f5f9 8px 16px)"
+              aria-hidden="true"
+            />
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                  <Icon name={iconMap[dept.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
+                </div>
+                <h3 class="text-base font-semibold text-slate-900" style="font-family: var(--font-display)">
+                  {dept.data.name[locale]}
+                </h3>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                {dept.data.rationale[locale]}
+              </p>
+              <div class="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3">
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
+                  {t("nohbot.role.label", locale)}
+                </p>
+                <p class="text-sm text-slate-700">{dept.data.role[locale]}</p>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="mt-10 text-sm text-slate-500 max-w-3xl mx-auto text-center">
+      {t("nohbot.note", locale)}
+    </p>
+  </div>
+</section>
