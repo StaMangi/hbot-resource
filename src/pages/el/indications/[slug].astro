@@ -2,10 +2,11 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ProtocolPanel from "@/components/ProtocolPanel.astro";
 import RefTags from "@/components/RefTags.astro";
+import RelatedAside from "@/components/RelatedAside.astro";
 import { verifyRefs } from "@/lib/refs";
+import { buildCrossLinkIndex, relatedKey } from "@/lib/cross-links";
 import { t } from "@/i18n";
 
 const locale = "el" as const;
@@ -26,6 +27,9 @@ const evidenceBadge = (level: string) =>
     : level === "B"
       ? "bg-sky-100 text-sky-800 border-sky-200"
       : "bg-slate-100 text-slate-700 border-slate-200";
+
+const crossLinks = await buildCrossLinkIndex();
+const related = crossLinks.relatedFor.get(relatedKey("indications", entry.id)) ?? [];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -60,17 +64,13 @@ const jsonLd = {
   pageHeading={entry.data.condition[locale]}
   eyebrow={entry.data.category[locale]}
   jsonLd={jsonLd}
+  breadcrumbs={[
+    { label: "Αρχική", href: "/el/" },
+    { label: t("fda.section.title", locale), href: `${prefix}/indications/` },
+    { label: entry.data.condition[locale] },
+  ]}
   noindex={true}
 >
-  <Breadcrumbs
-    slot="breadcrumbs"
-    items={[
-      { label: "Αρχική", href: "/el/" },
-      { label: t("fda.section.title", locale), href: `${prefix}/indications/` },
-      { label: entry.data.condition[locale] },
-    ]}
-  />
-
   <div class="flex flex-wrap items-center gap-3 mb-6">
     <span
       class:list={[
@@ -109,5 +109,7 @@ const jsonLd = {
     )
   }
 
-  <Fragment slot="aside" />
+  <Fragment slot="aside">
+    <RelatedAside title="Σχετικά" related={related} locale={locale} prefix={prefix} />
+  </Fragment>
 </DetailLayout>

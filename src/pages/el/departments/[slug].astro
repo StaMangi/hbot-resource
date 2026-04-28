@@ -2,14 +2,17 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ProtocolPanel from "@/components/ProtocolPanel.astro";
 import RefTags from "@/components/RefTags.astro";
+import RelatedAside from "@/components/RelatedAside.astro";
 import { verifyRefs } from "@/lib/refs";
+import { buildCrossLinkIndex, relatedKey } from "@/lib/cross-links";
 import { t } from "@/i18n";
 
 const locale = "el" as const;
 const prefix = "/el";
+
+const crossLinks = await buildCrossLinkIndex();
 
 export async function getStaticPaths() {
   const entries = await getCollection("departments");
@@ -23,6 +26,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const pathname = Astro.url.pathname;
+const related = crossLinks.relatedFor.get(relatedKey("departments", entry.id)) ?? [];
 
 const iconMap: Record<string, string> = {
   Scissors: "lucide:scissors",
@@ -81,16 +85,13 @@ const jsonLd = {
   pageHeading={entry.data.name[locale]}
   eyebrow="Τμήμα"
   jsonLd={jsonLd}
+  breadcrumbs={[
+    { label: "Αρχική", href: "/el/" },
+    { label: t("dept.section.title", locale), href: `${prefix}/departments/` },
+    { label: entry.data.name[locale] },
+  ]}
   noindex={true}
 >
-  <Breadcrumbs
-    slot="breadcrumbs"
-    items={[
-      { label: "Αρχική", href: "/el/" },
-      { label: t("dept.section.title", locale), href: `${prefix}/departments/` },
-      { label: entry.data.name[locale] },
-    ]}
-  />
 
   <div
     class="rounded-xl text-white p-6 mb-10"
@@ -145,5 +146,7 @@ const jsonLd = {
     }
   </div>
 
-  <Fragment slot="aside" />
+  <Fragment slot="aside">
+    <RelatedAside title="Σχετικά" related={related} locale={locale} prefix={prefix} />
+  </Fragment>
 </DetailLayout>

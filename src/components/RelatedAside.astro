@@ -1,0 +1,56 @@
+---
+import type { CrossRef } from "@/lib/cross-links";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  /** Heading shown above the list (already-localised by the caller). */
+  title: string;
+  related: CrossRef[];
+  locale: Locale;
+  prefix?: string;
+}
+
+const { title, related, locale, prefix = "" } = Astro.props;
+
+const collectionLabel = (c: CrossRef["collection"]) => {
+  if (locale === "en") {
+    return {
+      mechanisms: "Mechanism",
+      indications: "Indication",
+      departments: "Department",
+      longevity: "Longevity",
+    }[c];
+  }
+  return {
+    mechanisms: "Μηχανισμός",
+    indications: "Ένδειξη",
+    departments: "Τμήμα",
+    longevity: "Μακροζωία",
+  }[c];
+};
+---
+
+{
+  related.length > 0 && (
+    <div class="rounded-lg border border-slate-200 bg-slate-50/50 p-5">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">
+        {title}
+      </h3>
+      <ul class="space-y-2.5">
+        {related.map((r) => (
+          <li>
+            <a
+              href={`${prefix}/${r.collection}/${r.slug}/`}
+              class="block text-sm text-slate-700 hover:text-teal-700 transition-colors leading-snug"
+            >
+              <span class="block text-[10px] uppercase tracking-wider text-slate-400 mb-0.5">
+                {collectionLabel(r.collection)}
+              </span>
+              <span class="font-medium">{r.title[locale]}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

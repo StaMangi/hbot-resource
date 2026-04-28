@@ -3,13 +3,19 @@
  * DetailLayout — for individual entry pages (/indications/[slug]/, /mechanisms/[slug]/, etc.).
  *
  * Two-column layout on desktop, single-column on mobile. Main column holds the
- * entry content; aside column holds cross-links ("Cited in:", "Related:") that
- * 3.E will populate via the build-time reverse index.
+ * entry content; aside column holds cross-links ("Related" entries computed
+ * from the build-time reverse index in src/lib/cross-links.ts).
+ *
+ * Phase 3.E: breadcrumbs are now passed as a prop rather than via slot. The
+ * same array drives both the visible <Breadcrumbs /> trail at the top of the
+ * article AND the BreadcrumbList JSON-LD emitted by BaseHead.
  */
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import type { Locale } from "@/lib/seo";
+import type { BreadcrumbItem } from "@/lib/breadcrumbs";
 
 export interface Props {
   title: string;
@@ -21,21 +27,23 @@ export interface Props {
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
 
+  /** Breadcrumb trail. Drives both the visible trail and BreadcrumbList JSON-LD. */
+  breadcrumbs?: BreadcrumbItem[];
   /** Visible page heading (h1). Distinct from the document <title>. */
   pageHeading: string;
   /** Optional eyebrow text above h1 (e.g. category label). */
   eyebrow?: string;
 }
 
-const { pageHeading, eyebrow, ...baseProps } = Astro.props;
+const { pageHeading, eyebrow, breadcrumbs, ...baseProps } = Astro.props;
 ---
 
-<BaseLayout {...baseProps}>
+<BaseLayout {...baseProps} breadcrumbs={breadcrumbs}>
   <Nav slot="nav" locale={baseProps.locale} pathname={baseProps.pathname} />
   <Footer slot="footer" locale={baseProps.locale} pathname={baseProps.pathname} />
 
   <article class="py-12 md:py-16 max-w-6xl mx-auto px-6">
-    <slot name="breadcrumbs" />
+    {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 
     <header class="mb-10 max-w-3xl">
       {

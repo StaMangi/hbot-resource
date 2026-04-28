@@ -2,13 +2,16 @@
 import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
 import ReferenceItem from "@/components/cards/ReferenceItem.astro";
+import { buildCrossLinkIndex } from "@/lib/cross-links";
 import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
+const prefix = "";
 
 const all = await getCollection("references");
 const refs = all.sort((a, b) => a.data.num - b.data.num);
+const crossLinks = await buildCrossLinkIndex();
 
 const total = refs.length;
 const rcts = refs.filter((r) => /RCT|Meta-Analysis/i.test(r.data.type)).length;
@@ -48,7 +51,16 @@ const guidelines = refs.filter((r) => /Guideline/i.test(r.data.type)).length;
   </div>
 
   <ol class="space-y-3">
-    {refs.map((entry) => <ReferenceItem entry={entry} locale={locale} />)}
+    {
+      refs.map((entry) => (
+        <ReferenceItem
+          entry={entry}
+          locale={locale}
+          citedBy={crossLinks.byReference.get(String(entry.data.num)) ?? []}
+          prefix={prefix}
+        />
+      ))
+    }
   </ol>
 
   <div class="mt-12 text-center">

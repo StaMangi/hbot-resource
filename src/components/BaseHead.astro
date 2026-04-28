@@ -10,6 +10,7 @@ import {
   alternateLocaleUrl,
   type Locale,
 } from "@/lib/seo";
+import type { BreadcrumbItem } from "@/lib/breadcrumbs";
 
 export interface Props {
   title: string;
@@ -22,6 +23,9 @@ export interface Props {
   jsonLd?: Record<string, unknown>;
   /** Set true for pages we don't want indexed (e.g. preview-only). */
   noindex?: boolean;
+  /** Breadcrumb trail (Home › Index › Detail). When set, BreadcrumbList
+   * JSON-LD is emitted alongside any other jsonLd block. */
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 const {
@@ -33,7 +37,22 @@ const {
   ogType = "website",
   jsonLd,
   noindex = false,
+  breadcrumbs,
 } = Astro.props;
+
+const breadcrumbJsonLd =
+  breadcrumbs && breadcrumbs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((c, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: c.label,
+          ...(c.href ? { item: canonicalUrl(c.href) } : {}),
+        })),
+      }
+    : null;
 
 const canonical = canonicalUrl(pathname);
 const enUrl = alternateLocaleUrl(pathname, "en");
@@ -83,6 +102,16 @@ const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogI
       is:inline
       type="application/ld+json"
       set:html={JSON.stringify(jsonLd)}
+    />
+  )
+}
+
+{
+  breadcrumbJsonLd && (
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(breadcrumbJsonLd)}
     />
   )
 }

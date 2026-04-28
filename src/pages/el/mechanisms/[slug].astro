@@ -2,9 +2,10 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import RefTags from "@/components/RefTags.astro";
+import RelatedAside from "@/components/RelatedAside.astro";
 import { verifyRefs } from "@/lib/refs";
+import { buildCrossLinkIndex, relatedKey } from "@/lib/cross-links";
 import { t } from "@/i18n";
 
 const locale = "el" as const;
@@ -29,6 +30,9 @@ const iconMap: Record<string, string> = {
 
 const isTeal = entry.data.color === "teal";
 const iconBg = isTeal ? "bg-teal-100 text-teal-700" : "bg-slate-100 text-slate-700";
+
+const crossLinks = await buildCrossLinkIndex();
+const related = crossLinks.relatedFor.get(relatedKey("mechanisms", entry.id)) ?? [];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -59,17 +63,13 @@ const jsonLd = {
   pageHeading={entry.data.title[locale]}
   eyebrow="Μηχανισμός"
   jsonLd={jsonLd}
+  breadcrumbs={[
+    { label: "Αρχική", href: "/el/" },
+    { label: t("mechanisms.section.title", locale), href: `${prefix}/mechanisms/` },
+    { label: entry.data.title[locale] },
+  ]}
   noindex={true}
 >
-  <Breadcrumbs
-    slot="breadcrumbs"
-    items={[
-      { label: "Αρχική", href: "/el/" },
-      { label: t("mechanisms.section.title", locale), href: `${prefix}/mechanisms/` },
-      { label: entry.data.title[locale] },
-    ]}
-  />
-
   <div class={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-6`}>
     <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-6 h-6" />
   </div>
@@ -97,5 +97,7 @@ const jsonLd = {
     )
   }
 
-  <Fragment slot="aside" />
+  <Fragment slot="aside">
+    <RelatedAside title="Σχετικά" related={related} locale={locale} prefix={prefix} />
+  </Fragment>
 </DetailLayout>

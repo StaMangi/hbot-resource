@@ -2,6 +2,7 @@
 import BaseHead from "@/components/BaseHead.astro";
 import "@/styles/global.css";
 import type { Locale } from "@/lib/seo";
+import type { BreadcrumbItem } from "@/lib/breadcrumbs";
 
 export interface Props {
   title: string;
@@ -12,6 +13,7 @@ export interface Props {
   ogType?: "website" | "article";
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 const props = Astro.props;
