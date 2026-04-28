@@ -8,9 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 3.B — Tier 1 + 2 landings + Nav redesign + i18n parity.** Complete and deployed. Waiting for Stamos approval before 3.C.
+**Phase 3.C — Tier 3 collection index pages.** Complete and deployed. Phase 4 plan written and committed (awaiting async Stamos review). Stamos has dropped `docs/sources/Other HBOT applications.pdf` into the repo — Phase 4 prerequisite satisfied.
 
-**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed.
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed; all 8 collection indexes now serve real content.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -178,16 +178,51 @@ A11y regression caught + fixed mid-session: `Footer.astro` copyright `text-slate
 - `pnpm build`: **99 routes** in 1.52 s.
 - Sitemap: 98 routes (404 excluded), EN/EL alternates wired.
 
+## Phase 3.C — done (this session)
+
+### `docs/PHASE-4-PLAN.md` committed
+- 10 sub-steps (4.A–4.J), ~37–48 sessions, 4 stop points.
+- Scope locked to 5 PDF clusters + 3 standalone pages. Wider original-brief items proposed for deferral.
+- DOI verification: automated `pnpm verify-refs` (preferred) or manual checklist fallback.
+- Per-cluster PR + preview-deploy review workflow.
+- Three open questions surfaced for Stamos's async review.
+- **Source PDF arrived**: `docs/sources/Other HBOT applications.pdf` is now in the repo (Stamos committed it during this session). Phase 4.A can start with research material in hand once 3.D–3.F complete.
+
+### 3.C content
+- 7 reusable card components in `src/components/cards/`: `MechanismCard`, `IndicationCard`, `DepartmentCard`, `DeptWithoutCard`, `LongevityCard`, `StudyCard`, `ReferenceItem`. (These also satisfy most of Phase 3.F's "extract card primitives" — F's cleanup pass becomes verification rather than fresh extraction.)
+- 8 index pages × 2 locales = 16 routes built:
+  - `/mechanisms/` — 5-card grid + paradox callout
+  - `/indications/` — 14 cards grouped into 5 category sections (no JS filter)
+  - `/departments/` — 9-card grid + footer link to without-hbot
+  - `/departments/without-hbot/` — 6-card grid + amber disclaimer banner
+  - `/longevity/` — 6-card grid + Hyperoxic-Hypoxic Paradox callout
+  - `/evidence/` — 8 study cards + level legend + summary banner
+  - `/references/` — 24 reference items with `id="ref-N"` anchors (cross-link target for 3.E reverse index) + 4-stat summary
+  - `/protocols/` — static comparison matrix (14-row FDA table + 6-row longevity table). Replaces the original interactive multi-select + jsPDF tool per Phase 3 plan's zero-JS direction; Cmd-P prints cleanly.
+- `/about/` stays as 3.A stub — Phase 6 launch-prep fills it.
+
+### Lighthouse spot-checks (mobile)
+| Page | Perf | A11y | BP | SEO | FCP | LCP |
+|---|---|---|---|---|---|---|
+| `/indications/` | 100 | 100 | 100 | 66 | 1.5 s | 1.5 s |
+| `/references/` | 98 | 100 | 100 | 66 | 1.8 s | 1.8 s |
+
+All real-target pillars ≥95. Compressed page weight across all 8 index pages: 35–37 KB. Tight and consistent. Reports + summary at `docs/3c-lighthouse-summary.md`.
+
+### Build status
+- `astro check`: 0 / 0 / 0 across **76 files** (was 69 → +7 cards).
+- `pnpm build`: 99 routes in 1.58 s.
+- Quadruple-grep clean.
+
 ## What's next (waiting on Stamos)
-1. **Review 3.B**:
-   - https://hbot-resource.pages.dev/ — new homepage
-   - https://hbot-resource.pages.dev/clinical/ — clinical landing
-   - https://hbot-resource.pages.dev/wellness/ — wellness landing
-   - https://hbot-resource.pages.dev/el/ — Greek mirror
-   - Test the Nav: hamburger on mobile, language toggle, active-state highlighting on deep pages
-   - Click through department/longevity grids to confirm soft-routing works
-2. Once 3.B is approved, **before 3.C kicks off, I write `docs/PHASE-4-PLAN.md`** per the locked Phase 4 decisions in memory (source PDF, DOI verification standard, omit menopause).
-3. Then **3.C** — 8 collection index pages (`/mechanisms/`, `/indications/`, `/departments/`, `/longevity/`, `/evidence/`, `/references/`, `/protocols/`, `/about/`).
+1. **Async review of `docs/PHASE-4-PLAN.md`** — answer the three open questions on scope / DOI tooling / reviewable unit. Source PDF prerequisite already satisfied.
+2. **3.C review** — visit:
+   - https://hbot-resource.pages.dev/indications/ (category groupings)
+   - https://hbot-resource.pages.dev/references/ (24-item bibliography)
+   - https://hbot-resource.pages.dev/protocols/ (comparison matrix, try Cmd-P printability)
+   - https://hbot-resource.pages.dev/departments/without-hbot/
+   - Greek mirrors at `/el/...`
+3. Approve **3.D** — detail pages via dynamic routes. 34 entries (5 mechanisms + 14 indications + 9 departments + 6 longevity) × 2 locales = 68 detail pages, each replacing its 3.A stub.
 
 ## Open issues / risks
 - **Domain `hbotscience.org` registered (Namecheap), DNS at Cloudflare, awaiting activation.** Hard-coded in `src/lib/seo.ts` as the canonical URL. Single source of truth — if it changes, edit there and rebuild.
@@ -204,4 +239,7 @@ A11y regression caught + fixed mid-session: `Footer.astro` copyright `text-slate
 - **2026-04-28** — Phase 2.F complete (Cloudflare Pages connected, hbot-resource.pages.dev live, Lighthouse measured against HTTPS preview). Mobile Performance 81 flagged as below target — render-blocking font/CSS issue. Decision: defer Option C font fix into Phase 3.A.
 - **2026-04-28** — Phase 3 plan written and approved (`docs/PHASE-3-PLAN.md`). 6 sub-steps (3.A through 3.F), 4 stop points, ~18 sessions, ~90 routes target. Zero React islands.
 - **2026-04-28** — Phase 3.A complete (self-hosted fonts + inline critical CSS + 3 reusable layouts + 30 URL stubs / 76 routes). Mobile Performance lifted 81 → 98, FCP/LCP halved to 1.8 s. All real-target pillars ≥95. 93 pages now deploying. Existing long-scroll homepage preserved as fallback per amendment B.
-- **2026-04-28** — Phase 3.B complete (homepage redesign · /clinical/ + /wellness/ landings · Nav redesign · 14 EL longevity strings backfilled into EN · 6 Phase 4 stubs · A11y contrast regression caught and fixed). Mobile A11y 95 → 100. Editorial-integrity precedent locked: never ship unsourced claims, even inherited ones, in either language. 99 routes deploying. Awaiting Stamos review before 3.C.
+- **2026-04-28** — Phase 3.B complete (homepage redesign · /clinical/ + /wellness/ landings · Nav redesign · 14 EL longevity strings backfilled into EN · 6 Phase 4 stubs · A11y contrast regression caught and fixed). Mobile A11y 95 → 100. Editorial-integrity precedent locked: never ship unsourced claims, even inherited ones, in either language. 99 routes deploying.
+- **2026-04-28** — `docs/PHASE-4-PLAN.md` committed. 10 sub-steps, ~37–48 sessions, scope locked to 5 PDF clusters + 3 standalone pages.
+- **2026-04-28** — Source PDF `docs/sources/Other HBOT applications.pdf` committed by Stamos. Phase 4.A prerequisite satisfied.
+- **2026-04-28** — Phase 3.C complete (7 reusable card components · 8 collection index pages × 2 locales = 16 routes built). Lighthouse spot-checks on /indications/ and /references/: 100/100/100/66 and 98/100/100/66. Compressed page weights 35–37 KB across all 8 indexes. Awaiting Stamos review before 3.D.
