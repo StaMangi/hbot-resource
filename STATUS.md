@@ -1,33 +1,42 @@
 # HBOT Resource — Project Status
 
 **Working dir:** `/Users/stamoulismanginas/Projects/hbot-resource/`
-**Source repo:** [StaMangi/hbot_clinical_resource](https://github.com/StaMangi/hbot_clinical_resource) (cloned in place)
+**New repo:** https://github.com/StaMangi/hbot-resource (public)
+**Forked from:** [StaMangi/hbot_clinical_resource](https://github.com/StaMangi/hbot_clinical_resource) — preserved at `_henry-dunant-source/`
 **Live source site:** https://hbotresource-wcjp4x3h.manus.space
-**Target hosting:** Cloudflare Pages (separate domain TBC)
+**Target hosting:** Cloudflare Pages
+**Target domain:** `hbotresource.com` (placeholder until registered)
 
 ## Current phase
-**Phase 1 — Audit & plan (read-only).** Complete. Waiting for Phase 2 approval.
+**Phase 2.A — Bootstrap.** Complete. Waiting for Stamos review before 2.B.
 
-## Done
-- Repo cloned into working dir (alongside `.claude/`)
-- File-tree, dependency, content-storage, i18n, and "Henry Dunant" inventory complete
-- Memory seeded with user role, project context, workflow expectations, and content-integrity rules
-- **Decisions approved (2026-04-28):** Astro · drop backend · cut chatbot · new repo `StaMangi/hbot-resource` · Lighthouse baseline via local CLI (PSI API blocked)
-- **Lighthouse baseline captured** — `docs/baseline-{mobile,desktop}.report.{json,html}` + `docs/baseline-summary.md`
-  - Desktop: Perf 88 · A11y 82 · BP 81 · SEO 92
-  - Mobile: Perf 59 · A11y 75 · BP 82 · SEO 92 — all below ≥95 target
-- **Content extraction** — `data-export/hbot-content.json` (66 entries) + `data-export/hbot-i18n.json` (286 keys, EN/EL)
-- **Phase 2 plan written** — `docs/PHASE-2-PLAN.md`
+## Phase 1 (audit) — done
+- Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
+
+## Phase 2.A (bootstrap) — done (this session)
+- Henry Dunant source moved to `_henry-dunant-source/` (read-only reference, included in repo for provenance)
+- Local `.git/` from the original clone dropped; fresh git history initialised
+- Astro 5.18.1 project bootstrapped at repo root with: React 19, Tailwind v4 (via `@tailwindcss/vite`), `@astrojs/sitemap`, `@astrojs/mdx`, `@astrojs/check`
+- Folder skeleton: `src/{pages,layouts,components,lib,styles,i18n}` + `public/`
+- **`BaseHead.astro` SEO scaffolding wired from day one** (per Stamos addition 1):
+  - Canonical URL, hreflang en/el/x-default, Open Graph, Twitter Card, MedicalWebPage JSON-LD, robots noindex, favicon, font preconnects.
+- Initial pages: `/` (EN placeholder), `/el/` (EL mirror), `/404` — all build to static HTML.
+- `noindex` set on every page during preview phase.
+- Sitemap auto-generated with EN ↔ EL `xhtml:link` alternates.
+- `robots.txt` allows all crawlers and points to `sitemap-index.xml`.
+- Build verified: `pnpm build` produces 3 pages + sitemap in ~1 second.
+- GitHub repo created: https://github.com/StaMangi/hbot-resource (public)
+- Initial commit pushed to `main`. CHANGELOG attributes Henry Dunant source.
 
 ## What's next (waiting on Stamos)
-1. Review `docs/PHASE-2-PLAN.md` and approve (or amend)
-2. Cloudflare Pages access decision: connect repo via dashboard (Stamos) OR `wrangler login` route (me, after Stamos auths)
-3. Domain target confirmation (`hbotresource.com` or alt) — for canonical URL placeholders
+1. **Review the 2.A output** — clone the repo locally, run `pnpm install && pnpm dev`, visit http://localhost:4321 and http://localhost:4321/el/. Or just review the GitHub repo.
+2. Approve **2.B (content migration)** — Zod schemas + script that splits `hbot-content.json` into per-entry YAML files in `src/content/`.
 
 ## Open issues / risks
-- Current site is a **single-page SPA** — entire content renders client-side from one HTML shell. The brief requires multi-page routing AND non-JS-rendered text for crawlers. This is a structural mismatch and forces a framework decision now.
-- Site is **coupled to Manus.space hosting** (vite-plugin-manus-runtime, `/manus-storage/` asset paths, debug-collector, ManusDialog). Decoupling is part of the fork.
-- Backend (Express + tRPC + MySQL + S3 + OAuth) is **largely unused for content** — content is hardcoded TS arrays. Stack simplification recommended.
+- **Domain not yet registered.** `hbotresource.com` is hard-coded in `src/lib/seo.ts` as the canonical URL. If we change domain, it's a single-line edit + rebuild (no widespread find/replace needed thanks to centralised constant).
+- **Cloudflare Pages connection deferred** — Stamos to set up via dashboard at sub-step 2.F.
+- **`@astrojs/mdx` 5.x and `@astrojs/react` 5.x are available** but require Astro 6. We pinned to Astro 5.18.1 for stability. Revisit when Astro 6 is more battle-tested.
 
 ## Phase log
-- **2026-04-28** — Phase 1 complete. Inventory + baseline + content export + Phase 2 plan all delivered. Waiting for Phase 2 approval.
+- **2026-04-28** — Phase 1 complete (inventory + baseline + content export + Phase 2 plan).
+- **2026-04-28** — Phase 2.A complete (Astro shell + repo + initial commit pushed). Waiting for review before 2.B.
