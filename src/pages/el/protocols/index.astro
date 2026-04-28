@@ -1,0 +1,21 @@
+---
+import IndexLayout from "@/layouts/IndexLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "el" as const;
+---
+
+<IndexLayout
+  title="Σύγκριση Πρωτοκόλλων — HBOT Science"
+  description="Σύγκριση όλων των εγκεκριμένων πρωτοκόλλων HBOT: πίεση (ATA), αριθμός συνεδριών, διάρκεια, συχνότητα και επίπεδο τεκμηρίωσης."
+  locale={locale}
+  pathname={pathname}
+  badge="Αναφορά"
+  pageHeading="Σύγκριση Πρωτοκόλλων"
+  pageSubtitle="Σύγκριση πρωτοκόλλων HBOT σε όλες τις εγκεκριμένες ενδείξεις FDA."
+  badgeColor="navy"
+  noindex={true}
+>
+  <StubContent phase="3.C" locale={locale} />
+</IndexLayout>

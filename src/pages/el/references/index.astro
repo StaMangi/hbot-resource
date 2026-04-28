@@ -1,0 +1,22 @@
+---
+import IndexLayout from "@/layouts/IndexLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+import { t } from "@/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = "el" as const;
+---
+
+<IndexLayout
+  title={`${t("refs.section.title", locale)} — HBOT Science`}
+  description={t("refs.section.subtitle", locale)}
+  locale={locale}
+  pathname={pathname}
+  badge={t("refs.section.badge", locale)}
+  pageHeading={t("refs.section.title", locale)}
+  pageSubtitle={t("refs.section.subtitle", locale)}
+  badgeColor="slate"
+  noindex={true}
+>
+  <StubContent phase="3.C" locale={locale} />
+</IndexLayout>

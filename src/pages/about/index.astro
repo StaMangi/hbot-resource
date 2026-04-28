@@ -1,0 +1,25 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+
+const pathname = Astro.url.pathname;
+---
+
+<LandingLayout
+  title="About — HBOT Science"
+  description="Editorial publisher, evidence standards, conflict of interest disclosure, and reference verification process for HBOT Science."
+  locale="en"
+  pathname={pathname}
+  noindex={true}
+>
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">About</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Editorial Policy
+    </h1>
+    <StubContent phase="6 (launch prep)" locale="en" />
+    <p class="mt-6 text-sm text-slate-600">
+      Editorial publisher: <strong>IN2050 Ltd</strong> · Cyprus · Reg. HE416406
+    </p>
+  </section>
+</LandingLayout>

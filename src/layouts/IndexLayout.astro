@@ -1,0 +1,58 @@
+---
+/**
+ * IndexLayout — for collection index pages (/mechanisms/, /indications/, /departments/, etc.).
+ *
+ * Standard structure: breadcrumbs + section header (badge / title / subtitle) +
+ * main content (the list/grid of entries). Page header is built-in; the slot
+ * receives just the entry grid.
+ */
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import type { Locale } from "@/lib/seo";
+
+export interface Props {
+  title: string;
+  description?: string;
+  locale: Locale;
+  pathname: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
+
+  /** Section header content (visible on the page itself, not the document head). */
+  badge: string;
+  pageHeading: string;
+  pageSubtitle: string;
+  badgeColor?: "teal" | "navy" | "amber" | "violet" | "emerald" | "slate";
+}
+
+const {
+  badge,
+  pageHeading,
+  pageSubtitle,
+  badgeColor = "teal",
+  ...baseProps
+} = Astro.props;
+---
+
+<BaseLayout {...baseProps}>
+  <Nav slot="nav" locale={baseProps.locale} pathname={baseProps.pathname} />
+  <Footer slot="footer" locale={baseProps.locale} pathname={baseProps.pathname} />
+
+  <section class="py-16 md:py-20 max-w-6xl mx-auto px-6">
+    <slot name="breadcrumbs" />
+
+    <SectionHeader
+      badge={badge}
+      title={pageHeading}
+      subtitle={pageSubtitle}
+      align="left"
+      badgeColor={badgeColor}
+    />
+
+    <slot />
+  </section>
+</BaseLayout>

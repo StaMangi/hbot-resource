@@ -1,0 +1,22 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+
+const pathname = Astro.url.pathname;
+---
+
+<LandingLayout
+  title="For wellness and longevity operators — HBOT Science"
+  description="HBOT for wellness and longevity programmes — outcomes, member journey design, programme protocols, and operator reference architecture."
+  locale="en"
+  pathname={pathname}
+  noindex={true}
+>
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">For wellness & longevity operators</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Wellness & Longevity
+    </h1>
+    <StubContent phase="3.B" locale="en" />
+  </section>
+</LandingLayout>

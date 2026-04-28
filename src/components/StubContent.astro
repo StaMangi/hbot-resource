@@ -1,0 +1,30 @@
+---
+/**
+ * Placeholder content for Phase 3.A URL stubs.
+ *
+ * Every new route in Phase 3.A renders this — establishes the routing tree
+ * and lets the layouts be visually validated before content lands. Removed
+ * route-by-route as 3.B / 3.C / 3.D / 3.E populate each page.
+ */
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  phase: string;
+  locale: Locale;
+}
+const { phase, locale } = Astro.props;
+
+const heading =
+  locale === "en"
+    ? `Phase ${phase} — under construction`
+    : `Φάση ${phase} — υπό κατασκευή`;
+const message =
+  locale === "en"
+    ? `Content for this page is being built in Phase ${phase}. The route exists today so the information architecture and routing tree can be validated. The full page lands when ${phase} ships.`
+    : `Το περιεχόμενο αυτής της σελίδας προστίθεται στη Φάση ${phase}. Το route υπάρχει ήδη ώστε να επικυρωθεί η αρχιτεκτονική. Η πλήρης σελίδα φτάνει όταν ολοκληρωθεί η ${phase}.`;
+---
+
+<div class="my-6 rounded-lg border border-dashed border-amber-300 bg-amber-50 p-6">
+  <p class="text-sm font-semibold text-amber-900">{heading}</p>
+  <p class="mt-2 text-sm text-amber-900/80 leading-relaxed">{message}</p>
+</div>

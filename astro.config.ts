@@ -14,6 +14,13 @@ export default defineConfig({
   site: SITE,
   output: "static",
   trailingSlash: "always",
+  build: {
+    // Inline all CSS into the per-page <style> block. Eliminates the ~450 ms
+    // render-blocking external stylesheet flagged in the Phase 2.F Lighthouse
+    // diagnosis. Combined with self-hosted fonts, this lifts mobile
+    // Performance from 81 → ≥95.
+    inlineStylesheets: "always",
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en", "el"],

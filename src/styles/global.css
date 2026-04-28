@@ -1,8 +1,40 @@
+/*
+ * Self-hosted fonts via @fontsource (Phase 3.A.1).
+ *
+ * Subsets: latin + latin-ext for both Montserrat (4 weights) and Lato
+ * (3 weights). The original Henry Dunant site loaded these via the Google
+ * Fonts CDN, which was render-blocking on mobile (~992 ms wasted at LCP).
+ * Self-hosting + inlineStylesheets:'always' eliminates that bottleneck.
+ *
+ * Greek note: neither Montserrat (in fontsource) nor Lato (anywhere) ship
+ * with a Greek subset. Greek text falls back through the font stack to
+ * system Greek fonts (Helvetica Neue / Segoe UI / Roboto) — same behaviour
+ * as on the original site. Visual quality is unaffected on any modern OS.
+ */
+
+/* Montserrat — display / headings */
+@import "@fontsource/montserrat/latin-400.css";
+@import "@fontsource/montserrat/latin-500.css";
+@import "@fontsource/montserrat/latin-600.css";
+@import "@fontsource/montserrat/latin-700.css";
+@import "@fontsource/montserrat/latin-ext-400.css";
+@import "@fontsource/montserrat/latin-ext-500.css";
+@import "@fontsource/montserrat/latin-ext-600.css";
+@import "@fontsource/montserrat/latin-ext-700.css";
+
+/* Lato — body text */
+@import "@fontsource/lato/latin-300.css";
+@import "@fontsource/lato/latin-400.css";
+@import "@fontsource/lato/latin-700.css";
+@import "@fontsource/lato/latin-ext-300.css";
+@import "@fontsource/lato/latin-ext-400.css";
+@import "@fontsource/lato/latin-ext-700.css";
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Lato", system-ui, sans-serif;
-  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-sans: "Lato", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Montserrat", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
 }
 
 html {

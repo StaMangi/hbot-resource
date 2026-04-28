@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import DetailLayout from "@/layouts/DetailLayout.astro";
+import StubContent from "@/components/StubContent.astro";
+
+const locale = "en" as const;
+
+export async function getStaticPaths() {
+  const entries = await getCollection("longevity");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<DetailLayout
+  title={`${entry.data.title[locale]} — HBOT Science`}
+  description={entry.data.summary[locale]}
+  locale={locale}
+  pathname={pathname}
+  pageHeading={entry.data.title[locale]}
+  eyebrow="Longevity application"
+  noindex={true}
+>
+  <p class="text-lg text-slate-700 leading-relaxed">{entry.data.summary[locale]}</p>
+  <StubContent phase="3.D" locale={locale} />
+</DetailLayout>

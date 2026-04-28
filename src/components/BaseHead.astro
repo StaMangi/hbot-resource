@@ -70,12 +70,12 @@ const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogI
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
-  rel="stylesheet"
-/>
+<!--
+  Fonts are self-hosted via @fontsource and inlined into the per-page <style>
+  block by Astro's build.inlineStylesheets:'always'. No external font CDN
+  request, no preconnect needed.
+-->
+
 
 {
   jsonLd && (
