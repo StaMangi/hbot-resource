@@ -5,8 +5,11 @@ import type { Locale } from "@/lib/seo";
 interface Protocol {
   ata: string;
   duration: string;
-  sessions: string;
-  frequency: string;
+  // Bilingual since 4.D — values often carry English qualifiers
+  // ("highly variable", "Daily, protocol-dependent", "5×/week") that
+  // don't translate cleanly. Locale-resolved at render below.
+  sessions: { en: string; el: string };
+  frequency: { en: string; el: string };
   basis: { en: string; el: string };
 }
 
@@ -40,8 +43,8 @@ const labels = {
 const fields = [
   { icon: "lucide:gauge", label: labels.pressure, value: protocol.ata },
   { icon: "lucide:clock", label: labels.duration, value: protocol.duration },
-  { icon: "lucide:hash", label: labels.sessions, value: protocol.sessions },
-  { icon: "lucide:refresh-cw", label: labels.frequency, value: protocol.frequency },
+  { icon: "lucide:hash", label: labels.sessions, value: protocol.sessions[locale] },
+  { icon: "lucide:refresh-cw", label: labels.frequency, value: protocol.frequency[locale] },
 ];
 
 const grid = variant === "full" ? "grid-cols-2 md:grid-cols-4" : "grid-cols-2";

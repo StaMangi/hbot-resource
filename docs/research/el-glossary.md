@@ -99,8 +99,20 @@ The register chosen for Long COVID's single-research-group caveat is the canonic
 | 40 HBOT sessions | 40 συνεδρίες HBOT | numerals kept; unit follows |
 | 2.0 ATA | 2.0 ATA | unit name kept Latin; numeric form universal |
 | 90 min session | συνεδρία 90 λεπτών | when narrative |
-| 5×/week | 5×/εβδομάδα | use Greek "εβδομάδα" in narrative; the YAML protocol field stays "5×/week" pending schema-level i18n decision |
+| 5×/week | 5×/εβδομάδα | full bilingual form now in YAML protocol field (4.D schema migration) |
 | once daily | μία φορά την ημέρα | |
+| Once daily, 5×/week | Μία φορά την ημέρα, 5×/εβδομάδα | full canonical form for FDA-approved indication protocols |
+| Immediately, then daily | Αμέσως, μετά καθημερινά | |
+| Daily, protocol-dependent | Καθημερινά, εξαρτάται από το πρωτόκολλο | emerging-tier protocol when not standardised |
+| Once or twice daily | Μία ή δύο φορές την ημέρα | |
+| Continuous until resolved | Συνεχόμενα μέχρι την υποχώρηση | |
+| Continuous until stable | Συνεχόμενα μέχρι σταθεροποίηση | |
+| Post-exercise or daily | Μετά την άσκηση ή καθημερινά | longevity protocol |
+| Prior to each radiation fraction | Πριν από κάθε κλάσμα ακτινοβολίας | radiation oncology adjunct |
+| 1 – 3 (emergency) | 1 – 3 (επείγον) | sessions value, emergency-protocol indications |
+| 6 – 30 (highly variable) | 6 – 30 (πολύ μεταβλητές) | sessions value, emerging-tier indications |
+| 10 – 20 per cycle | 10 – 20 ανά κύκλο | longevity sessions per cycle |
+| Per radiation course | Ανά κύκλο ακτινοθεραπείας | sessions value for radiation-paired protocols |
 | daily, then maintenance | καθημερινά, στη συνέχεια συντήρηση | |
 | emergency standard | επείγον πρότυπο | |
 | adjunctive therapy | επικουρική θεραπεία | |
@@ -147,8 +159,8 @@ Added when 4.D landed; binding for any later cluster that touches dermatology, w
 
 | EN | EL | Notes |
 |---|---|---|
-| Inflammatory Dermatoses | Φλεγμονώδεις Δερματοπάθειες | indication name |
-| Inflammatory Skin Disease | Φλεγμονώδης Δερματοπάθεια | category label, singular form |
+| Inflammatory Dermatoses | Φλεγμονώδεις Δερματοπάθειες | indication name (specific clinical term) |
+| Inflammatory Skin Disease | Φλεγμονώδεις Δερματικές Παθήσεις | category label — broader umbrella, distinct from indication name in both languages (EL revised 4.D review: was "Φλεγμονώδης Δερματοπάθεια", which collapsed to a near-singular variant of the indication name) |
 | atopic dermatitis | ατοπική δερματίτιδα | |
 | psoriasis vulgaris | ψωρίαση κατά πλάκες | "vulgaris" rendered as "κατά πλάκες" — clinical EL convention |
 | plaque psoriasis | ψωρίαση κατά πλάκες | same EL form |

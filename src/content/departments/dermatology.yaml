@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "2.0 – 2.5 ATA"
       duration: "60 – 90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
@@ -39,8 +43,12 @@ applications:
     protocol:
       ata: "2.0 – 2.5 ATA"
       duration: "60 – 90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
@@ -59,8 +67,12 @@ applications:
     protocol:
       ata: "2.0 – 2.5 ATA"
       duration: "60 – 90 min"
-      sessions: "20 – 30"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
@@ -80,8 +92,12 @@ applications:
     protocol:
       ata: "2.0 – 2.5 ATA"
       duration: "90 min"
-      sessions: "20 – 30"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
@@ -101,8 +117,12 @@ applications:
     protocol:
       ata: "2.0 – 2.8 ATA"
       duration: "60 – 90 min"
-      sessions: "6 – 30 (highly variable)"
-      frequency: "Daily, protocol-dependent"
+      sessions:
+        en: "6 – 30 (highly variable)"
+        el: "6 – 30 (πολύ μεταβλητές)"
+      frequency:
+        en: "Daily, protocol-dependent"
+        el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
       basis:
         en: "Case Reports & Small Studies"
         el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες"

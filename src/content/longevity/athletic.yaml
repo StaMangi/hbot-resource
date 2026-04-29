@@ -16,8 +16,12 @@ mechanism:
 protocol:
   ata: "1.5 – 2.4 ATA"
   duration: "60 – 90 min"
-  sessions: "10 – 20 per cycle"
-  frequency: "Post-exercise or daily"
+  sessions:
+    en: "10 – 20 per cycle"
+    el: "10 – 20 ανά κύκλο"
+  frequency:
+    en: "Post-exercise or daily"
+    el: "Μετά την άσκηση ή καθημερινά"
   basis:
     en: "Systematic Review & Meta-Analysis"
     el: "Συστηματική Ανασκόπηση & Μετα-Ανάλυση"

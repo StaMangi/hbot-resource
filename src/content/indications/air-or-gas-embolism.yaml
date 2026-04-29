@@ -16,8 +16,12 @@ evidenceLevel: "A"
 protocol:
   ata: "2.8 – 3.0 ATA"
   duration: "90 min"
-  sessions: "1 – 3 (emergency)"
-  frequency: "Continuous until stable"
+  sessions:
+    en: "1 – 3 (emergency)"
+    el: "1 – 3 (επείγον)"
+  frequency:
+    en: "Continuous until stable"
+    el: "Συνεχόμενα μέχρι σταθεροποίηση"
   basis:
     en: "UHMS / Emergency Standard"
     el: "UHMS / Επείγον Πρότυπο"

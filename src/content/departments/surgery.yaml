@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "30 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "30 – 60"
+        el: "30 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
@@ -38,8 +42,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "10 – 20"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "10 – 20"
+        el: "10 – 20"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
@@ -57,8 +65,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "20 – 30"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
@@ -76,8 +88,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "10 – 20"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "10 – 20"
+        el: "10 – 20"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
@@ -95,8 +111,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "20 – 30"
-      frequency: "Once or twice daily"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once or twice daily"
+        el: "Μία ή δύο φορές την ημέρα"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
@@ -114,8 +134,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "30 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "30 – 40"
+        el: "30 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"

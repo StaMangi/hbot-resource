@@ -2,7 +2,7 @@ legacyId: 17
 tier: "emerging"
 category:
   en: "Inflammatory Skin Disease"
-  el: "Φλεγμονώδης Δερματοπάθεια"
+  el: "Φλεγμονώδεις Δερματικές Παθήσεις"
 condition:
   en: "Inflammatory Dermatoses"
   el: "Φλεγμονώδεις Δερματοπάθειες"
@@ -16,8 +16,12 @@ evidenceLevel: "C"
 protocol:
   ata: "2.0 – 2.8 ATA"
   duration: "60 – 90 min"
-  sessions: "6 – 30 (highly variable)"
-  frequency: "Daily, protocol-dependent"
+  sessions:
+    en: "6 – 30 (highly variable)"
+    el: "6 – 30 (πολύ μεταβλητές)"
+  frequency:
+    en: "Daily, protocol-dependent"
+    el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
   basis:
     en: "Case Reports & Small Studies (not standardised)"
     el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες (μη τυποποιημένα)"

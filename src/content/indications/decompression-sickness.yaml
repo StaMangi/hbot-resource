@@ -16,8 +16,12 @@ evidenceLevel: "A"
 protocol:
   ata: "2.0 – 2.5 ATA"
   duration: "90 min"
-  sessions: "20 – 30"
-  frequency: "Once daily, 5×/week"
+  sessions:
+    en: "20 – 30"
+    el: "20 – 30"
+  frequency:
+    en: "Once daily, 5×/week"
+    el: "Μία φορά την ημέρα, 5×/εβδομάδα"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
