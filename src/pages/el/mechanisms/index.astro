@@ -23,7 +23,6 @@ const entries = order
   pageHeading={t("mechanisms.section.title", locale)}
   pageSubtitle={t("mechanisms.section.subtitle", locale)}
   badgeColor="teal"
-  noindex={true}
 >
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     {entries.map((entry) => <MechanismCard entry={entry} locale={locale} prefix="/el" />)}

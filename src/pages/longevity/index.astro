@@ -23,7 +23,6 @@ const entries = order
   pageHeading={t("longevity.section.title", locale)}
   pageSubtitle={t("longevity.section.subtitle", locale)}
   badgeColor="violet"
-  noindex={true}
 >
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     {entries.map((entry) => <LongevityCard entry={entry} locale={locale} />)}
