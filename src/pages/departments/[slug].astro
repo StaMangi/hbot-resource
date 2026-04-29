@@ -38,6 +38,9 @@ const iconMap: Record<string, string> = {
   Eye: "lucide:eye",
   HeartHandshake: "lucide:heart-handshake",
   Users: "lucide:users",
+  Bandage: "lucide:bandage",
+  Sparkles: "lucide:sparkles",
+  Venus: "lucide:venus",
 };
 
 const fdaCount = entry.data.applications.filter((a) => a.type === "FDA-Approved").length;
@@ -119,6 +122,14 @@ const jsonLd = {
   <h2 class="text-xl font-semibold text-slate-900 mb-6" style="font-family: var(--font-display)">
     {t("dept.applications.title", locale)}
   </h2>
+
+  {entry.data.applications.length === 0 && (
+    <div class="rounded-lg border border-dashed border-amber-300 bg-amber-50 p-6 text-sm text-amber-900 leading-relaxed">
+      Applications for this department populate during Phase 4 of the project.
+      The new content (research-verified, evidence-graded, bilingual) lands in
+      the appropriate cluster sub-step. See <a href="/" class="text-teal-700 underline underline-offset-2 hover:text-teal-800">project status</a>.
+    </div>
+  )}
 
   <div class="space-y-6">
     {

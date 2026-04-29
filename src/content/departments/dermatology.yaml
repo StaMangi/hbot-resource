@@ -1,0 +1,9 @@
+name:
+  en: "Dermatology"
+  el: "Δερματολογία"
+icon: "Bandage"
+color: "#ea580c"
+shortDesc:
+  en: "Burns, chronic wounds, skin grafts, dermatological inflammations"
+  el: "Εγκαύματα, χρόνιες πληγές, μοσχεύματα δέρματος, δερματικές φλεγμονές"
+applications: []

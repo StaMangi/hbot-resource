@@ -11,6 +11,8 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "verify-refs": "node scripts/verify-references.mjs",
+    "prebuild": "pnpm verify-refs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",

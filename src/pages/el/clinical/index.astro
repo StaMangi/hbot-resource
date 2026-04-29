@@ -22,6 +22,9 @@ const order = [
   "ophthalmology",
   "psychiatry",
   "geriatrics",
+  "dermatology",
+  "plastic-surgery",
+  "womens-health",
 ];
 const departments = order
   .map((id) => departmentsAll.find((d) => d.id === id))
@@ -37,6 +40,9 @@ const deptIcons: Record<string, string> = {
   Eye: "lucide:eye",
   HeartHandshake: "lucide:heart-handshake",
   Users: "lucide:users",
+  Bandage: "lucide:bandage",
+  Sparkles: "lucide:sparkles",
+  Venus: "lucide:venus",
 };
 
 const libraryLinks = [

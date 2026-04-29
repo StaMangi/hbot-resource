@@ -28,6 +28,9 @@ Thumbs.db
 # Claude Code local settings (machine-specific permission grants)
 .claude/settings.local.json
 
+# DOI verifier cache (24h TTL, regenerates on use)
+.verify-refs-cache.json
+
 # temp
 *.log
 *.tmp
