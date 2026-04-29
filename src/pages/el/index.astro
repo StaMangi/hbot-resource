@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import LandingLayout from "@/layouts/LandingLayout.astro";
 import HomeStat from "@/components/HomeStat.astro";
 import HomePathCard from "@/components/HomePathCard.astro";
@@ -13,11 +14,16 @@ const title = `${SITE_NAME} — Τεκμηριωμένος Οδηγός HBOT`;
 const description =
   "Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Μηχανισμοί, εγκεκριμένες ενδείξεις FDA, κλινικά πρωτόκολλα, εφαρμογές μακροζωίας και αξιολογημένη βιβλιογραφία.";
 
+const indications = await getCollection("indications");
+const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
+const totalIndications = fdaCount + emergingCount;
+
 const stats = [
-  { value: "14", label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
   { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
   { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
-  { value: "2–3", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
+  { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
 ];
 
 const jsonLd = {
@@ -135,8 +141,8 @@ const jsonLd = {
         <HomeLibraryTile
           href="/el/indications/"
           icon="lucide:list-checks"
-          title="Εγκεκριμένες Ενδείξεις FDA"
-          body="Δεκατέσσερις παθήσεις αναγνωρισμένες από την UHMS, με επίπεδα τεκμηρίωσης A–B, πρωτόκολλα και βασικές αναφορές."
+          title="Ενδείξεις"
+          body={`${totalIndications} ενδείξεις σε δύο επίπεδα τεκμηρίωσης — ${fdaCount} εγκεκριμένες FDA (αναγνωρισμένες από UHMS) και ${emergingCount} αναδυόμενες — με επίπεδα τεκμηρίωσης, πρωτόκολλα και βασικές αναφορές.`}
         />
         <HomeLibraryTile
           href="/el/evidence/"
@@ -148,7 +154,7 @@ const jsonLd = {
           href="/el/references/"
           icon="lucide:bookmark"
           title="Βιβλιογραφία"
-          body="Είκοσι τέσσερις πηγές με άμεσους συνδέσμους. Η ραχοκοκαλιά τεκμηρίωσης για κάθε ισχυρισμό στον ιστότοπο."
+          body="Όλες οι πηγές που αναφέρονται με άμεσους συνδέσμους. Η ραχοκοκαλιά τεκμηρίωσης για κάθε ισχυρισμό στον ιστότοπο."
         />
       </div>
     </div>
