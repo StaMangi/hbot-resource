@@ -191,12 +191,38 @@ Added when 4.D landed; binding for any later cluster that touches dermatology, w
 | edema control | έλεγχος οιδήματος | |
 | protocols vary widely / not standardised | τα πρωτόκολλα ποικίλλουν σημαντικά / δεν είναι τυποποιημένα | |
 
+## 4.E Plastic Surgery additions (locked)
+
+| EN | EL | Notes |
+|---|---|---|
+| Aesthetic & Reconstructive Recovery | Αισθητική & Επανορθωτική Αποκατάσταση | indication name |
+| Aesthetic & Reconstructive Surgery | Αισθητική & Επανορθωτική Χειρουργική | category label |
+| facelift | face-lift | Latin term commonly used in Greek aesthetic-surgery literature |
+| case–control study | μελέτη ασθενών–μαρτύρων | |
+| matched controls | συζευγμένοι μάρτυρες | |
+| retrospectively matched | αναδρομικά συζευγμένοι | |
+| comparative outcome | συγκριτική έκβαση | |
+| accelerated healing | επιταχυνόμενη επούλωση | |
+| post-procedure recovery | μετεγχειρητική αποκατάσταση | |
+| compromised graft / flap | διακυβευμένο μόσχευμα / κρημνός | |
+| graft/flap salvage | διάσωση μοσχεύματος/κρημνού | |
+| ischemic soft-tissue wounds | ισχαιμικές πληγές μαλακών ιστών | |
+| difficult postoperative wounds | δύσκολες μετεγχειρητικές πληγές | |
+| radiation-injured tissue | ακτινικά βλαμμένος ιστός | |
+| within 24 h of surgery | εντός 24 ωρών από τη χειρουργική επέμβαση | salvage-protocol qualifier |
+| not as a routine enhancer | όχι ως ρουτίνας ενισχυτής | anti-cosmetic-rejuvenation framing |
+| uncomplicated cosmetic surgery | μη επιπλεγμένη αισθητική χειρουργική | |
+| 5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage) | 5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού) | sessions range, dual-protocol form |
+| Once daily; within 24 h of surgery for salvage cases | Μία φορά την ημέρα· εντός 24 ωρών από τη χειρουργική επέμβαση για περιπτώσεις διάσωσης | frequency, salvage variant |
+
 ## 8. Open items for future clusters
 
-Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.E–4.F land, the candidate terms to lock are:
+Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.F lands, the candidate terms to lock are:
 
-- 4.C Fibromyalgia: pain syndromes, tender points, central sensitisation, FIQR, FM-specific psychometric scales — *locked, see § 4.C above*
-- 4.D Dermatology: inflammatory dermatoses, atopic dermatitis, psoriasis, hidradenitis suppurativa — *locked, see § 4.D above*
+- 4.C Fibromyalgia: *locked, see § 4.C above*
+- 4.D Dermatology: *locked, see § 4.D above*
+- 4.E Plastic Surgery: *locked, see § 4.E above*
+- 4.F Women's Health: endometriosis, pilot study, registered trial, investigational adjunct — *to lock when 4.F lands*
 - 4.D Dermatology: chronic wounds vocabulary already exists from Phase 2.B FDA indications; verify radiation-injury and acne-related terminology
 - 4.E Plastic Surgery: graft viability, flap perfusion, post-surgical recovery
 - 4.F Women's Health: gestational, perinatal vocabulary; menopause is explicitly omitted per Phase 4 plan amendment
