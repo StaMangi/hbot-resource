@@ -4,6 +4,55 @@ name:
 icon: "Venus"
 color: "#9333ea"
 shortDesc:
-  en: "Pelvic radiation injury, endometriosis (research), reproductive medicine"
-  el: "Πυελική ακτινική κάκωση, ενδομητρίωση (έρευνα), αναπαραγωγική ιατρική"
-applications: []
+  en: "Pelvic radiation injury (FDA), endometriosis (investigational)"
+  el: "Πυελική ακτινική κάκωση (FDA), ενδομητρίωση (ερευνητικό)"
+applications:
+  - title:
+      en: "Pelvic Radiation Injury"
+      el: "Πυελική Ακτινική Κάκωση"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "HBOT for late radiation tissue injury in pelvic structures (radiation cystitis, proctitis, vaginal stenosis) following gynaecological cancer radiotherapy. Cross-references the FDA-approved Delayed Radiation Injury indication; the women's-health context emphasises pelvic-specific manifestations."
+      el: "HBOT για όψιμη ακτινική βλάβη ιστών σε πυελικές δομές (ακτινική κυστίτιδα, ορθίτιδα, κολπική στένωση) μετά από ακτινοθεραπεία γυναικολογικού καρκίνου. Παραπέμπει στην εγκεκριμένη από το FDA ένδειξη Καθυστερημένης Ακτινικής Βλάβης· το πλαίσιο της γυναικολογικής υγείας τονίζει τις πυελικά ειδικές εκδηλώσεις."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.4 ATA"
+      duration: "90 min"
+      sessions:
+        en: "30 – 60"
+        el: "30 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+      basis:
+        en: "UHMS / Standard of Care"
+        el: "UHMS / Πρότυπο Θεραπείας"
+    refs:
+      - "[1]"
+      - "[12]"
+  - title:
+      en: "Endometriosis"
+      el: "Ενδομητρίωση"
+    type: "Emerging Evidence"
+    typeColor: "amber"
+    description:
+      en: "Investigational application supported by translational evidence in rodent models and one registered randomised trial (HEROES, NCT06579040) currently recruiting. No published human clinical evidence yet; HBOT is positioned as an investigational adjunct, not standard of care."
+      el: "Ερευνητική εφαρμογή που υποστηρίζεται από μεταγωγικά στοιχεία σε μοντέλα τρωκτικών και μία καταχωρημένη τυχαιοποιημένη δοκιμή (HEROES, NCT06579040) που αυτή τη στιγμή εγγράφει ασθενείς. Δεν υπάρχουν δημοσιευμένα κλινικά στοιχεία σε ανθρώπους ακόμη· η HBOT τοποθετείται ως ερευνητική επικουρική, όχι ως πρότυπο θεραπείας."
+    evidence: "Level C"
+    protocol:
+      ata: "Not standardised"
+      duration: "Not standardised"
+      sessions:
+        en: "Not standardised (HEROES trial protocol pending publication)"
+        el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"
+      frequency:
+        en: "Not standardised"
+        el: "Μη τυποποιημένο"
+      basis:
+        en: "Translational + Registered Trial Awaiting Results"
+        el: "Μεταγωγική + Καταχωρημένη Δοκιμή Εκκρεμώντας Αποτελεσμάτων"
+    refs:
+      - "[41]"
+      - "[42]"
+      - "[43]"

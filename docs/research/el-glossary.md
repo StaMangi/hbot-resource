@@ -215,14 +215,39 @@ Added when 4.D landed; binding for any later cluster that touches dermatology, w
 | 5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage) | 5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού) | sessions range, dual-protocol form |
 | Once daily; within 24 h of surgery for salvage cases | Μία φορά την ημέρα· εντός 24 ωρών από τη χειρουργική επέμβαση για περιπτώσεις διάσωσης | frequency, salvage variant |
 
+## 4.F Women's Health additions (locked)
+
+| EN | EL | Notes |
+|---|---|---|
+| Endometriosis | Ενδομητρίωση | indication name |
+| Reproductive Health | Αναπαραγωγική Υγεία | category label |
+| pelvic radiation injury | πυελική ακτινική κάκωση | |
+| radiation cystitis | ακτινική κυστίτιδα | |
+| radiation proctitis | ακτινική ορθίτιδα | |
+| vaginal stenosis | κολπική στένωση | |
+| translational evidence | μεταγωγικά στοιχεία | bridge between animal models and clinical |
+| rodent models | μοντέλα τρωκτικών | |
+| rat-model study | μελέτη σε αρουραίους | |
+| mouse-model study | μελέτη σε ποντίκια | |
+| endometriotic lesions | ενδομητριωσικές βλάβες | |
+| inflammatory markers | φλεγμονώδεις δείκτες | |
+| registered randomised trial | καταχωρημένη τυχαιοποιημένη δοκιμή | |
+| recruiting | εγγραφή ασθενών | trial-status descriptor |
+| clinical evidence in humans is awaited | τα κλινικά στοιχεία σε ανθρώπους εκκρεμούν | emerging-tier disclaimer for translational-only evidence |
+| investigational adjunct, not standard of care | ερευνητική επικουρική, όχι πρότυπο θεραπείας | strongest-form Level-C disclaimer |
+| Investigational | Ερευνητικό | evidence label, distinct from "Emerging Evidence" — used when only animal models + registered trials, no clinical data |
+| Not standardised | Μη τυποποιημένο | protocol-field value when no consensus protocol exists |
+
 ## 8. Open items for future clusters
 
-Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.F lands, the candidate terms to lock are:
+Phase 4 content clusters all locked here:
 
 - 4.C Fibromyalgia: *locked, see § 4.C above*
 - 4.D Dermatology: *locked, see § 4.D above*
 - 4.E Plastic Surgery: *locked, see § 4.E above*
-- 4.F Women's Health: endometriosis, pilot study, registered trial, investigational adjunct — *to lock when 4.F lands*
+- 4.F Women's Health: *locked, see § 4.F above*
+
+For 4.G safety / 4.H programme design / 4.I operator blueprint, the EL glossary may need new entries for safety-specific (contraindications, adverse events, oxygen toxicity, barotrauma) and operations-specific vocabulary (chamber types, staffing, quality control). Add inline as those pages land.
 - 4.D Dermatology: chronic wounds vocabulary already exists from Phase 2.B FDA indications; verify radiation-injury and acne-related terminology
 - 4.E Plastic Surgery: graft viability, flap perfusion, post-surgical recovery
 - 4.F Women's Health: gestational, perinatal vocabulary; menopause is explicitly omitted per Phase 4 plan amendment
