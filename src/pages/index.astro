@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import LandingLayout from "@/layouts/LandingLayout.astro";
 import HomeStat from "@/components/HomeStat.astro";
 import HomePathCard from "@/components/HomePathCard.astro";
@@ -13,11 +14,20 @@ const title = `${SITE_NAME} — Evidence-Based HBOT Reference`;
 const description =
   "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.";
 
+// Build-time counts — drive the homepage tile copy. Phase 5 audit fix:
+// homepage previously had hardcoded "Fourteen" + "Twenty-four" which went
+// stale as Phase 4 added 5 emerging indications and 20 references. Compute
+// at build instead to keep these in sync with the collections forever.
+const indications = await getCollection("indications");
+const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
+const totalIndications = fdaCount + emergingCount;
+
 const stats = [
-  { value: "14", label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
   { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
   { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
-  { value: "2–3", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
+  { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
 ];
 
 const jsonLd = {
@@ -135,8 +145,8 @@ const jsonLd = {
         <HomeLibraryTile
           href="/indications/"
           icon="lucide:list-checks"
-          title="FDA-Approved Indications"
-          body="Fourteen UHMS-recognised conditions with evidence levels A–B, protocols, and key references."
+          title="Indications"
+          body={`${totalIndications} indications across two evidence tiers — ${fdaCount} FDA-approved (UHMS-recognised) and ${emergingCount} emerging — with evidence levels, protocols, and key references.`}
         />
         <HomeLibraryTile
           href="/evidence/"
@@ -148,7 +158,7 @@ const jsonLd = {
           href="/references/"
           icon="lucide:bookmark"
           title="Bibliography"
-          body="Twenty-four cited sources with direct links. Used as the citation backbone across every claim on the site."
+          body="All cited sources with direct links. Used as the citation backbone across every claim on the site."
         />
       </div>
     </div>

@@ -25,6 +25,13 @@ const typeBadge = (type: string) => {
     return "bg-emerald-100 text-emerald-800";
   }
   if (tt.includes("guideline")) return "bg-violet-100 text-violet-800";
+  // Trial protocols and registrations are forward-looking evidence — distinct
+  // from results-bearing reviews/RCTs but still high-trust source documents.
+  // Amber positions them between standard-of-care (violet) and ordinary
+  // case-level work (slate).
+  if (tt.includes("trial protocol") || tt.includes("trial registration")) {
+    return "bg-amber-100 text-amber-800";
+  }
   return "bg-slate-100 text-slate-700";
 };
 

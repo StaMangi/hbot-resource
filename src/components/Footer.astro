@@ -1,15 +1,13 @@
 ---
-import { localePath, type Locale } from "@/lib/seo";
+import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
 
 interface Props {
   locale: Locale;
   pathname: string;
 }
 
-const { locale, pathname } = Astro.props;
-const altLocale: Locale = locale === "en" ? "el" : "en";
-const altPath = localePath(pathname, altLocale);
-const altLabel = altLocale === "el" ? "Ελληνικά" : "English";
+const { locale } = Astro.props;
 
 // Editorial publisher line — locked, do not localise.
 // Single source of attribution for the entire site.
@@ -19,19 +17,27 @@ const aboutPath = locale === "en" ? "/about/" : "/el/about/";
 const aboutLabel = locale === "en" ? "Editorial policy" : "Εκδοτική πολιτική";
 
 const year = new Date().getFullYear();
+// Language toggle removed from Footer in Phase 5 polish — the Nav toggle
+// is sticky-top so remains accessible from any scroll position; keeping
+// both created mobile-viewport redundancy.
 ---
 
 <footer class="mt-24 border-t border-slate-200 bg-slate-50">
   <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600 space-y-3">
+    <img
+      src="/brand/hbot-science-logo-circular.svg"
+      alt={t("nav.brand", locale)}
+      class="w-16 sm:w-20 h-auto"
+      width="80"
+      height="80"
+      loading="lazy"
+      decoding="async"
+    />
     <p class="text-slate-700">{editorialLine}</p>
 
     <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500">
       <a href={aboutPath} class="hover:text-teal-700 transition-colors">
         {aboutLabel}
-      </a>
-      <span aria-hidden="true">·</span>
-      <a href={altPath} class="hover:text-teal-700 transition-colors" hreflang={altLocale}>
-        {altLabel}
       </a>
     </p>
 

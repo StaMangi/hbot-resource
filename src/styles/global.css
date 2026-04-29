@@ -1,16 +1,25 @@
 /*
- * Self-hosted fonts via @fontsource. Latin + latin-ext subsets only —
- * neither Montserrat (in fontsource) nor Lato ship a Greek subset, so
- * Greek text falls back through the stack to system Greek fonts
- * (Helvetica Neue / Segoe UI / Roboto). Visual quality unaffected on
- * any modern OS.
+ * Self-hosted fonts via @fontsource.
+ *
+ * Latin + latin-ext: Montserrat (display) + Lato (body). These are the
+ * Phase 3.A font choices that lifted mobile Performance to 98+.
+ *
+ * Greek: Phase 5 polish adds Noto Sans Greek as a self-hosted Greek
+ * subset. Neither Montserrat nor Lato ships a Greek subset in
+ * fontsource, so Greek text previously fell back to system fonts
+ * (Helvetica Neue / Segoe UI / Roboto) — readable but typographically
+ * inconsistent across OSes. Noto Sans Greek is Google's universal Greek
+ * sans (humanist proportions, broadly compatible with Lato's character)
+ * and provides identical glyphs across every visitor's machine. The CSS
+ * picks it up automatically for Greek codepoints via the @fontsource
+ * Greek-subset @font-face's unicode-range.
  *
  * Combined with build.inlineStylesheets:'always' in astro.config.ts,
  * this removes all render-blocking external font CSS from the critical
  * path. See docs/3a-lighthouse-summary.md for the measurement.
  */
 
-/* Montserrat — display / headings */
+/* Montserrat — display / headings (Latin) */
 @import "@fontsource/montserrat/latin-400.css";
 @import "@fontsource/montserrat/latin-500.css";
 @import "@fontsource/montserrat/latin-600.css";
@@ -20,7 +29,7 @@
 @import "@fontsource/montserrat/latin-ext-600.css";
 @import "@fontsource/montserrat/latin-ext-700.css";
 
-/* Lato — body text */
+/* Lato — body text (Latin) */
 @import "@fontsource/lato/latin-300.css";
 @import "@fontsource/lato/latin-400.css";
 @import "@fontsource/lato/latin-700.css";
@@ -28,11 +37,17 @@
 @import "@fontsource/lato/latin-ext-400.css";
 @import "@fontsource/lato/latin-ext-700.css";
 
+/* Noto Sans Greek — Greek subset for body + display, all weights used */
+@import "@fontsource/noto-sans/greek-400.css";
+@import "@fontsource/noto-sans/greek-500.css";
+@import "@fontsource/noto-sans/greek-600.css";
+@import "@fontsource/noto-sans/greek-700.css";
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Lato", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
-  --font-display: "Montserrat", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Lato", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
 }
 
 html {
