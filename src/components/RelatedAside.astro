@@ -41,12 +41,14 @@ const collectionLabel = (c: CrossRef["collection"]) => {
           <li>
             <a
               href={`${prefix}/${r.collection}/${r.slug}/`}
-              class="block text-sm text-slate-700 hover:text-teal-700 transition-colors leading-snug"
+              class="group block hover:text-teal-700 transition-colors"
             >
-              <span class="block text-[10px] uppercase tracking-wider text-slate-500 mb-0.5">
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
                 {collectionLabel(r.collection)}
-              </span>
-              <span class="font-medium">{r.title[locale]}</span>
+              </p>
+              <p class="text-sm font-medium text-slate-800 leading-snug group-hover:text-teal-700">
+                {r.title[locale]}
+              </p>
             </a>
           </li>
         ))}
