@@ -19,8 +19,14 @@ const bilingualStringArray = z.object({
 const protocol = z.object({
   ata: z.string(),
   duration: z.string(),
-  sessions: z.string(),
-  frequency: z.string(),
+  // sessions and frequency are bilingual because their values often carry
+  // English qualifiers ("highly variable", "Daily, protocol-dependent",
+  // "5×/week", "emergency") that don't translate cleanly. Migrated from
+  // single string in Phase 4.D after EL parity review surfaced the leak.
+  // ata and duration stay single-string — their values are numerics +
+  // universal units (ATA, min) that read identically in EN and EL.
+  sessions: bilingual,
+  frequency: bilingual,
   basis: bilingual,
 });
 

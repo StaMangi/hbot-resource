@@ -16,8 +16,12 @@ mechanism:
 protocol:
   ata: "2.0 – 2.4 ATA"
   duration: "90 min"
-  sessions: "20 – 40"
-  frequency: "Once daily, 5×/week"
+  sessions:
+    en: "20 – 40"
+    el: "20 – 40"
+  frequency:
+    en: "Once daily, 5×/week"
+    el: "Μία φορά την ημέρα, 5×/εβδομάδα"
   basis:
     en: "Thom et al., 2006 / Clinical Research"
     el: "Thom et al., 2006 / Κλινική Έρευνα"

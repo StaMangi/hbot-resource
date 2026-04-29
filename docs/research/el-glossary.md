@@ -99,8 +99,20 @@ The register chosen for Long COVID's single-research-group caveat is the canonic
 | 40 HBOT sessions | 40 συνεδρίες HBOT | numerals kept; unit follows |
 | 2.0 ATA | 2.0 ATA | unit name kept Latin; numeric form universal |
 | 90 min session | συνεδρία 90 λεπτών | when narrative |
-| 5×/week | 5×/εβδομάδα | use Greek "εβδομάδα" in narrative; the YAML protocol field stays "5×/week" pending schema-level i18n decision |
+| 5×/week | 5×/εβδομάδα | full bilingual form now in YAML protocol field (4.D schema migration) |
 | once daily | μία φορά την ημέρα | |
+| Once daily, 5×/week | Μία φορά την ημέρα, 5×/εβδομάδα | full canonical form for FDA-approved indication protocols |
+| Immediately, then daily | Αμέσως, μετά καθημερινά | |
+| Daily, protocol-dependent | Καθημερινά, εξαρτάται από το πρωτόκολλο | emerging-tier protocol when not standardised |
+| Once or twice daily | Μία ή δύο φορές την ημέρα | |
+| Continuous until resolved | Συνεχόμενα μέχρι την υποχώρηση | |
+| Continuous until stable | Συνεχόμενα μέχρι σταθεροποίηση | |
+| Post-exercise or daily | Μετά την άσκηση ή καθημερινά | longevity protocol |
+| Prior to each radiation fraction | Πριν από κάθε κλάσμα ακτινοβολίας | radiation oncology adjunct |
+| 1 – 3 (emergency) | 1 – 3 (επείγον) | sessions value, emergency-protocol indications |
+| 6 – 30 (highly variable) | 6 – 30 (πολύ μεταβλητές) | sessions value, emerging-tier indications |
+| 10 – 20 per cycle | 10 – 20 ανά κύκλο | longevity sessions per cycle |
+| Per radiation course | Ανά κύκλο ακτινοθεραπείας | sessions value for radiation-paired protocols |
 | daily, then maintenance | καθημερινά, στη συνέχεια συντήρηση | |
 | emergency standard | επείγον πρότυπο | |
 | adjunctive therapy | επικουρική θεραπεία | |
@@ -141,11 +153,50 @@ Added when 4.C landed; binding for any later cluster that touches central-sensit
 | supporting evidence | υποστηρικτικά στοιχεία | |
 | anchored to a single research group | αγκιστρωμένη σε μία ερευνητική ομάδα | softened-caveat variant for emerging-tier with meta-analytic backing |
 
+## 4.D Dermatology additions (locked)
+
+Added when 4.D landed; binding for any later cluster that touches dermatology, wound, or skin-condition vocabulary.
+
+| EN | EL | Notes |
+|---|---|---|
+| Inflammatory Dermatoses | Φλεγμονώδεις Δερματοπάθειες | indication name (specific clinical term) |
+| Inflammatory Skin Disease | Φλεγμονώδεις Δερματικές Παθήσεις | category label — broader umbrella, distinct from indication name in both languages (EL revised 4.D review: was "Φλεγμονώδης Δερματοπάθεια", which collapsed to a near-singular variant of the indication name) |
+| atopic dermatitis | ατοπική δερματίτιδα | |
+| psoriasis vulgaris | ψωρίαση κατά πλάκες | "vulgaris" rendered as "κατά πλάκες" — clinical EL convention |
+| plaque psoriasis | ψωρίαση κατά πλάκες | same EL form |
+| pustular psoriasis | φλυκταινώδης ψωρίαση | |
+| arthropathic psoriasis | αρθροπαθική ψωρίαση | |
+| hidradenitis suppurativa | πυώδης ιδρωταδενίτιδα | |
+| livedoid vasculopathy | λιβεδοειδής αγγειοπάθεια | |
+| pyoderma gangrenosum | γαγγραινώδες πυόδερμα | |
+| pruritus | κνησμός | |
+| lesion severity | σοβαρότητα βλαβών | |
+| Staphylococcus aureus colonisation | αποικισμός από Staphylococcus aureus | genus name kept Latin |
+| case reports | αναφορές περιπτώσεων | |
+| small-cohort evidence | στοιχεία μικρών ομάδων | |
+| adjunctive, not first-line | επικουρική, όχι πρώτης γραμμής | emerging-tier disclaimer for low-evidence indications |
+| chronic non-healing wounds | χρόνιες μη-επουλούμενες πληγές | |
+| diabetic foot ulcers | διαβητικά έλκη ποδιού | inherited from endocrinology, repeated for parity |
+| vascular ulcers | αγγειακά έλκη | |
+| radiation dermatitis | ακτινική δερματίτιδα | |
+| soft-tissue radiation injury | ακτινική βλάβη μαλακών ιστών | |
+| necrotizing fasciitis | νεκρωτική περιτονίτιδα | |
+| Fournier's gangrene | γάγγραινα Fournier | proper noun kept Latin |
+| skin grafts | δερματικά μοσχεύματα | |
+| flaps (skin) | κρημνοί | |
+| compromised (graft/flap) | διακυβευμένο / ισχαιμικό | use "διακυβευμένο" when ischaemia is not yet established; "ισχαιμικό" when it is |
+| salvage adjunct | επικουρική θεραπεία διάσωσης | |
+| oxygen delivery | μεταφορά οξυγόνου | |
+| fibroblast activity | ινοβλαστική δραστηριότητα | |
+| edema control | έλεγχος οιδήματος | |
+| protocols vary widely / not standardised | τα πρωτόκολλα ποικίλλουν σημαντικά / δεν είναι τυποποιημένα | |
+
 ## 8. Open items for future clusters
 
-Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.D–4.F land, the candidate terms to lock are:
+Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.E–4.F land, the candidate terms to lock are:
 
 - 4.C Fibromyalgia: pain syndromes, tender points, central sensitisation, FIQR, FM-specific psychometric scales — *locked, see § 4.C above*
+- 4.D Dermatology: inflammatory dermatoses, atopic dermatitis, psoriasis, hidradenitis suppurativa — *locked, see § 4.D above*
 - 4.D Dermatology: chronic wounds vocabulary already exists from Phase 2.B FDA indications; verify radiation-injury and acne-related terminology
 - 4.E Plastic Surgery: graft viability, flap perfusion, post-surgical recovery
 - 4.F Women's Health: gestational, perinatal vocabulary; menopause is explicitly omitted per Phase 4 plan amendment

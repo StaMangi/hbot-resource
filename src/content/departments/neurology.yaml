@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "1.5 – 2.0 ATA"
       duration: "60 – 90 min"
-      sessions: "40 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "40 – 60"
+        el: "40 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Level B Evidence"
         el: "Τεκμηρίωση Επιπέδου Β"
@@ -38,8 +42,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "40 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "40 – 60"
+        el: "40 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
@@ -57,8 +65,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "60"
+        el: "60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
@@ -76,8 +88,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "60"
+        el: "60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
@@ -95,8 +111,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "40 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "40 – 60"
+        el: "40 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Preclinical / Early Phase"
         el: "Προκλινικό / Πρώιμη Φάση"
@@ -114,8 +134,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "40"
-      frequency: "5×/week"
+      sessions:
+        en: "40"
+        el: "40"
+      frequency:
+        en: "5×/week"
+        el: "5×/εβδομάδα"
       basis:
         en: "RCT (Zilberman-Itskovich et al., 2022)"
         el: "ΤΕΔ (Zilberman-Itskovich et al., 2022)"
@@ -136,8 +160,12 @@ applications:
     protocol:
       ata: "2.0 ATA"
       duration: "90 min"
-      sessions: "40"
-      frequency: "5×/week"
+      sessions:
+        en: "40"
+        el: "40"
+      frequency:
+        en: "5×/week"
+        el: "5×/εβδομάδα"
       basis:
         en: "Prospective Controlled Trial (Efrati et al., 2015)"
         el: "Προοπτική Ελεγχόμενη Δοκιμή (Efrati et al., 2015)"

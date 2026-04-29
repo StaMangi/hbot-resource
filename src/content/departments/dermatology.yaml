@@ -6,4 +6,128 @@ color: "#ea580c"
 shortDesc:
   en: "Burns, chronic wounds, skin grafts, dermatological inflammations"
   el: "Εγκαύματα, χρόνιες πληγές, μοσχεύματα δέρματος, δερματικές φλεγμονές"
-applications: []
+applications:
+  - title:
+      en: "Chronic Non-Healing Wounds"
+      el: "Χρόνιες Μη-Επουλούμενες Πληγές"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Adjunctive HBOT for chronic non-healing wounds, including diabetic foot ulcers and vascular ulcers. Evidence base for chronic wound healing is the most robust dermatology application of HBOT."
+      el: "Επικουρική HBOT για χρόνιες μη-επουλούμενες πληγές, συμπεριλαμβανομένων διαβητικών ελκών ποδιού και αγγειακών ελκών. Η τεκμηρίωση για επούλωση χρόνιων πληγών είναι η πιο ισχυρή εφαρμογή της HBOT στη δερματολογία."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "60 – 90 min"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+      basis:
+        en: "UHMS / Standard of Care"
+        el: "UHMS / Πρότυπο Θεραπείας"
+    refs:
+      - "[1]"
+      - "[7]"
+  - title:
+      en: "Radiation Dermatitis & Soft-Tissue Radiation Injury"
+      el: "Ακτινική Δερματίτιδα & Ακτινική Βλάβη Μαλακών Ιστών"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Treatment for radiation dermatitis and delayed soft-tissue healing after radiotherapy. Promotes angiogenesis in hypoxic, hypovascular, hypocellular tissue."
+      el: "Θεραπεία για ακτινική δερματίτιδα και καθυστερημένη επούλωση μαλακών ιστών μετά από ακτινοθεραπεία. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "60 – 90 min"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+      basis:
+        en: "UHMS / Standard of Care"
+        el: "UHMS / Πρότυπο Θεραπείας"
+    refs:
+      - "[1]"
+      - "[12]"
+  - title:
+      en: "Compromised Skin Grafts & Flaps"
+      el: "Διακυβευμένα Δερματικά Μοσχεύματα & Κρημνοί"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Salvage adjunct for ischemic or venously congested skin grafts and flaps. Earlier initiation when perfusion issues are identified is associated with better outcomes; HBOT improves oxygen delivery, angiogenesis, fibroblast activity, and edema control."
+      el: "Επικουρική θεραπεία διάσωσης για ισχαιμικά ή φλεβικά συμφορημένα δερματικά μοσχεύματα και κρημνούς. Η πρωιμότερη έναρξη όταν εντοπίζονται προβλήματα αιμάτωσης συσχετίζεται με καλύτερες εκβάσεις· η HBOT βελτιώνει τη μεταφορά οξυγόνου, την αγγειογένεση, την ινοβλαστική δραστηριότητα και τον έλεγχο του οιδήματος."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "60 – 90 min"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+      basis:
+        en: "UHMS / Standard of Care"
+        el: "UHMS / Πρότυπο Θεραπείας"
+    refs:
+      - "[1]"
+      - "[13]"
+      - "[33]"
+  - title:
+      en: "Burns & Necrotizing Soft-Tissue Infection"
+      el: "Εγκαύματα & Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
+    type: "FDA-Approved"
+    typeColor: "green"
+    description:
+      en: "Adjunctive treatment for necrotizing fasciitis, Fournier's gangrene, and severe burns. Reduces mortality and tissue loss when combined with surgical debridement and antibiotic therapy."
+      el: "Επικουρική θεραπεία για νεκρωτική περιτονίτιδα, γάγγραινα Fournier και σοβαρά εγκαύματα. Μειώνει τη θνησιμότητα και την απώλεια ιστών σε συνδυασμό με χειρουργικό καθαρισμό και αντιβιοτική αγωγή."
+    evidence: "Level A"
+    protocol:
+      ata: "2.0 – 2.5 ATA"
+      duration: "90 min"
+      sessions:
+        en: "20 – 30"
+        el: "20 – 30"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+      basis:
+        en: "UHMS / Standard of Care"
+        el: "UHMS / Πρότυπο Θεραπείας"
+    refs:
+      - "[1]"
+      - "[10]"
+      - "[33]"
+  - title:
+      en: "Inflammatory Dermatoses"
+      el: "Φλεγμονώδεις Δερματοπάθειες"
+    type: "Emerging Evidence"
+    typeColor: "amber"
+    description:
+      en: "Case-level and small-cohort evidence in atopic dermatitis (2025 review + paediatric study) and psoriasis (2009 case reports). Other inflammatory conditions (hidradenitis suppurativa, livedoid vasculopathy, pyoderma gangrenosum) have early-stage clinical reports but lack robust trials. HBOT is positioned as adjunctive, not first-line."
+      el: "Στοιχεία επιπέδου περιπτώσεων και μικρών ομάδων σε ατοπική δερματίτιδα (ανασκόπηση 2025 + παιδιατρική μελέτη) και ψωρίαση (αναφορές περιπτώσεων 2009). Άλλες φλεγμονώδεις παθήσεις (πυώδης ιδρωταδενίτιδα, λιβεδοειδής αγγειοπάθεια, γαγγραινώδες πυόδερμα) έχουν πρώιμες κλινικές αναφορές αλλά στερούνται ισχυρών δοκιμών. Η HBOT τοποθετείται ως επικουρική, όχι πρώτης γραμμής."
+    evidence: "Level C"
+    protocol:
+      ata: "2.0 – 2.8 ATA"
+      duration: "60 – 90 min"
+      sessions:
+        en: "6 – 30 (highly variable)"
+        el: "6 – 30 (πολύ μεταβλητές)"
+      frequency:
+        en: "Daily, protocol-dependent"
+        el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
+      basis:
+        en: "Case Reports & Small Studies"
+        el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες"
+    refs:
+      - "[33]"
+      - "[34]"
+      - "[35]"
+      - "[36]"

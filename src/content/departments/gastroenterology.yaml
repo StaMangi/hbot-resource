@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
@@ -38,8 +42,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
@@ -57,8 +65,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"

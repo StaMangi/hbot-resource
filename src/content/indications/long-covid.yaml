@@ -16,8 +16,12 @@ evidenceLevel: "B"
 protocol:
   ata: "2.0 ATA"
   duration: "90 min"
-  sessions: "40"
-  frequency: "5×/week"
+  sessions:
+    en: "40"
+    el: "40"
+  frequency:
+    en: "5×/week"
+    el: "5×/εβδομάδα"
   basis:
     en: "Zilberman-Itskovich et al., 2022 (RCT)"
     el: "Zilberman-Itskovich et al., 2022 (ΤΕΔ)"

@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "1.5 – 2.0 ATA"
       duration: "60 – 90 min"
-      sessions: "40 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "40 – 60"
+        el: "40 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Level B Evidence (RCT)"
         el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
@@ -38,8 +42,12 @@ applications:
     protocol:
       ata: "1.5 – 2.0 ATA"
       duration: "60 – 90 min"
-      sessions: "20 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "20 – 40"
+        el: "20 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"

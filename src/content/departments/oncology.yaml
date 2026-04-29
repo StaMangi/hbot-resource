@@ -19,8 +19,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "30 – 60"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "30 – 60"
+        el: "30 – 60"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
@@ -38,8 +42,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "30 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "30 – 40"
+        el: "30 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
@@ -57,8 +65,12 @@ applications:
     protocol:
       ata: "2.0 – 2.5 ATA"
       duration: "90 min"
-      sessions: "Per radiation course"
-      frequency: "Prior to each radiation fraction"
+      sessions:
+        en: "Per radiation course"
+        el: "Ανά κύκλο ακτινοθεραπείας"
+      frequency:
+        en: "Prior to each radiation fraction"
+        el: "Πριν από κάθε κλάσμα ακτινοβολίας"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
@@ -76,8 +88,12 @@ applications:
     protocol:
       ata: "2.0 – 2.4 ATA"
       duration: "90 min"
-      sessions: "30 – 40"
-      frequency: "Once daily, 5×/week"
+      sessions:
+        en: "30 – 40"
+        el: "30 – 40"
+      frequency:
+        en: "Once daily, 5×/week"
+        el: "Μία φορά την ημέρα, 5×/εβδομάδα"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
