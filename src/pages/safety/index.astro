@@ -1,23 +1,184 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import RefTags from "@/components/RefTags.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
+const prefix = "";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "HBOT Safety & Contraindications",
+  description:
+    "Absolute and relative contraindications, adverse events, pre-treatment screening, and stop criteria for hyperbaric oxygen therapy.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
 ---
 
 <LandingLayout
   title="Safety & Contraindications — HBOT Science"
-  description="Absolute and relative contraindications, adverse events and management, patient screening checklist for HBOT."
+  description="Absolute and relative contraindications, adverse events, pre-treatment screening, and stop criteria for hyperbaric oxygen therapy."
   locale={locale}
   pathname={pathname}
+  jsonLd={jsonLd}
   noindex={true}
 >
-  <section class="max-w-3xl mx-auto px-6 py-16">
+  <article class="max-w-3xl mx-auto px-6 py-16">
     <p class="text-xs uppercase tracking-widest text-slate-500">Reference</p>
-    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
       Safety & Contraindications
     </h1>
-    <StubContent phase="4" locale={locale} />
-  </section>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Hyperbaric oxygen therapy is a generally well-tolerated medical
+      intervention with a small set of absolute contraindications, a wider
+      set of relative contraindications, and a defined adverse-event
+      profile. The summary below is intended for clinical reference; it
+      does not replace patient-specific assessment.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Absolute contraindications
+      </h2>
+      <p class="text-slate-700 mb-3">
+        The single absolute contraindication universally recognised in the
+        hyperbaric medicine literature is <strong>untreated
+        pneumothorax</strong>. Compression and decompression cycles can
+        convert it to a tension pneumothorax. A treated, stabilised
+        pneumothorax is not an absolute contraindication; the clinical
+        decision must weigh the indication's urgency against pulmonary
+        risk.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Relative or contextual chemotherapeutic concerns</strong>:
+        concurrent administration of doxorubicin (cardiotoxicity),
+        bleomycin (pulmonary toxicity), cisplatin (impaired wound
+        healing), and disulfiram (interferes with reactive oxygen species
+        scavenging) is approached cautiously and may be considered an
+        absolute contraindication during active drug exposure.
+      </p>
+      <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Relative contraindications
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Severe COPD with carbon-dioxide retention</strong> — managed with arterial blood gas monitoring and individual risk-benefit assessment.</li>
+        <li><strong>Recent middle-ear or sinus surgery</strong> — Eustachian tube dysfunction increases barotrauma risk; ENT clearance and pre-treatment evaluation recommended.</li>
+        <li><strong>Active upper respiratory infection or febrile illness</strong> — defer treatment until resolution where the indication permits.</li>
+        <li><strong>Claustrophobia</strong> — managed with pre-treatment counselling, gradual exposure, and chamber selection (multiplace chambers tolerate anxiety better than monoplace).</li>
+        <li><strong>History of seizure disorder</strong> — increases CNS oxygen toxicity risk; protocol modification (lower pressure, shorter sessions, air breaks) may be required.</li>
+        <li><strong>Pregnancy</strong> — first-trimester elective HBOT is not advised; emergency indications (carbon monoxide poisoning) override the relative contraindication.</li>
+        <li><strong>Optic neuritis history</strong> — risk of progression has been described.</li>
+        <li><strong>Diabetes</strong> — close glucose monitoring required; HBOT can lower blood glucose during sessions.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Adverse events
+      </h2>
+      <p class="text-slate-700 mb-3">
+        The Heyboer et al. (2017) systematic review remains the most
+        comprehensive quantification of HBOT side effects in the
+        published literature.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Middle-ear barotrauma</strong> — by far the most common adverse event, typically minor and self-limiting with prompt pressure-equalisation training; severe cases (haemotympanum, perforation) are uncommon.</li>
+        <li><strong>Sinus squeeze (barosinusitis)</strong> — less common than middle-ear effects; managed with decongestants and slower compression.</li>
+        <li><strong>Pulmonary barotrauma</strong> — rare but serious; risk is reduced by careful patient selection and exclusion of bullous disease.</li>
+        <li><strong>Central nervous system oxygen toxicity</strong> — manifests as a generalised seizure during session; rare in modern protocols (≤2.5 ATA, ≤90 min). Standard management is reduction of inspired oxygen, descent to sea level after the seizure ends, and careful re-evaluation.</li>
+        <li><strong>Pulmonary oxygen toxicity</strong> — cumulative and dose-dependent; relevant on long treatment courses.</li>
+        <li><strong>Reversible myopia / refractive change</strong> — described in long treatment courses (commonly cited as resolving over weeks to months after the course ends).</li>
+        <li><strong>Confinement anxiety</strong> — managed with chamber selection, light music, and pre-treatment exposure.</li>
+        <li><strong>Hypoglycaemia</strong> — in diabetic patients on insulin or sulphonylureas; monitor and adjust as needed.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[44]", "[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Pre-treatment screening
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Standard pre-treatment screening in HBOT services typically
+        includes:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Tympanic-membrane assessment and Eustachian function check.</li>
+        <li>Sinus history; ENT review where indicated.</li>
+        <li>Chest imaging where pulmonary risk factors are present.</li>
+        <li>Medication review for chemotherapeutic agents and disulfiram.</li>
+        <li>Pregnancy status (where applicable).</li>
+        <li>Seizure history.</li>
+        <li>Claustrophobia / anxiety screening.</li>
+        <li>Diabetic glucose-monitoring arrangements.</li>
+        <li>Cardiac assessment in patients with significant coronary or congestive heart disease.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Stop criteria
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Treatment should be discontinued or substantially modified in
+        the following circumstances:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>New pneumothorax during a session.</li>
+        <li>CNS oxygen toxicity event (seizure) — protocol modification or discontinuation.</li>
+        <li>Failure of middle-ear pressure equalisation despite training and ENT input.</li>
+        <li>Persistent severe adverse event without identifiable mitigation.</li>
+        <li>Patient-led withdrawal due to anxiety or intolerance not manageable through standard supports.</li>
+        <li>Concurrent administration of an absolute-contraindication chemotherapeutic agent that cannot be paused.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      This page is a clinical reference. It does not replace patient-specific
+      assessment by a qualified hyperbaric medicine practitioner. Individual
+      indications, comorbidities, and concurrent medications should be
+      reviewed before treatment.
+    </p>
+  </article>
 </LandingLayout>
