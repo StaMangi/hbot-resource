@@ -74,7 +74,7 @@ const DOI_BARE_RE = /^10\.\d{4,9}\/\S+$/;
 const DOI_URL_RE = /^https?:\/\/(?:dx\.)?doi\.org\/(10\.\d{4,9}\/\S+)$/i;
 const DOI_BURIED_RE = /\b10\.\d{4,9}\/\S+/;
 const NON_DOI_HOSTS_RE =
-  /^https?:\/\/(?:[\w-]+\.)*(?:ncbi\.nlm\.nih\.gov|uhms\.org|scivisionpub\.com)\b/i;
+  /^https?:\/\/(?:[\w-]+\.)*(?:ncbi\.nlm\.nih\.gov|uhms\.org|scivisionpub\.com|clinicaltrials\.gov)\b/i;
 
 /**
  * @typedef {{kind: "doi", doi: string} | {kind: "url", url: string} | {kind: "malformed", reason: string}} Classification

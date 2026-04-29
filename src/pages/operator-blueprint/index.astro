@@ -1,23 +1,147 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import RefTags from "@/components/RefTags.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
+const prefix = "";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Operator Blueprint",
+  description:
+    "Reference architecture for hotels, longevity clinics, and wellness operators adopting HBOT — equipment, staffing, facility, quality control, patient flow, documentation.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
 ---
 
 <LandingLayout
   title="Operator Blueprint — HBOT Science"
-  description="Reference architecture for hotels and longevity centres adopting HBOT — space requirements, staffing model, regulatory checklist, member journey design."
+  description="Reference architecture for hotels, longevity clinics, and wellness operators adopting HBOT — equipment selection, staffing, facility considerations, quality control, patient flow, documentation."
   locale={locale}
   pathname={pathname}
+  jsonLd={jsonLd}
   noindex={true}
 >
-  <section class="max-w-3xl mx-auto px-6 py-16">
+  <article class="max-w-3xl mx-auto px-6 py-16">
     <p class="text-xs uppercase tracking-widest text-slate-500">Operator reference</p>
     <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
       Operator Blueprint
     </h1>
-    <StubContent phase="4" locale={locale} />
-  </section>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Operational architecture reference for organisations adopting HBOT
+      services — hotels, longevity clinics, and wellness operators. The
+      content is generic; specific equipment vendors, regulatory paths,
+      and pricing are deliberately not covered. Local healthcare and
+      device-safety regulations apply and may impose stricter
+      requirements.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Equipment selection
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Two principal chamber categories are used clinically:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Hard-shell (medical-grade) chambers</strong> — pressurise to 2.0–3.0 ATA with 100% oxygen via mask or hood. Required for FDA-approved indications and for any treatment requiring genuine hyperbaric pressure. Available in monoplace (single patient) and multiplace (multiple patients with attendant) configurations.</li>
+        <li><strong>Soft-shell (mild HBOT) chambers</strong> — typically pressurise to 1.3 ATA with ambient air. Not equivalent to medical-grade HBOT for the indications covered on this site; the evidence base for therapeutic effect at 1.3 ATA is markedly weaker. Operators citing the Hadanny 2020 cognitive enhancement RCT or Zilberman-Itskovich 2022 long COVID RCT must be aware that those studies used 2.0 ATA hard-shell chambers — soft-shell deployments cannot reproduce those protocols.</li>
+      </ul>
+      <p class="text-slate-700 mt-3">
+        <strong>Monoplace vs multiplace</strong>: monoplace chambers are
+        smaller, lower capital cost, and require less specialised
+        staffing. Multiplace chambers allow attendant presence for
+        anxiety management and emergency response, accommodate more
+        complex patients, and are standard for clinical wound-care
+        services.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Staffing
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Medical oversight</strong>: a designated hyperbaric medicine physician should hold accountability for indication review, pre-treatment screening sign-off, and adverse-event response.</li>
+        <li><strong>Hyperbaric technician / nurse</strong>: trained in chamber operation, emergency descent procedures, and patient management. Certification standards vary by jurisdiction; UHMS publishes recognised credentialling pathways.</li>
+        <li><strong>Multiplace attendants</strong>: when multiplace chambers are used, an inside attendant is required for the duration of compressed sessions.</li>
+        <li><strong>Reception / scheduling</strong>: trained on contraindication screening (especially smoking, recent ear infection, current chemotherapy) so red flags are caught at booking, not at chamber-side.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Facility
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Space</strong>: monoplace chambers fit a 3×6 m room; multiplace systems require dedicated suites with control room, oxygen storage, and emergency egress paths.</li>
+        <li><strong>Ventilation</strong>: oxygen-rich environments require fire-load mitigation. Floor and wall materials, electrical fixtures, and HVAC must meet device-safety standards (regional codes vary; reference NFPA 99 in jurisdictions following US standards).</li>
+        <li><strong>Fire safety</strong>: no synthetic textiles, no static-generating fabrics, no electronic devices inside the chamber, no oils or alcohol-based products on patients. Fire suppression must be appropriate to oxygen-enriched atmosphere.</li>
+        <li><strong>Oxygen supply</strong>: medical-grade oxygen with documented purity testing. Backup supply mandatory.</li>
+        <li><strong>Emergency egress</strong>: rapid-decompression capability and trained operator response within seconds.</li>
+        <li><strong>Climate control</strong>: chamber temperature management to prevent patient overheating during compression.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Quality control
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Chamber maintenance</strong>: scheduled service per manufacturer specification, with maintenance log retained.</li>
+        <li><strong>Pressure-vessel inspection</strong>: typically annual; jurisdiction-specific.</li>
+        <li><strong>Oxygen purity testing</strong>: periodic verification of supply purity, ideally at every gas-supply change-over.</li>
+        <li><strong>Calibration</strong>: pressure gauges, oxygen sensors, timing systems — calibrated to manufacturer specification.</li>
+        <li><strong>Adverse-event log</strong>: every adverse event recorded with date, session number, presentation, response, outcome.</li>
+        <li><strong>Audit cadence</strong>: internal audit at least annually; external audit triggered by regulatory cycle or significant adverse event.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Patient flow and consent
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Initial consultation</strong>: medical history, indication discussion, contraindication screening, expectation-setting (especially for wellness use).</li>
+        <li><strong>Informed consent</strong>: written consent reviewing absolute and relative contraindications, common adverse events, expected protocol, scope of clinical effect (for wellness: explicit acknowledgement that programme sits outside FDA-approved indications).</li>
+        <li><strong>Pre-session check</strong>: blood pressure, temperature, respiratory check, recent medication review, claustrophobia status, ear-clearance assessment.</li>
+        <li><strong>In-session monitoring</strong>: continuous communication with attendant; vital sign capture for higher-risk patients.</li>
+        <li><strong>Post-session check</strong>: tympanic membrane assessment, vital signs, tolerability questionnaire.</li>
+        <li><strong>Follow-up cadence</strong>: midway-through and end-of-course reviews; outcome-measure capture per programme design.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Documentation
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Per-session record</strong>: date, time started, pressure profile, duration, oxygen flow, adverse events, attendant identity, patient-reported tolerability.</li>
+        <li><strong>Indication record</strong>: documented clinical rationale, evidence-tier, treating physician sign-off.</li>
+        <li><strong>Outcome tracking</strong>: pre/post protocol measurements per programme design.</li>
+        <li><strong>Adverse-event reporting</strong>: serious events reported per local regulatory framework.</li>
+        <li><strong>Retention</strong>: medical records held per jurisdiction (typically 7–25 years).</li>
+        <li><strong>Privacy</strong>: GDPR-compliant in EU and EEA; HIPAA-equivalent in the US.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      This blueprint is generic operator reference. It does not
+      constitute regulatory or device-safety advice. Local healthcare,
+      device-safety, fire-safety, and consumer-protection regulations
+      apply and take precedence over the guidance summarised here.
+    </p>
+  </article>
 </LandingLayout>

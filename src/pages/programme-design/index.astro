@@ -1,23 +1,179 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
-import StubContent from "@/components/StubContent.astro";
+import RefTags from "@/components/RefTags.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
+const prefix = "";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Longevity Programme Design",
+  description:
+    "Operator guidance for designing ethical, evidence-based HBOT programmes in the longevity and wellness context.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
 ---
 
 <LandingLayout
-  title="60-Session Programme Design — HBOT Science"
-  description="Member journey design for longevity HBOT programmes — assessment, protocol cadence, biomarker tracking, integration with adjunct modalities, maintenance phase."
+  title="Programme Design — HBOT Science"
+  description="Operator guidance for designing ethical, evidence-based HBOT programmes in the longevity and wellness context — patient screening, protocol selection, outcome measurement, claim boundaries, compliance."
   locale={locale}
   pathname={pathname}
+  jsonLd={jsonLd}
   noindex={true}
 >
-  <section class="max-w-3xl mx-auto px-6 py-16">
+  <article class="max-w-3xl mx-auto px-6 py-16">
     <p class="text-xs uppercase tracking-widest text-slate-500">Operator reference</p>
-    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
-      60-Session Programme Design
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Programme Design
     </h1>
-    <StubContent phase="4" locale={locale} />
-  </section>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      This page is operator guidance for designing ethical, evidence-based
+      HBOT programmes in the longevity and wellness context. It is not a
+      clinical protocol and does not replace clinician-led patient
+      assessment. Programmes designed for wellness use sit outside FDA-
+      approved indications; the framing throughout this page is
+      consistent with that scope.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Patient screening
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Programme entry should follow a structured pre-assessment that
+        addresses the same safety considerations applied in clinical
+        HBOT (see the <a
+          href="/safety/"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >Safety & Contraindications</a
+        > page). At minimum:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Comprehensive medical history (cardiac, pulmonary, neurological, oncological).</li>
+        <li>Current medication review (chemotherapeutic agents, disulfiram, insulin and sulphonylureas).</li>
+        <li>Tympanic membrane and Eustachian tube assessment.</li>
+        <li>Pregnancy status where applicable.</li>
+        <li>Claustrophobia / anxiety screening.</li>
+        <li>Goal definition: cognitive, athletic recovery, fatigue / sleep, general wellness — distinct goals carry different protocol implications.</li>
+        <li>Realistic-expectations conversation: HBOT in wellness is not a treatment for any FDA-approved condition; effects are modest, individual-variable, and require sustained adherence.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Protocol selection
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Programme protocols should be aligned to the evidence base for
+        the goal being addressed. Select the source-cited protocol
+        rather than improvising:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Cognitive enhancement</strong> — 60 sessions, 2.0 ATA, 90 min, 5×/week (Hadanny 2020 RCT in healthy older adults).</li>
+        <li><strong>Telomere lengthening / cellular senescence</strong> — 60 sessions, 2.0 ATA, 90 min, 5×/week.</li>
+        <li><strong>Athletic recovery</strong> — short courses (10–20 sessions per cycle, post-exercise or daily); evidence is preliminary.</li>
+        <li><strong>General wellness / fatigue</strong> — no validated wellness-specific protocol exists; if undertaken, the cognitive/longevity protocol is the closest source-cited reference.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[4]", "[3]", "[8]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Frequency and duration norms
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Standard wellness programme</strong>: 40–60 sessions over 12–14 weeks at 5×/week, 90 min per session, 2.0 ATA.</li>
+        <li><strong>Maintenance phase</strong>: not standardised. Some operators offer monthly maintenance sessions; evidence for maintenance benefit is not established.</li>
+        <li><strong>Cycle structure</strong>: continuous 5-day weeks with weekend rest is the most cited cadence; daily 7-day cadence is not better-supported and increases adverse-event risk.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Outcome measurement
+      </h2>
+      <p class="text-slate-700 mb-3">
+        What an operator can ethically measure depends on what the
+        underlying evidence supports. Track conservatively; report
+        honestly.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Cognitive programmes</strong>: validated cognitive batteries (information processing speed, attention, memory) measured pre and post.</li>
+        <li><strong>Telomere / senescence programmes</strong>: laboratory telomere-length measurement is feasible but expensive; most operators do not offer it routinely. Self-reported energy/sleep is not a substitute for biological markers.</li>
+        <li><strong>Athletic recovery</strong>: subjective recovery scales, lactate clearance where measurable, sleep tracking.</li>
+        <li><strong>General wellness</strong>: validated patient-reported outcome measures (e.g. SF-36, PROMIS); avoid bespoke questionnaires that are not psychometrically validated.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Claim boundaries
+      </h2>
+      <p class="text-slate-700 mb-3">
+        The following claims should <strong>not</strong> be made about a
+        wellness HBOT programme. Each is either explicitly outside the
+        evidence base or actively contraindicated by current literature:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>"Anti-cancer" effects — HBOT is contraindicated with several chemotherapeutic agents and is not an oncological treatment.</li>
+        <li>Treatment of autism spectrum disorder, multiple sclerosis, cerebral palsy, or Lyme disease — none of these are evidence-supported HBOT indications.</li>
+        <li>"Detox", "anti-aging cure", or "DNA repair" framings — marketing language without scientific basis.</li>
+        <li>Specific lifespan-extension or "biological age reversal" claims — the underlying telomere-length data does not translate to lifespan claims.</li>
+        <li>Treatment of psychiatric conditions other than where evidence exists (e.g. PTSD evidence is mixed).</li>
+        <li>Use during the first trimester of pregnancy except for emergency indications.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Compliance and adherence
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Adherence below ~80% of scheduled sessions reduces likelihood of measurable benefit; this should be set as a programme expectation at consent.</li>
+        <li>Drop-out reasons should be tracked: middle-ear barotrauma, anxiety, scheduling difficulty, perceived lack of benefit.</li>
+        <li>Re-entry policy: a paused programme may resume within 4–6 weeks without significant cycle reset; longer pauses warrant restart from baseline assessment.</li>
+        <li>Documentation: every session logged with pressure, duration, time started, adverse events, and patient-reported tolerability.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      This guidance reflects current evidence and practice norms. It is
+      operator reference, not regulatory advice. Local healthcare and
+      consumer-protection regulations apply and may impose additional
+      requirements on programme design and claim language.
+    </p>
+  </article>
 </LandingLayout>
