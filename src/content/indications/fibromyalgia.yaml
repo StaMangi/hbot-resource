@@ -1,0 +1,28 @@
+legacyId: 16
+tier: "emerging"
+category:
+  en: "Chronic Pain Syndromes"
+  el: "Σύνδρομα Χρόνιου Πόνου"
+condition:
+  en: "Fibromyalgia"
+  el: "Ινομυαλγία"
+description:
+  en: "Chronic central sensitisation syndrome characterised by widespread pain, tender points, fatigue, sleep disturbance, and cognitive symptoms. A 2015 prospective controlled trial reported significant improvements in pain, tender points, quality of life, and brain activity patterns after 40 HBOT sessions at 2.0 ATA. Two independent 2023 meta-analyses pooled randomised data and confirmed improvements in function, tender points, fatigue, sleep, and quality of life — though the magnitude of pain reduction varied between pooled analyses. A separate 2023 RCT in fibromyalgia patients with a history of traumatic brain injury reported significant pain and symptom improvements with HBOT compared to pharmacological treatment (60 sessions, 2.0 ATA). The seminal RCT remains anchored to a single research group, but meta-analytic confirmation provides supporting evidence."
+  el: "Σύνδρομο χρόνιας κεντρικής ευαισθητοποίησης που χαρακτηρίζεται από εκτεταμένο πόνο, ευαίσθητα σημεία, κόπωση, διαταραχές ύπνου και γνωστικά συμπτώματα. Προοπτική ελεγχόμενη δοκιμή του 2015 ανέφερε σημαντικές βελτιώσεις σε πόνο, ευαίσθητα σημεία, ποιότητα ζωής και πρότυπα εγκεφαλικής δραστηριότητας μετά από 40 συνεδρίες HBOT στα 2.0 ATA. Δύο ανεξάρτητες μετα-αναλύσεις του 2023 συγκέντρωσαν τυχαιοποιημένα δεδομένα και επιβεβαίωσαν βελτιώσεις σε λειτουργικότητα, ευαίσθητα σημεία, κόπωση, ύπνο και ποιότητα ζωής — αν και το μέγεθος μείωσης του πόνου διέφερε μεταξύ των συγκεντρωτικών αναλύσεων. Ξεχωριστή Τυχαιοποιημένη Ελεγχόμενη Δοκιμή (ΤΕΔ) του 2023 σε ασθενείς με ινομυαλγία και ιστορικό τραυματικής εγκεφαλικής κάκωσης ανέφερε σημαντικές βελτιώσεις πόνου και συμπτωμάτων με HBOT έναντι φαρμακευτικής αγωγής (60 συνεδρίες, 2.0 ATA). Η θεμελιώδης ΤΕΔ παραμένει αγκιστρωμένη σε μία ερευνητική ομάδα, αλλά η μετα-αναλυτική επιβεβαίωση παρέχει υποστηρικτικά στοιχεία."
+evidence:
+  en: "Emerging Evidence"
+  el: "Αναδυόμενα Στοιχεία"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 ATA"
+  duration: "90 min"
+  sessions: "40"
+  frequency: "5×/week"
+  basis:
+    en: "Efrati et al., 2015 (prospective controlled trial)"
+    el: "Efrati et al., 2015 (προοπτική ελεγχόμενη δοκιμή)"
+refs:
+  - "[29]"
+  - "[30]"
+  - "[31]"
+  - "[32]"

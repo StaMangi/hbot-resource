@@ -124,3 +124,25 @@ applications:
       - "[26]"
       - "[27]"
       - "[28]"
+  - title:
+      en: "Fibromyalgia"
+      el: "Ινομυαλγία"
+    type: "Emerging Evidence"
+    typeColor: "amber"
+    description:
+      en: "Chronic central sensitisation syndrome with widespread pain, tender points, fatigue, sleep disturbance, and cognitive symptoms. A 2015 prospective controlled trial reported significant improvements after 40 HBOT sessions at 2.0 ATA, with two independent 2023 meta-analyses confirming improvements in function, tender points, fatigue, sleep, and quality of life across pooled randomised data."
+      el: "Σύνδρομο χρόνιας κεντρικής ευαισθητοποίησης με εκτεταμένο πόνο, ευαίσθητα σημεία, κόπωση, διαταραχές ύπνου και γνωστικά συμπτώματα. Προοπτική ελεγχόμενη δοκιμή του 2015 ανέφερε σημαντικές βελτιώσεις μετά από 40 συνεδρίες HBOT στα 2.0 ATA, με δύο ανεξάρτητες μετα-αναλύσεις του 2023 να επιβεβαιώνουν βελτιώσεις σε λειτουργικότητα, ευαίσθητα σημεία, κόπωση, ύπνο και ποιότητα ζωής σε συγκεντρωτικά τυχαιοποιημένα δεδομένα."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "40"
+      frequency: "5×/week"
+      basis:
+        en: "Prospective Controlled Trial (Efrati et al., 2015)"
+        el: "Προοπτική Ελεγχόμενη Δοκιμή (Efrati et al., 2015)"
+    refs:
+      - "[29]"
+      - "[30]"
+      - "[31]"
+      - "[32]"
