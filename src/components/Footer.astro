@@ -1,5 +1,6 @@
 ---
 import type { Locale } from "@/lib/seo";
+import { t } from "@/i18n";
 
 interface Props {
   locale: Locale;
@@ -23,6 +24,15 @@ const year = new Date().getFullYear();
 
 <footer class="mt-24 border-t border-slate-200 bg-slate-50">
   <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600 space-y-3">
+    <img
+      src="/brand/hbot-science-logo-circular.svg"
+      alt={t("nav.brand", locale)}
+      class="w-16 sm:w-20 h-auto"
+      width="80"
+      height="80"
+      loading="lazy"
+      decoding="async"
+    />
     <p class="text-slate-700">{editorialLine}</p>
 
     <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500">
