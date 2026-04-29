@@ -10,48 +10,100 @@ const locale = "en" as const;
 const all = await getCollection("indications");
 const sorted = all.sort((a, b) => a.data.legacyId - b.data.legacyId);
 
-// Group by category — preserves source order within each category.
-const byCategory = new Map<string, typeof sorted>();
-for (const entry of sorted) {
-  const key = entry.data.category[locale];
-  const existing = byCategory.get(key) ?? [];
-  existing.push(entry);
-  byCategory.set(key, existing);
-}
+// Two-axis grouping: outer split by `tier` (approval status, drives section
+// headings + breadcrumb on detail pages), inner group by `category`
+// (medical domain — Sensory Disorders, Wound Care, etc.).
+const groupByCategory = (entries: typeof sorted) => {
+  const m = new Map<string, typeof sorted>();
+  for (const e of entries) {
+    const k = e.data.category[locale];
+    const arr = m.get(k) ?? [];
+    arr.push(e);
+    m.set(k, arr);
+  }
+  return Array.from(m.entries());
+};
 
-const categories = Array.from(byCategory.entries());
+const fda = groupByCategory(sorted.filter((e) => e.data.tier === "fda-approved"));
+const emerging = groupByCategory(sorted.filter((e) => e.data.tier === "emerging"));
 ---
 
 <IndexLayout
-  title={`${t("fda.section.title", locale)} — HBOT Science`}
-  description={t("fda.section.subtitle", locale)}
+  title={`${t("indications.umbrella.title", locale)} — HBOT Science`}
+  description={t("indications.umbrella.subtitle", locale)}
   locale={locale}
   pathname={pathname}
-  badge={t("fda.section.badge", locale)}
-  pageHeading={t("fda.section.title", locale)}
-  pageSubtitle={t("fda.section.subtitle", locale)}
+  badge={t("indications.umbrella.badge", locale)}
+  pageHeading={t("indications.umbrella.title", locale)}
+  pageSubtitle={t("indications.umbrella.subtitle", locale)}
   badgeColor="emerald"
   noindex={true}
 >
-  <div class="space-y-12">
-    {
-      categories.map(([category, items]) => (
-        <section>
-          <h2
-            class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-4 pb-2 border-b border-slate-200"
-            style="font-family: var(--font-display)"
-          >
-            {category}
-          </h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map((entry) => <IndicationCard entry={entry} locale={locale} />)}
-          </div>
-        </section>
-      ))
-    }
-  </div>
+  {fda.length > 0 && (
+    <section id="fda-approved" class="scroll-mt-24">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-2"
+        style="font-family: var(--font-display)"
+      >
+        {t("fda.section.title", locale)}
+      </h2>
+      <p class="text-sm text-slate-600 max-w-3xl mb-8">
+        {t("fda.section.subtitle", locale)}
+      </p>
 
-  <p class="mt-12 text-sm text-slate-500 max-w-3xl">
-    {t("fda.note", locale)}
-  </p>
+      <div class="space-y-12">
+        {fda.map(([category, items]) => (
+          <div>
+            <h3
+              class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-4 pb-2 border-b border-slate-200"
+              style="font-family: var(--font-display)"
+            >
+              {category}
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {items.map((entry) => <IndicationCard entry={entry} locale={locale} />)}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="mt-8 text-sm text-slate-500 max-w-3xl">
+        {t("fda.note", locale)}
+      </p>
+    </section>
+  )}
+
+  {emerging.length > 0 && (
+    <section id="emerging" class="scroll-mt-24 mt-16 pt-12 border-t border-slate-200">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-2"
+        style="font-family: var(--font-display)"
+      >
+        {t("emerging.section.title", locale)}
+      </h2>
+      <p class="text-sm text-slate-600 max-w-3xl mb-8">
+        {t("emerging.section.subtitle", locale)}
+      </p>
+
+      <div class="space-y-12">
+        {emerging.map(([category, items]) => (
+          <div>
+            <h3
+              class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-4 pb-2 border-b border-slate-200"
+              style="font-family: var(--font-display)"
+            >
+              {category}
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {items.map((entry) => <IndicationCard entry={entry} locale={locale} />)}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="mt-8 text-sm text-slate-500 max-w-3xl">
+        {t("emerging.note", locale)}
+      </p>
+    </section>
+  )}
 </IndexLayout>
