@@ -43,6 +43,10 @@ const indications = defineCollection({
   loader: glob({ pattern: "**/*.yaml", base: "./src/content/indications" }),
   schema: z.object({
     legacyId: z.number(),
+    // Approval-tier axis (split at /indications/ index, drives breadcrumb).
+    // `category` below is the orthogonal medical-domain axis (Wound Care,
+    // Sensory Disorders, etc.) — used for the inner card grouping.
+    tier: z.enum(["fda-approved", "emerging"]),
     category: bilingual,
     condition: bilingual,
     description: bilingual,
