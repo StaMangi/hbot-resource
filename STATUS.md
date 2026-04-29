@@ -8,9 +8,9 @@
 **Target domain:** `hbotscience.org` (registered with Namecheap, DNS pointing to Cloudflare nameservers `ken.ns.cloudflare.com` / `nena.ns.cloudflare.com`, awaiting activation)
 
 ## Current phase
-**Phase 3.D — Detail pages via dynamic routes.** Complete and deployed. Per the no-pause-after-3.D cadence, proceeding directly to 3.E (cross-links + BreadcrumbList schema + schema.org formalisation). 3.E is the next pause point.
+**Phase 3.E — Cross-links + BreadcrumbList JSON-LD.** Complete and deployed. Pause point reached. Awaiting Stamos review before 3.F (cleanup + final QA).
 
-**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed; all detail pages now serve real content.
+**Live preview:** https://hbot-resource.pages.dev (HTTPS, `noindex` during build phase). **99 routes** deployed. Cross-link reverse index live: detail-page asides show "Related" entries; `/references/` shows "Cited in:" per entry; BreadcrumbList JSON-LD on every detail page.
 
 ## Phase 1 (audit) — done
 - Inventory + memory seeded · Phase 2 plan written · Lighthouse baseline (Desktop 88/82/81/92, Mobile 59/75/82/92) · Content extracted to `data-export/` (66 entries + 286 i18n keys).
@@ -245,3 +245,4 @@ All real-target pillars ≥95. Compressed page weight across all 8 index pages: 
 - **2026-04-28** — Phase 3.C complete (7 reusable card components · 8 collection index pages × 2 locales = 16 routes built). Lighthouse spot-checks on /indications/ and /references/: 100/100/100/66 and 98/100/100/66. Compressed page weights 35–37 KB across all 8 indexes.
 - **2026-04-28** — Phase 4 plan amendments applied (PDF rename satisfied, 4.B extra-care note added, Greek glossary locked at end-of-4.B).
 - **2026-04-28** — Phase 3.D complete (`Breadcrumbs.astro` + `src/lib/refs.ts` cross-ref validator + 4 dynamic-route detail templates × 2 locales = 8 files generating 68 routes). Lighthouse on `/indications/refractory-osteomyelitis/`: 100/100/100/66 mobile + desktop after a11y contrast fix on inline text links (text-teal-700 hover:underline → always-underline pattern, applied across 12 files). FCP/LCP 1.0 s mobile. Proceeding to 3.E.
+- **2026-04-29** — Phase 3.E complete (`src/lib/cross-links.ts` reverse-index helper · `src/lib/breadcrumbs.ts` shared type · `RelatedAside.astro` aside component · BaseHead emits `BreadcrumbList` JSON-LD when `breadcrumbs` prop populated · DetailLayout refactored from slot to prop pattern · 8 detail pages updated · `/references/` ReferenceItem now shows "Cited in:" per entry). Sample reverse-index verified on refractory-osteomyelitis (5 related entries via shared refs `[1]` + `[11]`) and ref-9 (cited by 6 entries). Lighthouse 100/100/100/66 on detail page after fixing one more `text-slate-400` low-contrast bug in RelatedAside (third instance of same pattern → site-wide convention now: `text-slate-500` minimum for muted microcopy on light backgrounds). Awaiting Stamos review before 3.F.
