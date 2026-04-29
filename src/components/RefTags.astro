@@ -1,14 +1,21 @@
 ---
-// Static reference badges. Each badge is a plain anchor link to #ref-{N},
-// which works without JavaScript. Animated highlight on click is deferred to
-// Phase 2.E (would be a small React island wrapping these).
+// Static reference badges on detail pages. Each badge anchor-links to
+// `${prefix}/references/#ref-{N}` — a *cross-page* anchor, since the full
+// references list lives at `/references/` (or `/el/references/`), not
+// inline on the detail page. The browser navigates to the references
+// page and scrolls to the matching `<li id="ref-N">` set by
+// ReferenceItem.astro.
+//
+// `prefix` is "" for EN callsites and "/el" for EL callsites, matching
+// the locale-prefix convention used elsewhere on the site.
 
 interface Props {
   refs: string[];
   label?: string;
+  prefix?: string;
 }
 
-const { refs, label } = Astro.props;
+const { refs, label, prefix = "" } = Astro.props;
 
 // Source format is "[1]" — strip brackets for display + slug.
 function parse(raw: string): string {
@@ -23,7 +30,7 @@ function parse(raw: string): string {
       const num = parse(raw);
       return (
         <a
-          href={`#ref-${num}`}
+          href={`${prefix}/references/#ref-${num}`}
           class="inline-flex items-center justify-center min-w-[1.75rem] h-7 px-2 rounded-md text-xs font-semibold border border-teal-300 bg-teal-50 text-teal-800 hover:bg-teal-700 hover:text-white transition-colors"
           aria-label={`Reference ${num}`}
         >

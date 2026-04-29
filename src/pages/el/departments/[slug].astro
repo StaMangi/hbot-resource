@@ -149,7 +149,7 @@ const jsonLd = {
           <ProtocolPanel protocol={app.protocol} locale={locale} />
           {app.refs.length > 0 && (
             <div class="mt-4">
-              <RefTags refs={app.refs} label={t("dept.refs.label", locale)} />
+              <RefTags refs={app.refs} label={t("dept.refs.label", locale)} prefix={prefix} />
             </div>
           )}
         </article>
