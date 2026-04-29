@@ -1,0 +1,27 @@
+legacyId: 15
+category:
+  en: "Post-Viral Syndromes"
+  el: "Μετα-ϊογενή Σύνδρομα"
+condition:
+  en: "Long COVID"
+  el: "Long COVID (Σύνδρομο Μετα-COVID)"
+description:
+  en: "Persistent multisystem symptoms following acute SARS-CoV-2 infection — including fatigue, cognitive dysfunction (\"brain fog\"), sleep disturbance, and pain. A 2022 randomised controlled trial reported significant improvements in cognitive function, sleep, pain, and overall symptom burden after 40 HBOT sessions, with benefits sustained at one-year follow-up. The evidence base is currently anchored to a single research group; independent replication is awaited (HOT-LoCO trial in progress)."
+  el: "Επίμονα συμπτώματα πολλαπλών συστημάτων μετά από οξεία λοίμωξη SARS-CoV-2 — κόπωση, γνωστική δυσλειτουργία («brain fog»), διαταραχές ύπνου και πόνος. Τυχαιοποιημένη ελεγχόμενη δοκιμή του 2022 ανέφερε σημαντική βελτίωση γνωστικής λειτουργίας, ύπνου, πόνου και συνολικού συμπτωματικού βάρους μετά από 40 συνεδρίες HBOT, με τα οφέλη να διατηρούνται σε παρακολούθηση ενός έτους. Η τεκμηρίωση βασίζεται προς το παρόν σε μία ερευνητική ομάδα — ανεξάρτητη επιβεβαίωση εκκρεμεί (δοκιμή HOT-LoCO σε εξέλιξη)."
+evidence:
+  en: "Emerging Evidence"
+  el: "Αναδυόμενα Στοιχεία"
+evidenceLevel: "B"
+protocol:
+  ata: "2.0 ATA"
+  duration: "90 min"
+  sessions: "40"
+  frequency: "5×/week"
+  basis:
+    en: "Zilberman-Itskovich et al., 2022 (RCT)"
+    el: "Zilberman-Itskovich et al., 2022 (ΤΕΔ)"
+refs:
+  - "[25]"
+  - "[26]"
+  - "[27]"
+  - "[28]"

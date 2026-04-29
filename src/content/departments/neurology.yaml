@@ -102,3 +102,25 @@ applications:
         el: "Προκλινικό / Πρώιμη Φάση"
     refs:
       - "[8]"
+  - title:
+      en: "Long COVID"
+      el: "Long COVID"
+    type: "Emerging Evidence"
+    typeColor: "amber"
+    description:
+      en: "Persistent cognitive dysfunction, brain fog, fatigue, sleep disturbance, and pain following SARS-CoV-2 infection. A randomised controlled trial reported significant improvements after 40 HBOT sessions, with benefits sustained at one-year follow-up. Evidence currently anchored to a single research group; independent replication ongoing."
+      el: "Επίμονη γνωστική δυσλειτουργία, brain fog, κόπωση, διαταραχές ύπνου και πόνος μετά από λοίμωξη SARS-CoV-2. Τυχαιοποιημένη ελεγχόμενη δοκιμή ανέφερε σημαντική βελτίωση μετά από 40 συνεδρίες HBOT, με τα οφέλη να διατηρούνται σε παρακολούθηση ενός έτους. Η τεκμηρίωση βασίζεται προς το παρόν σε μία ερευνητική ομάδα — ανεξάρτητη επιβεβαίωση εκκρεμεί."
+    evidence: "Level B"
+    protocol:
+      ata: "2.0 ATA"
+      duration: "90 min"
+      sessions: "40"
+      frequency: "5×/week"
+      basis:
+        en: "RCT (Zilberman-Itskovich et al., 2022)"
+        el: "ΤΕΔ (Zilberman-Itskovich et al., 2022)"
+    refs:
+      - "[25]"
+      - "[26]"
+      - "[27]"
+      - "[28]"
