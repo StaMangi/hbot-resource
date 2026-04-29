@@ -1,15 +1,13 @@
 /*
- * Self-hosted fonts via @fontsource (Phase 3.A.1).
+ * Self-hosted fonts via @fontsource. Latin + latin-ext subsets only —
+ * neither Montserrat (in fontsource) nor Lato ship a Greek subset, so
+ * Greek text falls back through the stack to system Greek fonts
+ * (Helvetica Neue / Segoe UI / Roboto). Visual quality unaffected on
+ * any modern OS.
  *
- * Subsets: latin + latin-ext for both Montserrat (4 weights) and Lato
- * (3 weights). The original Henry Dunant site loaded these via the Google
- * Fonts CDN, which was render-blocking on mobile (~992 ms wasted at LCP).
- * Self-hosting + inlineStylesheets:'always' eliminates that bottleneck.
- *
- * Greek note: neither Montserrat (in fontsource) nor Lato (anywhere) ship
- * with a Greek subset. Greek text falls back through the font stack to
- * system Greek fonts (Helvetica Neue / Segoe UI / Roboto) — same behaviour
- * as on the original site. Visual quality is unaffected on any modern OS.
+ * Combined with build.inlineStylesheets:'always' in astro.config.ts,
+ * this removes all render-blocking external font CSS from the critical
+ * path. See docs/3a-lighthouse-summary.md for the measurement.
  */
 
 /* Montserrat — display / headings */

@@ -2,14 +2,17 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
-import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ProtocolPanel from "@/components/ProtocolPanel.astro";
 import RefTags from "@/components/RefTags.astro";
+import RelatedAside from "@/components/RelatedAside.astro";
 import { verifyRefs } from "@/lib/refs";
+import { buildCrossLinkIndex, relatedKey } from "@/lib/cross-links";
 import { t } from "@/i18n";
 
 const locale = "en" as const;
 const prefix = "";
+
+const crossLinks = await buildCrossLinkIndex();
 
 export async function getStaticPaths() {
   const entries = await getCollection("longevity");
@@ -21,6 +24,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const pathname = Astro.url.pathname;
+const related = crossLinks.relatedFor.get(relatedKey("longevity", entry.id)) ?? [];
 
 const iconMap: Record<string, string> = {
   Dna: "lucide:dna",
@@ -63,17 +67,13 @@ const jsonLd = {
   pageHeading={entry.data.title[locale]}
   eyebrow="Longevity application"
   jsonLd={jsonLd}
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: t("longevity.section.title", locale), href: `${prefix}/longevity/` },
+    { label: entry.data.title[locale] },
+  ]}
   noindex={true}
 >
-  <Breadcrumbs
-    slot="breadcrumbs"
-    items={[
-      { label: "Home", href: "/" },
-      { label: t("longevity.section.title", locale), href: `${prefix}/longevity/` },
-      { label: entry.data.title[locale] },
-    ]}
-  />
-
   <div class="flex items-start justify-between gap-6 mb-8">
     <div class={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center flex-shrink-0`}>
       <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-6 h-6" />
@@ -118,5 +118,7 @@ const jsonLd = {
     )
   }
 
-  <Fragment slot="aside" />
+  <Fragment slot="aside">
+    <RelatedAside title="Related" related={related} locale={locale} prefix={prefix} />
+  </Fragment>
 </DetailLayout>
