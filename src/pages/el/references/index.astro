@@ -14,19 +14,21 @@ const refs = all.sort((a, b) => a.data.num - b.data.num);
 const crossLinks = await buildCrossLinkIndex();
 
 const total = refs.length;
-const rcts = refs.filter((r) => /RCT|Meta-Analysis/i.test(r.data.type)).length;
-const reviews = refs.filter((r) => /Review/i.test(r.data.type)).length;
+const rcts = refs.filter((r) =>
+  /RCT|Randomized Controlled Trial|Meta-Analysis/i.test(r.data.type),
+).length;
+const reviews = refs.filter((r) => /Review|Meta-Analysis/i.test(r.data.type)).length;
 const guidelines = refs.filter((r) => /Guideline/i.test(r.data.type)).length;
 ---
 
 <IndexLayout
   title={`${t("refs.section.title", locale)} — HBOT Science`}
-  description={t("refs.section.subtitle", locale)}
+  description={t("refs.section.subtitle", locale, { count: total })}
   locale={locale}
   pathname={pathname}
   badge={t("refs.section.badge", locale)}
   pageHeading={t("refs.section.title", locale)}
-  pageSubtitle={t("refs.section.subtitle", locale)}
+  pageSubtitle={t("refs.section.subtitle", locale, { count: total })}
   badgeColor="slate"
   noindex={true}
 >

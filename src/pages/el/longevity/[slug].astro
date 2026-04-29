@@ -111,7 +111,7 @@ const jsonLd = {
     entry.data.refs && entry.data.refs.length > 0 && (
       <section class="mt-10 pt-6 border-t border-slate-200">
         <h2 class="text-base font-semibold text-slate-900 mb-3">{t("longevity.refs.label", locale)}</h2>
-        <RefTags refs={entry.data.refs} />
+        <RefTags refs={entry.data.refs} prefix={prefix} />
         <p class="mt-3 text-xs text-slate-500">
           Πλήρεις παραπομπές στη <a href="/el/references/" class="text-teal-700 underline underline-offset-2 hover:text-teal-800">σελίδα βιβλιογραφίας</a>.
         </p>

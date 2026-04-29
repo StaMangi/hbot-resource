@@ -13,8 +13,18 @@ import type { Locale } from "@/lib/seo";
 
 const dicts: Record<Locale, Record<string, string>> = { en, el };
 
-export function t(key: string, locale: Locale): string {
-  return dicts[locale][key] ?? dicts.en[key] ?? key;
+export function t(
+  key: string,
+  locale: Locale,
+  vars?: Record<string, string | number>,
+): string {
+  const raw = dicts[locale][key] ?? dicts.en[key] ?? key;
+  if (!vars) return raw;
+  // Replace `{name}` placeholders. Unmatched placeholders are left intact —
+  // visible at render time, easier to spot than silent omission.
+  return raw.replace(/\{(\w+)\}/g, (m, name) =>
+    name in vars ? String(vars[name]) : m,
+  );
 }
 
 /**

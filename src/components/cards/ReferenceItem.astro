@@ -16,7 +16,12 @@ const { entry, locale, citedBy = [], prefix = "" } = Astro.props;
 
 const typeBadge = (type: string) => {
   const tt = type.toLowerCase();
-  if (tt.includes("rct") || tt.includes("review") || tt.includes("meta-analysis")) {
+  if (
+    tt.includes("rct") ||
+    tt.includes("randomized controlled trial") ||
+    tt.includes("review") ||
+    tt.includes("meta-analysis")
+  ) {
     return "bg-emerald-100 text-emerald-800";
   }
   if (tt.includes("guideline")) return "bg-violet-100 text-violet-800";
