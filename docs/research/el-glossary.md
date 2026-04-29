@@ -119,11 +119,33 @@ The following are kept untranslated (proper nouns / acronyms with international 
 
 DOI URLs and journal names are kept in Latin (e.g. "Sci Reports", "BMJ Open", "Frontiers in Medicine").
 
-## 7. Open items for future clusters
+## 4.C Fibromyalgia additions (locked)
 
-Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.C–4.F land, the candidate terms to lock are:
+Added when 4.C landed; binding for any later cluster that touches central-sensitisation or chronic-pain vocabulary.
 
-- 4.C Fibromyalgia: pain syndromes, tender points, central sensitisation, FIQR, FM-specific psychometric scales
+| EN | EL | Notes |
+|---|---|---|
+| Fibromyalgia | Ινομυαλγία | |
+| Chronic Pain Syndromes | Σύνδρομα Χρόνιου Πόνου | category label |
+| central sensitisation syndrome | σύνδρομο κεντρικής ευαισθητοποίησης | |
+| chronic central sensitisation syndrome | σύνδρομο χρόνιας κεντρικής ευαισθητοποίησης | |
+| widespread pain | εκτεταμένος πόνος | |
+| tender points | ευαίσθητα σημεία | classical FM clinical sign |
+| quality of life | ποιότητα ζωής | |
+| function / functional outcome | λειτουργικότητα | |
+| brain activity patterns | πρότυπα εγκεφαλικής δραστηριότητας | from Efrati 2015 SPECT data |
+| prospective controlled trial | προοπτική ελεγχόμενη δοκιμή | trial-type label, distinguishes from full RCT |
+| pooled randomised data | συγκεντρωτικά τυχαιοποιημένα δεδομένα | meta-analysis terminology |
+| magnitude of effect / magnitude of reduction | μέγεθος / μέγεθος μείωσης | for honest heterogeneity reporting |
+| meta-analytic confirmation | μετα-αναλυτική επιβεβαίωση | |
+| supporting evidence | υποστηρικτικά στοιχεία | |
+| anchored to a single research group | αγκιστρωμένη σε μία ερευνητική ομάδα | softened-caveat variant for emerging-tier with meta-analytic backing |
+
+## 8. Open items for future clusters
+
+Each subsequent cluster should append additions here, not silently introduce new register on the page. When 4.D–4.F land, the candidate terms to lock are:
+
+- 4.C Fibromyalgia: pain syndromes, tender points, central sensitisation, FIQR, FM-specific psychometric scales — *locked, see § 4.C above*
 - 4.D Dermatology: chronic wounds vocabulary already exists from Phase 2.B FDA indications; verify radiation-injury and acne-related terminology
 - 4.E Plastic Surgery: graft viability, flap perfusion, post-surgical recovery
 - 4.F Women's Health: gestational, perinatal vocabulary; menopause is explicitly omitted per Phase 4 plan amendment
