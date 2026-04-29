@@ -1,8 +1,8 @@
 # Greek terminology glossary — Phase 4 register lock
 
-**Status:** locked at end of Phase 4.B (Long COVID).
-**Scope:** canonical EN→EL terminology for clinical content; binding for all subsequent Phase 4 clusters (4.C Fibromyalgia, 4.D Dermatology, 4.E Plastic Surgery, 4.F Women's Health) and any later editorial work.
-**Authority:** the entries below are derived from approved Long COVID translations (`condition.long-covid` and `departments.neurology.applications[Long COVID]`) plus the inherited neurology register from Phase 2.B. Where the inherited register and the Phase 4.B translation diverge, this glossary records the Phase 4.B form as the going-forward standard.
+**Status:** locked at end of Phase 4.B (Long COVID); refined at end of Phase 4.C (Fibromyalgia, see § 4.C). Binding for 4.D–4.J.
+**Scope:** canonical EN→EL terminology for clinical content; binding for all subsequent Phase 4 clusters (4.D Dermatology, 4.E Plastic Surgery, 4.F Women's Health) and any later editorial work.
+**Authority:** the entries below are derived from approved Long COVID translations (`condition.long-covid` and `departments.neurology.applications[Long COVID]`) plus the inherited neurology register from Phase 2.B, then extended by the 4.C Fibromyalgia translation (see § 4.C). Where the inherited register and the Phase 4 translation diverge, this glossary records the Phase 4 form as the going-forward standard.
 
 Update this file when a new cluster introduces a term not yet listed; do not silently invent new translations on the page.
 
