@@ -13,8 +13,13 @@ const { locale } = Astro.props;
 // Single source of attribution for the entire site.
 const editorialLine = "Editorial publisher: IN2050 Ltd · Cyprus · Reg. HE416406";
 
-const aboutPath = locale === "en" ? "/about/" : "/el/about/";
-const aboutLabel = locale === "en" ? "Editorial policy" : "Εκδοτική πολιτική";
+const aboutPath = locale === "en" ? "/about/" : `/${locale}/about/`;
+const aboutLabel =
+  locale === "en"
+    ? "Editorial policy"
+    : locale === "el"
+      ? "Εκδοτική πολιτική"
+      : "Redaktionelle Richtlinien";
 
 const year = new Date().getFullYear();
 // Language toggle removed from Footer in Phase 5 polish — the Nav toggle

@@ -35,7 +35,8 @@ const typeBadge = (type: string) => {
   return "bg-slate-100 text-slate-700";
 };
 
-const citedInLabel = locale === "en" ? "Cited in" : "Παραπέμπεται σε";
+const citedInLabel =
+  locale === "el" ? "Παραπέμπεται σε" : locale === "de" ? "Zitiert in" : "Cited in";
 ---
 
 <li

@@ -9,9 +9,10 @@
 
 import { en } from "./en";
 import { el } from "./el";
+import { de } from "./de";
 import type { Locale } from "@/lib/seo";
 
-const dicts: Record<Locale, Record<string, string>> = { en, el };
+const dicts: Record<Locale, Record<string, string>> = { en, el, de };
 
 export function t(
   key: string,
@@ -37,4 +38,4 @@ export function has(key: string, locale: Locale): boolean {
   return key in dicts[locale];
 }
 
-export { en, el };
+export { en, el, de };

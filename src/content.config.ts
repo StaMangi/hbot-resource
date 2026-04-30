@@ -6,14 +6,19 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
+// "bilingual" is the historic name; the field is now trilingual (EN/EL/DE).
+// Phase 7 multilingual rollout (German) closed at Stage 6 — DE is now
+// required at build time, matching EN/EL.
 const bilingual = z.object({
   en: z.string(),
   el: z.string(),
+  de: z.string(),
 });
 
 const bilingualStringArray = z.object({
   en: z.array(z.string()),
   el: z.array(z.string()),
+  de: z.array(z.string()),
 });
 
 const protocol = z.object({

@@ -13,20 +13,12 @@ interface Props {
 const { title, related, locale, prefix = "" } = Astro.props;
 
 const collectionLabel = (c: CrossRef["collection"]) => {
-  if (locale === "en") {
-    return {
-      mechanisms: "Mechanism",
-      indications: "Indication",
-      departments: "Department",
-      longevity: "Longevity",
-    }[c];
-  }
-  return {
-    mechanisms: "Μηχανισμός",
-    indications: "Ένδειξη",
-    departments: "Τμήμα",
-    longevity: "Μακροζωία",
-  }[c];
+  const labels = {
+    en: { mechanisms: "Mechanism", indications: "Indication", departments: "Department", longevity: "Longevity" },
+    el: { mechanisms: "Μηχανισμός", indications: "Ένδειξη", departments: "Τμήμα", longevity: "Μακροζωία" },
+    de: { mechanisms: "Mechanismus", indications: "Indikation", departments: "Fachbereich", longevity: "Langlebigkeit" },
+  };
+  return labels[locale][c];
 };
 ---
 
