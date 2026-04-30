@@ -2,6 +2,7 @@ legacyId: 8
 title:
   en: "Effects of pre-, post- and intra-exercise HBOT on performance and recovery: systematic review and meta-analysis"
   el: "Επιδράσεις της HBOT πριν, κατά και μετά την άσκηση στην απόδοση και αποκατάσταση: συστηματική ανασκόπηση και μετα-ανάλυση"
+  de: "Effekte der HBOT vor, während und nach dem Training auf Leistung und Erholung: systematische Übersichtsarbeit und Meta-Analyse"
 authors: "Huang X, Wang R, Zhang Z, et al."
 journal: "Frontiers in Physiology"
 year: 2021
@@ -10,5 +11,6 @@ evidenceLevel: "Level I (Meta-Analysis)"
 keyFinding:
   en: "First meta-analysis on HBOT for exercise performance and recovery. Consistent benefits in muscle recovery, reduced inflammation, and enhanced endurance capacity."
   el: "Πρώτη μετα-ανάλυση για HBOT σε αθλητική απόδοση και αποκατάσταση. Συνεπή οφέλη σε μυϊκή αποκατάσταση, μειωμένη φλεγμονή και ενισχυμένη ικανότητα αντοχής."
+  de: "Erste Meta-Analyse zur HBOT bei sportlicher Leistung und Erholung. Konsistente Vorteile bei der Muskelregeneration, reduzierte Entzündung und gesteigerte Ausdauerleistung."
 doi: "https://www.frontiersin.org/articles/10.3389/fphys.2021.791872/full"
 ref: "[22]"

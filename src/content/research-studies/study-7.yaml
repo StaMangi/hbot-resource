@@ -2,6 +2,7 @@ legacyId: 7
 title:
   en: "HBOT improves symptoms, brain microstructure and functionality in veterans with treatment-resistant PTSD"
   el: "Η HBOT βελτιώνει συμπτώματα, μικροδομή εγκεφάλου και λειτουργικότητα σε βετεράνους με ανθεκτική ΔΜΤΣ"
+  de: "HBOT verbessert Symptome, Hirn-Mikrostruktur und Funktionalität bei Veteranen mit therapieresistenter PTBS"
 authors: "Doenyas-Barak K, Catalogna M, Kutz I, et al."
 journal: "PLoS One"
 year: 2022
@@ -10,5 +11,6 @@ evidenceLevel: "Level II"
 keyFinding:
   en: "HBOT significantly improved PTSD checklist scores and demonstrated measurable improvements in brain microstructure on advanced MRI in treatment-resistant PTSD veterans."
   el: "Η HBOT βελτίωσε σημαντικά τις βαθμολογίες ελέγχου ΔΜΤΣ και απέδειξε μετρήσιμες βελτιώσεις στη μικροδομή εγκεφάλου σε προηγμένη MRI σε βετεράνους με ανθεκτική ΔΜΤΣ."
+  de: "HBOT verbesserte die PTBS-Checklisten-Scores signifikant und zeigte in der fortgeschrittenen MRT messbare Verbesserungen der Hirn-Mikrostruktur bei Veteranen mit therapieresistenter PTBS."
 doi: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0261350"
 ref: "[20]"

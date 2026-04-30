@@ -1,29 +1,42 @@
 title:
   en: "Collagen Production & Skin Health"
   el: "Παραγωγή Κολλαγόνου & Υγεία Δέρματος"
+  de: "Kollagenproduktion & Hautgesundheit"
 icon: "Layers"
 stat: "3×"
 statLabel:
   en: "Increase in collagen III formation"
   el: "Αύξηση σχηματισμού κολλαγόνου τύπου ΙΙΙ"
+  de: "Anstieg der Kollagen-Typ-III-Bildung"
 color: "navy"
 summary:
   en: "HBOT stimulates collagen III formation and increases overall collagen production through growth factor upregulation, supporting skin elasticity, joint health, and connective tissue integrity."
   el: "Η HBOT διεγείρει σχηματισμό κολλαγόνου τύπου ΙΙΙ και αυξάνει συνολική παραγωγή κολλαγόνου μέσω ανύψωσης αυξητικών παραγόντων, υποστηρίζοντας ελαστικότητα δέρματος, υγεία αρθρώσεων και ακεραιότητα συνδετικού ιστού."
+  de: "HBOT stimuliert die Bildung von Kollagen Typ III und erhöht die Gesamtkollagenproduktion durch Hochregulation von Wachstumsfaktoren, was die Hautelastizität, Gelenkgesundheit und Bindegewebsintegrität unterstützt."
 mechanism:
   en: "Hyperoxia upregulates VEGF, PDGF, and FGF, promoting fibroblast proliferation and collagen synthesis. HBOT also enhances hydroxylation of proline and lysine residues, critical steps in collagen cross-linking and tissue strength."
   el: "Η υπεροξία ανεβάζει VEGF, PDGF και FGF, προάγοντας πολλαπλασιασμό ινοβλαστών και σύνθεση κολλαγόνου. Η HBOT επίσης ενισχύει υδροξυλίωση καταλοίπων προλίνης και λυσίνης, κρίσιμα βήματα στη διασύνδεση κολλαγόνου και αντοχή ιστού."
+  de: "Die Hyperoxie reguliert VEGF, PDGF und FGF hoch und fördert die Fibroblasten-Proliferation sowie die Kollagensynthese. HBOT verstärkt zudem die Hydroxylierung von Prolin- und Lysinresten — entscheidende Schritte in der Kollagen-Quervernetzung und Gewebefestigkeit."
 protocol:
-  ata: "2.0 – 2.4 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.4 ATA"
+    el: "2.0 – 2.4 ATA"
+    de: "2.0 – 2.4 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"
+    de: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "Clinical Research"
     el: "Κλινική Έρευνα"
+    de: "Klinische Forschung"
 refs:
   - "[11]"

@@ -1,57 +1,81 @@
 name:
   en: "Women's Health"
   el: "Γυναικολογική Υγεία"
+  de: "Frauengesundheit"
 icon: "Venus"
 color: "#4338ca"
 shortDesc:
   en: "Pelvic radiation injury (FDA), endometriosis (investigational)"
   el: "Πυελική ακτινική κάκωση (FDA), ενδομητρίωση (ερευνητικό)"
+  de: "Strahlenschäden im Beckenbereich (FDA), Endometriose (investigativ)"
 applications:
   - title:
       en: "Pelvic Radiation Injury"
       el: "Πυελική Ακτινική Κάκωση"
+      de: "Strahlenschäden im Beckenbereich"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "HBOT for late radiation tissue injury in pelvic structures (radiation cystitis, proctitis, vaginal stenosis) following gynaecological cancer radiotherapy. Cross-references the FDA-approved Delayed Radiation Injury indication; the women's-health context emphasises pelvic-specific manifestations."
       el: "HBOT για όψιμη ακτινική βλάβη ιστών σε πυελικές δομές (ακτινική κυστίτιδα, ορθίτιδα, κολπική στένωση) μετά από ακτινοθεραπεία γυναικολογικού καρκίνου. Παραπέμπει στην εγκεκριμένη από το FDA ένδειξη Καθυστερημένης Ακτινικής Βλάβης· το πλαίσιο της γυναικολογικής υγείας τονίζει τις πυελικά ειδικές εκδηλώσεις."
+      de: "HBOT bei späten Strahlengewebsschäden im Beckenbereich (Strahlenzystitis, Proktitis, Scheidenstenose) nach Strahlentherapie bei gynäkologischem Krebs. Verweist auf die FDA-zugelassene Indikation Verzögerte Strahlenschäden; der Kontext der Frauengesundheit betont die beckenspezifischen Manifestationen."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
+        de: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[1]"
       - "[12]"
   - title:
       en: "Endometriosis"
       el: "Ενδομητρίωση"
+      de: "Endometriose"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
       en: "Investigational application supported by translational evidence in rodent models and one registered randomised trial (HEROES, NCT06579040) currently recruiting. No published human clinical evidence yet; HBOT is positioned as an investigational adjunct, not standard of care."
       el: "Ερευνητική εφαρμογή που υποστηρίζεται από μεταγωγικά στοιχεία σε μοντέλα τρωκτικών και μία καταχωρημένη τυχαιοποιημένη δοκιμή (HEROES, NCT06579040) που αυτή τη στιγμή εγγράφει ασθενείς. Δεν υπάρχουν δημοσιευμένα κλινικά στοιχεία σε ανθρώπους ακόμη· η HBOT τοποθετείται ως ερευνητική επικουρική, όχι ως πρότυπο θεραπείας."
+      de: "Investigative Anwendung, gestützt durch translationale Evidenz in Nagermodellen und eine registrierte randomisierte Studie (HEROES, NCT06579040), die derzeit Patientinnen einschließt. Noch keine veröffentlichte klinische Evidenz beim Menschen; HBOT wird als investigatives Adjuvans positioniert, nicht als Standardtherapie."
     evidence: "Level C"
     protocol:
-      ata: "Not standardised"
-      duration: "Not standardised"
+      ata:
+        en: "Not standardised"
+        el: "Μη τυποποιημένο"
+        de: "Nicht standardisiert"
+      duration:
+        en: "Not standardised"
+        el: "Μη τυποποιημένο"
+        de: "Nicht standardisiert"
       sessions:
         en: "Not standardised (HEROES trial protocol pending publication)"
         el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"
+        de: "Nicht standardisiert (HEROES-Studienprotokoll Veröffentlichung ausstehend)"
       frequency:
         en: "Not standardised"
         el: "Μη τυποποιημένο"
+        de: "Nicht standardisiert"
       basis:
         en: "Translational + Registered Trial Awaiting Results"
         el: "Μεταγωγική + Καταχωρημένη Δοκιμή Εκκρεμώντας Αποτελεσμάτων"
+        de: "Translational + Registrierte Studie mit Ausstehenden Ergebnissen"
     refs:
       - "[41]"
       - "[42]"

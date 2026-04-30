@@ -3,28 +3,41 @@ tier: "emerging"
 category:
   en: "Post-Viral Syndromes"
   el: "Μετα-ϊογενή Σύνδρομα"
+  de: "Postvirale Syndrome"
 condition:
   en: "Long COVID"
   el: "Long COVID (Σύνδρομο Μετα-COVID)"
+  de: "Long COVID (Post-COVID-Syndrom)"
 description:
   en: "Persistent multisystem symptoms following acute SARS-CoV-2 infection — including fatigue, cognitive dysfunction (\"brain fog\"), sleep disturbance, and pain. A 2022 randomised controlled trial reported significant improvements in cognitive function, sleep, pain, and overall symptom burden after 40 HBOT sessions, with benefits sustained at one-year follow-up. The evidence base is currently anchored to a single research group; independent replication is awaited (HOT-LoCO trial in progress)."
   el: "Επίμονα συμπτώματα πολλαπλών συστημάτων μετά από οξεία λοίμωξη SARS-CoV-2 — κόπωση, γνωστική δυσλειτουργία («brain fog»), διαταραχές ύπνου και πόνος. Τυχαιοποιημένη ελεγχόμενη δοκιμή του 2022 ανέφερε σημαντική βελτίωση γνωστικής λειτουργίας, ύπνου, πόνου και συνολικού συμπτωματικού βάρους μετά από 40 συνεδρίες HBOT, με τα οφέλη να διατηρούνται σε παρακολούθηση ενός έτους. Η τεκμηρίωση βασίζεται προς το παρόν σε μία ερευνητική ομάδα — ανεξάρτητη επιβεβαίωση εκκρεμεί (δοκιμή HOT-LoCO σε εξέλιξη)."
+  de: "Anhaltende Multisystem-Symptome nach akuter SARS-CoV-2-Infektion — einschließlich Fatigue, kognitiver Dysfunktion („Brain Fog\"), Schlafstörungen und Schmerzen. Eine randomisierte kontrollierte Studie (RKS) von 2022 berichtete über signifikante Verbesserungen der kognitiven Funktion, des Schlafs, der Schmerzen und der Gesamt-Symptomlast nach 40 HBOT-Sitzungen, wobei die Vorteile bei einer Nachbeobachtung über ein Jahr anhielten. Die Evidenzlage stützt sich derzeit auf eine einzelne Forschungsgruppe; eine unabhängige Replikation steht aus (HOT-LoCO-Studie im Gange)."
 evidence:
   en: "Emerging Evidence"
   el: "Αναδυόμενα Στοιχεία"
+  de: "Aufkommende Evidenz"
 evidenceLevel: "B"
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "40"
     el: "40"
+    de: "40"
   frequency:
     en: "5×/week"
     el: "5×/εβδομάδα"
+    de: "5×/Woche"
   basis:
     en: "Zilberman-Itskovich et al., 2022 (RCT)"
     el: "Zilberman-Itskovich et al., 2022 (ΤΕΔ)"
+    de: "Zilberman-Itskovich et al., 2022 (RKS)"
 refs:
   - "[25]"
   - "[26]"

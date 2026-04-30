@@ -2,6 +2,7 @@ legacyId: 2
 title:
   en: "Cognitive enhancement of healthy older adults using hyperbaric oxygen: a randomized controlled trial"
   el: "Γνωστική ενίσχυση υγιών ηλικιωμένων με υπερβαρικό οξυγόνο: τυχαιοποιημένη ελεγχόμενη μελέτη"
+  de: "Kognitive Förderung gesunder älterer Erwachsener mittels hyperbarem Sauerstoff: eine randomisierte kontrollierte Studie"
 authors: "Amir H, Malka DK, Gil S, et al."
 journal: "Aging (Albany NY)"
 year: 2020
@@ -10,5 +11,6 @@ evidenceLevel: "Level I"
 keyFinding:
   en: "HBOT induced significant cognitive enhancements in healthy aging adults via mechanisms involving regional changes in cerebral blood flow."
   el: "Η HBOT επέφερε σημαντικές γνωστικές ενισχύσεις σε υγιείς ηλικιωμένους μέσω μηχανισμών που αφορούν περιφερειακές αλλαγές στην εγκεφαλική αιματική ροή."
+  de: "HBOT induzierte bei gesunden älteren Erwachsenen signifikante kognitive Verbesserungen über Mechanismen, die regionale Veränderungen des zerebralen Blutflusses einschließen."
 doi: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7377835/"
 ref: "[4]"

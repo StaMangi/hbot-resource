@@ -1,10 +1,13 @@
 name:
   en: "Genetics Clinic"
   el: "Κλινική Γενετικής"
+  de: "Genetik-Klinik"
 icon: "Dna"
 rationale:
   en: "The Genetics Clinic manages hereditary conditions, chromosomal disorders, and genetic counseling. There is currently no scientific evidence supporting the use of HBOT in the management of genetic disorders. While HBOT modulates gene expression through HIF pathways, this does not translate to therapeutic benefit for primary genetic conditions."
   el: "Η Κλινική Γενετικής διαχειρίζεται κληρονομικές παθήσεις, χρωμοσωμικές διαταραχές και γενετική συμβουλευτική. Δεν υπάρχουν επί του παρόντος επιστημονικά στοιχεία που να υποστηρίζουν χρήση HBOT στη διαχείριση γενετικών διαταραχών. Ενώ η HBOT τροποποιεί γονιδιακή έκφραση μέσω μονοπατιών HIF, αυτό δεν μεταφράζεται σε θεραπευτικό όφελος για πρωτογενείς γενετικές παθήσεις."
+  de: "Die Genetik-Klinik behandelt Erbkrankheiten, chromosomale Störungen und führt genetische Beratung durch. Es liegt derzeit keine wissenschaftliche Evidenz vor, die den Einsatz von HBOT bei der Behandlung genetischer Erkrankungen unterstützt. HBOT moduliert zwar die Genexpression über HIF-Signalwege, dies führt jedoch nicht zu einem therapeutischen Nutzen bei primären genetischen Erkrankungen."
 role:
   en: "No current or projected clinical application"
   el: "Καμία τρέχουσα ή προβλεπόμενη κλινική εφαρμογή"
+  de: "Keine aktuelle oder absehbare klinische Anwendung"

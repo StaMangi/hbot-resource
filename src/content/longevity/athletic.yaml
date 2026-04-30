@@ -1,29 +1,42 @@
 title:
   en: "Athletic Performance & Recovery"
   el: "Αθλητική Απόδοση & Αποκατάσταση"
+  de: "Sportliche Leistung & Erholung"
 icon: "Zap"
 stat: "50%"
 statLabel:
   en: "Faster muscle recovery"
   el: "Ταχύτερη μυϊκή αποκατάσταση"
+  de: "Schnellere Muskelregeneration"
 color: "teal"
 summary:
   en: "Systematic review and meta-analysis demonstrates consistent benefits including 30-50% faster muscle recovery, reduced exercise-induced muscle damage, decreased inflammation markers, and enhanced endurance capacity."
   el: "Συστηματική ανασκόπηση και μετα-ανάλυση αποδεικνύει συνεπή οφέλη συμπεριλαμβανομένης 30-50% ταχύτερης μυϊκής αποκατάστασης, μειωμένης μυϊκής βλάβης από άσκηση, μειωμένων δεικτών φλεγμονής και ενισχυμένης ικανότητας αντοχής."
+  de: "Systematische Übersichtsarbeit und Meta-Analyse zeigen konsistente Vorteile, darunter eine 30–50 % schnellere Muskelregeneration, reduzierte trainingsinduzierte Muskelschäden, verringerte Entzündungsmarker und gesteigerte Ausdauerleistung."
 mechanism:
   en: "HBOT increases oxygen availability to muscle tissue, accelerating ATP production and enhancing natural repair mechanisms. It reduces pro-inflammatory cytokines (IL-6, TNF-α) that impede recovery and promotes satellite cell activation for muscle regeneration."
   el: "Η HBOT αυξάνει διαθεσιμότητα οξυγόνου στον μυϊκό ιστό, επιταχύνοντας παραγωγή ATP και ενισχύοντας φυσικούς μηχανισμούς επισκευής. Μειώνει προ-φλεγμονώδεις κυτοκίνες (IL-6, TNF-α) που εμποδίζουν αποκατάσταση και προάγει ενεργοποίηση δορυφορικών κυττάρων για μυϊκή αναγέννηση."
+  de: "HBOT erhöht die Sauerstoffverfügbarkeit im Muskelgewebe, beschleunigt die ATP-Produktion und verstärkt die natürlichen Reparaturmechanismen. Sie reduziert proinflammatorische Zytokine (IL-6, TNF-α), die die Erholung behindern, und fördert die Aktivierung von Satellitenzellen für die Muskelregeneration."
 protocol:
-  ata: "1.5 – 2.4 ATA"
-  duration: "60 – 90 min"
+  ata:
+    en: "1.5 – 2.4 ATA"
+    el: "1.5 – 2.4 ATA"
+    de: "1.5 – 2.4 ATA"
+  duration:
+    en: "60 – 90 min"
+    el: "60 – 90 min"
+    de: "60 – 90 min"
   sessions:
     en: "10 – 20 per cycle"
     el: "10 – 20 ανά κύκλο"
+    de: "10 – 20 pro Zyklus"
   frequency:
     en: "Post-exercise or daily"
     el: "Μετά την άσκηση ή καθημερινά"
+    de: "Nach dem Training oder täglich"
   basis:
     en: "Systematic Review & Meta-Analysis"
     el: "Συστηματική Ανασκόπηση & Μετα-Ανάλυση"
+    de: "Systematische Übersichtsarbeit & Meta-Analyse"
 refs:
   - "[22]"

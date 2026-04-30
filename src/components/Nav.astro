@@ -8,7 +8,7 @@
  * + darker text on desktop and a teal background pill on mobile. Computed at
  * build time from Astro.props.pathname; no runtime state.
  */
-import { localePath, type Locale } from "@/lib/seo";
+import { localePath, SUPPORTED_LOCALES, type Locale } from "@/lib/seo";
 import { t } from "@/i18n";
 
 interface Props {
@@ -17,34 +17,68 @@ interface Props {
 }
 
 const { locale, pathname } = Astro.props;
-const altLocale: Locale = locale === "en" ? "el" : "en";
-const altPath = localePath(pathname, altLocale);
-const altLabel = altLocale === "el" ? "Ελληνικά" : "English";
 
-const home = locale === "en" ? "/" : "/el/";
-const prefix = locale === "en" ? "" : "/el";
+// Phase 7 multilingual rollout: language switcher now shows every other
+// locale (instead of a single toggle). On any page in any language, the
+// reader sees the two non-current locales as link options.
+const otherLocales: Locale[] = SUPPORTED_LOCALES.filter((l) => l !== locale);
+const labelOf = (l: Locale) =>
+  l === "en" ? "English" : l === "el" ? "Ελληνικά" : "Deutsch";
+
+const home = locale === "en" ? "/" : `/${locale}/`;
+const prefix = locale === "en" ? "" : `/${locale}`;
 
 // Two-tier nav: paths (Clinical / Wellness) and library (the 6 collection indices).
 // Visual separator between them. Active state matches if pathname starts with href.
+const navLabels = {
+  en: {
+    clinical: "Clinical",
+    wellness: "Wellness",
+    indications: "Indications",
+    departments: "Departments",
+    longevity: "Longevity",
+    evidence: "Evidence",
+    references: "References",
+  },
+  el: {
+    clinical: "Κλινικό",
+    wellness: "Ευεξία",
+    indications: "Ενδείξεις",
+    departments: "Τμήματα",
+    longevity: "Μακροζωία",
+    evidence: "Τεκμηρίωση",
+    references: "Βιβλιογραφία",
+  },
+  de: {
+    clinical: "Klinisch",
+    wellness: "Wellness",
+    indications: "Indikationen",
+    departments: "Fachbereiche",
+    longevity: "Langlebigkeit",
+    evidence: "Evidenz",
+    references: "Quellen",
+  },
+}[locale];
+
 const paths = [
-  { href: `${prefix}/clinical/`, label: locale === "en" ? "Clinical" : "Κλινικό" },
-  { href: `${prefix}/wellness/`, label: locale === "en" ? "Wellness" : "Ευεξία" },
+  { href: `${prefix}/clinical/`, label: navLabels.clinical },
+  { href: `${prefix}/wellness/`, label: navLabels.wellness },
 ];
 
 const library = [
   { href: `${prefix}/mechanisms/`, label: t("mechanisms.section.title", locale).split(" ")[0] || "Mechanisms" },
-  { href: `${prefix}/indications/`, label: locale === "en" ? "Indications" : "Ενδείξεις" },
-  { href: `${prefix}/departments/`, label: locale === "en" ? "Departments" : "Τμήματα" },
-  { href: `${prefix}/longevity/`, label: locale === "en" ? "Longevity" : "Μακροζωία" },
-  { href: `${prefix}/evidence/`, label: locale === "en" ? "Evidence" : "Τεκμηρίωση" },
-  { href: `${prefix}/references/`, label: locale === "en" ? "References" : "Βιβλιογραφία" },
+  { href: `${prefix}/indications/`, label: navLabels.indications },
+  { href: `${prefix}/departments/`, label: navLabels.departments },
+  { href: `${prefix}/longevity/`, label: navLabels.longevity },
+  { href: `${prefix}/evidence/`, label: navLabels.evidence },
+  { href: `${prefix}/references/`, label: navLabels.references },
 ];
 
 const allLinks = [...paths, ...library];
 
 const isActive = (href: string): boolean => {
   // Exact match for / paths; prefix match (must be followed by /) for everything else
-  if (href === "/" || href === "/el/") return pathname === href;
+  if (href === "/" || href === "/el/" || href === "/de/") return pathname === href;
   return pathname === href || pathname.startsWith(href);
 };
 ---
@@ -106,7 +140,7 @@ const isActive = (href: string): boolean => {
     <details class="lg:hidden relative ml-auto">
       <summary
         class="list-none cursor-pointer p-2 -m-2 text-slate-700 hover:text-teal-700 transition-colors"
-        aria-label={locale === "en" ? "Open menu" : "Άνοιγμα μενού"}
+        aria-label={locale === "en" ? "Open menu" : locale === "el" ? "Άνοιγμα μενού" : "Menü öffnen"}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -135,14 +169,18 @@ const isActive = (href: string): boolean => {
       </ul>
     </details>
 
-    <a
-      href={altPath}
-      class="text-sm font-medium text-slate-600 hover:text-teal-700 transition-colors flex-shrink-0"
-      hreflang={altLocale}
-      aria-label={`Switch language to ${altLabel}`}
-    >
-      {altLabel}
-    </a>
+    <div class="flex items-center gap-3 flex-shrink-0">
+      {otherLocales.map((l) => (
+        <a
+          href={localePath(pathname, l)}
+          class="text-sm font-medium text-slate-600 hover:text-teal-700 transition-colors"
+          hreflang={l}
+          aria-label={`Switch language to ${labelOf(l)}`}
+        >
+          {labelOf(l)}
+        </a>
+      ))}
+    </div>
   </div>
 </nav>
 

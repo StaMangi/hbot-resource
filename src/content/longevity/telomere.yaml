@@ -1,29 +1,42 @@
 title:
   en: "Telomere Lengthening"
   el: "Επιμήκυνση Τελομερών"
+  de: "Telomerverlängerung"
 icon: "Dna"
 stat: ">20%"
 statLabel:
   en: "Increase in telomere length"
   el: "Αύξηση μήκους τελομερών"
+  de: "Anstieg der Telomerlänge"
 color: "teal"
 summary:
   en: "Landmark 2020 study demonstrated >20% increase in PBMC telomere length after 60 HBOT sessions in healthy older adults — the first human evidence of therapeutic telomere lengthening."
   el: "Σταθμός μελέτη 2020 απέδειξε >20% αύξηση στο μήκος τελομερών PBMC μετά από 60 συνεδρίες HBOT σε υγιείς ηλικιωμένους — η πρώτη ανθρώπινη απόδειξη θεραπευτικής επιμήκυνσης τελομερών."
+  de: "Eine wegweisende Studie aus dem Jahr 2020 zeigte einen Anstieg der PBMC-Telomerlänge um >20 % nach 60 HBOT-Sitzungen bei gesunden älteren Erwachsenen — der erste menschliche Nachweis einer therapeutischen Telomerverlängerung."
 mechanism:
   en: "HBOT activates telomerase, the enzyme responsible for telomere maintenance and extension. Repeated daily sessions create a hormetic stimulus that upregulates telomerase reverse transcriptase (TERT) expression."
   el: "Η HBOT ενεργοποιεί τελομεράση, το ένζυμο υπεύθυνο για συντήρηση και επέκταση τελομερών. Επαναλαμβανόμενες καθημερινές συνεδρίες δημιουργούν ορμητικό ερέθισμα που ανεβάζει έκφραση αντίστροφης τρανσκριπτάσης τελομεράσης (TERT)."
+  de: "HBOT aktiviert die Telomerase, das für Erhalt und Verlängerung der Telomere verantwortliche Enzym. Wiederholte tägliche Sitzungen erzeugen einen hormetischen Reiz, der die Expression der Telomerase-Reverse-Transkriptase (TERT) hochreguliert."
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "60"
     el: "60"
+    de: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
+    de: "Hadanny et al., 2020 (RKS)"
 refs:
   - "[3]"

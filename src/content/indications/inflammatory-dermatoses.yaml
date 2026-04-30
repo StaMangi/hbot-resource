@@ -3,28 +3,41 @@ tier: "emerging"
 category:
   en: "Inflammatory Skin Disease"
   el: "Φλεγμονώδεις Δερματικές Παθήσεις"
+  de: "Entzündliche Hauterkrankungen"
 condition:
   en: "Inflammatory Dermatoses"
   el: "Φλεγμονώδεις Δερματοπάθειες"
+  de: "Entzündliche Dermatosen"
 description:
   en: "Case-level and small-cohort evidence supports HBOT as an adjunct in selected inflammatory skin conditions, primarily atopic dermatitis and psoriasis. A 2025 review and a 2021 paediatric study describe reductions in pruritus, lesion severity, and Staphylococcus aureus colonisation in severe atopic dermatitis after HBOT cycles. Two 2009 case reports document remission of psoriasis vulgaris with HBOT (one pustular/arthropathic case after 6 sessions at 2.8 ATA × 60 min; one plaque case improving after 15 sessions at 2.0 ATA × 90 min). Other inflammatory dermatoses — hidradenitis suppurativa, livedoid vasculopathy, pyoderma gangrenosum — have been described in early-stage clinical reports but lack robust supporting trials. Protocols vary widely and are not standardised; HBOT is positioned as adjunctive, not first-line."
   el: "Στοιχεία επιπέδου περιπτώσεων και μικρών ομάδων υποστηρίζουν την HBOT ως επικουρική θεραπεία σε επιλεγμένες φλεγμονώδεις δερματοπάθειες, κυρίως ατοπική δερματίτιδα και ψωρίαση. Ανασκόπηση του 2025 και παιδιατρική μελέτη του 2021 περιγράφουν μειώσεις σε κνησμό, σοβαρότητα βλαβών και αποικισμό από Staphylococcus aureus σε σοβαρή ατοπική δερματίτιδα μετά από κύκλους HBOT. Δύο αναφορές περιπτώσεων του 2009 τεκμηριώνουν ύφεση ψωρίασης κατά πλάκες με HBOT (μία περίπτωση φλυκταινώδους/αρθροπαθικής μετά από 6 συνεδρίες στα 2.8 ATA × 60 λεπτά· μία περίπτωση κατά πλάκες με βελτίωση μετά από 15 συνεδρίες στα 2.0 ATA × 90 λεπτά). Άλλες φλεγμονώδεις δερματοπάθειες — πυώδης ιδρωταδενίτιδα, λιβεδοειδής αγγειοπάθεια, γαγγραινώδες πυόδερμα — έχουν περιγραφεί σε πρώιμες κλινικές αναφορές αλλά στερούνται ισχυρών υποστηρικτικών δοκιμών. Τα πρωτόκολλα ποικίλλουν σημαντικά και δεν είναι τυποποιημένα· η HBOT τοποθετείται ως επικουρική, όχι πρώτης γραμμής."
+  de: "Evidenz auf Fallebene und aus kleinen Kohorten stützt HBOT als adjuvante Therapie bei ausgewählten entzündlichen Hauterkrankungen, vor allem atopischer Dermatitis und Psoriasis. Eine Übersichtsarbeit von 2025 und eine pädiatrische Studie von 2021 beschreiben Reduktionen von Pruritus, Läsionsschweregrad und Staphylococcus-aureus-Besiedlung bei schwerer atopischer Dermatitis nach HBOT-Zyklen. Zwei Fallberichte von 2009 dokumentieren eine Remission der Psoriasis vulgaris mit HBOT (ein pustulöser/arthropathischer Fall nach 6 Sitzungen bei 2,8 ATA × 60 Min.; ein Plaque-Fall mit Besserung nach 15 Sitzungen bei 2,0 ATA × 90 Min.). Weitere entzündliche Dermatosen — Hidradenitis suppurativa, livedoide Vaskulopathie, Pyoderma gangraenosum — wurden in frühen klinischen Berichten beschrieben, es fehlen jedoch belastbare Studien. Die Protokolle variieren stark und sind nicht standardisiert; HBOT wird als adjuvant, nicht als Erstlinientherapie positioniert."
 evidence:
   en: "Emerging Evidence"
   el: "Αναδυόμενα Στοιχεία"
+  de: "Aufkommende Evidenz"
 evidenceLevel: "C"
 protocol:
-  ata: "2.0 – 2.8 ATA"
-  duration: "60 – 90 min"
+  ata:
+    en: "2.0 – 2.8 ATA"
+    el: "2.0 – 2.8 ATA"
+    de: "2.0 – 2.8 ATA"
+  duration:
+    en: "60 – 90 min"
+    el: "60 – 90 min"
+    de: "60 – 90 min"
   sessions:
     en: "6 – 30 (highly variable)"
     el: "6 – 30 (πολύ μεταβλητές)"
+    de: "6 – 30 (sehr variabel)"
   frequency:
     en: "Daily, protocol-dependent"
     el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
+    de: "Täglich, protokollabhängig"
   basis:
     en: "Case Reports & Small Studies (not standardised)"
     el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες (μη τυποποιημένα)"
+    de: "Fallberichte & kleine Studien (nicht standardisiert)"
 refs:
   - "[33]"
   - "[34]"

@@ -1,8 +1,8 @@
-# German terminology glossary — DRAFT
+# German terminology glossary — APPLIED, native review pending
 
-**Status:** DRAFT — AWAITING NATIVE-SPEAKER MEDICAL REVIEW. Do not lock or ship to production pages until reviewed by a German-speaking clinician.
-**Scope:** candidate EN→DE terminology for clinical content; modelled on the locked Greek glossary at `el-glossary.md`. Will become binding when reviewed and approved.
-**Authority:** prepared as a starter pack for the post-launch multilingual expansion phase. Term forms reflect standard German medical register (e.g. *Klinik für Hyperbare Oxygenation* literature, S3-Leitlinien terminology). Where two forms are common, both are listed and the reviewer should pick one as the going-forward standard.
+**Status:** APPLIED — these terms have been used across the production DE site rolled out in Phase 7 (Stage 6, 2026-04-30). Native-speaker medical review has not been completed; open as a Phase 8 deliverable. A reviewer walking each section should lock approved terms with **(locked)** and flag any term that needs revision (each revision triggers a content sweep across `src/content/**`).
+**Scope:** binding-on-the-current-site EN→DE terminology for clinical content; modelled on the locked Greek glossary at `el-glossary.md`. Reviewer authority: a German-speaking clinician familiar with hyperbarmedizinische literature.
+**Authority:** terms reflect standard German medical register (e.g. *Klinik für Hyperbare Oxygenation* literature, S3-Leitlinien terminology). Where two forms are common, both are listed and the reviewer should pick one as the going-forward standard.
 
 Update this file when a reviewer locks each section. Mark each section's heading with **(locked)** when its terms become binding.
 

@@ -3,28 +3,41 @@ tier: "fda-approved"
 category:
   en: "Infectious Diseases"
   el: "Λοιμώδη Νοσήματα"
+  de: "Infektionserkrankungen"
 condition:
   en: "Clostridial Myositis & Myonecrosis (Gas Gangrene)"
   el: "Κλωστριδιακή Μυοσίτιδα & Μυονέκρωση (Αέρια Γάγγραινα)"
+  de: "Clostridiale Myositis und Myonekrose (Gasbrand)"
 description:
   en: "HBOT is directly lethal to Clostridium perfringens and inhibits toxin production, used adjunctively with surgery and antibiotics."
   el: "Η HBOT είναι άμεσα θανατηφόρα για Clostridium perfringens και αναστέλλει παραγωγή τοξινών, χρησιμοποιείται επικουρικά με χειρουργική επέμβαση και αντιβιοτικά."
+  de: "HBOT wirkt direkt letal gegen Clostridium perfringens und hemmt die Toxinproduktion; eingesetzt als Adjuvans zu Chirurgie und Antibiotika."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "A"
 protocol:
-  ata: "2.0 – 2.5 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.5 ATA"
+    el: "2.0 – 2.5 ATA"
+    de: "2.0 – 2.5 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
+    de: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[4]"

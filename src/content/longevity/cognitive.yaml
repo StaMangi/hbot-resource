@@ -1,30 +1,43 @@
 title:
   en: "Cognitive Enhancement"
   el: "Γνωστική Ενίσχυση"
+  de: "Kognitive Förderung"
 icon: "Brain"
 stat: "16.5%"
 statLabel:
   en: "Improvement in attention & processing speed"
   el: "Βελτίωση προσοχής & ταχύτητας επεξεργασίας"
+  de: "Verbesserung von Aufmerksamkeit & Verarbeitungsgeschwindigkeit"
 color: "teal"
 summary:
   en: "Randomized controlled trial in healthy older adults showed significant cognitive enhancements including memory, processing speed, and executive function improvements correlated with increased cerebral blood flow."
   el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή σε υγιείς ηλικιωμένους έδειξε σημαντικές γνωστικές ενισχύσεις συμπεριλαμβανομένης βελτίωσης μνήμης, ταχύτητας επεξεργασίας και εκτελεστικής λειτουργίας που συσχετίζονται με αυξημένη εγκεφαλική αιματική ροή."
+  de: "Eine randomisierte kontrollierte Studie an gesunden älteren Erwachsenen zeigte signifikante kognitive Verbesserungen einschließlich Gedächtnis, Verarbeitungsgeschwindigkeit und Exekutivfunktion, die mit einem erhöhten zerebralen Blutfluss korrelierten."
 mechanism:
   en: "HBOT increases regional cerebral blood flow, promotes neuroplasticity through BDNF upregulation, reduces neuroinflammation, and supports hippocampal neurogenesis — all mechanisms diminished with normal aging."
   el: "Η HBOT αυξάνει περιφερειακή εγκεφαλική αιματική ροή, προάγει νευροπλαστικότητα μέσω ανύψωσης BDNF, μειώνει νευροφλεγμονή και υποστηρίζει ιπποκαμπική νευρογένεση — όλοι μηχανισμοί που μειώνονται με την κανονική γήρανση."
+  de: "HBOT erhöht den regionalen zerebralen Blutfluss, fördert die Neuroplastizität durch BDNF-Hochregulation, reduziert die Neuroinflammation und unterstützt die hippocampale Neurogenese — allesamt Mechanismen, die mit dem normalen Altern abnehmen."
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "60"
     el: "60"
+    de: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
+    de: "Hadanny et al., 2020 (RKS)"
 refs:
   - "[4]"
   - "[8]"

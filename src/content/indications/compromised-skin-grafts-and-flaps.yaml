@@ -3,28 +3,41 @@ tier: "fda-approved"
 category:
   en: "Acute Ischemias"
   el: "Οξείες Ισχαιμίες"
+  de: "Akute Ischämien"
 condition:
   en: "Compromised Skin Grafts & Flaps"
   el: "Επικινδυνεύοντα Δερματικά Μοσχεύματα & Κρημνοί"
+  de: "Gefährdete Hauttransplantate und Hautlappen"
 description:
   en: "Salvage therapy for ischemic skin grafts and flaps. Reduces hypoxic necrosis and promotes graft survival through enhanced oxygenation."
   el: "Σωτήρια θεραπεία για ισχαιμικά δερματικά μοσχεύματα και κρημνούς. Μειώνει υποξική νέκρωση και προάγει επιβίωση μοσχεύματος μέσω ενισχυμένης οξυγόνωσης."
+  de: "Rettungstherapie für ischämische Hauttransplantate und Hautlappen. Reduziert hypoxische Nekrose und fördert das Überleben des Transplantats durch verbesserte Oxygenierung."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "B"
 protocol:
-  ata: "2.0 – 2.4 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.4 ATA"
+    el: "2.0 – 2.4 ATA"
+    de: "2.0 – 2.4 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
+    de: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[13]"

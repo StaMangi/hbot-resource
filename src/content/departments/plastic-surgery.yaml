@@ -1,33 +1,46 @@
 name:
   en: "Plastic Surgery"
   el: "Πλαστική Χειρουργική"
+  de: "Plastische Chirurgie"
 icon: "Sparkles"
 color: "#9f1239"
 shortDesc:
   en: "Compromised grafts/flaps, post-procedure recovery, radiation injury, reconstructive cases"
   el: "Διακυβευμένα μοσχεύματα/κρημνοί, μετεγχειρητική αποκατάσταση, ακτινική βλάβη, ανακατασκευαστικές περιπτώσεις"
+  de: "Gefährdete Transplantate/Lappen, postoperative Erholung, Strahlenschäden, rekonstruktive Fälle"
 applications:
   - title:
       en: "Compromised Skin Grafts & Flaps"
       el: "Διακυβευμένα Δερματικά Μοσχεύματα & Κρημνοί"
+      de: "Gefährdete Hauttransplantate & Lappen"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Salvage adjunct for ischemic or venously congested skin grafts and flaps. Earlier initiation when perfusion issues are identified is associated with better outcomes; HBOT improves oxygen delivery, angiogenesis, fibroblast activity, and edema control."
       el: "Επικουρική θεραπεία διάσωσης για ισχαιμικά ή φλεβικά συμφορημένα δερματικά μοσχεύματα και κρημνούς. Η πρωιμότερη έναρξη όταν εντοπίζονται προβλήματα αιμάτωσης συσχετίζεται με καλύτερες εκβάσεις· η HBOT βελτιώνει τη μεταφορά οξυγόνου, την αγγειογένεση, την ινοβλαστική δραστηριότητα και τον έλεγχο του οιδήματος."
+      de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
+        de: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[1]"
       - "[13]"
@@ -35,96 +48,140 @@ applications:
   - title:
       en: "Difficult Postoperative Wounds"
       el: "Δύσκολες Μετεγχειρητικές Πληγές"
+      de: "Schwierige postoperative Wunden"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Adjunctive HBOT for postoperative wounds with delayed healing, particularly in compromised tissue beds (radiation-injured, ischemic, or contaminated). Cross-references the FDA-approved problem-wound indication; the plastic surgery context emphasises early intervention when surgical revision alone is insufficient."
       el: "Επικουρική HBOT για μετεγχειρητικές πληγές με καθυστερημένη επούλωση, ιδίως σε διακυβευμένα ιστικά υπόβαθρα (ακτινικά, ισχαιμικά ή μολυσμένα). Παραπέμπει στην εγκεκριμένη από το FDA ένδειξη προβληματικών πληγών· το πλαίσιο της πλαστικής χειρουργικής τονίζει την πρώιμη παρέμβαση όταν η χειρουργική αναθεώρηση από μόνη της είναι ανεπαρκής."
+      de: "Adjuvante HBOT bei postoperativen Wunden mit verzögerter Heilung, insbesondere in kompromittierten Gewebebetten (strahlengeschädigt, ischämisch oder kontaminiert). Verweist auf die FDA-zugelassene Indikation Problemwunden; der plastisch-chirurgische Kontext betont die frühe Intervention, wenn die operative Revision allein nicht ausreicht."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
+        de: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[1]"
       - "[7]"
   - title:
       en: "Radiation-Injured Tissue"
       el: "Ακτινικά Βλαμμένος Ιστός"
+      de: "Strahlengeschädigtes Gewebe"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "HBOT for soft-tissue radiation necrosis preceding or following reconstructive surgery. Promotes angiogenesis in hypoxic, hypovascular, hypocellular tissue and improves outcomes in radiation-affected reconstruction."
       el: "HBOT για νέκρωση μαλακών ιστών από ακτινοβολία πριν ή μετά από επανορθωτική χειρουργική επέμβαση. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό και βελτιώνει τις εκβάσεις σε ανακατασκευαστική χειρουργική επί ακτινικά βλαμμένου ιστού."
+      de: "HBOT bei Strahlennekrose des Weichgewebes vor oder nach rekonstruktiver Chirurgie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe und verbessert die Ergebnisse rekonstruktiver Eingriffe an strahlengeschädigtem Gewebe."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
+        de: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[1]"
       - "[12]"
   - title:
       en: "Burns & Necrotizing Soft-Tissue Infection"
       el: "Εγκαύματα & Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
+      de: "Verbrennungen & nekrotisierende Weichgewebeinfektion"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Adjunctive treatment for severe burns, necrotizing fasciitis, and traumatic soft-tissue injury. Reduces mortality and tissue loss when combined with surgical debridement and antibiotic therapy."
       el: "Επικουρική θεραπεία για σοβαρά εγκαύματα, νεκρωτική περιτονίτιδα και τραυματική βλάβη μαλακών ιστών. Μειώνει τη θνησιμότητα και την απώλεια ιστών σε συνδυασμό με χειρουργικό καθαρισμό και αντιβιοτική αγωγή."
+      de: "Adjuvante Behandlung schwerer Verbrennungen, nekrotisierender Fasziitis und traumatischer Weichgewebsverletzungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
+        de: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[1]"
       - "[10]"
   - title:
       en: "Aesthetic & Reconstructive Recovery"
       el: "Αισθητική & Επανορθωτική Αποκατάσταση"
+      de: "Ästhetische & Rekonstruktive Erholung"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
       en: "Comparative-outcome evidence in aesthetic and reconstructive recovery. A 2023 facelift case–control study (n=20) reported mean wound healing of 13.3 vs 36.9 days (P<.001) when HBOT was started within 24 h of surgery. Case series in cosmetic and reconstructive ischaemic soft-tissue wounds report consistent salvage benefit. HBOT is positioned as a salvage and recovery adjunct, not as a routine enhancer of uncomplicated cosmetic surgery."
       el: "Στοιχεία συγκριτικής έκβασης σε αισθητική και επανορθωτική αποκατάσταση. Μελέτη ασθενών–μαρτύρων face-lift του 2023 (n=20) ανέφερε μέση επούλωση τραύματος 13,3 έναντι 36,9 ημερών (P<0,001) όταν η HBOT ξεκίνησε εντός 24 ωρών από τη χειρουργική επέμβαση. Σειρές περιπτώσεων σε αισθητικές και επανορθωτικές ισχαιμικές πληγές μαλακών ιστών αναφέρουν σταθερό όφελος διάσωσης. Η HBOT τοποθετείται ως επικουρική θεραπεία διάσωσης και αποκατάστασης, όχι ως ρουτίνας ενισχυτής μη επιπλεγμένης αισθητικής χειρουργικής."
+      de: "Evidenz vergleichender Ergebnisse in der ästhetischen und rekonstruktiven Erholung. Eine Facelift-Fall–Kontroll-Studie von 2023 (n=20) berichtete über eine durchschnittliche Wundheilung von 13,3 vs. 36,9 Tagen (p<0,001), wenn HBOT innerhalb von 24 h nach der Operation begonnen wurde. Fallserien zu kosmetischen und rekonstruktiven ischämischen Weichgewebewunden berichten einen konsistenten Salvage-Nutzen. HBOT wird als Salvage- und Erholungs-Adjuvans positioniert, nicht als routinemäßiger Verstärker unkomplizierter kosmetischer Chirurgie."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage)"
         el: "5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού)"
+        de: "5 – 10 (ästhetisch) / 20 – 30 (Transplantat-/Lappen-Rettung)"
       frequency:
         en: "Once daily; within 24 h of surgery for salvage cases"
         el: "Μία φορά την ημέρα· εντός 24 ωρών από τη χειρουργική επέμβαση για περιπτώσεις διάσωσης"
+        de: "Einmal täglich; innerhalb von 24 h nach OP bei Rettungsfällen"
       basis:
         en: "Case–Control Study (Neel et al., 2023) + Reviews"
         el: "Μελέτη Ασθενών–Μαρτύρων (Neel et al., 2023) + Ανασκοπήσεις"
+        de: "Fall–Kontroll-Studie (Neel et al., 2023) + Übersichten"
     refs:
       - "[37]"
       - "[38]"

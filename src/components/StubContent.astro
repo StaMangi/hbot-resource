@@ -14,14 +14,18 @@ interface Props {
 }
 const { phase, locale } = Astro.props;
 
-const heading =
-  locale === "en"
-    ? `Phase ${phase} — under construction`
-    : `Φάση ${phase} — υπό κατασκευή`;
-const message =
-  locale === "en"
-    ? `Content for this page is being built in Phase ${phase}. The route exists today so the information architecture and routing tree can be validated. The full page lands when ${phase} ships.`
-    : `Το περιεχόμενο αυτής της σελίδας προστίθεται στη Φάση ${phase}. Το route υπάρχει ήδη ώστε να επικυρωθεί η αρχιτεκτονική. Η πλήρης σελίδα φτάνει όταν ολοκληρωθεί η ${phase}.`;
+const headings = {
+  en: `Phase ${phase} — under construction`,
+  el: `Φάση ${phase} — υπό κατασκευή`,
+  de: `Phase ${phase} — im Aufbau`,
+};
+const messages = {
+  en: `Content for this page is being built in Phase ${phase}. The route exists today so the information architecture and routing tree can be validated. The full page lands when ${phase} ships.`,
+  el: `Το περιεχόμενο αυτής της σελίδας προστίθεται στη Φάση ${phase}. Το route υπάρχει ήδη ώστε να επικυρωθεί η αρχιτεκτονική. Η πλήρης σελίδα φτάνει όταν ολοκληρωθεί η ${phase}.`,
+  de: `Der Inhalt dieser Seite wird in Phase ${phase} erstellt. Die Route existiert bereits, damit die Informationsarchitektur und der Routing-Baum validiert werden können. Die vollständige Seite folgt mit dem Abschluss von ${phase}.`,
+};
+const heading = headings[locale];
+const message = messages[locale];
 ---
 
 <div class="my-6 rounded-lg border border-dashed border-amber-300 bg-amber-50 p-6">

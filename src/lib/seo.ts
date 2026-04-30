@@ -11,9 +11,10 @@ export const SITE_NAME = "HBOT Science";
 export const SITE_DEFAULT_DESCRIPTION = {
   en: "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.",
   el: "Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Μηχανισμοί, εγκεκριμένες ενδείξεις FDA, κλινικά πρωτόκολλα, εφαρμογές μακροζωίας και αξιολογημένη βιβλιογραφία.",
+  de: "Evidenzbasierter Leitfaden zur hyperbaren Sauerstofftherapie. Mechanismen, FDA-zugelassene Indikationen, klinische Protokolle, Anwendungen in der Langlebigkeitsmedizin und peer-reviewed Evidenz.",
 } as const;
 
-export const SUPPORTED_LOCALES = ["en", "el"] as const;
+export const SUPPORTED_LOCALES = ["en", "el", "de"] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_OG_IMAGE = "/og-default.png";
@@ -25,9 +26,12 @@ export function canonicalUrl(pathname: string): string {
 
 /** Returns the path-only version of the alternate locale URL (no domain). */
 export function localePath(pathname: string, target: Locale): string {
-  const stripped = pathname.replace(/^\/(en|el)(\/|$)/, "/");
+  // Generalised in Phase 7 DE rollout: strip any known locale prefix, then
+  // re-prepend the target's prefix (apex for the default locale, /<code>/
+  // for everything else).
+  const stripped = pathname.replace(/^\/(en|el|de)(\/|$)/, "/");
   if (target === "en") return stripped;
-  return `/el${stripped === "/" ? "/" : stripped}`;
+  return `/${target}${stripped === "/" ? "/" : stripped}`;
 }
 
 export function alternateLocaleUrl(pathname: string, target: Locale): string {

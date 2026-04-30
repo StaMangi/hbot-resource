@@ -1,11 +1,13 @@
 title:
   en: "Premium Wellness & Longevity Programs"
   el: "Premium Προγράμματα Ευεξίας & Μακροζωίας"
+  de: "Premium-Wellness- & Longevity-Programme"
 icon: "Sparkles"
 priority: "Medium"
 description:
   en: "Develop premium wellness packages targeting healthy individuals seeking cognitive enhancement, anti-aging benefits, and athletic performance optimization. Position as a differentiated offering in the growing longevity medicine market."
   el: "Ανάπτυξη premium πακέτων ευεξίας που στοχεύουν υγιή άτομα που αναζητούν γνωστική ενίσχυση, αντιγηραντικά οφέλη και βελτιστοποίηση αθλητικής απόδοσης. Τοποθέτηση ως διαφοροποιημένη προσφορά στην αναπτυσσόμενη αγορά ιατρικής μακροζωίας."
+  de: "Entwicklung von Premium-Wellness-Paketen für gesunde Personen, die kognitive Förderung, Anti-Aging-Vorteile und sportliche Leistungsoptimierung suchen. Positionierung als differenziertes Angebot im wachsenden Markt der Longevity-Medizin."
 actions:
   en:
     - "Cognitive Enhancement Program (60 sessions, 2.0 ATA)"
@@ -17,3 +19,8 @@ actions:
     - "Πρόγραμμα Αθλητικής Αποκατάστασης & Απόδοσης"
     - "Πακέτο Υγείας & Μακροζωίας Στελεχών"
     - "Πρωτόκολλο Κυτταρικής Ανανέωσης κατά της Γήρανσης"
+  de:
+    - "Programm zur kognitiven Förderung (60 Sitzungen, 2,0 ATA)"
+    - "Programm für sportliche Erholung & Leistung"
+    - "Executive-Health- & Longevity-Paket"
+    - "Anti-Aging-Protokoll zur zellulären Erneuerung"

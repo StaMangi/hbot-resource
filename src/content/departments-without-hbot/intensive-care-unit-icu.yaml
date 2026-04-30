@@ -1,10 +1,13 @@
 name:
   en: "Intensive Care Unit (ICU)"
   el: "Μονάδα Εντατικής Θεραπείας (ΜΕΘ)"
+  de: "Intensivstation (ITS)"
 icon: "Monitor"
 rationale:
   en: "While critically ill patients may occasionally require HBOT for conditions such as gas gangrene or carbon monoxide poisoning, the logistical challenges of managing ventilated, hemodynamically unstable patients in a hyperbaric chamber are significant. Standard ICU monitoring equipment is not compatible with hyperbaric environments. Monoplace chambers limit access for emergency interventions."
   el: "Ενώ κρίσιμα ασθενείς μπορεί περιστασιακά να χρειαστούν HBOT για παθήσεις όπως αέρια γάγγραινα ή δηλητηρίαση από μονοξείδιο άνθρακα, οι λογιστικές προκλήσεις διαχείρισης διασωληνωμένων, αιμοδυναμικά ασταθών ασθενών σε υπερβαρικό θάλαμο είναι σημαντικές. Ο τυπικός εξοπλισμός παρακολούθησης ΜΕΘ δεν είναι συμβατός με υπερβαρικά περιβάλλοντα."
+  de: "Kritisch kranke Patient:innen benötigen gelegentlich HBOT bei Erkrankungen wie Gasbrand oder Kohlenmonoxidvergiftung, doch sind die logistischen Herausforderungen der Versorgung beatmeter, hämodynamisch instabiler Patient:innen in einer Druckkammer erheblich. Standard-Monitoringgeräte der ITS sind mit hyperbaren Umgebungen nicht kompatibel. Einplatzkammern schränken den Zugang für Notfallinterventionen ein."
 role:
   en: "Occasional referral for specific indications (CO poisoning, gas gangrene)"
   el: "Περιστασιακή παραπομπή για συγκεκριμένες ενδείξεις (δηλητηρίαση CO, αέρια γάγγραινα)"
+  de: "Gelegentliche Zuweisung bei spezifischen Indikationen (CO-Vergiftung, Gasbrand)"

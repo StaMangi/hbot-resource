@@ -3,28 +3,41 @@ tier: "fda-approved"
 category:
   en: "Sensory Disorders"
   el: "Αισθητηριακές Διαταραχές"
+  de: "Sinneserkrankungen"
 condition:
   en: "Central Retinal Artery Occlusion"
   el: "Απόφραξη Κεντρικής Αρτηρίας Αμφιβληστροειδούς"
+  de: "Zentralarterienverschluss der Netzhaut"
 description:
   en: "Emergency treatment to preserve retinal layers and improve visual acuity through reversal of retinal ischemia."
   el: "Επείγουσα θεραπεία για διατήρηση στρωμάτων αμφιβληστροειδούς και βελτίωση οπτικής οξύτητας μέσω αντιστροφής αμφιβληστροειδικής ισχαιμίας."
+  de: "Notfallbehandlung zur Erhaltung der Netzhautschichten und Verbesserung der Sehschärfe durch Umkehr der retinalen Ischämie."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "B"
 protocol:
-  ata: "2.0 – 2.8 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.8 ATA"
+    el: "2.0 – 2.8 ATA"
+    de: "2.0 – 2.8 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "1 – 3 (emergency)"
     el: "1 – 3 (επείγον)"
+    de: "1 – 3 (notfallmäßig)"
   frequency:
     en: "Immediately, then daily"
     el: "Αμέσως, μετά καθημερινά"
+    de: "Sofort, dann täglich"
   basis:
     en: "UHMS / Emergency Standard"
     el: "UHMS / Επείγον Πρότυπο"
+    de: "UHMS / Notfallstandard"
 refs:
   - "[1]"
   - "[19]"

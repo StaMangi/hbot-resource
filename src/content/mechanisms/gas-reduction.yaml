@@ -1,13 +1,16 @@
 title:
   en: "Gas Volume Reduction"
   el: "Μείωση Όγκου Αερίου"
+  de: "Gasvolumen-Reduktion"
 icon: "Minimize2"
 color: "navy"
 summary:
   en: "According to Boyle's Law, increased pressure reduces the volume of gas bubbles in the blood — the primary mechanism for decompression sickness and arterial gas embolism."
   el: "Σύμφωνα με τον Νόμο του Boyle, η αυξημένη πίεση μειώνει τον όγκο των φυσαλίδων αερίου στο αίμα — ο κύριος μηχανισμός για τη νόσο αποσυμπίεσης και αρτηριακή αεροεμβολή."
+  de: "Nach dem Boyle-Gesetz reduziert ein erhöhter Druck das Volumen von Gasblasen im Blut — der primäre Mechanismus bei Dekompressionskrankheit und arterieller Gasembolie."
 detail:
   en: "At 2.8 ATA, gas bubble volume is reduced by approximately 64% compared to atmospheric pressure. This physical compression, combined with nitrogen washout through breathing 100% oxygen, eliminates intravascular and intratissue gas bubbles."
   el: "Στα 2,8 ATA, ο όγκος φυσαλίδων αερίου μειώνεται κατά ~64% σε σχέση με την ατμοσφαιρική πίεση. Αυτή η φυσική συμπίεση, σε συνδυασμό με έκπλυση αζώτου μέσω αναπνοής 100% οξυγόνου, εξαλείφει ενδοαγγειακές και ενδοϊστικές φυσαλίδες αερίου."
+  de: "Bei 2,8 ATA verringert sich das Gasblasenvolumen gegenüber dem Atmosphärendruck um etwa 64 %. Diese physikalische Kompression beseitigt zusammen mit der Stickstoff-Auswaschung durch Atmung von 100 % Sauerstoff intravaskuläre und intragewebliche Gasblasen."
 refs:
   - "[1]"

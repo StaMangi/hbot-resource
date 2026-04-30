@@ -3,28 +3,41 @@ tier: "fda-approved"
 category:
   en: "Acute Ischemias"
   el: "Οξείες Ισχαιμίες"
+  de: "Akute Ischämien"
 condition:
   en: "Crush Injury & Compartment Syndrome"
   el: "Τραύμα Σύνθλιψης & Σύνδρομο Διαμερίσματος"
+  de: "Quetschverletzung und Kompartmentsyndrom"
 description:
   en: "Reduces post-ischemic edema, preserves threatened tissue, and accelerates healing in traumatic crush injuries."
   el: "Μειώνει μετα-ισχαιμικό οίδημα, διατηρεί απειλούμενο ιστό και επιταχύνει επούλωση σε τραυματικές κακώσεις σύνθλιψης."
+  de: "Reduziert postischämisches Ödem, erhält bedrohtes Gewebe und beschleunigt die Heilung bei traumatischen Quetschverletzungen."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "A"
 protocol:
-  ata: "2.0 – 2.4 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.4 ATA"
+    el: "2.0 – 2.4 ATA"
+    de: "2.0 – 2.4 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "30 – 40"
     el: "30 – 40"
+    de: "30 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / FDA-Approved"
     el: "UHMS / FDA-Εγκεκριμένο"
+    de: "UHMS / FDA-zugelassen"
 refs:
   - "[1]"
   - "[5]"

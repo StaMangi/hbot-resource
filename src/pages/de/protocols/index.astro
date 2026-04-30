@@ -1,0 +1,140 @@
+---
+import { getCollection } from "astro:content";
+import IndexLayout from "@/layouts/IndexLayout.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "de" as const;
+
+const indications = await getCollection("indications");
+const longevity = await getCollection("longevity");
+
+const fdaRows = indications
+  .sort((a, b) => a.data.legacyId - b.data.legacyId)
+  .map((e) => ({
+    slug: e.id,
+    label: e.data.condition[locale],
+    category: e.data.category[locale],
+    protocol: e.data.protocol,
+    evidenceLevel: e.data.evidenceLevel,
+    href: `/de/indications/${e.id}/`,
+  }));
+
+const longevityOrder = ["telomere", "senescence", "cognitive", "stemcells", "athletic", "collagen"];
+const longevityRows = longevityOrder
+  .map((id) => longevity.find((l) => l.id === id))
+  .filter((e): e is NonNullable<typeof e> => e !== undefined)
+  .map((e) => ({
+    slug: e.id,
+    label: e.data.title[locale],
+    category: "Longevity",
+    protocol: e.data.protocol,
+    evidenceLevel: "—",
+    href: `/de/longevity/${e.id}/`,
+  }));
+
+const evidenceBadge = (level: string) =>
+  level === "A"
+    ? "bg-emerald-100 text-emerald-800 border-emerald-200"
+    : level === "B"
+      ? "bg-sky-100 text-sky-800 border-sky-200"
+      : "bg-slate-100 text-slate-600 border-slate-200";
+---
+
+<IndexLayout
+  title="Protokollvergleich — HBOT Science"
+  description="Vergleich der HBOT-Protokolle für alle FDA-zugelassenen Indikationen und Longevity-Anwendungen: Druck (ATA), Anzahl der Sitzungen, Dauer, Frequenz und Evidenzbasis."
+  locale={locale}
+  pathname={pathname}
+  badge="Referenz"
+  pageHeading="Protokollvergleich"
+  pageSubtitle="Vergleich der HBOT-Protokolle für alle FDA-zugelassenen Indikationen und Longevity-Anwendungen. Cmd-P / Strg-P für Drucken/PDF."
+  badgeColor="navy"
+>
+  <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+    FDA-zugelassene Indikationen ({fdaRows.length})
+  </h2>
+
+  <div class="overflow-x-auto rounded-lg border border-slate-200 mb-12">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-50 border-b border-slate-200">
+        <tr>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Indikation</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Druck</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Dauer</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Sitzungen</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Frequenz</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Stufe</th>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Evidenz</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          fdaRows.map((row, i) => (
+            <tr class:list={["border-b border-slate-100 last:border-b-0 hover:bg-slate-50/60 transition-colors", i % 2 === 0 ? "bg-white" : "bg-slate-50/30"]}>
+              <td class="px-4 py-3">
+                <a href={row.href} class="font-semibold text-slate-900 hover:text-teal-700">
+                  {row.label}
+                </a>
+                <p class="text-xs text-slate-500 mt-0.5">{row.category}</p>
+              </td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
+              <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
+              <td class="px-3 py-3">
+                <span class:list={["inline-block px-2 py-0.5 text-xs font-semibold rounded border", evidenceBadge(row.evidenceLevel)]}>
+                  {row.evidenceLevel}
+                </span>
+              </td>
+              <td class="px-4 py-3 text-xs text-slate-600">{row.protocol.basis[locale]}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+    Longevity-Anwendungen ({longevityRows.length})
+  </h2>
+
+  <div class="overflow-x-auto rounded-lg border border-slate-200">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-50 border-b border-slate-200">
+        <tr>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Anwendung</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Druck</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Dauer</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Sitzungen</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Frequenz</th>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Evidenz</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          longevityRows.map((row, i) => (
+            <tr class:list={["border-b border-slate-100 last:border-b-0 hover:bg-slate-50/60 transition-colors", i % 2 === 0 ? "bg-white" : "bg-slate-50/30"]}>
+              <td class="px-4 py-3">
+                <a href={row.href} class="font-semibold text-slate-900 hover:text-teal-700">
+                  {row.label}
+                </a>
+              </td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
+              <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
+              <td class="px-4 py-3 text-xs text-slate-600">{row.protocol.basis[locale]}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="mt-8 text-xs text-slate-500 max-w-3xl">
+    Alle Protokolle stammen aus peer-reviewten Publikationen, die auf den
+    Detailseiten jeder Indikation zitiert werden. Die Evidenzstufen folgen den
+    UHMS-Bewertungskriterien. Für den PDF-Export verwenden Sie die Druckfunktion
+    Ihres Browsers (Cmd-P / Strg-P).
+  </p>
+</IndexLayout>
