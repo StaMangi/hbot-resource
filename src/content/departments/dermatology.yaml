@@ -21,8 +21,14 @@ applications:
       de: "Adjuvante HBOT bei chronischen nicht heilenden Wunden, einschließlich diabetischer Fußulzera und vaskulärer Ulzera. Die Evidenzbasis für die Heilung chronischer Wunden ist die robusteste dermatologische HBOT-Anwendung."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
@@ -50,8 +56,14 @@ applications:
       de: "Behandlung der Strahlendermatitis und der verzögerten Weichgewebeheilung nach Strahlentherapie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
@@ -79,8 +91,14 @@ applications:
       de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -109,8 +127,14 @@ applications:
       de: "Adjuvante Behandlung bei nekrotisierender Fasziitis, Fournier-Gangrän und schweren Verbrennungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -139,8 +163,14 @@ applications:
       de: "Evidenz auf Fall- und Kleinkohorten-Ebene bei atopischer Dermatitis (Übersichtsarbeit 2025 + pädiatrische Studie) und Psoriasis (Fallberichte 2009). Weitere entzündliche Erkrankungen (Hidradenitis suppurativa, livedoide Vaskulopathie, Pyoderma gangraenosum) verfügen über frühe klinische Berichte, jedoch fehlen robuste Studien. HBOT wird als adjuvante, nicht als Erstlinientherapie positioniert."
     evidence: "Level C"
     protocol:
-      ata: "2.0 – 2.8 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.8 ATA"
+        el: "2.0 – 2.8 ATA"
+        de: "2.0 – 2.8 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "6 – 30 (highly variable)"
         el: "6 – 30 (πολύ μεταβλητές)"

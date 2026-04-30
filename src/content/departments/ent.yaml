@@ -21,8 +21,14 @@ applications:
       de: "FDA-zugelassene adjuvante Therapie (2011) bei Versagen der Kortikosteroidtherapie. Kehrt die kochleäre Hypoxie um und reduziert den endolymphatischen Hydrops, wodurch die Hörerholungsraten verbessert werden."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
@@ -49,8 +55,14 @@ applications:
       de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus."
     evidence: "Level C"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"

@@ -21,8 +21,14 @@ applications:
       de: "Evidenz Stufe B aus klinischen Studien, die Verbesserungen neurokognitiver Defizite, postkommotioneller Symptome und der Hirn-Mikrostruktur bei Patienten mit leichtem SHT belegen."
     evidence: "Level B"
     protocol:
-      ata: "1.5 – 2.0 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "1.5 – 2.0 ATA"
+        el: "1.5 – 2.0 ATA"
+        de: "1.5 – 2.0 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
@@ -49,8 +55,14 @@ applications:
       de: "Investigative adjuvante Therapie zur Rehabilitation nach ischämischem Schlaganfall. HBOT fördert die Neuroplastizität, reduziert die peri-infarktale Hypoxie und kann funktionelle Ergebnisse verbessern."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
@@ -77,8 +89,14 @@ applications:
       de: "HBOT kehrt die chronische zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe. Klinische Studien zeigen Verbesserungen der kognitiven Funktion bei Patienten mit vaskulärer Demenz."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "60"
         el: "60"
@@ -105,8 +123,14 @@ applications:
       de: "Eine randomisierte kontrollierte Studie zeigte signifikante kognitive Verbesserungen bei gesunden älteren Erwachsenen, einschließlich Verbesserungen des Gedächtnisses und der Verarbeitungsgeschwindigkeit, die mit einem erhöhten zerebralen Blutfluss korrelieren."
     evidence: "Level A (RCT)"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "60"
         el: "60"
@@ -133,8 +157,14 @@ applications:
       de: "Aufkommende präklinische und frühe klinische Evidenz für die Alzheimer- und Parkinson-Krankheit. HBOT reduziert die Neuroinflammation und fördert die Neurogenese."
     evidence: "Level C"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
@@ -161,8 +191,14 @@ applications:
       de: "Anhaltende kognitive Dysfunktion, Brain Fog, Fatigue, Schlafstörungen und Schmerzen nach SARS-CoV-2-Infektion. Eine randomisierte kontrollierte Studie berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen, wobei die Vorteile bei einer Nachbeobachtung über ein Jahr anhielten. Die Evidenz stützt sich derzeit auf eine einzelne Forschungsgruppe; eine unabhängige Replikation steht aus."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "40"
         el: "40"
@@ -192,8 +228,14 @@ applications:
       de: "Chronisches zentrales Sensibilisierungssyndrom mit weitverbreiteten Schmerzen, Tender Points, Fatigue, Schlafstörungen und kognitiven Symptomen. Eine prospektive kontrollierte Studie von 2015 berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen bei 2,0 ATA; zwei unabhängige Meta-Analysen aus 2023 bestätigen Verbesserungen bei Funktion, Tender Points, Fatigue, Schlaf und Lebensqualität über gepoolte randomisierte Daten hinweg."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "40"
         el: "40"

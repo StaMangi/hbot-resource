@@ -18,8 +18,14 @@ mechanism:
   el: "Η υπεροξία ανεβάζει VEGF, PDGF και FGF, προάγοντας πολλαπλασιασμό ινοβλαστών και σύνθεση κολλαγόνου. Η HBOT επίσης ενισχύει υδροξυλίωση καταλοίπων προλίνης και λυσίνης, κρίσιμα βήματα στη διασύνδεση κολλαγόνου και αντοχή ιστού."
   de: "Die Hyperoxie reguliert VEGF, PDGF und FGF hoch und fördert die Fibroblasten-Proliferation sowie die Kollagensynthese. HBOT verstärkt zudem die Hydroxylierung von Prolin- und Lysinresten — entscheidende Schritte in der Kollagen-Quervernetzung und Gewebefestigkeit."
 protocol:
-  ata: "2.0 – 2.4 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.4 ATA"
+    el: "2.0 – 2.4 ATA"
+    de: "2.0 – 2.4 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"

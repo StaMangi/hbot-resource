@@ -3,12 +3,11 @@ import { Icon } from "astro-icon/components";
 import type { Locale } from "@/lib/seo";
 
 interface Protocol {
-  ata: string;
-  duration: string;
-  // Trilingual since Phase 7 (Stage 6): values often carry locale-specific
-  // qualifiers ("highly variable", "Daily, protocol-dependent", "5×/week",
-  // "stark variabel") that don't translate cleanly. Locale-resolved at
-  // render below.
+  // All five fields are trilingual. ata + duration joined the bilingual set
+  // late in Phase 7 — the endometriosis entry surfaced prose values
+  // ("Not standardised") that needed locale-specific translation.
+  ata: { en: string; el: string; de: string };
+  duration: { en: string; el: string; de: string };
   sessions: { en: string; el: string; de: string };
   frequency: { en: string; el: string; de: string };
   basis: { en: string; el: string; de: string };
@@ -50,8 +49,8 @@ const labels = {
 }[locale];
 
 const fields = [
-  { icon: "lucide:gauge", label: labels.pressure, value: protocol.ata },
-  { icon: "lucide:clock", label: labels.duration, value: protocol.duration },
+  { icon: "lucide:gauge", label: labels.pressure, value: protocol.ata[locale] },
+  { icon: "lucide:clock", label: labels.duration, value: protocol.duration[locale] },
   { icon: "lucide:hash", label: labels.sessions, value: protocol.sessions[locale] },
   { icon: "lucide:refresh-cw", label: labels.frequency, value: protocol.frequency[locale] },
 ];

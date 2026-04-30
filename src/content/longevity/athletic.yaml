@@ -18,8 +18,14 @@ mechanism:
   el: "Η HBOT αυξάνει διαθεσιμότητα οξυγόνου στον μυϊκό ιστό, επιταχύνοντας παραγωγή ATP και ενισχύοντας φυσικούς μηχανισμούς επισκευής. Μειώνει προ-φλεγμονώδεις κυτοκίνες (IL-6, TNF-α) που εμποδίζουν αποκατάσταση και προάγει ενεργοποίηση δορυφορικών κυττάρων για μυϊκή αναγέννηση."
   de: "HBOT erhöht die Sauerstoffverfügbarkeit im Muskelgewebe, beschleunigt die ATP-Produktion und verstärkt die natürlichen Reparaturmechanismen. Sie reduziert proinflammatorische Zytokine (IL-6, TNF-α), die die Erholung behindern, und fördert die Aktivierung von Satellitenzellen für die Muskelregeneration."
 protocol:
-  ata: "1.5 – 2.4 ATA"
-  duration: "60 – 90 min"
+  ata:
+    en: "1.5 – 2.4 ATA"
+    el: "1.5 – 2.4 ATA"
+    de: "1.5 – 2.4 ATA"
+  duration:
+    en: "60 – 90 min"
+    el: "60 – 90 min"
+    de: "60 – 90 min"
   sessions:
     en: "10 – 20 per cycle"
     el: "10 – 20 ανά κύκλο"

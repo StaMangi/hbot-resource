@@ -21,8 +21,14 @@ applications:
       de: "Die anerkannteste HBOT-Anwendung. Verbessert die vollständigen Heilungsraten bei ischämischen diabetischen Fußulzera signifikant und reduziert die Amputationsraten in Kombination mit der Standard-Wundversorgung."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
@@ -50,8 +56,14 @@ applications:
       de: "Präklinische und frühe klinische Studien zeigen, dass HBOT Biomarker von Zellstress und Nierenschäden in diabetischen Modellen unterdrückt und auf renoprotektive Effekte hindeutet."
     evidence: "Level C"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -78,8 +90,14 @@ applications:
       de: "Aufkommende Evidenz deutet darauf hin, dass HBOT die Insulinsensitivität verbessern und Marker des metabolischen Syndroms durch verbesserte mitochondriale Funktion und reduzierte Entzündung vermindern kann."
     evidence: "Level C"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"

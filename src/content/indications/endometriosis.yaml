@@ -18,8 +18,14 @@ evidence:
   de: "Experimentell"
 evidenceLevel: "C"
 protocol:
-  ata: "Not standardised"
-  duration: "Not standardised"
+  ata:
+    en: "Not standardised"
+    el: "Μη τυποποιημένο"
+    de: "Nicht standardisiert"
+  duration:
+    en: "Not standardised"
+    el: "Μη τυποποιημένο"
+    de: "Nicht standardisiert"
   sessions:
     en: "Not standardised (HEROES trial protocol pending publication)"
     el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"

@@ -77,8 +77,8 @@ const evidenceBadge = (level: string) =>
                 </a>
                 <p class="text-xs text-slate-500 mt-0.5">{row.category}</p>
               </td>
-              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata}</td>
-              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
               <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
               <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
               <td class="px-3 py-3">
@@ -119,8 +119,8 @@ const evidenceBadge = (level: string) =>
                   {row.label}
                 </a>
               </td>
-              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata}</td>
-              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
               <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
               <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
               <td class="px-4 py-3 text-xs text-slate-600">{row.protocol.basis[locale]}</td>

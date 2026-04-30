@@ -18,8 +18,14 @@ evidence:
   de: "Aufkommende Evidenz"
 evidenceLevel: "C"
 protocol:
-  ata: "2.0 – 2.8 ATA"
-  duration: "60 – 90 min"
+  ata:
+    en: "2.0 – 2.8 ATA"
+    el: "2.0 – 2.8 ATA"
+    de: "2.0 – 2.8 ATA"
+  duration:
+    en: "60 – 90 min"
+    el: "60 – 90 min"
+    de: "60 – 90 min"
   sessions:
     en: "6 – 30 (highly variable)"
     el: "6 – 30 (πολύ μεταβλητές)"

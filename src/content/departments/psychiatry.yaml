@@ -21,8 +21,14 @@ applications:
       de: "Klinische Studien belegen, dass HBOT die Funktionalität der Hirn-Mikrostruktur verbessert und PTBS-Symptome bei Veteranen mit therapieresistenter PTBS lindert. Signifikante Verbesserungen der PTBS-Checklisten-Scores."
     evidence: "Level B"
     protocol:
-      ata: "1.5 – 2.0 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "1.5 – 2.0 ATA"
+        el: "1.5 – 2.0 ATA"
+        de: "1.5 – 2.0 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
@@ -49,8 +55,14 @@ applications:
       de: "Aufkommende Forschung untersucht HBOT bei therapieresistenter Depression über die Förderung der Neuroplastizität, die Hochregulation von BDNF und die Reduktion der Neuroinflammation."
     evidence: "Level C"
     protocol:
-      ata: "1.5 – 2.0 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "1.5 – 2.0 ATA"
+        el: "1.5 – 2.0 ATA"
+        de: "1.5 – 2.0 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"

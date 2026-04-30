@@ -18,8 +18,14 @@ evidence:
   de: "Standardtherapie"
 evidenceLevel: "A"
 protocol:
-  ata: "2.4 – 2.8 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.4 – 2.8 ATA"
+    el: "2.4 – 2.8 ATA"
+    de: "2.4 – 2.8 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "1 – 3 (emergency)"
     el: "1 – 3 (επείγον)"

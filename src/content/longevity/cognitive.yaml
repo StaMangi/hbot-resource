@@ -18,8 +18,14 @@ mechanism:
   el: "Η HBOT αυξάνει περιφερειακή εγκεφαλική αιματική ροή, προάγει νευροπλαστικότητα μέσω ανύψωσης BDNF, μειώνει νευροφλεγμονή και υποστηρίζει ιπποκαμπική νευρογένεση — όλοι μηχανισμοί που μειώνονται με την κανονική γήρανση."
   de: "HBOT erhöht den regionalen zerebralen Blutfluss, fördert die Neuroplastizität durch BDNF-Hochregulation, reduziert die Neuroinflammation und unterstützt die hippocampale Neurogenese — allesamt Mechanismen, die mit dem normalen Altern abnehmen."
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "60"
     el: "60"

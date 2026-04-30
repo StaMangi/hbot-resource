@@ -21,8 +21,14 @@ applications:
       de: "Eine randomisierte kontrollierte Studie zeigte, dass HBOT die maximale körperliche Leistungsfähigkeit und die kardiale Perfusion bei sitzend lebenden älteren Erwachsenen verbessert und so die Belastbarkeit und die kardiovaskuläre Funktion steigert."
     evidence: "Level A (RCT)"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
@@ -49,8 +55,14 @@ applications:
       de: "HBOT kehrt die altersbedingte zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe, wodurch der kognitive Abbau in alternden Populationen möglicherweise verhindert oder verlangsamt werden kann."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "60"
         el: "60"
@@ -78,8 +90,14 @@ applications:
       de: "Erster menschlicher Nachweis einer Telomerverlängerung (>20 %) und Beseitigung seneszenter Zellen durch 60 HBOT-Sitzungen bei gesunden älteren Erwachsenen, was eine neuartige Anti-Aging-Intervention darstellt."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "60"
         el: "60"

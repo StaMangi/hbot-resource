@@ -21,8 +21,14 @@ applications:
       de: "HBOT bei späten Strahlengewebsschäden im Beckenbereich (Strahlenzystitis, Proktitis, Scheidenstenose) nach Strahlentherapie bei gynäkologischem Krebs. Verweist auf die FDA-zugelassene Indikation Verzögerte Strahlenschäden; der Kontext der Frauengesundheit betont die beckenspezifischen Manifestationen."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
@@ -50,8 +56,14 @@ applications:
       de: "Investigative Anwendung, gestützt durch translationale Evidenz in Nagermodellen und eine registrierte randomisierte Studie (HEROES, NCT06579040), die derzeit Patientinnen einschließt. Noch keine veröffentlichte klinische Evidenz beim Menschen; HBOT wird als investigatives Adjuvans positioniert, nicht als Standardtherapie."
     evidence: "Level C"
     protocol:
-      ata: "Not standardised"
-      duration: "Not standardised"
+      ata:
+        en: "Not standardised"
+        el: "Μη τυποποιημένο"
+        de: "Nicht standardisiert"
+      duration:
+        en: "Not standardised"
+        el: "Μη τυποποιημένο"
+        de: "Nicht standardisiert"
       sessions:
         en: "Not standardised (HEROES trial protocol pending publication)"
         el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"

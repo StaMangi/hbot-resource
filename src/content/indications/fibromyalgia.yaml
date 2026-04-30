@@ -18,8 +18,14 @@ evidence:
   de: "Aufkommende Evidenz"
 evidenceLevel: "B"
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "40"
     el: "40"

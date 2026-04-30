@@ -18,8 +18,14 @@ evidence:
   de: "Aufkommende Evidenz"
 evidenceLevel: "B"
 protocol:
-  ata: "2.0 – 2.5 ATA"
-  duration: "60 – 90 min"
+  ata:
+    en: "2.0 – 2.5 ATA"
+    el: "2.0 – 2.5 ATA"
+    de: "2.0 – 2.5 ATA"
+  duration:
+    en: "60 – 90 min"
+    el: "60 – 90 min"
+    de: "60 – 90 min"
   sessions:
     en: "5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage)"
     el: "5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού)"

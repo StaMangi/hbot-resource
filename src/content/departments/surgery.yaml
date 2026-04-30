@@ -21,8 +21,14 @@ applications:
       de: "Adjuvante Standardtherapie bei chronischer Osteomyelitis, die auf konventionelle Therapie nicht anspricht. HBOT verstärkt die Leukozyten-Abtötung in avaskulärem Knochen und fördert die Neovaskularisation."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
@@ -49,8 +55,14 @@ applications:
       de: "Zugelassen bei akuten traumatischen Ischämien. Reduziert post-ischämische Ödeme und erhält gefährdetes Gewebe bei schweren Quetschverletzungen."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
@@ -77,8 +89,14 @@ applications:
       de: "Salvage-Therapie bei ischämischen rekonstruktiven Lappen und Hauttransplantaten. Reduziert die hypoxische Nekrose durch verbesserte Gewebsoxygenierung und Angiogenese."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -105,8 +123,14 @@ applications:
       de: "Aufkommende Evidenz zeigt, dass HBOT die Erholung beschleunigt und Muskelschäden nach Knie-Totalendoprothese (TEP) und größeren orthopädischen Eingriffen reduziert."
     evidence: "Level B"
     protocol:
-      ata: "2.0 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 ATA"
+        el: "2.0 ATA"
+        de: "2.0 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
@@ -133,8 +157,14 @@ applications:
       de: "Adjuvante Behandlung akuter thermischer Verbrennungen. Reduziert Ödeme, fördert die Epithelialisierung und verringert das Infektionsrisiko."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -161,8 +191,14 @@ applications:
       de: "Investigative Anwendung bei chronischer stabiler ischämischer Herzkrankheit und Verbesserung der linksventrikulären Funktion nach Myokardinfarkt durch VEGF-vermittelte Angiogenese."
     evidence: "Level C"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"

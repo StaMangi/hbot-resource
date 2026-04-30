@@ -21,8 +21,14 @@ applications:
       de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
@@ -49,8 +55,14 @@ applications:
       de: "Zugelassene adjuvante Therapie bei strahleninduzierter hämorrhagischer Zystitis und Proktitis; reduziert Blutungen und fördert die Schleimhautheilung."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
@@ -77,8 +89,14 @@ applications:
       de: "Investigative Anwendung als neoadjuvante Therapie zur Sensibilisierung hypoxischer solider Tumoren gegenüber Strahlen- und Chemotherapie. Hypoxische Tumormikromilieus sind strahlenresistent; HBOT kann diese Resistenz umkehren."
     evidence: "Level C"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
@@ -105,8 +123,14 @@ applications:
       de: "Wirksame Behandlung der späten Strahlentoxizität bei Brustkrebspatientinnen, einschließlich Strahlendermatitis und Gewebenekrose nach brusterhaltender Operation."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"

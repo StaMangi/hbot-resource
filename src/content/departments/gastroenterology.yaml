@@ -21,8 +21,14 @@ applications:
       de: "Systematische Übersichtsarbeiten weisen darauf hin, dass HBOT bei akuter schwerer Colitis ulcerosa, die auf konventionelle Therapie nicht anspricht, Ansprechraten von über 80 % erzielen kann, indem die chronische intestinale Hypoxie umgekehrt wird."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
@@ -49,8 +55,14 @@ applications:
       de: "Meta-Analysen belegen eine signifikante Schleimhautheilung und klinische Remission bei mit HBOT behandelten Morbus-Crohn-Patienten, insbesondere bei perianaler fistelbildender Erkrankung."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
@@ -77,8 +89,14 @@ applications:
       de: "HBOT kehrt die chronische intestinale Hypoxie um, reduziert die Schleimhautentzündung und fördert die epitheliale Heilung. Sie gilt als vielversprechende adjuvante Therapie zur CED-Behandlung."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"

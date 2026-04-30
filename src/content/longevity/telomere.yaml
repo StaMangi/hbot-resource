@@ -18,8 +18,14 @@ mechanism:
   el: "Η HBOT ενεργοποιεί τελομεράση, το ένζυμο υπεύθυνο για συντήρηση και επέκταση τελομερών. Επαναλαμβανόμενες καθημερινές συνεδρίες δημιουργούν ορμητικό ερέθισμα που ανεβάζει έκφραση αντίστροφης τρανσκριπτάσης τελομεράσης (TERT)."
   de: "HBOT aktiviert die Telomerase, das für Erhalt und Verlängerung der Telomere verantwortliche Enzym. Wiederholte tägliche Sitzungen erzeugen einen hormetischen Reiz, der die Expression der Telomerase-Reverse-Transkriptase (TERT) hochreguliert."
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "60"
     el: "60"

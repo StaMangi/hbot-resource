@@ -22,14 +22,14 @@ const bilingualStringArray = z.object({
 });
 
 const protocol = z.object({
-  ata: z.string(),
-  duration: z.string(),
-  // sessions and frequency are bilingual because their values often carry
-  // English qualifiers ("highly variable", "Daily, protocol-dependent",
-  // "5×/week", "emergency") that don't translate cleanly. Migrated from
-  // single string in Phase 4.D after EL parity review surfaced the leak.
-  // ata and duration stay single-string — their values are numerics +
-  // universal units (ATA, min) that read identically in EN and EL.
+  // All five protocol fields are bilingual. ata + duration migrated from
+  // single-string to trilingual in Phase 7 after the endometriosis entry
+  // surfaced prose values ("Not standardised") leaking English onto DE +
+  // EL pages. For numeric values like "2.0 ATA" or "90 min" the same
+  // string is duplicated across locales — the structural cost is small;
+  // the editorial guarantee is "no English on /de/ pages" without exception.
+  ata: bilingual,
+  duration: bilingual,
   sessions: bilingual,
   frequency: bilingual,
   basis: bilingual,

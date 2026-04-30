@@ -18,8 +18,14 @@ mechanism:
   el: "Η υπεροξία ενεργοποιεί ενδοθηλιακή συνθάση μονοξειδίου αζώτου (eNOS), η οποία ενεργοποιεί κινητοποίηση βλαστοκυττάρων από θέσεις μυελού οστών. Αυξημένα κυκλοφορούντα πρόδρομα βλαστοκύτταρα (SPCs) διαφοροποιούνται σε διάφορους τύπους κυττάρων για επισκευή κατεστραμμένων ιστών."
   de: "Die Hyperoxie aktiviert die endotheliale Stickstoffmonoxid-Synthase (eNOS), die die Stammzell-Mobilisierung aus den Knochenmarksnischen auslöst. Vermehrt zirkulierende Stamm- und Progenitorzellen (SPCs) differenzieren sich in verschiedene Zelltypen zur Reparatur geschädigter Gewebe."
 protocol:
-  ata: "2.0 – 2.4 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 – 2.4 ATA"
+    el: "2.0 – 2.4 ATA"
+    de: "2.0 – 2.4 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"

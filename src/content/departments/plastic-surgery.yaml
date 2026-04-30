@@ -21,8 +21,14 @@ applications:
       de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -51,8 +57,14 @@ applications:
       de: "Adjuvante HBOT bei postoperativen Wunden mit verzögerter Heilung, insbesondere in kompromittierten Gewebebetten (strahlengeschädigt, ischämisch oder kontaminiert). Verweist auf die FDA-zugelassene Indikation Problemwunden; der plastisch-chirurgische Kontext betont die frühe Intervention, wenn die operative Revision allein nicht ausreicht."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -80,8 +92,14 @@ applications:
       de: "HBOT bei Strahlennekrose des Weichgewebes vor oder nach rekonstruktiver Chirurgie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe und verbessert die Ergebnisse rekonstruktiver Eingriffe an strahlengeschädigtem Gewebe."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.4 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.4 ATA"
+        el: "2.0 – 2.4 ATA"
+        de: "2.0 – 2.4 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
@@ -109,8 +127,14 @@ applications:
       de: "Adjuvante Behandlung schwerer Verbrennungen, nekrotisierender Fasziitis und traumatischer Weichgewebsverletzungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
     evidence: "Level A"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "90 min"
+        el: "90 min"
+        de: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
@@ -138,8 +162,14 @@ applications:
       de: "Evidenz vergleichender Ergebnisse in der ästhetischen und rekonstruktiven Erholung. Eine Facelift-Fall–Kontroll-Studie von 2023 (n=20) berichtete über eine durchschnittliche Wundheilung von 13,3 vs. 36,9 Tagen (p<0,001), wenn HBOT innerhalb von 24 h nach der Operation begonnen wurde. Fallserien zu kosmetischen und rekonstruktiven ischämischen Weichgewebewunden berichten einen konsistenten Salvage-Nutzen. HBOT wird als Salvage- und Erholungs-Adjuvans positioniert, nicht als routinemäßiger Verstärker unkomplizierter kosmetischer Chirurgie."
     evidence: "Level B"
     protocol:
-      ata: "2.0 – 2.5 ATA"
-      duration: "60 – 90 min"
+      ata:
+        en: "2.0 – 2.5 ATA"
+        el: "2.0 – 2.5 ATA"
+        de: "2.0 – 2.5 ATA"
+      duration:
+        en: "60 – 90 min"
+        el: "60 – 90 min"
+        de: "60 – 90 min"
       sessions:
         en: "5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage)"
         el: "5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού)"

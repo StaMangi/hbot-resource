@@ -18,8 +18,14 @@ mechanism:
   el: "Η HBOT επάγει εκλεκτική απόπτωση γηρασμένων κυττάρων μέσω σηματοδοτικών μονοπατιών μεσολαβούμενων από ROS. Τα γηρασμένα κύτταρα συσσωρεύονται με την ηλικία και οδηγούν τον φαινότυπο 'φλεγμονώδους γήρανσης' που σχετίζεται με ηλικιακές παθήσεις."
   de: "HBOT induziert die selektive Apoptose seneszenter Zellen über ROS-vermittelte Signalwege. Seneszente Zellen sammeln sich im Alter an und treiben den „Inflammaging\"-Phänotyp, der mit altersbedingten Erkrankungen in Verbindung steht."
 protocol:
-  ata: "2.0 ATA"
-  duration: "90 min"
+  ata:
+    en: "2.0 ATA"
+    el: "2.0 ATA"
+    de: "2.0 ATA"
+  duration:
+    en: "90 min"
+    el: "90 min"
+    de: "90 min"
   sessions:
     en: "60"
     el: "60"
