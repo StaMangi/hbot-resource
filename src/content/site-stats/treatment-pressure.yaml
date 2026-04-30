@@ -2,6 +2,8 @@ value: "2–3 ATA"
 label:
   en: "Treatment Pressure"
   el: "Θεραπευτική Πίεση"
+  de: "Behandlungsdruck"
 sub:
   en: "Standard therapeutic range"
   el: "Τυπικό θεραπευτικό εύρος"
+  de: "Standard-Therapiebereich"

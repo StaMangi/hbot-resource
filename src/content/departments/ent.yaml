@@ -1,20 +1,24 @@
 name:
   en: "ENT (Otolaryngology)"
   el: "ΩΡΛ (Ωτορινολαρυγγολογία)"
+  de: "HNO (Hals-Nasen-Ohren-Heilkunde)"
 icon: "Ear"
 color: "#0891b2"
 shortDesc:
   en: "Sudden Hearing Loss, Tinnitus"
   el: "Αιφνίδια Απώλεια Ακοής, Εμβοές"
+  de: "Plötzlicher Hörverlust, Tinnitus"
 applications:
   - title:
       en: "Idiopathic Sudden Sensorineural Hearing Loss"
       el: "Ιδιοπαθής Αιφνίδια Αισθητηριονευρική Απώλεια Ακοής"
+      de: "Idiopathischer plötzlicher sensorineuraler Hörverlust"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "FDA-approved adjunctive treatment (2011) when corticosteroid therapy fails. Reverses cochlear hypoxia and reduces endolymphatic hydrops, improving hearing recovery rates."
       el: "Εγκεκριμένη επικουρική θεραπεία FDA (2011) όταν αποτυγχάνει η θεραπεία με κορτικοστεροειδή. Αντιστρέφει κοχλιακή υποξία και μειώνει ενδολεμφικό ύδρωπα, βελτιώνοντας ποσοστά αποκατάστασης ακοής."
+      de: "FDA-zugelassene adjuvante Therapie (2011) bei Versagen der Kortikosteroidtherapie. Kehrt die kochleäre Hypoxie um und reduziert den endolymphatischen Hydrops, wodurch die Hörerholungsraten verbessert werden."
     evidence: "Level B"
     protocol:
       ata: "2.0 – 2.5 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "10 – 20"
         el: "10 – 20"
+        de: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
+        de: "UHMS / FDA-zugelassen"
     refs:
       - "[9]"
   - title:
       en: "Tinnitus"
       el: "Εμβοές"
+      de: "Tinnitus"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Investigational use for chronic tinnitus associated with cochlear hypoxia. Some clinical studies show improvement in tinnitus severity scores."
       el: "Ερευνητική χρήση για χρόνιες εμβοές που σχετίζονται με κοχλιακή υποξία. Ορισμένες κλινικές μελέτες δείχνουν βελτίωση στις βαθμολογίες σοβαρότητας εμβοών."
+      de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus."
     evidence: "Level C"
     protocol:
       ata: "2.0 – 2.5 ATA"
@@ -45,11 +54,14 @@ applications:
       sessions:
         en: "10 – 20"
         el: "10 – 20"
+        de: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
+        de: "Klinische Forschung"
     refs:
       - "[2]"

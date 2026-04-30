@@ -1,20 +1,24 @@
 name:
   en: "Geriatric Assessment"
   el: "Γηριατρική Αξιολόγηση"
+  de: "Geriatrische Beurteilung"
 icon: "Users"
 color: "#065f46"
 shortDesc:
   en: "Physical Performance, Cognitive Aging"
   el: "Φυσική Απόδοση, Γνωστική Γήρανση"
+  de: "Körperliche Leistungsfähigkeit, kognitives Altern"
 applications:
   - title:
       en: "Physical Performance Enhancement"
       el: "Ενίσχυση Φυσικής Απόδοσης"
+      de: "Verbesserung der körperlichen Leistungsfähigkeit"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Randomized controlled trial demonstrated HBOT improves maximal physical performance and cardiac perfusion in sedentary older adults, enhancing exercise capacity and cardiovascular function."
       el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή απέδειξε ότι η HBOT βελτιώνει μέγιστη φυσική απόδοση και καρδιακή αιμάτωση σε καθιστικούς ηλικιωμένους, ενισχύοντας ικανότητα άσκησης και καρδιαγγειακή λειτουργία."
+      de: "Eine randomisierte kontrollierte Studie zeigte, dass HBOT die maximale körperliche Leistungsfähigkeit und die kardiale Perfusion bei sitzend lebenden älteren Erwachsenen verbessert und so die Belastbarkeit und die kardiovaskuläre Funktion steigert."
     evidence: "Level A (RCT)"
     protocol:
       ata: "2.0 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "40 – 60"
         el: "40 – 60"
+        de: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "RCT (Doenyas-Barak et al., 2024)"
         el: "ΤΕΔ (Doenyas-Barak et al., 2024)"
+        de: "RKS (Doenyas-Barak et al., 2024)"
     refs:
       - "[21]"
   - title:
       en: "Cognitive Decline Prevention"
       el: "Πρόληψη Γνωστικής Έκπτωσης"
+      de: "Prävention des kognitiven Abbaus"
     type: "Research"
     typeColor: "blue"
     description:
       en: "HBOT reverses age-related cerebral hypoperfusion and promotes angiogenesis in brain tissue, potentially preventing or slowing cognitive decline in aging populations."
       el: "Η HBOT αντιστρέφει ηλικιακή εγκεφαλική υποαιμάτωση και προάγει αγγειογένεση σε εγκεφαλικό ιστό, ενδεχομένως αποτρέποντας ή επιβραδύνοντας γνωστική έκπτωση σε γηράσκοντες πληθυσμούς."
+      de: "HBOT kehrt die altersbedingte zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe, wodurch der kognitive Abbau in alternden Populationen möglicherweise verhindert oder verlangsamt werden kann."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -45,23 +54,28 @@ applications:
       sessions:
         en: "60"
         el: "60"
+        de: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
+        de: "RKS (Hadanny et al., 2020)"
     refs:
       - "[4]"
       - "[5]"
   - title:
       en: "Cellular Aging Reversal"
       el: "Αντιστροφή Κυτταρικής Γήρανσης"
+      de: "Umkehr der zellulären Alterung"
     type: "Research"
     typeColor: "blue"
     description:
       en: "First human evidence of telomere lengthening (>20%) and senescent cell clearance through 60 HBOT sessions in healthy older adults, representing a novel anti-aging intervention."
       el: "Πρώτη ανθρώπινη απόδειξη επιμήκυνσης τελομερών (>20%) και εκκαθάρισης γηρασμένων κυττάρων μέσω 60 συνεδριών HBOT σε υγιείς ηλικιωμένους, αντιπροσωπεύοντας νέα παρέμβαση κατά της γήρανσης."
+      de: "Erster menschlicher Nachweis einer Telomerverlängerung (>20 %) und Beseitigung seneszenter Zellen durch 60 HBOT-Sitzungen bei gesunden älteren Erwachsenen, was eine neuartige Anti-Aging-Intervention darstellt."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -69,11 +83,14 @@ applications:
       sessions:
         en: "60"
         el: "60"
+        de: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Hadanny et al., 2020 (RCT)"
         el: "Hadanny et al., 2020 (ΤΕΔ)"
+        de: "Hadanny et al., 2020 (RKS)"
     refs:
       - "[3]"

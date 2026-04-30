@@ -3,15 +3,19 @@ tier: "emerging"
 category:
   en: "Reproductive Health"
   el: "Αναπαραγωγική Υγεία"
+  de: "Reproduktive Gesundheit"
 condition:
   en: "Endometriosis"
   el: "Ενδομητρίωση"
+  de: "Endometriose"
 description:
   en: "Endometriosis is an emerging investigational application of HBOT. Translational evidence in rodent models supports an anti-inflammatory effect on endometriotic lesions: a 2011 rat study reported lesion remission with HBOT, and a 2022 mouse-model study reported reduction of inflammatory markers. Clinical evidence in humans is awaited — the HEROES randomised trial (Sunnybrook Health Sciences Centre, NCT06579040, recruiting since April 2025) is currently underway to evaluate HBOT for endometriosis-related pain. HBOT is positioned as an investigational adjunct, not standard of care."
   el: "Η ενδομητρίωση είναι αναδυόμενη ερευνητική εφαρμογή της HBOT. Μεταγωγικά στοιχεία σε μοντέλα τρωκτικών υποστηρίζουν αντιφλεγμονώδη επίδραση στις ενδομητριωσικές βλάβες: μελέτη του 2011 σε αρουραίους ανέφερε ύφεση των βλαβών με HBOT, και μελέτη του 2022 σε ποντίκια ανέφερε μείωση φλεγμονωδών δεικτών. Τα κλινικά στοιχεία σε ανθρώπους εκκρεμούν — η τυχαιοποιημένη δοκιμή HEROES (Sunnybrook Health Sciences Centre, NCT06579040, εγγραφή ασθενών από τον Απρίλιο του 2025) βρίσκεται σε εξέλιξη για την αξιολόγηση της HBOT για τον πόνο σχετιζόμενο με ενδομητρίωση. Η HBOT τοποθετείται ως ερευνητική επικουρική, όχι ως πρότυπο θεραπείας."
+  de: "Endometriose ist eine aufkommende experimentelle Anwendung von HBOT. Translationale Evidenz in Nagetiermodellen stützt einen entzündungshemmenden Effekt auf endometriotische Läsionen: eine Rattenstudie von 2011 berichtete eine Läsionsremission mit HBOT, und eine Mausmodellstudie von 2022 berichtete eine Reduktion von Entzündungsmarkern. Klinische Evidenz am Menschen steht aus — die randomisierte HEROES-Studie (Sunnybrook Health Sciences Centre, NCT06579040, rekrutierend seit April 2025) läuft derzeit zur Bewertung von HBOT bei endometriose-assoziiertem Schmerz. HBOT wird als experimentelle Zusatztherapie positioniert, nicht als Standardtherapie."
 evidence:
   en: "Investigational"
   el: "Ερευνητικό"
+  de: "Experimentell"
 evidenceLevel: "C"
 protocol:
   ata: "Not standardised"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "Not standardised (HEROES trial protocol pending publication)"
     el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"
+    de: "Nicht standardisiert (HEROES-Studienprotokoll vor Veröffentlichung)"
   frequency:
     en: "Not standardised"
     el: "Μη τυποποιημένο"
+    de: "Nicht standardisiert"
   basis:
     en: "Translational (animal models) + Registered Trial Awaiting Results"
     el: "Μεταγωγική (μοντέλα ζώων) + Καταχωρημένη Δοκιμή Εκκρεμώντας Αποτελεσμάτων"
+    de: "Translational (Tiermodelle) + registrierte Studie mit ausstehenden Ergebnissen"
 refs:
   - "[41]"
   - "[42]"

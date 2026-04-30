@@ -1,29 +1,36 @@
 title:
   en: "Senescent Cell Clearance"
   el: "Εκκαθάριση Γηρασμένων Κυττάρων"
+  de: "Beseitigung Seneszenter Zellen"
 icon: "Trash2"
 stat: "37%"
 statLabel:
   en: "Reduction in senescent T-cells"
   el: "Μείωση γηρασμένων T-κυττάρων"
+  de: "Reduktion seneszenter T-Zellen"
 color: "navy"
 summary:
   en: "The same landmark study demonstrated significant reduction in senescent (dysfunctional) immune cells — the first senolytic effect demonstrated through a non-pharmacological intervention."
   el: "Η ίδια σταθμός μελέτη απέδειξε σημαντική μείωση γηρασμένων (δυσλειτουργικών) ανοσοκυττάρων — το πρώτο σενολυτικό αποτέλεσμα που αποδείχθηκε μέσω μη φαρμακολογικής παρέμβασης."
+  de: "Dieselbe wegweisende Studie zeigte eine signifikante Reduktion seneszenter (dysfunktionaler) Immunzellen — der erste senolytische Effekt, der durch eine nicht-pharmakologische Intervention nachgewiesen wurde."
 mechanism:
   en: "HBOT induces selective apoptosis of senescent cells through ROS-mediated signaling pathways. Senescent cells accumulate with age and drive the 'inflammaging' phenotype associated with age-related diseases."
   el: "Η HBOT επάγει εκλεκτική απόπτωση γηρασμένων κυττάρων μέσω σηματοδοτικών μονοπατιών μεσολαβούμενων από ROS. Τα γηρασμένα κύτταρα συσσωρεύονται με την ηλικία και οδηγούν τον φαινότυπο 'φλεγμονώδους γήρανσης' που σχετίζεται με ηλικιακές παθήσεις."
+  de: "HBOT induziert die selektive Apoptose seneszenter Zellen über ROS-vermittelte Signalwege. Seneszente Zellen sammeln sich im Alter an und treiben den „Inflammaging\"-Phänotyp, der mit altersbedingten Erkrankungen in Verbindung steht."
 protocol:
   ata: "2.0 ATA"
   duration: "90 min"
   sessions:
     en: "60"
     el: "60"
+    de: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
+    de: "Hadanny et al., 2020 (RKS)"
 refs:
   - "[3]"

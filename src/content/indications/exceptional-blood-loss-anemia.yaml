@@ -3,15 +3,19 @@ tier: "fda-approved"
 category:
   en: "Infectious Diseases"
   el: "Λοιμώδη Νοσήματα"
+  de: "Infektionserkrankungen"
 condition:
   en: "Exceptional Blood Loss Anemia"
   el: "Αναιμία Εξαιρετικής Απώλειας Αίματος"
+  de: "Anämie bei außergewöhnlichem Blutverlust"
 description:
   en: "When transfusion is not possible due to religious beliefs or unavailability, HBOT provides sufficient dissolved plasma oxygen to sustain life."
   el: "Όταν η μετάγγιση δεν είναι δυνατή λόγω θρησκευτικών πεποιθήσεων ή έλλειψης, η HBOT παρέχει επαρκές διαλυμένο οξυγόνο πλάσματος για διατήρηση ζωής."
+  de: "Wenn eine Transfusion aufgrund religiöser Überzeugungen oder fehlender Verfügbarkeit nicht möglich ist, liefert HBOT ausreichend gelösten Plasmasauerstoff, um das Leben zu erhalten."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "B"
 protocol:
   ata: "2.0 – 2.5 ATA"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "20 – 40"
     el: "20 – 40"
+    de: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[8]"

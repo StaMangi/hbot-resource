@@ -2,6 +2,7 @@ legacyId: 6
 title:
   en: "Hyperbaric oxygen: B-level evidence in mild traumatic brain injury clinical trials"
   el: "Υπερβαρικό οξυγόνο: τεκμηρίωση επιπέδου Β σε κλινικές δοκιμές ήπιας κρανιοεγκεφαλικής κάκωσης"
+  de: "Hyperbarer Sauerstoff: Evidenz Stufe B aus klinischen Studien zum leichten Schädel-Hirn-Trauma"
 authors: "Figueroa XA, Wright JK."
 journal: "Neurology"
 year: 2016
@@ -10,5 +11,6 @@ evidenceLevel: "Level II"
 keyFinding:
   en: "B-level evidence supporting HBOT for mild TBI and post-concussion syndrome, showing improvements in neurocognitive deficits and post-concussion symptoms."
   el: "Τεκμηρίωση επιπέδου Β που υποστηρίζει HBOT για ήπια ΚΕΚ και σύνδρομο μετά από διάσειση, δείχνοντας βελτιώσεις σε νευρογνωστικά ελλείμματα και συμπτώματα μετά από διάσειση."
+  de: "Evidenz Stufe B zur Unterstützung von HBOT bei leichtem SHT und postkommotionellem Syndrom, mit Verbesserungen neurokognitiver Defizite und postkommotioneller Symptome."
 doi: "https://doi.org/10.1212/WNL.0000000000003146"
 ref: "[15]"

@@ -3,15 +3,19 @@ tier: "fda-approved"
 category:
   en: "Gas/Bubble Disorders"
   el: "Διαταραχές Αερίου/Φυσαλίδων"
+  de: "Gas-/Blasenstörungen"
 condition:
   en: "Decompression Sickness"
   el: "Νόσος Αποσυμπίεσης"
+  de: "Dekompressionserkrankung"
 description:
   en: "Primary treatment for nitrogen bubble formation in divers and compressed-air workers. Reduces bubble volume and promotes nitrogen elimination."
   el: "Κύρια θεραπεία για σχηματισμό φυσαλίδων αζώτου σε δύτες και εργαζόμενους με συμπιεσμένο αέρα. Μειώνει όγκο φυσαλίδων και προάγει αποβολή αζώτου."
+  de: "Primärtherapie bei Stickstoffblasenbildung bei Tauchern und Druckluftarbeitern. Reduziert das Blasenvolumen und fördert die Stickstoff-Elimination."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "A"
 protocol:
   ata: "2.0 – 2.5 ATA"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "20 – 30"
     el: "20 – 30"
+    de: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[6]"

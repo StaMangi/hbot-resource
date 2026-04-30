@@ -1,20 +1,24 @@
 name:
   en: "Gastroenterology"
   el: "Γαστρεντερολογία"
+  de: "Gastroenterologie"
 icon: "Stethoscope"
 color: "#0f766e"
 shortDesc:
   en: "IBD, Ulcerative Colitis, Crohn's Disease"
   el: "ΦΝΕ, Ελκώδης Κολίτιδα, Νόσος Crohn"
+  de: "CED, Colitis ulcerosa, Morbus Crohn"
 applications:
   - title:
       en: "Ulcerative Colitis"
       el: "Ελκώδης Κολίτιδα"
+      de: "Colitis ulcerosa"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Systematic reviews indicate HBOT may achieve response rates exceeding 80% in acute severe ulcerative colitis refractory to conventional therapy, reversing chronic intestinal hypoxia."
       el: "Συστηματικές ανασκοπήσεις υποδεικνύουν ότι η HBOT μπορεί να επιτύχει ποσοστά ανταπόκρισης >80% σε οξεία σοβαρή ελκώδη κολίτιδα ανθεκτική σε συμβατική θεραπεία, αντιστρέφοντας χρόνια εντερική υποξία."
+      de: "Systematische Übersichtsarbeiten weisen darauf hin, dass HBOT bei akuter schwerer Colitis ulcerosa, die auf konventionelle Therapie nicht anspricht, Ansprechraten von über 80 % erzielen kann, indem die chronische intestinale Hypoxie umgekehrt wird."
     evidence: "Level B"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "20 – 40"
         el: "20 – 40"
+        de: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
+        de: "Meta-Analyse Stufe A"
     refs:
       - "[14]"
   - title:
       en: "Crohn's Disease"
       el: "Νόσος Crohn"
+      de: "Morbus Crohn"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Meta-analyses demonstrate significant mucosal healing and clinical remission in Crohn's disease patients treated with HBOT, particularly for perianal fistulizing disease."
       el: "Μετα-αναλύσεις αποδεικνύουν σημαντική επούλωση βλεννογόνου και κλινική ύφεση σε ασθενείς με νόσο Crohn που θεραπεύτηκαν με HBOT, ιδίως για περιπρωκτική νόσο με συρίγγια."
+      de: "Meta-Analysen belegen eine signifikante Schleimhautheilung und klinische Remission bei mit HBOT behandelten Morbus-Crohn-Patienten, insbesondere bei perianaler fistelbildender Erkrankung."
     evidence: "Level B"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -45,22 +54,27 @@ applications:
       sessions:
         en: "20 – 40"
         el: "20 – 40"
+        de: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
+        de: "Meta-Analyse Stufe A"
     refs:
       - "[14]"
   - title:
       en: "Inflammatory Bowel Disease (IBD)"
       el: "Φλεγμονώδης Νόσος Εντέρου (ΦΝΕ)"
+      de: "Chronisch-entzündliche Darmerkrankung (CED)"
     type: "Research"
     typeColor: "blue"
     description:
       en: "HBOT reverses chronic intestinal hypoxia, reduces mucosal inflammation, and promotes epithelial healing. Considered a promising adjunctive therapy for IBD management."
       el: "Η HBOT αντιστρέφει χρόνια εντερική υποξία, μειώνει φλεγμονή βλεννογόνου και προάγει επιθηλιακή επούλωση. Θεωρείται υποσχόμενη επικουρική θεραπεία για διαχείριση ΦΝΕ."
+      de: "HBOT kehrt die chronische intestinale Hypoxie um, reduziert die Schleimhautentzündung und fördert die epitheliale Heilung. Sie gilt als vielversprechende adjuvante Therapie zur CED-Behandlung."
     evidence: "Level B"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -68,11 +82,14 @@ applications:
       sessions:
         en: "20 – 40"
         el: "20 – 40"
+        de: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
+        de: "Meta-Analyse Stufe A"
     refs:
       - "[14]"

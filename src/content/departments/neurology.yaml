@@ -1,20 +1,24 @@
 name:
   en: "Neurology"
   el: "Νευρολογία"
+  de: "Neurologie"
 icon: "Brain"
 color: "#7c3aed"
 shortDesc:
   en: "TBI, Stroke, Dementia, Cognitive Enhancement"
   el: "ΕΚΤ, Εγκεφαλικό, Άνοια, Γνωστική Ενίσχυση"
+  de: "SHT, Schlaganfall, Demenz, kognitive Förderung"
 applications:
   - title:
       en: "Mild Traumatic Brain Injury (mTBI)"
       el: "Ήπια Κρανιοεγκεφαλική Κάκωση (ΗΚΕ)"
+      de: "Leichtes Schädel-Hirn-Trauma (mSHT)"
     type: "Research"
     typeColor: "blue"
     description:
       en: "B-level evidence from clinical trials demonstrating improvements in neurocognitive deficits, post-concussion symptoms, and brain microstructure in mTBI patients."
       el: "Τεκμηρίωση επιπέδου Β από κλινικές δοκιμές που αποδεικνύουν βελτιώσεις σε νευρογνωστικά ελλείμματα, συμπτώματα μετά από διάσειση και μικροδομή εγκεφάλου σε ασθενείς με ΗΚΕ."
+      de: "Evidenz Stufe B aus klinischen Studien, die Verbesserungen neurokognitiver Defizite, postkommotioneller Symptome und der Hirn-Mikrostruktur bei Patienten mit leichtem SHT belegen."
     evidence: "Level B"
     protocol:
       ata: "1.5 – 2.0 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "40 – 60"
         el: "40 – 60"
+        de: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Level B Evidence"
         el: "Τεκμηρίωση Επιπέδου Β"
+        de: "Evidenz Stufe B"
     refs:
       - "[15]"
   - title:
       en: "Stroke Recovery"
       el: "Αποκατάσταση Εγκεφαλικού"
+      de: "Schlaganfallrehabilitation"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Investigational adjunctive therapy for ischemic stroke recovery. HBOT promotes neuroplasticity, reduces peri-infarct hypoxia, and may improve functional outcomes."
       el: "Ερευνητική επικουρική θεραπεία για αποκατάσταση ισχαιμικού εγκεφαλικού. Η HBOT προάγει νευροπλαστικότητα, μειώνει περι-εμφρακτική υποξία και μπορεί να βελτιώσει λειτουργικά αποτελέσματα."
+      de: "Investigative adjuvante Therapie zur Rehabilitation nach ischämischem Schlaganfall. HBOT fördert die Neuroplastizität, reduziert die peri-infarktale Hypoxie und kann funktionelle Ergebnisse verbessern."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -45,22 +54,27 @@ applications:
       sessions:
         en: "40 – 60"
         el: "40 – 60"
+        de: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
+        de: "Klinische Forschung"
     refs:
       - "[16]"
   - title:
       en: "Vascular Dementia"
       el: "Αγγειακή Άνοια"
+      de: "Vaskuläre Demenz"
     type: "Research"
     typeColor: "blue"
     description:
       en: "HBOT reverses chronic cerebral hypoperfusion and promotes angiogenesis in brain tissue. Clinical studies show improvements in cognitive function in vascular dementia patients."
       el: "Η HBOT αντιστρέφει χρόνια εγκεφαλική υποαιμάτωση και προάγει αγγειογένεση σε εγκεφαλικό ιστό. Κλινικές μελέτες δείχνουν βελτιώσεις σε γνωστική λειτουργία σε ασθενείς με αγγειακή άνοια."
+      de: "HBOT kehrt die chronische zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe. Klinische Studien zeigen Verbesserungen der kognitiven Funktion bei Patienten mit vaskulärer Demenz."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -68,22 +82,27 @@ applications:
       sessions:
         en: "60"
         el: "60"
+        de: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
+        de: "Klinische Forschung"
     refs:
       - "[16]"
   - title:
       en: "Cognitive Enhancement in Healthy Aging"
       el: "Γνωστική Ενίσχυση στην Υγιή Γήρανση"
+      de: "Kognitive Förderung beim gesunden Altern"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Randomized controlled trial demonstrated significant cognitive enhancements in healthy older adults, including memory and processing speed improvements correlated with increased cerebral blood flow."
       el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή απέδειξε σημαντικές γνωστικές ενισχύσεις σε υγιείς ηλικιωμένους, συμπεριλαμβανομένης βελτίωσης μνήμης και ταχύτητας επεξεργασίας που συσχετίζονται με αυξημένη εγκεφαλική αιματική ροή."
+      de: "Eine randomisierte kontrollierte Studie zeigte signifikante kognitive Verbesserungen bei gesunden älteren Erwachsenen, einschließlich Verbesserungen des Gedächtnisses und der Verarbeitungsgeschwindigkeit, die mit einem erhöhten zerebralen Blutfluss korrelieren."
     evidence: "Level A (RCT)"
     protocol:
       ata: "2.0 ATA"
@@ -91,22 +110,27 @@ applications:
       sessions:
         en: "60"
         el: "60"
+        de: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
+        de: "RKS (Hadanny et al., 2020)"
     refs:
       - "[4]"
   - title:
       en: "Neurodegenerative Diseases"
       el: "Νευροεκφυλιστικές Παθήσεις"
+      de: "Neurodegenerative Erkrankungen"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Emerging preclinical and early clinical evidence for Alzheimer's disease and Parkinson's disease. HBOT reduces neuroinflammation and promotes neurogenesis."
       el: "Αναδυόμενα προκλινικά και πρώιμα κλινικά στοιχεία για νόσο Alzheimer και Parkinson. Η HBOT μειώνει νευροφλεγμονή και προάγει νευρογένεση."
+      de: "Aufkommende präklinische und frühe klinische Evidenz für die Alzheimer- und Parkinson-Krankheit. HBOT reduziert die Neuroinflammation und fördert die Neurogenese."
     evidence: "Level C"
     protocol:
       ata: "2.0 ATA"
@@ -114,22 +138,27 @@ applications:
       sessions:
         en: "40 – 60"
         el: "40 – 60"
+        de: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Preclinical / Early Phase"
         el: "Προκλινικό / Πρώιμη Φάση"
+        de: "Präklinisch / Frühe Phase"
     refs:
       - "[8]"
   - title:
       en: "Long COVID"
       el: "Long COVID"
+      de: "Long COVID"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
       en: "Persistent cognitive dysfunction, brain fog, fatigue, sleep disturbance, and pain following SARS-CoV-2 infection. A randomised controlled trial reported significant improvements after 40 HBOT sessions, with benefits sustained at one-year follow-up. Evidence currently anchored to a single research group; independent replication ongoing."
       el: "Επίμονη γνωστική δυσλειτουργία, brain fog, κόπωση, διαταραχές ύπνου και πόνος μετά από λοίμωξη SARS-CoV-2. Τυχαιοποιημένη ελεγχόμενη δοκιμή ανέφερε σημαντική βελτίωση μετά από 40 συνεδρίες HBOT, με τα οφέλη να διατηρούνται σε παρακολούθηση ενός έτους. Η τεκμηρίωση βασίζεται προς το παρόν σε μία ερευνητική ομάδα — ανεξάρτητη επιβεβαίωση εκκρεμεί."
+      de: "Anhaltende kognitive Dysfunktion, Brain Fog, Fatigue, Schlafstörungen und Schmerzen nach SARS-CoV-2-Infektion. Eine randomisierte kontrollierte Studie berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen, wobei die Vorteile bei einer Nachbeobachtung über ein Jahr anhielten. Die Evidenz stützt sich derzeit auf eine einzelne Forschungsgruppe; eine unabhängige Replikation steht aus."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -137,12 +166,15 @@ applications:
       sessions:
         en: "40"
         el: "40"
+        de: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
+        de: "5×/Woche"
       basis:
         en: "RCT (Zilberman-Itskovich et al., 2022)"
         el: "ΤΕΔ (Zilberman-Itskovich et al., 2022)"
+        de: "RKS (Zilberman-Itskovich et al., 2022)"
     refs:
       - "[25]"
       - "[26]"
@@ -151,11 +183,13 @@ applications:
   - title:
       en: "Fibromyalgia"
       el: "Ινομυαλγία"
+      de: "Fibromyalgie"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
       en: "Chronic central sensitisation syndrome with widespread pain, tender points, fatigue, sleep disturbance, and cognitive symptoms. A 2015 prospective controlled trial reported significant improvements after 40 HBOT sessions at 2.0 ATA, with two independent 2023 meta-analyses confirming improvements in function, tender points, fatigue, sleep, and quality of life across pooled randomised data."
       el: "Σύνδρομο χρόνιας κεντρικής ευαισθητοποίησης με εκτεταμένο πόνο, ευαίσθητα σημεία, κόπωση, διαταραχές ύπνου και γνωστικά συμπτώματα. Προοπτική ελεγχόμενη δοκιμή του 2015 ανέφερε σημαντικές βελτιώσεις μετά από 40 συνεδρίες HBOT στα 2.0 ATA, με δύο ανεξάρτητες μετα-αναλύσεις του 2023 να επιβεβαιώνουν βελτιώσεις σε λειτουργικότητα, ευαίσθητα σημεία, κόπωση, ύπνο και ποιότητα ζωής σε συγκεντρωτικά τυχαιοποιημένα δεδομένα."
+      de: "Chronisches zentrales Sensibilisierungssyndrom mit weitverbreiteten Schmerzen, Tender Points, Fatigue, Schlafstörungen und kognitiven Symptomen. Eine prospektive kontrollierte Studie von 2015 berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen bei 2,0 ATA; zwei unabhängige Meta-Analysen aus 2023 bestätigen Verbesserungen bei Funktion, Tender Points, Fatigue, Schlaf und Lebensqualität über gepoolte randomisierte Daten hinweg."
     evidence: "Level B"
     protocol:
       ata: "2.0 ATA"
@@ -163,12 +197,15 @@ applications:
       sessions:
         en: "40"
         el: "40"
+        de: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
+        de: "5×/Woche"
       basis:
         en: "Prospective Controlled Trial (Efrati et al., 2015)"
         el: "Προοπτική Ελεγχόμενη Δοκιμή (Efrati et al., 2015)"
+        de: "Prospektive Kontrollierte Studie (Efrati et al., 2015)"
     refs:
       - "[29]"
       - "[30]"

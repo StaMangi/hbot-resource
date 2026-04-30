@@ -1,20 +1,24 @@
 name:
   en: "Endocrinology & Metabolism"
   el: "Ενδοκρινολογία & Μεταβολισμός"
+  de: "Endokrinologie & Stoffwechsel"
 icon: "Zap"
 color: "#d97706"
 shortDesc:
   en: "Diabetic Foot, Metabolic Syndrome, Nephropathy"
   el: "Διαβητικό Πόδι, Μεταβολικό Σύνδρομο, Νεφροπάθεια"
+  de: "Diabetischer Fuß, Metabolisches Syndrom, Nephropathie"
 applications:
   - title:
       en: "Diabetic Foot Ulcers"
       el: "Διαβητικά Έλκη Ποδιού"
+      de: "Diabetische Fußulzera"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Most recognized HBOT application. Significantly improves complete healing rates in ischemic diabetic foot ulcers, reducing amputation rates when combined with standard wound care."
       el: "Η πιο αναγνωρισμένη εφαρμογή HBOT. Βελτιώνει σημαντικά ποσοστά πλήρους επούλωσης σε ισχαιμικά διαβητικά έλκη ποδιού, μειώνοντας ποσοστά ακρωτηριασμού σε συνδυασμό με τυπική φροντίδα τραύματος."
+      de: "Die anerkannteste HBOT-Anwendung. Verbessert die vollständigen Heilungsraten bei ischämischen diabetischen Fußulzera signifikant und reduziert die Amputationsraten in Kombination mit der Standard-Wundversorgung."
     evidence: "Level A"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -22,23 +26,28 @@ applications:
       sessions:
         en: "30 – 40"
         el: "30 – 40"
+        de: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
+        de: "UHMS / FDA-zugelassen"
     refs:
       - "[9]"
       - "[13]"
   - title:
       en: "Diabetic Nephropathy"
       el: "Διαβητική Νεφροπάθεια"
+      de: "Diabetische Nephropathie"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Preclinical and early clinical studies demonstrate HBOT suppresses biomarkers of cell stress and kidney injury in diabetic models, suggesting renoprotective effects."
       el: "Προκλινικές και πρώιμες κλινικές μελέτες δείχνουν ότι η HBOT καταστέλλει βιοδείκτες κυτταρικού στρες και νεφρικής βλάβης σε διαβητικά μοντέλα, υποδηλώνοντας νεφροπροστατευτικά αποτελέσματα."
+      de: "Präklinische und frühe klinische Studien zeigen, dass HBOT Biomarker von Zellstress und Nierenschäden in diabetischen Modellen unterdrückt und auf renoprotektive Effekte hindeutet."
     evidence: "Level C"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -46,22 +55,27 @@ applications:
       sessions:
         en: "20 – 30"
         el: "20 – 30"
+        de: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
+        de: "Klinische Forschung"
     refs:
       - "[18]"
   - title:
       en: "Insulin Sensitivity & Metabolic Syndrome"
       el: "Ευαισθησία Ινσουλίνης & Μεταβολικό Σύνδρομο"
+      de: "Insulinsensitivität & Metabolisches Syndrom"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Emerging evidence suggests HBOT may improve insulin sensitivity and reduce metabolic syndrome markers through enhanced mitochondrial function and reduced inflammation."
       el: "Αναδυόμενα στοιχεία υποδηλώνουν ότι η HBOT μπορεί να βελτιώσει ευαισθησία ινσουλίνης και να μειώσει δείκτες μεταβολικού συνδρόμου μέσω ενισχυμένης μιτοχονδριακής λειτουργίας και μειωμένης φλεγμονής."
+      de: "Aufkommende Evidenz deutet darauf hin, dass HBOT die Insulinsensitivität verbessern und Marker des metabolischen Syndroms durch verbesserte mitochondriale Funktion und reduzierte Entzündung vermindern kann."
     evidence: "Level C"
     protocol:
       ata: "2.0 ATA"
@@ -69,11 +83,14 @@ applications:
       sessions:
         en: "20 – 30"
         el: "20 – 30"
+        de: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
+        de: "Investigativ"
     refs:
       - "[18]"

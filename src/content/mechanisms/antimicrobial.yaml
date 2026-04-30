@@ -1,13 +1,16 @@
 title:
   en: "Antimicrobial Activity"
   el: "Αντιμικροβιακή Δράση"
+  de: "Antimikrobielle Wirkung"
 icon: "Shield"
 color: "teal"
 summary:
   en: "High oxygen tensions enhance leukocyte oxidative killing capacity and are directly lethal to anaerobic bacteria such as Clostridium perfringens."
   el: "Οι υψηλές τάσεις οξυγόνου ενισχύουν την οξειδωτική ικανότητα θανάτωσης λευκοκυττάρων και είναι άμεσα θανατηφόρες για αναερόβια βακτήρια όπως το Clostridium perfringens."
+  de: "Hohe Sauerstoffspannungen verstärken die oxidative Abtötungskapazität der Leukozyten und sind für anaerobe Bakterien wie Clostridium perfringens unmittelbar tödlich."
 detail:
   en: "Oxygen is utilized by neutrophils and macrophages to generate reactive oxygen species (ROS) that destroy bacteria. HBOT is directly bactericidal to obligate anaerobes and enhances the efficacy of certain antibiotics, particularly aminoglycosides."
   el: "Το οξυγόνο χρησιμοποιείται από ουδετερόφιλα και μακροφάγα για παραγωγή δραστικών ειδών οξυγόνου (ROS) που καταστρέφουν βακτήρια. Η HBOT είναι άμεσα βακτηριοκτόνος για υποχρεωτικά αναερόβια και ενισχύει την αποτελεσματικότητα ορισμένων αντιβιοτικών, ιδίως αμινογλυκοσιδών."
+  de: "Sauerstoff wird von Neutrophilen und Makrophagen zur Erzeugung reaktiver Sauerstoffspezies (ROS) genutzt, welche Bakterien zerstören. HBOT ist gegenüber obligat anaeroben Erregern unmittelbar bakterizid und verstärkt die Wirksamkeit bestimmter Antibiotika, insbesondere der Aminoglykoside."
 refs:
   - "[1]"

@@ -3,15 +3,19 @@ tier: "fda-approved"
 category:
   en: "Wound Healing"
   el: "Επούλωση Τραυμάτων"
+  de: "Wundheilung"
 condition:
   en: "Delayed Radiation Injury (Soft Tissue & Bony Necrosis)"
   el: "Καθυστερημένη Ακτινοβολική Βλάβη (Νέκρωση Μαλακών Ιστών & Οστού)"
+  de: "Späte Strahlenschäden (Weichteil- und Knochennekrose)"
 description:
   en: "Treatment for osteoradionecrosis and soft tissue radiation necrosis. Promotes angiogenesis in hypoxic, hypovascular, hypocellular tissue."
   el: "Θεραπεία για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό."
+  de: "Behandlung der Osteoradionekrose und der Strahlennekrose der Weichgewebe. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "A"
 protocol:
   ata: "2.0 – 2.4 ATA"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "30 – 60"
     el: "30 – 60"
+    de: "30 – 60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[12]"

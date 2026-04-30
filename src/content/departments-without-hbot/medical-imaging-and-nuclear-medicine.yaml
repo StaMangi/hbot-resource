@@ -1,10 +1,13 @@
 name:
   en: "Medical Imaging & Nuclear Medicine"
   el: "Ιατρική Απεικόνιση & Πυρηνική Ιατρική"
+  de: "Medizinische Bildgebung & Nuklearmedizin"
 icon: "ScanLine"
 rationale:
   en: "Medical Imaging (CT, MRI, PET, Nuclear Medicine Theranostics) serves a purely diagnostic and interventional imaging function. HBOT does not alter imaging protocols or radiopharmaceutical uptake in any clinically meaningful way. These departments support HBOT patient selection and monitoring but are not sites of HBOT application."
   el: "Η Ιατρική Απεικόνιση (CT, MRI, PET, Θεραγνωστική Πυρηνικής Ιατρικής) εξυπηρετεί αμιγώς διαγνωστική και παρεμβατική λειτουργία απεικόνισης. Η HBOT δεν αλλάζει πρωτόκολλα απεικόνισης ή πρόσληψη ραδιοφαρμάκων με κλινικά σημαντικό τρόπο. Αυτά τα τμήματα υποστηρίζουν επιλογή ασθενών και παρακολούθηση HBOT αλλά δεν είναι χώροι εφαρμογής HBOT."
+  de: "Die Medizinische Bildgebung (CT, MRT, PET, nuklearmedizinische Theranostik) erfüllt eine rein diagnostische und interventionell-bildgebende Funktion. HBOT verändert weder Bildgebungsprotokolle noch die Aufnahme von Radiopharmaka in klinisch relevanter Weise. Diese Abteilungen unterstützen die Patientenauswahl und das Monitoring der HBOT, sind jedoch keine Anwendungsorte der HBOT."
 role:
   en: "Supportive — pre-treatment imaging and perfusion assessment"
   el: "Υποστηρικτικός — απεικόνιση προ-θεραπείας και αξιολόγηση αιμάτωσης"
+  de: "Unterstützend — Bildgebung vor der Behandlung und Perfusions-Beurteilung"

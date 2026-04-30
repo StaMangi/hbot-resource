@@ -1,20 +1,24 @@
 name:
   en: "Psychiatry & Psychology"
   el: "Ψυχιατρική & Ψυχολογία"
+  de: "Psychiatrie & Psychologie"
 icon: "HeartHandshake"
 color: "#be185d"
 shortDesc:
   en: "PTSD, Depression, Anxiety"
   el: "ΔΜΤΣ, Κατάθλιψη, Άγχος"
+  de: "PTBS, Depression, Angststörungen"
 applications:
   - title:
       en: "Post-Traumatic Stress Disorder (PTSD)"
       el: "Διαταραχή Μετατραυματικού Στρες (ΔΜΤΣ)"
+      de: "Posttraumatische Belastungsstörung (PTBS)"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Clinical trials demonstrate HBOT improves brain microstructure functionality and alleviates PTSD symptoms in veterans with treatment-resistant PTSD. Significant improvements in PTSD checklist scores."
       el: "Κλινικές δοκιμές αποδεικνύουν ότι η HBOT βελτιώνει λειτουργικότητα μικροδομής εγκεφάλου και ανακουφίζει συμπτώματα ΔΜΤΣ σε βετεράνους με ανθεκτική στη θεραπεία ΔΜΤΣ. Σημαντικές βελτιώσεις στις βαθμολογίες ελέγχου ΔΜΤΣ."
+      de: "Klinische Studien belegen, dass HBOT die Funktionalität der Hirn-Mikrostruktur verbessert und PTBS-Symptome bei Veteranen mit therapieresistenter PTBS lindert. Signifikante Verbesserungen der PTBS-Checklisten-Scores."
     evidence: "Level B"
     protocol:
       ata: "1.5 – 2.0 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "40 – 60"
         el: "40 – 60"
+        de: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Level B Evidence (RCT)"
         el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
+        de: "Evidenz Stufe B (RKS)"
     refs:
       - "[20]"
   - title:
       en: "Treatment-Resistant Depression"
       el: "Ανθεκτική στη Θεραπεία Κατάθλιψη"
+      de: "Therapieresistente Depression"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Emerging research investigates HBOT for treatment-resistant depression through neuroplasticity enhancement, BDNF upregulation, and reduction of neuroinflammation."
       el: "Αναδυόμενη έρευνα διερευνά την HBOT για ανθεκτική στη θεραπεία κατάθλιψη μέσω ενίσχυσης νευροπλαστικότητας, ανύψωσης BDNF και μείωσης νευροφλεγμονής."
+      de: "Aufkommende Forschung untersucht HBOT bei therapieresistenter Depression über die Förderung der Neuroplastizität, die Hochregulation von BDNF und die Reduktion der Neuroinflammation."
     evidence: "Level C"
     protocol:
       ata: "1.5 – 2.0 ATA"
@@ -45,11 +54,14 @@ applications:
       sessions:
         en: "20 – 40"
         el: "20 – 40"
+        de: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
+        de: "Investigativ"
     refs:
       - "[8]"

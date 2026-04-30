@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import IndexLayout from "@/layouts/IndexLayout.astro";
+import MechanismCard from "@/components/cards/MechanismCard.astro";
+import { t } from "@/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = "de" as const;
+
+const all = await getCollection("mechanisms");
+const order = ["hyperoxygenation", "angiogenesis", "antimicrobial", "gas-reduction", "antiaging"];
+const entries = order
+  .map((id) => all.find((m) => m.id === id))
+  .filter((m): m is NonNullable<typeof m> => m !== undefined);
+---
+
+<IndexLayout
+  title={`${t("mechanisms.section.title", locale)} — HBOT Science`}
+  description={t("mechanisms.section.subtitle", locale)}
+  locale={locale}
+  pathname={pathname}
+  badge={t("mechanisms.section.badge", locale)}
+  pageHeading={t("mechanisms.section.title", locale)}
+  pageSubtitle={t("mechanisms.section.subtitle", locale)}
+  badgeColor="teal"
+>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {entries.map((entry) => <MechanismCard entry={entry} locale={locale} prefix="/el" />)}
+  </div>
+</IndexLayout>

@@ -1,0 +1,147 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "de" as const;
+const prefix = "/de";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Betreiber-Blueprint",
+  description:
+    "Referenz-Architektur für Hotels, Longevity-Kliniken und Wellness-Betreiber, die HBOT einführen — Ausstattung, Personal, Räumlichkeiten, Qualitätskontrolle, Patientenfluss, Dokumentation.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Betreiber-Blueprint — HBOT Science"
+  description="Referenz-Architektur für Hotels, Longevity-Kliniken und Wellness-Betreiber, die HBOT einführen — Ausstattung, Personal, räumliche Aspekte, Qualitätskontrolle, Patientenfluss, Dokumentation."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Betreiber-Referenz</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Betreiber-Blueprint
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Referenz-Architektur für die operative Umsetzung von HBOT-Diensten in
+      Organisationen — Hotels, Longevity-Kliniken und Wellness-Betreiber. Die
+      Inhalte sind generisch; konkrete Geräte-Anbieter, regulatorische Wege
+      und Preise sind bewusst nicht abgedeckt. Lokale Gesundheits- und
+      Gerätesicherheits-Vorschriften gelten und können strengere Anforderungen
+      stellen.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Ausstattungswahl
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Klinisch werden zwei Hauptkategorien von Druckkammern eingesetzt:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Festkörper-Druckkammern (medizinisch)</strong> — bauen Druck auf 2,0–3,0 ATA mit 100 % Sauerstoff per Maske oder Haube auf. Erforderlich für FDA-zugelassene Indikationen und für jede Behandlung, die echten hyperbaren Druck erfordert. Verfügbar als Einplatz- (ein Patient) und Mehrplatz- (mehrere Patienten mit Begleitperson) Konfigurationen.</li>
+        <li><strong>Weichkammern („Mild-HBOT")</strong> — meist Druckaufbau auf 1,3 ATA mit Umgebungsluft. Für die auf dieser Website behandelten Indikationen nicht gleichwertig zur medizinischen HBOT; die Evidenzbasis für einen therapeutischen Effekt bei 1,3 ATA ist deutlich schwächer. Betreiber, die sich auf die Hadanny-2020-RKS zur kognitiven Förderung oder die Zilberman-Itskovich-2022-RKS zu Long COVID berufen, müssen wissen, dass diese Studien Festkörper-Kammern bei 2,0 ATA verwendeten — Weichkammer-Einsätze können diese Protokolle nicht reproduzieren.</li>
+      </ul>
+      <p class="text-slate-700 mt-3">
+        <strong>Einplatz vs. Mehrplatz</strong>: Einplatzkammern sind kleiner,
+        haben geringere Investitionskosten und benötigen weniger
+        spezialisiertes Personal. Mehrplatzkammern erlauben die Anwesenheit
+        einer Begleitperson für das Angstmanagement und die Notfallreaktion,
+        können komplexere Patienten aufnehmen und sind Standard für klinische
+        Wundversorgungs-Dienste.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Personal
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Ärztliche Aufsicht</strong>: Ein/e benannte/r Arzt/Ärztin für Hyperbarmedizin sollte für die Indikationsprüfung, das Sign-off des Vorbehandlungs-Screenings und die Reaktion auf Nebenwirkungen verantwortlich sein.</li>
+        <li><strong>Hyperbar-Techniker/in / Pflegekraft</strong>: geschult im Kammerbetrieb, in Notfall-Dekompressionsverfahren und im Patientenmanagement. Zertifizierungsstandards variieren je nach Jurisdiktion; die UHMS veröffentlicht anerkannte Qualifizierungspfade.</li>
+        <li><strong>Mehrplatz-Begleitpersonen</strong>: Bei Mehrplatzkammern ist eine Innenbegleitperson für die Dauer der Druck-Sitzungen erforderlich.</li>
+        <li><strong>Empfang / Terminplanung</strong>: geschult im Screening auf Kontraindikationen (insbesondere Rauchen, kürzliche Ohrinfektion, laufende Chemotherapie), damit Warnsignale bereits bei der Buchung und nicht erst kammerseitig erkannt werden.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Räumlichkeiten
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Raumbedarf</strong>: Einplatzkammern passen in einen Raum von 3 × 6 m; Mehrplatzsysteme erfordern dedizierte Suiten mit Steuerraum, Sauerstoff-Lagerung und Notausgängen.</li>
+        <li><strong>Lüftung</strong>: Sauerstoffreiche Umgebungen erfordern Maßnahmen zur Begrenzung der Brandlast. Boden- und Wandmaterialien, elektrische Einbauten und HLK müssen Geräte-Sicherheitsstandards erfüllen (regionale Codes variieren; in Jurisdiktionen, die US-Standards folgen, NFPA 99 als Referenz).</li>
+        <li><strong>Brandschutz</strong>: keine synthetischen Textilien, keine statisch aufladbaren Stoffe, keine elektronischen Geräte in der Kammer, keine Öle oder alkoholbasierten Produkte am Patienten. Brandbekämpfung muss für sauerstoffangereicherte Atmosphäre geeignet sein.</li>
+        <li><strong>Sauerstoffversorgung</strong>: medizinischer Sauerstoff mit dokumentierter Reinheitsprüfung. Backup-Versorgung obligatorisch.</li>
+        <li><strong>Notausgang</strong>: schnelle Dekompressionsfähigkeit und geschulte Operator-Reaktion innerhalb von Sekunden.</li>
+        <li><strong>Klimakontrolle</strong>: Temperaturmanagement der Kammer zur Vermeidung von Patienten-Überhitzung während der Kompression.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Qualitätskontrolle
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Kammerwartung</strong>: planmäßige Wartung gemäß Herstellervorgabe, mit Wartungsprotokoll.</li>
+        <li><strong>Druckbehälter-Inspektion</strong>: typischerweise jährlich; jurisdiktionsspezifisch.</li>
+        <li><strong>Sauerstoff-Reinheitsprüfung</strong>: periodische Verifikation der Versorgungsreinheit, idealerweise bei jedem Gas-Versorgungswechsel.</li>
+        <li><strong>Kalibrierung</strong>: Druckmesser, Sauerstoffsensoren, Zeitsteuerungen — kalibriert nach Herstellervorgabe.</li>
+        <li><strong>Nebenwirkungs-Logbuch</strong>: jedes unerwünschte Ereignis mit Datum, Sitzungsnummer, Symptomatik, Reaktion und Ergebnis dokumentiert.</li>
+        <li><strong>Audit-Kadenz</strong>: internes Audit mindestens jährlich; externes Audit, ausgelöst durch regulatorische Zyklen oder ein signifikantes unerwünschtes Ereignis.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Patientenfluss und Einwilligung
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Erstkonsultation</strong>: Anamnese, Indikationsbesprechung, Kontraindikations-Screening, Erwartungsabgleich (insbesondere für Wellness-Anwendung).</li>
+        <li><strong>Informierte Einwilligung</strong>: schriftliche Einwilligung mit Übersicht über absolute und relative Kontraindikationen, häufige Nebenwirkungen, vorgesehenes Protokoll, Reichweite des klinischen Effekts (für Wellness: ausdrückliche Anerkennung, dass das Programm außerhalb FDA-zugelassener Indikationen liegt).</li>
+        <li><strong>Sitzungs-Vorprüfung</strong>: Blutdruck, Temperatur, respiratorische Prüfung, Übersicht aktueller Medikation, Klaustrophobie-Status, Beurteilung des Druckausgleichs der Ohren.</li>
+        <li><strong>Sitzungs-Monitoring</strong>: kontinuierliche Kommunikation mit der Begleitperson; Vitalparameter-Erfassung bei Hochrisikopatienten.</li>
+        <li><strong>Sitzungs-Nachprüfung</strong>: Trommelfellbeurteilung, Vitalparameter, Verträglichkeitsfragebogen.</li>
+        <li><strong>Follow-up-Kadenz</strong>: Zwischen- und Abschlussbeurteilungen; Erfassung von Outcome-Maßen gemäß Programmdesign.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Dokumentation
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Sitzungsprotokoll</strong>: Datum, Startzeit, Druckprofil, Dauer, Sauerstofffluss, Nebenwirkungen, Identität der Begleitperson, patientenberichtete Verträglichkeit.</li>
+        <li><strong>Indikations-Datensatz</strong>: dokumentierte klinische Begründung, Evidenz-Stufe, Sign-off des behandelnden Arztes/der behandelnden Ärztin.</li>
+        <li><strong>Outcome-Tracking</strong>: prä-/post-protokollarische Messungen gemäß Programmdesign.</li>
+        <li><strong>Meldung von Nebenwirkungen</strong>: schwerwiegende Ereignisse werden gemäß lokalem regulatorischem Rahmen gemeldet.</li>
+        <li><strong>Aufbewahrung</strong>: medizinische Akten gemäß Jurisdiktion (typischerweise 7–25 Jahre).</li>
+        <li><strong>Datenschutz</strong>: DSGVO-konform in der EU und im EWR; HIPAA-äquivalent in den USA.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Dieses Blueprint ist eine generische Betreiber-Referenz. Es stellt keine
+      regulatorische oder gerätesicherheitsbezogene Beratung dar. Lokale
+      Gesundheits-, Gerätesicherheits-, Brandschutz- und
+      Verbraucherschutzvorschriften gelten und haben Vorrang vor den hier
+      zusammengefassten Empfehlungen.
+    </p>
+  </article>
+</LandingLayout>

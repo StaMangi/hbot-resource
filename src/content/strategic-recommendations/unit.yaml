@@ -1,11 +1,13 @@
 title:
   en: "Establish a Dedicated Hyperbaric Medicine Unit"
   el: "Ίδρυση Αφιερωμένης Μονάδας Υπερβαρικής Ιατρικής"
+  de: "Aufbau einer eigenen hyperbarmedizinischen Einheit"
 icon: "Building2"
 priority: "High"
 description:
   en: "Create a specialized department staffed with certified hyperbaric physicians, trained nurses, and hyperbaric technicians. A multiplace chamber (6–12 seats) enables simultaneous treatment of multiple patients and allows full monitoring of critically ill patients."
   el: "Δημιουργία εξειδικευμένου τμήματος με πιστοποιημένους υπερβαρικούς ιατρούς, εκπαιδευμένες νοσηλεύτριες και υπερβαρικούς τεχνικούς. Ένας πολυθέσιος θάλαμος (6–12 θέσεις) επιτρέπει ταυτόχρονη θεραπεία πολλαπλών ασθενών και πλήρη παρακολούθηση κρίσιμα ασθενών."
+  de: "Aufbau einer spezialisierten Abteilung mit zertifizierten Hyperbarmedizinerinnen und -medizinern, geschultem Pflegepersonal und Hyperbar-Techniker:innen. Eine Mehrplatzkammer (6–12 Plätze) ermöglicht die gleichzeitige Behandlung mehrerer Patient:innen und das vollständige Monitoring kritisch kranker Patient:innen."
 actions:
   en:
     - "Recruit a board-certified hyperbaric medicine physician"
@@ -17,3 +19,8 @@ actions:
     - "Εγκατάσταση πολυθέσιου θαλάμου με πλήρη δυνατότητα παρακολούθησης ΜΕΘ"
     - "Καθιέρωση πρωτοκόλλων ασφαλείας συμβατών με UHMS και εκπαίδευση προσωπικού"
     - "Ενσωμάτωση με υπάρχοντα χειρουργικά και παθολογικά τμήματα"
+  de:
+    - "Rekrutierung einer zertifizierten Fachkraft für Hyperbarmedizin"
+    - "Installation einer Mehrplatzkammer mit vollständiger ITS-Monitoring-Fähigkeit"
+    - "Etablierung UHMS-konformer Sicherheitsprotokolle und Personalschulung"
+    - "Integration in bestehende chirurgische und internistische Abteilungen"

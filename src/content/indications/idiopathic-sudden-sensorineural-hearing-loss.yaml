@@ -3,15 +3,19 @@ tier: "fda-approved"
 category:
   en: "Sensory Disorders"
   el: "Αισθητηριακές Διαταραχές"
+  de: "Sinneserkrankungen"
 condition:
   en: "Idiopathic Sudden Sensorineural Hearing Loss"
   el: "Ιδιοπαθής Αιφνίδια Αισθητηριονευρική Απώλεια Ακοής"
+  de: "Idiopathischer plötzlicher sensorineuraler Hörverlust"
 description:
   en: "Adjunctive treatment when corticosteroids fail. Reverses cochlear hypoxia and reduces endolymphatic hydrops."
   el: "Επικουρική θεραπεία όταν αποτυγχάνουν τα κορτικοστεροειδή. Αντιστρέφει κοχλιακή υποξία και μειώνει ενδολεμφικό ύδρωπα."
+  de: "Adjuvante Therapie bei Versagen von Kortikosteroiden. Kehrt die kochleäre Hypoxie um und reduziert den endolymphatischen Hydrops."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
+  de: "Standardtherapie"
 evidenceLevel: "B"
 protocol:
   ata: "2.0 – 2.5 ATA"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "10 – 20"
     el: "10 – 20"
+    de: "10 – 20"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+    de: "Einmal täglich, 5×/Woche"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
+    de: "UHMS / Standardtherapie"
 refs:
   - "[1]"
   - "[14]"

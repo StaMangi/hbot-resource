@@ -1,20 +1,24 @@
 name:
   en: "Medical Oncology"
   el: "Παθολογική Ογκολογία"
+  de: "Internistische Onkologie"
 icon: "Activity"
 color: "#b45309"
 shortDesc:
   en: "Radiation Injury, Tumor Sensitization"
   el: "Ακτινοβολική Βλάβη, Ευαισθητοποίηση Όγκου"
+  de: "Strahlenschäden, Tumorsensibilisierung"
 applications:
   - title:
       en: "Delayed Radiation Injury"
       el: "Καθυστερημένη Ακτινοβολική Βλάβη"
+      de: "Verzögerte Strahlenschäden"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Standard-of-care treatment for osteoradionecrosis and soft tissue radiation necrosis. HBOT promotes angiogenesis in hypoxic, hypovascular, hypocellular irradiated tissue."
       el: "Θεραπεία πρότυπου φροντίδας για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Η HBOT προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ακτινοβολημένο ιστό."
+      de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe."
     evidence: "Level A"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -22,22 +26,27 @@ applications:
       sessions:
         en: "30 – 60"
         el: "30 – 60"
+        de: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
+        de: "UHMS / FDA-zugelassen"
     refs:
       - "[9]"
   - title:
       en: "Radiation Cystitis & Proctitis"
       el: "Ακτινοβολική Κυστίτιδα & Πρωκτίτιδα"
+      de: "Strahlenzystitis & Strahlenproktitis"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Approved adjunctive treatment for radiation-induced hemorrhagic cystitis and proctitis, reducing bleeding and promoting mucosal healing."
       el: "Εγκεκριμένη επικουρική θεραπεία για αιμορραγική κυστίτιδα και πρωκτίτιδα από ακτινοβολία, μειώνοντας αιμορραγία και προάγοντας επούλωση βλεννογόνου."
+      de: "Zugelassene adjuvante Therapie bei strahleninduzierter hämorrhagischer Zystitis und Proktitis; reduziert Blutungen und fördert die Schleimhautheilung."
     evidence: "Level A"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -45,22 +54,27 @@ applications:
       sessions:
         en: "30 – 40"
         el: "30 – 40"
+        de: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[9]"
   - title:
       en: "Tumor Radiosensitization"
       el: "Ακτινοευαισθητοποίηση Όγκου"
+      de: "Tumor-Strahlensensibilisierung"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Investigational use as neoadjuvant therapy to sensitize hypoxic solid tumors to radiotherapy and chemotherapy. Hypoxic tumor microenvironments are resistant to radiation; HBOT may reverse this resistance."
       el: "Ερευνητική χρήση ως νεοεπικουρική θεραπεία για ευαισθητοποίηση υποξικών συμπαγών όγκων σε ακτινοθεραπεία και χημειοθεραπεία. Υποξικά μικροπεριβάλλοντα όγκων αντιστέκονται στην ακτινοβολία· η HBOT μπορεί να αντιστρέψει αυτή την αντίσταση."
+      de: "Investigative Anwendung als neoadjuvante Therapie zur Sensibilisierung hypoxischer solider Tumoren gegenüber Strahlen- und Chemotherapie. Hypoxische Tumormikromilieus sind strahlenresistent; HBOT kann diese Resistenz umkehren."
     evidence: "Level C"
     protocol:
       ata: "2.0 – 2.5 ATA"
@@ -68,22 +82,27 @@ applications:
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
+        de: "Pro Strahlenzyklus"
       frequency:
         en: "Prior to each radiation fraction"
         el: "Πριν από κάθε κλάσμα ακτινοβολίας"
+        de: "Vor jeder Strahlenfraktion"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
+        de: "Investigativ"
     refs:
       - "[17]"
   - title:
       en: "Breast Radiation Complications"
       el: "Επιπλοκές Ακτινοθεραπείας Μαστού"
+      de: "Komplikationen der Brustbestrahlung"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Effective treatment for late radiation toxicity in breast cancer patients, including radiation dermatitis and tissue necrosis following breast-conserving surgery."
       el: "Αποτελεσματική θεραπεία για όψιμη ακτινοτοξικότητα σε ασθενείς με καρκίνο μαστού, συμπεριλαμβανομένης ακτινοδερματίτιδας και νέκρωσης ιστού μετά από συντηρητική χειρουργική μαστού."
+      de: "Wirksame Behandlung der späten Strahlentoxizität bei Brustkrebspatientinnen, einschließlich Strahlendermatitis und Gewebenekrose nach brusterhaltender Operation."
     evidence: "Level A"
     protocol:
       ata: "2.0 – 2.4 ATA"
@@ -91,11 +110,14 @@ applications:
       sessions:
         en: "30 – 40"
         el: "30 – 40"
+        de: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
+        de: "Einmal täglich, 5×/Woche"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
+        de: "UHMS / Standardtherapie"
     refs:
       - "[9]"

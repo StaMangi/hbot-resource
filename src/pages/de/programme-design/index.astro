@@ -1,0 +1,162 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "de" as const;
+const prefix = "/de";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Longevity-Programmgestaltung",
+  description:
+    "Betreiber-Leitlinien zur Gestaltung ethischer, evidenzbasierter HBOT-Programme im Longevity- und Wellness-Kontext.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Programmgestaltung — HBOT Science"
+  description="Betreiber-Leitlinien zur Gestaltung ethischer, evidenzbasierter HBOT-Programme im Longevity- und Wellness-Kontext — Patientenscreening, Protokollauswahl, Ergebnismessung, Claim-Grenzen, Compliance."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Betreiber-Referenz</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Programmgestaltung
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Diese Seite ist eine Betreiber-Leitlinie zur Gestaltung ethischer,
+      evidenzbasierter HBOT-Programme im Longevity- und Wellness-Kontext. Sie
+      ist kein klinisches Protokoll und ersetzt keine ärztlich geleitete
+      Patientenbeurteilung. Wellness-orientierte Programme liegen außerhalb
+      der FDA-zugelassenen Indikationen; die Formulierungen auf dieser Seite
+      sind mit diesem Geltungsbereich konsistent.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Patientenscreening
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Der Eintritt in das Programm sollte einer strukturierten Voruntersuchung
+        folgen, die dieselben Sicherheitsaspekte adressiert wie die klinische
+        HBOT (siehe Seite <a
+          href="/de/safety/"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >Sicherheit & Kontraindikationen</a
+        >). Mindestens:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Umfassende Anamnese (kardial, pulmonal, neurologisch, onkologisch).</li>
+        <li>Medikamentenüberprüfung (chemotherapeutische Wirkstoffe, Disulfiram, Insulin und Sulfonylharnstoffe).</li>
+        <li>Beurteilung von Trommelfell und Tubenfunktion.</li>
+        <li>Schwangerschaftsstatus, sofern zutreffend.</li>
+        <li>Klaustrophobie-/Angst-Screening.</li>
+        <li>Zieldefinition: kognitiv, sportliche Erholung, Fatigue / Schlaf, allgemeines Wohlbefinden — unterschiedliche Ziele haben unterschiedliche Protokollimplikationen.</li>
+        <li>Gespräch über realistische Erwartungen: HBOT im Wellness-Kontext ist keine Behandlung einer FDA-zugelassenen Erkrankung; Effekte sind moderat, individuell variabel und erfordern eine konsequente Adhärenz.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Protokollauswahl
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Programmprotokolle sollten an der Evidenzbasis für das adressierte
+        Ziel ausgerichtet werden. Wählen Sie das in der Quelle zitierte
+        Protokoll, anstatt zu improvisieren:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Kognitive Förderung</strong> — 60 Sitzungen, 2,0 ATA, 90 min, 5×/Woche (Hadanny-2020-RKS bei gesunden älteren Erwachsenen).</li>
+        <li><strong>Telomerverlängerung / zelluläre Seneszenz</strong> — 60 Sitzungen, 2,0 ATA, 90 min, 5×/Woche.</li>
+        <li><strong>Sportliche Erholung</strong> — kurze Zyklen (10–20 Sitzungen pro Zyklus, nach dem Training oder täglich); die Evidenz ist vorläufig.</li>
+        <li><strong>Allgemeines Wohlbefinden / Fatigue</strong> — es existiert kein validiertes Wellness-spezifisches Protokoll; falls durchgeführt, ist das kognitive/Longevity-Protokoll die nächstgelegene quellenbasierte Referenz.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[4]", "[3]", "[8]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Häufigkeits- und Dauer-Normen
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Standard-Wellness-Programm</strong>: 40–60 Sitzungen über 12–14 Wochen mit 5×/Woche, 90 min pro Sitzung, 2,0 ATA.</li>
+        <li><strong>Erhaltungsphase</strong>: nicht standardisiert. Einige Betreiber bieten monatliche Erhaltungssitzungen an; die Evidenz für einen Erhaltungsnutzen ist nicht etabliert.</li>
+        <li><strong>Zyklusstruktur</strong>: kontinuierliche 5-Tage-Wochen mit Wochenendpause sind die meistzitierte Kadenz; eine tägliche 7-Tage-Kadenz ist nicht besser belegt und erhöht das Nebenwirkungsrisiko.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Ergebnismessung
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Was ein Betreiber ethisch vertretbar messen kann, hängt davon ab, was
+        die zugrundeliegende Evidenz unterstützt. Konservativ erfassen,
+        ehrlich berichten.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Kognitive Programme</strong>: validierte kognitive Testbatterien (Informationsverarbeitungsgeschwindigkeit, Aufmerksamkeit, Gedächtnis) prä und post gemessen.</li>
+        <li><strong>Telomer-/Seneszenz-Programme</strong>: eine laborchemische Messung der Telomerlänge ist machbar, aber teuer; die meisten Betreiber bieten dies nicht routinemäßig an. Selbstberichtete Energie/Schlaf ist kein Ersatz für biologische Marker.</li>
+        <li><strong>Sportliche Erholung</strong>: subjektive Erholungsskalen, Laktat-Clearance, sofern messbar, Schlaf-Tracking.</li>
+        <li><strong>Allgemeines Wohlbefinden</strong>: validierte patientenberichtete Outcome-Maße (z. B. SF-36, PROMIS); maßgeschneiderte Fragebögen ohne psychometrische Validierung sind zu vermeiden.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Claim-Grenzen
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Die folgenden Aussagen sollten über ein Wellness-HBOT-Programm
+        <strong>nicht</strong> gemacht werden. Jede ist entweder explizit
+        außerhalb der Evidenzbasis oder durch die aktuelle Literatur aktiv
+        kontraindiziert:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>„Krebshemmende" Effekte — HBOT ist mit mehreren chemotherapeutischen Wirkstoffen kontraindiziert und ist keine onkologische Behandlung.</li>
+        <li>Behandlung von Autismus-Spektrum-Störungen, Multipler Sklerose, infantiler Zerebralparese oder Lyme-Borreliose — keine dieser Indikationen ist evidenzbasiert für HBOT.</li>
+        <li>„Detox"-, „Anti-Aging-Heilung"- oder „DNA-Reparatur"-Formulierungen — Marketing-Sprache ohne wissenschaftliche Grundlage.</li>
+        <li>Spezifische Aussagen zur Lebensverlängerung oder „Umkehr des biologischen Alters" — die zugrundeliegenden Telomerlängen-Daten lassen keine Aussagen zur Lebensspanne zu.</li>
+        <li>Behandlung psychiatrischer Erkrankungen außerhalb evidenzbasierter Indikationen (z. B. ist die Evidenz für PTBS gemischt).</li>
+        <li>Anwendung im ersten Trimester der Schwangerschaft, ausgenommen Notfallindikationen.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Compliance und Adhärenz
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Eine Adhärenz unter ~80 % der geplanten Sitzungen reduziert die Wahrscheinlichkeit eines messbaren Nutzens; dies sollte beim Einverständnis als Programm-Erwartung kommuniziert werden.</li>
+        <li>Abbruchgründe sollten dokumentiert werden: Mittelohr-Barotrauma, Angst, Terminschwierigkeiten, wahrgenommener fehlender Nutzen.</li>
+        <li>Wiedereinstieg: Ein pausiertes Programm kann innerhalb von 4–6 Wochen ohne signifikanten Zyklus-Reset wieder aufgenommen werden; längere Pausen rechtfertigen einen Neustart ab Baseline-Beurteilung.</li>
+        <li>Dokumentation: jede Sitzung mit Druck, Dauer, Startzeit, Nebenwirkungen und patientenberichteter Verträglichkeit erfassen.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Diese Leitlinie spiegelt aktuelle Evidenz und Praxisnormen wider. Sie ist
+      eine Betreiber-Referenz, keine regulatorische Beratung. Lokale
+      Gesundheits- und Verbraucherschutzvorschriften gelten und können
+      zusätzliche Anforderungen an Programmgestaltung und Claim-Sprache
+      stellen.
+    </p>
+  </article>
+</LandingLayout>

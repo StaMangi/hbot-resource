@@ -3,15 +3,19 @@ tier: "emerging"
 category:
   en: "Aesthetic & Reconstructive Surgery"
   el: "Αισθητική & Επανορθωτική Χειρουργική"
+  de: "Ästhetische und rekonstruktive Chirurgie"
 condition:
   en: "Aesthetic & Reconstructive Recovery"
   el: "Αισθητική & Επανορθωτική Αποκατάσταση"
+  de: "Ästhetische und rekonstruktive Erholung"
 description:
   en: "Adjunctive HBOT in aesthetic and reconstructive surgery for accelerated post-procedure healing and salvage of compromised grafts and flaps. A 2023 case–control study of facelift patients (n=20, retrospectively matched, single surgeon) reported mean wound healing of 13.3 days in the HBOT group versus 36.9 days in matched controls (P<.001), with sessions starting within 24 hours of surgery at approximately 2.0 ATA. Reviews of compromised flaps and grafts characterise HBOT as a salvage adjunct that improves oxygen delivery, angiogenesis, fibroblast activity, and edema control while standard surgical management addresses the mechanical cause of failure. HBOT is positioned as a salvage and recovery adjunct, not as a routine enhancer of uncomplicated cosmetic surgery."
   el: "Επικουρική HBOT σε αισθητική και επανορθωτική χειρουργική για επιταχυνόμενη μετεγχειρητική επούλωση και διάσωση διακυβευμένων μοσχευμάτων και κρημνών. Μελέτη ασθενών–μαρτύρων του 2023 σε ασθενείς face-lift (n=20, αναδρομικά συζευγμένοι, ένας χειρουργός) ανέφερε μέση επούλωση τραύματος 13,3 ημερών στην ομάδα HBOT έναντι 36,9 ημερών σε συζευγμένους μάρτυρες (P<0,001), με τις συνεδρίες να ξεκινούν εντός 24 ωρών από τη χειρουργική επέμβαση στα περίπου 2.0 ATA. Ανασκοπήσεις διακυβευμένων κρημνών και μοσχευμάτων χαρακτηρίζουν την HBOT ως επικουρική θεραπεία διάσωσης που βελτιώνει τη μεταφορά οξυγόνου, την αγγειογένεση, την ινοβλαστική δραστηριότητα και τον έλεγχο του οιδήματος, ενώ η τυπική χειρουργική αντιμετώπιση αντιμετωπίζει τη μηχανική αιτία αποτυχίας. Η HBOT τοποθετείται ως επικουρική θεραπεία διάσωσης και αποκατάστασης, όχι ως ρουτίνας ενισχυτής μη επιπλεγμένης αισθητικής χειρουργικής."
+  de: "Adjuvante HBOT in der ästhetischen und rekonstruktiven Chirurgie zur beschleunigten postoperativen Wundheilung und zur Rettung gefährdeter Hauttransplantate und Lappen. Eine Fall-Kontroll-Studie von 2023 an Facelift-Patienten (n=20, retrospektiv gematcht, ein Chirurg) berichtete über eine mittlere Wundheilungszeit von 13,3 Tagen in der HBOT-Gruppe gegenüber 36,9 Tagen in den gematchten Kontrollen (P<0,001), wobei die Sitzungen innerhalb von 24 Stunden nach der Operation bei etwa 2,0 ATA begannen. Übersichtsarbeiten zu gefährdeten Lappen und Transplantaten beschreiben HBOT als adjuvante Rettungstherapie, die die Sauerstoffzufuhr, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle verbessert, während die chirurgische Standardversorgung die mechanische Ursache des Versagens behandelt. HBOT wird als adjuvante Rettungs- und Erholungstherapie positioniert, nicht als Routine-Verstärker unkomplizierter ästhetischer Chirurgie."
 evidence:
   en: "Emerging Evidence"
   el: "Αναδυόμενα Στοιχεία"
+  de: "Aufkommende Evidenz"
 evidenceLevel: "B"
 protocol:
   ata: "2.0 – 2.5 ATA"
@@ -19,12 +23,15 @@ protocol:
   sessions:
     en: "5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage)"
     el: "5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού)"
+    de: "5 – 10 (ästhetisch) / 20 – 30 (Transplantat-/Lappenrettung)"
   frequency:
     en: "Once daily; within 24 h of surgery for salvage cases"
     el: "Μία φορά την ημέρα· εντός 24 ωρών από τη χειρουργική επέμβαση για περιπτώσεις διάσωσης"
+    de: "Einmal täglich; innerhalb von 24 Stunden nach der Operation bei Rettungsfällen"
   basis:
     en: "Case–Control Study (Neel et al., 2023) + Reviews"
     el: "Μελέτη Ασθενών–Μαρτύρων (Neel et al., 2023) + Ανασκοπήσεις"
+    de: "Fall-Kontroll-Studie (Neel et al., 2023) + Übersichtsarbeiten"
 refs:
   - "[37]"
   - "[38]"
