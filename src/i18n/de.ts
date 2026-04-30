@@ -22,6 +22,7 @@ export const de = {
   "nav.contact": "Kontakt",
   "nav.cta": "Fachbereiche entdecken",
   "nav.brand": "HBOT Science",
+  "nav.changeLanguage": "Sprache ändern",
   "hero.badge": "Evidenzbasierte Referenz · Klinische und Langlebigkeits-Anwendungen",
   "hero.title1": "Hyperbare",
   "hero.title2": "Sauerstofftherapie",

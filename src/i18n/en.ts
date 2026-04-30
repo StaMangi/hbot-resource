@@ -22,6 +22,7 @@ export const en = {
   "nav.contact": "Contact Us",
   "nav.cta": "Explore Departments",
   "nav.brand": "HBOT Science",
+  "nav.changeLanguage": "Change language",
   "hero.badge": "Evidence-Based Reference · Clinical & Longevity Applications",
   "hero.title1": "Hyperbaric Oxygen",
   "hero.title2": "Therapy",
