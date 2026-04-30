@@ -27,6 +27,7 @@ export const el = {
   "nav.contact": "Επικοινωνία",
   "nav.cta": "Εξερεύνηση Τμημάτων",
   "nav.brand": "HBOT Science",
+  "nav.changeLanguage": "Αλλαγή γλώσσας",
   "hero.badge": "Τεκμηριωμένος Οδηγός · Κλινικές & Εφαρμογές Μακροζωίας",
   "hero.title1": "Θεραπεία με",
   "hero.title2": "Υπερβαρικό Οξυγόνο",
