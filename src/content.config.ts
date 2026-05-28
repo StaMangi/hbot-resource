@@ -172,6 +172,28 @@ const siteStats = defineCollection({
   }),
 });
 
+// Research Digest — weekly issues. ENGLISH ONLY by locked decision (one
+// digest for everyone), so fields are plain strings, NOT bilingual. Each
+// issue is a frontmatter-only Markdown file under src/content/digest/.
+// Routing keys off the filename (entry.id), e.g. 2026-w22.md → /digest/2026-w22/.
+const digest = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/digest" }),
+  schema: z.object({
+    slug: z.string(),
+    date: z.coerce.date(),
+    title: z.string(),
+    items: z
+      .array(
+        z.object({
+          title: z.string(),
+          url: z.string().url(),
+          summary: z.string(),
+        }),
+      )
+      .min(1),
+  }),
+});
+
 export const collections = {
   mechanisms,
   indications,
@@ -182,4 +204,5 @@ export const collections = {
   "strategic-recommendations": strategicRecommendations,
   references,
   "site-stats": siteStats,
+  digest,
 };

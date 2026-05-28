@@ -23,6 +23,9 @@ export interface Props {
   jsonLd?: Record<string, unknown>;
   /** Set true for pages we don't want indexed (e.g. preview-only). */
   noindex?: boolean;
+  /** EN-only sections (e.g. /digest/) have no localized variants — emit only
+   *  the en + x-default hreflang alternates, never el/de/it (which would 404). */
+  enOnly?: boolean;
   /** Breadcrumb trail (Home › Index › Detail). When set, BreadcrumbList
    * JSON-LD is emitted alongside any other jsonLd block. */
   breadcrumbs?: BreadcrumbItem[];
@@ -37,6 +40,7 @@ const {
   ogType = "website",
   jsonLd,
   noindex = false,
+  enOnly = false,
   breadcrumbs,
 } = Astro.props;
 
@@ -71,9 +75,9 @@ const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogI
 
 <link rel="canonical" href={canonical} />
 <link rel="alternate" hreflang="en" href={enUrl} />
-<link rel="alternate" hreflang="el" href={elUrl} />
-<link rel="alternate" hreflang="de" href={deUrl} />
-<link rel="alternate" hreflang="it" href={itUrl} />
+{!enOnly && <link rel="alternate" hreflang="el" href={elUrl} />}
+{!enOnly && <link rel="alternate" hreflang="de" href={deUrl} />}
+{!enOnly && <link rel="alternate" hreflang="it" href={itUrl} />}
 <link rel="alternate" hreflang="x-default" href={enUrl} />
 
 {noindex && <meta name="robots" content="noindex, nofollow" />}

@@ -15,9 +15,13 @@ import { t } from "@/i18n";
 interface Props {
   locale: Locale;
   pathname: string;
+  /** EN-only sections (e.g. /digest/) have no localized variants. When true,
+   *  the language switcher points the other locales to their homepage instead
+   *  of a non-existent localized path (avoids 404s + broken hreflang). */
+  enOnly?: boolean;
 }
 
-const { locale, pathname } = Astro.props;
+const { locale, pathname, enOnly = false } = Astro.props;
 
 // Native form (endonym) of each locale, shown in the language-switcher
 // dropdown. Endonyms are the convention: each language is offered to the
@@ -85,6 +89,9 @@ const library = [
   { href: `${prefix}/longevity/`, label: navLabels.longevity },
   { href: `${prefix}/evidence/`, label: navLabels.evidence },
   { href: `${prefix}/references/`, label: navLabels.references },
+  // Research Digest is English-only content (locked decision): the link is the
+  // same /digest/ path from every locale's chrome — no /<locale>/digest/.
+  { href: "/digest/", label: t("nav.digest", locale) },
 ];
 
 const allLinks = [...paths, ...library];
@@ -204,7 +211,7 @@ const isActive = (href: string): boolean => {
           return (
             <li>
               <a
-                href={localePath(pathname, l)}
+                href={enOnly ? (isCurrent ? pathname : localePath("/", l)) : localePath(pathname, l)}
                 hreflang={l}
                 aria-current={isCurrent ? "page" : undefined}
                 class:list={[
