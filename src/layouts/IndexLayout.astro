@@ -21,6 +21,9 @@ export interface Props {
   ogType?: "website" | "article";
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
+  /** EN-only sections (e.g. /digest/) — threaded to Nav (switcher targets)
+   *  and to BaseLayout/BaseHead (hreflang). */
+  enOnly?: boolean;
 
   /** Section header content (visible on the page itself, not the document head). */
   badge: string;
@@ -39,7 +42,7 @@ const {
 ---
 
 <BaseLayout {...baseProps}>
-  <Nav slot="nav" locale={baseProps.locale} pathname={baseProps.pathname} />
+  <Nav slot="nav" locale={baseProps.locale} pathname={baseProps.pathname} enOnly={baseProps.enOnly} />
   <Footer slot="footer" locale={baseProps.locale} pathname={baseProps.pathname} />
 
   <section class="py-16 md:py-20 max-w-6xl mx-auto px-6">

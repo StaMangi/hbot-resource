@@ -1,0 +1,139 @@
+---
+/**
+ * SubscribeForm — digest subscription widget.
+ *
+ * Reusable + localised: UI strings come from i18n so it can sit on a localized
+ * page (homepage/footer later) and speak the user's language, even though the
+ * digest content itself is English-only.
+ *
+ * Zero framework. A small bundled script handles submit → POST /api/subscribe
+ * (the Cloudflare Pages Function) → status message. Localised strings are
+ * passed via data-* attributes (no per-instance script). Abuse protection is
+ * Cloudflare Turnstile; the function re-verifies the token server-side.
+ *
+ * The Turnstile sitekey is public. Set PUBLIC_TURNSTILE_SITEKEY as a Cloudflare
+ * Pages build env var; until then it falls back to Cloudflare's always-passes
+ * TEST sitekey so the widget renders during the build-now phase.
+ */
+import { t } from "@/i18n";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const TURNSTILE_SITEKEY =
+  import.meta.env.PUBLIC_TURNSTILE_SITEKEY ?? "1x00000000000000000000AA";
+
+// Unique per render so multiple instances on one page never collide on id.
+const formId = `subscribe-${Math.random().toString(36).slice(2, 8)}`;
+
+const strings = {
+  heading: t("digest.subscribe.heading", locale),
+  description: t("digest.subscribe.description", locale),
+  placeholder: t("digest.subscribe.placeholder", locale),
+  button: t("digest.subscribe.button", locale),
+  success: t("digest.subscribe.success", locale),
+  already: t("digest.subscribe.already", locale),
+  error: t("digest.subscribe.error", locale),
+};
+---
+
+<section class="rounded-xl border border-teal-200 bg-teal-50/40 p-6">
+  <h2
+    class="text-lg font-semibold text-slate-900"
+    style="font-family: var(--font-display)"
+  >
+    {strings.heading}
+  </h2>
+  <p class="mt-1.5 text-sm text-slate-600">{strings.description}</p>
+
+  <form
+    id={formId}
+    data-subscribe
+    data-success={strings.success}
+    data-already={strings.already}
+    data-error={strings.error}
+    class="mt-4 flex flex-col gap-3"
+  >
+    <div class="flex flex-col sm:flex-row gap-3">
+      <label class="sr-only" for={`${formId}-email`}>{strings.placeholder}</label>
+      <input
+        id={`${formId}-email`}
+        type="email"
+        name="email"
+        required
+        autocomplete="email"
+        placeholder={strings.placeholder}
+        class="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-800 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-lg bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        {strings.button}
+      </button>
+    </div>
+    <div class="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} data-size="flexible"></div>
+    <p data-status role="status" aria-live="polite" class="hidden text-sm"></p>
+  </form>
+</section>
+
+<script
+  is:inline
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer></script>
+
+<script>
+  // Wires every subscribe form on the page. Reads localized messages from
+  // data-* attributes so this single bundled script serves any instance.
+  document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form) => {
+    const status = form.querySelector<HTMLElement>("[data-status]");
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]");
+    if (!status || !button) return;
+
+    const setStatus = (text: string, ok: boolean) => {
+      status.textContent = text;
+      status.classList.remove("hidden", "text-emerald-700", "text-red-600");
+      status.classList.add(ok ? "text-emerald-700" : "text-red-600");
+    };
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const emailInput = form.querySelector<HTMLInputElement>("input[name=email]");
+      const tokenInput = form.querySelector<HTMLInputElement>(
+        "input[name='cf-turnstile-response']",
+      );
+      const email = emailInput ? emailInput.value.trim() : "";
+      const turnstileToken = tokenInput ? tokenInput.value : "";
+      if (!email) return;
+
+      button.disabled = true;
+      try {
+        const res = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ email, turnstileToken }),
+        });
+        const data: { status?: string } = await res.json().catch(() => ({}));
+        if (res.ok && data.status === "subscribed") {
+          setStatus(form.dataset.success || "", true);
+          form.reset();
+        } else if (res.ok && data.status === "already_subscribed") {
+          setStatus(form.dataset.already || "", true);
+        } else {
+          setStatus(form.dataset.error || "", false);
+          button.disabled = false;
+        }
+      } catch {
+        setStatus(form.dataset.error || "", false);
+        button.disabled = false;
+      }
+
+      const ts = (window as unknown as { turnstile?: { reset: () => void } }).turnstile;
+      if (ts) ts.reset();
+    });
+  });
+</script>

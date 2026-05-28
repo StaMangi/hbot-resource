@@ -13,6 +13,9 @@ export interface Props {
   ogType?: "website" | "article";
   jsonLd?: Record<string, unknown>;
   noindex?: boolean;
+  /** EN-only sections (e.g. /digest/) — forwarded to BaseHead to suppress
+   *  el/de/it hreflang alternates. */
+  enOnly?: boolean;
   breadcrumbs?: BreadcrumbItem[];
 }
 
