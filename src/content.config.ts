@@ -6,19 +6,23 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-// "bilingual" is the historic name; the field is now trilingual (EN/EL/DE).
-// Phase 7 multilingual rollout (German) closed at Stage 6 — DE is now
-// required at build time, matching EN/EL.
+// "bilingual" is the historic name; the field is now quad-lingual (EN/EL/DE/IT).
+// Phase 7 multilingual rollout (German) closed at Stage 6 — DE is required.
+// Phase 7.B (Italian) is mid-rollout: `it` is OPTIONAL during Stages 1–5
+// (warn-not-fail, so incremental content commits don't break the build) and
+// gets flipped to required at Stage 6 once every entry is populated.
 const bilingual = z.object({
   en: z.string(),
   el: z.string(),
   de: z.string(),
+  it: z.string().optional(),
 });
 
 const bilingualStringArray = z.object({
   en: z.array(z.string()),
   el: z.array(z.string()),
   de: z.array(z.string()),
+  it: z.array(z.string()).optional(),
 });
 
 const protocol = z.object({

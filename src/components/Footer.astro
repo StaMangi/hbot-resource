@@ -19,7 +19,9 @@ const aboutLabel =
     ? "Editorial policy"
     : locale === "el"
       ? "Εκδοτική πολιτική"
-      : "Redaktionelle Richtlinien";
+      : locale === "de"
+        ? "Redaktionelle Richtlinien"
+        : "Politica editoriale";
 
 const year = new Date().getFullYear();
 // Language toggle removed from Footer in Phase 5 polish — the Nav toggle

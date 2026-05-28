@@ -36,7 +36,13 @@ const typeBadge = (type: string) => {
 };
 
 const citedInLabel =
-  locale === "el" ? "Παραπέμπεται σε" : locale === "de" ? "Zitiert in" : "Cited in";
+  locale === "el"
+    ? "Παραπέμπεται σε"
+    : locale === "de"
+      ? "Zitiert in"
+      : locale === "it"
+        ? "Citato in"
+        : "Cited in";
 ---
 
 <li
