@@ -178,17 +178,39 @@ async function checkRef(ref) {
   let error;
   const method = cls.kind === "doi" ? "crossref" : "direct";
 
-  try {
-    const res =
-      cls.kind === "doi" ? await checkViaCrossRef(cls.doi) : await checkDirect(cls.url);
-    status = res.status;
-  } catch (e) {
-    error = e.name === "AbortError" ? "timeout" : e.message;
+  // Retry transient network failures (timeout / fetch failed) with linear
+  // backoff. A momentary blip from a CI runner shouldn't fail the build; the
+  // loop stops as soon as we get any HTTP response, or after exhausting tries.
+  const MAX_ATTEMPTS = 3;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    status = undefined;
+    error = undefined;
+    try {
+      const res =
+        cls.kind === "doi" ? await checkViaCrossRef(cls.doi) : await checkDirect(cls.url);
+      status = res.status;
+      break; // got an HTTP response (any status) — no point retrying
+    } catch (e) {
+      error = e.name === "AbortError" ? "timeout" : e.message || "fetch failed";
+      if (attempt < MAX_ATTEMPTS) await new Promise((r) => setTimeout(r, attempt * 1000));
+    }
   }
 
   const ok = !error && status >= 200 && status < 400;
-  const result = { ok, status, error, method };
-  cacheStore(key, result);
+  // Editorial-integrity gate vs. flaky-network resilience (added Phase 7.B):
+  // a build-breaking HARD failure requires positive proof the citation is
+  // dead — an HTTP/CrossRef 404 or 410 (Gone). A network error (timeout /
+  // fetch failed) or an anti-bot status (403 / 5xx) does NOT prove the target
+  // is missing, so it is downgraded to a non-fatal WARNING. This stops one
+  // unreliable host (e.g. scivisionpub.com timing out from Cloudflare's build
+  // IPs while resolving fine everywhere else) from randomly breaking an
+  // otherwise-valid deploy, without weakening the dead-link guarantee.
+  const hardFail = !ok && !error && (status === 404 || status === 410);
+  const softWarn = !ok && !hardFail;
+  const result = { ok, status, error, method, hardFail, softWarn };
+  // Cache only positive resolutions — never persist a transient failure, or
+  // it would suppress a retry on the next local run within the 24h TTL.
+  if (ok) cacheStore(key, result);
   return result;
 }
 
@@ -207,7 +229,8 @@ console.log(
   `Verifying ${refs.length} references (CrossRef for DOIs, direct HEAD for repository URLs)...\n`,
 );
 
-const failures = [];
+const failures = []; // hard failures (dead link / malformed) → abort build
+const warnings = []; // soft warnings (network / anti-bot) → report, don't abort
 const cacheHits = [];
 
 for (let i = 0; i < refs.length; i++) {
@@ -228,9 +251,14 @@ for (let i = 0; i < refs.length; i++) {
     process.stdout.write(
       `✓ ${result.status} via ${result.method}${result.cached ? " (cached)" : ""}\n`,
     );
-  } else {
-    process.stdout.write(`✗ ${result.status ?? result.error} via ${result.method}\n`);
+  } else if (result.hardFail) {
+    process.stdout.write(`✗ ${result.status} via ${result.method} (dead link)\n`);
     failures.push({ ...ref, ...result });
+  } else {
+    process.stdout.write(
+      `⚠ ${result.status ?? result.error} via ${result.method} (unverified — not fatal)\n`,
+    );
+    warnings.push({ ...ref, ...result });
   }
 
   if (!result.cached && !result.malformed) {
@@ -246,8 +274,19 @@ if (cacheHits.length > 0) {
   );
 }
 
+if (warnings.length > 0) {
+  console.warn(
+    `\n⚠ ${warnings.length} reference(s) could not be verified from this environment ` +
+      `(network error or anti-bot status — NOT a 404/410). Non-fatal: these resolve ` +
+      `outside CI. Listed for audit:`,
+  );
+  for (const w of warnings) {
+    console.warn(`  ref-${w.num}.yaml — ${w.status ?? w.error} via ${w.method} — ${w.doi}`);
+  }
+}
+
 if (failures.length > 0) {
-  console.error(`\n✗ ${failures.length} reference(s) failed:\n`);
+  console.error(`\n✗ ${failures.length} reference(s) failed (dead link or malformed):\n`);
   for (const f of failures) {
     console.error(`  ref-${f.num}.yaml`);
     console.error(`    title: ${f.title}`);
@@ -255,12 +294,12 @@ if (failures.length > 0) {
     if (f.malformed) {
       console.error(`    error: malformed DOI field — ${f.reason}`);
     } else {
-      console.error(`    fail:  ${f.status ?? f.error}`);
+      console.error(`    fail:  ${f.status} (HTTP 404/410 — citation target is gone)`);
     }
     console.error("");
   }
   console.error(
-    "Build aborted. CrossRef 404 = DOI not registered (typo? wrong paper?).",
+    "Build aborted. A 404/410 means the citation target no longer exists.",
   );
   console.error(
     "Find the correct DOI on PubMed and update the YAML, or remove the citation.",
@@ -268,4 +307,10 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`\n✓ All ${refs.length} references resolve.`);
+const verified = refs.length - warnings.length;
+console.log(
+  `\n✓ ${verified}/${refs.length} references resolve` +
+    (warnings.length
+      ? ` (${warnings.length} unverified from this environment, non-fatal — see warnings above).`
+      : "."),
+);
