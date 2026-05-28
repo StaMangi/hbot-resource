@@ -1,0 +1,162 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "it" as const;
+const prefix = "/it";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Progettazione del programma di longevità",
+  description:
+    "Linee guida per operatori sulla progettazione di programmi HBOT etici e basati sull'evidenza nel contesto della longevità e del benessere.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Progettazione del programma — HBOT Science"
+  description="Linee guida per operatori sulla progettazione di programmi HBOT etici e basati sull'evidenza nel contesto della longevità e del benessere — screening del paziente, selezione del protocollo, misurazione degli esiti, limiti delle affermazioni, conformità."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Riferimento per operatori</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Progettazione del programma
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Questa pagina è una linea guida per operatori sulla progettazione di
+      programmi HBOT etici e basati sull'evidenza nel contesto della longevità
+      e del benessere. Non è un protocollo clinico e non sostituisce una
+      valutazione del paziente condotta da un medico. I programmi orientati al
+      benessere si collocano al di fuori delle indicazioni approvate dalla FDA;
+      le formulazioni presenti in questa pagina sono coerenti con tale ambito.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Screening del paziente
+      </h2>
+      <p class="text-slate-700 mb-3">
+        L'ingresso nel programma dovrebbe seguire una valutazione preliminare
+        strutturata che affronti gli stessi aspetti di sicurezza dell'HBOT
+        clinica (vedi la pagina <a
+          href="/it/safety/"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >Sicurezza e controindicazioni</a
+        >). Come minimo:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Anamnesi completa (cardiaca, polmonare, neurologica, oncologica).</li>
+        <li>Revisione dei farmaci (sostanze chemioterapiche, disulfiram, insulina e sulfoniluree).</li>
+        <li>Valutazione della membrana timpanica e della funzione tubarica.</li>
+        <li>Stato di gravidanza, se applicabile.</li>
+        <li>Screening per claustrofobia/ansia.</li>
+        <li>Definizione degli obiettivi: cognitivo, recupero sportivo, affaticamento / sonno, benessere generale — obiettivi diversi comportano implicazioni diverse sul protocollo.</li>
+        <li>Colloquio sulle aspettative realistiche: l'HBOT nel contesto del benessere non è un trattamento di una condizione approvata dalla FDA; gli effetti sono moderati, variabili da individuo a individuo e richiedono un'aderenza costante.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Selezione del protocollo
+      </h2>
+      <p class="text-slate-700 mb-3">
+        I protocolli del programma dovrebbero essere allineati alla base di
+        evidenza per l'obiettivo affrontato. Scegliete il protocollo citato
+        nella fonte anziché improvvisare:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Potenziamento cognitivo</strong> — 60 sedute, 2,0 ATA, 90 min, 5×/settimana (RCT Hadanny 2020 in anziani sani).</li>
+        <li><strong>Allungamento dei telomeri / senescenza cellulare</strong> — 60 sedute, 2,0 ATA, 90 min, 5×/settimana.</li>
+        <li><strong>Recupero sportivo</strong> — cicli brevi (10–20 sedute per ciclo, dopo l'allenamento o quotidiane); l'evidenza è preliminare.</li>
+        <li><strong>Benessere generale / affaticamento</strong> — non esiste un protocollo validato specifico per il benessere; se eseguito, il protocollo cognitivo/longevità è il riferimento basato sulla fonte più prossimo.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[4]", "[3]", "[8]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Norme su frequenza e durata
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programma di benessere standard</strong>: 40–60 sedute nell'arco di 12–14 settimane con 5×/settimana, 90 min per seduta, 2,0 ATA.</li>
+        <li><strong>Fase di mantenimento</strong>: non standardizzata. Alcuni operatori offrono sedute di mantenimento mensili; l'evidenza di un beneficio di mantenimento non è consolidata.</li>
+        <li><strong>Struttura del ciclo</strong>: settimane continue di 5 giorni con pausa nel fine settimana sono la cadenza più citata; una cadenza quotidiana di 7 giorni non è supportata da migliori prove e aumenta il rischio di eventi avversi.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Misurazione degli esiti
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Ciò che un operatore può misurare in modo eticamente difendibile dipende
+        da ciò che l'evidenza sottostante supporta. Misurare in modo
+        conservativo, riferire in modo onesto.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programmi cognitivi</strong>: batterie di test cognitivi validate (velocità di elaborazione delle informazioni, attenzione, memoria) misurate prima e dopo.</li>
+        <li><strong>Programmi telomeri/senescenza</strong>: una misurazione di laboratorio della lunghezza dei telomeri è fattibile ma costosa; la maggior parte degli operatori non la offre di routine. L'energia/il sonno autoriferiti non sostituiscono i marcatori biologici.</li>
+        <li><strong>Recupero sportivo</strong>: scale soggettive di recupero, clearance del lattato, se misurabile, monitoraggio del sonno.</li>
+        <li><strong>Benessere generale</strong>: misure di esito riferite dal paziente validate (ad es. SF-36, PROMIS); sono da evitare questionari personalizzati privi di validazione psicometrica.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Limiti delle affermazioni
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Le seguenti affermazioni <strong>non</strong> dovrebbero essere fatte
+        in merito a un programma HBOT di benessere. Ciascuna è esplicitamente al
+        di fuori della base di evidenza oppure attivamente controindicata dalla
+        letteratura attuale:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Effetti «antitumorali» — l'HBOT è controindicata con diverse sostanze chemioterapiche e non è un trattamento oncologico.</li>
+        <li>Trattamento dei disturbi dello spettro autistico, della sclerosi multipla, della paralisi cerebrale infantile o della malattia di Lyme — nessuna di queste indicazioni è basata sull'evidenza per l'HBOT.</li>
+        <li>Formulazioni di «detox», «cura anti-invecchiamento» o «riparazione del DNA» — linguaggio di marketing privo di fondamento scientifico.</li>
+        <li>Affermazioni specifiche sull'allungamento della vita o sull'«inversione dell'età biologica» — i dati sottostanti sulla lunghezza dei telomeri non consentono affermazioni sulla durata della vita.</li>
+        <li>Trattamento di disturbi psichiatrici al di fuori delle indicazioni basate sull'evidenza (ad es. l'evidenza per il PTSD è discordante).</li>
+        <li>Utilizzo nel primo trimestre di gravidanza, escluse le indicazioni di emergenza.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Conformità e aderenza
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Un'aderenza inferiore a circa l'80 % delle sedute pianificate riduce la probabilità di un beneficio misurabile; questo dovrebbe essere comunicato come aspettativa del programma al momento del consenso.</li>
+        <li>I motivi di interruzione dovrebbero essere documentati: barotrauma dell'orecchio medio, ansia, difficoltà di programmazione, percepita assenza di beneficio.</li>
+        <li>Ripresa: un programma sospeso può essere ripreso entro 4–6 settimane senza un significativo reset del ciclo; pause più lunghe giustificano un riavvio a partire dalla valutazione di base.</li>
+        <li>Documentazione: registrare ogni seduta con pressione, durata, orario di inizio, eventi avversi e tollerabilità riferita dal paziente.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Questa linea guida riflette l'evidenza attuale e le norme della pratica.
+      È un riferimento per operatori, non una consulenza normativa. Le normative
+      locali in materia di sanità e tutela dei consumatori si applicano e
+      possono imporre ulteriori requisiti sulla progettazione del programma e
+      sul linguaggio delle affermazioni.
+    </p>
+  </article>
+</LandingLayout>

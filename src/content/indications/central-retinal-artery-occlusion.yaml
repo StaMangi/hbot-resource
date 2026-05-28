@@ -4,40 +4,49 @@ category:
   en: "Sensory Disorders"
   el: "Αισθητηριακές Διαταραχές"
   de: "Sinneserkrankungen"
+  it: "Disturbi sensoriali"
 condition:
   en: "Central Retinal Artery Occlusion"
   el: "Απόφραξη Κεντρικής Αρτηρίας Αμφιβληστροειδούς"
   de: "Zentralarterienverschluss der Netzhaut"
+  it: "Occlusione dell'arteria centrale della retina"
 description:
   en: "Emergency treatment to preserve retinal layers and improve visual acuity through reversal of retinal ischemia."
   el: "Επείγουσα θεραπεία για διατήρηση στρωμάτων αμφιβληστροειδούς και βελτίωση οπτικής οξύτητας μέσω αντιστροφής αμφιβληστροειδικής ισχαιμίας."
   de: "Notfallbehandlung zur Erhaltung der Netzhautschichten und Verbesserung der Sehschärfe durch Umkehr der retinalen Ischämie."
+  it: "Trattamento d'emergenza per preservare gli strati retinici e migliorare l'acuità visiva attraverso il ripristino dell'ischemia retinica."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
+  it: "Standard di cura"
 evidenceLevel: "B"
 protocol:
   ata:
     en: "2.0 – 2.8 ATA"
     el: "2.0 – 2.8 ATA"
     de: "2.0 – 2.8 ATA"
+    it: "2.0 – 2.8 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "1 – 3 (emergency)"
     el: "1 – 3 (επείγον)"
     de: "1 – 3 (notfallmäßig)"
+    it: "1 – 3 (emergenza)"
   frequency:
     en: "Immediately, then daily"
     el: "Αμέσως, μετά καθημερινά"
     de: "Sofort, dann täglich"
+    it: "Immediatamente, poi quotidiano"
   basis:
     en: "UHMS / Emergency Standard"
     el: "UHMS / Επείγον Πρότυπο"
     de: "UHMS / Notfallstandard"
+    it: "UHMS / Standard di emergenza"
 refs:
   - "[1]"
   - "[19]"

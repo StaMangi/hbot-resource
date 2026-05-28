@@ -2,12 +2,14 @@ title:
   en: "Establish a Dedicated Hyperbaric Medicine Unit"
   el: "Ίδρυση Αφιερωμένης Μονάδας Υπερβαρικής Ιατρικής"
   de: "Aufbau einer eigenen hyperbarmedizinischen Einheit"
+  it: "Istituire una dedicata Unità di medicina iperbarica"
 icon: "Building2"
 priority: "High"
 description:
   en: "Create a specialized department staffed with certified hyperbaric physicians, trained nurses, and hyperbaric technicians. A multiplace chamber (6–12 seats) enables simultaneous treatment of multiple patients and allows full monitoring of critically ill patients."
   el: "Δημιουργία εξειδικευμένου τμήματος με πιστοποιημένους υπερβαρικούς ιατρούς, εκπαιδευμένες νοσηλεύτριες και υπερβαρικούς τεχνικούς. Ένας πολυθέσιος θάλαμος (6–12 θέσεις) επιτρέπει ταυτόχρονη θεραπεία πολλαπλών ασθενών και πλήρη παρακολούθηση κρίσιμα ασθενών."
   de: "Aufbau einer spezialisierten Abteilung mit zertifizierten Hyperbarmedizinerinnen und -medizinern, geschultem Pflegepersonal und Hyperbar-Techniker:innen. Eine Mehrplatzkammer (6–12 Plätze) ermöglicht die gleichzeitige Behandlung mehrerer Patient:innen und das vollständige Monitoring kritisch kranker Patient:innen."
+  it: "Creare un reparto specializzato con medici iperbarici certificati, personale infermieristico formato e tecnici iperbarici. Una camera multiposto (6–12 posti) consente il trattamento simultaneo di più pazienti e permette il monitoraggio completo dei pazienti critici."
 actions:
   en:
     - "Recruit a board-certified hyperbaric medicine physician"
@@ -24,3 +26,8 @@ actions:
     - "Installation einer Mehrplatzkammer mit vollständiger ITS-Monitoring-Fähigkeit"
     - "Etablierung UHMS-konformer Sicherheitsprotokolle und Personalschulung"
     - "Integration in bestehende chirurgische und internistische Abteilungen"
+  it:
+    - "Reclutare un medico di medicina iperbarica certificato"
+    - "Installare una camera multiposto con piena capacità di monitoraggio da terapia intensiva"
+    - "Istituire protocolli di sicurezza conformi alle UHMS e formazione del personale"
+    - "Integrare con i reparti esistenti di chirurgia e medicina interna"

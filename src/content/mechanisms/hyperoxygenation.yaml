@@ -2,15 +2,18 @@ title:
   en: "Hyperoxygenation & Vasoconstriction"
   el: "Υπεροξυγόνωση & Αγγειοσύσπαση"
   de: "Hyperoxygenierung & Vasokonstriktion"
+  it: "Iperossigenazione & Vasocostrizione"
 icon: "Droplets"
 color: "teal"
 summary:
   en: "HBOT reverses tissue hypoxia while simultaneously inducing vasoconstriction, reducing edema without compromising oxygen delivery."
   el: "Η HBOT αντιστρέφει την ιστική υποξία ενώ παράλληλα προκαλεί αγγειοσύσπαση, μειώνοντας το οίδημα χωρίς να διακυβεύεται η παροχή οξυγόνου."
   de: "HBOT kehrt die Gewebehypoxie um und induziert zugleich eine Vasokonstriktion, wodurch Ödeme reduziert werden, ohne die Sauerstoffversorgung zu beeinträchtigen."
+  it: "L'HBOT inverte l'ipossia tissutale inducendo al contempo una vasocostrizione, riducendo l'edema senza compromettere l'apporto di ossigeno."
 detail:
   en: "At 3.0 ATA breathing 100% oxygen, dissolved plasma oxygen increases by approximately 42%, providing sufficient oxygen to sustain cellular respiration even in the absence of hemoglobin. This is particularly beneficial in compartment syndrome and traumatic brain injury."
   el: "Στα 3,0 ATA με αναπνοή 100% οξυγόνου, το διαλυμένο οξυγόνο πλάσματος αυξάνεται κατά ~42%, παρέχοντας επαρκές οξυγόνο για κυτταρική αναπνοή ακόμα και χωρίς αιμοσφαιρίνη. Αυτό είναι ιδιαίτερα ωφέλιμο στο σύνδρομο διαμερίσματος και στο τραυματικό εγκεφαλικό τραύμα."
   de: "Bei 3,0 ATA und Atmung von 100 % Sauerstoff steigt der im Plasma gelöste Sauerstoff um etwa 42 % und liefert ausreichend Sauerstoff zur Aufrechterhaltung der Zellatmung, selbst in Abwesenheit von Hämoglobin. Dies ist besonders vorteilhaft beim Kompartmentsyndrom und beim Schädel-Hirn-Trauma."
+  it: "A 3,0 ATA con respirazione di ossigeno al 100%, l'ossigeno disciolto nel plasma aumenta di circa il 42%, fornendo ossigeno sufficiente a sostenere la respirazione cellulare anche in assenza di emoglobina. Ciò è particolarmente vantaggioso nella sindrome compartimentale e nel trauma cranico."
 refs:
   - "[1]"

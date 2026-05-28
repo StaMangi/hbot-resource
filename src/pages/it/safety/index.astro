@@ -1,0 +1,169 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "it" as const;
+const prefix = "/it";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Sicurezza e controindicazioni dell'HBOT",
+  description:
+    "Controindicazioni assolute e relative, eventi avversi, screening pre-trattamento e criteri di interruzione dell'ossigenoterapia iperbarica.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Sicurezza e controindicazioni — HBOT Science"
+  description="Controindicazioni assolute e relative, eventi avversi, screening pre-trattamento e criteri di interruzione dell'ossigenoterapia iperbarica."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Riferimento</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Sicurezza e controindicazioni
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      L'ossigenoterapia iperbarica è un intervento medico generalmente ben
+      tollerato, con un piccolo gruppo di controindicazioni assolute, un gruppo
+      più ampio di controindicazioni relative e un profilo definito di eventi
+      avversi. La sintesi che segue costituisce un riferimento clinico; non
+      sostituisce la valutazione specifica del singolo paziente.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Controindicazioni assolute
+      </h2>
+      <p class="text-slate-700 mb-3">
+        L'unica controindicazione assoluta generalmente riconosciuta nella
+        letteratura di medicina iperbarica è il <strong>pneumotorace non
+        trattato</strong>. I cicli di compressione e decompressione possono
+        trasformarlo in uno pneumotorace iperteso. Uno pneumotorace trattato e
+        stabilizzato non costituisce una controindicazione assoluta; la
+        decisione clinica deve bilanciare l'urgenza dell'indicazione rispetto
+        al rischio polmonare.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Aspetti chemioterapici relativi o specifici del contesto</strong>:
+        la somministrazione concomitante di doxorubicina (cardiotossicità),
+        bleomicina (tossicità polmonare), cisplatino (compromissione della
+        guarigione delle ferite) e disulfiram (compromette l'inattivazione
+        delle specie reattive dell'ossigeno) è affrontata con cautela e può
+        essere considerata una controindicazione assoluta durante l'esposizione
+        attiva al farmaco.
+      </p>
+      <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Controindicazioni relative
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>BPCO grave con ritenzione di anidride carbonica</strong> — trattamento con monitoraggio dell'emogasanalisi arteriosa e valutazione individuale del rapporto rischio-beneficio.</li>
+        <li><strong>Recente intervento all'orecchio medio o ai seni paranasali</strong> — una disfunzione della tuba di Eustachio aumenta il rischio di barotrauma; si raccomandano il nulla osta otorinolaringoiatrico (ORL) e un esame pre-trattamento.</li>
+        <li><strong>Infezione respiratoria attiva o malattia febbrile</strong> — il trattamento viene rinviato fino alla risoluzione, se l'indicazione lo consente.</li>
+        <li><strong>Claustrofobia</strong> — gestita con colloqui preliminari, esposizione graduale e scelta della camera (le camere multiposto sono tollerate meglio delle camere monoposto in caso di ansia).</li>
+        <li><strong>Anamnesi di crisi epilettiche</strong> — aumenta il rischio di tossicità da ossigeno del SNC; possono essere necessari adattamenti del protocollo (pressione più bassa, sedute più brevi, pause d'aria).</li>
+        <li><strong>Gravidanza</strong> — l'HBOT elettiva nel primo trimestre non è raccomandata; le indicazioni di emergenza (intossicazione da monossido di carbonio) annullano la controindicazione relativa.</li>
+        <li><strong>Anamnesi di neurite ottica</strong> — è stato descritto un rischio di progressione.</li>
+        <li><strong>Diabete mellito</strong> — è necessario un monitoraggio glicemico stretto; l'HBOT può abbassare la glicemia durante le sedute.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Eventi avversi
+      </h2>
+      <p class="text-slate-700 mb-3">
+        La revisione sistematica di Heyboer et al. (2017) rimane la
+        quantificazione più completa degli eventi avversi dell'HBOT nella
+        letteratura pubblicata.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Barotrauma dell'orecchio medio</strong> — di gran lunga l'evento avverso più frequente, di norma lieve e autolimitante con un addestramento tempestivo alla compensazione della pressione; i casi gravi (ematotimpano, perforazione) sono rari.</li>
+        <li><strong>Barosinusite (sinus squeeze)</strong> — più rara degli effetti sull'orecchio medio; trattamento con decongestionanti e compressione più lenta.</li>
+        <li><strong>Barotrauma polmonare</strong> — raro ma grave; il rischio è ridotto da un'attenta selezione del paziente e dall'esclusione delle malattie bollose.</li>
+        <li><strong>Tossicità da ossigeno del SNC</strong> — si manifesta come crisi epilettica generalizzata durante la seduta; rara nei protocolli moderni (≤2,5 ATA, ≤90 min). Le misure standard sono la riduzione dell'ossigeno inspiratorio, la risalita al livello del mare al termine della crisi e un'attenta rivalutazione.</li>
+        <li><strong>Tossicità polmonare da ossigeno</strong> — cumulativa e dose-dipendente; rilevante nei cicli di trattamento prolungati.</li>
+        <li><strong>Miopia reversibile / variazione refrattiva</strong> — descritta nei cicli di trattamento prolungati (di norma con regressione nell'arco di settimane-mesi dopo la fine del ciclo).</li>
+        <li><strong>Claustrofobia/ansia</strong> — gestita con la scelta della camera, musica a basso volume ed esposizione pre-trattamento.</li>
+        <li><strong>Ipoglicemia</strong> — nei pazienti diabetici in terapia con insulina o sulfoniluree; monitoraggio e adattamento secondo necessità.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[44]", "[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Screening pre-trattamento
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Lo screening standard prima dell'HBOT nei servizi di medicina iperbarica
+        comprende tipicamente:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Valutazione della membrana timpanica e verifica della funzione tubarica.</li>
+        <li>Anamnesi dei seni paranasali; esame ORL, se indicato.</li>
+        <li>Imaging toracico in presenza di fattori di rischio polmonari.</li>
+        <li>Revisione dei farmaci riguardo a sostanze chemioterapiche e disulfiram.</li>
+        <li>Stato di gravidanza (se applicabile).</li>
+        <li>Anamnesi di crisi epilettiche.</li>
+        <li>Screening per claustrofobia/ansia.</li>
+        <li>Accordi sul monitoraggio della glicemia per i pazienti diabetici.</li>
+        <li>Valutazione cardiologica nei pazienti con significativa cardiopatia coronarica o congestizia.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Criteri di interruzione
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Il trattamento dovrebbe essere interrotto o modificato in modo
+        sostanziale nelle seguenti circostanze:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Nuovo pneumotorace durante una seduta.</li>
+        <li>Evento di tossicità da ossigeno del SNC (crisi epilettica) — adattamento del protocollo o interruzione.</li>
+        <li>Mancata compensazione della pressione nell'orecchio medio nonostante addestramento e valutazione ORL.</li>
+        <li>Evento avverso grave persistente senza una mitigazione identificabile.</li>
+        <li>Interruzione del trattamento avviata dal paziente a causa di ansia o intolleranza non gestibile con il supporto standard.</li>
+        <li>Somministrazione concomitante di un agente chemioterapico assolutamente controindicato che non può essere sospeso.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Questa pagina è un riferimento clinico. Non sostituisce la valutazione
+      specifica del singolo paziente da parte di un professionista qualificato
+      in medicina iperbarica. Le indicazioni individuali, le comorbilità e la
+      terapia concomitante devono essere verificate prima del trattamento.
+    </p>
+  </article>
+</LandingLayout>

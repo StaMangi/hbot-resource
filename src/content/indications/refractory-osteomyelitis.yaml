@@ -4,40 +4,49 @@ category:
   en: "Infectious Diseases"
   el: "Λοιμώδη Νοσήματα"
   de: "Infektionserkrankungen"
+  it: "Malattie infettive"
 condition:
   en: "Refractory Osteomyelitis"
   el: "Ανθεκτική Οστεομυελίτιδα"
   de: "Refraktäre Osteomyelitis"
+  it: "Osteomielite refrattaria"
 description:
   en: "Chronic osteomyelitis unresponsive to conventional therapy. HBOT enhances leukocyte killing, promotes angiogenesis in avascular bone."
   el: "Χρόνια οστεομυελίτιδα μη ανταποκρινόμενη σε συμβατική θεραπεία. Η HBOT ενισχύει λευκοκυτταρική θανάτωση, προάγει αγγειογένεση σε αναίμακτο οστό."
   de: "Chronische Osteomyelitis, die auf konventionelle Therapie nicht anspricht. HBOT verstärkt die Leukozyten-Abtötung und fördert die Angiogenese in avaskulärem Knochen."
+  it: "Osteomielite cronica non responsiva alla terapia convenzionale. L'HBOT potenzia l'attività battericida dei leucociti e favorisce l'angiogenesi nell'osso avascolare."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
+  it: "Standard di cura"
 evidenceLevel: "A"
 protocol:
   ata:
     en: "2.0 – 2.4 ATA"
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
+    it: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "30 – 60"
     el: "30 – 60"
     de: "30 – 60"
+    it: "30 – 60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
+    it: "UHMS / Standard di cura"
 refs:
   - "[1]"
   - "[11]"

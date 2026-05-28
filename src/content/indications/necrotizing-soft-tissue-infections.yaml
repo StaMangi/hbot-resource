@@ -4,40 +4,49 @@ category:
   en: "Infectious Diseases"
   el: "Λοιμώδη Νοσήματα"
   de: "Infektionserkrankungen"
+  it: "Malattie infettive"
 condition:
   en: "Necrotizing Soft Tissue Infections"
   el: "Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
   de: "Nekrotisierende Weichgewebeinfektionen"
+  it: "Infezioni necrotizzanti dei tessuti molli"
 description:
   en: "Adjunctive treatment for necrotizing fasciitis and Fournier's gangrene, reducing mortality and tissue loss when combined with surgery."
   el: "Επικουρική θεραπεία για νεκρωτική περιτονίτιδα και γάγγραινα Fournier, μειώνοντας θνησιμότητα και απώλεια ιστού σε συνδυασμό με χειρουργική επέμβαση."
   de: "Adjuvante Therapie bei nekrotisierender Fasziitis und Fournier-Gangrän; reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischer Behandlung."
+  it: "Terapia adiuvante per la fascite necrotizzante e la gangrena di Fournier, che riduce la mortalità e la perdita di tessuto in combinazione con la chirurgia."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
+  it: "Standard di cura"
 evidenceLevel: "A"
 protocol:
   ata:
     en: "2.0 – 2.5 ATA"
     el: "2.0 – 2.5 ATA"
     de: "2.0 – 2.5 ATA"
+    it: "2.0 – 2.5 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
     de: "20 – 30"
+    it: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
+    it: "UHMS / Standard di cura"
 refs:
   - "[1]"
   - "[10]"

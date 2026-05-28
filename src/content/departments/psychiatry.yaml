@@ -2,78 +2,94 @@ name:
   en: "Psychiatry & Psychology"
   el: "Ψυχιατρική & Ψυχολογία"
   de: "Psychiatrie & Psychologie"
+  it: "Psichiatria e psicologia"
 icon: "HeartHandshake"
 color: "#be185d"
 shortDesc:
   en: "PTSD, Depression, Anxiety"
   el: "ΔΜΤΣ, Κατάθλιψη, Άγχος"
   de: "PTBS, Depression, Angststörungen"
+  it: "PTSD, depressione, ansia"
 applications:
   - title:
       en: "Post-Traumatic Stress Disorder (PTSD)"
       el: "Διαταραχή Μετατραυματικού Στρες (ΔΜΤΣ)"
       de: "Posttraumatische Belastungsstörung (PTBS)"
+      it: "Disturbo da stress post-traumatico (PTSD)"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Clinical trials demonstrate HBOT improves brain microstructure functionality and alleviates PTSD symptoms in veterans with treatment-resistant PTSD. Significant improvements in PTSD checklist scores."
       el: "Κλινικές δοκιμές αποδεικνύουν ότι η HBOT βελτιώνει λειτουργικότητα μικροδομής εγκεφάλου και ανακουφίζει συμπτώματα ΔΜΤΣ σε βετεράνους με ανθεκτική στη θεραπεία ΔΜΤΣ. Σημαντικές βελτιώσεις στις βαθμολογίες ελέγχου ΔΜΤΣ."
       de: "Klinische Studien belegen, dass HBOT die Funktionalität der Hirn-Mikrostruktur verbessert und PTBS-Symptome bei Veteranen mit therapieresistenter PTBS lindert. Signifikante Verbesserungen der PTBS-Checklisten-Scores."
+      it: "Studi clinici dimostrano che l'HBOT migliora la funzionalità della microstruttura cerebrale e allevia i sintomi del PTSD nei veterani con PTSD resistente al trattamento. Miglioramenti significativi nei punteggi della checklist del PTSD."
     evidence: "Level B"
     protocol:
       ata:
         en: "1.5 – 2.0 ATA"
         el: "1.5 – 2.0 ATA"
         de: "1.5 – 2.0 ATA"
+        it: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
+        it: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
+        it: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "Level B Evidence (RCT)"
         el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
         de: "Evidenz Stufe B (RKS)"
+        it: "Evidenza di Livello B (RCT)"
     refs:
       - "[20]"
   - title:
       en: "Treatment-Resistant Depression"
       el: "Ανθεκτική στη Θεραπεία Κατάθλιψη"
       de: "Therapieresistente Depression"
+      it: "Depressione resistente al trattamento"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Emerging research investigates HBOT for treatment-resistant depression through neuroplasticity enhancement, BDNF upregulation, and reduction of neuroinflammation."
       el: "Αναδυόμενη έρευνα διερευνά την HBOT για ανθεκτική στη θεραπεία κατάθλιψη μέσω ενίσχυσης νευροπλαστικότητας, ανύψωσης BDNF και μείωσης νευροφλεγμονής."
       de: "Aufkommende Forschung untersucht HBOT bei therapieresistenter Depression über die Förderung der Neuroplastizität, die Hochregulation von BDNF und die Reduktion der Neuroinflammation."
+      it: "La ricerca emergente studia l'HBOT per la depressione resistente al trattamento attraverso il potenziamento della neuroplasticità, l'aumento del BDNF e la riduzione della neuroinfiammazione."
     evidence: "Level C"
     protocol:
       ata:
         en: "1.5 – 2.0 ATA"
         el: "1.5 – 2.0 ATA"
         de: "1.5 – 2.0 ATA"
+        it: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
+        it: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
+        it: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
+        it: "Sperimentale"
     refs:
       - "[8]"

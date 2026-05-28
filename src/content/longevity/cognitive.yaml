@@ -2,42 +2,51 @@ title:
   en: "Cognitive Enhancement"
   el: "Γνωστική Ενίσχυση"
   de: "Kognitive Förderung"
+  it: "Potenziamento cognitivo"
 icon: "Brain"
 stat: "16.5%"
 statLabel:
   en: "Improvement in attention & processing speed"
   el: "Βελτίωση προσοχής & ταχύτητας επεξεργασίας"
   de: "Verbesserung von Aufmerksamkeit & Verarbeitungsgeschwindigkeit"
+  it: "Miglioramento dell'attenzione & della velocità di elaborazione"
 color: "teal"
 summary:
   en: "Randomized controlled trial in healthy older adults showed significant cognitive enhancements including memory, processing speed, and executive function improvements correlated with increased cerebral blood flow."
   el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή σε υγιείς ηλικιωμένους έδειξε σημαντικές γνωστικές ενισχύσεις συμπεριλαμβανομένης βελτίωσης μνήμης, ταχύτητας επεξεργασίας και εκτελεστικής λειτουργίας που συσχετίζονται με αυξημένη εγκεφαλική αιματική ροή."
   de: "Eine randomisierte kontrollierte Studie an gesunden älteren Erwachsenen zeigte signifikante kognitive Verbesserungen einschließlich Gedächtnis, Verarbeitungsgeschwindigkeit und Exekutivfunktion, die mit einem erhöhten zerebralen Blutfluss korrelierten."
+  it: "Uno studio clinico randomizzato controllato (RCT) in anziani sani ha mostrato miglioramenti cognitivi significativi, tra cui la memoria, la velocità di elaborazione e la funzione esecutiva, correlati a un aumento del flusso ematico cerebrale."
 mechanism:
   en: "HBOT increases regional cerebral blood flow, promotes neuroplasticity through BDNF upregulation, reduces neuroinflammation, and supports hippocampal neurogenesis — all mechanisms diminished with normal aging."
   el: "Η HBOT αυξάνει περιφερειακή εγκεφαλική αιματική ροή, προάγει νευροπλαστικότητα μέσω ανύψωσης BDNF, μειώνει νευροφλεγμονή και υποστηρίζει ιπποκαμπική νευρογένεση — όλοι μηχανισμοί που μειώνονται με την κανονική γήρανση."
   de: "HBOT erhöht den regionalen zerebralen Blutfluss, fördert die Neuroplastizität durch BDNF-Hochregulation, reduziert die Neuroinflammation und unterstützt die hippocampale Neurogenese — allesamt Mechanismen, die mit dem normalen Altern abnehmen."
+  it: "L'HBOT aumenta il flusso ematico cerebrale regionale, promuove la neuroplasticità tramite la sovraregolazione del BDNF, riduce la neuroinfiammazione e supporta la neurogenesi ippocampale — tutti meccanismi che diminuiscono con il normale invecchiamento."
 protocol:
   ata:
     en: "2.0 ATA"
     el: "2.0 ATA"
     de: "2.0 ATA"
+    it: "2.0 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "60"
     el: "60"
     de: "60"
+    it: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
     de: "Hadanny et al., 2020 (RKS)"
+    it: "Hadanny et al., 2020 (RCT)"
 refs:
   - "[4]"
   - "[8]"

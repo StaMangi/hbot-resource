@@ -2,16 +2,19 @@ title:
   en: "Anti-Aging & Cellular Regeneration"
   el: "Αντιγήρανση & Κυτταρική Αναγέννηση"
   de: "Anti-Aging & Zelluläre Regeneration"
+  it: "Anti-invecchiamento & Rigenerazione cellulare"
 icon: "RefreshCw"
 color: "teal"
 summary:
   en: "HBOT activates telomerase, induces senolytic effects, mobilizes stem cells, and enhances antioxidant defense through the hyperoxic-hypoxic paradox."
   el: "Η HBOT ενεργοποιεί τελομεράση, επάγει σενολυτικά αποτελέσματα, κινητοποιεί βλαστοκύτταρα και ενισχύει αντιοξειδωτική άμυνα μέσω του υπεροξικού-υποξικού παράδοξου."
   de: "HBOT aktiviert die Telomerase, induziert senolytische Effekte, mobilisiert Stammzellen und verstärkt die antioxidative Abwehr über das hyperoxisch-hypoxische Paradoxon."
+  it: "L'HBOT attiva la telomerasi, induce effetti senolitici, mobilizza le cellule staminali e potenzia le difese antiossidanti attraverso il paradosso iperossico-ipossico."
 detail:
   en: "Repeated HBOT sessions activate telomerase (increasing telomere length by >20%), selectively eliminate senescent cells, mobilize bone marrow stem cells via NOS activation, and upregulate endogenous antioxidants (SOD, catalase, glutathione peroxidase) through hormetic stress responses."
   el: "Επαναλαμβανόμενες συνεδρίες HBOT ενεργοποιούν τελομεράση (αύξηση μήκους τελομερών >20%), εκλεκτικά εξαλείφουν γηρασμένα κύτταρα, κινητοποιούν βλαστοκύτταρα μυελού οστών μέσω ενεργοποίησης NOS και ανεβάζουν ενδογενή αντιοξειδωτικά (SOD, καταλάση, υπεροξειδάση γλουταθειόνης) μέσω ορμητικών αποκρίσεων στρες."
   de: "Wiederholte HBOT-Sitzungen aktivieren die Telomerase (Verlängerung der Telomere um >20 %), eliminieren selektiv seneszente Zellen, mobilisieren Knochenmark-Stammzellen über die NOS-Aktivierung und regulieren endogene Antioxidantien (SOD, Katalase, Glutathionperoxidase) durch hormetische Stressreaktionen hoch."
+  it: "Sedute ripetute di HBOT attivano la telomerasi (aumentando la lunghezza dei telomeri di >20%), eliminano selettivamente le cellule senescenti, mobilizzano le cellule staminali del midollo osseo tramite l'attivazione della NOS e sovraregolano gli antiossidanti endogeni (SOD, catalasi, glutatione perossidasi) attraverso risposte ormetiche allo stress."
 refs:
   - "[3]"
   - "[5]"

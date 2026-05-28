@@ -1,0 +1,148 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "it" as const;
+const prefix = "/it";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Blueprint per l'operatore",
+  description:
+    "Architettura di riferimento per hotel, cliniche di longevità e operatori del benessere che introducono l'HBOT — attrezzatura, personale, spazi, controllo qualità, flusso del paziente, documentazione.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Blueprint per l'operatore — HBOT Science"
+  description="Architettura di riferimento per hotel, cliniche di longevità e operatori del benessere che introducono l'HBOT — attrezzatura, personale, aspetti relativi agli spazi, controllo qualità, flusso del paziente, documentazione."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Riferimento per operatori</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Blueprint per l'operatore
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Architettura di riferimento per l'attuazione operativa di servizi HBOT
+      nelle organizzazioni — hotel, cliniche di longevità e operatori del
+      benessere. I contenuti sono generici; specifici fornitori di
+      apparecchiature, percorsi normativi e prezzi non sono volutamente
+      trattati. Le normative locali in materia di sanità e sicurezza delle
+      apparecchiature si applicano e possono imporre requisiti più stringenti.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Scelta dell'attrezzatura
+      </h2>
+      <p class="text-slate-700 mb-3">
+        In ambito clinico si impiegano due categorie principali di camere
+        iperbariche:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Camere iperbariche rigide (mediche)</strong> — pressurizzano a 2,0–3,0 ATA con ossigeno al 100 % tramite maschera o casco. Necessarie per le indicazioni approvate dalla FDA e per qualsiasi trattamento che richieda una vera pressione iperbarica. Disponibili in configurazioni monoposto (un paziente) e multiposto (più pazienti con accompagnatore).</li>
+        <li><strong>Camere morbide («HBOT lieve»)</strong> — di norma pressurizzano a 1,3 ATA con aria ambiente. Per le indicazioni trattate in questo sito non sono equivalenti all'HBOT medica; la base di evidenza per un effetto terapeutico a 1,3 ATA è nettamente più debole. Gli operatori che si richiamano all'RCT Hadanny 2020 sul potenziamento cognitivo o all'RCT Zilberman-Itskovich 2022 sul Long COVID devono sapere che questi studi hanno utilizzato camere rigide a 2,0 ATA — gli impieghi con camere morbide non possono riprodurre tali protocolli.</li>
+      </ul>
+      <p class="text-slate-700 mt-3">
+        <strong>Monoposto vs. multiposto</strong>: le camere monoposto sono più
+        piccole, comportano costi di investimento inferiori e richiedono
+        personale meno specializzato. Le camere multiposto consentono la
+        presenza di un accompagnatore per la gestione dell'ansia e la risposta
+        alle emergenze, possono accogliere pazienti più complessi e sono lo
+        standard per i servizi clinici di cura delle ferite.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Personale
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Supervisione medica</strong>: un medico designato per la medicina iperbarica dovrebbe essere responsabile della verifica delle indicazioni, dell'approvazione (sign-off) dello screening pre-trattamento e della risposta agli eventi avversi.</li>
+        <li><strong>Tecnico iperbarico / infermiere</strong>: addestrato al funzionamento della camera, alle procedure di decompressione di emergenza e alla gestione del paziente. Gli standard di certificazione variano a seconda della giurisdizione; la UHMS pubblica percorsi di qualificazione riconosciuti.</li>
+        <li><strong>Accompagnatori per le camere multiposto</strong>: nelle camere multiposto è richiesto un accompagnatore interno per tutta la durata delle sedute pressurizzate.</li>
+        <li><strong>Reception / programmazione</strong>: addestrata allo screening delle controindicazioni (in particolare fumo, recente infezione dell'orecchio, chemioterapia in corso), in modo che i segnali d'allarme siano riconosciuti già al momento della prenotazione e non solo a livello di camera.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Spazi
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Fabbisogno di spazio</strong>: le camere monoposto si collocano in un locale di 3 × 6 m; i sistemi multiposto richiedono suite dedicate con sala di controllo, deposito dell'ossigeno e uscite di emergenza.</li>
+        <li><strong>Ventilazione</strong>: gli ambienti ricchi di ossigeno richiedono misure per limitare il carico d'incendio. I materiali di pavimentazione e parete, gli impianti elettrici e l'HVAC devono soddisfare gli standard di sicurezza delle apparecchiature (i codici regionali variano; nelle giurisdizioni che seguono gli standard statunitensi, NFPA 99 come riferimento).</li>
+        <li><strong>Protezione antincendio</strong>: nessun tessuto sintetico, nessun materiale che possa caricarsi staticamente, nessun dispositivo elettronico nella camera, nessun olio o prodotto a base alcolica sul paziente. L'estinzione incendi deve essere idonea ad atmosfera arricchita di ossigeno.</li>
+        <li><strong>Approvvigionamento di ossigeno</strong>: ossigeno medicale con verifica documentata della purezza. Approvvigionamento di riserva obbligatorio.</li>
+        <li><strong>Uscita di emergenza</strong>: capacità di decompressione rapida e risposta dell'operatore addestrato nell'arco di secondi.</li>
+        <li><strong>Controllo climatico</strong>: gestione della temperatura della camera per evitare il surriscaldamento del paziente durante la compressione.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Controllo qualità
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Manutenzione della camera</strong>: manutenzione programmata secondo le indicazioni del produttore, con registro di manutenzione.</li>
+        <li><strong>Ispezione del recipiente a pressione</strong>: tipicamente annuale; specifica della giurisdizione.</li>
+        <li><strong>Verifica della purezza dell'ossigeno</strong>: verifica periodica della purezza dell'approvvigionamento, idealmente a ogni cambio di fornitura del gas.</li>
+        <li><strong>Calibrazione</strong>: manometri, sensori di ossigeno, temporizzatori — calibrati secondo le indicazioni del produttore.</li>
+        <li><strong>Registro degli eventi avversi</strong>: ogni evento avverso documentato con data, numero di seduta, sintomatologia, risposta ed esito.</li>
+        <li><strong>Cadenza degli audit</strong>: audit interno almeno annuale; audit esterno, attivato dai cicli normativi o da un evento avverso significativo.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Flusso del paziente e consenso
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Prima consultazione</strong>: anamnesi, discussione dell'indicazione, screening delle controindicazioni, allineamento delle aspettative (in particolare per l'uso nel benessere).</li>
+        <li><strong>Consenso informato</strong>: consenso scritto con una panoramica delle controindicazioni assolute e relative, degli eventi avversi comuni, del protocollo previsto, della portata dell'effetto clinico (per il benessere: riconoscimento esplicito che il programma si colloca al di fuori delle indicazioni approvate dalla FDA).</li>
+        <li><strong>Verifica pre-seduta</strong>: pressione arteriosa, temperatura, valutazione respiratoria, revisione dei farmaci in corso, stato di claustrofobia, valutazione della compensazione della pressione delle orecchie.</li>
+        <li><strong>Monitoraggio della seduta</strong>: comunicazione continua con l'accompagnatore; rilevazione dei parametri vitali nei pazienti ad alto rischio.</li>
+        <li><strong>Verifica post-seduta</strong>: valutazione della membrana timpanica, parametri vitali, questionario di tollerabilità.</li>
+        <li><strong>Cadenza del follow-up</strong>: valutazioni intermedie e finali; rilevazione delle misure di esito secondo la progettazione del programma.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Documentazione
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Registro di seduta</strong>: data, orario di inizio, profilo di pressione, durata, flusso di ossigeno, eventi avversi, identità dell'accompagnatore, tollerabilità riferita dal paziente.</li>
+        <li><strong>Record dell'indicazione</strong>: motivazione clinica documentata, livello di evidenza, approvazione (sign-off) del medico curante.</li>
+        <li><strong>Monitoraggio degli esiti</strong>: misurazioni pre/post protocollo secondo la progettazione del programma.</li>
+        <li><strong>Segnalazione degli eventi avversi</strong>: gli eventi gravi vengono segnalati secondo il quadro normativo locale.</li>
+        <li><strong>Conservazione</strong>: cartelle cliniche secondo la giurisdizione (tipicamente 7–25 anni).</li>
+        <li><strong>Protezione dei dati</strong>: conforme al GDPR nell'UE e nel SEE; equivalente HIPAA negli USA.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Questo blueprint è un riferimento generico per operatori. Non costituisce
+      una consulenza normativa o relativa alla sicurezza delle apparecchiature.
+      Le normative locali in materia di sanità, sicurezza delle apparecchiature,
+      protezione antincendio e tutela dei consumatori si applicano e prevalgono
+      sulle raccomandazioni qui riassunte.
+    </p>
+  </article>
+</LandingLayout>

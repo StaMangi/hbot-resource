@@ -2,12 +2,14 @@ title:
   en: "Clinical Integration Protocols"
   el: "Πρωτόκολλα Κλινικής Ενσωμάτωσης"
   de: "Protokolle der klinischen Integration"
+  it: "Protocolli di integrazione clinica"
 icon: "ClipboardList"
 priority: "High"
 description:
   en: "Develop standardized referral pathways from Surgery, Internal Medicine, Oncology, and Geriatric departments for FDA-approved indications. Establish transcutaneous oximetry screening for wound care patients."
   el: "Ανάπτυξη τυποποιημένων διαδρομών παραπομπής από Χειρουργική, Παθολογική, Ογκολογία και Γηριατρικά τμήματα για εγκεκριμένες ενδείξεις FDA. Καθιέρωση διαδερμικής οξυμετρίας για ασθενείς φροντίδας τραυμάτων."
   de: "Entwicklung standardisierter Zuweisungspfade von den Abteilungen Chirurgie, Innere Medizin, Onkologie und Geriatrie für FDA-zugelassene Indikationen. Etablierung eines transkutanen Oxymetrie-Screenings für Wundpatient:innen."
+  it: "Sviluppare percorsi di invio standardizzati dai reparti di Chirurgia, Medicina interna, Oncologia e Geriatria per le indicazioni approvate dalla FDA. Istituire lo screening con ossimetria transcutanea per i pazienti con cura delle ferite."
 actions:
   en:
     - "Diabetic foot ulcer pathway with Endocrinology"
@@ -24,3 +26,8 @@ actions:
     - "Protokoll zu Strahlenschäden mit Onkologie und Brustzentrum"
     - "Notfallprotokoll bei akutem Hörverlust mit der HNO"
     - "Zuweisungspfad zur Osteomyelitis mit der Orthopädie"
+  it:
+    - "Percorso per l'ulcera del piede diabetico con l'Endocrinologia"
+    - "Protocollo per il danno da radiazioni con Oncologia e Centro di senologia"
+    - "Protocollo d'emergenza per l'ipoacusia acuta con l'Otorinolaringoiatria"
+    - "Percorso di invio per l'osteomielite con l'Ortopedia"

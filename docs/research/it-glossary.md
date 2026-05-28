@@ -1,8 +1,8 @@
-# Italian terminology glossary — DRAFT
+# Italian terminology glossary — APPLIED, native review pending
 
-**Status:** DRAFT — AWAITING NATIVE-SPEAKER MEDICAL REVIEW. Do not lock or ship to production pages until reviewed by an Italian-speaking clinician.
-**Scope:** candidate EN→IT terminology for clinical content; modelled on the locked Greek glossary at `el-glossary.md`. Will become binding when reviewed and approved.
-**Authority:** prepared as a starter pack for the post-launch multilingual expansion phase. Term forms reflect standard Italian medical register (e.g. terminology used by SIMSI — Società Italiana di Medicina Subacquea e Iperbarica). Where two forms are common, both are listed and the reviewer should pick one as the going-forward standard.
+**Status:** APPLIED — these terms have been used across the production IT site rolled out in Phase 7.B (Stage 6, 2026-04-30). Native-speaker medical review has not been completed; open as a Phase 8 deliverable, mirroring the el-glossary (locked) and de-glossary (applied, review pending) cadence. A reviewer walking each section should lock approved terms with **(locked)** and flag any term that needs revision (each revision triggers a content sweep across `src/content/**` + `src/pages/it/**` + `src/i18n/it.ts`).
+**Scope:** binding-on-the-current-site EN→IT terminology for clinical content; modelled on the locked Greek glossary at `el-glossary.md`. Reviewer authority: an Italian-speaking clinician familiar with iperbarica literature (SIMSI register).
+**Authority:** term forms reflect standard Italian medical register (e.g. terminology used by SIMSI — Società Italiana di Medicina Subacquea e Iperbarica). Where two forms were common, the going-forward choice made during the Phase 7.B rollout is recorded in section 7.
 
 Update this file when a reviewer locks each section. Mark each section's heading with **(locked)** when its terms become binding.
 
@@ -252,12 +252,49 @@ The following are kept untranslated:
 - DOI URLs
 - Journal names (e.g. *Sci Reports*, *BMJ Open*, *Frontiers in Medicine*)
 
-## 7. Open items for reviewer
+## 7. Decisions made during the Phase 7.B rollout (resolved open items)
 
-- **OTI vs HBOT**: SIMSI uses OTI; international SEO favours HBOT. Reviewer to lock the going-forward abbreviation.
-- **fatigue (loanword) vs affaticamento**: lock on one for the Long COVID register.
-- **case report (loanword) vs caso clinico**: lock on one.
-- **First-use expansion convention** for RCT: align with the Greek convention (expand on first occurrence in any document; bare RCT thereafter).
-- **Modello murino**: in IT, "murino" can refer to both rat and mouse — disambiguate explicitly with "(ratto)" or "(topo)" when the species matters.
+These were open items at draft time; the going-forward choice applied across the
+production IT site is recorded here. A native reviewer may still revise any of
+them (each revision triggers a content sweep).
 
-After native review locks the register, mark this file `**Status:** locked at end of review pass` and use it as the binding authority for any IT pages that get added in a future multilingual expansion.
+- **OTI vs HBOT → resolved: HBOT.** Kept "HBOT" (not OTI) for cross-locale
+  consistency (EN/EL/DE all use HBOT), alignment with the "HBOT Science" brand,
+  and SEO. SIMSI's "OTI" (Ossigenoterapia Iperbarica) is noted as the standard
+  Italian abbreviation; the full form "ossigenoterapia iperbarica" is used in
+  prose where the term is spelled out. Reviewer may reconsider if SIMSI-aligned
+  abbreviation is preferred for the IT audience.
+- **fatigue vs affaticamento → resolved: affaticamento.** Used in the Long COVID
+  register and elsewhere. ("fatigue" loanword avoided in body text.)
+- **case report vs caso clinico → resolved: caso clinico** (plural "casi clinici").
+- **RCT first-use convention → resolved.** Expand as "studio clinico randomizzato
+  controllato (RCT)" on first occurrence within any prose field/document, then
+  bare "RCT" thereafter — mirrors the EL (ΤΕΔ) and DE (RKS→RCT) convention.
+- **Modello murino → resolved.** Disambiguated explicitly: "modello murino (ratto)"
+  / "modello murino (topo)" where species matters (used in the endometriosis entry).
+- **compromised (graft/flap) → resolved: compromesso** (over "ischemico").
+- **PTSD** (not in draft): expand-then-acronym, "disturbo post-traumatico da
+  stress (PTSD)" on first use, then "PTSD".
+- **CNS → SNC**; **GDPR** kept (not the German DSGVO); **ICU → Unità di Terapia
+  Intensiva (UTI)**.
+
+### Indication/category names added during rollout (candidates for reviewer lock)
+
+Decompression Sickness → Malattia da decompressione · Air or Gas Embolism →
+Embolia gassosa o da aria · Carbon Monoxide Poisoning → Avvelenamento da
+monossido di carbonio · Clostridial Myositis & Myonecrosis (Gas Gangrene) →
+Miosite e mionecrosi clostridiale (gangrena gassosa) · Crush Injury &
+Compartment Syndrome → Lesione da schiacciamento e sindrome compartimentale ·
+Central Retinal Artery Occlusion → Occlusione dell'arteria centrale della retina
+· Enhancement of Healing in Selected Problem Wounds → Potenziamento della
+guarigione in ferite problematiche selezionate · Delayed Radiation Injury →
+Danno radiogeno tardivo (osteoradionecrosi) · Exceptional Blood Loss Anemia →
+Anemia da perdita ematica eccezionale · Intracranial Abscess → Ascesso
+intracranico · Necrotizing Soft Tissue Infections → Infezioni necrotizzanti dei
+tessuti molli · Refractory Osteomyelitis → Osteomielite refrattaria · Idiopathic
+Sudden Sensorineural Hearing Loss → Ipoacusia improvvisa neurosensoriale
+idiopatica (idrope endolinfatica) · Inflammatory Dermatoses → Dermatosi
+infiammatorie · Aesthetic & Reconstructive Recovery → Recupero estetico e
+ricostruttivo.
+
+After native review locks the register, mark this file `**Status:** locked at end of review pass`.
