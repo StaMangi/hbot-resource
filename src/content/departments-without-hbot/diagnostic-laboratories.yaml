@@ -2,12 +2,15 @@ name:
   en: "Diagnostic Laboratories"
   el: "Διαγνωστικά Εργαστήρια"
   de: "Diagnostische Labore"
+  it: "Laboratori diagnostici"
 icon: "FlaskConical"
 rationale:
   en: "Diagnostic laboratories (Microbiology, Hematology, Biochemistry) are analytical entities that process specimens and generate results. While HBOT relies on these departments for patient assessment — including transcutaneous oximetry and microbiological wound cultures — the therapy itself is not applied within these disciplines. No current evidence supports HBOT as a diagnostic modality."
   el: "Τα διαγνωστικά εργαστήρια (Μικροβιολογία, Αιματολογία, Βιοχημεία) είναι αναλυτικές οντότητες που επεξεργάζονται δείγματα και παράγουν αποτελέσματα. Ενώ η HBOT βασίζεται σε αυτά τα τμήματα για αξιολόγηση ασθενών — συμπεριλαμβανομένης διαδερμικής οξυμετρίας και μικροβιολογικών καλλιεργειών τραυμάτων — η ίδια η θεραπεία δεν εφαρμόζεται εντός αυτών των κλάδων. Δεν υπάρχουν τρέχοντα στοιχεία που να υποστηρίζουν την HBOT ως διαγνωστική μέθοδο."
   de: "Diagnostische Labore (Mikrobiologie, Hämatologie, Biochemie) sind analytische Einheiten, die Proben verarbeiten und Ergebnisse erzeugen. Obwohl HBOT für die Patientenbeurteilung auf diese Abteilungen angewiesen ist — einschließlich transkutaner Oxymetrie und mikrobiologischer Wundkulturen — wird die Therapie selbst nicht innerhalb dieser Fachgebiete angewendet. Es liegt derzeit keine Evidenz vor, die HBOT als diagnostische Modalität unterstützt."
+  it: "I laboratori diagnostici (Microbiologia, Ematologia, Biochimica) sono entità analitiche che processano i campioni e generano risultati. Sebbene l'HBOT si avvalga di questi reparti per la valutazione del paziente — inclusa l'ossimetria transcutanea e le colture microbiologiche delle ferite — la terapia stessa non viene applicata all'interno di queste discipline. Nessuna evidenza attuale supporta l'HBOT come modalità diagnostica."
 role:
   en: "Supportive — provides pre/post HBOT biomarker assessment"
   el: "Υποστηρικτικός — παρέχει αξιολόγηση βιοδεικτών πριν/μετά HBOT"
   de: "Unterstützend — liefert Biomarker-Beurteilung vor/nach HBOT"
+  it: "Di supporto — fornisce la valutazione dei biomarcatori prima/dopo l'HBOT"

@@ -4,40 +4,49 @@ category:
   en: "Gas/Bubble Disorders"
   el: "Διαταραχές Αερίου/Φυσαλίδων"
   de: "Gas-/Blasenstörungen"
+  it: "Disturbi da gas/bolle"
 condition:
   en: "Decompression Sickness"
   el: "Νόσος Αποσυμπίεσης"
   de: "Dekompressionserkrankung"
+  it: "Malattia da decompressione"
 description:
   en: "Primary treatment for nitrogen bubble formation in divers and compressed-air workers. Reduces bubble volume and promotes nitrogen elimination."
   el: "Κύρια θεραπεία για σχηματισμό φυσαλίδων αζώτου σε δύτες και εργαζόμενους με συμπιεσμένο αέρα. Μειώνει όγκο φυσαλίδων και προάγει αποβολή αζώτου."
   de: "Primärtherapie bei Stickstoffblasenbildung bei Tauchern und Druckluftarbeitern. Reduziert das Blasenvolumen und fördert die Stickstoff-Elimination."
+  it: "Trattamento primario per la formazione di bolle di azoto nei subacquei e nei lavoratori in aria compressa. Riduce il volume delle bolle e favorisce l'eliminazione dell'azoto."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
+  it: "Standard di cura"
 evidenceLevel: "A"
 protocol:
   ata:
     en: "2.0 – 2.5 ATA"
     el: "2.0 – 2.5 ATA"
     de: "2.0 – 2.5 ATA"
+    it: "2.0 – 2.5 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
     de: "20 – 30"
+    it: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
+    it: "UHMS / Standard di cura"
 refs:
   - "[1]"
   - "[6]"

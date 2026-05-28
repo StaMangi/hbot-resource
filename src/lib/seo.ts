@@ -12,9 +12,10 @@ export const SITE_DEFAULT_DESCRIPTION = {
   en: "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.",
   el: "Τεκμηριωμένος οδηγός υπερβαρικής οξυγονοθεραπείας. Μηχανισμοί, εγκεκριμένες ενδείξεις FDA, κλινικά πρωτόκολλα, εφαρμογές μακροζωίας και αξιολογημένη βιβλιογραφία.",
   de: "Evidenzbasierter Leitfaden zur hyperbaren Sauerstofftherapie. Mechanismen, FDA-zugelassene Indikationen, klinische Protokolle, Anwendungen in der Langlebigkeitsmedizin und peer-reviewed Evidenz.",
+  it: "Guida basata sull'evidenza alla ossigenoterapia iperbarica. Meccanismi, indicazioni approvate dalla FDA, protocolli clinici, applicazioni nella medicina della longevità ed evidenze sottoposte a revisione paritaria.",
 } as const;
 
-export const SUPPORTED_LOCALES = ["en", "el", "de"] as const;
+export const SUPPORTED_LOCALES = ["en", "el", "de", "it"] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_OG_IMAGE = "/og-default.png";
@@ -29,7 +30,7 @@ export function localePath(pathname: string, target: Locale): string {
   // Generalised in Phase 7 DE rollout: strip any known locale prefix, then
   // re-prepend the target's prefix (apex for the default locale, /<code>/
   // for everything else).
-  const stripped = pathname.replace(/^\/(en|el|de)(\/|$)/, "/");
+  const stripped = pathname.replace(/^\/(en|el|de|it)(\/|$)/, "/");
   if (target === "en") return stripped;
   return `/${target}${stripped === "/" ? "/" : stripped}`;
 }

@@ -1,0 +1,162 @@
+---
+import { getCollection } from "astro:content";
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import HomeStat from "@/components/HomeStat.astro";
+import HomePathCard from "@/components/HomePathCard.astro";
+import HomeLibraryTile from "@/components/HomeLibraryTile.astro";
+import { SITE_NAME } from "@/lib/seo";
+import { t } from "@/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = "it" as const;
+
+const title = `${SITE_NAME} — Guida alla HBOT basata sull'evidenza`;
+const description =
+  "Guida basata sull'evidenza all'ossigenoterapia iperbarica. Meccanismi, indicazioni approvate dalla FDA, protocolli clinici, applicazioni di longevità e letteratura curata.";
+
+const indications = await getCollection("indications");
+const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
+const totalIndications = fdaCount + emergingCount;
+
+const stats = [
+  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
+  { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
+  { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: title,
+  inLanguage: "it",
+  description,
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title={title}
+  description={description}
+  locale={locale}
+  pathname={pathname}
+  ogType="website"
+  jsonLd={jsonLd}
+>
+  {/* Hero */}
+  <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-teal-50/40">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="max-w-3xl">
+        <span class="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase rounded-full bg-teal-100 text-teal-800">
+          Guida alla HBOT basata sull'evidenza
+        </span>
+        <h1
+          class="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight"
+          style="font-family: var(--font-display)"
+        >
+          Il <span class="text-teal-700">riferimento scientifico</span> per
+          l'ossigenoterapia iperbarica.
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
+          Meccanismi, indicazioni approvate dalla FDA, protocolli clinici,
+          applicazioni di longevità e letteratura curata. Senza marketing,
+          senza chatbot — solo ciò che la letteratura supporta.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 max-w-4xl">
+        {stats.map((s) => <HomeStat {...s} />)}
+      </div>
+    </div>
+  </section>
+
+  {/* Two soft-routing path cards */}
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <div class="max-w-2xl mb-10">
+      <h2
+        class="text-2xl md:text-3xl font-semibold text-slate-900"
+        style="font-family: var(--font-display)"
+      >
+        Due percorsi, un'unica base di evidenza
+      </h2>
+      <p class="mt-3 text-slate-600 leading-relaxed">
+        Gli ospedali e i centri di longevità si avvicinano alla HBOT da
+        prospettive diverse — ma la scienza sottostante è la stessa.
+        Scegli il percorso più adatto alla tua domanda.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <HomePathCard
+        href="/it/clinical/"
+        icon="lucide:stethoscope"
+        eyebrow="Per ospedali e cliniche"
+        title="Integrazione clinica"
+        body="Indicazioni approvate dalla FDA, livelli di evidenza, mappatura delle applicazioni per reparto, protocolli e raccomandazioni strategiche per l'integrazione ospedaliera."
+        cta="Esplora l'ambito clinico"
+        variant="clinical"
+      />
+      <HomePathCard
+        href="/it/wellness/"
+        icon="lucide:sparkles"
+        eyebrow="Per centri di benessere e longevità"
+        title="Benessere e longevità"
+        body="Allungamento dei telomeri, riduzione delle cellule senescenti, potenziamento cognitivo, recupero atletico — protocolli, evidenze e architettura di riferimento."
+        cta="Esplora il benessere"
+        variant="wellness"
+      />
+    </div>
+  </section>
+
+  {/* Shared library preview */}
+  <section class="bg-slate-50 py-16 md:py-20 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-10">
+        <h2
+          class="text-2xl md:text-3xl font-semibold text-slate-900"
+          style="font-family: var(--font-display)"
+        >
+          Biblioteca di riferimento
+        </h2>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Lo stesso materiale di origine, organizzato per la consultazione
+          diretta. Collegato dai due percorsi qui sopra e da ogni pagina di
+          dettaglio del sito.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <HomeLibraryTile
+          href="/it/mechanisms/"
+          icon="lucide:atom"
+          title="Meccanismi d'azione"
+          body="Cinque meccanismi fisiologici — iperossigenazione, angiogenesi, azione antimicrobica, riduzione del volume dei gas, vie anti-invecchiamento."
+        />
+        <HomeLibraryTile
+          href="/it/indications/"
+          icon="lucide:list-checks"
+          title="Indicazioni"
+          body={`${totalIndications} indicazioni su due livelli di evidenza — ${fdaCount} approvate dalla FDA (riconosciute dalla UHMS) e ${emergingCount} emergenti — con livelli di evidenza, protocolli e riferimenti chiave.`}
+        />
+        <HomeLibraryTile
+          href="/it/evidence/"
+          icon="lucide:book-open"
+          title="Evidenza scientifica"
+          body="RCT, metanalisi e studi prospettici curati — collegamenti DOI alle pubblicazioni."
+        />
+        <HomeLibraryTile
+          href="/it/references/"
+          icon="lucide:bookmark"
+          title="Bibliografia"
+          body="Tutte le fonti citate con collegamenti diretti. Il fondamento di evidenza dietro ogni affermazione del sito."
+        />
+      </div>
+    </div>
+  </section>
+</LandingLayout>

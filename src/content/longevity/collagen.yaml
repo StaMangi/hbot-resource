@@ -2,41 +2,50 @@ title:
   en: "Collagen Production & Skin Health"
   el: "Παραγωγή Κολλαγόνου & Υγεία Δέρματος"
   de: "Kollagenproduktion & Hautgesundheit"
+  it: "Produzione di collagene & Salute della pelle"
 icon: "Layers"
 stat: "3×"
 statLabel:
   en: "Increase in collagen III formation"
   el: "Αύξηση σχηματισμού κολλαγόνου τύπου ΙΙΙ"
   de: "Anstieg der Kollagen-Typ-III-Bildung"
+  it: "Aumento della formazione di collagene di tipo III"
 color: "navy"
 summary:
   en: "HBOT stimulates collagen III formation and increases overall collagen production through growth factor upregulation, supporting skin elasticity, joint health, and connective tissue integrity."
   el: "Η HBOT διεγείρει σχηματισμό κολλαγόνου τύπου ΙΙΙ και αυξάνει συνολική παραγωγή κολλαγόνου μέσω ανύψωσης αυξητικών παραγόντων, υποστηρίζοντας ελαστικότητα δέρματος, υγεία αρθρώσεων και ακεραιότητα συνδετικού ιστού."
   de: "HBOT stimuliert die Bildung von Kollagen Typ III und erhöht die Gesamtkollagenproduktion durch Hochregulation von Wachstumsfaktoren, was die Hautelastizität, Gelenkgesundheit und Bindegewebsintegrität unterstützt."
+  it: "L'HBOT stimola la formazione di collagene di tipo III e aumenta la produzione complessiva di collagene attraverso la sovraregolazione dei fattori di crescita, sostenendo l'elasticità della pelle, la salute delle articolazioni e l'integrità del tessuto connettivo."
 mechanism:
   en: "Hyperoxia upregulates VEGF, PDGF, and FGF, promoting fibroblast proliferation and collagen synthesis. HBOT also enhances hydroxylation of proline and lysine residues, critical steps in collagen cross-linking and tissue strength."
   el: "Η υπεροξία ανεβάζει VEGF, PDGF και FGF, προάγοντας πολλαπλασιασμό ινοβλαστών και σύνθεση κολλαγόνου. Η HBOT επίσης ενισχύει υδροξυλίωση καταλοίπων προλίνης και λυσίνης, κρίσιμα βήματα στη διασύνδεση κολλαγόνου και αντοχή ιστού."
   de: "Die Hyperoxie reguliert VEGF, PDGF und FGF hoch und fördert die Fibroblasten-Proliferation sowie die Kollagensynthese. HBOT verstärkt zudem die Hydroxylierung von Prolin- und Lysinresten — entscheidende Schritte in der Kollagen-Quervernetzung und Gewebefestigkeit."
+  it: "L'iperossia sovraregola VEGF, PDGF e FGF, promuovendo la proliferazione dei fibroblasti e la sintesi del collagene. L'HBOT potenzia inoltre l'idrossilazione dei residui di prolina e lisina, passaggi fondamentali nella reticolazione del collagene e nella resistenza tissutale."
 protocol:
   ata:
     en: "2.0 – 2.4 ATA"
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
+    it: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"
     de: "20 – 40"
+    it: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "Clinical Research"
     el: "Κλινική Έρευνα"
     de: "Klinische Forschung"
+    it: "Ricerca clinica"
 refs:
   - "[11]"

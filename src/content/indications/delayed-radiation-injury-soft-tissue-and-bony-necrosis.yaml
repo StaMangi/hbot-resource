@@ -4,40 +4,49 @@ category:
   en: "Wound Healing"
   el: "Επούλωση Τραυμάτων"
   de: "Wundheilung"
+  it: "Guarigione delle ferite"
 condition:
   en: "Delayed Radiation Injury (Soft Tissue & Bony Necrosis)"
   el: "Καθυστερημένη Ακτινοβολική Βλάβη (Νέκρωση Μαλακών Ιστών & Οστού)"
   de: "Späte Strahlenschäden (Weichteil- und Knochennekrose)"
+  it: "Danno radiogeno tardivo (necrosi dei tessuti molli e ossea)"
 description:
   en: "Treatment for osteoradionecrosis and soft tissue radiation necrosis. Promotes angiogenesis in hypoxic, hypovascular, hypocellular tissue."
   el: "Θεραπεία για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό."
   de: "Behandlung der Osteoradionekrose und der Strahlennekrose der Weichgewebe. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe."
+  it: "Trattamento dell'osteoradionecrosi e della necrosi radiogena dei tessuti molli. Favorisce l'angiogenesi nel tessuto ipossico, ipovascolare e ipocellulare."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
+  it: "Standard di cura"
 evidenceLevel: "A"
 protocol:
   ata:
     en: "2.0 – 2.4 ATA"
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
+    it: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "30 – 60"
     el: "30 – 60"
     de: "30 – 60"
+    it: "30 – 60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
+    it: "UHMS / Standard di cura"
 refs:
   - "[1]"
   - "[12]"

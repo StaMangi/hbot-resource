@@ -2,146 +2,176 @@ name:
   en: "Medical Oncology"
   el: "Παθολογική Ογκολογία"
   de: "Internistische Onkologie"
+  it: "Oncologia medica"
 icon: "Activity"
 color: "#b45309"
 shortDesc:
   en: "Radiation Injury, Tumor Sensitization"
   el: "Ακτινοβολική Βλάβη, Ευαισθητοποίηση Όγκου"
   de: "Strahlenschäden, Tumorsensibilisierung"
+  it: "Danno radiogeno, radiosensibilizzazione tumorale"
 applications:
   - title:
       en: "Delayed Radiation Injury"
       el: "Καθυστερημένη Ακτινοβολική Βλάβη"
       de: "Verzögerte Strahlenschäden"
+      it: "Danno radiogeno tardivo"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Standard-of-care treatment for osteoradionecrosis and soft tissue radiation necrosis. HBOT promotes angiogenesis in hypoxic, hypovascular, hypocellular irradiated tissue."
       el: "Θεραπεία πρότυπου φροντίδας για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Η HBOT προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ακτινοβολημένο ιστό."
       de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe."
+      it: "Trattamento standard di cura per l'osteoradionecrosi e la necrosi radiogena dei tessuti molli. L'HBOT promuove l'angiogenesi nel tessuto irradiato ipossico, ipovascolare, ipocellulare."
     evidence: "Level A"
     protocol:
       ata:
         en: "2.0 – 2.4 ATA"
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
+        it: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
+        it: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
+        it: "UHMS / Approvato dalla FDA"
     refs:
       - "[9]"
   - title:
       en: "Radiation Cystitis & Proctitis"
       el: "Ακτινοβολική Κυστίτιδα & Πρωκτίτιδα"
       de: "Strahlenzystitis & Strahlenproktitis"
+      it: "Cistite e proctite radiogena"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Approved adjunctive treatment for radiation-induced hemorrhagic cystitis and proctitis, reducing bleeding and promoting mucosal healing."
       el: "Εγκεκριμένη επικουρική θεραπεία για αιμορραγική κυστίτιδα και πρωκτίτιδα από ακτινοβολία, μειώνοντας αιμορραγία και προάγοντας επούλωση βλεννογόνου."
       de: "Zugelassene adjuvante Therapie bei strahleninduzierter hämorrhagischer Zystitis und Proktitis; reduziert Blutungen und fördert die Schleimhautheilung."
+      it: "Trattamento adiuvante approvato per la cistite e la proctite emorragica indotte da radiazioni, che riduce il sanguinamento e promuove la guarigione della mucosa."
     evidence: "Level A"
     protocol:
       ata:
         en: "2.0 – 2.4 ATA"
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
+        it: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
+        it: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
+        it: "UHMS / Standard di cura"
     refs:
       - "[9]"
   - title:
       en: "Tumor Radiosensitization"
       el: "Ακτινοευαισθητοποίηση Όγκου"
       de: "Tumor-Strahlensensibilisierung"
+      it: "Radiosensibilizzazione tumorale"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Investigational use as neoadjuvant therapy to sensitize hypoxic solid tumors to radiotherapy and chemotherapy. Hypoxic tumor microenvironments are resistant to radiation; HBOT may reverse this resistance."
       el: "Ερευνητική χρήση ως νεοεπικουρική θεραπεία για ευαισθητοποίηση υποξικών συμπαγών όγκων σε ακτινοθεραπεία και χημειοθεραπεία. Υποξικά μικροπεριβάλλοντα όγκων αντιστέκονται στην ακτινοβολία· η HBOT μπορεί να αντιστρέψει αυτή την αντίσταση."
       de: "Investigative Anwendung als neoadjuvante Therapie zur Sensibilisierung hypoxischer solider Tumoren gegenüber Strahlen- und Chemotherapie. Hypoxische Tumormikromilieus sind strahlenresistent; HBOT kann diese Resistenz umkehren."
+      it: "Uso sperimentale come terapia neoadiuvante per sensibilizzare i tumori solidi ipossici alla radioterapia e alla chemioterapia. I microambienti tumorali ipossici sono resistenti alle radiazioni; l'HBOT può invertire questa resistenza."
     evidence: "Level C"
     protocol:
       ata:
         en: "2.0 – 2.5 ATA"
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
+        it: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
         de: "Pro Strahlenzyklus"
+        it: "Per ciclo di radioterapia"
       frequency:
         en: "Prior to each radiation fraction"
         el: "Πριν από κάθε κλάσμα ακτινοβολίας"
         de: "Vor jeder Strahlenfraktion"
+        it: "Prima di ogni frazione di radioterapia"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
+        it: "Sperimentale"
     refs:
       - "[17]"
   - title:
       en: "Breast Radiation Complications"
       el: "Επιπλοκές Ακτινοθεραπείας Μαστού"
       de: "Komplikationen der Brustbestrahlung"
+      it: "Complicanze da radioterapia mammaria"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Effective treatment for late radiation toxicity in breast cancer patients, including radiation dermatitis and tissue necrosis following breast-conserving surgery."
       el: "Αποτελεσματική θεραπεία για όψιμη ακτινοτοξικότητα σε ασθενείς με καρκίνο μαστού, συμπεριλαμβανομένης ακτινοδερματίτιδας και νέκρωσης ιστού μετά από συντηρητική χειρουργική μαστού."
       de: "Wirksame Behandlung der späten Strahlentoxizität bei Brustkrebspatientinnen, einschließlich Strahlendermatitis und Gewebenekrose nach brusterhaltender Operation."
+      it: "Trattamento efficace della tossicità radiogena tardiva nelle pazienti con cancro al seno, compresa la radiodermatite e la necrosi tissutale dopo chirurgia conservativa della mammella."
     evidence: "Level A"
     protocol:
       ata:
         en: "2.0 – 2.4 ATA"
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
+        it: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
+        it: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
+        it: "UHMS / Standard di cura"
     refs:
       - "[9]"

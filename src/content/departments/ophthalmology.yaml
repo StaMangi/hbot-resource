@@ -2,45 +2,54 @@ name:
   en: "Ophthalmology"
   el: "Οφθαλμολογία"
   de: "Augenheilkunde"
+  it: "Oftalmologia"
 icon: "Eye"
 color: "#4f46e5"
 shortDesc:
   en: "Retinal Artery Occlusion, Retinal Ischemia"
   el: "Απόφραξη Αμφιβληστροειδικής Αρτηρίας, Ισχαιμία Αμφιβληστροειδούς"
   de: "Netzhautarterienverschluss, retinale Ischämie"
+  it: "Occlusione dell'arteria retinica, ischemia retinica"
 applications:
   - title:
       en: "Central Retinal Artery Occlusion (CRAO)"
       el: "Απόφραξη Κεντρικής Αρτηρίας Αμφιβληστροειδούς (ΑΚΑΑ)"
       de: "Zentralarterienverschluss der Netzhaut (ZAV)"
+      it: "Occlusione dell'arteria centrale della retina (CRAO)"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "Emergency FDA-approved treatment. Early HBOT intervention (within 24 hours) preserves retinal layers and improves visual acuity by reversing acute retinal ischemia."
       el: "Επείγουσα εγκεκριμένη θεραπεία FDA. Η έγκαιρη παρέμβαση HBOT (εντός 24 ωρών) διατηρεί στρώματα αμφιβληστροειδούς και βελτιώνει οπτική οξύτητα αντιστρέφοντας οξεία αμφιβληστροειδική ισχαιμία."
       de: "FDA-zugelassene Notfallbehandlung. Eine frühzeitige HBOT-Intervention (innerhalb von 24 Stunden) erhält die Netzhautschichten und verbessert die Sehschärfe durch Umkehr der akuten retinalen Ischämie."
+      it: "Trattamento d'emergenza approvato dalla FDA. L'intervento precoce con HBOT (entro 24 ore) preserva gli strati retinici e migliora l'acuità visiva invertendo l'ischemia retinica acuta."
     evidence: "Level B"
     protocol:
       ata:
         en: "2.0 – 2.8 ATA"
         el: "2.0 – 2.8 ATA"
         de: "2.0 – 2.8 ATA"
+        it: "2.0 – 2.8 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "1 – 3 (emergency)"
         el: "1 – 3 (επείγον)"
         de: "1 – 3 (Notfall)"
+        it: "1 – 3 (emergenza)"
       frequency:
         en: "Immediately, then daily"
         el: "Αμέσως, μετά καθημερινά"
         de: "Sofort, dann täglich"
+        it: "Immediatamente, poi quotidiano"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
+        it: "UHMS / Approvato dalla FDA"
     refs:
       - "[9]"
       - "[19]"
@@ -48,33 +57,40 @@ applications:
       en: "Diabetic Retinopathy"
       el: "Διαβητική Αμφιβληστροειδοπάθεια"
       de: "Diabetische Retinopathie"
+      it: "Retinopatia diabetica"
     type: "Research"
     typeColor: "orange"
     description:
       en: "Investigational use for early-stage diabetic retinopathy. HBOT may reduce retinal hypoxia and slow progression of vascular changes."
       el: "Ερευνητική χρήση για πρώιμο στάδιο διαβητικής αμφιβληστροειδοπάθειας. Η HBOT μπορεί να μειώσει αμφιβληστροειδική υποξία και να επιβραδύνει εξέλιξη αγγειακών αλλαγών."
       de: "Investigative Anwendung bei früher diabetischer Retinopathie. HBOT kann die retinale Hypoxie reduzieren und das Fortschreiten vaskulärer Veränderungen verlangsamen."
+      it: "Uso sperimentale per la retinopatia diabetica in fase iniziale. L'HBOT può ridurre l'ipossia retinica e rallentare la progressione delle alterazioni vascolari."
     evidence: "Level C"
     protocol:
       ata:
         en: "2.0 – 2.4 ATA"
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
+        it: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
+        it: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
+        it: "Sperimentale"
     refs:
       - "[2]"

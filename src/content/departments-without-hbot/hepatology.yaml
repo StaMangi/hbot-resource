@@ -2,12 +2,15 @@ name:
   en: "Hepatology"
   el: "Ηπατολογία"
   de: "Hepatologie"
+  it: "Epatologia"
 icon: "Layers"
 rationale:
   en: "While preclinical research is emerging on HBOT for liver regeneration and hepatic ischemia-reperfusion injury, this has not yet translated to established clinical practice. Liver transplant centers have explored HBOT as a preservation strategy, but this remains strictly investigational with no approved protocols."
   el: "Ενώ αναδύεται προκλινική έρευνα για HBOT σε αναγέννηση ήπατος και ηπατική βλάβη ισχαιμίας-επαναιμάτωσης, αυτό δεν έχει ακόμα μεταφραστεί σε καθιερωμένη κλινική πρακτική. Κέντρα μεταμόσχευσης ήπατος έχουν εξερευνήσει την HBOT ως στρατηγική διατήρησης, αλλά αυτό παραμένει αυστηρά ερευνητικό χωρίς εγκεκριμένα πρωτόκολλα."
   de: "Es entsteht zwar präklinische Forschung zu HBOT bei der Leberregeneration und der hepatischen Ischämie-Reperfusionsschädigung, doch hat sich dies bislang nicht in eine etablierte klinische Praxis übersetzt. Lebertransplantationszentren haben HBOT als Konservierungsstrategie erforscht, dies bleibt jedoch streng investigativ und es existieren keine zugelassenen Protokolle."
+  it: "Sebbene stia emergendo la ricerca preclinica sull'HBOT per la rigenerazione epatica e il danno epatico da ischemia-riperfusione, ciò non si è ancora tradotto in una pratica clinica consolidata. I centri di trapianto di fegato hanno esplorato l'HBOT come strategia di conservazione, ma ciò rimane strettamente sperimentale, senza protocolli approvati."
 role:
   en: "Preclinical research only; no established clinical protocols"
   el: "Μόνο προκλινική έρευνα· δεν υπάρχουν καθιερωμένα κλινικά πρωτόκολλα"
   de: "Nur präklinische Forschung; keine etablierten klinischen Protokolle"
+  it: "Solo ricerca preclinica; nessun protocollo clinico consolidato"

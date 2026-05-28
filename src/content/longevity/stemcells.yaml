@@ -2,41 +2,50 @@ title:
   en: "Stem Cell Mobilization"
   el: "Κινητοποίηση Βλαστοκυττάρων"
   de: "Stammzellen-Mobilisierung"
+  it: "Mobilizzazione delle cellule staminali"
 icon: "Sparkles"
 stat: "8×"
 statLabel:
   en: "Increase in circulating stem cells"
   el: "Αύξηση κυκλοφορούντων βλαστοκυττάρων"
   de: "Anstieg zirkulierender Stammzellen"
+  it: "Aumento delle cellule staminali circolanti"
 color: "navy"
 summary:
   en: "HBOT mobilizes bone marrow stem cells into circulation at rates up to 8-fold above baseline, enhancing the body's regenerative capacity for tissue repair and organ maintenance."
   el: "Η HBOT κινητοποιεί βλαστοκύτταρα μυελού οστών στην κυκλοφορία σε ρυθμούς έως 8 φορές πάνω από τη βάση, ενισχύοντας αναγεννητική ικανότητα του σώματος για επισκευή ιστών και συντήρηση οργάνων."
   de: "HBOT mobilisiert Knochenmarks-Stammzellen in den Kreislauf in Raten von bis zum 8-Fachen des Ausgangswertes und stärkt damit die regenerative Kapazität des Körpers zur Geweberreparatur und Organerhaltung."
+  it: "L'HBOT mobilizza le cellule staminali del midollo osseo nel circolo a tassi fino a 8 volte superiori al valore basale, potenziando la capacità rigenerativa dell'organismo per la riparazione tissutale e il mantenimento degli organi."
 mechanism:
   en: "Hyperoxia activates endothelial nitric oxide synthase (eNOS), which triggers stem cell mobilization from bone marrow niches. Increased circulating stem progenitor cells (SPCs) differentiate into various cell types to repair damaged tissues."
   el: "Η υπεροξία ενεργοποιεί ενδοθηλιακή συνθάση μονοξειδίου αζώτου (eNOS), η οποία ενεργοποιεί κινητοποίηση βλαστοκυττάρων από θέσεις μυελού οστών. Αυξημένα κυκλοφορούντα πρόδρομα βλαστοκύτταρα (SPCs) διαφοροποιούνται σε διάφορους τύπους κυττάρων για επισκευή κατεστραμμένων ιστών."
   de: "Die Hyperoxie aktiviert die endotheliale Stickstoffmonoxid-Synthase (eNOS), die die Stammzell-Mobilisierung aus den Knochenmarksnischen auslöst. Vermehrt zirkulierende Stamm- und Progenitorzellen (SPCs) differenzieren sich in verschiedene Zelltypen zur Reparatur geschädigter Gewebe."
+  it: "L'iperossia attiva la sintasi endoteliale dell'ossido nitrico (eNOS), che innesca la mobilizzazione delle cellule staminali dalle nicchie del midollo osseo. L'aumento delle cellule staminali progenitrici circolanti (SPC) si differenzia in vari tipi cellulari per riparare i tessuti danneggiati."
 protocol:
   ata:
     en: "2.0 – 2.4 ATA"
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
+    it: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"
     de: "20 – 40"
+    it: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "Thom et al., 2006 / Clinical Research"
     el: "Thom et al., 2006 / Κλινική Έρευνα"
     de: "Thom et al., 2006 / Klinische Forschung"
+    it: "Thom et al., 2006 / Ricerca clinica"
 refs:
   - "[6]"

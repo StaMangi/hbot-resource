@@ -2,12 +2,15 @@ name:
   en: "Kidney Dialysis Unit"
   el: "Μονάδα Νεφρικής Αιμοκάθαρσης"
   de: "Dialysestation"
+  it: "Unità di Dialisi Renale"
 icon: "Droplet"
 rationale:
   en: "While emerging research explores HBOT for chronic kidney disease and diabetic nephropathy, it is not currently a treatment modality utilized within a standard dialysis unit. Dialysis patients have complex vascular access requirements and hemodynamic instability that complicate hyperbaric treatment. This remains a preclinical area of investigation."
   el: "Ενώ αναδυόμενη έρευνα εξερευνά την HBOT για χρόνια νεφρική νόσο και διαβητική νεφροπάθεια, δεν αποτελεί επί του παρόντος θεραπευτική μέθοδο που χρησιμοποιείται εντός τυπικής μονάδας αιμοκάθαρσης. Ασθενείς αιμοκάθαρσης έχουν σύνθετες απαιτήσεις αγγειακής πρόσβασης και αιμοδυναμική αστάθεια που περιπλέκουν υπερβαρική θεραπεία."
   de: "Obwohl aufkommende Forschung HBOT bei chronischer Nierenerkrankung und diabetischer Nephropathie untersucht, ist sie derzeit keine in einer Standard-Dialysestation eingesetzte Behandlungsmodalität. Dialysepatient:innen haben komplexe Anforderungen an den Gefäßzugang und eine hämodynamische Instabilität, die eine hyperbare Behandlung erschweren. Dies bleibt ein präklinisches Forschungsfeld."
+  it: "Sebbene la ricerca emergente esplori l'HBOT per la malattia renale cronica e la nefropatia diabetica, essa non è attualmente una modalità terapeutica utilizzata all'interno di un'unità di dialisi standard. I pazienti in dialisi presentano complesse esigenze di accesso vascolare e instabilità emodinamica che complicano il trattamento iperbarico. Questo rimane un ambito di ricerca preclinica."
 role:
   en: "No current clinical application; preclinical research ongoing"
   el: "Καμία τρέχουσα κλινική εφαρμογή· προκλινική έρευνα σε εξέλιξη"
   de: "Keine aktuelle klinische Anwendung; präklinische Forschung läuft"
+  it: "Nessuna applicazione clinica attuale; ricerca preclinica in corso"

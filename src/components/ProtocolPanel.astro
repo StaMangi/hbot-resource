@@ -3,14 +3,15 @@ import { Icon } from "astro-icon/components";
 import type { Locale } from "@/lib/seo";
 
 interface Protocol {
-  // All five fields are trilingual. ata + duration joined the bilingual set
-  // late in Phase 7 — the endometriosis entry surfaced prose values
-  // ("Not standardised") that needed locale-specific translation.
-  ata: { en: string; el: string; de: string };
-  duration: { en: string; el: string; de: string };
-  sessions: { en: string; el: string; de: string };
-  frequency: { en: string; el: string; de: string };
-  basis: { en: string; el: string; de: string };
+  // All five fields are multilingual. ata + duration joined the set late in
+  // Phase 7 — the endometriosis entry surfaced prose values ("Not
+  // standardised") that needed locale-specific translation. `it` is optional
+  // during the Phase 7.B rollout (warn-not-fail), required at Stage 6.
+  ata: { en: string; el: string; de: string; it?: string };
+  duration: { en: string; el: string; de: string; it?: string };
+  sessions: { en: string; el: string; de: string; it?: string };
+  frequency: { en: string; el: string; de: string; it?: string };
+  basis: { en: string; el: string; de: string; it?: string };
 }
 
 interface Props {
@@ -45,6 +46,14 @@ const labels = {
     sessions: "Sitzungen",
     frequency: "Frequenz",
     basis: "Evidenzgrundlage",
+  },
+  it: {
+    protocol: "Protocollo",
+    pressure: "Pressione",
+    duration: "Durata",
+    sessions: "Sedute",
+    frequency: "Frequenza",
+    basis: "Base di evidenza",
   },
 }[locale];
 

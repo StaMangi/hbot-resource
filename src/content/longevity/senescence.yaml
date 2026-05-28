@@ -2,41 +2,50 @@ title:
   en: "Senescent Cell Clearance"
   el: "Εκκαθάριση Γηρασμένων Κυττάρων"
   de: "Beseitigung Seneszenter Zellen"
+  it: "Eliminazione delle cellule senescenti"
 icon: "Trash2"
 stat: "37%"
 statLabel:
   en: "Reduction in senescent T-cells"
   el: "Μείωση γηρασμένων T-κυττάρων"
   de: "Reduktion seneszenter T-Zellen"
+  it: "Riduzione dei linfociti T senescenti"
 color: "navy"
 summary:
   en: "The same landmark study demonstrated significant reduction in senescent (dysfunctional) immune cells — the first senolytic effect demonstrated through a non-pharmacological intervention."
   el: "Η ίδια σταθμός μελέτη απέδειξε σημαντική μείωση γηρασμένων (δυσλειτουργικών) ανοσοκυττάρων — το πρώτο σενολυτικό αποτέλεσμα που αποδείχθηκε μέσω μη φαρμακολογικής παρέμβασης."
   de: "Dieselbe wegweisende Studie zeigte eine signifikante Reduktion seneszenter (dysfunktionaler) Immunzellen — der erste senolytische Effekt, der durch eine nicht-pharmakologische Intervention nachgewiesen wurde."
+  it: "Lo stesso studio di riferimento ha dimostrato una riduzione significativa delle cellule immunitarie senescenti (disfunzionali) — il primo effetto senolitico dimostrato attraverso un intervento non farmacologico."
 mechanism:
   en: "HBOT induces selective apoptosis of senescent cells through ROS-mediated signaling pathways. Senescent cells accumulate with age and drive the 'inflammaging' phenotype associated with age-related diseases."
   el: "Η HBOT επάγει εκλεκτική απόπτωση γηρασμένων κυττάρων μέσω σηματοδοτικών μονοπατιών μεσολαβούμενων από ROS. Τα γηρασμένα κύτταρα συσσωρεύονται με την ηλικία και οδηγούν τον φαινότυπο 'φλεγμονώδους γήρανσης' που σχετίζεται με ηλικιακές παθήσεις."
   de: "HBOT induziert die selektive Apoptose seneszenter Zellen über ROS-vermittelte Signalwege. Seneszente Zellen sammeln sich im Alter an und treiben den „Inflammaging\"-Phänotyp, der mit altersbedingten Erkrankungen in Verbindung steht."
+  it: "L'HBOT induce l'apoptosi selettiva delle cellule senescenti attraverso vie di segnalazione mediate dalle ROS. Le cellule senescenti si accumulano con l'età e guidano il fenotipo dell'\"inflammaging\" associato alle malattie legate all'invecchiamento."
 protocol:
   ata:
     en: "2.0 ATA"
     el: "2.0 ATA"
     de: "2.0 ATA"
+    it: "2.0 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
+    it: "90 min"
   sessions:
     en: "60"
     el: "60"
     de: "60"
+    it: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
+    it: "Una volta al giorno, 5×/settimana"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
     de: "Hadanny et al., 2020 (RKS)"
+    it: "Hadanny et al., 2020 (RCT)"
 refs:
   - "[3]"

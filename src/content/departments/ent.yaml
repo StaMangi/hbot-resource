@@ -2,78 +2,94 @@ name:
   en: "ENT (Otolaryngology)"
   el: "ΩΡΛ (Ωτορινολαρυγγολογία)"
   de: "HNO (Hals-Nasen-Ohren-Heilkunde)"
+  it: "ORL (Otorinolaringoiatria)"
 icon: "Ear"
 color: "#0891b2"
 shortDesc:
   en: "Sudden Hearing Loss, Tinnitus"
   el: "Αιφνίδια Απώλεια Ακοής, Εμβοές"
   de: "Plötzlicher Hörverlust, Tinnitus"
+  it: "Ipoacusia improvvisa, acufene"
 applications:
   - title:
       en: "Idiopathic Sudden Sensorineural Hearing Loss"
       el: "Ιδιοπαθής Αιφνίδια Αισθητηριονευρική Απώλεια Ακοής"
       de: "Idiopathischer plötzlicher sensorineuraler Hörverlust"
+      it: "Ipoacusia neurosensoriale improvvisa idiopatica"
     type: "FDA-Approved"
     typeColor: "green"
     description:
       en: "FDA-approved adjunctive treatment (2011) when corticosteroid therapy fails. Reverses cochlear hypoxia and reduces endolymphatic hydrops, improving hearing recovery rates."
       el: "Εγκεκριμένη επικουρική θεραπεία FDA (2011) όταν αποτυγχάνει η θεραπεία με κορτικοστεροειδή. Αντιστρέφει κοχλιακή υποξία και μειώνει ενδολεμφικό ύδρωπα, βελτιώνοντας ποσοστά αποκατάστασης ακοής."
       de: "FDA-zugelassene adjuvante Therapie (2011) bei Versagen der Kortikosteroidtherapie. Kehrt die kochleäre Hypoxie um und reduziert den endolymphatischen Hydrops, wodurch die Hörerholungsraten verbessert werden."
+      it: "Trattamento adiuvante approvato dalla FDA (2011) quando la terapia con corticosteroidi fallisce. Inverte l'ipossia cocleare e riduce l'idrope endolinfatico, migliorando i tassi di recupero uditivo."
     evidence: "Level B"
     protocol:
       ata:
         en: "2.0 – 2.5 ATA"
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
+        it: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
+        it: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
+        it: "UHMS / Approvato dalla FDA"
     refs:
       - "[9]"
   - title:
       en: "Tinnitus"
       el: "Εμβοές"
       de: "Tinnitus"
+      it: "Acufene"
     type: "Research"
     typeColor: "blue"
     description:
       en: "Investigational use for chronic tinnitus associated with cochlear hypoxia. Some clinical studies show improvement in tinnitus severity scores."
       el: "Ερευνητική χρήση για χρόνιες εμβοές που σχετίζονται με κοχλιακή υποξία. Ορισμένες κλινικές μελέτες δείχνουν βελτίωση στις βαθμολογίες σοβαρότητας εμβοών."
       de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus."
+      it: "Uso sperimentale per l'acufene cronico associato a ipossia cocleare. Alcuni studi clinici mostrano un miglioramento dei punteggi di gravità dell'acufene."
     evidence: "Level C"
     protocol:
       ata:
         en: "2.0 – 2.5 ATA"
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
+        it: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
+        it: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
+        it: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
+        it: "Una volta al giorno, 5×/settimana"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
+        it: "Ricerca clinica"
     refs:
       - "[2]"
