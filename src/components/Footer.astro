@@ -14,6 +14,7 @@ const { locale } = Astro.props;
 const editorialLine = "Editorial publisher: IN2050 Ltd · Cyprus · Reg. HE416406";
 
 const aboutPath = locale === "en" ? "/about/" : `/${locale}/about/`;
+const contactPath = locale === "en" ? "/contact/" : `/${locale}/contact/`;
 const aboutLabel =
   locale === "en"
     ? "Editorial policy"
@@ -47,6 +48,10 @@ const year = new Date().getFullYear();
     <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500">
       <a href={aboutPath} class="hover:text-teal-700 transition-colors">
         {aboutLabel}
+      </a>
+      <span aria-hidden="true" class="text-slate-300">·</span>
+      <a href={contactPath} class="hover:text-teal-700 transition-colors">
+        {t("nav.contact", locale)}
       </a>
     </p>
 

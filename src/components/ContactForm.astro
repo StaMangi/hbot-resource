@@ -1,0 +1,405 @@
+---
+/**
+ * ContactForm — two-mode contact form (research submission vs general).
+ *
+ * Mirrors the SubscribeForm pattern: server-rendered Astro <form> + one lean
+ * bundled <script>, NOT a React island. Localised strings come from i18n.
+ * Abuse protection is Cloudflare Turnstile (Managed); the Function re-verifies
+ * the token server-side. Posts JSON to /api/contact.
+ *
+ * The reason <select> drives which field set is shown. BOTH sets render in the
+ * HTML; the hidden set's controls are `disabled`, so they are excluded from
+ * native constraint validation AND from FormData serialisation until their
+ * mode becomes active. The script flips `hidden` + `disabled` together.
+ *
+ * The Turnstile sitekey is public. Set PUBLIC_TURNSTILE_SITEKEY as a Cloudflare
+ * Pages build env var; until then it falls back to Cloudflare's always-passes
+ * TEST sitekey so the widget renders during the build-now phase.
+ */
+import { t } from "@/i18n";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const TURNSTILE_SITEKEY =
+  import.meta.env.PUBLIC_TURNSTILE_SITEKEY ?? "1x00000000000000000000AA";
+
+const s = {
+  reasonLabel: t("contact.reason.label", locale),
+  reasonPrompt: t("contact.reason.prompt", locale),
+  reasonResearch: t("contact.reason.research", locale),
+  reasonCorrections: t("contact.reason.corrections", locale),
+  reasonPartnership: t("contact.reason.partnership", locale),
+  reasonMedia: t("contact.reason.media", locale),
+  reasonGeneral: t("contact.reason.general", locale),
+  name: t("contact.field.name", locale),
+  email: t("contact.field.email", locale),
+  optional: t("contact.optional", locale),
+  message: t("contact.general.message", locale),
+  typeLabel: t("contact.research.type.label", locale),
+  typeComment: t("contact.research.type.comment", locale),
+  typeArticle: t("contact.research.type.article", locale),
+  typeStudy: t("contact.research.type.study", locale),
+  typeTrial: t("contact.research.type.trial", locale),
+  typeOther: t("contact.research.type.other", locale),
+  linkLabel: t("contact.research.link.label", locale),
+  linkHelp: t("contact.research.link.help", locale),
+  titleLabel: t("contact.research.title.label", locale),
+  relationLabel: t("contact.research.relation.label", locale),
+  relevanceLabel: t("contact.research.relevance.label", locale),
+  affiliationLabel: t("contact.research.affiliation.label", locale),
+  roleLabel: t("contact.research.role.label", locale),
+  roleHelp: t("contact.research.role.help", locale),
+  notice: t("contact.research.notice", locale),
+  submit: t("contact.submit", locale),
+  sending: t("contact.sending", locale),
+  success: t("contact.success", locale),
+  error: t("contact.error", locale),
+  vReason: t("contact.validation.reason", locale),
+  vRequired: t("contact.validation.required", locale),
+  vEmail: t("contact.validation.email", locale),
+  vTurnstile: t("contact.validation.turnstile", locale),
+};
+
+const inputCls =
+  "w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-800 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 focus:outline-none disabled:bg-slate-50 aria-[invalid=true]:border-red-400";
+const labelCls = "block text-sm font-medium text-slate-800 mb-1.5";
+const helpCls = "mt-1 text-xs text-slate-500";
+const errCls = "mt-1 text-xs text-red-600";
+const optMark = ` (${s.optional})`;
+---
+
+<form
+  id="contact-form"
+  novalidate
+  data-sending={s.sending}
+  data-error={s.error}
+  data-v-reason={s.vReason}
+  data-v-required={s.vRequired}
+  data-v-email={s.vEmail}
+  data-v-turnstile={s.vTurnstile}
+  class="space-y-5"
+>
+  {/* Reason — always visible; drives the field set below */}
+  <div>
+    <label class={labelCls} for="cf-reason">
+      {s.reasonLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+    </label>
+    <select
+      id="cf-reason"
+      name="reason"
+      required
+      aria-describedby="cf-reason-error"
+      class={inputCls}
+    >
+      <option value="" selected disabled>{s.reasonPrompt}</option>
+      <option value="research">{s.reasonResearch}</option>
+      <option value="corrections">{s.reasonCorrections}</option>
+      <option value="partnership">{s.reasonPartnership}</option>
+      <option value="media">{s.reasonMedia}</option>
+      <option value="general">{s.reasonGeneral}</option>
+    </select>
+    <p id="cf-reason-error" class={`${errCls} hidden`}></p>
+  </div>
+
+  {/* ── Mode 1: research submission ───────────────────────────────── */}
+  <div data-group="research" hidden class="space-y-5">
+    <p
+      class="rounded-lg border border-teal-200 bg-teal-50/50 px-4 py-3 text-xs leading-relaxed text-slate-600"
+    >
+      {s.notice}
+    </p>
+
+    <div>
+      <label class={labelCls} for="cf-type">
+        {s.typeLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <select id="cf-type" name="submissionType" required disabled aria-describedby="cf-type-error" class={inputCls}>
+        <option value="comment">{s.typeComment}</option>
+        <option value="article">{s.typeArticle}</option>
+        <option value="study">{s.typeStudy}</option>
+        <option value="trial">{s.typeTrial}</option>
+        <option value="other">{s.typeOther}</option>
+      </select>
+      <p id="cf-type-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-link">
+        {s.linkLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-link" name="link" type="text" required disabled inputmode="url" aria-describedby="cf-link-help cf-link-error" class={inputCls} />
+      <p id="cf-link-help" class={helpCls}>{s.linkHelp}</p>
+      <p id="cf-link-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-title">
+        {s.titleLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-title" name="title" type="text" required disabled aria-describedby="cf-title-error" class={inputCls} />
+      <p id="cf-title-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-relation">{s.relationLabel}{optMark}</label>
+      <input id="cf-relation" name="relation" type="text" disabled class={inputCls} />
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-relevance">{s.relevanceLabel}{optMark}</label>
+      <textarea id="cf-relevance" name="relevance" rows="3" disabled class={inputCls}></textarea>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-r-name">
+        {s.name}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-r-name" name="name" type="text" required disabled autocomplete="name" aria-describedby="cf-r-name-error" class={inputCls} />
+      <p id="cf-r-name-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-affiliation">
+        {s.affiliationLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-affiliation" name="affiliation" type="text" required disabled autocomplete="organization" aria-describedby="cf-affiliation-error" class={inputCls} />
+      <p id="cf-affiliation-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-role">
+        {s.roleLabel}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-role" name="role" type="text" required disabled aria-describedby="cf-role-help cf-role-error" class={inputCls} />
+      <p id="cf-role-help" class={helpCls}>{s.roleHelp}</p>
+      <p id="cf-role-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-r-email">
+        {s.email}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-r-email" name="email" type="email" required disabled autocomplete="email" aria-describedby="cf-r-email-error" class={inputCls} />
+      <p id="cf-r-email-error" class={`${errCls} hidden`}></p>
+    </div>
+  </div>
+
+  {/* ── Mode 2: general contact ───────────────────────────────────── */}
+  <div data-group="general" hidden class="space-y-5">
+    <div>
+      <label class={labelCls} for="cf-g-name">
+        {s.name}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-g-name" name="name" type="text" required disabled autocomplete="name" aria-describedby="cf-g-name-error" class={inputCls} />
+      <p id="cf-g-name-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-g-email">
+        {s.email}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <input id="cf-g-email" name="email" type="email" required disabled autocomplete="email" aria-describedby="cf-g-email-error" class={inputCls} />
+      <p id="cf-g-email-error" class={`${errCls} hidden`}></p>
+    </div>
+
+    <div>
+      <label class={labelCls} for="cf-message">
+        {s.message}<span class="text-red-600" aria-hidden="true"> *</span>
+      </label>
+      <textarea id="cf-message" name="message" rows="6" required disabled aria-describedby="cf-message-error" class={inputCls}></textarea>
+      <p id="cf-message-error" class={`${errCls} hidden`}></p>
+    </div>
+  </div>
+
+  {/* Turnstile + submit + status (shared) */}
+  <div class="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} data-size="flexible"></div>
+
+  <div>
+    <button
+      type="submit"
+      class="rounded-lg bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-60"
+    >
+      {s.submit}
+    </button>
+  </div>
+
+  <p data-status role="alert" aria-live="assertive" class="hidden text-sm text-red-600"></p>
+</form>
+
+<div
+  data-success
+  role="status"
+  aria-live="polite"
+  hidden
+  class="rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-4 text-sm text-emerald-800"
+>
+  {s.success}
+</div>
+
+<script
+  is:inline
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer></script>
+
+<script>
+  // Two-mode contact form controller. Vanilla + bundled (no framework). Reads
+  // localised validation strings from data-* attributes on the form.
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const RESEARCH_REASON = "research";
+  const GENERAL_REASONS = ["corrections", "partnership", "media", "general"];
+
+  const form = document.getElementById("contact-form") as HTMLFormElement | null;
+  if (form) {
+    const reason = form.querySelector<HTMLSelectElement>("#cf-reason")!;
+    const groups = {
+      research: form.querySelector<HTMLElement>('[data-group="research"]')!,
+      general: form.querySelector<HTMLElement>('[data-group="general"]')!,
+    };
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    const status = form.querySelector<HTMLElement>("[data-status]")!;
+    const successPanel = document.querySelector<HTMLElement>("[data-success]")!;
+    const strings = {
+      sending: form.dataset.sending || "",
+      error: form.dataset.error || "",
+      vReason: form.dataset.vReason || "",
+      vRequired: form.dataset.vRequired || "",
+      vEmail: form.dataset.vEmail || "",
+      vTurnstile: form.dataset.vTurnstile || "",
+    };
+
+    const setGroup = (el: HTMLElement, active: boolean) => {
+      el.hidden = !active;
+      el.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(
+        "input, select, textarea",
+      ).forEach((c) => {
+        c.disabled = !active;
+      });
+    };
+
+    const showFieldError = (el: HTMLElement, msg: string) => {
+      const errEl = document.getElementById(`${el.id}-error`);
+      el.setAttribute("aria-invalid", "true");
+      if (errEl) {
+        errEl.textContent = msg;
+        errEl.classList.remove("hidden");
+      }
+    };
+
+    const clearErrors = () => {
+      form.querySelectorAll("[aria-invalid=true]").forEach((el) =>
+        el.removeAttribute("aria-invalid"),
+      );
+      form.querySelectorAll("[id$='-error']").forEach((el) => {
+        el.textContent = "";
+        el.classList.add("hidden");
+      });
+      status.classList.add("hidden");
+      status.textContent = "";
+    };
+
+    // Reason → reveal the matching field set; disable + hide the other.
+    reason.addEventListener("change", () => {
+      const v = reason.value;
+      setGroup(groups.research, v === RESEARCH_REASON);
+      setGroup(groups.general, GENERAL_REASONS.includes(v));
+      reason.removeAttribute("aria-invalid");
+      const re = document.getElementById("cf-reason-error");
+      if (re) {
+        re.textContent = "";
+        re.classList.add("hidden");
+      }
+    });
+
+    const validate = (): HTMLElement | null => {
+      clearErrors();
+      let firstInvalid: HTMLElement | null = null;
+      const flag = (el: HTMLElement, msg: string) => {
+        showFieldError(el, msg);
+        if (!firstInvalid) firstInvalid = el;
+      };
+
+      if (!reason.value) flag(reason, strings.vReason);
+
+      // Only enabled (= visible-mode) required controls are validated.
+      form
+        .querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(
+          "[required]:not(:disabled)",
+        )
+        .forEach((el) => {
+          if (el === reason) return;
+          const val = (el.value || "").trim();
+          if (!val) {
+            flag(el, strings.vRequired);
+          } else if (el.getAttribute("type") === "email" && !EMAIL_RE.test(val)) {
+            flag(el, strings.vEmail);
+          }
+        });
+
+      return firstInvalid;
+    };
+
+    const setStatus = (text: string) => {
+      status.textContent = text;
+      status.classList.remove("hidden");
+    };
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const firstInvalid = validate();
+      if (firstInvalid) {
+        firstInvalid.focus();
+        return;
+      }
+
+      const tokenInput = form.querySelector<HTMLInputElement>(
+        "input[name='cf-turnstile-response']",
+      );
+      const turnstileToken = tokenInput ? tokenInput.value : "";
+      if (!turnstileToken) {
+        setStatus(strings.vTurnstile);
+        return;
+      }
+
+      // FormData skips disabled controls, so only the active mode's fields ship.
+      const fd = new FormData(form);
+      const payload: Record<string, string> = { turnstileToken };
+      fd.forEach((value, key) => {
+        if (key === "cf-turnstile-response") return;
+        payload[key] = typeof value === "string" ? value : "";
+      });
+
+      const prevLabel = button.textContent;
+      button.disabled = true;
+      button.textContent = strings.sending;
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data: { ok?: boolean } = await res.json().catch(() => ({}));
+        if (res.ok && data.ok) {
+          form.hidden = true;
+          successPanel.hidden = false;
+          successPanel.focus?.();
+        } else {
+          setStatus(strings.error);
+          button.disabled = false;
+          button.textContent = prevLabel;
+        }
+      } catch {
+        setStatus(strings.error);
+        button.disabled = false;
+        button.textContent = prevLabel;
+      }
+
+      const ts = (window as unknown as { turnstile?: { reset: () => void } }).turnstile;
+      if (ts) ts.reset();
+    });
+  }
+</script>

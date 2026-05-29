@@ -10,6 +10,11 @@ dist/
 .env.local
 .env.*.local
 
+# Cloudflare Pages Functions local dev (wrangler) — secrets + local state.
+# Never commit: .dev.vars holds local TURNSTILE/RESEND test values.
+.dev.vars
+.wrangler/
+
 # logs
 npm-debug.log*
 pnpm-debug.log*
