@@ -20,7 +20,7 @@ interface Props {
 const { items } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="text-sm mb-6">
+<nav aria-label="Breadcrumb" class="text-sm mb-6" data-pagefind-ignore>
   <ol class="flex flex-wrap items-center gap-2 text-slate-500">
     {
       items.map((item, i) => (
