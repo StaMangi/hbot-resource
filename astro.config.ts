@@ -3,6 +3,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
+import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 
 // Canonical site URL. Domain registered with Namecheap, pointing to Cloudflare
@@ -41,6 +42,10 @@ export default defineConfig({
         locales: { en: "en", el: "el", de: "de", it: "it", es: "es" },
       },
     }),
+    // Pagefind MUST be last — it indexes the built dist/ HTML after all other
+    // integrations have produced output. Indexing only; the UI is lazy-mounted
+    // client-side (Nav search modal) so no Pagefind JS ships on initial load.
+    pagefind(),
   ],
   vite: {
     plugins: [tailwindcss()],
