@@ -3,6 +3,7 @@ name:
   el: "Γηριατρική Αξιολόγηση"
   de: "Geriatrische Beurteilung"
   it: "Valutazione geriatrica"
+  es: "Valoración geriátrica"
 icon: "Users"
 color: "#065f46"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Φυσική Απόδοση, Γνωστική Γήρανση"
   de: "Körperliche Leistungsfähigkeit, kognitives Altern"
   it: "Prestazione fisica, invecchiamento cognitivo"
+  es: "Rendimiento físico, envejecimiento cognitivo"
 applications:
   - title:
       en: "Physical Performance Enhancement"
       el: "Ενίσχυση Φυσικής Απόδοσης"
       de: "Verbesserung der körperlichen Leistungsfähigkeit"
       it: "Miglioramento della prestazione fisica"
+      es: "Mejora del rendimiento físico"
     type: "Research"
     typeColor: "blue"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Τυχαιοποιημένη ελεγχόμενη δοκιμή απέδειξε ότι η HBOT βελτιώνει μέγιστη φυσική απόδοση και καρδιακή αιμάτωση σε καθιστικούς ηλικιωμένους, ενισχύοντας ικανότητα άσκησης και καρδιαγγειακή λειτουργία."
       de: "Eine randomisierte kontrollierte Studie zeigte, dass HBOT die maximale körperliche Leistungsfähigkeit und die kardiale Perfusion bei sitzend lebenden älteren Erwachsenen verbessert und so die Belastbarkeit und die kardiovaskuläre Funktion steigert."
       it: "Uno studio clinico randomizzato controllato (RCT) ha dimostrato che l'HBOT migliora la prestazione fisica massimale e la perfusione cardiaca negli anziani sedentari, potenziando la capacità di esercizio e la funzione cardiovascolare."
+      es: "Un ensayo clínico aleatorizado (ECA) demostró que la HBOT mejora el rendimiento físico máximo y la perfusión cardiaca en adultos mayores sedentarios, potenciando la capacidad de ejercicio y la función cardiovascular."
     evidence: "Level A (RCT)"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 ATA"
         de: "2.0 ATA"
         it: "2.0 ATA"
+        es: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
+        es: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "RCT (Doenyas-Barak et al., 2024)"
         el: "ΤΕΔ (Doenyas-Barak et al., 2024)"
         de: "RKS (Doenyas-Barak et al., 2024)"
         it: "RCT (Doenyas-Barak et al., 2024)"
+        es: "ECA (Doenyas-Barak et al., 2024)"
     refs:
       - "[21]"
   - title:
@@ -57,6 +66,7 @@ applications:
       el: "Πρόληψη Γνωστικής Έκπτωσης"
       de: "Prävention des kognitiven Abbaus"
       it: "Prevenzione del declino cognitivo"
+      es: "Prevención del deterioro cognitivo"
     type: "Research"
     typeColor: "blue"
     description:
@@ -64,6 +74,7 @@ applications:
       el: "Η HBOT αντιστρέφει ηλικιακή εγκεφαλική υποαιμάτωση και προάγει αγγειογένεση σε εγκεφαλικό ιστό, ενδεχομένως αποτρέποντας ή επιβραδύνοντας γνωστική έκπτωση σε γηράσκοντες πληθυσμούς."
       de: "HBOT kehrt die altersbedingte zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe, wodurch der kognitive Abbau in alternden Populationen möglicherweise verhindert oder verlangsamt werden kann."
       it: "L'HBOT inverte l'ipoperfusione cerebrale legata all'età e promuove l'angiogenesi nel tessuto cerebrale, potenzialmente prevenendo o rallentando il declino cognitivo nelle popolazioni che invecchiano."
+      es: "La HBOT revierte la hipoperfusión cerebral asociada a la edad y promueve la angiogénesis en el tejido cerebral, lo que potencialmente previene o ralentiza el deterioro cognitivo en poblaciones que envejecen."
     evidence: "Level B"
     protocol:
       ata:
@@ -71,26 +82,31 @@ applications:
         el: "2.0 ATA"
         de: "2.0 ATA"
         it: "2.0 ATA"
+        es: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
+        es: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
         de: "RKS (Hadanny et al., 2020)"
         it: "RCT (Hadanny et al., 2020)"
+        es: "ECA (Hadanny et al., 2020)"
     refs:
       - "[4]"
       - "[5]"
@@ -99,6 +115,7 @@ applications:
       el: "Αντιστροφή Κυτταρικής Γήρανσης"
       de: "Umkehr der zellulären Alterung"
       it: "Inversione dell'invecchiamento cellulare"
+      es: "Reversión del envejecimiento celular"
     type: "Research"
     typeColor: "blue"
     description:
@@ -106,6 +123,7 @@ applications:
       el: "Πρώτη ανθρώπινη απόδειξη επιμήκυνσης τελομερών (>20%) και εκκαθάρισης γηρασμένων κυττάρων μέσω 60 συνεδριών HBOT σε υγιείς ηλικιωμένους, αντιπροσωπεύοντας νέα παρέμβαση κατά της γήρανσης."
       de: "Erster menschlicher Nachweis einer Telomerverlängerung (>20 %) und Beseitigung seneszenter Zellen durch 60 HBOT-Sitzungen bei gesunden älteren Erwachsenen, was eine neuartige Anti-Aging-Intervention darstellt."
       it: "Prima evidenza sull'uomo di allungamento dei telomeri (>20%) e di eliminazione delle cellule senescenti attraverso 60 sedute di HBOT in anziani sani, che rappresenta un nuovo intervento anti-invecchiamento."
+      es: "Primera evidencia en humanos de alargamiento de los telómeros (>20%) y de eliminación de células senescentes a través de 60 sesiones de HBOT en adultos mayores sanos, lo que representa una nueva intervención antienvejecimiento."
     evidence: "Level B"
     protocol:
       ata:
@@ -113,25 +131,30 @@ applications:
         el: "2.0 ATA"
         de: "2.0 ATA"
         it: "2.0 ATA"
+        es: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
+        es: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Hadanny et al., 2020 (RCT)"
         el: "Hadanny et al., 2020 (ΤΕΔ)"
         de: "Hadanny et al., 2020 (RKS)"
         it: "Hadanny et al., 2020 (RCT)"
+        es: "Hadanny et al., 2020 (ECA)"
     refs:
       - "[3]"

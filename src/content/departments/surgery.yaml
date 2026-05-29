@@ -3,6 +3,7 @@ name:
   el: "Χειρουργικός Τομέας"
   de: "Chirurgischer Bereich"
   it: "Settore chirurgico"
+  es: "Sector de cirugía"
 icon: "Scissors"
 color: "#0e7490"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Ορθοπεδική, Πλαστική, Καρδιοθωρακοχειρουργική, Αγγειοχειρουργική"
   de: "Orthopädie, Plastische, Herz-Thorax-, Gefäßchirurgie"
   it: "Ortopedia, plastica, cardiotoracica, vascolare"
+  es: "Ortopedia, plástica, cardiotorácica, vascular"
 applications:
   - title:
       en: "Refractory Osteomyelitis"
       el: "Ανθεκτική Οστεομυελίτιδα"
       de: "Refraktäre Osteomyelitis"
       it: "Osteomielite refrattaria"
+      es: "Osteomielitis refractaria"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Επικουρική θεραπεία πρότυπου φροντίδας για χρόνια οστεομυελίτιδα μη ανταποκρινόμενη σε συμβατική θεραπεία. Η HBOT ενισχύει λευκοκυτταρική θανάτωση σε αναίμακτο οστό και προάγει νεοαγγείωση."
       de: "Adjuvante Standardtherapie bei chronischer Osteomyelitis, die auf konventionelle Therapie nicht anspricht. HBOT verstärkt die Leukozyten-Abtötung in avaskulärem Knochen und fördert die Neovaskularisation."
       it: "Trattamento adiuvante standard di cura per l'osteomielite cronica non responsiva alla terapia convenzionale. L'HBOT potenzia l'azione battericida dei leucociti nell'osso avascolare e promuove la neovascolarizzazione."
+      es: "Tratamiento adyuvante estándar de atención para la osteomielitis crónica que no responde a la terapia convencional. La HBOT potencia la acción bactericida de los leucocitos en el hueso avascular y promueve la neovascularización."
     evidence: "Level A"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
+        es: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
   - title:
@@ -57,6 +66,7 @@ applications:
       el: "Κακώσεις Σύνθλιψης & Σύνδρομο Διαμερίσματος"
       de: "Quetschverletzungen & Kompartmentsyndrom"
       it: "Lesioni da schiacciamento e sindrome compartimentale"
+      es: "Lesiones por aplastamiento y síndrome compartimental"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -64,6 +74,7 @@ applications:
       el: "Εγκεκριμένη για οξείες τραυματικές ισχαιμίες. Μειώνει μετα-ισχαιμικό οίδημα και διατηρεί απειλούμενο ιστό σε σοβαρές κακώσεις σύνθλιψης."
       de: "Zugelassen bei akuten traumatischen Ischämien. Reduziert post-ischämische Ödeme und erhält gefährdetes Gewebe bei schweren Quetschverletzungen."
       it: "Approvata per le ischemie traumatiche acute. Riduce l'edema post-ischemico e preserva il tessuto a rischio nelle lesioni da schiacciamento gravi."
+      es: "Aprobada para las isquemias traumáticas agudas. Reduce el edema posisquémico y preserva el tejido en riesgo en las lesiones por aplastamiento graves."
     evidence: "Level A"
     protocol:
       ata:
@@ -71,26 +82,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
+        es: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
   - title:
@@ -98,6 +114,7 @@ applications:
       el: "Επικινδυνεύοντα Δερματικά Μοσχεύματα & Κρημνοί"
       de: "Gefährdete Hauttransplantate & Lappen"
       it: "Innesti cutanei e lembi compromessi"
+      es: "Injertos cutáneos y colgajos comprometidos"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -105,6 +122,7 @@ applications:
       el: "Σωτήρια θεραπεία για ισχαιμικούς ανακατασκευαστικούς κρημνούς και δερματικά μοσχεύματα. Μειώνει υποξική νέκρωση μέσω ενισχυμένης οξυγόνωσης ιστών και αγγειογένεσης."
       de: "Salvage-Therapie bei ischämischen rekonstruktiven Lappen und Hauttransplantaten. Reduziert die hypoxische Nekrose durch verbesserte Gewebsoxygenierung und Angiogenese."
       it: "Terapia di salvataggio per lembi ricostruttivi e innesti cutanei ischemici. Riduce la necrosi ipossica attraverso una migliore ossigenazione tissutale e l'angiogenesi."
+      es: "Terapia de rescate para colgajos reconstructivos e injertos cutáneos isquémicos. Reduce la necrosis hipóxica mediante una mejor oxigenación tisular y la angiogénesis."
     evidence: "Level B"
     protocol:
       ata:
@@ -112,26 +130,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
   - title:
@@ -139,6 +162,7 @@ applications:
       el: "Μετεγχειρητική Αποκατάσταση (ΟΑΓ)"
       de: "Postoperative Erholung (Knie-TEP)"
       it: "Recupero postoperatorio (TKA)"
+      es: "Recuperación postoperatoria (TKA)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -146,6 +170,7 @@ applications:
       el: "Αναδυόμενα στοιχεία δείχνουν ότι η HBOT επιταχύνει αποκατάσταση και μειώνει μυϊκή βλάβη μετά από ολική αρθροπλαστική γόνατος και μεγάλες ορθοπεδικές επεμβάσεις."
       de: "Aufkommende Evidenz zeigt, dass HBOT die Erholung beschleunigt und Muskelschäden nach Knie-Totalendoprothese (TEP) und größeren orthopädischen Eingriffen reduziert."
       it: "Evidenze emergenti mostrano che l'HBOT accelera il recupero e riduce il danno muscolare dopo l'artroplastica totale di ginocchio e i principali interventi ortopedici."
+      es: "La evidencia emergente muestra que la HBOT acelera la recuperación y reduce el daño muscular tras la artroplastia total de rodilla y los principales procedimientos ortopédicos."
     evidence: "Level B"
     protocol:
       ata:
@@ -153,26 +178,31 @@ applications:
         el: "2.0 ATA"
         de: "2.0 ATA"
         it: "2.0 ATA"
+        es: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
+        es: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
+        es: "Investigación clínica"
     refs:
       - "[10]"
   - title:
@@ -180,6 +210,7 @@ applications:
       el: "Θερμικά Εγκαύματα"
       de: "Thermische Verbrennungen"
       it: "Ustioni termiche"
+      es: "Quemaduras térmicas"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -187,6 +218,7 @@ applications:
       el: "Επικουρική θεραπεία για οξεία θερμικά εγκαύματα. Μειώνει οίδημα, προάγει επιθηλιοποίηση και μειώνει κίνδυνο λοίμωξης."
       de: "Adjuvante Behandlung akuter thermischer Verbrennungen. Reduziert Ödeme, fördert die Epithelialisierung und verringert das Infektionsrisiko."
       it: "Trattamento adiuvante per le ustioni termiche acute. Riduce l'edema, promuove l'epitelizzazione e diminuisce il rischio di infezione."
+      es: "Tratamiento adyuvante para las quemaduras térmicas agudas. Reduce el edema, promueve la epitelización y disminuye el riesgo de infección."
     evidence: "Level B"
     protocol:
       ata:
@@ -194,26 +226,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once or twice daily"
         el: "Μία ή δύο φορές την ημέρα"
         de: "Einmal oder zweimal täglich"
         it: "Una o due volte al giorno"
+        es: "Una o dos veces al día"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[1]"
   - title:
@@ -221,6 +258,7 @@ applications:
       el: "Θεραπευτική Αγγειογένεση (Καρδιακή)"
       de: "Therapeutische Angiogenese (kardial)"
       it: "Angiogenesi terapeutica (cardiaca)"
+      es: "Angiogénesis terapéutica (cardiaca)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -228,6 +266,7 @@ applications:
       el: "Ερευνητική χρήση για χρόνια σταθερή ισχαιμική καρδιοπάθεια και βελτίωση λειτουργίας αριστερής κοιλίας μετά από ΕΜ μέσω αγγειογένεσης μεσολαβούμενης από VEGF."
       de: "Investigative Anwendung bei chronischer stabiler ischämischer Herzkrankheit und Verbesserung der linksventrikulären Funktion nach Myokardinfarkt durch VEGF-vermittelte Angiogenese."
       it: "Uso sperimentale per la cardiopatia ischemica cronica stabile e il miglioramento della funzione ventricolare sinistra post-infarto miocardico attraverso l'angiogenesi mediata da VEGF."
+      es: "Uso experimental para la cardiopatía isquémica crónica estable y la mejora de la función ventricular izquierda tras infarto de miocardio mediante la angiogénesis mediada por VEGF."
     evidence: "Level C"
     protocol:
       ata:
@@ -235,25 +274,30 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
+        es: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
+        es: "Experimental"
     refs:
       - "[12]"

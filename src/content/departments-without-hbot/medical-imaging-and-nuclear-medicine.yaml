@@ -3,14 +3,17 @@ name:
   el: "Ιατρική Απεικόνιση & Πυρηνική Ιατρική"
   de: "Medizinische Bildgebung & Nuklearmedizin"
   it: "Diagnostica per immagini & Medicina nucleare"
+  es: "Diagnóstico por imagen y medicina nuclear"
 icon: "ScanLine"
 rationale:
   en: "Medical Imaging (CT, MRI, PET, Nuclear Medicine Theranostics) serves a purely diagnostic and interventional imaging function. HBOT does not alter imaging protocols or radiopharmaceutical uptake in any clinically meaningful way. These departments support HBOT patient selection and monitoring but are not sites of HBOT application."
   el: "Η Ιατρική Απεικόνιση (CT, MRI, PET, Θεραγνωστική Πυρηνικής Ιατρικής) εξυπηρετεί αμιγώς διαγνωστική και παρεμβατική λειτουργία απεικόνισης. Η HBOT δεν αλλάζει πρωτόκολλα απεικόνισης ή πρόσληψη ραδιοφαρμάκων με κλινικά σημαντικό τρόπο. Αυτά τα τμήματα υποστηρίζουν επιλογή ασθενών και παρακολούθηση HBOT αλλά δεν είναι χώροι εφαρμογής HBOT."
   de: "Die Medizinische Bildgebung (CT, MRT, PET, nuklearmedizinische Theranostik) erfüllt eine rein diagnostische und interventionell-bildgebende Funktion. HBOT verändert weder Bildgebungsprotokolle noch die Aufnahme von Radiopharmaka in klinisch relevanter Weise. Diese Abteilungen unterstützen die Patientenauswahl und das Monitoring der HBOT, sind jedoch keine Anwendungsorte der HBOT."
   it: "La diagnostica per immagini (TC, RM, PET, teranostica di medicina nucleare) svolge una funzione puramente diagnostica e di imaging interventistico. L'HBOT non altera i protocolli di imaging né la captazione dei radiofarmaci in modo clinicamente rilevante. Questi reparti supportano la selezione e il monitoraggio dei pazienti in HBOT, ma non sono sedi di applicazione dell'HBOT."
+  es: "El diagnóstico por imagen (TC, RM, PET, teranóstica de medicina nuclear) cumple una función puramente diagnóstica y de imagen intervencionista. HBOT no altera los protocolos de imagen ni la captación de radiofármacos de forma clínicamente relevante. Estos servicios apoyan la selección y el seguimiento de los pacientes en HBOT, pero no son sedes de aplicación de HBOT."
 role:
   en: "Supportive — pre-treatment imaging and perfusion assessment"
   el: "Υποστηρικτικός — απεικόνιση προ-θεραπείας και αξιολόγηση αιμάτωσης"
   de: "Unterstützend — Bildgebung vor der Behandlung und Perfusions-Beurteilung"
   it: "Di supporto — imaging pre-trattamento e valutazione della perfusione"
+  es: "De apoyo — imagen previa al tratamiento y evaluación de la perfusión"

@@ -3,6 +3,7 @@ name:
   el: "Παθολογική Ογκολογία"
   de: "Internistische Onkologie"
   it: "Oncologia medica"
+  es: "Oncología médica"
 icon: "Activity"
 color: "#b45309"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Ακτινοβολική Βλάβη, Ευαισθητοποίηση Όγκου"
   de: "Strahlenschäden, Tumorsensibilisierung"
   it: "Danno radiogeno, radiosensibilizzazione tumorale"
+  es: "Lesión por radiación, radiosensibilización tumoral"
 applications:
   - title:
       en: "Delayed Radiation Injury"
       el: "Καθυστερημένη Ακτινοβολική Βλάβη"
       de: "Verzögerte Strahlenschäden"
       it: "Danno radiogeno tardivo"
+      es: "Lesión por radiación tardía"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Θεραπεία πρότυπου φροντίδας για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Η HBOT προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ακτινοβολημένο ιστό."
       de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe."
       it: "Trattamento standard di cura per l'osteoradionecrosi e la necrosi radiogena dei tessuti molli. L'HBOT promuove l'angiogenesi nel tessuto irradiato ipossico, ipovascolare, ipocellulare."
+      es: "Tratamiento estándar de atención para la osteorradionecrosis y la necrosis radiogénica de los tejidos blandos. La HBOT promueve la angiogénesis en el tejido irradiado hipóxico, hipovascular e hipocelular."
     evidence: "Level A"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
+        es: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
   - title:
@@ -57,6 +66,7 @@ applications:
       el: "Ακτινοβολική Κυστίτιδα & Πρωκτίτιδα"
       de: "Strahlenzystitis & Strahlenproktitis"
       it: "Cistite e proctite radiogena"
+      es: "Cistitis y proctitis por radiación"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -64,6 +74,7 @@ applications:
       el: "Εγκεκριμένη επικουρική θεραπεία για αιμορραγική κυστίτιδα και πρωκτίτιδα από ακτινοβολία, μειώνοντας αιμορραγία και προάγοντας επούλωση βλεννογόνου."
       de: "Zugelassene adjuvante Therapie bei strahleninduzierter hämorrhagischer Zystitis und Proktitis; reduziert Blutungen und fördert die Schleimhautheilung."
       it: "Trattamento adiuvante approvato per la cistite e la proctite emorragica indotte da radiazioni, che riduce il sanguinamento e promuove la guarigione della mucosa."
+      es: "Tratamiento adyuvante aprobado para la cistitis y la proctitis hemorrágica inducidas por radiación, que reduce el sangrado y promueve la cicatrización de la mucosa."
     evidence: "Level A"
     protocol:
       ata:
@@ -71,26 +82,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
+        es: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[9]"
   - title:
@@ -98,6 +114,7 @@ applications:
       el: "Ακτινοευαισθητοποίηση Όγκου"
       de: "Tumor-Strahlensensibilisierung"
       it: "Radiosensibilizzazione tumorale"
+      es: "Radiosensibilización tumoral"
     type: "Research"
     typeColor: "orange"
     description:
@@ -105,6 +122,7 @@ applications:
       el: "Ερευνητική χρήση ως νεοεπικουρική θεραπεία για ευαισθητοποίηση υποξικών συμπαγών όγκων σε ακτινοθεραπεία και χημειοθεραπεία. Υποξικά μικροπεριβάλλοντα όγκων αντιστέκονται στην ακτινοβολία· η HBOT μπορεί να αντιστρέψει αυτή την αντίσταση."
       de: "Investigative Anwendung als neoadjuvante Therapie zur Sensibilisierung hypoxischer solider Tumoren gegenüber Strahlen- und Chemotherapie. Hypoxische Tumormikromilieus sind strahlenresistent; HBOT kann diese Resistenz umkehren."
       it: "Uso sperimentale come terapia neoadiuvante per sensibilizzare i tumori solidi ipossici alla radioterapia e alla chemioterapia. I microambienti tumorali ipossici sono resistenti alle radiazioni; l'HBOT può invertire questa resistenza."
+      es: "Uso experimental como terapia neoadyuvante para sensibilizar los tumores sólidos hipóxicos a la radioterapia y la quimioterapia. Los microambientes tumorales hipóxicos son resistentes a la radiación; la HBOT puede revertir esta resistencia."
     evidence: "Level C"
     protocol:
       ata:
@@ -112,26 +130,31 @@ applications:
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
+        es: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
         de: "Pro Strahlenzyklus"
         it: "Per ciclo di radioterapia"
+        es: "Por ciclo de radioterapia"
       frequency:
         en: "Prior to each radiation fraction"
         el: "Πριν από κάθε κλάσμα ακτινοβολίας"
         de: "Vor jeder Strahlenfraktion"
         it: "Prima di ogni frazione di radioterapia"
+        es: "Antes de cada fracción de radioterapia"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
+        es: "Experimental"
     refs:
       - "[17]"
   - title:
@@ -139,6 +162,7 @@ applications:
       el: "Επιπλοκές Ακτινοθεραπείας Μαστού"
       de: "Komplikationen der Brustbestrahlung"
       it: "Complicanze da radioterapia mammaria"
+      es: "Complicaciones de la radioterapia mamaria"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -146,6 +170,7 @@ applications:
       el: "Αποτελεσματική θεραπεία για όψιμη ακτινοτοξικότητα σε ασθενείς με καρκίνο μαστού, συμπεριλαμβανομένης ακτινοδερματίτιδας και νέκρωσης ιστού μετά από συντηρητική χειρουργική μαστού."
       de: "Wirksame Behandlung der späten Strahlentoxizität bei Brustkrebspatientinnen, einschließlich Strahlendermatitis und Gewebenekrose nach brusterhaltender Operation."
       it: "Trattamento efficace della tossicità radiogena tardiva nelle pazienti con cancro al seno, compresa la radiodermatite e la necrosi tissutale dopo chirurgia conservativa della mammella."
+      es: "Tratamiento eficaz de la toxicidad por radiación tardía en pacientes con cáncer de mama, incluida la radiodermatitis y la necrosis tisular tras cirugía conservadora de la mama."
     evidence: "Level A"
     protocol:
       ata:
@@ -153,25 +178,30 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
+        es: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[9]"

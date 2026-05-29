@@ -3,6 +3,7 @@ name:
   el: "Γαστρεντερολογία"
   de: "Gastroenterologie"
   it: "Gastroenterologia"
+  es: "Gastroenterología"
 icon: "Stethoscope"
 color: "#0f766e"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "ΦΝΕ, Ελκώδης Κολίτιδα, Νόσος Crohn"
   de: "CED, Colitis ulcerosa, Morbus Crohn"
   it: "MICI, colite ulcerosa, malattia di Crohn"
+  es: "EII, colitis ulcerosa, enfermedad de Crohn"
 applications:
   - title:
       en: "Ulcerative Colitis"
       el: "Ελκώδης Κολίτιδα"
       de: "Colitis ulcerosa"
       it: "Colite ulcerosa"
+      es: "Colitis ulcerosa"
     type: "Research"
     typeColor: "blue"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Συστηματικές ανασκοπήσεις υποδεικνύουν ότι η HBOT μπορεί να επιτύχει ποσοστά ανταπόκρισης >80% σε οξεία σοβαρή ελκώδη κολίτιδα ανθεκτική σε συμβατική θεραπεία, αντιστρέφοντας χρόνια εντερική υποξία."
       de: "Systematische Übersichtsarbeiten weisen darauf hin, dass HBOT bei akuter schwerer Colitis ulcerosa, die auf konventionelle Therapie nicht anspricht, Ansprechraten von über 80 % erzielen kann, indem die chronische intestinale Hypoxie umgekehrt wird."
       it: "Le revisioni sistematiche indicano che l'HBOT può raggiungere tassi di risposta superiori all'80% nella colite ulcerosa grave acuta refrattaria alla terapia convenzionale, invertendo l'ipossia intestinale cronica."
+      es: "Las revisiones sistemáticas indican que la HBOT puede alcanzar tasas de respuesta superiores al 80% en la colitis ulcerosa grave aguda refractaria a la terapia convencional, revirtiendo la hipoxia intestinal crónica."
     evidence: "Level B"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
+        es: "Metaanálisis de Nivel A"
     refs:
       - "[14]"
   - title:
@@ -57,6 +66,7 @@ applications:
       el: "Νόσος Crohn"
       de: "Morbus Crohn"
       it: "Malattia di Crohn"
+      es: "Enfermedad de Crohn"
     type: "Research"
     typeColor: "blue"
     description:
@@ -64,6 +74,7 @@ applications:
       el: "Μετα-αναλύσεις αποδεικνύουν σημαντική επούλωση βλεννογόνου και κλινική ύφεση σε ασθενείς με νόσο Crohn που θεραπεύτηκαν με HBOT, ιδίως για περιπρωκτική νόσο με συρίγγια."
       de: "Meta-Analysen belegen eine signifikante Schleimhautheilung und klinische Remission bei mit HBOT behandelten Morbus-Crohn-Patienten, insbesondere bei perianaler fistelbildender Erkrankung."
       it: "Le metanalisi dimostrano una significativa guarigione della mucosa e una remissione clinica nei pazienti con malattia di Crohn trattati con HBOT, in particolare per la malattia fistolizzante perianale."
+      es: "Los metaanálisis demuestran una cicatrización significativa de la mucosa y una remisión clínica en pacientes con enfermedad de Crohn tratados con HBOT, en particular en la enfermedad fistulizante perianal."
     evidence: "Level B"
     protocol:
       ata:
@@ -71,26 +82,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
+        es: "Metaanálisis de Nivel A"
     refs:
       - "[14]"
   - title:
@@ -98,6 +114,7 @@ applications:
       el: "Φλεγμονώδης Νόσος Εντέρου (ΦΝΕ)"
       de: "Chronisch-entzündliche Darmerkrankung (CED)"
       it: "Malattia infiammatoria intestinale (IBD)"
+      es: "Enfermedad inflamatoria intestinal (EII)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -105,6 +122,7 @@ applications:
       el: "Η HBOT αντιστρέφει χρόνια εντερική υποξία, μειώνει φλεγμονή βλεννογόνου και προάγει επιθηλιακή επούλωση. Θεωρείται υποσχόμενη επικουρική θεραπεία για διαχείριση ΦΝΕ."
       de: "HBOT kehrt die chronische intestinale Hypoxie um, reduziert die Schleimhautentzündung und fördert die epitheliale Heilung. Sie gilt als vielversprechende adjuvante Therapie zur CED-Behandlung."
       it: "L'HBOT inverte l'ipossia intestinale cronica, riduce l'infiammazione della mucosa e promuove la guarigione epiteliale. È considerata una terapia adiuvante promettente per la gestione dell'IBD."
+      es: "La HBOT revierte la hipoxia intestinal crónica, reduce la inflamación de la mucosa y promueve la cicatrización epitelial. Se considera una terapia adyuvante prometedora para el manejo de la EII."
     evidence: "Level B"
     protocol:
       ata:
@@ -112,25 +130,30 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
+        es: "Metaanálisis de Nivel A"
     refs:
       - "[14]"

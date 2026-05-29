@@ -3,6 +3,7 @@ name:
   el: "Ενδοκρινολογία & Μεταβολισμός"
   de: "Endokrinologie & Stoffwechsel"
   it: "Endocrinologia e metabolismo"
+  es: "Endocrinología y metabolismo"
 icon: "Zap"
 color: "#d97706"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Διαβητικό Πόδι, Μεταβολικό Σύνδρομο, Νεφροπάθεια"
   de: "Diabetischer Fuß, Metabolisches Syndrom, Nephropathie"
   it: "Piede diabetico, sindrome metabolica, nefropatia"
+  es: "Pie diabético, síndrome metabólico, nefropatía"
 applications:
   - title:
       en: "Diabetic Foot Ulcers"
       el: "Διαβητικά Έλκη Ποδιού"
       de: "Diabetische Fußulzera"
       it: "Ulcere del piede diabetico"
+      es: "Úlceras de pie diabético"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Η πιο αναγνωρισμένη εφαρμογή HBOT. Βελτιώνει σημαντικά ποσοστά πλήρους επούλωσης σε ισχαιμικά διαβητικά έλκη ποδιού, μειώνοντας ποσοστά ακρωτηριασμού σε συνδυασμό με τυπική φροντίδα τραύματος."
       de: "Die anerkannteste HBOT-Anwendung. Verbessert die vollständigen Heilungsraten bei ischämischen diabetischen Fußulzera signifikant und reduziert die Amputationsraten in Kombination mit der Standard-Wundversorgung."
       it: "L'applicazione dell'HBOT più riconosciuta. Migliora significativamente i tassi di guarigione completa nelle ulcere ischemiche del piede diabetico, riducendo i tassi di amputazione se associata alla cura standard delle ferite."
+      es: "La aplicación de HBOT más reconocida. Mejora significativamente las tasas de cicatrización completa en las úlceras isquémicas de pie diabético, reduciendo las tasas de amputación cuando se combina con el cuidado estándar de las heridas."
     evidence: "Level A"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
+        es: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
+        es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
       - "[13]"
@@ -58,6 +67,7 @@ applications:
       el: "Διαβητική Νεφροπάθεια"
       de: "Diabetische Nephropathie"
       it: "Nefropatia diabetica"
+      es: "Nefropatía diabética"
     type: "Research"
     typeColor: "orange"
     description:
@@ -65,6 +75,7 @@ applications:
       el: "Προκλινικές και πρώιμες κλινικές μελέτες δείχνουν ότι η HBOT καταστέλλει βιοδείκτες κυτταρικού στρες και νεφρικής βλάβης σε διαβητικά μοντέλα, υποδηλώνοντας νεφροπροστατευτικά αποτελέσματα."
       de: "Präklinische und frühe klinische Studien zeigen, dass HBOT Biomarker von Zellstress und Nierenschäden in diabetischen Modellen unterdrückt und auf renoprotektive Effekte hindeutet."
       it: "Studi preclinici e clinici iniziali dimostrano che l'HBOT sopprime i biomarcatori dello stress cellulare e del danno renale nei modelli diabetici, suggerendo effetti renoprotettivi."
+      es: "Los estudios preclínicos y clínicos iniciales demuestran que la HBOT suprime los biomarcadores de estrés celular y de daño renal en modelos diabéticos, lo que sugiere efectos renoprotectores."
     evidence: "Level C"
     protocol:
       ata:
@@ -72,26 +83,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
+        es: "Investigación clínica"
     refs:
       - "[18]"
   - title:
@@ -99,6 +115,7 @@ applications:
       el: "Ευαισθησία Ινσουλίνης & Μεταβολικό Σύνδρομο"
       de: "Insulinsensitivität & Metabolisches Syndrom"
       it: "Sensibilità all'insulina e sindrome metabolica"
+      es: "Sensibilidad a la insulina y síndrome metabólico"
     type: "Research"
     typeColor: "orange"
     description:
@@ -106,6 +123,7 @@ applications:
       el: "Αναδυόμενα στοιχεία υποδηλώνουν ότι η HBOT μπορεί να βελτιώσει ευαισθησία ινσουλίνης και να μειώσει δείκτες μεταβολικού συνδρόμου μέσω ενισχυμένης μιτοχονδριακής λειτουργίας και μειωμένης φλεγμονής."
       de: "Aufkommende Evidenz deutet darauf hin, dass HBOT die Insulinsensitivität verbessern und Marker des metabolischen Syndroms durch verbesserte mitochondriale Funktion und reduzierte Entzündung vermindern kann."
       it: "Evidenze emergenti suggeriscono che l'HBOT può migliorare la sensibilità all'insulina e ridurre i marcatori della sindrome metabolica attraverso una migliore funzione mitocondriale e una ridotta infiammazione."
+      es: "La evidencia emergente sugiere que la HBOT puede mejorar la sensibilidad a la insulina y reducir los marcadores del síndrome metabólico mediante una mejor función mitocondrial y una menor inflamación."
     evidence: "Level C"
     protocol:
       ata:
@@ -113,25 +131,30 @@ applications:
         el: "2.0 ATA"
         de: "2.0 ATA"
         it: "2.0 ATA"
+        es: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
+        es: "Experimental"
     refs:
       - "[18]"

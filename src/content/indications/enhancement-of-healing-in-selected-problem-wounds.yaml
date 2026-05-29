@@ -5,21 +5,25 @@ category:
   el: "Επούλωση Τραυμάτων"
   de: "Wundheilung"
   it: "Guarigione delle ferite"
+  es: "Cicatrización de heridas"
 condition:
   en: "Enhancement of Healing in Selected Problem Wounds"
   el: "Ενίσχυση Επούλωσης Επιλεγμένων Προβληματικών Τραυμάτων"
   de: "Heilungsförderung bei ausgewählten problematischen Wunden"
   it: "Potenziamento della guarigione in ferite problematiche selezionate"
+  es: "Potenciación de la cicatrización en heridas problemáticas seleccionadas"
 description:
   en: "Adjunctive treatment for chronic non-healing wounds, particularly diabetic foot ulcers with transcutaneous oxygen measurements <40 mmHg."
   el: "Επικουρική θεραπεία για χρόνια μη επουλούμενα τραύματα, ιδίως διαβητικά έλκη ποδιού με διαδερμικές μετρήσεις οξυγόνου <40 mmHg."
   de: "Adjuvante Therapie für chronische, nicht heilende Wunden, insbesondere diabetische Fußulzera mit transkutanen Sauerstoffmessungen <40 mmHg."
   it: "Terapia adiuvante per ferite croniche non cicatrizzanti, in particolare ulcere del piede diabetico con misurazioni transcutanee di ossigeno <40 mmHg."
+  es: "Terapia adyuvante para heridas crónicas que no cicatrizan, en particular úlceras de pie diabético con mediciones transcutáneas de oxígeno <40 mmHg."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
   it: "Standard di cura"
+  es: "Estándar de atención"
 evidenceLevel: "A"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
     it: "2.0 – 2.4 ATA"
+    es: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
     de: "20 – 30"
     it: "20 – 30"
+    es: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
+    es: "Una vez al día, 5×/semana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
     it: "UHMS / Standard di cura"
+    es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
   - "[7]"

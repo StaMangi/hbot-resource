@@ -3,14 +3,17 @@ name:
   el: "Κλινική Γενετικής"
   de: "Genetik-Klinik"
   it: "Clinica di Genetica"
+  es: "Clínica de Genética"
 icon: "Dna"
 rationale:
   en: "The Genetics Clinic manages hereditary conditions, chromosomal disorders, and genetic counseling. There is currently no scientific evidence supporting the use of HBOT in the management of genetic disorders. While HBOT modulates gene expression through HIF pathways, this does not translate to therapeutic benefit for primary genetic conditions."
   el: "Η Κλινική Γενετικής διαχειρίζεται κληρονομικές παθήσεις, χρωμοσωμικές διαταραχές και γενετική συμβουλευτική. Δεν υπάρχουν επί του παρόντος επιστημονικά στοιχεία που να υποστηρίζουν χρήση HBOT στη διαχείριση γενετικών διαταραχών. Ενώ η HBOT τροποποιεί γονιδιακή έκφραση μέσω μονοπατιών HIF, αυτό δεν μεταφράζεται σε θεραπευτικό όφελος για πρωτογενείς γενετικές παθήσεις."
   de: "Die Genetik-Klinik behandelt Erbkrankheiten, chromosomale Störungen und führt genetische Beratung durch. Es liegt derzeit keine wissenschaftliche Evidenz vor, die den Einsatz von HBOT bei der Behandlung genetischer Erkrankungen unterstützt. HBOT moduliert zwar die Genexpression über HIF-Signalwege, dies führt jedoch nicht zu einem therapeutischen Nutzen bei primären genetischen Erkrankungen."
   it: "La Clinica di Genetica gestisce le condizioni ereditarie, i disordini cromosomici e la consulenza genetica. Attualmente non esiste alcuna evidenza scientifica a sostegno dell'uso dell'HBOT nella gestione dei disordini genetici. Sebbene l'HBOT moduli l'espressione genica attraverso le vie HIF, ciò non si traduce in un beneficio terapeutico per le condizioni genetiche primarie."
+  es: "La Clínica de Genética gestiona las afecciones hereditarias, los trastornos cromosómicos y el asesoramiento genético. Actualmente no existe evidencia científica que respalde el uso de HBOT en el manejo de los trastornos genéticos. Aunque HBOT modula la expresión génica a través de las vías HIF, esto no se traduce en un beneficio terapéutico para las afecciones genéticas primarias."
 role:
   en: "No current or projected clinical application"
   el: "Καμία τρέχουσα ή προβλεπόμενη κλινική εφαρμογή"
   de: "Keine aktuelle oder absehbare klinische Anwendung"
   it: "Nessuna applicazione clinica attuale o prevista"
+  es: "Ninguna aplicación clínica actual o prevista"

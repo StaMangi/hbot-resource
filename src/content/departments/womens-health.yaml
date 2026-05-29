@@ -3,6 +3,7 @@ name:
   el: "Γυναικολογική Υγεία"
   de: "Frauengesundheit"
   it: "Salute della donna"
+  es: "Salud de la mujer"
 icon: "Venus"
 color: "#4338ca"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Πυελική ακτινική κάκωση (FDA), ενδομητρίωση (ερευνητικό)"
   de: "Strahlenschäden im Beckenbereich (FDA), Endometriose (investigativ)"
   it: "Danno radiogeno pelvico (FDA), endometriosi (sperimentale)"
+  es: "Lesión por radiación pélvica (FDA), endometriosis (experimental)"
 applications:
   - title:
       en: "Pelvic Radiation Injury"
       el: "Πυελική Ακτινική Κάκωση"
       de: "Strahlenschäden im Beckenbereich"
       it: "Danno radiogeno pelvico"
+      es: "Lesión por radiación pélvica"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "HBOT για όψιμη ακτινική βλάβη ιστών σε πυελικές δομές (ακτινική κυστίτιδα, ορθίτιδα, κολπική στένωση) μετά από ακτινοθεραπεία γυναικολογικού καρκίνου. Παραπέμπει στην εγκεκριμένη από το FDA ένδειξη Καθυστερημένης Ακτινικής Βλάβης· το πλαίσιο της γυναικολογικής υγείας τονίζει τις πυελικά ειδικές εκδηλώσεις."
       de: "HBOT bei späten Strahlengewebsschäden im Beckenbereich (Strahlenzystitis, Proktitis, Scheidenstenose) nach Strahlentherapie bei gynäkologischem Krebs. Verweist auf die FDA-zugelassene Indikation Verzögerte Strahlenschäden; der Kontext der Frauengesundheit betont die beckenspezifischen Manifestationen."
       it: "HBOT per il danno radiogeno tardivo dei tessuti nelle strutture pelviche (cistite radiogena, proctite, stenosi vaginale) dopo radioterapia per cancro ginecologico. Rimanda all'indicazione Danno radiogeno tardivo approvata dalla FDA; il contesto della salute della donna sottolinea le manifestazioni pelviche specifiche."
+      es: "HBOT para la lesión tisular tardía por radiación en estructuras pélvicas (cistitis por radiación, proctitis, estenosis vaginal) tras radioterapia por cáncer ginecológico. Remite a la indicación Lesión por radiación tardía aprobada por la FDA; el contexto de la salud de la mujer destaca las manifestaciones específicamente pélvicas."
     evidence: "Level A"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.4 ATA"
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
+        es: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
+        es: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
       - "[12]"
@@ -58,6 +67,7 @@ applications:
       el: "Ενδομητρίωση"
       de: "Endometriose"
       it: "Endometriosi"
+      es: "Endometriosis"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -65,6 +75,7 @@ applications:
       el: "Ερευνητική εφαρμογή που υποστηρίζεται από μεταγωγικά στοιχεία σε μοντέλα τρωκτικών και μία καταχωρημένη τυχαιοποιημένη δοκιμή (HEROES, NCT06579040) που αυτή τη στιγμή εγγράφει ασθενείς. Δεν υπάρχουν δημοσιευμένα κλινικά στοιχεία σε ανθρώπους ακόμη· η HBOT τοποθετείται ως ερευνητική επικουρική, όχι ως πρότυπο θεραπείας."
       de: "Investigative Anwendung, gestützt durch translationale Evidenz in Nagermodellen und eine registrierte randomisierte Studie (HEROES, NCT06579040), die derzeit Patientinnen einschließt. Noch keine veröffentlichte klinische Evidenz beim Menschen; HBOT wird als investigatives Adjuvans positioniert, nicht als Standardtherapie."
       it: "Applicazione sperimentale supportata da evidenze traslazionali in modelli animali roditori e da uno studio randomizzato registrato (HEROES, NCT06579040) attualmente in fase di reclutamento. Non esistono ancora evidenze cliniche pubblicate sull'uomo; l'HBOT è posizionata come adiuvante sperimentale, non standard di cura."
+      es: "Aplicación experimental respaldada por evidencia traslacional en modelos de roedores y por un ensayo aleatorizado registrado (HEROES, NCT06579040) actualmente en fase de reclutamiento. Aún no existe evidencia clínica publicada en humanos; la HBOT se posiciona como adyuvante experimental, no estándar de atención."
     evidence: "Level C"
     protocol:
       ata:
@@ -72,26 +83,31 @@ applications:
         el: "Μη τυποποιημένο"
         de: "Nicht standardisiert"
         it: "Non standardizzato"
+        es: "No estandarizado"
       duration:
         en: "Not standardised"
         el: "Μη τυποποιημένο"
         de: "Nicht standardisiert"
         it: "Non standardizzato"
+        es: "No estandarizado"
       sessions:
         en: "Not standardised (HEROES trial protocol pending publication)"
         el: "Μη τυποποιημένο (πρωτόκολλο HEROES εκκρεμεί δημοσίευση)"
         de: "Nicht standardisiert (HEROES-Studienprotokoll Veröffentlichung ausstehend)"
         it: "Non standardizzato (protocollo dello studio HEROES in attesa di pubblicazione)"
+        es: "No estandarizado (protocolo del estudio HEROES pendiente de publicación)"
       frequency:
         en: "Not standardised"
         el: "Μη τυποποιημένο"
         de: "Nicht standardisiert"
         it: "Non standardizzato"
+        es: "No estandarizado"
       basis:
         en: "Translational + Registered Trial Awaiting Results"
         el: "Μεταγωγική + Καταχωρημένη Δοκιμή Εκκρεμώντας Αποτελεσμάτων"
         de: "Translational + Registrierte Studie mit Ausstehenden Ergebnissen"
         it: "Traslazionale + studio registrato in attesa di risultati"
+        es: "Traslacional + ensayo registrado en espera de resultados"
     refs:
       - "[41]"
       - "[42]"
