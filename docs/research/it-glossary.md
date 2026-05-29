@@ -298,3 +298,20 @@ infiammatorie · Aesthetic & Reconstructive Recovery → Recupero estetico e
 ricostruttivo.
 
 After native review locks the register, mark this file `**Status:** locked at end of review pass`.
+
+## PTSD / Neuropsychiatric additions (PTSD indication build — pending native review)
+
+| EN | IT | Notes |
+|---|---|---|
+| Neuropsychiatric (category) | Disturbi neuropsichiatrici | new indications category |
+| Post-Traumatic Stress Disorder (PTSD) | Disturbo da stress post-traumatico (PTSD) | matches Psychiatry dept term; "PTSD" acronym kept |
+| CAPS-5 | CAPS-5 | instrument name kept |
+| diffusion tensor imaging (DTI) | imaging del tensore di diffusione (DTI) | |
+| fractional anisotropy | anisotropia frazionaria | |
+| neuroplasticity | neuroplasticità | |
+| default-mode / central-executive / salience networks | reti del default-mode / esecutiva centrale / della salienza | |
+| hyperoxic-hypoxic paradox | paradosso iperossico-ipossico | |
+| sham-controlled | controllato con sham | |
+| fronto-limbic | fronto-limbico | |
+
+RCT first-use: RCT (studio clinico randomizzato controllato) per the locked convention.

@@ -83,6 +83,10 @@ const departmentApplication = z.object({
   evidence: z.string(),
   protocol,
   refs: refTags,
+  // Optional cross-link from a department application card to its full
+  // indication page (e.g. Psychiatry → PTSD → /indications/post-traumatic-stress-disorder/).
+  // When set, the department [slug] page renders the application title as a link.
+  indicationSlug: z.string().optional(),
 });
 
 const departments = defineCollection({

@@ -140,3 +140,20 @@ HOT-LoCO, HEROES (trial names) · UHMS, FDA, NFPA, GDPR · NCT numbers · author
 - Society-specific terminology was deliberately NOT attributed to a named national society — left for the reviewer.
 
 After native review locks the register, mark this file `**Status:** locked at end of review pass`.
+
+## PTSD / Neuropsychiatric additions (PTSD indication build — pending native review)
+
+| EN | ES | Notes |
+|---|---|---|
+| Neuropsychiatric (category) | Trastornos neuropsiquiátricos | new indications category |
+| Post-Traumatic Stress Disorder (PTSD) | Trastorno de estrés postraumático (TEPT) | matches Psychiatry dept term |
+| CAPS-5 | CAPS-5 | instrument name kept |
+| diffusion tensor imaging (DTI) | imagen por tensor de difusión (DTI) | |
+| fractional anisotropy | anisotropía fraccional | |
+| neuroplasticity | neuroplasticidad | |
+| default-mode / central-executive / salience networks | redes por defecto / ejecutiva central / de saliencia | |
+| hyperoxic-hypoxic paradox | paradoja hiperóxica-hipóxica | |
+| sham-controlled | controlado con simulación (sham) | |
+| fronto-limbic | fronto-límbico | |
+
+RCT first-use: ECA (ensayo clínico aleatorizado) per the locked convention. Decimal POINT (42.6, 25.8).
