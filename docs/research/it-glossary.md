@@ -315,3 +315,19 @@ After native review locks the register, mark this file `**Status:** locked at en
 | fronto-limbic | fronto-limbico | |
 
 RCT first-use: RCT (studio clinico randomizzato controllato) per the locked convention.
+
+## Rehabilitation Medicine additions (Rehab department build — pending native review)
+
+| EN | IT | Notes |
+|---|---|---|
+| Rehabilitation Medicine | Medicina riabilitativa | department name |
+| neurorehabilitation | neuroriabilitazione | |
+| post-stroke recovery | recupero post-ictus | |
+| post-concussion syndrome | sindrome post-commozione | |
+| mild TBI | trauma cranico-encefalico lieve | |
+| SPECT | SPECT | imaging acronym kept |
+| participation effect | effetto di partecipazione | |
+| low-pressure sham | sham a bassa pressione | |
+| upper-limb motor function | funzione motoria dell'arto superiore | |
+| crossover RCT | RCT crossover | |
+| feasibility RCT | RCT di fattibilità | |

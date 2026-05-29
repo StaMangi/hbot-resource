@@ -157,3 +157,19 @@ After native review locks the register, mark this file `**Status:** locked at en
 | fronto-limbic | fronto-límbico | |
 
 RCT first-use: ECA (ensayo clínico aleatorizado) per the locked convention. Decimal POINT (42.6, 25.8).
+
+## Rehabilitation Medicine additions (Rehab department build — pending native review)
+
+| EN | ES | Notes |
+|---|---|---|
+| Rehabilitation Medicine | Medicina de rehabilitación | department name |
+| neurorehabilitation | neurorrehabilitación | |
+| post-stroke recovery | recuperación post-ictus | |
+| post-concussion syndrome | síndrome post-conmoción | |
+| mild TBI | traumatismo craneoencefálico leve | |
+| SPECT | SPECT | imaging acronym kept |
+| participation effect | efecto de participación | |
+| low-pressure sham | simulación a baja presión (sham) | |
+| upper-limb motor function | función motora del miembro superior | |
+| crossover RCT | ECA cruzado | |
+| feasibility RCT | ECA de viabilidad | |

@@ -271,3 +271,19 @@ Keep this file the single source of truth. EN-side editorial register is held in
 | fronto-limbic | μετωπο-μεταιχμιακές (οδοί) | |
 
 RCT first-use: ΤΕΔ (τυχαιοποιημένη ελεγχόμενη δοκιμή) per the locked convention.
+
+## Rehabilitation Medicine additions (Rehab department build — pending native review)
+
+| EN | EL | Notes |
+|---|---|---|
+| Rehabilitation Medicine | Ιατρική Αποκατάστασης | department name |
+| neurorehabilitation | νευροαποκατάσταση | |
+| post-stroke recovery | αποκατάσταση μετά από εγκεφαλικό | |
+| post-concussion syndrome | μετα-διασειστικό σύνδρομο | |
+| mild TBI | ήπια κρανιοεγκεφαλική κάκωση (ήπια ΚΕΚ) | |
+| SPECT | SPECT | imaging acronym kept |
+| participation effect | φαινόμενο συμμετοχής | |
+| low-pressure sham | εικονική θεραπεία χαμηλής πίεσης (sham) | |
+| upper-limb motor function | κινητική λειτουργία άνω άκρου | |
+| crossover RCT | διασταυρούμενη ΤΕΔ | |
+| feasibility RCT | ΤΕΔ σκοπιμότητας | |
