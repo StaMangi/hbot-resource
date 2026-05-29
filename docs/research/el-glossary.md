@@ -254,3 +254,20 @@ For 4.G safety / 4.H programme design / 4.I operator blueprint, the EL glossary 
 - Common across clusters: "investigational", "off-label", regulatory-scope language
 
 Keep this file the single source of truth. EN-side editorial register is held in `feedback_editorial_integrity.md` (memory) and `feedback_british_english.md` (memory).
+
+## PTSD / Neuropsychiatric additions (PTSD indication build — pending native review)
+
+| EN | EL | Notes |
+|---|---|---|
+| Neuropsychiatric (category) | Νευροψυχιατρικές Διαταραχές | new indications category |
+| Post-Traumatic Stress Disorder (PTSD) | Διαταραχή Μετατραυματικού Στρες (ΔΜΤΣ) | matches Psychiatry dept term |
+| CAPS-5 | CAPS-5 | instrument name kept |
+| diffusion tensor imaging (DTI) | απεικόνιση τανυστή διάχυσης (DTI) | |
+| fractional anisotropy | κλασματική ανισοτροπία | |
+| neuroplasticity | νευροπλαστικότητα | |
+| default-mode / central-executive / salience networks | δίκτυα προεπιλεγμένης λειτουργίας / κεντρικής εκτέλεσης / προβολής (salience) | "salience" loanword retained |
+| hyperoxic-hypoxic paradox | υπεροξικό-υποξικό παράδοξο | |
+| sham-controlled | εικονικά ελεγχόμενη (sham) | |
+| fronto-limbic | μετωπο-μεταιχμιακές (οδοί) | |
+
+RCT first-use: ΤΕΔ (τυχαιοποιημένη ελεγχόμενη δοκιμή) per the locked convention.

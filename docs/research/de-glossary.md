@@ -261,3 +261,20 @@ The following are kept untranslated:
 - **First-use expansion convention** for RCT: align with the Greek convention (expand on first occurrence in any document; bare RCT thereafter).
 
 After native review locks the register, mark this file `**Status:** locked at end of review pass` and use it as the binding authority for any DE pages that get added in a future multilingual expansion.
+
+## PTSD / Neuropsychiatric additions (PTSD indication build — pending native review)
+
+| EN | DE | Notes |
+|---|---|---|
+| Neuropsychiatric (category) | Neuropsychiatrische Störungen | new indications category |
+| Post-Traumatic Stress Disorder (PTSD) | Posttraumatische Belastungsstörung (PTBS) | matches Psychiatry dept term |
+| CAPS-5 | CAPS-5 | instrument name kept |
+| diffusion tensor imaging (DTI) | Diffusions-Tensor-Bildgebung (DTI) | |
+| fractional anisotropy | fraktionelle Anisotropie | |
+| neuroplasticity | Neuroplastizität | |
+| default-mode / central-executive / salience networks | Default-Mode-, zentral-exekutives und Salienz-Netzwerk | |
+| hyperoxic-hypoxic paradox | hyperoxisch-hypoxisches Paradox | |
+| sham-controlled | scheinkontrolliert (Sham) | |
+| fronto-limbic | fronto-limbisch | |
+
+RCT first-use: RKS (randomisierte kontrollierte Studie) per the locked convention.
