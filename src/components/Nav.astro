@@ -31,6 +31,7 @@ const localeNames: Record<Locale, string> = {
   el: "Ελληνικά",
   de: "Deutsch",
   it: "Italiano",
+  es: "Español",
 };
 
 const home = locale === "en" ? "/" : `/${locale}/`;
@@ -75,6 +76,15 @@ const navLabels = {
     evidence: "Evidenze",
     references: "Bibliografia",
   },
+  es: {
+    clinical: "Clínico",
+    wellness: "Bienestar",
+    indications: "Indicaciones",
+    departments: "Servicios",
+    longevity: "Longevidad",
+    evidence: "Evidencia",
+    references: "Bibliografía",
+  },
 }[locale];
 
 const paths = [
@@ -98,7 +108,7 @@ const allLinks = [...paths, ...library];
 
 const isActive = (href: string): boolean => {
   // Exact match for / paths; prefix match (must be followed by /) for everything else
-  if (href === "/" || href === "/el/" || href === "/de/" || href === "/it/") return pathname === href;
+  if (href === "/" || href === "/el/" || href === "/de/" || href === "/it/" || href === "/es/") return pathname === href;
   return pathname === href || pathname.startsWith(href);
 };
 ---

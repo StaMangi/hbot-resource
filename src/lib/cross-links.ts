@@ -19,7 +19,7 @@ export type CrossRefCollection =
 export interface CrossRef {
   collection: CrossRefCollection;
   slug: string;
-  title: { en: string; el: string; de: string; it?: string };
+  title: { en: string; el: string; de: string; it?: string; es?: string };
 }
 
 export interface CrossLinkIndex {

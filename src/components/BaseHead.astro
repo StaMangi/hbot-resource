@@ -63,6 +63,7 @@ const enUrl = alternateLocaleUrl(pathname, "en");
 const elUrl = alternateLocaleUrl(pathname, "el");
 const deUrl = alternateLocaleUrl(pathname, "de");
 const itUrl = alternateLocaleUrl(pathname, "it");
+const esUrl = alternateLocaleUrl(pathname, "es");
 const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
 ---
 
@@ -78,6 +79,7 @@ const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogI
 {!enOnly && <link rel="alternate" hreflang="el" href={elUrl} />}
 {!enOnly && <link rel="alternate" hreflang="de" href={deUrl} />}
 {!enOnly && <link rel="alternate" hreflang="it" href={itUrl} />}
+{!enOnly && <link rel="alternate" hreflang="es" href={esUrl} />}
 <link rel="alternate" hreflang="x-default" href={enUrl} />
 
 {noindex && <meta name="robots" content="noindex, nofollow" />}
@@ -88,7 +90,7 @@ const ogImageAbsolute = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogI
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageAbsolute} />
-<meta property="og:locale" content={locale === "el" ? "el_GR" : locale === "de" ? "de_DE" : locale === "it" ? "it_IT" : "en_US"} />
+<meta property="og:locale" content={locale === "el" ? "el_GR" : locale === "de" ? "de_DE" : locale === "it" ? "it_IT" : locale === "es" ? "es_ES" : "en_US"} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />

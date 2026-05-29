@@ -42,7 +42,9 @@ const citedInLabel =
       ? "Zitiert in"
       : locale === "it"
         ? "Citato in"
-        : "Cited in";
+        : locale === "es"
+          ? "Citado en"
+          : "Cited in";
 ---
 
 <li
