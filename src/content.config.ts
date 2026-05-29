@@ -15,9 +15,9 @@ const bilingual = z.object({
   el: z.string(),
   de: z.string(),
   it: z.string(),
-  // Phase 7.C (Spanish) mid-rollout: `es` OPTIONAL during Stages 1–5
-  // (warn-not-fail), flipped to required at Stage 6 once every entry is populated.
-  es: z.string().optional(),
+  // Phase 7.C (Spanish) closed at its Stage 6 — `es` now REQUIRED at build
+  // time, matching EN/EL/DE/IT. The build fails if any entry is missing `es`.
+  es: z.string(),
 });
 
 const bilingualStringArray = z.object({
@@ -25,7 +25,7 @@ const bilingualStringArray = z.object({
   el: z.array(z.string()),
   de: z.array(z.string()),
   it: z.array(z.string()),
-  es: z.array(z.string()).optional(),
+  es: z.array(z.string()),
 });
 
 const protocol = z.object({

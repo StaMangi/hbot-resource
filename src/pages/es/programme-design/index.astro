@@ -1,0 +1,162 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "es" as const;
+const prefix = "/es";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Diseño del programa de longevidad",
+  description:
+    "Directrices para operadores sobre el diseño de programas de HBOT éticos y basados en la evidencia en el contexto de la longevidad y el bienestar.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Diseño del programa — HBOT Science"
+  description="Directrices para operadores sobre el diseño de programas de HBOT éticos y basados en la evidencia en el contexto de la longevidad y el bienestar — cribado del paciente, selección del protocolo, medición de los resultados, límites de las afirmaciones, cumplimiento."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Referencia para operadores</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Diseño del programa
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Esta página es una directriz para operadores sobre el diseño de programas
+      de HBOT éticos y basados en la evidencia en el contexto de la longevidad y
+      el bienestar. No es un protocolo clínico y no sustituye una evaluación del
+      paciente realizada por un médico. Los programas orientados al bienestar se
+      sitúan fuera de las indicaciones aprobadas por la FDA; las formulaciones
+      presentes en esta página son coherentes con dicho alcance.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Cribado del paciente
+      </h2>
+      <p class="text-slate-700 mb-3">
+        El ingreso en el programa debería seguir una evaluación preliminar
+        estructurada que aborde los mismos aspectos de seguridad de la HBOT
+        clínica (véase la página <a
+          href="/es/safety/"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >Seguridad y contraindicaciones</a
+        >). Como mínimo:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Anamnesis completa (cardiaca, pulmonar, neurológica, oncológica).</li>
+        <li>Revisión de la medicación (sustancias quimioterápicas, disulfiram, insulina y sulfonilureas).</li>
+        <li>Evaluación de la membrana timpánica y de la función tubárica.</li>
+        <li>Estado de embarazo, si procede.</li>
+        <li>Cribado de claustrofobia/ansiedad.</li>
+        <li>Definición de los objetivos: cognitivo, recuperación deportiva, fatiga / sueño, bienestar general — objetivos distintos conllevan implicaciones distintas sobre el protocolo.</li>
+        <li>Conversación sobre las expectativas realistas: la HBOT en el contexto del bienestar no es un tratamiento de una afección aprobada por la FDA; los efectos son moderados, variables de un individuo a otro y requieren una adherencia constante.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Selección del protocolo
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Los protocolos del programa deberían alinearse con la base de evidencia
+        para el objetivo abordado. Elija el protocolo citado en la fuente en
+        lugar de improvisar:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Mejora cognitiva</strong> — 60 sesiones, 2.0 ATA, 90 min, 5×/semana (ensayo clínico aleatorizado [ECA] de Hadanny 2020 en adultos mayores sanos).</li>
+        <li><strong>Alargamiento de los telómeros / senescencia celular</strong> — 60 sesiones, 2.0 ATA, 90 min, 5×/semana.</li>
+        <li><strong>Recuperación deportiva</strong> — ciclos breves (10–20 sesiones por ciclo, después del entrenamiento o diarias); la evidencia es preliminar.</li>
+        <li><strong>Bienestar general / fatiga</strong> — no existe un protocolo validado específico para el bienestar; si se aplica, el protocolo cognitivo/longevidad es la referencia basada en la fuente más próxima.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[4]", "[3]", "[8]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Normas sobre frecuencia y duración
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programa de bienestar estándar</strong>: 40–60 sesiones a lo largo de 12–14 semanas con 5×/semana, 90 min por sesión, 2.0 ATA.</li>
+        <li><strong>Fase de mantenimiento</strong>: no estandarizada. Algunos operadores ofrecen sesiones de mantenimiento mensuales; la evidencia de un beneficio de mantenimiento no está consolidada.</li>
+        <li><strong>Estructura del ciclo</strong>: semanas continuas de 5 días con pausa el fin de semana son la cadencia más citada; una cadencia diaria de 7 días no está respaldada por mejor evidencia y aumenta el riesgo de eventos adversos.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Medición de los resultados
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Lo que un operador puede medir de forma éticamente defendible depende de
+        lo que respalda la evidencia subyacente. Medir de forma conservadora,
+        informar de forma honesta.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programas cognitivos</strong>: baterías de pruebas cognitivas validadas (velocidad de procesamiento de la información, atención, memoria) medidas antes y después.</li>
+        <li><strong>Programas de telómeros/senescencia</strong>: una medición de laboratorio de la longitud de los telómeros es factible pero costosa; la mayoría de los operadores no la ofrecen de forma rutinaria. La energía/el sueño autoinformados no sustituyen los marcadores biológicos.</li>
+        <li><strong>Recuperación deportiva</strong>: escalas subjetivas de recuperación, aclaramiento del lactato, si es medible, monitorización del sueño.</li>
+        <li><strong>Bienestar general</strong>: medidas de resultado informadas por el paciente validadas (p. ej. SF-36, PROMIS); deben evitarse los cuestionarios personalizados carentes de validación psicométrica.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Límites de las afirmaciones
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Las siguientes afirmaciones <strong>no</strong> deberían formularse
+        respecto a un programa de HBOT de bienestar. Cada una está
+        explícitamente fuera de la base de evidencia o activamente
+        contraindicada por la literatura actual:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Efectos «antitumorales» — la HBOT está contraindicada con varias sustancias quimioterápicas y no es un tratamiento oncológico.</li>
+        <li>Tratamiento de los trastornos del espectro autista, de la esclerosis múltiple, de la parálisis cerebral infantil o de la enfermedad de Lyme — ninguna de estas indicaciones está basada en la evidencia para la HBOT.</li>
+        <li>Formulaciones de «detox», «cura antienvejecimiento» o «reparación del ADN» — lenguaje de marketing carente de fundamento científico.</li>
+        <li>Afirmaciones específicas sobre el alargamiento de la vida o sobre la «reversión de la edad biológica» — los datos subyacentes sobre la longitud de los telómeros no permiten afirmaciones sobre la duración de la vida.</li>
+        <li>Tratamiento de trastornos psiquiátricos fuera de las indicaciones basadas en la evidencia (p. ej. la evidencia para el TEPT es discordante).</li>
+        <li>Uso en el primer trimestre del embarazo, salvo las indicaciones de urgencia.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Cumplimiento y adherencia
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Una adherencia inferior a aproximadamente el 80 % de las sesiones planificadas reduce la probabilidad de un beneficio medible; esto debería comunicarse como expectativa del programa en el momento del consentimiento.</li>
+        <li>Los motivos de interrupción deberían documentarse: barotrauma del oído medio, ansiedad, dificultades de programación, ausencia percibida de beneficio.</li>
+        <li>Reanudación: un programa suspendido puede reanudarse en un plazo de 4–6 semanas sin un reinicio significativo del ciclo; las pausas más largas justifican un reinicio a partir de la evaluación basal.</li>
+        <li>Documentación: registrar cada sesión con la presión, la duración, la hora de inicio, los eventos adversos y la tolerabilidad informada por el paciente.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Esta directriz refleja la evidencia actual y las normas de la práctica. Es
+      una referencia para operadores, no un asesoramiento normativo. Las
+      normativas locales en materia de sanidad y protección del consumidor se
+      aplican y pueden imponer requisitos adicionales sobre el diseño del
+      programa y el lenguaje de las afirmaciones.
+    </p>
+  </article>
+</LandingLayout>

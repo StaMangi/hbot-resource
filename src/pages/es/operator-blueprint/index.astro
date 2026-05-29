@@ -1,0 +1,148 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "es" as const;
+const prefix = "/es";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Blueprint para el operador",
+  description:
+    "Arquitectura de referencia para hoteles, clínicas de longevidad y operadores de bienestar que introducen la HBOT — equipamiento, personal, espacios, control de calidad, flujo del paciente, documentación.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Blueprint para el operador — HBOT Science"
+  description="Arquitectura de referencia para hoteles, clínicas de longevidad y operadores de bienestar que introducen la HBOT — equipamiento, personal, aspectos relativos a los espacios, control de calidad, flujo del paciente, documentación."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Referencia para operadores</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Blueprint para el operador
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Arquitectura de referencia para la implementación operativa de servicios
+      de HBOT en las organizaciones — hoteles, clínicas de longevidad y
+      operadores de bienestar. Los contenidos son genéricos; proveedores de
+      equipamiento, vías normativas y precios concretos no se tratan de forma
+      deliberada. Las normativas locales en materia de sanidad y seguridad del
+      equipamiento se aplican y pueden imponer requisitos más estrictos.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Elección del equipamiento
+      </h2>
+      <p class="text-slate-700 mb-3">
+        En el ámbito clínico se emplean dos categorías principales de cámaras
+        hiperbáricas:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Cámaras hiperbáricas rígidas (médicas)</strong> — presurizan a 2.0–3.0 ATA con oxígeno al 100 % mediante mascarilla o casco. Necesarias para las indicaciones aprobadas por la FDA y para cualquier tratamiento que requiera una verdadera presión hiperbárica. Disponibles en configuraciones monoplaza (un paciente) y multiplaza (varios pacientes con acompañante).</li>
+        <li><strong>Cámaras blandas («HBOT leve»)</strong> — por lo general presurizan a 1.3 ATA con aire ambiente. Para las indicaciones tratadas en este sitio no son equivalentes a la HBOT médica; la base de evidencia para un efecto terapéutico a 1.3 ATA es claramente más débil. Los operadores que se remiten al ensayo clínico aleatorizado (ECA) de Hadanny 2020 sobre la mejora cognitiva o al ECA de Zilberman-Itskovich 2022 sobre el COVID persistente (Long COVID) deben saber que estos estudios utilizaron cámaras rígidas a 2.0 ATA — los usos con cámaras blandas no pueden reproducir tales protocolos.</li>
+      </ul>
+      <p class="text-slate-700 mt-3">
+        <strong>Monoplaza vs. multiplaza</strong>: las cámaras monoplaza son más
+        pequeñas, conllevan costes de inversión inferiores y requieren personal
+        menos especializado. Las cámaras multiplaza permiten la presencia de un
+        acompañante para la gestión de la ansiedad y la respuesta a las
+        emergencias, pueden acoger a pacientes más complejos y son el estándar
+        para los servicios clínicos de cicatrización de heridas.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Personal
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Supervisión médica</strong>: un médico designado para la medicina hiperbárica debería ser responsable de la verificación de las indicaciones, de la aprobación (sign-off) del cribado previo al tratamiento y de la respuesta a los eventos adversos.</li>
+        <li><strong>Técnico hiperbárico / enfermero</strong>: entrenado en el funcionamiento de la cámara, en los procedimientos de descompresión de emergencia y en la gestión del paciente. Los estándares de certificación varían según la jurisdicción; la UHMS publica vías de cualificación reconocidas.</li>
+        <li><strong>Acompañantes para las cámaras multiplaza</strong>: en las cámaras multiplaza se requiere un acompañante interno durante toda la duración de las sesiones presurizadas.</li>
+        <li><strong>Recepción / programación</strong>: entrenada en el cribado de las contraindicaciones (en particular tabaquismo, infección reciente del oído, quimioterapia en curso), de modo que las señales de alerta se reconozcan ya en el momento de la reserva y no solo a nivel de cámara.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Espacios
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Necesidad de espacio</strong>: las cámaras monoplaza se ubican en un local de 3 × 6 m; los sistemas multiplaza requieren suites dedicadas con sala de control, almacenamiento del oxígeno y salidas de emergencia.</li>
+        <li><strong>Ventilación</strong>: los ambientes ricos en oxígeno requieren medidas para limitar la carga de incendio. Los materiales de pavimento y pared, las instalaciones eléctricas y la climatización deben cumplir los estándares de seguridad del equipamiento (los códigos regionales varían; en las jurisdicciones que siguen los estándares estadounidenses, NFPA 99 como referencia).</li>
+        <li><strong>Protección contra incendios</strong>: ningún tejido sintético, ningún material que pueda cargarse estáticamente, ningún dispositivo electrónico en la cámara, ningún aceite o producto a base de alcohol sobre el paciente. La extinción de incendios debe ser idónea para una atmósfera enriquecida de oxígeno.</li>
+        <li><strong>Suministro de oxígeno</strong>: oxígeno medicinal con verificación documentada de la pureza. Suministro de reserva obligatorio.</li>
+        <li><strong>Salida de emergencia</strong>: capacidad de descompresión rápida y respuesta del operador entrenado en cuestión de segundos.</li>
+        <li><strong>Control climático</strong>: gestión de la temperatura de la cámara para evitar el sobrecalentamiento del paciente durante la compresión.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Control de calidad
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Mantenimiento de la cámara</strong>: mantenimiento programado según las indicaciones del fabricante, con registro de mantenimiento.</li>
+        <li><strong>Inspección del recipiente a presión</strong>: típicamente anual; específica de la jurisdicción.</li>
+        <li><strong>Verificación de la pureza del oxígeno</strong>: verificación periódica de la pureza del suministro, idealmente en cada cambio de suministro del gas.</li>
+        <li><strong>Calibración</strong>: manómetros, sensores de oxígeno, temporizadores — calibrados según las indicaciones del fabricante.</li>
+        <li><strong>Registro de los eventos adversos</strong>: cada evento adverso documentado con fecha, número de sesión, sintomatología, respuesta y resultado.</li>
+        <li><strong>Cadencia de las auditorías</strong>: auditoría interna al menos anual; auditoría externa, activada por los ciclos normativos o por un evento adverso significativo.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Flujo del paciente y consentimiento
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Primera consulta</strong>: anamnesis, discusión de la indicación, cribado de las contraindicaciones, alineamiento de las expectativas (en particular para el uso en el bienestar).</li>
+        <li><strong>Consentimiento informado</strong>: consentimiento escrito con una visión general de las contraindicaciones absolutas y relativas, de los eventos adversos comunes, del protocolo previsto, del alcance del efecto clínico (para el bienestar: reconocimiento explícito de que el programa se sitúa fuera de las indicaciones aprobadas por la FDA).</li>
+        <li><strong>Verificación previa a la sesión</strong>: presión arterial, temperatura, evaluación respiratoria, revisión de la medicación en curso, estado de claustrofobia, evaluación de la compensación de la presión de los oídos.</li>
+        <li><strong>Monitorización de la sesión</strong>: comunicación continua con el acompañante; registro de las constantes vitales en los pacientes de alto riesgo.</li>
+        <li><strong>Verificación posterior a la sesión</strong>: evaluación de la membrana timpánica, constantes vitales, cuestionario de tolerabilidad.</li>
+        <li><strong>Cadencia del seguimiento</strong>: evaluaciones intermedias y finales; registro de las medidas de resultado según el diseño del programa.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Documentación
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Registro de sesión</strong>: fecha, hora de inicio, perfil de presión, duración, flujo de oxígeno, eventos adversos, identidad del acompañante, tolerabilidad informada por el paciente.</li>
+        <li><strong>Registro de la indicación</strong>: justificación clínica documentada, nivel de evidencia, aprobación (sign-off) del médico responsable.</li>
+        <li><strong>Seguimiento de los resultados</strong>: mediciones pre/post protocolo según el diseño del programa.</li>
+        <li><strong>Notificación de los eventos adversos</strong>: los eventos graves se notifican según el marco normativo local.</li>
+        <li><strong>Conservación</strong>: historiales clínicos según la jurisdicción (típicamente 7–25 años).</li>
+        <li><strong>Protección de datos</strong>: conforme al GDPR en la UE y el EEE; equivalente a la HIPAA en los EE. UU.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Este blueprint es una referencia genérica para operadores. No constituye
+      un asesoramiento normativo o relativo a la seguridad del equipamiento. Las
+      normativas locales en materia de sanidad, seguridad del equipamiento,
+      protección contra incendios y protección del consumidor se aplican y
+      prevalecen sobre las recomendaciones aquí resumidas.
+    </p>
+  </article>
+</LandingLayout>
