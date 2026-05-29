@@ -5,21 +5,25 @@ category:
   el: "Λοιμώδη Νοσήματα"
   de: "Infektionserkrankungen"
   it: "Malattie infettive"
+  es: "Enfermedades infecciosas"
 condition:
   en: "Exceptional Blood Loss Anemia"
   el: "Αναιμία Εξαιρετικής Απώλειας Αίματος"
   de: "Anämie bei außergewöhnlichem Blutverlust"
   it: "Anemia da perdita ematica eccezionale"
+  es: "Anemia por pérdida sanguínea excepcional"
 description:
   en: "When transfusion is not possible due to religious beliefs or unavailability, HBOT provides sufficient dissolved plasma oxygen to sustain life."
   el: "Όταν η μετάγγιση δεν είναι δυνατή λόγω θρησκευτικών πεποιθήσεων ή έλλειψης, η HBOT παρέχει επαρκές διαλυμένο οξυγόνο πλάσματος για διατήρηση ζωής."
   de: "Wenn eine Transfusion aufgrund religiöser Überzeugungen oder fehlender Verfügbarkeit nicht möglich ist, liefert HBOT ausreichend gelösten Plasmasauerstoff, um das Leben zu erhalten."
   it: "Quando la trasfusione non è possibile per convinzioni religiose o per indisponibilità, l'HBOT fornisce ossigeno plasmatico disciolto sufficiente a sostenere la vita."
+  es: "Cuando la transfusión no es posible por convicciones religiosas o por indisponibilidad, la HBOT aporta suficiente oxígeno plasmático disuelto para sostener la vida."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
   it: "Standard di cura"
+  es: "Estándar de atención"
 evidenceLevel: "B"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 – 2.5 ATA"
     de: "2.0 – 2.5 ATA"
     it: "2.0 – 2.5 ATA"
+    es: "2.0 – 2.5 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"
     de: "20 – 40"
     it: "20 – 40"
+    es: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
+    es: "Una vez al día, 5×/semana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
     it: "UHMS / Standard di cura"
+    es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
   - "[8]"

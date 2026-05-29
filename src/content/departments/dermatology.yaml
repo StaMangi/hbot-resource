@@ -3,6 +3,7 @@ name:
   el: "Δερματολογία"
   de: "Dermatologie"
   it: "Dermatologia"
+  es: "Dermatología"
 icon: "Bandage"
 color: "#b45309"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "Εγκαύματα, χρόνιες πληγές, μοσχεύματα δέρματος, δερματικές φλεγμονές"
   de: "Verbrennungen, chronische Wunden, Hauttransplantate, dermatologische Entzündungen"
   it: "Ustioni, ferite croniche, innesti cutanei, infiammazioni dermatologiche"
+  es: "Quemaduras, heridas crónicas, injertos cutáneos, inflamaciones dermatológicas"
 applications:
   - title:
       en: "Chronic Non-Healing Wounds"
       el: "Χρόνιες Μη-Επουλούμενες Πληγές"
       de: "Chronische nicht heilende Wunden"
       it: "Ferite croniche non cicatrizzanti"
+      es: "Heridas crónicas que no cicatrizan"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Επικουρική HBOT για χρόνιες μη-επουλούμενες πληγές, συμπεριλαμβανομένων διαβητικών ελκών ποδιού και αγγειακών ελκών. Η τεκμηρίωση για επούλωση χρόνιων πληγών είναι η πιο ισχυρή εφαρμογή της HBOT στη δερματολογία."
       de: "Adjuvante HBOT bei chronischen nicht heilenden Wunden, einschließlich diabetischer Fußulzera und vaskulärer Ulzera. Die Evidenzbasis für die Heilung chronischer Wunden ist die robusteste dermatologische HBOT-Anwendung."
       it: "HBOT adiuvante per ferite croniche non cicatrizzanti, comprese le ulcere del piede diabetico e le ulcere vascolari. La base di evidenza per la guarigione delle ferite croniche è l'applicazione dermatologica più solida dell'HBOT."
+      es: "HBOT adyuvante para heridas crónicas que no cicatrizan, incluidas las úlceras de pie diabético y las úlceras vasculares. La base de evidencia para la cicatrización de heridas crónicas es la aplicación dermatológica más sólida de la HBOT."
     evidence: "Level A"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
+        es: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
       - "[7]"
@@ -58,6 +67,7 @@ applications:
       el: "Ακτινική Δερματίτιδα & Ακτινική Βλάβη Μαλακών Ιστών"
       de: "Strahlendermatitis & Strahlenschäden des Weichgewebes"
       it: "Radiodermatite e danno radiogeno dei tessuti molli"
+      es: "Radiodermatitis y lesión por radiación de tejidos blandos"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -65,6 +75,7 @@ applications:
       el: "Θεραπεία για ακτινική δερματίτιδα και καθυστερημένη επούλωση μαλακών ιστών μετά από ακτινοθεραπεία. Προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ιστό."
       de: "Behandlung der Strahlendermatitis und der verzögerten Weichgewebeheilung nach Strahlentherapie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe."
       it: "Trattamento della radiodermatite e della guarigione ritardata dei tessuti molli dopo radioterapia. Promuove l'angiogenesi nel tessuto ipossico, ipovascolare, ipocellulare."
+      es: "Tratamiento de la radiodermatitis y de la cicatrización retardada de los tejidos blandos tras radioterapia. Promueve la angiogénesis en el tejido hipóxico, hipovascular e hipocelular."
     evidence: "Level A"
     protocol:
       ata:
@@ -72,26 +83,31 @@ applications:
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
+        es: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
       - "[12]"
@@ -100,6 +116,7 @@ applications:
       el: "Διακυβευμένα Δερματικά Μοσχεύματα & Κρημνοί"
       de: "Gefährdete Hauttransplantate & Lappen"
       it: "Innesti cutanei e lembi compromessi"
+      es: "Injertos cutáneos y colgajos comprometidos"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -107,6 +124,7 @@ applications:
       el: "Επικουρική θεραπεία διάσωσης για ισχαιμικά ή φλεβικά συμφορημένα δερματικά μοσχεύματα και κρημνούς. Η πρωιμότερη έναρξη όταν εντοπίζονται προβλήματα αιμάτωσης συσχετίζεται με καλύτερες εκβάσεις· η HBOT βελτιώνει τη μεταφορά οξυγόνου, την αγγειογένεση, την ινοβλαστική δραστηριότητα και τον έλεγχο του οιδήματος."
       de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
       it: "Adiuvante di salvataggio per innesti cutanei e lembi ischemici o congesti per via venosa. L'avvio più precoce, quando vengono identificati problemi di perfusione, è associato a esiti migliori; l'HBOT migliora l'apporto di ossigeno, l'angiogenesi, l'attività dei fibroblasti e il controllo dell'edema."
+      es: "Adyuvante de rescate para injertos cutáneos y colgajos isquémicos o con congestión venosa. El inicio más precoz, cuando se identifican problemas de perfusión, se asocia a mejores resultados; la HBOT mejora el aporte de oxígeno, la angiogénesis, la actividad de los fibroblastos y el control del edema."
     evidence: "Level B"
     protocol:
       ata:
@@ -114,26 +132,31 @@ applications:
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
+        es: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
       - "[13]"
@@ -143,6 +166,7 @@ applications:
       el: "Εγκαύματα & Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
       de: "Verbrennungen & nekrotisierende Weichgewebeinfektion"
       it: "Ustioni e infezione necrotizzante dei tessuti molli"
+      es: "Quemaduras e infección necrosante de tejidos blandos"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -150,6 +174,7 @@ applications:
       el: "Επικουρική θεραπεία για νεκρωτική περιτονίτιδα, γάγγραινα Fournier και σοβαρά εγκαύματα. Μειώνει τη θνησιμότητα και την απώλεια ιστών σε συνδυασμό με χειρουργικό καθαρισμό και αντιβιοτική αγωγή."
       de: "Adjuvante Behandlung bei nekrotisierender Fasziitis, Fournier-Gangrän und schweren Verbrennungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
       it: "Trattamento adiuvante per fascite necrotizzante, gangrena di Fournier e ustioni gravi. Riduce la mortalità e la perdita di tessuto se associato a debridement chirurgico e terapia antibiotica."
+      es: "Tratamiento adyuvante para la fascitis necrosante, la gangrena de Fournier y las quemaduras graves. Reduce la mortalidad y la pérdida de tejido cuando se combina con el desbridamiento quirúrgico y la antibioticoterapia."
     evidence: "Level A"
     protocol:
       ata:
@@ -157,26 +182,31 @@ applications:
         el: "2.0 – 2.5 ATA"
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
+        es: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
+        es: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
+        es: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
+        es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
       - "[10]"
@@ -186,6 +216,7 @@ applications:
       el: "Φλεγμονώδεις Δερματοπάθειες"
       de: "Entzündliche Dermatosen"
       it: "Dermatosi infiammatorie"
+      es: "Dermatosis inflamatorias"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -193,6 +224,7 @@ applications:
       el: "Στοιχεία επιπέδου περιπτώσεων και μικρών ομάδων σε ατοπική δερματίτιδα (ανασκόπηση 2025 + παιδιατρική μελέτη) και ψωρίαση (αναφορές περιπτώσεων 2009). Άλλες φλεγμονώδεις παθήσεις (πυώδης ιδρωταδενίτιδα, λιβεδοειδής αγγειοπάθεια, γαγγραινώδες πυόδερμα) έχουν πρώιμες κλινικές αναφορές αλλά στερούνται ισχυρών δοκιμών. Η HBOT τοποθετείται ως επικουρική, όχι πρώτης γραμμής."
       de: "Evidenz auf Fall- und Kleinkohorten-Ebene bei atopischer Dermatitis (Übersichtsarbeit 2025 + pädiatrische Studie) und Psoriasis (Fallberichte 2009). Weitere entzündliche Erkrankungen (Hidradenitis suppurativa, livedoide Vaskulopathie, Pyoderma gangraenosum) verfügen über frühe klinische Berichte, jedoch fehlen robuste Studien. HBOT wird als adjuvante, nicht als Erstlinientherapie positioniert."
       it: "Evidenze a livello di casi clinici e piccole coorti nella dermatite atopica (revisione 2025 + studio pediatrico) e nella psoriasi (casi clinici 2009). Altre condizioni infiammatorie (idrosadenite suppurativa, vasculopatia livedoide, pioderma gangrenoso) dispongono di segnalazioni cliniche in fase iniziale ma mancano di studi solidi. L'HBOT è posizionata come adiuvante, non di prima linea."
+      es: "Evidencia a nivel de casos clínicos y pequeñas cohortes en la dermatitis atópica (revisión de 2025 + estudio pediátrico) y la psoriasis (casos clínicos de 2009). Otras afecciones inflamatorias (hidradenitis supurativa, vasculopatía livedoide, pioderma gangrenoso) cuentan con informes clínicos en fase inicial pero carecen de ensayos sólidos. La HBOT se posiciona como adyuvante, no de primera línea."
     evidence: "Level C"
     protocol:
       ata:
@@ -200,26 +232,31 @@ applications:
         el: "2.0 – 2.8 ATA"
         de: "2.0 – 2.8 ATA"
         it: "2.0 – 2.8 ATA"
+        es: "2.0 – 2.8 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "6 – 30 (highly variable)"
         el: "6 – 30 (πολύ μεταβλητές)"
         de: "6 – 30 (stark variabel)"
         it: "6 – 30 (molto variabile)"
+        es: "6 – 30 (muy variable)"
       frequency:
         en: "Daily, protocol-dependent"
         el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
         de: "Täglich, protokollabhängig"
         it: "Quotidiano, in base al protocollo"
+        es: "Diariamente, según el protocolo"
       basis:
         en: "Case Reports & Small Studies"
         el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες"
         de: "Fallberichte & Kleine Studien"
         it: "Casi clinici e studi di piccole dimensioni"
+        es: "Casos clínicos y estudios de pequeño tamaño"
     refs:
       - "[33]"
       - "[34]"

@@ -3,6 +3,7 @@ title:
   el: "Ίδρυση Αφιερωμένης Μονάδας Υπερβαρικής Ιατρικής"
   de: "Aufbau einer eigenen hyperbarmedizinischen Einheit"
   it: "Istituire una dedicata Unità di medicina iperbarica"
+  es: "Establecer una Unidad dedicada de medicina hiperbárica"
 icon: "Building2"
 priority: "High"
 description:
@@ -10,6 +11,7 @@ description:
   el: "Δημιουργία εξειδικευμένου τμήματος με πιστοποιημένους υπερβαρικούς ιατρούς, εκπαιδευμένες νοσηλεύτριες και υπερβαρικούς τεχνικούς. Ένας πολυθέσιος θάλαμος (6–12 θέσεις) επιτρέπει ταυτόχρονη θεραπεία πολλαπλών ασθενών και πλήρη παρακολούθηση κρίσιμα ασθενών."
   de: "Aufbau einer spezialisierten Abteilung mit zertifizierten Hyperbarmedizinerinnen und -medizinern, geschultem Pflegepersonal und Hyperbar-Techniker:innen. Eine Mehrplatzkammer (6–12 Plätze) ermöglicht die gleichzeitige Behandlung mehrerer Patient:innen und das vollständige Monitoring kritisch kranker Patient:innen."
   it: "Creare un reparto specializzato con medici iperbarici certificati, personale infermieristico formato e tecnici iperbarici. Una camera multiposto (6–12 posti) consente il trattamento simultaneo di più pazienti e permette il monitoraggio completo dei pazienti critici."
+  es: "Crear un servicio especializado dotado de médicos hiperbáricos certificados, personal de enfermería formado y técnicos hiperbáricos. Una cámara multiplaza (6–12 plazas) permite el tratamiento simultáneo de varios pacientes y posibilita la monitorización completa de los pacientes críticos."
 actions:
   en:
     - "Recruit a board-certified hyperbaric medicine physician"
@@ -31,3 +33,8 @@ actions:
     - "Installare una camera multiposto con piena capacità di monitoraggio da terapia intensiva"
     - "Istituire protocolli di sicurezza conformi alle UHMS e formazione del personale"
     - "Integrare con i reparti esistenti di chirurgia e medicina interna"
+  es:
+    - "Contratar a un médico especialista certificado en medicina hiperbárica"
+    - "Instalar una cámara multiplaza con plena capacidad de monitorización de UCI"
+    - "Establecer protocolos de seguridad conformes con la UHMS y formación del personal"
+    - "Integrar con los servicios existentes de cirugía y medicina interna"

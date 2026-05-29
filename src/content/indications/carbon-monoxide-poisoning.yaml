@@ -5,21 +5,25 @@ category:
   el: "Τοξικότητες"
   de: "Vergiftungen"
   it: "Tossicità"
+  es: "Toxicidades"
 condition:
   en: "Carbon Monoxide Poisoning"
   el: "Δηλητηρίαση από Μονοξείδιο Άνθρακα"
   de: "Kohlenmonoxidvergiftung"
   it: "Avvelenamento da monossido di carbonio"
+  es: "Intoxicación por monóxido de carbono"
 description:
   en: "HBOT accelerates CO elimination from hemoglobin and cytochrome oxidase, preventing delayed neurological sequelae."
   el: "Η HBOT επιταχύνει αποβολή CO από αιμοσφαιρίνη και κυτόχρωμα οξειδάση, αποτρέποντας καθυστερημένες νευρολογικές επιπλοκές."
   de: "HBOT beschleunigt die CO-Elimination aus Hämoglobin und Cytochromoxidase und verhindert verzögerte neurologische Folgeschäden."
   it: "L'HBOT accelera l'eliminazione del CO dall'emoglobina e dalla citocromo ossidasi, prevenendo le sequele neurologiche tardive."
+  es: "La HBOT acelera la eliminación del CO de la hemoglobina y la citocromo oxidasa, previniendo las secuelas neurológicas tardías."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
   it: "Standard di cura"
+  es: "Estándar de atención"
 evidenceLevel: "A"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.4 – 2.8 ATA"
     de: "2.4 – 2.8 ATA"
     it: "2.4 – 2.8 ATA"
+    es: "2.4 – 2.8 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "1 – 3 (emergency)"
     el: "1 – 3 (επείγον)"
     de: "1 – 3 (notfallmäßig)"
     it: "1 – 3 (emergenza)"
+    es: "1 – 3 (urgencia)"
   frequency:
     en: "Continuous until resolved"
     el: "Συνεχόμενα μέχρι την υποχώρηση"
     de: "Fortlaufend bis zur Auflösung"
     it: "Continuativo fino alla risoluzione"
+    es: "Continuo hasta la resolución"
   basis:
     en: "UHMS / Emergency Standard"
     el: "UHMS / Επείγον Πρότυπο"
     de: "UHMS / Notfallstandard"
     it: "UHMS / Standard di emergenza"
+    es: "UHMS / Estándar de urgencia"
 refs:
   - "[1]"
   - "[3]"

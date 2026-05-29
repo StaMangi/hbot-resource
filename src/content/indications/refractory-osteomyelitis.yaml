@@ -5,21 +5,25 @@ category:
   el: "Λοιμώδη Νοσήματα"
   de: "Infektionserkrankungen"
   it: "Malattie infettive"
+  es: "Enfermedades infecciosas"
 condition:
   en: "Refractory Osteomyelitis"
   el: "Ανθεκτική Οστεομυελίτιδα"
   de: "Refraktäre Osteomyelitis"
   it: "Osteomielite refrattaria"
+  es: "Osteomielitis refractaria"
 description:
   en: "Chronic osteomyelitis unresponsive to conventional therapy. HBOT enhances leukocyte killing, promotes angiogenesis in avascular bone."
   el: "Χρόνια οστεομυελίτιδα μη ανταποκρινόμενη σε συμβατική θεραπεία. Η HBOT ενισχύει λευκοκυτταρική θανάτωση, προάγει αγγειογένεση σε αναίμακτο οστό."
   de: "Chronische Osteomyelitis, die auf konventionelle Therapie nicht anspricht. HBOT verstärkt die Leukozyten-Abtötung und fördert die Angiogenese in avaskulärem Knochen."
   it: "Osteomielite cronica non responsiva alla terapia convenzionale. L'HBOT potenzia l'attività battericida dei leucociti e favorisce l'angiogenesi nell'osso avascolare."
+  es: "Osteomielitis crónica que no responde a la terapia convencional. La HBOT potencia la actividad bactericida de los leucocitos y favorece la angiogénesis en el hueso avascular."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
   it: "Standard di cura"
+  es: "Estándar de atención"
 evidenceLevel: "A"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 – 2.4 ATA"
     de: "2.0 – 2.4 ATA"
     it: "2.0 – 2.4 ATA"
+    es: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "30 – 60"
     el: "30 – 60"
     de: "30 – 60"
     it: "30 – 60"
+    es: "30 – 60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
+    es: "Una vez al día, 5×/semana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
     it: "UHMS / Standard di cura"
+    es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
   - "[11]"

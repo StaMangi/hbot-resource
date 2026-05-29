@@ -3,6 +3,7 @@ title:
   el: "Αθλητική Απόδοση & Αποκατάσταση"
   de: "Sportliche Leistung & Erholung"
   it: "Prestazione atletica & Recupero"
+  es: "Rendimiento atlético y recuperación"
 icon: "Zap"
 stat: "50%"
 statLabel:
@@ -10,42 +11,50 @@ statLabel:
   el: "Ταχύτερη μυϊκή αποκατάσταση"
   de: "Schnellere Muskelregeneration"
   it: "Recupero muscolare più rapido"
+  es: "Recuperación muscular más rápida"
 color: "teal"
 summary:
   en: "Systematic review and meta-analysis demonstrates consistent benefits including 30-50% faster muscle recovery, reduced exercise-induced muscle damage, decreased inflammation markers, and enhanced endurance capacity."
   el: "Συστηματική ανασκόπηση και μετα-ανάλυση αποδεικνύει συνεπή οφέλη συμπεριλαμβανομένης 30-50% ταχύτερης μυϊκής αποκατάστασης, μειωμένης μυϊκής βλάβης από άσκηση, μειωμένων δεικτών φλεγμονής και ενισχυμένης ικανότητας αντοχής."
   de: "Systematische Übersichtsarbeit und Meta-Analyse zeigen konsistente Vorteile, darunter eine 30–50 % schnellere Muskelregeneration, reduzierte trainingsinduzierte Muskelschäden, verringerte Entzündungsmarker und gesteigerte Ausdauerleistung."
   it: "Una revisione sistematica e metanalisi dimostra benefici coerenti, tra cui un recupero muscolare più rapido del 30-50%, una riduzione del danno muscolare indotto dall'esercizio, una diminuzione dei marcatori infiammatori e una maggiore capacità di resistenza."
+  es: "Una revisión sistemática y metaanálisis demuestra beneficios coherentes, incluida una recuperación muscular un 30-50% más rápida, una reducción del daño muscular inducido por el ejercicio, una disminución de los marcadores inflamatorios y una mayor capacidad de resistencia."
 mechanism:
   en: "HBOT increases oxygen availability to muscle tissue, accelerating ATP production and enhancing natural repair mechanisms. It reduces pro-inflammatory cytokines (IL-6, TNF-α) that impede recovery and promotes satellite cell activation for muscle regeneration."
   el: "Η HBOT αυξάνει διαθεσιμότητα οξυγόνου στον μυϊκό ιστό, επιταχύνοντας παραγωγή ATP και ενισχύοντας φυσικούς μηχανισμούς επισκευής. Μειώνει προ-φλεγμονώδεις κυτοκίνες (IL-6, TNF-α) που εμποδίζουν αποκατάσταση και προάγει ενεργοποίηση δορυφορικών κυττάρων για μυϊκή αναγέννηση."
   de: "HBOT erhöht die Sauerstoffverfügbarkeit im Muskelgewebe, beschleunigt die ATP-Produktion und verstärkt die natürlichen Reparaturmechanismen. Sie reduziert proinflammatorische Zytokine (IL-6, TNF-α), die die Erholung behindern, und fördert die Aktivierung von Satellitenzellen für die Muskelregeneration."
   it: "L'HBOT aumenta la disponibilità di ossigeno per il tessuto muscolare, accelerando la produzione di ATP e potenziando i meccanismi di riparazione naturali. Riduce le citochine pro-infiammatorie (IL-6, TNF-α) che ostacolano il recupero e promuove l'attivazione delle cellule satelliti per la rigenerazione muscolare."
+  es: "HBOT aumenta la disponibilidad de oxígeno para el tejido muscular, acelerando la producción de ATP y potenciando los mecanismos de reparación naturales. Reduce las citocinas proinflamatorias (IL-6, TNF-α) que dificultan la recuperación y promueve la activación de las células satélite para la regeneración muscular."
 protocol:
   ata:
     en: "1.5 – 2.4 ATA"
     el: "1.5 – 2.4 ATA"
     de: "1.5 – 2.4 ATA"
     it: "1.5 – 2.4 ATA"
+    es: "1.5 – 2.4 ATA"
   duration:
     en: "60 – 90 min"
     el: "60 – 90 min"
     de: "60 – 90 min"
     it: "60 – 90 min"
+    es: "60 – 90 min"
   sessions:
     en: "10 – 20 per cycle"
     el: "10 – 20 ανά κύκλο"
     de: "10 – 20 pro Zyklus"
     it: "10 – 20 per ciclo"
+    es: "10 – 20 por ciclo"
   frequency:
     en: "Post-exercise or daily"
     el: "Μετά την άσκηση ή καθημερινά"
     de: "Nach dem Training oder täglich"
     it: "Post-esercizio o quotidiano"
+    es: "Después del ejercicio o diariamente"
   basis:
     en: "Systematic Review & Meta-Analysis"
     el: "Συστηματική Ανασκόπηση & Μετα-Ανάλυση"
     de: "Systematische Übersichtsarbeit & Meta-Analyse"
     it: "Revisione sistematica & Metanalisi"
+    es: "Revisión sistemática y metaanálisis"
 refs:
   - "[22]"

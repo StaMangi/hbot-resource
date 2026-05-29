@@ -3,6 +3,7 @@ title:
   el: "Νεοαγγείωση & Αγγειογένεση"
   de: "Neovaskularisation & Angiogenese"
   it: "Neovascolarizzazione & Angiogenesi"
+  es: "Neovascularización y angiogénesis"
 icon: "GitBranch"
 color: "navy"
 summary:
@@ -10,11 +11,13 @@ summary:
   el: "Η υπεροξία διεγείρει την απελευθέρωση VEGF, PDGF και FGF, προάγοντας τη δημιουργία τριχοειδών και σχηματισμό κοκκιώδους ιστού σε χρόνια τραύματα."
   de: "Die Hyperoxie stimuliert die Freisetzung von VEGF, PDGF und FGF und fördert die Kapillarsprossung sowie die Bildung von Granulationsgewebe in chronischen Wunden."
   it: "L'iperossia stimola il rilascio di VEGF, PDGF e FGF, promuovendo la gemmazione capillare e la formazione di tessuto di granulazione nelle ferite croniche."
+  es: "La hiperoxia estimula la liberación de VEGF, PDGF y FGF, promoviendo la gemación capilar y la formación de tejido de granulación en heridas crónicas."
 detail:
   en: "Vascular endothelial growth factor (VEGF), platelet-derived growth factor (PDGF), and fibroblast growth factor (FGF) are upregulated under hyperoxic conditions. This cascade promotes new blood vessel formation, critical for wound healing and tissue regeneration."
   el: "Ο αγγειακός ενδοθηλιακός αυξητικός παράγοντας (VEGF), ο παράγοντας ανάπτυξης αιμοπεταλίων (PDGF) και ο αυξητικός παράγοντας ινοβλαστών (FGF) ενεργοποιούνται υπό υπεροξικές συνθήκες. Αυτή η καταρράκτης προάγει τη δημιουργία νέων αιμοφόρων αγγείων, κρίσιμη για την επούλωση τραυμάτων και αναγέννηση ιστών."
   de: "Der vaskuläre endotheliale Wachstumsfaktor (VEGF), der von Thrombozyten abgeleitete Wachstumsfaktor (PDGF) und der Fibroblasten-Wachstumsfaktor (FGF) werden unter hyperoxischen Bedingungen hochreguliert. Diese Kaskade fördert die Bildung neuer Blutgefäße, die für die Wundheilung und Geweberegeneration entscheidend ist."
   it: "Il fattore di crescita endoteliale vascolare (VEGF), il fattore di crescita derivato dalle piastrine (PDGF) e il fattore di crescita dei fibroblasti (FGF) sono sovraregolati in condizioni iperossiche. Questa cascata promuove la formazione di nuovi vasi sanguigni, fondamentale per la guarigione delle ferite e la rigenerazione tissutale."
+  es: "El factor de crecimiento endotelial vascular (VEGF), el factor de crecimiento derivado de plaquetas (PDGF) y el factor de crecimiento de fibroblastos (FGF) se sobrerregulan en condiciones hiperóxicas. Esta cascada promueve la formación de nuevos vasos sanguíneos, fundamental para la cicatrización de heridas y la regeneración tisular."
 refs:
   - "[1]"
   - "[2]"

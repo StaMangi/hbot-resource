@@ -5,21 +5,25 @@ category:
   el: "Φλεγμονώδεις Δερματικές Παθήσεις"
   de: "Entzündliche Hauterkrankungen"
   it: "Malattia infiammatoria della pelle"
+  es: "Enfermedad cutánea inflamatoria"
 condition:
   en: "Inflammatory Dermatoses"
   el: "Φλεγμονώδεις Δερματοπάθειες"
   de: "Entzündliche Dermatosen"
   it: "Dermatosi infiammatorie"
+  es: "Dermatosis inflamatorias"
 description:
   en: "Case-level and small-cohort evidence supports HBOT as an adjunct in selected inflammatory skin conditions, primarily atopic dermatitis and psoriasis. A 2025 review and a 2021 paediatric study describe reductions in pruritus, lesion severity, and Staphylococcus aureus colonisation in severe atopic dermatitis after HBOT cycles. Two 2009 case reports document remission of psoriasis vulgaris with HBOT (one pustular/arthropathic case after 6 sessions at 2.8 ATA × 60 min; one plaque case improving after 15 sessions at 2.0 ATA × 90 min). Other inflammatory dermatoses — hidradenitis suppurativa, livedoid vasculopathy, pyoderma gangrenosum — have been described in early-stage clinical reports but lack robust supporting trials. Protocols vary widely and are not standardised; HBOT is positioned as adjunctive, not first-line."
   el: "Στοιχεία επιπέδου περιπτώσεων και μικρών ομάδων υποστηρίζουν την HBOT ως επικουρική θεραπεία σε επιλεγμένες φλεγμονώδεις δερματοπάθειες, κυρίως ατοπική δερματίτιδα και ψωρίαση. Ανασκόπηση του 2025 και παιδιατρική μελέτη του 2021 περιγράφουν μειώσεις σε κνησμό, σοβαρότητα βλαβών και αποικισμό από Staphylococcus aureus σε σοβαρή ατοπική δερματίτιδα μετά από κύκλους HBOT. Δύο αναφορές περιπτώσεων του 2009 τεκμηριώνουν ύφεση ψωρίασης κατά πλάκες με HBOT (μία περίπτωση φλυκταινώδους/αρθροπαθικής μετά από 6 συνεδρίες στα 2.8 ATA × 60 λεπτά· μία περίπτωση κατά πλάκες με βελτίωση μετά από 15 συνεδρίες στα 2.0 ATA × 90 λεπτά). Άλλες φλεγμονώδεις δερματοπάθειες — πυώδης ιδρωταδενίτιδα, λιβεδοειδής αγγειοπάθεια, γαγγραινώδες πυόδερμα — έχουν περιγραφεί σε πρώιμες κλινικές αναφορές αλλά στερούνται ισχυρών υποστηρικτικών δοκιμών. Τα πρωτόκολλα ποικίλλουν σημαντικά και δεν είναι τυποποιημένα· η HBOT τοποθετείται ως επικουρική, όχι πρώτης γραμμής."
   de: "Evidenz auf Fallebene und aus kleinen Kohorten stützt HBOT als adjuvante Therapie bei ausgewählten entzündlichen Hauterkrankungen, vor allem atopischer Dermatitis und Psoriasis. Eine Übersichtsarbeit von 2025 und eine pädiatrische Studie von 2021 beschreiben Reduktionen von Pruritus, Läsionsschweregrad und Staphylococcus-aureus-Besiedlung bei schwerer atopischer Dermatitis nach HBOT-Zyklen. Zwei Fallberichte von 2009 dokumentieren eine Remission der Psoriasis vulgaris mit HBOT (ein pustulöser/arthropathischer Fall nach 6 Sitzungen bei 2,8 ATA × 60 Min.; ein Plaque-Fall mit Besserung nach 15 Sitzungen bei 2,0 ATA × 90 Min.). Weitere entzündliche Dermatosen — Hidradenitis suppurativa, livedoide Vaskulopathie, Pyoderma gangraenosum — wurden in frühen klinischen Berichten beschrieben, es fehlen jedoch belastbare Studien. Die Protokolle variieren stark und sind nicht standardisiert; HBOT wird als adjuvant, nicht als Erstlinientherapie positioniert."
   it: "Evidenze a livello di caso e da piccole coorti supportano l'HBOT come adiuvante in condizioni infiammatorie cutanee selezionate, principalmente dermatite atopica e psoriasi. Una revisione del 2025 e uno studio pediatrico del 2021 descrivono riduzioni del prurito, della gravità delle lesioni e della colonizzazione da Staphylococcus aureus nella dermatite atopica grave dopo cicli di HBOT. Due casi clinici del 2009 documentano la remissione della psoriasi volgare con l'HBOT (un caso pustoloso/artropatico dopo 6 sedute a 2.8 ATA × 60 min; un caso a placche con miglioramento dopo 15 sedute a 2.0 ATA × 90 min). Altre dermatosi infiammatorie — idrosadenite suppurativa, vasculopatia livedoide, pioderma gangrenoso — sono state descritte in segnalazioni cliniche in fase iniziale ma mancano di studi di supporto solidi. I protocolli variano ampiamente e non sono standardizzati; l'HBOT è posizionata come adiuvante, non di prima linea."
+  es: "La evidencia a nivel de casos y de pequeñas cohortes respalda la HBOT como adyuvante en afecciones cutáneas inflamatorias seleccionadas, principalmente dermatitis atópica y psoriasis. Una revisión de 2025 y un estudio pediátrico de 2021 describen reducciones del prurito, de la gravedad de las lesiones y de la colonización por Staphylococcus aureus en la dermatitis atópica grave tras ciclos de HBOT. Dos casos clínicos de 2009 documentan la remisión de la psoriasis vulgar con HBOT (un caso pustuloso/artropático tras 6 sesiones a 2.8 ATA × 60 min; un caso en placas con mejoría tras 15 sesiones a 2.0 ATA × 90 min). Otras dermatosis inflamatorias — hidradenitis supurativa, vasculopatía livedoide, pioderma gangrenoso — se han descrito en informes clínicos en fase inicial, pero carecen de ensayos de apoyo sólidos. Los protocolos varían ampliamente y no están estandarizados; la HBOT se posiciona como adyuvante, no de primera línea."
 evidence:
   en: "Emerging Evidence"
   el: "Αναδυόμενα Στοιχεία"
   de: "Aufkommende Evidenz"
   it: "Evidenze emergenti"
+  es: "Evidencia emergente"
 evidenceLevel: "C"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 – 2.8 ATA"
     de: "2.0 – 2.8 ATA"
     it: "2.0 – 2.8 ATA"
+    es: "2.0 – 2.8 ATA"
   duration:
     en: "60 – 90 min"
     el: "60 – 90 min"
     de: "60 – 90 min"
     it: "60 – 90 min"
+    es: "60 – 90 min"
   sessions:
     en: "6 – 30 (highly variable)"
     el: "6 – 30 (πολύ μεταβλητές)"
     de: "6 – 30 (sehr variabel)"
     it: "6 – 30 (molto variabile)"
+    es: "6 – 30 (muy variable)"
   frequency:
     en: "Daily, protocol-dependent"
     el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
     de: "Täglich, protokollabhängig"
     it: "Quotidiano, in base al protocollo"
+    es: "Diariamente, según el protocolo"
   basis:
     en: "Case Reports & Small Studies (not standardised)"
     el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες (μη τυποποιημένα)"
     de: "Fallberichte & kleine Studien (nicht standardisiert)"
     it: "Casi clinici e piccoli studi (non standardizzati)"
+    es: "Casos clínicos y pequeños estudios (no estandarizados)"
 refs:
   - "[33]"
   - "[34]"

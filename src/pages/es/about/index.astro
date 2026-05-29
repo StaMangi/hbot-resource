@@ -1,0 +1,198 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "es" as const;
+
+const description =
+  "Estándares editoriales, marco de evidencia, declaración del editor, proceso de corrección y límites del alcance de HBOT Science — un recurso de referencia independiente sobre la oxigenoterapia hiperbárica.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "Acerca de HBOT Science",
+  description,
+  inLanguage: locale,
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Acerca de — HBOT Science"
+  description={description}
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Directrices editoriales</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Acerca de HBOT Science
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      HBOT Science es un recurso de referencia independiente sobre la
+      oxigenoterapia hiperbárica. Cura información basada en la evidencia
+      relativa a las indicaciones aprobadas por la FDA, a las aplicaciones
+      clínicas emergentes, a los mecanismos de acción, a los protocolos de
+      tratamiento y a los aspectos de seguridad, dirigida a clínicos,
+      investigadores y lectores informados.
+    </p>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      El sitio no ofrece asesoramiento médico, recomendaciones de tratamiento
+      individuales ni recomendaciones comerciales. Es una referencia científica
+      — no una clínica, no un directorio, no un canal de marketing.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Estándares editoriales
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Toda afirmación presente en este sitio se basa en una fuente sometida a
+        revisión por pares o en una autoridad clínica reconocida (UHMS,
+        Cochrane, FDA, guías de sociedades científicas). Las referencias se
+        verifican en la fase de compilación contra el registro DOI de CrossRef —
+        las citas erróneas o inventadas no pueden publicarse.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Las afirmaciones cuantitativas (magnitud de los efectos, tamaños
+        muestrales, duraciones) se toman directamente de la fuente citada. No
+        parafraseamos las cifras, no redondeamos los porcentajes y no
+        sintetizamos los resultados de modo que se pierdan los caveats
+        subyacentes.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Cuando la evidencia es preliminar, atribuible a una única fuente o
+        controvertida, lo declaramos con claridad. Utilizamos un esquema de
+        evidencia de tres niveles — Nivel A (varios ensayos clínicos
+        aleatorizados [ECA] de alta calidad o revisiones sistemáticas), Nivel B
+        (un ECA sólido o evidencia metaanalítica coherente), Nivel C (evidencia a
+        nivel de caso, cohortes pequeñas o evidencia traslacional). Las
+        aplicaciones experimentales se señalan como tales. Las afirmaciones con
+        evidencia insuficiente no se formulan en absoluto.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Marco de evidencia
+      </h2>
+      <p class="text-slate-700 mb-3">
+        El sitio clasifica las indicaciones de la HBOT en dos niveles, que
+        reflejan bases de evidencia diferentes.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Las indicaciones aprobadas por la FDA</strong> son las catorce
+        afecciones reconocidas por la Undersea and Hyperbaric Medical Society
+        (UHMS) y cubiertas en los Estados Unidos por Medicare y Medicaid como
+        terapia estándar o adyuvante. Cada una está respaldada por evidencia de
+        Nivel A o de Nivel B. Los protocolos de tratamiento para estas
+        afecciones están consolidados y clínicamente validados.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Las indicaciones con evidencia emergente</strong> son afecciones
+        para las que la evidencia clínica sometida a revisión por pares respalda
+        el uso experimental de la HBOT, pero para las que la evidencia aún no ha
+        alcanzado el umbral para la aprobación de la FDA o el reconocimiento de
+        la UHMS. Estas se basan típicamente en evidencia de Nivel B o de Nivel C
+        — grupos de investigación únicos a la espera de replicación
+        independiente, estudios piloto cuyos estudios completos aún se esperan, o
+        evidencia a nivel de caso en subpoblaciones definidas. Se presentan con
+        fines de contextualización clínica. Las decisiones terapéuticas relativas
+        a las indicaciones con evidencia emergente requieren una evaluación
+        individual del paciente y no constituyen terapia estándar.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Editor responsable
+      </h2>
+      <p class="text-slate-700 mb-3">
+        HBOT Science es publicado por IN2050 Ltd, una sociedad registrada en
+        Chipre (HE416406), que opera en el sector de la wellness hospitality.
+        IN2050 tiene intereses comerciales en los servicios de HBOT. Las
+        decisiones editoriales de este sitio se toman de forma independiente de
+        dichos intereses comerciales.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Correcciones y actualizaciones
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Los errores de hecho, de cita o de interpretación se corrigen una vez
+        detectados. Las correcciones sustanciales se anotan en la página
+        afectada y en el historial público de commits del sitio. Los cambios
+        menores (tipografía, ortografía, formato) se realizan sin una nota
+        separada.
+      </p>
+      <p class="text-slate-700 mb-3">
+        El sitio se actualiza tan pronto como se dispone de nueva evidencia
+        sometida a revisión por pares. Las indicaciones pueden desplazarse entre
+        los niveles de evidencia cuando la evidencia se refuerza o cuando nuevos
+        estudios publican sus resultados. Cuando la contextualización editorial
+        de una indicación cambia de forma sustancial, el cambio se refleja en el
+        historial de commits.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Para notificar un error o proponer una corrección, contacte con:
+        <a
+          href="mailto:info@hbotscience.org"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >info@hbotscience.org</a
+        >
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Alcance y límites
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Este sitio proporciona información de referencia sobre la oxigenoterapia
+        hiperbárica. Este sitio:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>no ofrece asesoramiento médico individual ni recomendaciones de tratamiento.</li>
+        <li>no formula diagnósticos y no sustituye la evaluación clínica de un profesional cualificado.</li>
+        <li>no recomienda ni compara proveedores de HBOT, clínicas o productos individuales.</li>
+        <li>no proporciona precios, información comercial ni indicaciones sobre el acceso al tratamiento.</li>
+        <li>no ofrece asesoramiento legal sobre la regulación, las licencias o el cumplimiento de la HBOT.</li>
+        <li>no ofrece asesoramiento sobre seguros o reembolsos.</li>
+        <li>no ofrece asesoramiento sobre la apertura, la gestión o el diseño de instalaciones de HBOT.</li>
+      </ul>
+      <p class="mt-4 text-slate-700">
+        Los pacientes que consideren la HBOT para una indicación específica
+        deberían consultar a un médico cualificado o a un especialista en
+        medicina hiperbárica. Las decisiones terapéuticas requieren la evaluación
+        de la anamnesis médica individual, de las comorbilidades y de los
+        fármacos tomados de forma concomitante.
+      </p>
+    </section>
+  </article>
+</LandingLayout>

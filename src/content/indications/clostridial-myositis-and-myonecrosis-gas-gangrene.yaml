@@ -5,21 +5,25 @@ category:
   el: "Λοιμώδη Νοσήματα"
   de: "Infektionserkrankungen"
   it: "Malattie infettive"
+  es: "Enfermedades infecciosas"
 condition:
   en: "Clostridial Myositis & Myonecrosis (Gas Gangrene)"
   el: "Κλωστριδιακή Μυοσίτιδα & Μυονέκρωση (Αέρια Γάγγραινα)"
   de: "Clostridiale Myositis und Myonekrose (Gasbrand)"
   it: "Miosite e mionecrosi clostridiale (gangrena gassosa)"
+  es: "Miositis y mionecrosis clostridiales (gangrena gaseosa)"
 description:
   en: "HBOT is directly lethal to Clostridium perfringens and inhibits toxin production, used adjunctively with surgery and antibiotics."
   el: "Η HBOT είναι άμεσα θανατηφόρα για Clostridium perfringens και αναστέλλει παραγωγή τοξινών, χρησιμοποιείται επικουρικά με χειρουργική επέμβαση και αντιβιοτικά."
   de: "HBOT wirkt direkt letal gegen Clostridium perfringens und hemmt die Toxinproduktion; eingesetzt als Adjuvans zu Chirurgie und Antibiotika."
   it: "L'HBOT è direttamente letale per il Clostridium perfringens e inibisce la produzione di tossine; impiegata come terapia adiuvante alla chirurgia e agli antibiotici."
+  es: "La HBOT es directamente letal para Clostridium perfringens e inhibe la producción de toxinas; se emplea como terapia adyuvante a la cirugía y los antibióticos."
 evidence:
   en: "Standard of Care"
   el: "Πρότυπο Θεραπείας"
   de: "Standardtherapie"
   it: "Standard di cura"
+  es: "Estándar de atención"
 evidenceLevel: "A"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 – 2.5 ATA"
     de: "2.0 – 2.5 ATA"
     it: "2.0 – 2.5 ATA"
+    es: "2.0 – 2.5 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "20 – 30"
     el: "20 – 30"
     de: "20 – 30"
     it: "20 – 30"
+    es: "20 – 30"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
+    es: "Una vez al día, 5×/semana"
   basis:
     en: "UHMS / Standard of Care"
     el: "UHMS / Πρότυπο Θεραπείας"
     de: "UHMS / Standardtherapie"
     it: "UHMS / Standard di cura"
+    es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
   - "[4]"

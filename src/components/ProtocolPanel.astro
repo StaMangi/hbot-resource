@@ -7,11 +7,11 @@ interface Protocol {
   // Phase 7 — the endometriosis entry surfaced prose values ("Not
   // standardised") that needed locale-specific translation. `it` is optional
   // during the Phase 7.B rollout (warn-not-fail), required at Stage 6.
-  ata: { en: string; el: string; de: string; it?: string };
-  duration: { en: string; el: string; de: string; it?: string };
-  sessions: { en: string; el: string; de: string; it?: string };
-  frequency: { en: string; el: string; de: string; it?: string };
-  basis: { en: string; el: string; de: string; it?: string };
+  ata: { en: string; el: string; de: string; it?: string; es?: string };
+  duration: { en: string; el: string; de: string; it?: string; es?: string };
+  sessions: { en: string; el: string; de: string; it?: string; es?: string };
+  frequency: { en: string; el: string; de: string; it?: string; es?: string };
+  basis: { en: string; el: string; de: string; it?: string; es?: string };
 }
 
 interface Props {
@@ -54,6 +54,14 @@ const labels = {
     sessions: "Sedute",
     frequency: "Frequenza",
     basis: "Base di evidenza",
+  },
+  es: {
+    protocol: "Protocolo",
+    pressure: "Presión",
+    duration: "Duración",
+    sessions: "Sesiones",
+    frequency: "Frecuencia",
+    basis: "Base de evidencia",
   },
 }[locale];
 

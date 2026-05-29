@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import IndexLayout from "@/layouts/IndexLayout.astro";
+import DepartmentCard from "@/components/cards/DepartmentCard.astro";
+import { t } from "@/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = "es" as const;
+
+const all = await getCollection("departments");
+const order = [
+  "surgery",
+  "neurology",
+  "oncology",
+  "gastroenterology",
+  "endocrinology",
+  "ent",
+  "ophthalmology",
+  "psychiatry",
+  "geriatrics",
+  "dermatology",
+  "plastic-surgery",
+  "womens-health",
+];
+const entries = order
+  .map((id) => all.find((d) => d.id === id))
+  .filter((d): d is NonNullable<typeof d> => d !== undefined);
+---
+
+<IndexLayout
+  title={`${t("dept.section.title", locale)} — HBOT Science`}
+  description={t("dept.section.subtitle", locale)}
+  locale={locale}
+  pathname={pathname}
+  badge={t("dept.section.badge", locale)}
+  pageHeading={t("dept.section.title", locale)}
+  pageSubtitle={t("dept.section.subtitle", locale)}
+  badgeColor="teal"
+>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {entries.map((entry) => <DepartmentCard entry={entry} locale={locale} prefix="/es" />)}
+  </div>
+
+  <div class="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+    <p class="text-sm text-slate-700">
+      ¿Busca los servicios en los que la HBOT <em>no</em> se utiliza?{" "}
+      <a href="/es/departments/without-hbot/" class="text-teal-700 underline underline-offset-2 hover:text-teal-800 font-semibold">
+        Servicios sin aplicaciones de la HBOT →
+      </a>
+    </p>
+  </div>
+</IndexLayout>

@@ -4,8 +4,10 @@ label:
   el: "Θεραπευτική Πίεση"
   de: "Behandlungsdruck"
   it: "Pressione di trattamento"
+  es: "Presión de tratamiento"
 sub:
   en: "Standard therapeutic range"
   el: "Τυπικό θεραπευτικό εύρος"
   de: "Standard-Therapiebereich"
   it: "Intervallo terapeutico standard"
+  es: "Intervalo terapéutico estándar"

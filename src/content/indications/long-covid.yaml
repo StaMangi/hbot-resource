@@ -5,21 +5,25 @@ category:
   el: "Μετα-ϊογενή Σύνδρομα"
   de: "Postvirale Syndrome"
   it: "Sindromi post-virali"
+  es: "Síndromes posvirales"
 condition:
   en: "Long COVID"
   el: "Long COVID (Σύνδρομο Μετα-COVID)"
   de: "Long COVID (Post-COVID-Syndrom)"
   it: "Long COVID (Sindrome post-COVID)"
+  es: "COVID persistente (Long COVID)"
 description:
   en: "Persistent multisystem symptoms following acute SARS-CoV-2 infection — including fatigue, cognitive dysfunction (\"brain fog\"), sleep disturbance, and pain. A 2022 randomised controlled trial reported significant improvements in cognitive function, sleep, pain, and overall symptom burden after 40 HBOT sessions, with benefits sustained at one-year follow-up. The evidence base is currently anchored to a single research group; independent replication is awaited (HOT-LoCO trial in progress)."
   el: "Επίμονα συμπτώματα πολλαπλών συστημάτων μετά από οξεία λοίμωξη SARS-CoV-2 — κόπωση, γνωστική δυσλειτουργία («brain fog»), διαταραχές ύπνου και πόνος. Τυχαιοποιημένη ελεγχόμενη δοκιμή του 2022 ανέφερε σημαντική βελτίωση γνωστικής λειτουργίας, ύπνου, πόνου και συνολικού συμπτωματικού βάρους μετά από 40 συνεδρίες HBOT, με τα οφέλη να διατηρούνται σε παρακολούθηση ενός έτους. Η τεκμηρίωση βασίζεται προς το παρόν σε μία ερευνητική ομάδα — ανεξάρτητη επιβεβαίωση εκκρεμεί (δοκιμή HOT-LoCO σε εξέλιξη)."
   de: "Anhaltende Multisystem-Symptome nach akuter SARS-CoV-2-Infektion — einschließlich Fatigue, kognitiver Dysfunktion („Brain Fog\"), Schlafstörungen und Schmerzen. Eine randomisierte kontrollierte Studie (RKS) von 2022 berichtete über signifikante Verbesserungen der kognitiven Funktion, des Schlafs, der Schmerzen und der Gesamt-Symptomlast nach 40 HBOT-Sitzungen, wobei die Vorteile bei einer Nachbeobachtung über ein Jahr anhielten. Die Evidenzlage stützt sich derzeit auf eine einzelne Forschungsgruppe; eine unabhängige Replikation steht aus (HOT-LoCO-Studie im Gange)."
   it: "Sintomi persistenti multisistemici a seguito di un'infezione acuta da SARS-CoV-2 — tra cui affaticamento, disfunzione cognitiva (\"brain fog\"), disturbi del sonno e dolore. Uno studio clinico randomizzato controllato (RCT) del 2022 ha riportato miglioramenti significativi della funzione cognitiva, del sonno, del dolore e del carico sintomatico complessivo dopo 40 sedute di HBOT, con benefici mantenuti al follow-up a un anno. La base di evidenza è attualmente ancorata a un singolo gruppo di ricerca; è in attesa una replicazione indipendente (studio HOT-LoCO in corso)."
+  es: "Síntomas persistentes multisistémicos tras una infección aguda por SARS-CoV-2 — entre ellos fatiga, disfunción cognitiva (\"niebla mental\"), trastornos del sueño y dolor. Un ensayo clínico aleatorizado (ECA) de 2022 informó mejoras significativas de la función cognitiva, el sueño, el dolor y la carga sintomática global tras 40 sesiones de HBOT, con beneficios mantenidos en el seguimiento a un año. La base de evidencia se sustenta actualmente en un único grupo de investigación; se espera una replicación independiente (ensayo HOT-LoCO en curso)."
 evidence:
   en: "Emerging Evidence"
   el: "Αναδυόμενα Στοιχεία"
   de: "Aufkommende Evidenz"
   it: "Evidenze emergenti"
+  es: "Evidencia emergente"
 evidenceLevel: "B"
 protocol:
   ata:
@@ -27,26 +31,31 @@ protocol:
     el: "2.0 ATA"
     de: "2.0 ATA"
     it: "2.0 ATA"
+    es: "2.0 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
+    es: "90 min"
   sessions:
     en: "40"
     el: "40"
     de: "40"
     it: "40"
+    es: "40"
   frequency:
     en: "5×/week"
     el: "5×/εβδομάδα"
     de: "5×/Woche"
     it: "5×/settimana"
+    es: "5×/semana"
   basis:
     en: "Zilberman-Itskovich et al., 2022 (RCT)"
     el: "Zilberman-Itskovich et al., 2022 (ΤΕΔ)"
     de: "Zilberman-Itskovich et al., 2022 (RKS)"
     it: "Zilberman-Itskovich et al., 2022 (RCT)"
+    es: "Zilberman-Itskovich et al., 2022 (ECA)"
 refs:
   - "[25]"
   - "[26]"

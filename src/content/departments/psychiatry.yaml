@@ -3,6 +3,7 @@ name:
   el: "Ψυχιατρική & Ψυχολογία"
   de: "Psychiatrie & Psychologie"
   it: "Psichiatria e psicologia"
+  es: "Psiquiatría y psicología"
 icon: "HeartHandshake"
 color: "#be185d"
 shortDesc:
@@ -10,12 +11,14 @@ shortDesc:
   el: "ΔΜΤΣ, Κατάθλιψη, Άγχος"
   de: "PTBS, Depression, Angststörungen"
   it: "PTSD, depressione, ansia"
+  es: "TEPT, depresión, ansiedad"
 applications:
   - title:
       en: "Post-Traumatic Stress Disorder (PTSD)"
       el: "Διαταραχή Μετατραυματικού Στρες (ΔΜΤΣ)"
       de: "Posttraumatische Belastungsstörung (PTBS)"
       it: "Disturbo da stress post-traumatico (PTSD)"
+      es: "Trastorno de estrés postraumático (TEPT)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -23,6 +26,7 @@ applications:
       el: "Κλινικές δοκιμές αποδεικνύουν ότι η HBOT βελτιώνει λειτουργικότητα μικροδομής εγκεφάλου και ανακουφίζει συμπτώματα ΔΜΤΣ σε βετεράνους με ανθεκτική στη θεραπεία ΔΜΤΣ. Σημαντικές βελτιώσεις στις βαθμολογίες ελέγχου ΔΜΤΣ."
       de: "Klinische Studien belegen, dass HBOT die Funktionalität der Hirn-Mikrostruktur verbessert und PTBS-Symptome bei Veteranen mit therapieresistenter PTBS lindert. Signifikante Verbesserungen der PTBS-Checklisten-Scores."
       it: "Studi clinici dimostrano che l'HBOT migliora la funzionalità della microstruttura cerebrale e allevia i sintomi del PTSD nei veterani con PTSD resistente al trattamento. Miglioramenti significativi nei punteggi della checklist del PTSD."
+      es: "Los ensayos clínicos demuestran que la HBOT mejora la funcionalidad de la microestructura cerebral y alivia los síntomas del TEPT en veteranos con TEPT resistente al tratamiento. Mejoras significativas en las puntuaciones de la lista de verificación del TEPT."
     evidence: "Level B"
     protocol:
       ata:
@@ -30,26 +34,31 @@ applications:
         el: "1.5 – 2.0 ATA"
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
+        es: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
+        es: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Level B Evidence (RCT)"
         el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
         de: "Evidenz Stufe B (RKS)"
         it: "Evidenza di Livello B (RCT)"
+        es: "Evidencia de Nivel B (ECA)"
     refs:
       - "[20]"
   - title:
@@ -57,6 +66,7 @@ applications:
       el: "Ανθεκτική στη Θεραπεία Κατάθλιψη"
       de: "Therapieresistente Depression"
       it: "Depressione resistente al trattamento"
+      es: "Depresión resistente al tratamiento"
     type: "Research"
     typeColor: "orange"
     description:
@@ -64,6 +74,7 @@ applications:
       el: "Αναδυόμενη έρευνα διερευνά την HBOT για ανθεκτική στη θεραπεία κατάθλιψη μέσω ενίσχυσης νευροπλαστικότητας, ανύψωσης BDNF και μείωσης νευροφλεγμονής."
       de: "Aufkommende Forschung untersucht HBOT bei therapieresistenter Depression über die Förderung der Neuroplastizität, die Hochregulation von BDNF und die Reduktion der Neuroinflammation."
       it: "La ricerca emergente studia l'HBOT per la depressione resistente al trattamento attraverso il potenziamento della neuroplasticità, l'aumento del BDNF e la riduzione della neuroinfiammazione."
+      es: "La investigación emergente estudia la HBOT para la depresión resistente al tratamiento mediante el potenciamiento de la neuroplasticidad, el aumento del BDNF y la reducción de la neuroinflamación."
     evidence: "Level C"
     protocol:
       ata:
@@ -71,25 +82,30 @@ applications:
         el: "1.5 – 2.0 ATA"
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
+        es: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
+        es: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
+        es: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
+        es: "Una vez al día, 5×/semana"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
+        es: "Experimental"
     refs:
       - "[8]"

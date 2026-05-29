@@ -1,0 +1,169 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "es" as const;
+const prefix = "/es";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Seguridad y contraindicaciones de la HBOT",
+  description:
+    "Contraindicaciones absolutas y relativas, eventos adversos, cribado previo al tratamiento y criterios de interrupción de la oxigenoterapia hiperbárica.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Seguridad y contraindicaciones — HBOT Science"
+  description="Contraindicaciones absolutas y relativas, eventos adversos, cribado previo al tratamiento y criterios de interrupción de la oxigenoterapia hiperbárica."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Referencia</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Seguridad y contraindicaciones
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      La oxigenoterapia hiperbárica es una intervención médica generalmente bien
+      tolerada, con un pequeño grupo de contraindicaciones absolutas, un grupo
+      más amplio de contraindicaciones relativas y un perfil definido de eventos
+      adversos. La síntesis siguiente constituye una referencia clínica; no
+      sustituye la evaluación específica de cada paciente.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Contraindicaciones absolutas
+      </h2>
+      <p class="text-slate-700 mb-3">
+        La única contraindicación absoluta generalmente reconocida en la
+        literatura de medicina hiperbárica es el <strong>neumotórax no
+        tratado</strong>. Los ciclos de compresión y descompresión pueden
+        transformarlo en un neumotórax a tensión. Un neumotórax tratado y
+        estabilizado no constituye una contraindicación absoluta; la decisión
+        clínica debe equilibrar la urgencia de la indicación frente al riesgo
+        pulmonar.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Aspectos quimioterápicos relativos o específicos del contexto</strong>:
+        la administración concomitante de doxorrubicina (cardiotoxicidad),
+        bleomicina (toxicidad pulmonar), cisplatino (deterioro de la
+        cicatrización de heridas) y disulfiram (compromete la inactivación de
+        las especies reactivas del oxígeno) se aborda con cautela y puede
+        considerarse una contraindicación absoluta durante la exposición activa
+        al fármaco.
+      </p>
+      <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Contraindicaciones relativas
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>EPOC grave con retención de dióxido de carbono</strong> — tratamiento con monitorización de la gasometría arterial y evaluación individual de la relación riesgo-beneficio.</li>
+        <li><strong>Cirugía reciente del oído medio o de los senos paranasales</strong> — la disfunción de la trompa de Eustaquio aumenta el riesgo de barotrauma; se recomiendan la autorización otorrinolaringológica (ORL) y un examen previo al tratamiento.</li>
+        <li><strong>Infección respiratoria activa o enfermedad febril</strong> — el tratamiento se aplaza hasta su resolución, si la indicación lo permite.</li>
+        <li><strong>Claustrofobia</strong> — gestionada mediante entrevistas previas, exposición gradual y elección de la cámara (las cámaras multiplaza se toleran mejor que las cámaras monoplaza en caso de ansiedad).</li>
+        <li><strong>Antecedentes de crisis epilépticas</strong> — aumenta el riesgo de toxicidad por oxígeno del SNC; pueden ser necesarias adaptaciones del protocolo (presión más baja, sesiones más breves, pausas de aire).</li>
+        <li><strong>Embarazo</strong> — la HBOT electiva en el primer trimestre no está recomendada; las indicaciones de urgencia (intoxicación por monóxido de carbono) anulan la contraindicación relativa.</li>
+        <li><strong>Antecedentes de neuritis óptica</strong> — se ha descrito un riesgo de progresión.</li>
+        <li><strong>Diabetes mellitus</strong> — es necesaria una monitorización glucémica estrecha; la HBOT puede reducir la glucemia durante las sesiones.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Eventos adversos
+      </h2>
+      <p class="text-slate-700 mb-3">
+        La revisión sistemática de Heyboer et al. (2017) sigue siendo la
+        cuantificación más completa de los eventos adversos de la HBOT en la
+        literatura publicada.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Barotrauma del oído medio</strong> — con diferencia el evento adverso más frecuente, por lo general leve y autolimitado con un entrenamiento oportuno en la compensación de la presión; los casos graves (hemotímpano, perforación) son raros.</li>
+        <li><strong>Barosinusitis (sinus squeeze)</strong> — más rara que los efectos sobre el oído medio; tratamiento con descongestionantes y compresión más lenta.</li>
+        <li><strong>Barotrauma pulmonar</strong> — raro pero grave; el riesgo se reduce con una cuidadosa selección del paciente y la exclusión de la enfermedad bullosa.</li>
+        <li><strong>Toxicidad por oxígeno del SNC</strong> — se manifiesta como una crisis epiléptica generalizada durante la sesión; rara en los protocolos modernos (≤2.5 ATA, ≤90 min). Las medidas estándar son la reducción del oxígeno inspirado, el ascenso al nivel del mar al finalizar la crisis y una cuidadosa reevaluación.</li>
+        <li><strong>Toxicidad pulmonar por oxígeno</strong> — acumulativa y dependiente de la dosis; relevante en los ciclos de tratamiento prolongados.</li>
+        <li><strong>Miopía reversible / cambio refractivo</strong> — descrita en los ciclos de tratamiento prolongados (por lo general con regresión a lo largo de semanas-meses tras el fin del ciclo).</li>
+        <li><strong>Claustrofobia/ansiedad</strong> — gestionada con la elección de la cámara, música a bajo volumen y exposición previa al tratamiento.</li>
+        <li><strong>Hipoglucemia</strong> — en los pacientes diabéticos en tratamiento con insulina o sulfonilureas; monitorización y adaptación según sea necesario.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[44]", "[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Cribado previo al tratamiento
+      </h2>
+      <p class="text-slate-700 mb-3">
+        El cribado estándar previo a la HBOT en los servicios de medicina
+        hiperbárica comprende típicamente:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Evaluación de la membrana timpánica y verificación de la función tubárica.</li>
+        <li>Anamnesis de los senos paranasales; examen ORL, si está indicado.</li>
+        <li>Estudio de imagen torácica en presencia de factores de riesgo pulmonares.</li>
+        <li>Revisión de la medicación respecto a sustancias quimioterápicas y disulfiram.</li>
+        <li>Estado de embarazo (si procede).</li>
+        <li>Antecedentes de crisis epilépticas.</li>
+        <li>Cribado de claustrofobia/ansiedad.</li>
+        <li>Acuerdos sobre la monitorización de la glucemia para los pacientes diabéticos.</li>
+        <li>Evaluación cardiológica en los pacientes con cardiopatía coronaria o insuficiencia cardiaca congestiva significativas.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Criterios de interrupción
+      </h2>
+      <p class="text-slate-700 mb-3">
+        El tratamiento debería interrumpirse o modificarse de forma sustancial
+        en las siguientes circunstancias:
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Nuevo neumotórax durante una sesión.</li>
+        <li>Evento de toxicidad por oxígeno del SNC (crisis epiléptica) — adaptación del protocolo o interrupción.</li>
+        <li>Imposibilidad de compensar la presión en el oído medio pese al entrenamiento y la evaluación ORL.</li>
+        <li>Evento adverso grave persistente sin una mitigación identificable.</li>
+        <li>Interrupción del tratamiento iniciada por el paciente debido a ansiedad o intolerancia no manejable con el apoyo estándar.</li>
+        <li>Administración concomitante de un agente quimioterápico absolutamente contraindicado que no pueda suspenderse.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Esta página es una referencia clínica. No sustituye la evaluación
+      específica de cada paciente por parte de un profesional cualificado en
+      medicina hiperbárica. Las indicaciones individuales, las comorbilidades y
+      la terapia concomitante deben verificarse antes del tratamiento.
+    </p>
+  </article>
+</LandingLayout>
