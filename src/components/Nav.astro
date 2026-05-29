@@ -37,12 +37,13 @@ const localeNames: Record<Locale, string> = {
 const home = locale === "en" ? "/" : `/${locale}/`;
 const prefix = locale === "en" ? "" : `/${locale}`;
 
-// Two-tier nav: paths (Clinical / Wellness) and library (the 6 collection indices).
-// Visual separator between them. Active state matches if pathname starts with href.
+// Two-tier nav: paths (Clinical audience entry) and library (the 6 collection
+// indices). Visual separator between them. Active state matches if pathname
+// starts with href. (Wellness entry removed in the Clinical/Wellness cleanup —
+// it merged into /longevity/, which sits in the library tier below.)
 const navLabels = {
   en: {
     clinical: "Clinical",
-    wellness: "Wellness",
     indications: "Indications",
     departments: "Departments",
     longevity: "Longevity",
@@ -51,7 +52,6 @@ const navLabels = {
   },
   el: {
     clinical: "Κλινικό",
-    wellness: "Ευεξία",
     indications: "Ενδείξεις",
     departments: "Τμήματα",
     longevity: "Μακροζωία",
@@ -60,7 +60,6 @@ const navLabels = {
   },
   de: {
     clinical: "Klinisch",
-    wellness: "Wellness",
     indications: "Indikationen",
     departments: "Fachbereiche",
     longevity: "Langlebigkeit",
@@ -69,7 +68,6 @@ const navLabels = {
   },
   it: {
     clinical: "Clinico",
-    wellness: "Benessere",
     indications: "Indicazioni",
     departments: "Reparti",
     longevity: "Longevità",
@@ -78,7 +76,6 @@ const navLabels = {
   },
   es: {
     clinical: "Clínico",
-    wellness: "Bienestar",
     indications: "Indicaciones",
     departments: "Servicios",
     longevity: "Longevidad",
@@ -89,7 +86,6 @@ const navLabels = {
 
 const paths = [
   { href: `${prefix}/clinical/`, label: navLabels.clinical },
-  { href: `${prefix}/wellness/`, label: navLabels.wellness },
 ];
 
 const library = [
