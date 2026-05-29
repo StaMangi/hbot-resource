@@ -16,7 +16,12 @@ export const SITE_DEFAULT_DESCRIPTION = {
   es: "Referencia basada en la evidencia sobre la oxigenoterapia hiperbárica. Mecanismos, indicaciones aprobadas por la FDA, protocolos clínicos, aplicaciones en medicina de la longevidad y evidencia revisada por pares.",
 } as const;
 
-export const SUPPORTED_LOCALES = ["en", "el", "de", "it", "es"] as const;
+// Order here drives the language-switcher dropdown display order (Nav maps over
+// it). EN stays first as the default/root locale; Greek moved to the end per
+// Stamos's request. This is cosmetic only — routing, default-locale logic
+// (`target === "en"` in localePath), the Locale union type, and hreflang
+// emission (hardcoded order in BaseHead) are all position-independent.
+export const SUPPORTED_LOCALES = ["en", "de", "it", "es", "el"] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_OG_IMAGE = "/og-default.png";
