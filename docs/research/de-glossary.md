@@ -278,3 +278,19 @@ After native review locks the register, mark this file `**Status:** locked at en
 | fronto-limbic | fronto-limbisch | |
 
 RCT first-use: RKS (randomisierte kontrollierte Studie) per the locked convention.
+
+## Rehabilitation Medicine additions (Rehab department build — pending native review)
+
+| EN | DE | Notes |
+|---|---|---|
+| Rehabilitation Medicine | Rehabilitationsmedizin | department name |
+| neurorehabilitation | Neurorehabilitation | |
+| post-stroke recovery | Genesung nach Schlaganfall | |
+| post-concussion syndrome | Postkommotionssyndrom | |
+| mild TBI | leichtes Schädel-Hirn-Trauma (leichtes SHT) | |
+| SPECT | SPECT | imaging acronym kept |
+| participation effect | Teilnahmeeffekt | |
+| low-pressure sham | Niederdruck-Scheinbehandlung (Sham) | |
+| upper-limb motor function | motorische Funktion der oberen Extremität | |
+| crossover RCT | Crossover-RKS | |
+| feasibility RCT | Machbarkeits-RKS | |

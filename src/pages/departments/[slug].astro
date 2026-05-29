@@ -41,6 +41,7 @@ const iconMap: Record<string, string> = {
   Bandage: "lucide:bandage",
   Sparkles: "lucide:sparkles",
   Venus: "lucide:venus",
+  PersonStanding: "lucide:person-standing",
 };
 
 const fdaCount = entry.data.applications.filter((a) => a.type === "FDA-Approved").length;
@@ -117,6 +118,10 @@ const jsonLd = {
       </div>
     </div>
   </div>
+
+  {entry.data.intro && (
+    <p class="text-slate-700 leading-relaxed mb-10 max-w-3xl">{entry.data.intro[locale]}</p>
+  )}
 
   <h2 class="text-xl font-semibold text-slate-900 mb-6" style="font-family: var(--font-display)">
     {t("dept.applications.title", locale)}

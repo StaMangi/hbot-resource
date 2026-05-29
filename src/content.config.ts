@@ -96,6 +96,10 @@ const departments = defineCollection({
     icon: z.string(),
     color: z.string(),
     shortDesc: bilingual,
+    // Optional department-level framing paragraph, rendered above the
+    // applications list on the [slug] page. Added for cross-cutting
+    // departments (e.g. Rehabilitation Medicine); existing departments omit it.
+    intro: bilingual.optional(),
     applications: z.array(departmentApplication),
   }),
 });
