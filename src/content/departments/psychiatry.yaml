@@ -21,6 +21,7 @@ applications:
       es: "Trastorno de estrés postraumático (TEPT)"
     type: "Research"
     typeColor: "blue"
+    indicationSlug: "post-traumatic-stress-disorder"
     description:
       en: "Clinical trials demonstrate HBOT improves brain microstructure functionality and alleviates PTSD symptoms in veterans with treatment-resistant PTSD. Significant improvements in PTSD checklist scores."
       el: "Κλινικές δοκιμές αποδεικνύουν ότι η HBOT βελτιώνει λειτουργικότητα μικροδομής εγκεφάλου και ανακουφίζει συμπτώματα ΔΜΤΣ σε βετεράνους με ανθεκτική στη θεραπεία ΔΜΤΣ. Σημαντικές βελτιώσεις στις βαθμολογίες ελέγχου ΔΜΤΣ."

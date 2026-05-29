@@ -140,7 +140,11 @@ const jsonLd = {
             <span class="text-xs text-slate-500">{app.evidence}</span>
           </div>
           <h3 class="text-base font-semibold text-slate-900 mb-2" style="font-family: var(--font-display)">
-            {app.title[locale]}
+            {app.indicationSlug ? (
+              <a href={`${prefix}/indications/${app.indicationSlug}/`} class="hover:text-teal-700 transition-colors">{app.title[locale]}</a>
+            ) : (
+              app.title[locale]
+            )}
           </h3>
           <p class="text-sm text-slate-600 leading-relaxed">
             {app.description[locale]}
