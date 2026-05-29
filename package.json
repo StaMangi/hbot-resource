@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "astro dev",
     "verify-refs": "node scripts/verify-references.mjs",
-    "prebuild": "pnpm verify-refs",
+    "verify-digest": "node scripts/verify-digest.mjs",
+    "prebuild": "pnpm verify-refs && pnpm verify-digest",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",

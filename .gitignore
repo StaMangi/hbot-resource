@@ -30,6 +30,7 @@ Thumbs.db
 
 # DOI verifier cache (24h TTL, regenerates on use)
 .verify-refs-cache.json
+.verify-digest-cache.json
 
 # temp
 *.log
