@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import IndexLayout from "@/layouts/IndexLayout.astro";
 import LongevityCard from "@/components/cards/LongevityCard.astro";
@@ -6,6 +7,15 @@ import { t } from "@/i18n";
 
 const pathname = Astro.url.pathname;
 const locale = "it" as const;
+const prefix = `/${locale}`;
+
+// Operator reference block — folded in from the former /wellness/ page so the
+// wellness/longevity operator audience is still served here.
+const operatorLinks = [
+  { href: `${prefix}/programme-design/`, icon: "lucide:clipboard-list", title: t("longevity.operator.programme.title", locale), body: t("longevity.operator.programme.body", locale) },
+  { href: `${prefix}/operator-blueprint/`, icon: "lucide:building-2", title: t("longevity.operator.blueprint.title", locale), body: t("longevity.operator.blueprint.body", locale) },
+  { href: `${prefix}/safety/`, icon: "lucide:shield-alert", title: t("longevity.operator.safety.title", locale), body: t("longevity.operator.safety.body", locale) },
+];
 
 const all = await getCollection("longevity");
 const order = ["telomere", "senescence", "cognitive", "stemcells", "athletic", "collagen"];
@@ -24,6 +34,10 @@ const entries = order
   pageSubtitle={t("longevity.section.subtitle", locale)}
   badgeColor="violet"
 >
+  <p class="mb-8 max-w-3xl text-slate-600 leading-relaxed">
+    {t("longevity.operator.intro", locale)}
+  </p>
+
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     {entries.map((entry) => <LongevityCard entry={entry} locale={locale} prefix="/it" />)}
   </div>
@@ -34,4 +48,35 @@ const entries = order
     </h3>
     <p class="text-sm text-slate-700 leading-relaxed">{t("longevity.callout.body", locale)}</p>
   </div>
+
+  {/* Operator reference — folded in from the former /wellness/ page */}
+  <section class="mt-12">
+    <h2
+      class="text-xl md:text-2xl font-semibold text-slate-900 mb-6"
+      style="font-family: var(--font-display)"
+    >
+      {t("longevity.operator.heading", locale)}
+    </h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      {
+        operatorLinks.map((link) => (
+          <a
+            href={link.href}
+            class="group block rounded-xl border border-slate-200 bg-white p-5 hover:border-teal-300 hover:shadow-sm transition-all"
+          >
+            <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center mb-3 group-hover:bg-teal-100 group-hover:text-teal-700 transition-colors">
+              <Icon name={link.icon} class="w-5 h-5" />
+            </div>
+            <h3
+              class="text-base font-semibold text-slate-900 group-hover:text-teal-700 transition-colors"
+              style="font-family: var(--font-display)"
+            >
+              {link.title}
+            </h3>
+            <p class="mt-1 text-sm text-slate-600 leading-relaxed">{link.body}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
 </IndexLayout>

@@ -1,0 +1,10 @@
+# Cloudflare Pages redirects. Served from dist/_redirects (public/ is copied to
+# the build root). One rule per line: <source> <destination> <status>.
+#
+# Wellness → Longevity (Clinical/Wellness cleanup): the thin /wellness/ operator
+# entry was merged into /longevity/. Permanent (301) redirect per locale.
+/wellness/      /longevity/      301
+/el/wellness/   /el/longevity/   301
+/de/wellness/   /de/longevity/   301
+/it/wellness/   /it/longevity/   301
+/es/wellness/   /es/longevity/   301
