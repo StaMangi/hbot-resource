@@ -8,3 +8,12 @@
 /de/wellness/   /de/longevity/   301
 /it/wellness/   /it/longevity/   301
 /es/wellness/   /es/longevity/   301
+
+# /how-we-verify/ → /about/ (signpost alias for the existing Editorial-standards
+# section on /about/). Lets the intuitive URL — and any external link using it —
+# resolve to the canonical page without creating a second page.
+/how-we-verify/      /about/      301
+/el/how-we-verify/   /el/about/   301
+/de/how-we-verify/   /de/about/   301
+/it/how-we-verify/   /it/about/   301
+/es/how-we-verify/   /es/about/   301

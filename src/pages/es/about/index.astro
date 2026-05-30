@@ -1,11 +1,12 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
+import LastUpdated from "@/components/LastUpdated.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "es" as const;
 
 const description =
-  "Estándares editoriales, marco de evidencia, declaración del editor, proceso de corrección y límites del alcance de HBOT Science — un recurso de referencia independiente sobre la oxigenoterapia hiperbárica.";
+  "Cómo HBOT Science verifica su contenido: cada cita se resuelve en un DOI funcionante y se comprueba en el momento de la build, las cifras se reproducen exactamente, la evidencia se gradúa en A/B/C y los usos investigacionales se etiquetan. Editorialmente independiente.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -53,7 +54,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-standards"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Estándares editoriales
@@ -86,7 +88,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="evidence-framework"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Marco de evidencia
@@ -120,7 +123,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-publisher"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Editor responsable
@@ -136,7 +140,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="corrections-and-updates"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Correcciones y actualizaciones
@@ -168,7 +173,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="scope-and-limits"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Alcance y límites
@@ -194,5 +200,6 @@ const jsonLd = {
         fármacos tomados de forma concomitante.
       </p>
     </section>
+    <LastUpdated date="2026-05-30" locale={locale} />
   </article>
 </LandingLayout>

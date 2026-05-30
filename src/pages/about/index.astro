@@ -1,11 +1,12 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
+import LastUpdated from "@/components/LastUpdated.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "en" as const;
 
 const description =
-  "Editorial standards, evidence framework, publisher disclosure, corrections process, and scope limits for HBOT Science — an independent reference resource on hyperbaric oxygen therapy.";
+  "How HBOT Science verifies its content: every citation resolves to a working DOI and is checked at build time, figures are reproduced exactly, evidence is graded A/B/C, and investigational uses are labelled. Editorially independent.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -52,7 +53,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-standards"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Editorial standards
@@ -82,7 +84,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="evidence-framework"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Evidence framework
@@ -115,7 +118,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-publisher"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Editorial publisher
@@ -131,7 +135,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="corrections-and-updates"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Corrections and updates
@@ -162,7 +167,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="scope-and-limits"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Scope and limits
@@ -187,5 +193,6 @@ const jsonLd = {
         and concurrent medications.
       </p>
     </section>
+    <LastUpdated date="2026-05-30" locale={locale} />
   </article>
 </LandingLayout>

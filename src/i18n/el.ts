@@ -243,4 +243,5 @@ export const el = {
   "contact.validation.email": "Παρακαλώ εισαγάγετε έγκυρη διεύθυνση email.",
   "contact.validation.turnstile": "Παρακαλώ ολοκληρώστε την επαλήθευση.",
   "meta.lastUpdated": "Τελευταία ενημέρωση",
+  "footer.howWeVerify": "Πώς επαληθεύουμε",
 } as const;

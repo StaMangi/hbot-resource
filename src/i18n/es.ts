@@ -246,4 +246,5 @@ export const es = {
   "contact.validation.email": "Introduzca una dirección de correo electrónico válida.",
   "contact.validation.turnstile": "Complete la verificación.",
   "meta.lastUpdated": "Última actualización",
+  "footer.howWeVerify": "Cómo verificamos",
 } as const;

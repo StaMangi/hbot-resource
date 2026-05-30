@@ -1,0 +1,43 @@
+---
+/**
+ * LastUpdated — visible "Last updated: DATE" line for standalone pages.
+ *
+ * Reuses the `meta.lastUpdated` i18n key from PR #19 and the same per-locale
+ * formatting (en→en-GB British style; el/de/it/es as-is). Standalone pages
+ * (e.g. /about/) pass a manual date string — they are outside the four
+ * content collections and have no `updated` schema field.
+ *
+ * Style + semantics mirror the inline rendering in DetailLayout: muted
+ * `text-xs text-slate-500`, `<time datetime>` wrapper, marked
+ * `data-pagefind-ignore` so the date does not pollute the search index.
+ */
+import { t } from "@/i18n";
+import type { Locale } from "@/lib/seo";
+
+interface Props {
+  date: string; // ISO YYYY-MM-DD
+  locale: Locale;
+}
+const { date, locale } = Astro.props;
+
+const BCP47: Record<Locale, string> = {
+  en: "en-GB",
+  el: "el",
+  de: "de",
+  it: "it",
+  es: "es",
+};
+const formatted = new Intl.DateTimeFormat(BCP47[locale], {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${date}T00:00:00Z`));
+---
+
+<p
+  class="mt-12 pt-6 border-t border-slate-200 text-xs text-slate-500"
+  data-pagefind-ignore
+>
+  {t("meta.lastUpdated", locale)}: <time datetime={date}>{formatted}</time>
+</p>
