@@ -159,3 +159,9 @@ applications:
     refs:
       - "[18]"
 updated: "2026-05-30"
+metaDescription:
+  en: "Hyperbaric oxygen in endocrinology — from FDA-approved diabetic foot wound healing to emerging research in metabolic syndrome and diabetic nephropathy."
+  el: "Υπερβαρική οξυγονοθεραπεία στην ενδοκρινολογία — από την εγκεκριμένη από το FDA επούλωση πληγών διαβητικού ποδιού έως την αναδυόμενη έρευνα στο μεταβολικό σύνδρομο και τη διαβητική νεφροπάθεια."
+  de: "Hyperbare Sauerstofftherapie in der Endokrinologie — von der FDA-zugelassenen Heilung diabetischer Fußwunden bis zur aufkommenden Forschung bei metabolischem Syndrom und diabetischer Nephropathie."
+  it: "Ossigenoterapia iperbarica in endocrinologia — dalla guarigione delle ulcere del piede diabetico approvata dalla FDA alla ricerca emergente sulla sindrome metabolica e sulla nefropatia diabetica."
+  es: "Oxigenoterapia hiperbárica en endocrinología — desde la cicatrización aprobada por la FDA de las úlceras del pie diabético hasta la investigación emergente sobre el síndrome metabólico y la nefropatía diabética."

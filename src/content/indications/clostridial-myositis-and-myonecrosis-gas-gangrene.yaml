@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[4]"
 updated: "2026-05-30"
+answerBox:
+  en: "Gas gangrene is a rapidly spreading, life-threatening infection caused by Clostridium bacteria. As an FDA-approved adjunct alongside urgent surgery and antibiotics, hyperbaric oxygen therapy raises tissue oxygen to levels directly lethal to these anaerobic organisms and halts their toxin production, helping limit tissue loss."
+  el: "Η αεριώδης γάγγραινα είναι μια ταχέως εξαπλούμενη, απειλητική για τη ζωή λοίμωξη από Clostridium. Ως εγκεκριμένη από το FDA επικουρική θεραπεία παράλληλα με την επείγουσα χειρουργική και τα αντιβιοτικά, η υπερβαρική οξυγονοθεραπεία αυξάνει το οξυγόνο των ιστών σε επίπεδα άμεσα θανατηφόρα για αυτούς τους αναερόβιους οργανισμούς και αναστέλλει την παραγωγή τοξινών τους, βοηθώντας στον περιορισμό της απώλειας ιστών."
+  de: "Der Gasbrand ist eine rasch fortschreitende, lebensbedrohliche Infektion durch Clostridien. Als FDA-zugelassenes Adjuvans neben dringender chirurgischer Versorgung und Antibiose hebt die hyperbare Sauerstofftherapie den Sauerstoffgehalt im Gewebe auf Werte an, die für diese anaeroben Erreger direkt letal sind, und stoppt deren Toxinproduktion — und hilft so, den Gewebeverlust einzudämmen."
+  it: "La gangrena gassosa è un'infezione a rapida diffusione e potenzialmente letale causata da batteri del genere Clostridium. Come adiuvante approvato dalla FDA accanto a chirurgia urgente e antibiotici, l'ossigenoterapia iperbarica eleva l'ossigeno tissutale a livelli direttamente letali per questi organismi anaerobi e arresta la produzione delle loro tossine, contribuendo a limitare la perdita di tessuto."
+  es: "La gangrena gaseosa es una infección de rápida propagación y potencialmente mortal causada por bacterias del género Clostridium. Como adyuvante aprobado por la FDA junto a la cirugía urgente y los antibióticos, la oxigenoterapia hiperbárica eleva el oxígeno tisular a niveles directamente letales para estos microorganismos anaerobios y detiene su producción de toxinas, ayudando a limitar la pérdida de tejido."
+metaDescription:
+  en: "FDA-approved adjunct for clostridial gas gangrene — hyperbaric oxygen is directly lethal to the anaerobic bacteria and halts toxin production."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για κλωστηριδιακή αεριώδη γάγγραινα — η υπερβαρική οξυγονοθεραπεία είναι άμεσα θανατηφόρα για τα αναερόβια βακτήρια και αναστέλλει την παραγωγή τοξινών."
+  de: "FDA-zugelassenes Adjuvans beim clostridialen Gasbrand — die hyperbare Sauerstofftherapie ist für die anaeroben Erreger direkt letal und stoppt die Toxinproduktion."
+  it: "Adiuvante approvato dalla FDA per la gangrena gassosa clostridica: l'ossigenoterapia iperbarica è direttamente letale per i batteri anaerobi e arresta la produzione di tossine."
+  es: "Adyuvante aprobado por la FDA para la gangrena gaseosa clostridial — la oxigenoterapia hiperbárica es directamente letal para las bacterias anaerobias y detiene la producción de toxinas."

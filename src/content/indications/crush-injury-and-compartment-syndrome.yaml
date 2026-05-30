@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[5]"
 updated: "2026-05-30"
+answerBox:
+  en: "Crush injuries and compartment syndrome threaten tissue through swelling and interrupted blood supply after trauma. Hyperbaric oxygen therapy, FDA-approved as an adjunct, reduces post-ischaemic oedema, sustains oxygen to at-risk muscle and skin, and supports healing — improving the chance of saving threatened limbs and tissue."
+  el: "Οι θλιπτικές κακώσεις και το διαμερισματικό σύνδρομο απειλούν τους ιστούς μέσω του οιδήματος και της διακοπής της αιμάτωσης μετά από τραυματισμό. Η υπερβαρική οξυγονοθεραπεία, εγκεκριμένη από το FDA ως επικουρική θεραπεία, μειώνει το μετα-ισχαιμικό οίδημα, διατηρεί την παροχή οξυγόνου σε μυς και δέρμα που κινδυνεύουν και υποστηρίζει την επούλωση — αυξάνοντας τις πιθανότητες διάσωσης απειλούμενων άκρων και ιστών."
+  de: "Quetschverletzungen und Kompartmentsyndrome bedrohen Gewebe durch Schwellung und unterbrochene Durchblutung nach einem Trauma. Die hyperbare Sauerstofftherapie ist als FDA-zugelassenes Adjuvans wirksam: Sie reduziert das postischämische Ödem, hält die Sauerstoffversorgung gefährdeter Muskulatur und Haut aufrecht und unterstützt die Heilung — und verbessert die Chance, bedrohte Gliedmaßen und Gewebe zu retten."
+  it: "Le lesioni da schiacciamento e la sindrome compartimentale minacciano i tessuti attraverso edema e interruzione dell'apporto sanguigno dopo un trauma. L'ossigenoterapia iperbarica, approvata dalla FDA come adiuvante, riduce l'edema post-ischemico, mantiene l'ossigeno a muscoli e cute a rischio e sostiene la guarigione — migliorando la possibilità di salvare arti e tessuti a rischio."
+  es: "Las lesiones por aplastamiento y el síndrome compartimental amenazan los tejidos por edema e interrupción del riego sanguíneo tras un traumatismo. La oxigenoterapia hiperbárica, aprobada por la FDA como adyuvante, reduce el edema posisquémico, mantiene el oxígeno en músculo y piel en riesgo y apoya la cicatrización — mejorando la posibilidad de salvar miembros y tejidos amenazados."
+metaDescription:
+  en: "FDA-approved adjunct for crush injury and compartment syndrome: hyperbaric oxygen reduces post-ischaemic oedema and preserves threatened tissue."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για θλιπτικές κακώσεις και διαμερισματικό σύνδρομο: η υπερβαρική οξυγονοθεραπεία μειώνει το μετα-ισχαιμικό οίδημα και διατηρεί τους απειλούμενους ιστούς."
+  de: "FDA-zugelassenes Adjuvans bei Quetschverletzung und Kompartmentsyndrom: Die hyperbare Sauerstofftherapie reduziert das postischämische Ödem und erhält bedrohtes Gewebe."
+  it: "Adiuvante approvato dalla FDA per lesioni da schiacciamento e sindrome compartimentale: l'ossigenoterapia iperbarica riduce l'edema post-ischemico e preserva i tessuti a rischio."
+  es: "Adyuvante aprobado por la FDA para la lesión por aplastamiento y el síndrome compartimental: la oxigenoterapia hiperbárica reduce el edema posisquémico y preserva los tejidos amenazados."

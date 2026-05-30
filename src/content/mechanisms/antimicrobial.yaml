@@ -21,3 +21,15 @@ detail:
 refs:
   - "[1]"
 updated: "2026-05-30"
+answerBox:
+  en: "Hyperbaric oxygen has direct and indirect antimicrobial effects. High oxygen tensions are hostile to anaerobic bacteria and strengthen the oxidative \"burst\" that white blood cells use to kill pathogens. This dual action underpins HBOT's adjunctive role in gas gangrene, necrotising infections and refractory osteomyelitis."
+  el: "Η υπερβαρική οξυγονοθεραπεία έχει άμεσες και έμμεσες αντιμικροβιακές δράσεις. Οι υψηλές μερικές πιέσεις οξυγόνου είναι εχθρικές προς τα αναερόβια βακτήρια και ενισχύουν την οξειδωτική «έκρηξη» που χρησιμοποιούν τα λευκοκύτταρα για να σκοτώνουν παθογόνα. Αυτή η διπλή δράση υποστηρίζει τον επικουρικό ρόλο της HBOT στην αεριώδη γάγγραινα, στις νεκρωτικές λοιμώξεις και στην ανθεκτική οστεομυελίτιδα."
+  de: "Hyperbarer Sauerstoff hat direkte und indirekte antimikrobielle Wirkungen. Hohe Sauerstoffspannungen sind anaeroben Bakterien feindlich gesinnt und stärken den oxidativen „Burst\", den weiße Blutkörperchen zum Abtöten von Pathogenen einsetzen. Diese duale Wirkung untermauert die adjuvante Rolle der HBOT bei Gasbrand, nekrotisierenden Infektionen und refraktärer Osteomyelitis."
+  it: "L'ossigeno iperbarico ha effetti antimicrobici diretti e indiretti. Le elevate pressioni di ossigeno sono ostili ai batteri anaerobi e potenziano la «esplosione» ossidativa che i globuli bianchi usano per uccidere i patogeni. Questa duplice azione sostiene il ruolo adiuvante della HBOT nella gangrena gassosa, nelle infezioni necrotizzanti e nell'osteomielite refrattaria."
+  es: "El oxígeno hiperbárico tiene efectos antimicrobianos directos e indirectos. Las tensiones elevadas de oxígeno son hostiles para las bacterias anaerobias y refuerzan el «estallido» oxidativo que utilizan los glóbulos blancos para destruir patógenos. Esta acción dual sustenta el papel adyuvante de la HBOT en la gangrena gaseosa, las infecciones necrosantes y la osteomielitis refractaria."
+metaDescription:
+  en: "HBOT's antimicrobial action: high oxygen tensions suppress anaerobic bacteria and boost the oxidative killing capacity of white blood cells."
+  el: "Η αντιμικροβιακή δράση της HBOT: οι υψηλές πιέσεις οξυγόνου καταστέλλουν τα αναερόβια βακτήρια και ενισχύουν την οξειδωτική θανατηφόρα ικανότητα των λευκοκυττάρων."
+  de: "Antimikrobielle Wirkung der HBOT: Hohe Sauerstoffspannungen unterdrücken anaerobe Bakterien und steigern die oxidative Abtötungskapazität weißer Blutkörperchen."
+  it: "Azione antimicrobica della HBOT: alte pressioni di ossigeno sopprimono i batteri anaerobi e potenziano la capacità ossidativa di eliminazione dei globuli bianchi."
+  es: "Acción antimicrobiana de la HBOT: tensiones elevadas de oxígeno suprimen las bacterias anaerobias y potencian la capacidad oxidativa de eliminación de los glóbulos blancos."

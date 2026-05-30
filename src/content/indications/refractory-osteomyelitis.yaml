@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[11]"
 updated: "2026-05-30"
+answerBox:
+  en: "Refractory osteomyelitis is a chronic bone infection that persists despite antibiotics and surgery. Hyperbaric oxygen therapy is FDA-approved as an adjunct: it raises oxygen in poorly perfused, infected bone, strengthens the immune cells that clear bacteria, and supports new blood-vessel growth and healing where conventional treatment has stalled."
+  el: "Η ανθεκτική οστεομυελίτιδα είναι χρόνια λοίμωξη οστού που εμμένει παρά τη χορήγηση αντιβιοτικών και τη χειρουργική επέμβαση. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA ως επικουρική θεραπεία: αυξάνει το οξυγόνο σε ανεπαρκώς αιματούμενο και λοιμώδες οστό, ενισχύει τα ανοσοκύτταρα που καθαρίζουν τα βακτήρια και υποστηρίζει την αγγειογένεση και την επούλωση εκεί όπου η συμβατική θεραπεία έχει σταματήσει."
+  de: "Die refraktäre Osteomyelitis ist eine chronische Knocheninfektion, die trotz Antibiose und Operation persistiert. Die hyperbare Sauerstofftherapie ist als FDA-zugelassenes Adjuvans wirksam: Sie hebt den Sauerstoffgehalt in schlecht durchblutetem, infiziertem Knochen an, stärkt die Immunzellen, die Bakterien beseitigen, und unterstützt die Bildung neuer Gefäße und die Heilung dort, wo die konventionelle Therapie ins Stocken geraten ist."
+  it: "L'osteomielite refrattaria è un'infezione ossea cronica che persiste nonostante antibiotici e chirurgia. L'ossigenoterapia iperbarica è approvata dalla FDA come adiuvante: aumenta l'ossigeno nell'osso infetto e mal perfuso, potenzia le cellule immunitarie che eliminano i batteri e sostiene la formazione di nuovi vasi e la guarigione laddove il trattamento convenzionale si è arrestato."
+  es: "La osteomielitis refractaria es una infección ósea crónica que persiste pese a antibióticos y cirugía. La oxigenoterapia hiperbárica está aprobada por la FDA como adyuvante: aumenta el oxígeno en hueso infectado y mal perfundido, refuerza las células inmunitarias que eliminan bacterias y apoya el crecimiento de nuevos vasos y la cicatrización allí donde el tratamiento convencional se ha detenido."
+metaDescription:
+  en: "FDA-approved adjunct for refractory osteomyelitis: hyperbaric oxygen restores oxygen to infected bone and supports healing when antibiotics and surgery stall."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για ανθεκτική οστεομυελίτιδα: η υπερβαρική οξυγονοθεραπεία αποκαθιστά το οξυγόνο σε λοιμώδες οστό και υποστηρίζει την επούλωση όταν αντιβιοτικά και χειρουργική σταματούν."
+  de: "FDA-zugelassenes Adjuvans bei refraktärer Osteomyelitis: Die hyperbare Sauerstofftherapie versorgt infizierten Knochen wieder mit Sauerstoff und unterstützt die Heilung, wenn Antibiose und Operation versagen."
+  it: "Adiuvante approvato dalla FDA per l'osteomielite refrattaria: l'ossigenoterapia iperbarica ripristina l'ossigeno all'osso infetto e sostiene la guarigione quando antibiotici e chirurgia si arrestano."
+  es: "Adyuvante aprobado por la FDA para la osteomielitis refractaria: la oxigenoterapia hiperbárica restablece el oxígeno en el hueso infectado y apoya la cicatrización cuando antibióticos y cirugía no son suficientes."

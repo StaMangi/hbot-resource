@@ -302,3 +302,9 @@ applications:
     refs:
       - "[12]"
 updated: "2026-05-30"
+metaDescription:
+  en: "Hyperbaric oxygen across surgical specialties — orthopaedic, plastic, cardiothoracic and vascular — supporting wound healing, graft survival and post-operative recovery."
+  el: "Υπερβαρική οξυγονοθεραπεία σε χειρουργικές ειδικότητες — ορθοπεδική, πλαστική, καρδιοθωρακική και αγγειακή — υποστηρίζοντας την επούλωση πληγών, την επιβίωση μοσχευμάτων και τη μετεγχειρητική αποκατάσταση."
+  de: "Hyperbare Sauerstofftherapie über chirurgische Fachgebiete hinweg — Orthopädie, plastische, kardiothorakale und Gefäßchirurgie — zur Unterstützung der Wundheilung, des Anwachsens von Transplantaten und der postoperativen Erholung."
+  it: "Ossigenoterapia iperbarica nelle specialità chirurgiche — ortopedica, plastica, cardiotoracica e vascolare — a sostegno della guarigione delle ferite, della sopravvivenza degli innesti e del recupero postoperatorio."
+  es: "Oxigenoterapia hiperbárica en las especialidades quirúrgicas — ortopédica, plástica, cardiotorácica y vascular — para apoyar la cicatrización de heridas, la supervivencia de injertos y la recuperación postoperatoria."

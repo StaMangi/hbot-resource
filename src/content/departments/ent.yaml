@@ -110,3 +110,9 @@ applications:
     refs:
       - "[2]"
 updated: "2026-05-30"
+metaDescription:
+  en: "HBOT in ENT — FDA-approved adjunctive treatment for idiopathic sudden sensorineural hearing loss, and research into associated tinnitus."
+  el: "HBOT στην ΩΡΛ — εγκεκριμένη από το FDA επικουρική θεραπεία για ιδιοπαθή αιφνίδια νευροαισθητήρια απώλεια ακοής και έρευνα για τις σχετιζόμενες εμβοές."
+  de: "HBOT in der HNO — FDA-zugelassene adjuvante Behandlung des idiopathischen Hörsturzes und Forschung zum assoziierten Tinnitus."
+  it: "HBOT in ORL — trattamento adiuvante approvato dalla FDA per la sordità improvvisa neurosensoriale idiopatica e ricerca sul tinnito associato."
+  es: "HBOT en ORL — tratamiento adyuvante aprobado por la FDA para la hipoacusia neurosensorial súbita idiopática e investigación sobre el tinnitus asociado."

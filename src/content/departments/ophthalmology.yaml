@@ -111,3 +111,9 @@ applications:
     refs:
       - "[2]"
 updated: "2026-05-30"
+metaDescription:
+  en: "Hyperbaric oxygen in ophthalmology — FDA-approved emergency treatment for central retinal artery occlusion and other causes of retinal ischaemia."
+  el: "Υπερβαρική οξυγονοθεραπεία στην οφθαλμολογία — εγκεκριμένη από το FDA επείγουσα θεραπεία για απόφραξη της κεντρικής αρτηρίας του αμφιβληστροειδούς και άλλες αιτίες αμφιβληστροειδικής ισχαιμίας."
+  de: "Hyperbare Sauerstofftherapie in der Augenheilkunde — FDA-zugelassene Notfalltherapie beim Zentralarterienverschluss der Netzhaut und weiteren Ursachen retinaler Ischämie."
+  it: "Ossigenoterapia iperbarica in oftalmologia — trattamento d'emergenza approvato dalla FDA per l'occlusione dell'arteria centrale della retina e altre cause di ischemia retinica."
+  es: "Oxigenoterapia hiperbárica en oftalmología — tratamiento de urgencia aprobado por la FDA para la oclusión de la arteria central de la retina y otras causas de isquemia retiniana."

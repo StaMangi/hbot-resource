@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[3]"
 updated: "2026-05-30"
+answerBox:
+  en: "Carbon monoxide poisoning starves tissues of oxygen by binding haemoglobin and disrupting cellular respiration. Hyperbaric oxygen therapy, FDA-approved for this use, rapidly displaces CO from haemoglobin and cytochrome oxidase, restores oxygen delivery, and helps prevent the delayed neurological effects that can follow serious exposures."
+  el: "Η δηλητηρίαση από μονοξείδιο του άνθρακα στερεί από τους ιστούς το οξυγόνο, καθώς το CO συνδέεται με την αιμοσφαιρίνη και διαταράσσει την κυτταρική αναπνοή. Η υπερβαρική οξυγονοθεραπεία, εγκεκριμένη από το FDA για αυτήν τη χρήση, εκτοπίζει ταχέως το CO από την αιμοσφαιρίνη και την οξειδάση των κυτοχρωμάτων, αποκαθιστά την παροχή οξυγόνου και βοηθά στην πρόληψη των καθυστερημένων νευρολογικών επιπλοκών που μπορεί να ακολουθήσουν σοβαρές εκθέσεις."
+  de: "Eine Kohlenmonoxidvergiftung entzieht Geweben den Sauerstoff, da CO an Hämoglobin bindet und die zelluläre Atmung stört. Die hyperbare Sauerstofftherapie, FDA-zugelassen für diese Anwendung, verdrängt CO rasch von Hämoglobin und Cytochrom-Oxidase, stellt die Sauerstoffversorgung wieder her und hilft, die verzögerten neurologischen Folgen schwerer Expositionen zu verhindern."
+  it: "L'avvelenamento da monossido di carbonio priva i tessuti di ossigeno legandosi all'emoglobina e alterando la respirazione cellulare. L'ossigenoterapia iperbarica, approvata dalla FDA per questo uso, sposta rapidamente il CO da emoglobina e citocromo ossidasi, ripristina l'apporto di ossigeno e aiuta a prevenire gli effetti neurologici tardivi che possono seguire esposizioni gravi."
+  es: "La intoxicación por monóxido de carbono priva a los tejidos de oxígeno al unirse a la hemoglobina y alterar la respiración celular. La oxigenoterapia hiperbárica, aprobada por la FDA para este uso, desplaza rápidamente el CO de la hemoglobina y la citocromo oxidasa, restablece el aporte de oxígeno y ayuda a prevenir las secuelas neurológicas tardías que pueden seguir a exposiciones graves."
+metaDescription:
+  en: "FDA-approved treatment for carbon monoxide poisoning: hyperbaric oxygen accelerates CO clearance and helps prevent delayed neurological sequelae."
+  el: "Εγκεκριμένη από το FDA θεραπεία για δηλητηρίαση από μονοξείδιο του άνθρακα: η υπερβαρική οξυγονοθεραπεία επιταχύνει την κάθαρση του CO και βοηθά στην πρόληψη καθυστερημένων νευρολογικών επιπλοκών."
+  de: "FDA-zugelassene Behandlung der Kohlenmonoxidvergiftung: Die hyperbare Sauerstofftherapie beschleunigt die CO-Elimination und hilft, verzögerte neurologische Folgeschäden zu verhindern."
+  it: "Trattamento approvato dalla FDA per l'avvelenamento da monossido di carbonio: l'ossigenoterapia iperbarica accelera l'eliminazione del CO e aiuta a prevenire le sequele neurologiche tardive."
+  es: "Tratamiento aprobado por la FDA para la intoxicación por monóxido de carbono: la oxigenoterapia hiperbárica acelera la eliminación del CO y ayuda a prevenir las secuelas neurológicas tardías."

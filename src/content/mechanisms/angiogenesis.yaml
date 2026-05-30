@@ -22,3 +22,15 @@ refs:
   - "[1]"
   - "[2]"
 updated: "2026-05-30"
+answerBox:
+  en: "Angiogenesis is the growth of new blood vessels. Under hyperbaric oxygen, raised tissue-oxygen levels stimulate release of growth factors including VEGF, PDGF and FGF, prompting capillaries to extend into poorly perfused tissue. This rebuilt blood supply underlies HBOT's role in healing chronic wounds, irradiated tissue and compromised grafts."
+  el: "Η αγγειογένεση είναι η ανάπτυξη νέων αιμοφόρων αγγείων. Υπό την επίδραση του υπερβαρικού οξυγόνου, τα αυξημένα επίπεδα οξυγόνου των ιστών διεγείρουν την απελευθέρωση αυξητικών παραγόντων, μεταξύ των οποίων οι VEGF, PDGF και FGF, ωθώντας τα τριχοειδή να επεκταθούν σε ανεπαρκώς αιματούμενο ιστό. Αυτή η ανασυγκροτημένη αιμάτωση υποστηρίζει τον ρόλο της HBOT στην επούλωση χρόνιων πληγών, ακτινοβολημένων ιστών και διακυβευμένων μοσχευμάτων."
+  de: "Die Angiogenese ist die Bildung neuer Blutgefäße. Unter hyperbarem Sauerstoff regen erhöhte Gewebe-Sauerstoffwerte die Freisetzung von Wachstumsfaktoren wie VEGF, PDGF und FGF an und veranlassen Kapillaren, sich in schlecht durchblutetes Gewebe auszudehnen. Diese wiederhergestellte Durchblutung untermauert die Rolle der HBOT bei der Heilung chronischer Wunden, bestrahlten Gewebes und kompromittierter Transplantate."
+  it: "L'angiogenesi è la crescita di nuovi vasi sanguigni. Sotto ossigeno iperbarico, i livelli aumentati di ossigeno tissutale stimolano il rilascio di fattori di crescita tra cui VEGF, PDGF e FGF, inducendo i capillari a estendersi in tessuto mal perfuso. Questo apporto ematico ricostituito sostiene il ruolo della HBOT nella guarigione di ferite croniche, tessuti irradiati e innesti compromessi."
+  es: "La angiogénesis es el crecimiento de nuevos vasos sanguíneos. Bajo oxígeno hiperbárico, los niveles aumentados de oxígeno tisular estimulan la liberación de factores de crecimiento como VEGF, PDGF y FGF, induciendo a los capilares a extenderse hacia tejido mal perfundido. Este aporte sanguíneo reconstituido sustenta el papel de la HBOT en la cicatrización de heridas crónicas, tejidos irradiados e injertos comprometidos."
+metaDescription:
+  en: "How hyperbaric oxygen drives angiogenesis: raised tissue oxygen triggers VEGF, PDGF and FGF release, growing new capillaries into poorly perfused tissue."
+  el: "Πώς η υπερβαρική οξυγονοθεραπεία οδηγεί την αγγειογένεση: το αυξημένο οξυγόνο των ιστών ενεργοποιεί την απελευθέρωση VEGF, PDGF και FGF, σχηματίζοντας νέα τριχοειδή σε ανεπαρκώς αιματούμενο ιστό."
+  de: "Wie die hyperbare Sauerstofftherapie die Angiogenese antreibt: Erhöhter Gewebe-Sauerstoff löst die Freisetzung von VEGF, PDGF und FGF aus und lässt neue Kapillaren in schlecht durchblutetes Gewebe wachsen."
+  it: "Come l'ossigenoterapia iperbarica guida l'angiogenesi: l'aumento di ossigeno tissutale attiva il rilascio di VEGF, PDGF e FGF, generando nuovi capillari nei tessuti mal perfusi."
+  es: "Cómo la oxigenoterapia hiperbárica impulsa la angiogénesis: el aumento del oxígeno tisular desencadena la liberación de VEGF, PDGF y FGF, generando nuevos capilares en tejidos mal perfundidos."

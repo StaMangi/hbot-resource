@@ -206,3 +206,9 @@ applications:
     refs:
       - "[9]"
 updated: "2026-05-30"
+metaDescription:
+  en: "Hyperbaric oxygen in oncology — established management of radiation injury and emerging research into tumour radiosensitisation, with FDA-approved and investigational uses distinguished."
+  el: "Υπερβαρική οξυγονοθεραπεία στην ογκολογία — καθιερωμένη διαχείριση της ακτινικής βλάβης και αναδυόμενη έρευνα στην ακτινοευαισθητοποίηση όγκων, με διάκριση εγκεκριμένων από το FDA και ερευνητικών χρήσεων."
+  de: "Hyperbare Sauerstofftherapie in der Onkologie — etabliertes Management der Strahlenschädigung und aufkommende Forschung zur Tumor-Radiosensibilisierung, mit Unterscheidung FDA-zugelassener und in Erprobung befindlicher Anwendungen."
+  it: "Ossigenoterapia iperbarica in oncologia — gestione consolidata del danno radiogeno e ricerca emergente sulla radiosensibilizzazione tumorale, con distinzione tra usi approvati dalla FDA e sperimentali."
+  es: "Oxigenoterapia hiperbárica en oncología — manejo consolidado de la lesión radiogénica e investigación emergente sobre la radiosensibilización tumoral, con distinción entre usos aprobados por la FDA e investigacionales."

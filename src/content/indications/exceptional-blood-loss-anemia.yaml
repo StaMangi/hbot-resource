@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[8]"
 updated: "2026-05-30"
+answerBox:
+  en: "When severe anaemia cannot be corrected by transfusion — because blood is unavailable or declined on religious grounds — hyperbaric oxygen therapy offers a bridge. FDA-approved for this indication, it dissolves enough oxygen directly into blood plasma to sustain vital organs until red-cell levels recover or transfusion becomes possible."
+  el: "Όταν η σοβαρή αναιμία δεν μπορεί να διορθωθεί με μετάγγιση — επειδή το αίμα δεν είναι διαθέσιμο ή απορρίπτεται για θρησκευτικούς λόγους — η υπερβαρική οξυγονοθεραπεία προσφέρει γέφυρα. Εγκεκριμένη από το FDA για αυτήν την ένδειξη, διαλυτοποιεί αρκετό οξυγόνο απευθείας στο πλάσμα ώστε να συντηρηθούν τα ζωτικά όργανα έως ότου ανακάμψουν τα ερυθρά αιμοσφαίρια ή καταστεί δυνατή η μετάγγιση."
+  de: "Wenn eine schwere Anämie nicht durch Transfusion korrigiert werden kann — weil Blut nicht verfügbar ist oder aus religiösen Gründen abgelehnt wird — bietet die hyperbare Sauerstofftherapie eine Überbrückung. FDA-zugelassen für diese Indikation, löst sie genügend Sauerstoff direkt im Blutplasma, um lebenswichtige Organe zu erhalten, bis sich die Erythrozyten erholen oder eine Transfusion möglich wird."
+  it: "Quando un'anemia grave non può essere corretta con trasfusione — perché il sangue non è disponibile o viene rifiutato per motivi religiosi — l'ossigenoterapia iperbarica offre un ponte. Approvata dalla FDA per questa indicazione, disciogli abbastanza ossigeno direttamente nel plasma sanguigno per sostenere gli organi vitali finché i livelli di globuli rossi non si recuperano o diventa possibile la trasfusione."
+  es: "Cuando una anemia grave no puede corregirse mediante transfusión — porque la sangre no está disponible o se rechaza por motivos religiosos — la oxigenoterapia hiperbárica ofrece un puente. Aprobada por la FDA para esta indicación, disuelve suficiente oxígeno directamente en el plasma sanguíneo para sostener los órganos vitales hasta que los niveles de glóbulos rojos se recuperen o sea posible la transfusión."
+metaDescription:
+  en: "FDA-approved bridging treatment for exceptional blood-loss anaemia when transfusion is unavailable or declined — oxygen dissolved into plasma sustains organs."
+  el: "Εγκεκριμένη από το FDA γεφυρωτική θεραπεία για εξαιρετική αναιμία απώλειας αίματος, όταν η μετάγγιση δεν είναι διαθέσιμη ή απορρίπτεται — το οξυγόνο διαλυμένο στο πλάσμα συντηρεί τα όργανα."
+  de: "FDA-zugelassene Überbrückungstherapie bei außergewöhnlicher Blutverlust-Anämie, wenn eine Transfusion nicht verfügbar ist oder abgelehnt wird — im Plasma gelöster Sauerstoff erhält die Organe."
+  it: "Trattamento ponte approvato dalla FDA per l'anemia da perdita ematica eccezionale quando la trasfusione non è disponibile o rifiutata — l'ossigeno disciolto nel plasma sostiene gli organi."
+  es: "Tratamiento puente aprobado por la FDA para la anemia por pérdida sanguínea excepcional cuando la transfusión no está disponible o se rechaza — el oxígeno disuelto en el plasma sostiene los órganos."

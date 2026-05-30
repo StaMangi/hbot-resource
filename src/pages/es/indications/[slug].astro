@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
+import AnswerBox from "@/components/AnswerBox.astro";
 import ProtocolPanel from "@/components/ProtocolPanel.astro";
 import RefTags from "@/components/RefTags.astro";
 import RelatedAside from "@/components/RelatedAside.astro";
@@ -35,7 +36,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   name: entry.data.condition[locale],
-  description: entry.data.description[locale],
+  description: entry.data.metaDescription?.[locale] ?? entry.data.description[locale],
   inLanguage: locale,
   dateModified: entry.data.updated,
   mainContentOfPage: {
@@ -59,7 +60,7 @@ const jsonLd = {
 
 <DetailLayout
   title={`${entry.data.condition[locale]} — HBOT Science`}
-  description={entry.data.description[locale]}
+  description={entry.data.metaDescription?.[locale] ?? entry.data.description[locale]}
   locale={locale}
   pathname={pathname}
   pageHeading={entry.data.condition[locale]}
@@ -79,6 +80,8 @@ const jsonLd = {
     { label: entry.data.condition[locale] },
   ]}
 >
+  <AnswerBox text={entry.data.answerBox[locale]} />
+
   <div class="flex flex-wrap items-center gap-3 mb-6">
     <span
       class:list={[
@@ -93,10 +96,6 @@ const jsonLd = {
       {entry.data.evidence[locale]}
     </span>
   </div>
-
-  <p class="text-lg text-slate-700 leading-relaxed">
-    {entry.data.description[locale]}
-  </p>
 
   <section class="mt-10">
     <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">

@@ -1,0 +1,23 @@
+---
+/**
+ * AnswerBox — Tier 1 direct-answer lead block.
+ *
+ * A visible, clinical-register summary that leads the body content on every
+ * indication / mechanism / longevity detail page. Distilled verbatim from the
+ * approved tier1-answerboxes-and-meta-DRAFT.md; never paraphrased on render.
+ *
+ * Visible HTML only — NOT emitted into JSON-LD (the page's structured-data
+ * description still flows through metaDescription, falling back to the
+ * collection's existing field). Departments do NOT use this component.
+ */
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+
+<div
+  class="mb-8 rounded-xl border-l-4 border-teal-600 bg-teal-50/60 px-6 py-5 text-[1.05rem] text-slate-800 leading-relaxed"
+>
+  <p>{text}</p>
+</div>
