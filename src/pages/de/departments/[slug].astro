@@ -67,6 +67,7 @@ const jsonLd = {
   name: entry.data.name[locale],
   description: entry.data.shortDesc[locale],
   inLanguage: locale,
+  dateModified: entry.data.updated,
   mainContentOfPage: {
     "@type": "MedicalSpecialty",
     name: entry.data.name[locale],
@@ -89,6 +90,7 @@ const jsonLd = {
   pageHeading={entry.data.name[locale]}
   eyebrow="Abteilung"
   jsonLd={jsonLd}
+  lastUpdated={entry.data.updated}
   breadcrumbs={[
     { label: "Startseite", href: "/de/" },
     { label: t("dept.section.title", locale), href: `${prefix}/departments/` },

@@ -245,4 +245,5 @@ export const es = {
   "contact.validation.required": "Este campo es obligatorio.",
   "contact.validation.email": "Introduzca una dirección de correo electrónico válida.",
   "contact.validation.turnstile": "Complete la verificación.",
+  "meta.lastUpdated": "Última actualización",
 } as const;

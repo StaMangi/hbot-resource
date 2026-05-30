@@ -237,4 +237,5 @@ export const en = {
   "contact.validation.required": "This field is required.",
   "contact.validation.email": "Please enter a valid email address.",
   "contact.validation.turnstile": "Please complete the verification.",
+  "meta.lastUpdated": "Last updated",
 } as const;

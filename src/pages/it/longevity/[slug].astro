@@ -44,6 +44,7 @@ const jsonLd = {
   name: entry.data.title[locale],
   description: entry.data.summary[locale],
   inLanguage: locale,
+  dateModified: entry.data.updated,
   mainContentOfPage: {
     "@type": "MedicalProcedure",
     name: entry.data.title[locale],
@@ -67,6 +68,7 @@ const jsonLd = {
   pageHeading={entry.data.title[locale]}
   eyebrow="Applicazione in longevità"
   jsonLd={jsonLd}
+  lastUpdated={entry.data.updated}
   breadcrumbs={[
     { label: "Home", href: "/it/" },
     { label: t("longevity.section.title", locale), href: `${prefix}/longevity/` },

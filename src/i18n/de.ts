@@ -237,4 +237,5 @@ export const de = {
   "contact.validation.required": "Dieses Feld ist erforderlich.",
   "contact.validation.email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
   "contact.validation.turnstile": "Bitte schließen Sie die Verifizierung ab.",
+  "meta.lastUpdated": "Zuletzt aktualisiert",
 } as const;
