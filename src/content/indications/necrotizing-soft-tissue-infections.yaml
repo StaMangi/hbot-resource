@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[10]"
 updated: "2026-05-30"
+answerBox:
+  en: "Necrotising soft-tissue infections, including necrotising fasciitis and Fournier's gangrene, destroy tissue rapidly and are life-threatening. Hyperbaric oxygen therapy is FDA-approved as an adjunct to urgent surgery and antibiotics: high tissue-oxygen levels suppress the responsible bacteria, support immune defence, and help limit the spread of tissue loss."
+  el: "Οι νεκρωτικές λοιμώξεις μαλακών ιστών, συμπεριλαμβανομένης της νεκρωτικής περιτονίτιδας και της γάγγραινας του Fournier, καταστρέφουν τους ιστούς ταχέως και είναι απειλητικές για τη ζωή. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA ως επικουρική θεραπεία σε επείγουσα χειρουργική και αντιβιοτικά: τα υψηλά επίπεδα οξυγόνου στους ιστούς καταστέλλουν τα υπεύθυνα βακτήρια, υποστηρίζουν την ανοσολογική άμυνα και βοηθούν στον περιορισμό της απώλειας ιστών."
+  de: "Nekrotisierende Weichgewebeinfektionen, einschließlich nekrotisierender Fasziitis und Fournier-Gangrän, zerstören Gewebe rasch und sind lebensbedrohlich. Die hyperbare Sauerstofftherapie ist als FDA-zugelassenes Adjuvans zu dringender Operation und Antibiose wirksam: Hohe Gewebe-Sauerstoffwerte unterdrücken die verantwortlichen Bakterien, unterstützen die Immunabwehr und helfen, die Ausbreitung des Gewebeverlusts einzudämmen."
+  it: "Le infezioni necrotizzanti dei tessuti molli, comprese la fascite necrotizzante e la gangrena di Fournier, distruggono rapidamente i tessuti e mettono a rischio la vita. L'ossigenoterapia iperbarica è approvata dalla FDA come adiuvante alla chirurgia urgente e agli antibiotici: alti livelli di ossigeno tissutale sopprimono i batteri responsabili, sostengono la difesa immunitaria e contribuiscono a limitare la diffusione della perdita di tessuto."
+  es: "Las infecciones necrosantes de los tejidos blandos, incluidas la fascitis necrosante y la gangrena de Fournier, destruyen el tejido con rapidez y son potencialmente mortales. La oxigenoterapia hiperbárica está aprobada por la FDA como adyuvante a la cirugía urgente y los antibióticos: niveles elevados de oxígeno tisular suprimen las bacterias responsables, apoyan la defensa inmunitaria y ayudan a limitar la propagación de la pérdida de tejido."
+metaDescription:
+  en: "FDA-approved adjunct for necrotising soft-tissue infections such as necrotising fasciitis and Fournier's gangrene, alongside surgery and antibiotics."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για νεκρωτικές λοιμώξεις μαλακών ιστών, όπως η νεκρωτική περιτονίτιδα και η γάγγραινα του Fournier, παράλληλα με χειρουργική και αντιβιοτικά."
+  de: "FDA-zugelassenes Adjuvans bei nekrotisierenden Weichgewebeinfektionen wie nekrotisierender Fasziitis und Fournier-Gangrän, neben Operation und Antibiose."
+  it: "Adiuvante approvato dalla FDA per le infezioni necrotizzanti dei tessuti molli come la fascite necrotizzante e la gangrena di Fournier, accanto a chirurgia e antibiotici."
+  es: "Adyuvante aprobado por la FDA para infecciones necrosantes de tejidos blandos como la fascitis necrosante y la gangrena de Fournier, junto a cirugía y antibióticos."

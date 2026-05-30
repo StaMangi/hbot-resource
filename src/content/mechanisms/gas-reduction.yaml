@@ -21,3 +21,9 @@ detail:
 refs:
   - "[1]"
 updated: "2026-05-30"
+answerBox:
+  en: "Gas volume reduction follows Boyle's Law: as pressure rises, the volume of any gas bubble falls. In a hyperbaric chamber this physically shrinks bubbles in the blood and tissues — the primary mechanism behind HBOT's role as definitive treatment for decompression sickness and arterial gas embolism."
+  el: "Η μείωση του όγκου των αερίων ακολουθεί τον νόμο του Boyle: καθώς αυξάνεται η πίεση, μειώνεται ο όγκος κάθε φυσαλίδας αερίου. Σε υπερβαρικό θάλαμο αυτό συρρικνώνει φυσικά τις φυσαλίδες στο αίμα και στους ιστούς — ο κύριος μηχανισμός πίσω από τον ρόλο της HBOT ως οριστικής θεραπείας για τη νόσο αποσυμπίεσης και την αρτηριακή αερώδη εμβολή."
+  de: "Die Gasvolumenreduktion folgt dem Boyle-Gesetz: Mit steigendem Druck nimmt das Volumen jeder Gasblase ab. In einer Druckkammer verkleinert dies physikalisch die Blasen in Blut und Geweben — der primäre Mechanismus, der die Rolle der HBOT als definitive Therapie der Dekompressionskrankheit und der arteriellen Gasembolie begründet."
+  it: "La riduzione del volume gassoso segue la legge di Boyle: all'aumentare della pressione, il volume di qualsiasi bolla di gas diminuisce. In una camera iperbarica ciò riduce fisicamente le bolle nel sangue e nei tessuti — il meccanismo primario alla base del ruolo della HBOT come trattamento definitivo della malattia da decompressione e dell'embolia gassosa arteriosa."
+  es: "La reducción del volumen gaseoso sigue la ley de Boyle: al aumentar la presión disminuye el volumen de cualquier burbuja de gas. En una cámara hiperbárica esto reduce físicamente las burbujas en sangre y tejidos — el mecanismo principal detrás del papel de la HBOT como tratamiento definitivo de la enfermedad por descompresión y de la embolia gaseosa arterial."

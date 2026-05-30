@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[12]"
 updated: "2026-05-30"
+answerBox:
+  en: "Radiation therapy can damage tissue and bone months or years later, causing conditions such as osteoradionecrosis. Hyperbaric oxygen therapy is FDA-approved for delayed radiation injury: by driving new blood-vessel growth into poorly perfused, irradiated tissue, it improves oxygen supply and supports healing of soft-tissue and bony necrosis."
+  el: "Η ακτινοθεραπεία μπορεί να προκαλέσει βλάβη ιστών και οστών μήνες ή χρόνια αργότερα, οδηγώντας σε καταστάσεις όπως η οστεοακτινονέκρωση. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA για την καθυστερημένη ακτινική βλάβη: με την προαγωγή της ανάπτυξης νέων αγγείων μέσα σε ανεπαρκώς αιματούμενους, ακτινοβολημένους ιστούς, βελτιώνει την παροχή οξυγόνου και υποστηρίζει την επούλωση μαλακών ιστών και οστικών νεκρώσεων."
+  de: "Eine Strahlentherapie kann Gewebe und Knochen Monate bis Jahre später schädigen und Erkrankungen wie die Osteoradionekrose verursachen. Die hyperbare Sauerstofftherapie ist FDA-zugelassen für die verzögerte Strahlenschädigung: Indem sie die Bildung neuer Gefäße in schlecht durchblutetem, bestrahltem Gewebe antreibt, verbessert sie die Sauerstoffversorgung und unterstützt die Heilung weichteiliger und knöcherner Nekrosen."
+  it: "La radioterapia può danneggiare tessuti e ossa mesi o anni dopo, causando condizioni come l'osteoradionecrosi. L'ossigenoterapia iperbarica è approvata dalla FDA per il danno radiogeno tardivo: promuovendo la crescita di nuovi vasi nei tessuti irradiati e mal perfusi, migliora l'apporto di ossigeno e sostiene la guarigione delle necrosi dei tessuti molli e ossee."
+  es: "La radioterapia puede dañar los tejidos y los huesos meses o años después, causando cuadros como la osteorradionecrosis. La oxigenoterapia hiperbárica está aprobada por la FDA para la lesión radiogénica tardía: al impulsar la formación de nuevos vasos en tejidos irradiados y mal perfundidos, mejora el aporte de oxígeno y apoya la cicatrización de necrosis de tejidos blandos y óseos."
+metaDescription:
+  en: "FDA-approved treatment for delayed radiation injury, including osteoradionecrosis — hyperbaric oxygen restores blood supply to irradiated tissue and bone."
+  el: "Εγκεκριμένη από το FDA θεραπεία για καθυστερημένη ακτινική βλάβη, συμπεριλαμβανομένης της οστεοακτινονέκρωσης — η υπερβαρική οξυγονοθεραπεία αποκαθιστά την αιμάτωση σε ακτινοβολημένους ιστούς και οστά."
+  de: "FDA-zugelassene Behandlung verzögerter Strahlenschäden, einschließlich Osteoradionekrose — die hyperbare Sauerstofftherapie stellt die Durchblutung bestrahlter Gewebe und Knochen wieder her."
+  it: "Trattamento approvato dalla FDA per il danno radiogeno tardivo, inclusa l'osteoradionecrosi — l'ossigenoterapia iperbarica ripristina l'apporto ematico ai tessuti e all'osso irradiati."
+  es: "Tratamiento aprobado por la FDA para la lesión radiogénica tardía, incluida la osteorradionecrosis — la oxigenoterapia hiperbárica restablece el aporte sanguíneo a tejidos y huesos irradiados."

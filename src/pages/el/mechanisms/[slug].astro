@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import DetailLayout from "@/layouts/DetailLayout.astro";
+import AnswerBox from "@/components/AnswerBox.astro";
 import RefTags from "@/components/RefTags.astro";
 import RelatedAside from "@/components/RelatedAside.astro";
 import { verifyRefs } from "@/lib/refs";
@@ -38,7 +39,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   name: entry.data.title[locale],
-  description: entry.data.summary[locale],
+  description: entry.data.metaDescription?.[locale] ?? entry.data.summary[locale],
   inLanguage: locale,
   dateModified: entry.data.updated,
   mainContentOfPage: {
@@ -58,7 +59,7 @@ const jsonLd = {
 
 <DetailLayout
   title={`${entry.data.title[locale]} — HBOT Science`}
-  description={entry.data.summary[locale]}
+  description={entry.data.metaDescription?.[locale] ?? entry.data.summary[locale]}
   locale={locale}
   pathname={pathname}
   pageHeading={entry.data.title[locale]}
@@ -71,6 +72,8 @@ const jsonLd = {
     { label: entry.data.title[locale] },
   ]}
 >
+  <AnswerBox text={entry.data.answerBox[locale]} />
+
   <div class={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-6`}>
     <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-6 h-6" />
   </div>

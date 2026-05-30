@@ -158,3 +158,9 @@ applications:
     refs:
       - "[14]"
 updated: "2026-05-30"
+metaDescription:
+  en: "HBOT in gastroenterology — emerging, investigational research in inflammatory bowel disease, including ulcerative colitis and Crohn's disease."
+  el: "HBOT στη γαστρεντερολογία — αναδυόμενη, ερευνητική έρευνα στις φλεγμονώδεις νόσους του εντέρου, συμπεριλαμβανομένης της ελκώδους κολίτιδας και της νόσου Crohn."
+  de: "HBOT in der Gastroenterologie — aufkommende, in Erprobung befindliche Forschung bei chronisch-entzündlichen Darmerkrankungen, einschließlich Colitis ulcerosa und Morbus Crohn."
+  it: "HBOT in gastroenterologia — ricerca emergente e sperimentale nelle malattie infiammatorie intestinali, tra cui colite ulcerosa e malattia di Crohn."
+  es: "HBOT en gastroenterología — investigación emergente e investigacional en la enfermedad inflamatoria intestinal, incluidas la colitis ulcerosa y la enfermedad de Crohn."

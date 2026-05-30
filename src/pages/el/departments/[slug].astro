@@ -65,7 +65,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   name: entry.data.name[locale],
-  description: entry.data.shortDesc[locale],
+  description: entry.data.metaDescription?.[locale] ?? entry.data.shortDesc[locale],
   inLanguage: locale,
   dateModified: entry.data.updated,
   mainContentOfPage: {
@@ -84,7 +84,7 @@ const jsonLd = {
 
 <DetailLayout
   title={`${entry.data.name[locale]} — HBOT Science`}
-  description={entry.data.shortDesc[locale]}
+  description={entry.data.metaDescription?.[locale] ?? entry.data.shortDesc[locale]}
   locale={locale}
   pathname={pathname}
   pageHeading={entry.data.name[locale]}

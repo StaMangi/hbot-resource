@@ -159,3 +159,9 @@ applications:
     refs:
       - "[3]"
 updated: "2026-05-30"
+metaDescription:
+  en: "Hyperbaric oxygen in geriatrics — emerging research into physical performance and cognitive ageing in older adults, presented as investigational rather than established care."
+  el: "Υπερβαρική οξυγονοθεραπεία στη γηριατρική — αναδυόμενη έρευνα στη σωματική επίδοση και τη γνωσιακή γήρανση σε ηλικιωμένους ενήλικες, παρουσιαζόμενη ως ερευνητική και όχι ως καθιερωμένη φροντίδα."
+  de: "Hyperbare Sauerstofftherapie in der Geriatrie — aufkommende Forschung zu körperlicher Leistungsfähigkeit und kognitivem Altern bei älteren Erwachsenen, präsentiert als in Erprobung statt als etablierte Versorgung."
+  it: "Ossigenoterapia iperbarica in geriatria — ricerca emergente su prestazione fisica e invecchiamento cognitivo negli adulti più anziani, presentata come sperimentale piuttosto che come pratica consolidata."
+  es: "Oxigenoterapia hiperbárica en geriatría — investigación emergente sobre el rendimiento físico y el envejecimiento cognitivo en adultos mayores, presentada como investigacional y no como atención establecida."

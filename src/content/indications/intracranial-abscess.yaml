@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[9]"
 updated: "2026-05-30"
+answerBox:
+  en: "An intracranial abscess is a pocket of infection within the brain. Hyperbaric oxygen therapy is FDA-approved as an adjunct to surgery and antibiotics — especially for abscesses caused by anaerobic or mixed bacteria: raised tissue oxygen is hostile to these organisms, supports immune clearance, and reduces surrounding swelling."
+  el: "Το ενδοκρανιακό απόστημα είναι θύλακας λοίμωξης εντός του εγκεφάλου. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA ως επικουρική θεραπεία σε χειρουργική και αντιβιοτικά — ιδίως για αποστήματα που προκαλούνται από αναερόβια ή μεικτά βακτήρια: το αυξημένο οξυγόνο στους ιστούς είναι εχθρικό προς αυτούς τους οργανισμούς, υποστηρίζει την ανοσολογική κάθαρση και μειώνει το γύρω οίδημα."
+  de: "Ein intrakranieller Abszess ist eine Infektionshöhle innerhalb des Gehirns. Die hyperbare Sauerstofftherapie ist FDA-zugelassen als Adjuvans zu Operation und Antibiose — insbesondere bei Abszessen durch anaerobe oder Mischinfektionen: Erhöhter Gewebe-Sauerstoff ist diesen Erregern feindlich, unterstützt die immunologische Klärung und reduziert das umgebende Ödem."
+  it: "Un ascesso intracranico è una raccolta infettiva all'interno del cervello. L'ossigenoterapia iperbarica è approvata dalla FDA come adiuvante a chirurgia e antibiotici — specialmente per ascessi causati da batteri anaerobi o misti: l'aumento dell'ossigeno tissutale è ostile a questi organismi, sostiene la clearance immunitaria e riduce l'edema circostante."
+  es: "Un absceso intracraneal es una colección infecciosa dentro del cerebro. La oxigenoterapia hiperbárica está aprobada por la FDA como adyuvante a la cirugía y los antibióticos — especialmente para abscesos causados por bacterias anaerobias o mixtas: el oxígeno tisular elevado resulta hostil para estos microorganismos, apoya la depuración inmunitaria y reduce el edema circundante."
+metaDescription:
+  en: "FDA-approved adjunct for intracranial (brain) abscess alongside surgery and antibiotics, targeting anaerobic infection and supporting immune clearance."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για ενδοκρανιακό (εγκεφαλικό) απόστημα παράλληλα με χειρουργική και αντιβιοτικά, στοχεύοντας αναερόβιες λοιμώξεις και υποστηρίζοντας την ανοσολογική κάθαρση."
+  de: "FDA-zugelassenes Adjuvans beim intrakraniellen (Gehirn-)Abszess neben Operation und Antibiose, gerichtet gegen anaerobe Infektionen und unterstützend für die immunologische Klärung."
+  it: "Adiuvante approvato dalla FDA per l'ascesso intracranico (cerebrale) accanto a chirurgia e antibiotici, mirato all'infezione anaerobia e a sostegno della clearance immunitaria."
+  es: "Adyuvante aprobado por la FDA para el absceso intracraneal (cerebral) junto a cirugía y antibióticos, dirigido a infecciones anaerobias y de apoyo a la depuración inmunitaria."

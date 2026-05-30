@@ -59,3 +59,9 @@ protocol:
 refs:
   - "[6]"
 updated: "2026-05-30"
+answerBox:
+  en: "Hyperbaric oxygen can mobilise the body's own repair cells. Studies show HBOT releases bone-marrow stem cells into the circulation at rates up to eight times baseline, offering a possible mechanism for its regenerative effects. This is a research-stage observation rather than a standalone therapy."
+  el: "Η υπερβαρική οξυγονοθεραπεία μπορεί να κινητοποιήσει τα ίδια τα κύτταρα επιδιόρθωσης του σώματος. Μελέτες δείχνουν ότι η HBOT απελευθερώνει βλαστικά κύτταρα μυελού των οστών στην κυκλοφορία σε ποσοστά έως και οκτώ φορές πάνω από το αρχικό επίπεδο, προσφέροντας πιθανό μηχανισμό για τις αναγεννητικές της επιδράσεις. Αυτή είναι παρατήρηση ερευνητικού σταδίου, όχι αυτόνομη θεραπεία."
+  de: "Hyperbarer Sauerstoff kann die körpereigenen Reparaturzellen mobilisieren. Studien zeigen, dass HBOT Knochenmark-Stammzellen in einer Rate bis zum Achtfachen des Ausgangswerts in die Zirkulation freisetzt — ein möglicher Mechanismus seiner regenerativen Wirkungen. Es handelt sich um eine Beobachtung im Forschungsstadium und nicht um eine eigenständige Therapie."
+  it: "L'ossigeno iperbarico può mobilitare le cellule riparatrici dell'organismo. Gli studi mostrano che l'HBOT rilascia cellule staminali del midollo osseo nella circolazione fino a otto volte oltre il valore basale, offrendo un possibile meccanismo per i suoi effetti rigenerativi. Si tratta di un'osservazione in fase di ricerca, non di una terapia autonoma."
+  es: "El oxígeno hiperbárico puede movilizar las células reparadoras del propio organismo. Los estudios muestran que la HBOT libera células madre de la médula ósea a la circulación a tasas de hasta ocho veces respecto al valor basal, ofreciendo un posible mecanismo para sus efectos regenerativos. Se trata de una observación en fase de investigación más que de una terapia independiente."

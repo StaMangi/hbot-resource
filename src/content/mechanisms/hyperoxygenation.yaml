@@ -21,3 +21,15 @@ detail:
 refs:
   - "[1]"
 updated: "2026-05-30"
+answerBox:
+  en: "Hyperoxygenation is HBOT's most immediate effect: breathing 100% oxygen under pressure dissolves far more oxygen directly into blood plasma, reversing tissue hypoxia even where red-cell delivery is impaired. A paradoxical vasoconstriction reduces swelling while net oxygen delivery rises — the basis for treating ischaemia and crush injury."
+  el: "Η υπεροξυγόνωση είναι η πιο άμεση δράση της HBOT: η εισπνοή 100% οξυγόνου υπό πίεση διαλυτοποιεί πολύ περισσότερο οξυγόνο απευθείας στο πλάσμα, αναστρέφοντας την ιστική υποξία ακόμη και εκεί όπου η μεταφορά μέσω ερυθρών αιμοσφαιρίων είναι διαταραγμένη. Μια παράδοξη αγγειοσύσπαση μειώνει το οίδημα, ενώ η καθαρή παροχή οξυγόνου αυξάνεται — η βάση για τη θεραπεία της ισχαιμίας και των θλιπτικών κακώσεων."
+  de: "Die Hyperoxygenierung ist die unmittelbarste Wirkung der HBOT: Das Atmen von 100 % Sauerstoff unter Druck löst weit mehr Sauerstoff direkt im Blutplasma und kehrt die Gewebehypoxie selbst dort um, wo die Versorgung über Erythrozyten beeinträchtigt ist. Eine paradoxe Vasokonstriktion reduziert die Schwellung, während die Netto-Sauerstoffversorgung steigt — die Grundlage für die Behandlung von Ischämie und Quetschverletzung."
+  it: "L'iperossigenazione è l'effetto più immediato della HBOT: respirare ossigeno al 100% sotto pressione disciogli molto più ossigeno direttamente nel plasma sanguigno, invertendo l'ipossia tissutale anche dove la consegna tramite globuli rossi è compromessa. Una paradossale vasocostrizione riduce l'edema mentre l'apporto netto di ossigeno aumenta — la base per il trattamento dell'ischemia e delle lesioni da schiacciamento."
+  es: "La hiperoxigenación es el efecto más inmediato de la HBOT: respirar oxígeno al 100% bajo presión disuelve mucho más oxígeno directamente en el plasma sanguíneo, revirtiendo la hipoxia tisular incluso donde el aporte mediante glóbulos rojos está afectado. Una vasoconstricción paradójica reduce el edema mientras aumenta el aporte neto de oxígeno — la base para tratar la isquemia y la lesión por aplastamiento."
+metaDescription:
+  en: "Hyperoxygenation under pressure dissolves extra oxygen into plasma, reversing tissue hypoxia even where circulation is impaired — HBOT's core mechanism."
+  el: "Η υπεροξυγόνωση υπό πίεση διαλυτοποιεί επιπλέον οξυγόνο στο πλάσμα, αναστρέφοντας την ιστική υποξία ακόμη και όταν η κυκλοφορία είναι διαταραγμένη — ο πυρήνας του μηχανισμού της HBOT."
+  de: "Hyperoxygenierung unter Druck löst zusätzlichen Sauerstoff im Plasma und kehrt die Gewebehypoxie selbst bei beeinträchtigter Durchblutung um — der Kernmechanismus der HBOT."
+  it: "L'iperossigenazione sotto pressione disciogli ossigeno aggiuntivo nel plasma, invertendo l'ipossia tissutale anche con circolazione compromessa — il meccanismo centrale della HBOT."
+  es: "La hiperoxigenación bajo presión disuelve oxígeno adicional en el plasma, revirtiendo la hipoxia tisular incluso con la circulación afectada — el mecanismo central de la HBOT."

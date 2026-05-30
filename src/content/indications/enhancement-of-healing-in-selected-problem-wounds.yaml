@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[7]"
 updated: "2026-05-30"
+answerBox:
+  en: "Some chronic wounds — particularly diabetic foot ulcers — fail to heal because the surrounding tissue lacks oxygen. Hyperbaric oxygen therapy is FDA-approved as an adjunct for selected problem wounds: it raises tissue oxygen, stimulates new blood vessels, and strengthens infection defence to restart stalled healing."
+  el: "Ορισμένες χρόνιες πληγές — ιδίως διαβητικά έλκη ποδιού — δεν επουλώνονται επειδή ο γύρω ιστός στερείται οξυγόνου. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA ως επικουρική θεραπεία για επιλεγμένες προβληματικές πληγές: αυξάνει το οξυγόνο των ιστών, διεγείρει την ανάπτυξη νέων αγγείων και ενισχύει την άμυνα έναντι των λοιμώξεων, επανεκκινώντας τη στάσιμη επούλωση."
+  de: "Manche chronischen Wunden — insbesondere diabetische Fußulzera — heilen nicht, weil dem umliegenden Gewebe Sauerstoff fehlt. Die hyperbare Sauerstofftherapie ist FDA-zugelassen als Adjuvans bei ausgewählten Problemwunden: Sie hebt den Gewebe-Sauerstoffgehalt an, regt die Bildung neuer Gefäße an und stärkt die Infektionsabwehr, um eine stagnierende Heilung neu zu starten."
+  it: "Alcune ferite croniche — in particolare le ulcere del piede diabetico — non guariscono perché il tessuto circostante è privo di ossigeno. L'ossigenoterapia iperbarica è approvata dalla FDA come adiuvante per ferite problematiche selezionate: aumenta l'ossigeno tissutale, stimola la formazione di nuovi vasi e rinforza la difesa anti-infettiva per riavviare una guarigione bloccata."
+  es: "Algunas heridas crónicas — en particular las úlceras del pie diabético — no cicatrizan porque al tejido circundante le falta oxígeno. La oxigenoterapia hiperbárica está aprobada por la FDA como adyuvante para heridas problemáticas seleccionadas: eleva el oxígeno tisular, estimula la formación de nuevos vasos y refuerza la defensa frente a infecciones para reactivar una cicatrización detenida."
+metaDescription:
+  en: "FDA-approved adjunct for selected non-healing wounds, especially diabetic foot ulcers — hyperbaric oxygen restarts healing in oxygen-starved tissue."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για επιλεγμένες μη επουλούμενες πληγές, ιδίως διαβητικά έλκη ποδιού — η υπερβαρική οξυγονοθεραπεία επανεκκινεί την επούλωση σε ιστούς που στερούνται οξυγόνου."
+  de: "FDA-zugelassenes Adjuvans bei ausgewählten nicht heilenden Wunden, insbesondere diabetischen Fußulzera — die hyperbare Sauerstofftherapie startet die Heilung sauerstoffarmen Gewebes neu."
+  it: "Adiuvante approvato dalla FDA per ferite non guarigione selezionate, soprattutto ulcere del piede diabetico — l'ossigenoterapia iperbarica riavvia la guarigione nei tessuti privi di ossigeno."
+  es: "Adyuvante aprobado por la FDA para heridas no cicatrizantes seleccionadas, en especial las úlceras del pie diabético — la oxigenoterapia hiperbárica reactiva la cicatrización en tejidos privados de oxígeno."

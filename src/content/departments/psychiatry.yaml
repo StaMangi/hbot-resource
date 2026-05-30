@@ -111,3 +111,9 @@ applications:
     refs:
       - "[8]"
 updated: "2026-05-30"
+metaDescription:
+  en: "HBOT in psychiatry — emerging, investigational research in PTSD, depression and anxiety, with evidence levels and single-group caveats noted per condition."
+  el: "HBOT στην ψυχιατρική — αναδυόμενη, ερευνητική έρευνα σε PTSD, κατάθλιψη και άγχος, με τα επίπεδα τεκμηρίωσης και τις επιφυλάξεις της μίας μόνης ερευνητικής ομάδας ανά πάθηση."
+  de: "HBOT in der Psychiatrie — aufkommende, in Erprobung befindliche Forschung bei PTSD, Depression und Angststörungen, mit Evidenzgraden und Vorbehalten zur Einzel-Forschungsgruppe je Erkrankung."
+  it: "HBOT in psichiatria — ricerca emergente e sperimentale su PTSD, depressione e ansia, con i livelli di evidenza e i caveat di gruppo singolo indicati per ciascuna condizione."
+  es: "HBOT en psiquiatría — investigación emergente e investigacional en PTSD, depresión y ansiedad, con los niveles de evidencia y los caveats de grupo único indicados para cada condición."

@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[19]"
 updated: "2026-05-30"
+answerBox:
+  en: "Central retinal artery occlusion is a sudden blockage of the eye's main artery — an emergency that can cause permanent vision loss within hours. Hyperbaric oxygen therapy, FDA-approved for this indication, sustains oxygen to the retina while the blockage is addressed, preserving retinal tissue and improving the chance of saving sight."
+  el: "Η απόφραξη της κεντρικής αρτηρίας του αμφιβληστροειδούς είναι αιφνίδια απόφραξη της κύριας αρτηρίας του οφθαλμού — επείγον περιστατικό που μπορεί να προκαλέσει μόνιμη απώλεια όρασης μέσα σε ώρες. Η υπερβαρική οξυγονοθεραπεία, εγκεκριμένη από το FDA για αυτήν την ένδειξη, διατηρεί το οξυγόνο στον αμφιβληστροειδή όσο αντιμετωπίζεται η απόφραξη, διαφυλάσσοντας τον αμφιβληστροειδικό ιστό και αυξάνοντας τις πιθανότητες διάσωσης της όρασης."
+  de: "Der Zentralarterienverschluss der Netzhaut ist ein plötzlicher Verschluss der Hauptarterie des Auges — ein Notfall, der innerhalb von Stunden zu bleibendem Sehverlust führen kann. Die hyperbare Sauerstofftherapie, FDA-zugelassen für diese Indikation, erhält die Sauerstoffversorgung der Netzhaut, während der Verschluss behandelt wird, schützt das Netzhautgewebe und verbessert die Chance, das Sehvermögen zu erhalten."
+  it: "L'occlusione dell'arteria centrale della retina è un improvviso blocco dell'arteria principale dell'occhio — un'emergenza che può causare perdita permanente della vista entro poche ore. L'ossigenoterapia iperbarica, approvata dalla FDA per questa indicazione, mantiene l'ossigenazione retinica mentre si affronta l'ostruzione, preservando il tessuto retinico e aumentando la possibilità di salvare la vista."
+  es: "La oclusión de la arteria central de la retina es un bloqueo súbito de la arteria principal del ojo — una urgencia que puede causar pérdida visual permanente en horas. La oxigenoterapia hiperbárica, aprobada por la FDA para esta indicación, mantiene el oxígeno en la retina mientras se aborda la obstrucción, preservando el tejido retiniano y mejorando la posibilidad de salvar la visión."
+metaDescription:
+  en: "FDA-approved emergency treatment for central retinal artery occlusion: hyperbaric oxygen preserves the retina and improves the chance of saving vision."
+  el: "Εγκεκριμένη από το FDA επείγουσα θεραπεία για απόφραξη της κεντρικής αρτηρίας του αμφιβληστροειδούς: η υπερβαρική οξυγονοθεραπεία προστατεύει τον αμφιβληστροειδή και αυξάνει τις πιθανότητες διάσωσης της όρασης."
+  de: "FDA-zugelassene Notfalltherapie beim Zentralarterienverschluss der Netzhaut: Die hyperbare Sauerstofftherapie schützt die Netzhaut und verbessert die Chance, das Sehvermögen zu erhalten."
+  it: "Trattamento d'emergenza approvato dalla FDA per l'occlusione dell'arteria centrale della retina: l'ossigenoterapia iperbarica preserva la retina e migliora la possibilità di salvare la vista."
+  es: "Tratamiento de urgencia aprobado por la FDA para la oclusión de la arteria central de la retina: la oxigenoterapia hiperbárica preserva la retina y mejora la posibilidad de salvar la visión."

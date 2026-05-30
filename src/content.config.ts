@@ -59,6 +59,14 @@ const mechanisms = defineCollection({
     // DetailLayout + `dateModified` in MedicalWebPage JSON-LD both read from
     // here. ISO date YYYY-MM-DD; one value per entry (entries are multilingual).
     updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    // Tier 1 answer-box: visible 40–60 word lead block on the detail page.
+    // Required, all 5 locales (bilingual). Distilled verbatim from approved
+    // content; not paraphrased. See tier1-answerboxes-and-meta-DRAFT.md.
+    answerBox: bilingual,
+    // Tier 1 meta-description: when set, drives <meta name="description">
+    // + JSON-LD description on the detail page. Never drives card text on
+    // the /<collection>/ index. Optional; if present, all 5 locales required.
+    metaDescription: bilingual.optional(),
   }),
 });
 
@@ -78,6 +86,8 @@ const indications = defineCollection({
     protocol,
     refs: refTags,
     updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
+    answerBox: bilingual, // Tier 1 — required, see mechanisms above
+    metaDescription: bilingual.optional(), // Tier 1 — optional, see mechanisms above
   }),
 });
 
@@ -108,6 +118,10 @@ const departments = defineCollection({
     intro: bilingual.optional(),
     applications: z.array(departmentApplication),
     updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
+    // Tier 1 — departments have NO answerBox; metaDescription is optional but
+    // when set drives <meta name="description"> + JSON-LD only — never the
+    // /departments/ index card (which still uses shortDesc).
+    metaDescription: bilingual.optional(),
   }),
 });
 
@@ -137,6 +151,7 @@ const longevity = defineCollection({
     protocol,
     refs: refTags.optional(),
     updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
+    answerBox: bilingual, // Tier 1 — required, see mechanisms above
   }),
 });
 

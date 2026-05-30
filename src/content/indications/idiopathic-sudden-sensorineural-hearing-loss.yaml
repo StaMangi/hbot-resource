@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[14]"
 updated: "2026-05-30"
+answerBox:
+  en: "This is an unexplained, rapid loss of hearing thought to involve reduced oxygen supply to the inner ear. Hyperbaric oxygen therapy is FDA-approved as an adjunct — typically when corticosteroids alone fail — reversing cochlear hypoxia and reducing endolymphatic fluid pressure to improve the chance of hearing recovery."
+  el: "Πρόκειται για ανεξήγητη, ταχεία απώλεια ακοής που θεωρείται ότι σχετίζεται με μειωμένη παροχή οξυγόνου στο εσωτερικό αυτί. Η υπερβαρική οξυγονοθεραπεία είναι εγκεκριμένη από το FDA ως επικουρική θεραπεία — συνήθως όταν τα κορτικοστεροειδή από μόνα τους αποτυγχάνουν — αναστρέφοντας την κοχλιακή υποξία και μειώνοντας την ενδολεμφική πίεση, ώστε να βελτιωθεί η πιθανότητα ανάκτησης της ακοής."
+  de: "Hierbei handelt es sich um einen unerklärten, raschen Hörverlust, an dem vermutlich eine verminderte Sauerstoffversorgung des Innenohrs beteiligt ist. Die hyperbare Sauerstofftherapie ist als FDA-zugelassenes Adjuvans zugelassen — typischerweise wenn Kortikosteroide allein versagen — und kehrt die kochleäre Hypoxie um und senkt den endolymphatischen Druck, um die Chance auf eine Hörerholung zu verbessern."
+  it: "Si tratta di una perdita uditiva rapida e di origine non chiarita, ritenuta legata a una ridotta ossigenazione dell'orecchio interno. L'ossigenoterapia iperbarica è approvata dalla FDA come adiuvante — tipicamente quando i corticosteroidi da soli non sono efficaci — invertendo l'ipossia cocleare e riducendo la pressione del fluido endolinfatico per migliorare la possibilità di recupero uditivo."
+  es: "Se trata de una pérdida auditiva rápida e inexplicada que se considera relacionada con una reducción del aporte de oxígeno al oído interno. La oxigenoterapia hiperbárica está aprobada por la FDA como adyuvante — habitualmente cuando los corticosteroides por sí solos fracasan — al revertir la hipoxia coclear y reducir la presión del líquido endolinfático para mejorar la posibilidad de recuperación auditiva."
+metaDescription:
+  en: "FDA-approved adjunct for idiopathic sudden sensorineural hearing loss, reversing cochlear hypoxia when corticosteroids alone do not restore hearing."
+  el: "Εγκεκριμένη από το FDA επικουρική θεραπεία για ιδιοπαθή αιφνίδια νευροαισθητήρια απώλεια ακοής, αναστρέφοντας την κοχλιακή υποξία όταν τα κορτικοστεροειδή από μόνα τους δεν αποκαθιστούν την ακοή."
+  de: "FDA-zugelassenes Adjuvans beim idiopathischen Hörsturz, das die kochleäre Hypoxie umkehrt, wenn Kortikosteroide allein das Hörvermögen nicht wiederherstellen."
+  it: "Adiuvante approvato dalla FDA per la sordità improvvisa neurosensoriale idiopatica, che inverte l'ipossia cocleare quando i corticosteroidi da soli non ripristinano l'udito."
+  es: "Adyuvante aprobado por la FDA para la hipoacusia neurosensorial súbita idiopática, que revierte la hipoxia coclear cuando los corticosteroides por sí solos no restablecen la audición."

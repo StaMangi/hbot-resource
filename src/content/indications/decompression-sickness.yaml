@@ -60,3 +60,15 @@ refs:
   - "[1]"
   - "[6]"
 updated: "2026-05-30"
+answerBox:
+  en: "Decompression sickness (\"the bends\") occurs when dissolved nitrogen forms bubbles in the blood and tissues after rapid pressure changes, affecting divers and compressed-air workers. Hyperbaric oxygen therapy is the FDA-approved primary treatment: pressure shrinks the bubbles while oxygen accelerates nitrogen elimination and re-oxygenates affected tissue."
+  el: "Η νόσος αποσυμπίεσης («the bends») συμβαίνει όταν διαλυμένο άζωτο σχηματίζει φυσαλίδες στο αίμα και στους ιστούς μετά από ταχείες μεταβολές της πίεσης, επηρεάζοντας δύτες και εργαζομένους σε συμπιεσμένο αέρα. Η υπερβαρική οξυγονοθεραπεία είναι η εγκεκριμένη από το FDA πρωτογενής θεραπεία: η πίεση συρρικνώνει τις φυσαλίδες, ενώ το οξυγόνο επιταχύνει την αποβολή του αζώτου και επανοξυγονώνει τους προσβεβλημένους ιστούς."
+  de: "Die Dekompressionskrankheit („the bends\") tritt auf, wenn nach raschen Druckwechseln gelöster Stickstoff in Blut und Geweben Blasen bildet — vor allem bei Tauchern und Druckluftarbeitern. Die hyperbare Sauerstofftherapie ist die FDA-zugelassene Erstlinienbehandlung: Der Druck verkleinert die Blasen, während Sauerstoff die Stickstoff-Elimination beschleunigt und betroffenes Gewebe re-oxygeniert."
+  it: "La malattia da decompressione («the bends») si verifica quando l'azoto disciolto forma bolle nel sangue e nei tessuti dopo rapide variazioni di pressione, colpendo subacquei e lavoratori in aria compressa. L'ossigenoterapia iperbarica è il trattamento primario approvato dalla FDA: la pressione riduce le bolle mentre l'ossigeno accelera l'eliminazione dell'azoto e ri-ossigena i tessuti colpiti."
+  es: "La enfermedad por descompresión («the bends») se produce cuando el nitrógeno disuelto forma burbujas en la sangre y los tejidos tras cambios rápidos de presión, afectando a buceadores y trabajadores de aire comprimido. La oxigenoterapia hiperbárica es el tratamiento primario aprobado por la FDA: la presión reduce las burbujas, mientras que el oxígeno acelera la eliminación del nitrógeno y re-oxigena los tejidos afectados."
+metaDescription:
+  en: "FDA-approved primary treatment for decompression sickness: hyperbaric oxygen shrinks nitrogen bubbles and speeds their elimination in divers."
+  el: "Εγκεκριμένη από το FDA πρωτογενής θεραπεία για νόσο αποσυμπίεσης: η υπερβαρική οξυγονοθεραπεία συρρικνώνει τις φυσαλίδες αζώτου και επιταχύνει την αποβολή τους στους δύτες."
+  de: "FDA-zugelassene Erstlinienbehandlung der Dekompressionskrankheit: Die hyperbare Sauerstofftherapie verkleinert Stickstoffblasen und beschleunigt deren Elimination bei Tauchern."
+  it: "Trattamento primario approvato dalla FDA per la malattia da decompressione: l'ossigenoterapia iperbarica riduce le bolle di azoto e accelera la loro eliminazione nei subacquei."
+  es: "Tratamiento primario aprobado por la FDA para la enfermedad por descompresión: la oxigenoterapia hiperbárica reduce las burbujas de nitrógeno y acelera su eliminación en buceadores."
