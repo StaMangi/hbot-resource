@@ -1,11 +1,12 @@
 ---
 import LandingLayout from "@/layouts/LandingLayout.astro";
+import LastUpdated from "@/components/LastUpdated.astro";
 
 const pathname = Astro.url.pathname;
 const locale = "el" as const;
 
 const description =
-  "Συντακτικά πρότυπα, πλαίσιο τεκμηρίωσης, ενημέρωση εκδότη, διαδικασία διορθώσεων και όρια πεδίου εφαρμογής για το HBOT Science — ανεξάρτητη πηγή αναφοράς για την υπερβαρική θεραπεία οξυγόνου.";
+  "Πώς το HBOT Science επαληθεύει το περιεχόμενό του: κάθε παραπομπή αναλύεται σε ενεργό DOI και ελέγχεται κατά τη δημιουργία του ιστότοπου, τα ποσοτικά στοιχεία αναπαράγονται ακριβώς, η τεκμηρίωση βαθμολογείται σε επίπεδα A/B/C και οι ερευνητικές χρήσεις χαρακτηρίζονται ρητά. Συντακτικά ανεξάρτητο.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -54,7 +55,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-standards"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Συντακτικά πρότυπα
@@ -87,7 +89,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="evidence-framework"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Πλαίσιο τεκμηρίωσης
@@ -122,7 +125,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="editorial-publisher"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Εκδότης
@@ -138,7 +142,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="corrections-and-updates"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Διορθώσεις και ενημερώσεις
@@ -169,7 +174,8 @@ const jsonLd = {
 
     <section class="mt-12">
       <h2
-        class="text-2xl font-semibold text-slate-900 mb-4"
+        id="scope-and-limits"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
         style="font-family: var(--font-display)"
       >
         Πεδίο εφαρμογής και όρια
@@ -195,5 +201,6 @@ const jsonLd = {
         αγωγής.
       </p>
     </section>
+    <LastUpdated date="2026-05-30" locale={locale} />
   </article>
 </LandingLayout>

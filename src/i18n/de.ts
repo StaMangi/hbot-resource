@@ -238,4 +238,5 @@ export const de = {
   "contact.validation.email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
   "contact.validation.turnstile": "Bitte schließen Sie die Verifizierung ab.",
   "meta.lastUpdated": "Zuletzt aktualisiert",
+  "footer.howWeVerify": "Wie wir verifizieren",
 } as const;

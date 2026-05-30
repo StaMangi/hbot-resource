@@ -247,4 +247,5 @@ export const it = {
   "contact.validation.email": "Inserisci un indirizzo email valido.",
   "contact.validation.turnstile": "Completa la verifica.",
   "meta.lastUpdated": "Ultimo aggiornamento",
+  "footer.howWeVerify": "Come verifichiamo",
 } as const;
