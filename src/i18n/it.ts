@@ -246,4 +246,5 @@ export const it = {
   "contact.validation.required": "Questo campo è obbligatorio.",
   "contact.validation.email": "Inserisci un indirizzo email valido.",
   "contact.validation.turnstile": "Completa la verifica.",
+  "meta.lastUpdated": "Ultimo aggiornamento",
 } as const;

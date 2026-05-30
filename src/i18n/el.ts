@@ -242,4 +242,5 @@ export const el = {
   "contact.validation.required": "Αυτό το πεδίο είναι υποχρεωτικό.",
   "contact.validation.email": "Παρακαλώ εισαγάγετε έγκυρη διεύθυνση email.",
   "contact.validation.turnstile": "Παρακαλώ ολοκληρώστε την επαλήθευση.",
+  "meta.lastUpdated": "Τελευταία ενημέρωση",
 } as const;

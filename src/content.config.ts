@@ -54,6 +54,11 @@ const mechanisms = defineCollection({
     summary: bilingual,
     detail: bilingual,
     refs: refTags,
+    // Last-updated stamp. Required so the build fails (no silent gaps) if any
+    // entry omits it — see /Tier 1A SEO/GEO/. Visible "Last updated" line in
+    // DetailLayout + `dateModified` in MedicalWebPage JSON-LD both read from
+    // here. ISO date YYYY-MM-DD; one value per entry (entries are multilingual).
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   }),
 });
 
@@ -72,6 +77,7 @@ const indications = defineCollection({
     evidenceLevel: z.enum(["A", "B", "C"]),
     protocol,
     refs: refTags,
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
   }),
 });
 
@@ -101,6 +107,7 @@ const departments = defineCollection({
     // departments (e.g. Rehabilitation Medicine); existing departments omit it.
     intro: bilingual.optional(),
     applications: z.array(departmentApplication),
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
   }),
 });
 
@@ -129,6 +136,7 @@ const longevity = defineCollection({
     mechanism: bilingual,
     protocol,
     refs: refTags.optional(),
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // ISO date, YYYY-MM-DD
   }),
 });
 
