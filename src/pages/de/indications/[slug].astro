@@ -29,6 +29,15 @@ const evidenceBadge = (level: string) =>
       ? "bg-sky-100 text-sky-800 border-sky-200"
       : "bg-slate-100 text-slate-700 border-slate-200";
 
+const description = entry.data.description[locale];
+// Single-line form for meta + JSON-LD (the YAML may contain paragraph breaks).
+const descriptionFlat = description.replace(/\s+/g, " ");
+const writeup =
+  // Decided on the English text so every locale of an entry behaves the same.
+  entry.data.description.en.length > entry.data.answerBox.en.length
+    ? description.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean)
+    : [];
+
 const crossLinks = await buildCrossLinkIndex();
 const related = crossLinks.relatedFor.get(relatedKey("indications", entry.id)) ?? [];
 
@@ -36,13 +45,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
   name: entry.data.condition[locale],
-  description: entry.data.metaDescription?.[locale] ?? entry.data.description[locale],
+  description: entry.data.metaDescription?.[locale] ?? descriptionFlat,
   inLanguage: locale,
   dateModified: entry.data.updated,
   mainContentOfPage: {
     "@type": "MedicalCondition",
     name: entry.data.condition[locale],
-    description: entry.data.description[locale],
+    description: descriptionFlat,
     possibleTreatment: {
       "@type": "MedicalTherapy",
       name: "Hyperbare Sauerstofftherapie",
@@ -60,7 +69,7 @@ const jsonLd = {
 
 <DetailLayout
   title={`${entry.data.condition[locale]} — HBOT Science`}
-  description={entry.data.metaDescription?.[locale] ?? entry.data.description[locale]}
+  description={entry.data.metaDescription?.[locale] ?? descriptionFlat}
   locale={locale}
   pathname={pathname}
   pageHeading={entry.data.condition[locale]}
@@ -96,6 +105,23 @@ const jsonLd = {
       {entry.data.evidence[locale]}
     </span>
   </div>
+
+  {/* Full write-up. Shown only when the description is a genuine long-form
+      evidence summary (longer than the answer box) — the short FDA-tier
+      descriptions would just repeat the answer box above. Blank lines in the
+      YAML ("\n\n") split it into paragraphs. */}
+  {
+    writeup.length > 0 && (
+      <section class="mt-10">
+        <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+          Zusammenfassung der Evidenz
+        </h2>
+        <div class="space-y-4 text-base text-slate-700 leading-relaxed">
+          {writeup.map((para) => <p>{para}</p>)}
+        </div>
+      </section>
+    )
+  }
 
   <section class="mt-10">
     <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
