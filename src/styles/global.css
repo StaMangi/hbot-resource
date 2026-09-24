@@ -19,35 +19,68 @@
  * path. See docs/3a-lighthouse-summary.md for the measurement.
  */
 
-/* Montserrat — display / headings (Latin) */
-@import "@fontsource/montserrat/latin-400.css";
-@import "@fontsource/montserrat/latin-500.css";
-@import "@fontsource/montserrat/latin-600.css";
-@import "@fontsource/montserrat/latin-700.css";
-@import "@fontsource/montserrat/latin-ext-400.css";
-@import "@fontsource/montserrat/latin-ext-500.css";
-@import "@fontsource/montserrat/latin-ext-600.css";
-@import "@fontsource/montserrat/latin-ext-700.css";
-
-/* Lato — body text (Latin) */
-@import "@fontsource/lato/latin-300.css";
-@import "@fontsource/lato/latin-400.css";
-@import "@fontsource/lato/latin-700.css";
-@import "@fontsource/lato/latin-ext-300.css";
-@import "@fontsource/lato/latin-ext-400.css";
-@import "@fontsource/lato/latin-ext-700.css";
-
-/* Noto Sans Greek — Greek subset for body + display, all weights used */
-@import "@fontsource/noto-sans/greek-400.css";
-@import "@fontsource/noto-sans/greek-500.css";
-@import "@fontsource/noto-sans/greek-600.css";
-@import "@fontsource/noto-sans/greek-700.css";
+/* Montserrat 400–700 + Lato 300/400/700 (latin + latin-ext) and Noto Sans
+   Greek 400–700, each with its unicode-range — see fonts.css. */
+@import "./fonts.css";
 
 @import "tailwindcss";
 
+/*
+ * Metric-matched fallbacks. Text first paints in a local fallback while the
+ * web fonts load, then re-flows when they swap in — on long pages that
+ * pushed content down (CLS 0.236 on /indications/long-covid/). These faces
+ * scale Arial to Lato's / Montserrat's letter widths and line metrics
+ * (English-frequency-weighted average advance; ascent/descent from each
+ * font's hhea or typo metrics), so the swap changes glyph shapes but not
+ * layout. Bold ranges mirror the web-font selection (600 → Lato 700).
+ * Restricted to the Latin ranges so Greek still falls through to Noto Sans.
+ * Where Arial isn't installed (most Android), local() fails and the stack
+ * continues exactly as before.
+ */
+@font-face {
+  font-family: "Lato Fallback";
+  src: local("Arial"), local("ArialMT");
+  font-weight: 100 500;
+  size-adjust: 97.37%;
+  ascent-override: 101.36%;
+  descent-override: 21.87%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1EFF, U+2000-206F, U+20A0-20C0, U+2113, U+2122, U+2191, U+2193, U+2212, U+2215, U+2C60-2C7F, U+A720-A7FF, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Lato Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT");
+  font-weight: 600 900;
+  size-adjust: 92.22%;
+  ascent-override: 107.02%;
+  descent-override: 23.1%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1EFF, U+2000-206F, U+20A0-20C0, U+2113, U+2122, U+2191, U+2193, U+2212, U+2215, U+2C60-2C7F, U+A720-A7FF, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Montserrat Fallback";
+  src: local("Arial"), local("ArialMT");
+  font-weight: 100 500;
+  size-adjust: 113.96%;
+  ascent-override: 84.94%;
+  descent-override: 22.03%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1EFF, U+2000-206F, U+20A0-20C0, U+2113, U+2122, U+2191, U+2193, U+2212, U+2215, U+2C60-2C7F, U+A720-A7FF, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Montserrat Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT");
+  font-weight: 600 900;
+  size-adjust: 108.91%;
+  ascent-override: 88.88%;
+  descent-override: 23.05%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1EFF, U+2000-206F, U+20A0-20C0, U+2113, U+2122, U+2191, U+2193, U+2212, U+2215, U+2C60-2C7F, U+A720-A7FF, U+FEFF, U+FFFD;
+}
+
 @theme {
-  --font-sans: "Lato", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
-  --font-display: "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Lato", "Lato Fallback", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Montserrat", "Montserrat Fallback", "Noto Sans", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
 }
 
 html {
