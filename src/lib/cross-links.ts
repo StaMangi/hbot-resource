@@ -19,7 +19,7 @@ export type CrossRefCollection =
 export interface CrossRef {
   collection: CrossRefCollection;
   slug: string;
-  title: { en: string; el: string; de: string; it?: string; es?: string };
+  title: { en: string; el: string; de: string; it: string; es: string; fr: string };
 }
 
 export interface CrossLinkIndex {
@@ -60,7 +60,7 @@ export async function buildCrossLinkIndex(): Promise<CrossLinkIndex> {
   const addEntryRef = (
     collection: CrossRefCollection,
     slug: string,
-    title: { en: string; el: string; de: string; it?: string },
+    title: { en: string; el: string; de: string; it: string; es: string; fr: string },
     refTags: string[],
   ) => {
     const key = entryKey(collection, slug);

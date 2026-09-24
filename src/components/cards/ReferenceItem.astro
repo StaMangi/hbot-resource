@@ -44,7 +44,9 @@ const citedInLabel =
         ? "Citato in"
         : locale === "es"
           ? "Citado en"
-          : "Cited in";
+          : locale === "fr"
+            ? "Cité dans"
+            : "Cited in";
 ---
 
 <li
