@@ -1,7 +1,5 @@
 import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
@@ -22,6 +20,10 @@ export default defineConfig({
     // Performance from 81 → ≥95.
     inlineStylesheets: "always",
   },
+  // Astro 7 changed the default to "jsx" (strips whitespace between elements,
+  // e.g. "Last updated: <time>" → "Last updated:<time>"). Keep the Astro 5
+  // behaviour: collapse whitespace but never remove it.
+  compressHTML: true,
   i18n: {
     defaultLocale: "en",
     locales: ["en", "el", "de", "it", "es"],
@@ -30,8 +32,6 @@ export default defineConfig({
     },
   },
   integrations: [
-    react(),
-    mdx(),
     icon({
       // Tree-shaken at build: only icons referenced via <Icon name="lucide:..." /> ship.
       include: { lucide: ["*"] },

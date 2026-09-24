@@ -3,7 +3,8 @@
 // Single source of truth for content shape; the migration script is the only
 // non-Astro consumer.
 
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 
 // "bilingual" is the historic name; the field is now quad-lingual (EN/EL/DE/IT).
@@ -166,7 +167,7 @@ const researchStudies = defineCollection({
     type: z.string(),
     evidenceLevel: z.string(),
     keyFinding: bilingual,
-    doi: z.string().url(),
+    doi: z.url(),
     ref: z.string(),
   }),
 });
@@ -221,7 +222,7 @@ const digest = defineCollection({
       .array(
         z.object({
           title: z.string(),
-          url: z.string().url(),
+          url: z.url(),
           summary: z.string(),
         }),
       )
