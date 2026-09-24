@@ -23,7 +23,12 @@
    Greek 400–700, each with its unicode-range — see fonts.css. */
 @import "./fonts.css";
 
-@import "tailwindcss";
+/* Scan only src/ for class names. Tailwind v4 otherwise auto-detects every
+   non-gitignored file in the repo — including _henry-dunant-source/ (the
+   original React app), docs/ (saved Lighthouse HTML reports) and
+   data-export/ — and generated ~1,600 rules for classes this site never
+   uses, all inlined into every page. Path is relative to this file. */
+@import "tailwindcss" source("../");
 
 /*
  * Metric-matched fallbacks. Text first paints in a local fallback while the
