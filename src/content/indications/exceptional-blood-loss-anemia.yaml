@@ -2,12 +2,12 @@ legacyId: 7
 tier: "fda-approved"
 uhms: 7
 category:
-  en: "Infectious Diseases"
-  el: "Λοιμώδη Νοσήματα"
-  de: "Infektionserkrankungen"
-  it: "Malattie infettive"
-  es: "Enfermedades infecciosas"
-  fr: "Maladies infectieuses"
+  en: "Haematological Disorders"
+  el: "Αιματολογικές Διαταραχές"
+  de: "Hämatologische Erkrankungen"
+  it: "Disturbi ematologici"
+  es: "Trastornos hematológicos"
+  fr: "Troubles hématologiques"
 condition:
   en: "Exceptional Blood Loss Anemia"
   el: "Αναιμία Εξαιρετικής Απώλειας Αίματος"
