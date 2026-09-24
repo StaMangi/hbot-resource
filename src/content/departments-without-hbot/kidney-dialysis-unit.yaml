@@ -4,6 +4,7 @@ name:
   de: "Dialysestation"
   it: "Unità di Dialisi Renale"
   es: "Unidad de Diálisis Renal"
+  fr: "Unité de dialyse"
 icon: "Droplet"
 rationale:
   en: "While emerging research explores HBOT for chronic kidney disease and diabetic nephropathy, it is not currently a treatment modality utilized within a standard dialysis unit. Dialysis patients have complex vascular access requirements and hemodynamic instability that complicate hyperbaric treatment. This remains a preclinical area of investigation."
@@ -11,9 +12,11 @@ rationale:
   de: "Obwohl aufkommende Forschung HBOT bei chronischer Nierenerkrankung und diabetischer Nephropathie untersucht, ist sie derzeit keine in einer Standard-Dialysestation eingesetzte Behandlungsmodalität. Dialysepatient:innen haben komplexe Anforderungen an den Gefäßzugang und eine hämodynamische Instabilität, die eine hyperbare Behandlung erschweren. Dies bleibt ein präklinisches Forschungsfeld."
   it: "Sebbene la ricerca emergente esplori l'HBOT per la malattia renale cronica e la nefropatia diabetica, essa non è attualmente una modalità terapeutica utilizzata all'interno di un'unità di dialisi standard. I pazienti in dialisi presentano complesse esigenze di accesso vascolare e instabilità emodinamica che complicano il trattamento iperbarico. Questo rimane un ambito di ricerca preclinica."
   es: "Aunque la investigación emergente explora HBOT para la enfermedad renal crónica y la nefropatía diabética, no es actualmente una modalidad terapéutica utilizada dentro de una unidad de diálisis estándar. Los pacientes en diálisis presentan complejas necesidades de acceso vascular e inestabilidad hemodinámica que complican el tratamiento hiperbárico. Esto sigue siendo un ámbito de investigación preclínica."
+  fr: "Bien que des recherches émergentes explorent l'HBOT dans la maladie rénale chronique et la néphropathie diabétique, elle n'est pas actuellement une modalité de traitement utilisée dans une unité de dialyse standard. Les patients dialysés présentent des exigences complexes en matière d'abord vasculaire et une instabilité hémodynamique qui compliquent le traitement hyperbare. Cela reste un domaine de recherche préclinique."
 role:
   en: "No current clinical application; preclinical research ongoing"
   el: "Καμία τρέχουσα κλινική εφαρμογή· προκλινική έρευνα σε εξέλιξη"
   de: "Keine aktuelle klinische Anwendung; präklinische Forschung läuft"
   it: "Nessuna applicazione clinica attuale; ricerca preclinica in corso"
   es: "Ninguna aplicación clínica actual; investigación preclínica en curso"
+  fr: "Aucune application clinique actuelle ; recherche préclinique en cours"

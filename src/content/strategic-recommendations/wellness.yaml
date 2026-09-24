@@ -4,6 +4,7 @@ title:
   de: "Premium-Wellness- & Longevity-Programme"
   it: "Programmi premium di benessere e longevità"
   es: "Programas premium de bienestar y longevidad"
+  fr: "Programmes premium de bien-être et de longévité"
 icon: "Sparkles"
 priority: "Medium"
 description:
@@ -12,6 +13,7 @@ description:
   de: "Entwicklung von Premium-Wellness-Paketen für gesunde Personen, die kognitive Förderung, Anti-Aging-Vorteile und sportliche Leistungsoptimierung suchen. Positionierung als differenziertes Angebot im wachsenden Markt der Longevity-Medizin."
   it: "Sviluppare pacchetti premium di benessere rivolti a persone sane che cercano potenziamento cognitivo, benefici anti-invecchiamento e ottimizzazione della prestazione sportiva. Posizionarsi come offerta differenziata nel crescente mercato della medicina della longevità."
   es: "Desarrollar paquetes premium de bienestar dirigidos a personas sanas que buscan mejora cognitiva, beneficios anti-envejecimiento y optimización del rendimiento deportivo. Posicionarse como una oferta diferenciada en el creciente mercado de la medicina de la longevidad."
+  fr: "Développer des offres premium de bien-être destinées aux personnes en bonne santé recherchant une amélioration cognitive, des bénéfices anti-âge et l'optimisation de la performance sportive. Les positionner comme une offre différenciée sur le marché en croissance de la médecine de la longévité."
 actions:
   en:
     - "Cognitive Enhancement Program (60 sessions, 2.0 ATA)"
@@ -38,3 +40,8 @@ actions:
     - "Programa de recuperación y rendimiento deportivo"
     - "Paquete de salud y longevidad para directivos"
     - "Protocolo de renovación celular anti-envejecimiento"
+  fr:
+    - "Programme d'amélioration cognitive (60 séances, 2,0 ATA)"
+    - "Programme de récupération et de performance sportives"
+    - "Forfait santé et longévité pour dirigeants"
+    - "Protocole anti-âge de renouvellement cellulaire"

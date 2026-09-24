@@ -1,0 +1,149 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "fr" as const;
+const prefix = "/fr";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Plan directeur de l'opérateur",
+  description:
+    "Architecture de référence pour les hôtels, les cliniques de longévité et les opérateurs du bien-être qui adoptent l'HBOT — équipement, personnel, installations, contrôle qualité, parcours du patient, documentation.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Plan directeur de l'opérateur — HBOT Science"
+  description="Architecture de référence pour les hôtels, les cliniques de longévité et les opérateurs du bien-être qui adoptent l'HBOT — choix de l'équipement, personnel, aspects liés aux installations, contrôle qualité, parcours du patient, documentation."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Référence pour les opérateurs</p>
+    <h1 class="mt-3 text-4xl font-semibold text-slate-900" style="font-family: var(--font-display)">
+      Plan directeur de l'opérateur
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Référence d'architecture opérationnelle pour les organisations qui
+      adoptent des services d'HBOT — hôtels, cliniques de longévité et
+      opérateurs du bien-être. Le contenu est générique ; les fournisseurs
+      d'équipement, les parcours réglementaires et les tarifs spécifiques ne
+      sont délibérément pas traités. Les réglementations locales en matière
+      de santé et de sécurité des dispositifs s'appliquent et peuvent imposer
+      des exigences plus strictes.
+    </p>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Choix de l'équipement
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Deux grandes catégories de caissons sont utilisées en clinique :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Caissons rigides (de qualité médicale)</strong> — pressurisés à 2,0–3,0 ATA avec 100 % d'oxygène administré par masque ou cagoule. Indispensables pour les indications approuvées par la FDA et pour tout traitement nécessitant une véritable pression hyperbare. Disponibles en configuration monoplace (un seul patient) et multiplace (plusieurs patients avec un accompagnant).</li>
+        <li><strong>Caissons souples (HBOT « légère »)</strong> — généralement pressurisés à 1,3 ATA avec de l'air ambiant. Ils ne sont pas équivalents à l'HBOT de qualité médicale pour les indications traitées sur ce site ; les données en faveur d'un effet thérapeutique à 1,3 ATA sont nettement plus faibles. Les opérateurs qui citent l'ECR de Hadanny 2020 sur l'amélioration cognitive ou l'ECR de Zilberman-Itskovich 2022 sur le COVID long doivent savoir que ces études ont utilisé des caissons rigides à 2,0 ATA — les installations à caissons souples ne peuvent pas reproduire ces protocoles.</li>
+      </ul>
+      <p class="text-slate-700 mt-3">
+        <strong>Monoplace ou multiplace</strong> : les caissons monoplaces
+        sont plus petits, d'un coût d'investissement moindre, et exigent un
+        personnel moins spécialisé. Les caissons multiplaces permettent la
+        présence d'un accompagnant pour la gestion de l'anxiété et la réponse
+        aux urgences, accueillent des patients plus complexes et constituent la
+        norme pour les services cliniques de cicatrisation des plaies.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Personnel
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Supervision médicale</strong> : un médecin désigné, spécialisé en médecine hyperbare, doit assumer la responsabilité de l'examen des indications, de la validation du dépistage préalable au traitement et de la prise en charge des événements indésirables.</li>
+        <li><strong>Technicien / infirmier hyperbare</strong> : formé à l'utilisation du caisson, aux procédures de décompression d'urgence et à la prise en charge des patients. Les normes de certification varient selon les juridictions ; l'UHMS publie des parcours d'accréditation reconnus.</li>
+        <li><strong>Accompagnants en caisson multiplace</strong> : lorsque des caissons multiplaces sont utilisés, un accompagnant intérieur est requis pendant toute la durée des séances sous pression.</li>
+        <li><strong>Accueil / planification</strong> : formés au dépistage des contre-indications (en particulier tabagisme, infection auriculaire récente, chimiothérapie en cours) afin que les signaux d'alerte soient repérés dès la prise de rendez-vous, et non au pied du caisson.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Installations
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Espace</strong> : un caisson monoplace tient dans une pièce de 3×6 m ; les systèmes multiplaces nécessitent des locaux dédiés avec salle de contrôle, stockage d'oxygène et voies d'évacuation d'urgence.</li>
+        <li><strong>Ventilation</strong> : les environnements riches en oxygène imposent une réduction de la charge calorifique. Les revêtements de sol et de murs, les installations électriques et le système de CVC doivent satisfaire aux normes de sécurité des dispositifs (les codes régionaux varient ; se référer à la norme NFPA 99 dans les juridictions appliquant les normes américaines).</li>
+        <li><strong>Sécurité incendie</strong> : aucun textile synthétique, aucun tissu générateur d'électricité statique, aucun appareil électronique dans le caisson, aucune huile ni aucun produit à base d'alcool sur les patients. Le système d'extinction doit être adapté à une atmosphère enrichie en oxygène.</li>
+        <li><strong>Alimentation en oxygène</strong> : oxygène de qualité médicale avec contrôle documenté de la pureté. Une alimentation de secours est obligatoire.</li>
+        <li><strong>Évacuation d'urgence</strong> : capacité de décompression rapide et intervention d'un opérateur formé en quelques secondes.</li>
+        <li><strong>Régulation thermique</strong> : gestion de la température du caisson pour éviter la surchauffe du patient pendant la compression.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Contrôle qualité
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Maintenance du caisson</strong> : entretien programmé selon les spécifications du fabricant, avec conservation d'un registre de maintenance.</li>
+        <li><strong>Inspection de l'appareil sous pression</strong> : généralement annuelle ; selon la juridiction.</li>
+        <li><strong>Contrôle de la pureté de l'oxygène</strong> : vérification périodique de la pureté de l'alimentation, idéalement à chaque changement de source de gaz.</li>
+        <li><strong>Étalonnage</strong> : manomètres, capteurs d'oxygène, systèmes de minutage — étalonnés selon les spécifications du fabricant.</li>
+        <li><strong>Registre des événements indésirables</strong> : chaque événement indésirable est consigné avec la date, le numéro de séance, la présentation, la réponse apportée et l'évolution.</li>
+        <li><strong>Fréquence des audits</strong> : audit interne au moins une fois par an ; audit externe déclenché par le cycle réglementaire ou par un événement indésirable important.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Parcours du patient et consentement
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Consultation initiale</strong> : antécédents médicaux, discussion de l'indication, dépistage des contre-indications, cadrage des attentes (en particulier pour un usage de bien-être).</li>
+        <li><strong>Consentement éclairé</strong> : consentement écrit passant en revue les contre-indications absolues et relatives, les événements indésirables courants, le protocole prévu et la portée de l'effet clinique (pour le bien-être : reconnaissance explicite que le programme se situe en dehors des indications approuvées par la FDA).</li>
+        <li><strong>Contrôle avant la séance</strong> : pression artérielle, température, examen respiratoire, revue des traitements récents, statut vis-à-vis de la claustrophobie, évaluation de la capacité à équilibrer les oreilles.</li>
+        <li><strong>Surveillance pendant la séance</strong> : communication continue avec l'accompagnant ; relevé des signes vitaux chez les patients à risque plus élevé.</li>
+        <li><strong>Contrôle après la séance</strong> : examen de la membrane tympanique, signes vitaux, questionnaire de tolérance.</li>
+        <li><strong>Fréquence du suivi</strong> : bilans à mi-parcours et en fin de cure ; recueil des critères de résultat selon la conception du programme.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+        Documentation
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Dossier de séance</strong> : date, heure de début, profil de pression, durée, débit d'oxygène, événements indésirables, identité de l'accompagnant, tolérance rapportée par le patient.</li>
+        <li><strong>Dossier d'indication</strong> : justification clinique documentée, niveau de preuve, validation par le médecin traitant.</li>
+        <li><strong>Suivi des résultats</strong> : mesures avant/après protocole selon la conception du programme.</li>
+        <li><strong>Déclaration des événements indésirables</strong> : événements graves déclarés conformément au cadre réglementaire local.</li>
+        <li><strong>Conservation</strong> : dossiers médicaux conservés selon la juridiction (généralement 7 à 25 ans).</li>
+        <li><strong>Confidentialité</strong> : conformité au RGPD dans l'UE et l'EEE ; équivalent HIPAA aux États-Unis.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Ce plan directeur constitue une référence générique pour les opérateurs. Il ne
+      constitue pas un avis réglementaire ni un avis en matière de sécurité
+      des dispositifs. Les réglementations locales relatives à la santé, à la
+      sécurité des dispositifs, à la sécurité incendie et à la protection des
+      consommateurs s'appliquent et priment sur les recommandations résumées
+      ici.
+    </p>
+  </article>
+</LandingLayout>

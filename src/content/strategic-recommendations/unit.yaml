@@ -4,6 +4,7 @@ title:
   de: "Aufbau einer eigenen hyperbarmedizinischen Einheit"
   it: "Istituire una dedicata Unità di medicina iperbarica"
   es: "Establecer una Unidad dedicada de medicina hiperbárica"
+  fr: "Créer une unité dédiée de médecine hyperbare"
 icon: "Building2"
 priority: "High"
 description:
@@ -12,6 +13,7 @@ description:
   de: "Aufbau einer spezialisierten Abteilung mit zertifizierten Hyperbarmedizinerinnen und -medizinern, geschultem Pflegepersonal und Hyperbar-Techniker:innen. Eine Mehrplatzkammer (6–12 Plätze) ermöglicht die gleichzeitige Behandlung mehrerer Patient:innen und das vollständige Monitoring kritisch kranker Patient:innen."
   it: "Creare un reparto specializzato con medici iperbarici certificati, personale infermieristico formato e tecnici iperbarici. Una camera multiposto (6–12 posti) consente il trattamento simultaneo di più pazienti e permette il monitoraggio completo dei pazienti critici."
   es: "Crear un servicio especializado dotado de médicos hiperbáricos certificados, personal de enfermería formado y técnicos hiperbáricos. Una cámara multiplaza (6–12 plazas) permite el tratamiento simultáneo de varios pacientes y posibilita la monitorización completa de los pacientes críticos."
+  fr: "Créer un service spécialisé doté de médecins hyperbaristes certifiés, d'infirmiers formés et de techniciens hyperbares. Un caisson multiplace (6–12 places) permet le traitement simultané de plusieurs patients et une surveillance complète des patients en état critique."
 actions:
   en:
     - "Recruit a board-certified hyperbaric medicine physician"
@@ -38,3 +40,8 @@ actions:
     - "Instalar una cámara multiplaza con plena capacidad de monitorización de UCI"
     - "Establecer protocolos de seguridad conformes con la UHMS y formación del personal"
     - "Integrar con los servicios existentes de cirugía y medicina interna"
+  fr:
+    - "Recruter un médecin certifié en médecine hyperbare"
+    - "Installer un caisson multiplace doté de capacités complètes de surveillance de soins intensifs"
+    - "Mettre en place des protocoles de sécurité conformes à l'UHMS et la formation du personnel"
+    - "Intégrer l'unité aux services de chirurgie et de médecine interne existants"

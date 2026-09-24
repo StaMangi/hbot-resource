@@ -4,6 +4,7 @@ title:
   de: "Antimikrobielle Wirkung"
   it: "Attività antimicrobica"
   es: "Actividad antimicrobiana"
+  fr: "Activité antimicrobienne"
 icon: "Shield"
 color: "teal"
 summary:
@@ -12,12 +13,14 @@ summary:
   de: "Hohe Sauerstoffspannungen verstärken die oxidative Abtötungskapazität der Leukozyten und sind für anaerobe Bakterien wie Clostridium perfringens unmittelbar tödlich."
   it: "Le elevate tensioni di ossigeno potenziano la capacità ossidativa di uccisione dei leucociti e sono direttamente letali per i batteri anaerobi come Clostridium perfringens."
   es: "Las elevadas tensiones de oxígeno potencian la capacidad oxidativa de destrucción de los leucocitos y son directamente letales para bacterias anaerobias como Clostridium perfringens."
+  fr: "Des pressions partielles d'oxygène élevées renforcent la capacité de destruction oxydative des leucocytes et sont directement létales pour les bactéries anaérobies telles que Clostridium perfringens."
 detail:
   en: "Oxygen is utilized by neutrophils and macrophages to generate reactive oxygen species (ROS) that destroy bacteria. HBOT is directly bactericidal to obligate anaerobes and enhances the efficacy of certain antibiotics, particularly aminoglycosides."
   el: "Το οξυγόνο χρησιμοποιείται από ουδετερόφιλα και μακροφάγα για παραγωγή δραστικών ειδών οξυγόνου (ROS) που καταστρέφουν βακτήρια. Η HBOT είναι άμεσα βακτηριοκτόνος για υποχρεωτικά αναερόβια και ενισχύει την αποτελεσματικότητα ορισμένων αντιβιοτικών, ιδίως αμινογλυκοσιδών."
   de: "Sauerstoff wird von Neutrophilen und Makrophagen zur Erzeugung reaktiver Sauerstoffspezies (ROS) genutzt, welche Bakterien zerstören. HBOT ist gegenüber obligat anaeroben Erregern unmittelbar bakterizid und verstärkt die Wirksamkeit bestimmter Antibiotika, insbesondere der Aminoglykoside."
   it: "L'ossigeno è utilizzato dai neutrofili e dai macrofagi per generare specie reattive dell'ossigeno (ROS) che distruggono i batteri. L'HBOT è direttamente battericida verso gli anaerobi obbligati e potenzia l'efficacia di alcuni antibiotici, in particolare degli aminoglicosidi."
   es: "El oxígeno es utilizado por los neutrófilos y los macrófagos para generar especies reactivas de oxígeno (ROS) que destruyen las bacterias. HBOT es directamente bactericida frente a los anaerobios obligados y potencia la eficacia de ciertos antibióticos, en particular los aminoglucósidos."
+  fr: "Les neutrophiles et les macrophages utilisent l'oxygène pour produire des espèces réactives de l'oxygène (ROS) qui détruisent les bactéries. L'HBOT est directement bactéricide pour les anaérobies stricts et renforce l'efficacité de certains antibiotiques, en particulier les aminosides."
 refs:
   - "[1]"
 updated: "2026-05-30"
@@ -27,9 +30,11 @@ answerBox:
   de: "Hyperbarer Sauerstoff hat direkte und indirekte antimikrobielle Wirkungen. Hohe Sauerstoffspannungen sind anaeroben Bakterien feindlich gesinnt und stärken den oxidativen „Burst\", den weiße Blutkörperchen zum Abtöten von Pathogenen einsetzen. Diese duale Wirkung untermauert die adjuvante Rolle der HBOT bei Gasbrand, nekrotisierenden Infektionen und refraktärer Osteomyelitis."
   it: "L'ossigeno iperbarico ha effetti antimicrobici diretti e indiretti. Le elevate pressioni di ossigeno sono ostili ai batteri anaerobi e potenziano la «esplosione» ossidativa che i globuli bianchi usano per uccidere i patogeni. Questa duplice azione sostiene il ruolo adiuvante della HBOT nella gangrena gassosa, nelle infezioni necrotizzanti e nell'osteomielite refrattaria."
   es: "El oxígeno hiperbárico tiene efectos antimicrobianos directos e indirectos. Las tensiones elevadas de oxígeno son hostiles para las bacterias anaerobias y refuerzan el «estallido» oxidativo que utilizan los glóbulos blancos para destruir patógenos. Esta acción dual sustenta el papel adyuvante de la HBOT en la gangrena gaseosa, las infecciones necrosantes y la osteomielitis refractaria."
+  fr: "L'oxygène hyperbare exerce des effets antimicrobiens directs et indirects. Des pressions partielles d'oxygène élevées sont hostiles aux bactéries anaérobies et renforcent la « flambée » oxydative que les globules blancs utilisent pour détruire les agents pathogènes. Cette double action sous-tend le rôle adjuvant de l'HBOT dans la gangrène gazeuse, les infections nécrosantes et l'ostéomyélite réfractaire."
 metaDescription:
   en: "HBOT's antimicrobial action: high oxygen tensions suppress anaerobic bacteria and boost the oxidative killing capacity of white blood cells."
   el: "Η αντιμικροβιακή δράση της HBOT: οι υψηλές πιέσεις οξυγόνου καταστέλλουν τα αναερόβια βακτήρια και ενισχύουν την οξειδωτική θανατηφόρα ικανότητα των λευκοκυττάρων."
   de: "Antimikrobielle Wirkung der HBOT: Hohe Sauerstoffspannungen unterdrücken anaerobe Bakterien und steigern die oxidative Abtötungskapazität weißer Blutkörperchen."
   it: "Azione antimicrobica della HBOT: alte pressioni di ossigeno sopprimono i batteri anaerobi e potenziano la capacità ossidativa di eliminazione dei globuli bianchi."
   es: "Acción antimicrobiana de la HBOT: tensiones elevadas de oxígeno suprimen las bacterias anaerobias y potencian la capacidad oxidativa de eliminación de los glóbulos blancos."
+  fr: "Action antimicrobienne de l'HBOT : des pressions partielles d'oxygène élevées freinent les bactéries anaérobies et renforcent la capacité de destruction oxydative des globules blancs."

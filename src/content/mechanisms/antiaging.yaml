@@ -4,6 +4,7 @@ title:
   de: "Anti-Aging & Zelluläre Regeneration"
   it: "Anti-invecchiamento & Rigenerazione cellulare"
   es: "Antienvejecimiento y regeneración celular"
+  fr: "Anti-âge et régénération cellulaire"
 icon: "RefreshCw"
 color: "teal"
 summary:
@@ -12,12 +13,14 @@ summary:
   de: "HBOT aktiviert die Telomerase, induziert senolytische Effekte, mobilisiert Stammzellen und verstärkt die antioxidative Abwehr über das hyperoxisch-hypoxische Paradoxon."
   it: "L'HBOT attiva la telomerasi, induce effetti senolitici, mobilizza le cellule staminali e potenzia le difese antiossidanti attraverso il paradosso iperossico-ipossico."
   es: "HBOT activa la telomerasa, induce efectos senolíticos, moviliza células madre y potencia las defensas antioxidantes a través de la paradoja hiperóxica-hipóxica."
+  fr: "L'HBOT active la télomérase, induit des effets sénolytiques, mobilise les cellules souches et renforce les défenses antioxydantes par le paradoxe hyperoxie-hypoxie."
 detail:
   en: "Repeated HBOT sessions activate telomerase (increasing telomere length by >20%), selectively eliminate senescent cells, mobilize bone marrow stem cells via NOS activation, and upregulate endogenous antioxidants (SOD, catalase, glutathione peroxidase) through hormetic stress responses."
   el: "Επαναλαμβανόμενες συνεδρίες HBOT ενεργοποιούν τελομεράση (αύξηση μήκους τελομερών >20%), εκλεκτικά εξαλείφουν γηρασμένα κύτταρα, κινητοποιούν βλαστοκύτταρα μυελού οστών μέσω ενεργοποίησης NOS και ανεβάζουν ενδογενή αντιοξειδωτικά (SOD, καταλάση, υπεροξειδάση γλουταθειόνης) μέσω ορμητικών αποκρίσεων στρες."
   de: "Wiederholte HBOT-Sitzungen aktivieren die Telomerase (Verlängerung der Telomere um >20 %), eliminieren selektiv seneszente Zellen, mobilisieren Knochenmark-Stammzellen über die NOS-Aktivierung und regulieren endogene Antioxidantien (SOD, Katalase, Glutathionperoxidase) durch hormetische Stressreaktionen hoch."
   it: "Sedute ripetute di HBOT attivano la telomerasi (aumentando la lunghezza dei telomeri di >20%), eliminano selettivamente le cellule senescenti, mobilizzano le cellule staminali del midollo osseo tramite l'attivazione della NOS e sovraregolano gli antiossidanti endogeni (SOD, catalasi, glutatione perossidasi) attraverso risposte ormetiche allo stress."
   es: "Las sesiones repetidas de HBOT activan la telomerasa (aumentando la longitud de los telómeros en >20%), eliminan selectivamente las células senescentes, movilizan células madre de la médula ósea mediante la activación de la NOS y sobrerregulan los antioxidantes endógenos (SOD, catalasa, glutatión peroxidasa) a través de respuestas horméticas al estrés."
+  fr: "Des séances d'HBOT répétées activent la télomérase (augmentant la longueur des télomères de plus de 20 %), éliminent sélectivement les cellules sénescentes, mobilisent les cellules souches de la moelle osseuse via l'activation de la NOS et augmentent l'expression des antioxydants endogènes (SOD, catalase, glutathion peroxydase) par des réponses hormétiques au stress."
 refs:
   - "[3]"
   - "[5]"
@@ -30,9 +33,11 @@ answerBox:
   de: "Auf zellulärer Ebene aktiviert hyperbarer Sauerstoff regenerative Signalwege über das „hyperoxisch-hypoxische Paradoxon\" — intermittierende Sauerstoffspitzen, die einige Signale niedrigen Sauerstoffs imitieren. Untersuchte Wirkungen umfassen die Aktivierung der Telomerase, die Beseitigung seneszenter Zellen, die Mobilisierung von Stammzellen und die Stärkung antioxidativer Abwehrmechanismen — die mechanistische Grundlage für die HBOT-Forschung zur Langlebigkeit."
   it: "A livello cellulare, l'ossigeno iperbarico attiva percorsi rigenerativi attraverso il «paradosso iperossico-ipossico» — picchi intermittenti di ossigeno che mimano alcuni segnali di basso ossigeno. Gli effetti studiati includono l'attivazione della telomerasi, l'eliminazione delle cellule senescenti, la mobilizzazione delle cellule staminali e il potenziamento delle difese antiossidanti, costituendo la base meccanicistica della ricerca HBOT in ambito longevità."
   es: "A nivel celular, el oxígeno hiperbárico activa vías regenerativas a través de la «paradoja hiperóxica-hipóxica» — picos intermitentes de oxígeno que imitan algunas señales de bajo oxígeno. Los efectos estudiados incluyen la activación de la telomerasa, la eliminación de células senescentes, la movilización de células madre y el refuerzo de las defensas antioxidantes, conformando la base mecanística de la investigación de la HBOT en longevidad."
+  fr: "Au niveau cellulaire, l'oxygène hyperbare active des voies régénératives par le « paradoxe hyperoxie-hypoxie » — des pics intermittents d'oxygène qui imitent certains signaux du manque d'oxygène. Les effets étudiés comprennent l'activation de la télomérase, l'élimination des cellules sénescentes, la mobilisation des cellules souches et le renforcement des défenses antioxydantes, qui constituent la base mécanistique des recherches sur l'HBOT et la longévité."
 metaDescription:
   en: "Hyperbaric oxygen and cellular regeneration: the hyperoxic-hypoxic paradox activates telomerase, clears senescent cells, and mobilises stem cells."
   el: "Υπερβαρικό οξυγόνο και κυτταρική αναγέννηση: το υπεροξικό-υποξικό παράδοξο ενεργοποιεί την τελομεράση, καθαρίζει γηρασμένα κύτταρα και κινητοποιεί βλαστικά κύτταρα."
   de: "Hyperbarer Sauerstoff und zelluläre Regeneration: Das hyperoxisch-hypoxische Paradoxon aktiviert die Telomerase, beseitigt seneszente Zellen und mobilisiert Stammzellen."
   it: "Ossigeno iperbarico e rigenerazione cellulare: il paradosso iperossico-ipossico attiva la telomerasi, elimina cellule senescenti e mobilita cellule staminali."
   es: "Oxígeno hiperbárico y regeneración celular: la paradoja hiperóxica-hipóxica activa la telomerasa, elimina células senescentes y moviliza células madre."
+  fr: "Oxygène hyperbare et régénération cellulaire : le paradoxe hyperoxie-hypoxie active la télomérase, élimine les cellules sénescentes et mobilise les cellules souches."

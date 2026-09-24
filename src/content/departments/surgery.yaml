@@ -4,6 +4,7 @@ name:
   de: "Chirurgischer Bereich"
   it: "Settore chirurgico"
   es: "Sector de cirugía"
+  fr: "Chirurgie"
 icon: "Scissors"
 color: "#0e7490"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Orthopädie, Plastische, Herz-Thorax-, Gefäßchirurgie"
   it: "Ortopedia, plastica, cardiotoracica, vascolare"
   es: "Ortopedia, plástica, cardiotorácica, vascular"
+  fr: "Orthopédie, chirurgie plastique, cardiothoracique, vasculaire"
 applications:
   - title:
       en: "Refractory Osteomyelitis"
@@ -19,6 +21,7 @@ applications:
       de: "Refraktäre Osteomyelitis"
       it: "Osteomielite refrattaria"
       es: "Osteomielitis refractaria"
+      fr: "Ostéomyélite réfractaire"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Adjuvante Standardtherapie bei chronischer Osteomyelitis, die auf konventionelle Therapie nicht anspricht. HBOT verstärkt die Leukozyten-Abtötung in avaskulärem Knochen und fördert die Neovaskularisation."
       it: "Trattamento adiuvante standard di cura per l'osteomielite cronica non responsiva alla terapia convenzionale. L'HBOT potenzia l'azione battericida dei leucociti nell'osso avascolare e promuove la neovascolarizzazione."
       es: "Tratamiento adyuvante estándar de atención para la osteomielitis crónica que no responde a la terapia convencional. La HBOT potencia la acción bactericida de los leucocitos en el hueso avascular y promueve la neovascularización."
+      fr: "Traitement adjuvant de référence de l'ostéomyélite chronique ne répondant pas aux traitements conventionnels. L'HBOT renforce l'activité bactéricide des leucocytes dans l'os avasculaire et favorise la néovascularisation."
     evidence: "Level A"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
         es: "30 – 60"
+        fr: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
   - title:
@@ -67,6 +76,7 @@ applications:
       de: "Quetschverletzungen & Kompartmentsyndrom"
       it: "Lesioni da schiacciamento e sindrome compartimentale"
       es: "Lesiones por aplastamiento y síndrome compartimental"
+      fr: "Écrasements et syndrome des loges"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -75,6 +85,7 @@ applications:
       de: "Zugelassen bei akuten traumatischen Ischämien. Reduziert post-ischämische Ödeme und erhält gefährdetes Gewebe bei schweren Quetschverletzungen."
       it: "Approvata per le ischemie traumatiche acute. Riduce l'edema post-ischemico e preserva il tessuto a rischio nelle lesioni da schiacciamento gravi."
       es: "Aprobada para las isquemias traumáticas agudas. Reduce el edema posisquémico y preserva el tejido en riesgo en las lesiones por aplastamiento graves."
+      fr: "Approuvée dans les ischémies traumatiques aiguës. Réduit l'œdème post-ischémique et préserve les tissus menacés dans les écrasements graves."
     evidence: "Level A"
     protocol:
       ata:
@@ -83,30 +94,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
         es: "10 – 20"
+        fr: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
   - title:
@@ -115,6 +131,7 @@ applications:
       de: "Gefährdete Hauttransplantate & Lappen"
       it: "Innesti cutanei e lembi compromessi"
       es: "Injertos cutáneos y colgajos comprometidos"
+      fr: "Greffes cutanées et lambeaux compromis"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -123,6 +140,7 @@ applications:
       de: "Salvage-Therapie bei ischämischen rekonstruktiven Lappen und Hauttransplantaten. Reduziert die hypoxische Nekrose durch verbesserte Gewebsoxygenierung und Angiogenese."
       it: "Terapia di salvataggio per lembi ricostruttivi e innesti cutanei ischemici. Riduce la necrosi ipossica attraverso una migliore ossigenazione tissutale e l'angiogenesi."
       es: "Terapia de rescate para colgajos reconstructivos e injertos cutáneos isquémicos. Reduce la necrosis hipóxica mediante una mejor oxigenación tisular y la angiogénesis."
+      fr: "Traitement de sauvetage des lambeaux de reconstruction et des greffes cutanées ischémiques. Réduit la nécrose hypoxique grâce à une meilleure oxygénation tissulaire et à l'angiogenèse."
     evidence: "Level B"
     protocol:
       ata:
@@ -131,30 +149,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
   - title:
@@ -163,6 +186,7 @@ applications:
       de: "Postoperative Erholung (Knie-TEP)"
       it: "Recupero postoperatorio (TKA)"
       es: "Recuperación postoperatoria (TKA)"
+      fr: "Récupération postopératoire (PTG)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -171,6 +195,7 @@ applications:
       de: "Aufkommende Evidenz zeigt, dass HBOT die Erholung beschleunigt und Muskelschäden nach Knie-Totalendoprothese (TEP) und größeren orthopädischen Eingriffen reduziert."
       it: "Evidenze emergenti mostrano che l'HBOT accelera il recupero e riduce il danno muscolare dopo l'artroplastica totale di ginocchio e i principali interventi ortopedici."
       es: "La evidencia emergente muestra que la HBOT acelera la recuperación y reduce el daño muscular tras la artroplastia total de rodilla y los principales procedimientos ortopédicos."
+      fr: "Des données émergentes montrent que l'HBOT accélère la récupération et réduit les lésions musculaires après une arthroplastie totale du genou et les interventions orthopédiques majeures."
     evidence: "Level B"
     protocol:
       ata:
@@ -179,30 +204,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
         es: "10 – 20"
+        fr: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+        fr: "Recherche clinique"
     refs:
       - "[10]"
   - title:
@@ -211,6 +241,7 @@ applications:
       de: "Thermische Verbrennungen"
       it: "Ustioni termiche"
       es: "Quemaduras térmicas"
+      fr: "Brûlures thermiques"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -219,6 +250,7 @@ applications:
       de: "Adjuvante Behandlung akuter thermischer Verbrennungen. Reduziert Ödeme, fördert die Epithelialisierung und verringert das Infektionsrisiko."
       it: "Trattamento adiuvante per le ustioni termiche acute. Riduce l'edema, promuove l'epitelizzazione e diminuisce il rischio di infezione."
       es: "Tratamiento adyuvante para las quemaduras térmicas agudas. Reduce el edema, promueve la epitelización y disminuye el riesgo de infección."
+      fr: "Traitement adjuvant des brûlures thermiques aiguës. Réduit l'œdème, favorise l'épithélialisation et diminue le risque infectieux."
     evidence: "Level B"
     protocol:
       ata:
@@ -227,30 +259,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once or twice daily"
         el: "Μία ή δύο φορές την ημέρα"
         de: "Einmal oder zweimal täglich"
         it: "Una o due volte al giorno"
         es: "Una o dos veces al día"
+        fr: "Une ou deux fois par jour"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     indicationSlug: "acute-thermal-burns"
     refs:
       - "[1]"
@@ -263,6 +300,7 @@ applications:
       de: "Therapeutische Angiogenese (kardial)"
       it: "Angiogenesi terapeutica (cardiaca)"
       es: "Angiogénesis terapéutica (cardiaca)"
+      fr: "Angiogenèse thérapeutique (cardiaque)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -271,6 +309,7 @@ applications:
       de: "Investigative Anwendung bei chronischer stabiler ischämischer Herzkrankheit und Verbesserung der linksventrikulären Funktion nach Myokardinfarkt durch VEGF-vermittelte Angiogenese."
       it: "Uso sperimentale per la cardiopatia ischemica cronica stabile e il miglioramento della funzione ventricolare sinistra post-infarto miocardico attraverso l'angiogenesi mediata da VEGF."
       es: "Uso experimental para la cardiopatía isquémica crónica estable y la mejora de la función ventricular izquierda tras infarto de miocardio mediante la angiogénesis mediada por VEGF."
+      fr: "Utilisation expérimentale dans la cardiopathie ischémique chronique stable et pour l'amélioration de la fonction ventriculaire gauche après un infarctus du myocarde, par une angiogenèse médiée par le VEGF."
     evidence: "Level C"
     protocol:
       ata:
@@ -279,30 +318,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
         es: "30 – 40"
+        fr: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
         es: "Experimental"
+        fr: "Expérimental"
     refs:
       - "[12]"
 updated: "2026-05-30"
@@ -312,3 +356,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie über chirurgische Fachgebiete hinweg — Orthopädie, plastische, kardiothorakale und Gefäßchirurgie — zur Unterstützung der Wundheilung, des Anwachsens von Transplantaten und der postoperativen Erholung."
   it: "Ossigenoterapia iperbarica nelle specialità chirurgiche — ortopedica, plastica, cardiotoracica e vascolare — a sostegno della guarigione delle ferite, della sopravvivenza degli innesti e del recupero postoperatorio."
   es: "Oxigenoterapia hiperbárica en las especialidades quirúrgicas — ortopédica, plástica, cardiotorácica y vascular — para apoyar la cicatrización de heridas, la supervivencia de injertos y la recuperación postoperatoria."
+  fr: "Oxygénothérapie hyperbare dans les spécialités chirurgicales — orthopédique, plastique, cardiothoracique et vasculaire — pour soutenir la cicatrisation des plaies, la survie des greffons et la récupération postopératoire."

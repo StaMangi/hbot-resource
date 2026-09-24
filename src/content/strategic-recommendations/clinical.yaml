@@ -4,6 +4,7 @@ title:
   de: "Protokolle der klinischen Integration"
   it: "Protocolli di integrazione clinica"
   es: "Protocolos de integración clínica"
+  fr: "Protocoles d'intégration clinique"
 icon: "ClipboardList"
 priority: "High"
 description:
@@ -12,6 +13,7 @@ description:
   de: "Entwicklung standardisierter Zuweisungspfade von den Abteilungen Chirurgie, Innere Medizin, Onkologie und Geriatrie für FDA-zugelassene Indikationen. Etablierung eines transkutanen Oxymetrie-Screenings für Wundpatient:innen."
   it: "Sviluppare percorsi di invio standardizzati dai reparti di Chirurgia, Medicina interna, Oncologia e Geriatria per le indicazioni approvate dalla FDA. Istituire lo screening con ossimetria transcutanea per i pazienti con cura delle ferite."
   es: "Desarrollar vías de derivación estandarizadas desde los servicios de Cirugía, Medicina interna, Oncología y Geriatría para las indicaciones aprobadas por la FDA. Establecer el cribado mediante oximetría transcutánea para los pacientes con cuidado de heridas."
+  fr: "Mettre en place des filières d'orientation standardisées depuis les services de chirurgie, de médecine interne, d'oncologie et de gériatrie pour les indications approuvées par la FDA. Instaurer un dépistage par oxymétrie transcutanée pour les patients pris en charge pour des plaies."
 actions:
   en:
     - "Diabetic foot ulcer pathway with Endocrinology"
@@ -38,3 +40,8 @@ actions:
     - "Protocolo de lesión por radiación con Oncología y la Unidad de mama"
     - "Protocolo de urgencia para la hipoacusia aguda con Otorrinolaringología"
     - "Vía de derivación para la osteomielitis con Traumatología"
+  fr:
+    - "Filière ulcère du pied diabétique avec l'endocrinologie"
+    - "Protocole lésions radiques avec l'oncologie et le centre de sénologie"
+    - "Protocole d'urgence pour la perte auditive aiguë avec l'ORL"
+    - "Filière d'orientation pour l'ostéomyélite avec l'orthopédie"

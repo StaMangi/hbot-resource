@@ -19,6 +19,9 @@ const bilingual = z.object({
   // Phase 7.C (Spanish) closed at its Stage 6 — `es` now REQUIRED at build
   // time, matching EN/EL/DE/IT. The build fails if any entry is missing `es`.
   es: z.string(),
+  // Phase 7.D (French) — `fr` REQUIRED, matching EN/EL/DE/IT/ES. The build
+  // fails if any entry is missing `fr`.
+  fr: z.string(),
 });
 
 const bilingualStringArray = z.object({
@@ -27,6 +30,7 @@ const bilingualStringArray = z.object({
   de: z.array(z.string()),
   it: z.array(z.string()),
   es: z.array(z.string()),
+  fr: z.array(z.string()),
 });
 
 const protocol = z.object({

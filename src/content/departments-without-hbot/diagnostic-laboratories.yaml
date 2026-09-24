@@ -4,6 +4,7 @@ name:
   de: "Diagnostische Labore"
   it: "Laboratori diagnostici"
   es: "Laboratorios diagnósticos"
+  fr: "Laboratoires de diagnostic"
 icon: "FlaskConical"
 rationale:
   en: "Diagnostic laboratories (Microbiology, Hematology, Biochemistry) are analytical entities that process specimens and generate results. While HBOT relies on these departments for patient assessment — including transcutaneous oximetry and microbiological wound cultures — the therapy itself is not applied within these disciplines. No current evidence supports HBOT as a diagnostic modality."
@@ -11,9 +12,11 @@ rationale:
   de: "Diagnostische Labore (Mikrobiologie, Hämatologie, Biochemie) sind analytische Einheiten, die Proben verarbeiten und Ergebnisse erzeugen. Obwohl HBOT für die Patientenbeurteilung auf diese Abteilungen angewiesen ist — einschließlich transkutaner Oxymetrie und mikrobiologischer Wundkulturen — wird die Therapie selbst nicht innerhalb dieser Fachgebiete angewendet. Es liegt derzeit keine Evidenz vor, die HBOT als diagnostische Modalität unterstützt."
   it: "I laboratori diagnostici (Microbiologia, Ematologia, Biochimica) sono entità analitiche che processano i campioni e generano risultati. Sebbene l'HBOT si avvalga di questi reparti per la valutazione del paziente — inclusa l'ossimetria transcutanea e le colture microbiologiche delle ferite — la terapia stessa non viene applicata all'interno di queste discipline. Nessuna evidenza attuale supporta l'HBOT come modalità diagnostica."
   es: "Los laboratorios diagnósticos (Microbiología, Hematología, Bioquímica) son entidades analíticas que procesan muestras y generan resultados. Aunque HBOT depende de estos servicios para la evaluación del paciente — incluida la oximetría transcutánea y los cultivos microbiológicos de heridas —, la terapia en sí no se aplica dentro de estas disciplinas. No existe evidencia actual que respalde HBOT como modalidad diagnóstica."
+  fr: "Les laboratoires de diagnostic (microbiologie, hématologie, biochimie) sont des entités analytiques qui traitent des échantillons et produisent des résultats. Si l'HBOT s'appuie sur ces services pour l'évaluation des patients — notamment l'oxymétrie transcutanée et les cultures microbiologiques de plaies —, la thérapie elle-même n'est pas appliquée dans ces disciplines. Aucune donnée actuelle n'étaye l'HBOT en tant que modalité diagnostique."
 role:
   en: "Supportive — provides pre/post HBOT biomarker assessment"
   el: "Υποστηρικτικός — παρέχει αξιολόγηση βιοδεικτών πριν/μετά HBOT"
   de: "Unterstützend — liefert Biomarker-Beurteilung vor/nach HBOT"
   it: "Di supporto — fornisce la valutazione dei biomarcatori prima/dopo l'HBOT"
   es: "De apoyo — proporciona la evaluación de biomarcadores antes/después de HBOT"
+  fr: "Soutien — fournit l'évaluation des biomarqueurs avant/après HBOT"

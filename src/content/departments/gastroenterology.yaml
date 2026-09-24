@@ -4,6 +4,7 @@ name:
   de: "Gastroenterologie"
   it: "Gastroenterologia"
   es: "Gastroenterología"
+  fr: "Gastro-entérologie"
 icon: "Stethoscope"
 color: "#0f766e"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "CED, Colitis ulcerosa, Morbus Crohn"
   it: "MICI, colite ulcerosa, malattia di Crohn"
   es: "EII, colitis ulcerosa, enfermedad de Crohn"
+  fr: "MICI, rectocolite hémorragique, maladie de Crohn"
 applications:
   - title:
       en: "Ulcerative Colitis"
@@ -19,6 +21,7 @@ applications:
       de: "Colitis ulcerosa"
       it: "Colite ulcerosa"
       es: "Colitis ulcerosa"
+      fr: "Rectocolite hémorragique"
     type: "Research"
     typeColor: "blue"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Systematische Übersichtsarbeiten weisen darauf hin, dass HBOT bei akuter schwerer Colitis ulcerosa, die auf konventionelle Therapie nicht anspricht, Ansprechraten von über 80 % erzielen kann, indem die chronische intestinale Hypoxie umgekehrt wird."
       it: "Le revisioni sistematiche indicano che l'HBOT può raggiungere tassi di risposta superiori all'80% nella colite ulcerosa grave acuta refrattaria alla terapia convenzionale, invertendo l'ipossia intestinale cronica."
       es: "Las revisiones sistemáticas indican que la HBOT puede alcanzar tasas de respuesta superiores al 80% en la colitis ulcerosa grave aguda refractaria a la terapia convencional, revirtiendo la hipoxia intestinal crónica."
+      fr: "Des revues systématiques indiquent que l'HBOT peut atteindre des taux de réponse supérieurs à 80 % dans la rectocolite hémorragique aiguë grave réfractaire aux traitements conventionnels, en corrigeant l'hypoxie intestinale chronique."
     evidence: "Level B"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
         es: "Metaanálisis de Nivel A"
+        fr: "Méta-analyse de niveau A"
     refs:
       - "[14]"
   - title:
@@ -67,6 +76,7 @@ applications:
       de: "Morbus Crohn"
       it: "Malattia di Crohn"
       es: "Enfermedad de Crohn"
+      fr: "Maladie de Crohn"
     type: "Research"
     typeColor: "blue"
     description:
@@ -75,6 +85,7 @@ applications:
       de: "Meta-Analysen belegen eine signifikante Schleimhautheilung und klinische Remission bei mit HBOT behandelten Morbus-Crohn-Patienten, insbesondere bei perianaler fistelbildender Erkrankung."
       it: "Le metanalisi dimostrano una significativa guarigione della mucosa e una remissione clinica nei pazienti con malattia di Crohn trattati con HBOT, in particolare per la malattia fistolizzante perianale."
       es: "Los metaanálisis demuestran una cicatrización significativa de la mucosa y una remisión clínica en pacientes con enfermedad de Crohn tratados con HBOT, en particular en la enfermedad fistulizante perianal."
+      fr: "Des méta-analyses démontrent une cicatrisation muqueuse et une rémission clinique significatives chez les patients atteints de maladie de Crohn traités par HBOT, en particulier dans la forme fistulisante périanale."
     evidence: "Level B"
     protocol:
       ata:
@@ -83,30 +94,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
         es: "Metaanálisis de Nivel A"
+        fr: "Méta-analyse de niveau A"
     refs:
       - "[14]"
   - title:
@@ -115,6 +131,7 @@ applications:
       de: "Chronisch-entzündliche Darmerkrankung (CED)"
       it: "Malattia infiammatoria intestinale (IBD)"
       es: "Enfermedad inflamatoria intestinal (EII)"
+      fr: "Maladies inflammatoires chroniques de l'intestin (MICI)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -123,6 +140,7 @@ applications:
       de: "HBOT kehrt die chronische intestinale Hypoxie um, reduziert die Schleimhautentzündung und fördert die epitheliale Heilung. Sie gilt als vielversprechende adjuvante Therapie zur CED-Behandlung."
       it: "L'HBOT inverte l'ipossia intestinale cronica, riduce l'infiammazione della mucosa e promuove la guarigione epiteliale. È considerata una terapia adiuvante promettente per la gestione dell'IBD."
       es: "La HBOT revierte la hipoxia intestinal crónica, reduce la inflamación de la mucosa y promueve la cicatrización epitelial. Se considera una terapia adyuvante prometedora para el manejo de la EII."
+      fr: "L'HBOT corrige l'hypoxie intestinale chronique, réduit l'inflammation muqueuse et favorise la cicatrisation épithéliale. Elle est considérée comme un traitement adjuvant prometteur dans la prise en charge des MICI."
     evidence: "Level B"
     protocol:
       ata:
@@ -131,30 +149,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Level A Meta-Analysis"
         el: "Μετα-Ανάλυση Επιπέδου Α"
         de: "Meta-Analyse Stufe A"
         it: "Metanalisi di Livello A"
         es: "Metaanálisis de Nivel A"
+        fr: "Méta-analyse de niveau A"
     refs:
       - "[14]"
 updated: "2026-05-30"
@@ -164,3 +187,4 @@ metaDescription:
   de: "HBOT in der Gastroenterologie — aufkommende, in Erprobung befindliche Forschung bei chronisch-entzündlichen Darmerkrankungen, einschließlich Colitis ulcerosa und Morbus Crohn."
   it: "HBOT in gastroenterologia — ricerca emergente e sperimentale nelle malattie infiammatorie intestinali, tra cui colite ulcerosa e malattia di Crohn."
   es: "HBOT en gastroenterología — investigación emergente e investigacional en la enfermedad inflamatoria intestinal, incluidas la colitis ulcerosa y la enfermedad de Crohn."
+  fr: "HBOT en gastro-entérologie — recherche émergente et expérimentale dans les maladies inflammatoires chroniques de l'intestin, notamment la rectocolite hémorragique et la maladie de Crohn."

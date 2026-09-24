@@ -4,6 +4,7 @@ name:
   de: "Augenheilkunde"
   it: "Oftalmologia"
   es: "Oftalmología"
+  fr: "Ophtalmologie"
 icon: "Eye"
 color: "#4f46e5"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Netzhautarterienverschluss, retinale Ischämie"
   it: "Occlusione dell'arteria retinica, ischemia retinica"
   es: "Oclusión de la arteria retiniana, isquemia retiniana"
+  fr: "Occlusion de l'artère rétinienne, ischémie rétinienne"
 applications:
   - title:
       en: "Central Retinal Artery Occlusion (CRAO)"
@@ -19,6 +21,7 @@ applications:
       de: "Zentralarterienverschluss der Netzhaut (ZAV)"
       it: "Occlusione dell'arteria centrale della retina (CRAO)"
       es: "Oclusión de la arteria central de la retina (CRAO)"
+      fr: "Occlusion de l'artère centrale de la rétine (OACR)"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "FDA-zugelassene Notfallbehandlung. Eine frühzeitige HBOT-Intervention (innerhalb von 24 Stunden) erhält die Netzhautschichten und verbessert die Sehschärfe durch Umkehr der akuten retinalen Ischämie."
       it: "Trattamento d'emergenza approvato dalla FDA. L'intervento precoce con HBOT (entro 24 ore) preserva gli strati retinici e migliora l'acuità visiva invertendo l'ischemia retinica acuta."
       es: "Tratamiento de urgencia aprobado por la FDA. La intervención precoz con HBOT (en las primeras 24 horas) preserva las capas retinianas y mejora la agudeza visual al revertir la isquemia retiniana aguda."
+      fr: "Traitement d'urgence approuvé par la FDA. Une intervention précoce par HBOT (dans les 24 heures) préserve les couches rétiniennes et améliore l'acuité visuelle en corrigeant l'ischémie rétinienne aiguë."
     evidence: "Level B"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.8 ATA"
         it: "2.0 – 2.8 ATA"
         es: "2.0 – 2.8 ATA"
+        fr: "2.0 – 2.8 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "1 – 3 (emergency)"
         el: "1 – 3 (επείγον)"
         de: "1 – 3 (Notfall)"
         it: "1 – 3 (emergenza)"
         es: "1 – 3 (urgencia)"
+        fr: "1 – 3 (urgence)"
       frequency:
         en: "Immediately, then daily"
         el: "Αμέσως, μετά καθημερινά"
         de: "Sofort, dann täglich"
         it: "Immediatamente, poi quotidiano"
         es: "De inmediato, luego diariamente"
+        fr: "Immédiatement, puis quotidiennement"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
       - "[19]"
@@ -68,6 +77,7 @@ applications:
       de: "Diabetische Retinopathie"
       it: "Retinopatia diabetica"
       es: "Retinopatía diabética"
+      fr: "Rétinopathie diabétique"
     type: "Research"
     typeColor: "orange"
     description:
@@ -76,6 +86,7 @@ applications:
       de: "Investigative Anwendung bei früher diabetischer Retinopathie. HBOT kann die retinale Hypoxie reduzieren und das Fortschreiten vaskulärer Veränderungen verlangsamen."
       it: "Uso sperimentale per la retinopatia diabetica in fase iniziale. L'HBOT può ridurre l'ipossia retinica e rallentare la progressione delle alterazioni vascolari."
       es: "Uso experimental para la retinopatía diabética en fase inicial. La HBOT puede reducir la hipoxia retiniana y ralentizar la progresión de las alteraciones vasculares."
+      fr: "Utilisation expérimentale dans la rétinopathie diabétique à un stade précoce. L'HBOT peut réduire l'hypoxie rétinienne et ralentir la progression des altérations vasculaires."
     evidence: "Level C"
     protocol:
       ata:
@@ -84,30 +95,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
         es: "Experimental"
+        fr: "Expérimental"
     refs:
       - "[2]"
 updated: "2026-05-30"
@@ -117,3 +133,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der Augenheilkunde — FDA-zugelassene Notfalltherapie beim Zentralarterienverschluss der Netzhaut und weiteren Ursachen retinaler Ischämie."
   it: "Ossigenoterapia iperbarica in oftalmologia — trattamento d'emergenza approvato dalla FDA per l'occlusione dell'arteria centrale della retina e altre cause di ischemia retinica."
   es: "Oxigenoterapia hiperbárica en oftalmología — tratamiento de urgencia aprobado por la FDA para la oclusión de la arteria central de la retina y otras causas de isquemia retiniana."
+  fr: "Oxygénothérapie hyperbare en ophtalmologie — traitement d'urgence approuvé par la FDA de l'occlusion de l'artère centrale de la rétine et d'autres causes d'ischémie rétinienne."

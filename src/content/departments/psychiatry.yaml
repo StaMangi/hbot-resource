@@ -4,6 +4,7 @@ name:
   de: "Psychiatrie & Psychologie"
   it: "Psichiatria e psicologia"
   es: "Psiquiatría y psicología"
+  fr: "Psychiatrie et psychologie"
 icon: "HeartHandshake"
 color: "#be185d"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "PTBS, Depression, Angststörungen"
   it: "PTSD, depressione, ansia"
   es: "TEPT, depresión, ansiedad"
+  fr: "TSPT, dépression, anxiété"
 applications:
   - title:
       en: "Post-Traumatic Stress Disorder (PTSD)"
@@ -19,6 +21,7 @@ applications:
       de: "Posttraumatische Belastungsstörung (PTBS)"
       it: "Disturbo da stress post-traumatico (PTSD)"
       es: "Trastorno de estrés postraumático (TEPT)"
+      fr: "Trouble de stress post-traumatique (TSPT)"
     type: "Research"
     typeColor: "blue"
     indicationSlug: "post-traumatic-stress-disorder"
@@ -28,6 +31,7 @@ applications:
       de: "Klinische Studien belegen, dass HBOT die Funktionalität der Hirn-Mikrostruktur verbessert und PTBS-Symptome bei Veteranen mit therapieresistenter PTBS lindert. Signifikante Verbesserungen der PTBS-Checklisten-Scores."
       it: "Studi clinici dimostrano che l'HBOT migliora la funzionalità della microstruttura cerebrale e allevia i sintomi del PTSD nei veterani con PTSD resistente al trattamento. Miglioramenti significativi nei punteggi della checklist del PTSD."
       es: "Los ensayos clínicos demuestran que la HBOT mejora la funcionalidad de la microestructura cerebral y alivia los síntomas del TEPT en veteranos con TEPT resistente al tratamiento. Mejoras significativas en las puntuaciones de la lista de verificación del TEPT."
+      fr: "Des essais cliniques démontrent que l'HBOT améliore la fonctionnalité de la microstructure cérébrale et atténue les symptômes du TSPT chez des vétérans atteints de TSPT résistant au traitement. Améliorations significatives des scores à la PTSD Checklist."
     evidence: "Level B"
     protocol:
       ata:
@@ -36,30 +40,35 @@ applications:
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
         es: "1.5 – 2.0 ATA"
+        fr: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Level B Evidence (RCT)"
         el: "Τεκμηρίωση Επιπέδου Β (ΤΕΔ)"
         de: "Evidenz Stufe B (RKS)"
         it: "Evidenza di Livello B (RCT)"
         es: "Evidencia de Nivel B (ECA)"
+        fr: "Niveau de preuve B (ECR)"
     refs:
       - "[45]"
   - title:
@@ -68,6 +77,7 @@ applications:
       de: "Therapieresistente Depression"
       it: "Depressione resistente al trattamento"
       es: "Depresión resistente al tratamiento"
+      fr: "Dépression résistante au traitement"
     type: "Research"
     typeColor: "orange"
     description:
@@ -76,6 +86,7 @@ applications:
       de: "Aufkommende Forschung untersucht HBOT bei therapieresistenter Depression über die Förderung der Neuroplastizität, die Hochregulation von BDNF und die Reduktion der Neuroinflammation."
       it: "La ricerca emergente studia l'HBOT per la depressione resistente al trattamento attraverso il potenziamento della neuroplasticità, l'aumento del BDNF e la riduzione della neuroinfiammazione."
       es: "La investigación emergente estudia la HBOT para la depresión resistente al tratamiento mediante el potenciamiento de la neuroplasticidad, el aumento del BDNF y la reducción de la neuroinflamación."
+      fr: "Des recherches émergentes étudient l'HBOT dans la dépression résistante au traitement, par le renforcement de la neuroplasticité, l'augmentation de l'expression du BDNF et la réduction de la neuro-inflammation."
     evidence: "Level C"
     protocol:
       ata:
@@ -84,30 +95,35 @@ applications:
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
         es: "1.5 – 2.0 ATA"
+        fr: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
         es: "Experimental"
+        fr: "Expérimental"
     refs:
       - "[8]"
 updated: "2026-05-30"
@@ -117,3 +133,4 @@ metaDescription:
   de: "HBOT in der Psychiatrie — aufkommende, in Erprobung befindliche Forschung bei PTSD, Depression und Angststörungen, mit Evidenzgraden und Vorbehalten zur Einzel-Forschungsgruppe je Erkrankung."
   it: "HBOT in psichiatria — ricerca emergente e sperimentale su PTSD, depressione e ansia, con i livelli di evidenza e i caveat di gruppo singolo indicati per ciascuna condizione."
   es: "HBOT en psiquiatría — investigación emergente e investigacional en PTSD, depresión y ansiedad, con los niveles de evidencia y los caveats de grupo único indicados para cada condición."
+  fr: "HBOT en psychiatrie — recherche émergente et expérimentale dans le TSPT, la dépression et l'anxiété, avec les niveaux de preuve et les réserves liées à un groupe de recherche unique indiqués pour chaque affection."

@@ -4,6 +4,7 @@ name:
   de: "Hepatologie"
   it: "Epatologia"
   es: "Hepatología"
+  fr: "Hépatologie"
 icon: "Layers"
 rationale:
   en: "While preclinical research is emerging on HBOT for liver regeneration and hepatic ischemia-reperfusion injury, this has not yet translated to established clinical practice. Liver transplant centers have explored HBOT as a preservation strategy, but this remains strictly investigational with no approved protocols."
@@ -11,9 +12,11 @@ rationale:
   de: "Es entsteht zwar präklinische Forschung zu HBOT bei der Leberregeneration und der hepatischen Ischämie-Reperfusionsschädigung, doch hat sich dies bislang nicht in eine etablierte klinische Praxis übersetzt. Lebertransplantationszentren haben HBOT als Konservierungsstrategie erforscht, dies bleibt jedoch streng investigativ und es existieren keine zugelassenen Protokolle."
   it: "Sebbene stia emergendo la ricerca preclinica sull'HBOT per la rigenerazione epatica e il danno epatico da ischemia-riperfusione, ciò non si è ancora tradotto in una pratica clinica consolidata. I centri di trapianto di fegato hanno esplorato l'HBOT come strategia di conservazione, ma ciò rimane strettamente sperimentale, senza protocolli approvati."
   es: "Aunque está surgiendo investigación preclínica sobre HBOT para la regeneración hepática y el daño hepático por isquemia-reperfusión, esto aún no se ha traducido en una práctica clínica consolidada. Los centros de trasplante hepático han explorado HBOT como estrategia de conservación, pero esto sigue siendo estrictamente experimental, sin protocolos aprobados."
+  fr: "Bien que des recherches précliniques émergent sur l'HBOT dans la régénération hépatique et les lésions hépatiques d'ischémie-reperfusion, elles ne se sont pas encore traduites en pratique clinique établie. Des centres de transplantation hépatique ont exploré l'HBOT comme stratégie de préservation, mais cela reste strictement expérimental, sans protocole approuvé."
 role:
   en: "Preclinical research only; no established clinical protocols"
   el: "Μόνο προκλινική έρευνα· δεν υπάρχουν καθιερωμένα κλινικά πρωτόκολλα"
   de: "Nur präklinische Forschung; keine etablierten klinischen Protokolle"
   it: "Solo ricerca preclinica; nessun protocollo clinico consolidato"
   es: "Solo investigación preclínica; ningún protocolo clínico consolidado"
+  fr: "Recherche préclinique uniquement ; aucun protocole clinique établi"

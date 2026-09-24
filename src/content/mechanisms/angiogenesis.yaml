@@ -4,6 +4,7 @@ title:
   de: "Neovaskularisation & Angiogenese"
   it: "Neovascolarizzazione & Angiogenesi"
   es: "Neovascularización y angiogénesis"
+  fr: "Néovascularisation et angiogenèse"
 icon: "GitBranch"
 color: "navy"
 summary:
@@ -12,12 +13,14 @@ summary:
   de: "Die Hyperoxie stimuliert die Freisetzung von VEGF, PDGF und FGF und fördert die Kapillarsprossung sowie die Bildung von Granulationsgewebe in chronischen Wunden."
   it: "L'iperossia stimola il rilascio di VEGF, PDGF e FGF, promuovendo la gemmazione capillare e la formazione di tessuto di granulazione nelle ferite croniche."
   es: "La hiperoxia estimula la liberación de VEGF, PDGF y FGF, promoviendo la gemación capilar y la formación de tejido de granulación en heridas crónicas."
+  fr: "L'hyperoxie stimule la libération de VEGF, de PDGF et de FGF, favorisant le bourgeonnement capillaire et la formation du tissu de granulation dans les plaies chroniques."
 detail:
   en: "Vascular endothelial growth factor (VEGF), platelet-derived growth factor (PDGF), and fibroblast growth factor (FGF) are upregulated under hyperoxic conditions. This cascade promotes new blood vessel formation, critical for wound healing and tissue regeneration."
   el: "Ο αγγειακός ενδοθηλιακός αυξητικός παράγοντας (VEGF), ο παράγοντας ανάπτυξης αιμοπεταλίων (PDGF) και ο αυξητικός παράγοντας ινοβλαστών (FGF) ενεργοποιούνται υπό υπεροξικές συνθήκες. Αυτή η καταρράκτης προάγει τη δημιουργία νέων αιμοφόρων αγγείων, κρίσιμη για την επούλωση τραυμάτων και αναγέννηση ιστών."
   de: "Der vaskuläre endotheliale Wachstumsfaktor (VEGF), der von Thrombozyten abgeleitete Wachstumsfaktor (PDGF) und der Fibroblasten-Wachstumsfaktor (FGF) werden unter hyperoxischen Bedingungen hochreguliert. Diese Kaskade fördert die Bildung neuer Blutgefäße, die für die Wundheilung und Geweberegeneration entscheidend ist."
   it: "Il fattore di crescita endoteliale vascolare (VEGF), il fattore di crescita derivato dalle piastrine (PDGF) e il fattore di crescita dei fibroblasti (FGF) sono sovraregolati in condizioni iperossiche. Questa cascata promuove la formazione di nuovi vasi sanguigni, fondamentale per la guarigione delle ferite e la rigenerazione tissutale."
   es: "El factor de crecimiento endotelial vascular (VEGF), el factor de crecimiento derivado de plaquetas (PDGF) y el factor de crecimiento de fibroblastos (FGF) se sobrerregulan en condiciones hiperóxicas. Esta cascada promueve la formación de nuevos vasos sanguíneos, fundamental para la cicatrización de heridas y la regeneración tisular."
+  fr: "Le facteur de croissance de l'endothélium vasculaire (VEGF), le facteur de croissance dérivé des plaquettes (PDGF) et le facteur de croissance des fibroblastes (FGF) sont surexprimés en conditions d'hyperoxie. Cette cascade favorise la formation de nouveaux vaisseaux sanguins, essentielle à la cicatrisation des plaies et à la régénération tissulaire."
 refs:
   - "[1]"
   - "[2]"
@@ -28,9 +31,11 @@ answerBox:
   de: "Die Angiogenese ist die Bildung neuer Blutgefäße. Unter hyperbarem Sauerstoff regen erhöhte Gewebe-Sauerstoffwerte die Freisetzung von Wachstumsfaktoren wie VEGF, PDGF und FGF an und veranlassen Kapillaren, sich in schlecht durchblutetes Gewebe auszudehnen. Diese wiederhergestellte Durchblutung untermauert die Rolle der HBOT bei der Heilung chronischer Wunden, bestrahlten Gewebes und kompromittierter Transplantate."
   it: "L'angiogenesi è la crescita di nuovi vasi sanguigni. Sotto ossigeno iperbarico, i livelli aumentati di ossigeno tissutale stimolano il rilascio di fattori di crescita tra cui VEGF, PDGF e FGF, inducendo i capillari a estendersi in tessuto mal perfuso. Questo apporto ematico ricostituito sostiene il ruolo della HBOT nella guarigione di ferite croniche, tessuti irradiati e innesti compromessi."
   es: "La angiogénesis es el crecimiento de nuevos vasos sanguíneos. Bajo oxígeno hiperbárico, los niveles aumentados de oxígeno tisular estimulan la liberación de factores de crecimiento como VEGF, PDGF y FGF, induciendo a los capilares a extenderse hacia tejido mal perfundido. Este aporte sanguíneo reconstituido sustenta el papel de la HBOT en la cicatrización de heridas crónicas, tejidos irradiados e injertos comprometidos."
+  fr: "L'angiogenèse est la croissance de nouveaux vaisseaux sanguins. Sous oxygène hyperbare, l'élévation des taux d'oxygène tissulaire stimule la libération de facteurs de croissance, notamment le VEGF, le PDGF et le FGF, qui incitent les capillaires à s'étendre dans les tissus mal perfusés. Cette vascularisation reconstituée sous-tend le rôle de l'HBOT dans la cicatrisation des plaies chroniques, des tissus irradiés et des greffes compromises."
 metaDescription:
   en: "How hyperbaric oxygen drives angiogenesis: raised tissue oxygen triggers VEGF, PDGF and FGF release, growing new capillaries into poorly perfused tissue."
   el: "Πώς η υπερβαρική οξυγονοθεραπεία οδηγεί την αγγειογένεση: το αυξημένο οξυγόνο των ιστών ενεργοποιεί την απελευθέρωση VEGF, PDGF και FGF, σχηματίζοντας νέα τριχοειδή σε ανεπαρκώς αιματούμενο ιστό."
   de: "Wie die hyperbare Sauerstofftherapie die Angiogenese antreibt: Erhöhter Gewebe-Sauerstoff löst die Freisetzung von VEGF, PDGF und FGF aus und lässt neue Kapillaren in schlecht durchblutetes Gewebe wachsen."
   it: "Come l'ossigenoterapia iperbarica guida l'angiogenesi: l'aumento di ossigeno tissutale attiva il rilascio di VEGF, PDGF e FGF, generando nuovi capillari nei tessuti mal perfusi."
   es: "Cómo la oxigenoterapia hiperbárica impulsa la angiogénesis: el aumento del oxígeno tisular desencadena la liberación de VEGF, PDGF y FGF, generando nuevos capilares en tejidos mal perfundidos."
+  fr: "Comment l'oxygène hyperbare stimule l'angiogenèse : l'élévation de l'oxygène tissulaire déclenche la libération de VEGF, de PDGF et de FGF et fait croître de nouveaux capillaires dans les tissus mal perfusés."

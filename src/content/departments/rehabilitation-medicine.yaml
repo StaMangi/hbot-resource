@@ -4,6 +4,7 @@ name:
   de: "Rehabilitationsmedizin"
   it: "Medicina riabilitativa"
   es: "Medicina de rehabilitación"
+  fr: "Médecine physique et de réadaptation"
 icon: "PersonStanding"
 color: "#2563eb"
 shortDesc:
@@ -12,12 +13,14 @@ shortDesc:
   de: "Genesung nach Schlaganfall, SHT/Postkommotionssyndrom, Long COVID, Fibromyalgie"
   it: "Recupero post-ictus, trauma cranico/post-commozione, Long COVID, fibromialgia"
   es: "Recuperación post-ictus, TCE/post-conmoción, Long COVID, fibromialgia"
+  fr: "Récupération après un AVC, TC/syndrome post-commotionnel, COVID long, fibromyalgie"
 intro:
   en: "Rehabilitation Medicine applies HBOT as an adjunct in the recovery phase — supporting functional recovery and neuroplasticity after neurological injury and in chronic disabling conditions. The evidence here is emerging and investigational: HBOT is studied as a complement to, not a replacement for, standard rehabilitation. Applications span chronic post-stroke recovery, traumatic brain injury and post-concussion syndrome, Long COVID, and fibromyalgia."
   el: "Η Ιατρική Αποκατάστασης εφαρμόζει την HBOT ως επικουρικό μέσο στη φάση ανάρρωσης — υποστηρίζοντας τη λειτουργική ανάκαμψη και τη νευροπλαστικότητα μετά από νευρολογική βλάβη και σε χρόνιες αναπηρικές καταστάσεις. Η τεκμηρίωση εδώ είναι αναδυόμενη και ερευνητική: η HBOT μελετάται ως συμπλήρωμα, όχι ως υποκατάστατο, της τυπικής αποκατάστασης. Οι εφαρμογές καλύπτουν τη χρόνια αποκατάσταση μετά από εγκεφαλικό, την κρανιοεγκεφαλική κάκωση και το μετα-διασειστικό σύνδρομο, το Long COVID και την ινομυαλγία."
   de: "Die Rehabilitationsmedizin setzt HBOT als Ergänzung in der Genesungsphase ein — zur Unterstützung der funktionellen Erholung und der Neuroplastizität nach neurologischer Schädigung und bei chronisch behindernden Erkrankungen. Die Evidenz ist hier aufkommend und experimentell: HBOT wird als Ergänzung zur, nicht als Ersatz für die Standard-Rehabilitation untersucht. Die Anwendungen umfassen die chronische Genesung nach Schlaganfall, das Schädel-Hirn-Trauma und das Postkommotionssyndrom, Long COVID und Fibromyalgie."
   it: "La Medicina riabilitativa applica l'HBOT come adiuvante nella fase di recupero — a sostegno del recupero funzionale e della neuroplasticità dopo una lesione neurologica e nelle condizioni croniche disabilitanti. Le evidenze qui sono emergenti e sperimentali: l'HBOT è studiata come complemento, non come sostituto, della riabilitazione standard. Le applicazioni comprendono il recupero cronico post-ictus, il trauma cranico-encefalico e la sindrome post-commozione, il Long COVID e la fibromialgia."
   es: "La Medicina de rehabilitación aplica la HBOT como adyuvante en la fase de recuperación — apoyando la recuperación funcional y la neuroplasticidad tras una lesión neurológica y en afecciones crónicas discapacitantes. La evidencia aquí es emergente y experimental: la HBOT se estudia como complemento, no como sustituto, de la rehabilitación estándar. Las aplicaciones abarcan la recuperación crónica post-ictus, el traumatismo craneoencefálico y el síndrome post-conmoción, el Long COVID y la fibromialgia."
+  fr: "La médecine physique et de réadaptation utilise l'HBOT comme adjuvant pendant la phase de récupération — pour soutenir la récupération fonctionnelle et la neuroplasticité après une lésion neurologique et dans les affections chroniques invalidantes. Les données sont ici émergentes et expérimentales : l'HBOT est étudiée comme complément, et non comme substitut, de la rééducation standard. Les applications couvrent la récupération chronique après un AVC, le traumatisme crânien et le syndrome post-commotionnel, le COVID long et la fibromyalgie."
 applications:
   - title:
       en: "Chronic Post-Stroke Recovery"
@@ -25,6 +28,7 @@ applications:
       de: "Chronische Genesung nach Schlaganfall"
       it: "Recupero cronico post-ictus"
       es: "Recuperación crónica post-ictus"
+      fr: "Récupération chronique après un AVC"
     type: "Research"
     typeColor: "blue"
     description:
@@ -33,6 +37,7 @@ applications:
       de: "Eine prospektive randomisierte Studie an Patienten 6–36 Monate nach einem Schlaganfall berichtete über eine verbesserte neurologische Funktion nach 40 HBOT-Sitzungen bei 2 ATA, wobei die Zugewinne mit Veränderungen der Hirnaktivität im SPECT korrelierten (Efrati 2013). Eine unabhängige randomisierte kontrollierte Studie (RKS) zur Machbarkeit, die HBOT mit einem Rehabilitationsprogramm aus Bewegung und mentaler Vorstellung kombinierte, fand den kombinierten Ansatz sicher und durchführbar, mit Trends zu verbesserter motorischer Funktion der oberen Extremität (Schiavo 2020). Experimentell; nicht von der FDA zugelassen."
       it: "Uno studio prospettico randomizzato in pazienti a 6–36 mesi da un ictus ha riportato un miglioramento della funzione neurologica dopo 40 sedute di HBOT a 2 ATA, con guadagni correlati a cambiamenti dell'attività cerebrale alla SPECT (Efrati 2013). Uno studio clinico randomizzato controllato (RCT) di fattibilità indipendente che ha combinato l'HBOT con un programma riabilitativo di esercizio e immaginazione mentale ha rilevato che l'approccio combinato è sicuro e fattibile, con tendenze al miglioramento della funzione motoria dell'arto superiore (Schiavo 2020). Sperimentale; non approvata dalla FDA."
       es: "Un ensayo prospectivo aleatorizado en pacientes de 6–36 meses tras un ictus notificó una mejora de la función neurológica después de 40 sesiones de HBOT a 2 ATA, con ganancias correlacionadas con cambios de la actividad cerebral en la SPECT (Efrati 2013). Un ensayo clínico aleatorizado controlado (ECA) de viabilidad independiente que combinó la HBOT con un programa de rehabilitación de ejercicio e imaginería mental halló que el enfoque combinado es seguro y viable, con tendencias hacia una mejor función motora del miembro superior (Schiavo 2020). Experimental; no aprobada por la FDA."
+      fr: "Un essai prospectif randomisé mené chez des patients 6–36 mois après un AVC a rapporté une amélioration de la fonction neurologique après 40 séances d'HBOT à 2 ATA, les gains étant corrélés aux modifications de l'activité cérébrale en SPECT (Efrati 2013). Un essai contrôlé randomisé (ECR) de faisabilité indépendant associant l'HBOT à un programme de rééducation par l'exercice et l'imagerie mentale a montré que l'approche combinée était sûre et faisable, avec des tendances à l'amélioration de la fonction motrice du membre supérieur (Schiavo 2020). Expérimental ; non approuvé par la FDA."
     evidence: "Level B"
     protocol:
       ata:
@@ -41,30 +46,35 @@ applications:
         de: "2 ATA"
         it: "2 ATA"
         es: "2 ATA"
+        fr: "2 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40"
         el: "40"
         de: "40"
         it: "40"
         es: "40"
+        fr: "40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Efrati 2013 (RCT); Schiavo 2020 (feasibility RCT)"
         el: "Efrati 2013 (ΤΕΔ)· Schiavo 2020 (ΤΕΔ σκοπιμότητας)"
         de: "Efrati 2013 (RKS); Schiavo 2020 (Machbarkeits-RKS)"
         it: "Efrati 2013 (RCT); Schiavo 2020 (RCT di fattibilità)"
         es: "Efrati 2013 (ECA); Schiavo 2020 (ECA de viabilidad)"
+        fr: "Efrati 2013 (ECR) ; Schiavo 2020 (ECR de faisabilité)"
     indicationSlug: "stroke-recovery"
     refs:
       - "[49]"
@@ -75,6 +85,7 @@ applications:
       de: "Schädel-Hirn-Trauma / Postkommotionelle Genesung"
       it: "Trauma cranico-encefalico / Recupero post-commozione"
       es: "Traumatismo craneoencefálico / Recuperación post-conmoción"
+      fr: "Traumatisme crânien / récupération post-commotionnelle"
     type: "Research"
     typeColor: "orange"
     description:
@@ -83,6 +94,7 @@ applications:
       de: "Die Evidenz ist gemischt. Studien der chronischen Phase berichten über Nutzen: eine Crossover-RKS bei Erwachsenen mit anhaltendem Postkommotionssyndrom 1–5 Jahre nach leichtem SHT zeigte eine Verbesserung von Kognition und Lebensqualität mit SPECT-Korrelaten (Boussi-Gross 2013), und eine scheinkontrollierte, doppelblinde RKS bei Kindern mit persistierendem Postkommotionssyndrom zeigte eine kognitive und verhaltensbezogene Verbesserung mit mikrostrukturellen MRT-Korrelaten (Hadanny 2022). Allerdings fand eine scheinkontrollierte, doppelblinde RKS bei Militärangehörigen mit leichtem SHT keinen Nutzen von HBOT gegenüber einem Schein-Gasgemisch, das dem Atmen von Umgebungsluft entspricht (Walker/Cifu 2014), und eine kritische Bewertung argumentiert, dass der scheinbare Effekt einen Teilnahmeeffekt widerspiegeln könnte, inmitten einer ungelösten Debatte darüber, ob die Niederdruck-„Schein\"-Behandlung selbst biologisch aktiv ist (Bennett 2018). Experimentell; nicht von der FDA zugelassen."
       it: "Le evidenze sono contrastanti. Studi in fase cronica riportano un beneficio: un RCT crossover in adulti con sindrome post-commozione prolungata 1–5 anni dopo un trauma cranico lieve ha mostrato un miglioramento cognitivo e della qualità della vita con correlati SPECT (Boussi-Gross 2013), e un RCT in doppio cieco controllato con sham in bambini con sindrome post-commozione persistente ha mostrato un miglioramento cognitivo e comportamentale con correlati microstrutturali alla risonanza magnetica (Hadanny 2022). Tuttavia, un RCT in doppio cieco controllato con sham in personale militare con trauma cranico lieve non ha rilevato alcun beneficio dell'HBOT rispetto a una miscela di gas sham equivalente alla respirazione di aria ambiente (Walker/Cifu 2014), e una valutazione critica sostiene che l'effetto apparente possa riflettere un effetto di partecipazione, in un dibattito irrisolto sul fatto che lo \"sham\" a bassa pressione sia esso stesso biologicamente attivo (Bennett 2018). Sperimentale; non approvata dalla FDA."
       es: "La evidencia es contradictoria. Los ensayos en fase crónica notifican beneficio: un ECA cruzado en adultos con síndrome post-conmoción prolongado 1–5 años tras un traumatismo craneoencefálico leve mostró mejora cognitiva y de la calidad de vida con correlatos en SPECT (Boussi-Gross 2013), y un ECA doble ciego controlado con simulación (sham) en niños con síndrome post-conmoción persistente mostró mejora cognitiva y conductual con correlatos microestructurales en RM (Hadanny 2022). Sin embargo, un ECA doble ciego controlado con simulación en personal militar con traumatismo craneoencefálico leve no halló beneficio de la HBOT frente a una mezcla de gases simulada equivalente a respirar aire ambiente (Walker/Cifu 2014), y una evaluación crítica sostiene que el efecto aparente podría reflejar un efecto de participación, en medio de un debate no resuelto sobre si la \"simulación\" a baja presión es en sí misma biológicamente activa (Bennett 2018). Experimental; no aprobada por la FDA."
+      fr: "Les données sont contradictoires. Les essais en phase chronique rapportent un bénéfice : un essai contrôlé randomisé (ECR) croisé chez des adultes présentant un syndrome post-commotionnel prolongé 1–5 ans après un traumatisme crânien léger a montré une amélioration cognitive et de la qualité de vie, avec des corrélats en SPECT (Boussi-Gross 2013), et un ECR en double aveugle, contrôlé contre placebo (simulation, « sham »), chez des enfants présentant un syndrome post-commotionnel persistant a montré une amélioration cognitive et comportementale, avec des corrélats microstructurels en IRM (Hadanny 2022). Toutefois, un ECR en double aveugle, contrôlé contre simulation, chez des militaires atteints d'un traumatisme crânien léger n'a trouvé aucun bénéfice de l'HBOT par rapport à un mélange gazeux simulé équivalent à la respiration d'air ambiant (Walker/Cifu 2014), et une analyse critique soutient que l'effet apparent pourrait refléter un effet de participation, dans un contexte de débat non résolu sur la question de savoir si la « simulation » à basse pression est elle-même biologiquement active (Bennett 2018). Expérimental ; non approuvé par la FDA."
     evidence: "Level B (contested)"
     protocol:
       ata:
@@ -91,30 +103,35 @@ applications:
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
         es: "1.5 – 2.0 ATA"
+        fr: "1.5 – 2.0 ATA"
       duration:
         en: "60 min"
         el: "60 min"
         de: "60 min"
         it: "60 min"
         es: "60 min"
+        fr: "60 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Mixed RCT evidence (Boussi-Gross 2013; Hadanny 2022; Walker/Cifu 2014)"
         el: "Ανάμικτα στοιχεία ΤΕΔ (Boussi-Gross 2013· Hadanny 2022· Walker/Cifu 2014)"
         de: "Gemischte RKS-Evidenz (Boussi-Gross 2013; Hadanny 2022; Walker/Cifu 2014)"
         it: "Evidenze RCT contrastanti (Boussi-Gross 2013; Hadanny 2022; Walker/Cifu 2014)"
         es: "Evidencia de ECA contradictoria (Boussi-Gross 2013; Hadanny 2022; Walker/Cifu 2014)"
+        fr: "Données d'ECR contradictoires (Boussi-Gross 2013 ; Hadanny 2022 ; Walker/Cifu 2014)"
     indicationSlug: "traumatic-brain-injury"
     refs:
       - "[51]"
@@ -127,6 +144,7 @@ applications:
       de: "Long COVID (Post-COVID-Syndrom)"
       it: "Long COVID (Sindrome post-COVID)"
       es: "COVID persistente (Long COVID)"
+      fr: "COVID long"
     type: "Research"
     typeColor: "blue"
     indicationSlug: "long-covid"
@@ -136,6 +154,7 @@ applications:
       de: "Relevant für die Rehabilitation in Bezug auf Fatigue, Kognition und funktionelle Genesung. Siehe die Indikation Long COVID für die vollständige Evidenz und das Protokoll."
       it: "Rilevante per la riabilitazione per le sue dimensioni di affaticamento, cognizione e recupero funzionale. Vedere l'indicazione Long COVID per le evidenze complete e il protocollo."
       es: "Relevante para la rehabilitación por sus dimensiones de fatiga, cognición y recuperación funcional. Véase la indicación de COVID persistente para la evidencia completa y el protocolo."
+      fr: "Pertinent pour la réadaptation en raison de ses dimensions de fatigue, cognitives et de récupération fonctionnelle. Voir l'indication COVID long pour l'ensemble des données et le protocole."
     evidence: "Level B"
     protocol:
       ata:
@@ -144,30 +163,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40"
         el: "40"
         de: "40"
         it: "40"
         es: "40"
+        fr: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
         de: "5×/Woche"
         it: "5×/settimana"
         es: "5×/semana"
+        fr: "5×/semaine"
       basis:
         en: "Zilberman-Itskovich et al., 2022 (RCT)"
         el: "Zilberman-Itskovich et al., 2022 (ΤΕΔ)"
         de: "Zilberman-Itskovich et al., 2022 (RKS)"
         it: "Zilberman-Itskovich et al., 2022 (RCT)"
         es: "Zilberman-Itskovich et al., 2022 (ECA)"
+        fr: "Zilberman-Itskovich et al., 2022 (ECR)"
     refs: []
   - title:
       en: "Fibromyalgia"
@@ -175,6 +199,7 @@ applications:
       de: "Fibromyalgie"
       it: "Fibromialgia"
       es: "Fibromialgia"
+      fr: "Fibromyalgie"
     type: "Research"
     typeColor: "orange"
     indicationSlug: "fibromyalgia"
@@ -184,6 +209,7 @@ applications:
       de: "Relevant für die Rehabilitation bei chronischen Schmerzen und funktioneller Beeinträchtigung. Siehe die Indikation Fibromyalgie für die vollständige Evidenz und das Protokoll."
       it: "Rilevante per la riabilitazione per il dolore cronico e la compromissione funzionale. Vedere l'indicazione Fibromialgia per le evidenze complete e il protocollo."
       es: "Relevante para la rehabilitación por el dolor crónico y el deterioro funcional. Véase la indicación de fibromialgia para la evidencia completa y el protocolo."
+      fr: "Pertinent pour la réadaptation en raison de la douleur chronique et du retentissement fonctionnel. Voir l'indication Fibromyalgie pour l'ensemble des données et le protocole."
     evidence: "Level B"
     protocol:
       ata:
@@ -192,30 +218,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40"
         el: "40"
         de: "40"
         it: "40"
         es: "40"
+        fr: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
         de: "5×/Woche"
         it: "5×/settimana"
         es: "5×/semana"
+        fr: "5×/semaine"
       basis:
         en: "Efrati et al., 2015 (prospective controlled trial)"
         el: "Efrati et al., 2015 (προοπτική ελεγχόμενη δοκιμή)"
         de: "Efrati et al., 2015 (prospektive kontrollierte Studie)"
         it: "Efrati et al., 2015 (studio controllato prospettico)"
         es: "Efrati et al., 2015 (ensayo controlado prospectivo)"
+        fr: "Efrati et al., 2015 (essai contrôlé prospectif)"
     refs: []
 updated: "2026-05-30"
 metaDescription:
@@ -224,3 +255,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der Rehabilitationsmedizin — als Adjuvans der Erholungsphase, untersucht bei chronischer Post-Schlaganfall-Rehabilitation, Schädel-Hirn-Trauma/Post-Concussion-Syndrom, Long COVID und Fibromyalgie."
   it: "Ossigenoterapia iperbarica nella medicina riabilitativa — adiuvante della fase di recupero, studiato nella riabilitazione post-ictus, nel trauma cranico/sindrome post-commozionale, nella Long COVID e nella fibromialgia."
   es: "Oxigenoterapia hiperbárica en medicina de rehabilitación — adyuvante de la fase de recuperación, estudiado en la rehabilitación tras ictus, en el traumatismo craneoencefálico/síndrome posconmocional, en la Long COVID y en la fibromialgia."
+  fr: "Oxygénothérapie hyperbare en médecine physique et de réadaptation — un adjuvant de la phase de récupération étudié dans la récupération après un AVC, le TC/syndrome post-commotionnel, le COVID long et la fibromyalgie."

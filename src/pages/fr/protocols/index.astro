@@ -1,0 +1,144 @@
+---
+import { getCollection } from "astro:content";
+import { t } from "@/i18n";
+import IndexLayout from "@/layouts/IndexLayout.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "fr" as const;
+
+const indications = await getCollection("indications");
+const longevity = await getCollection("longevity");
+
+const fdaRows = indications
+  .sort((a, b) => a.data.legacyId - b.data.legacyId)
+  .map((e) => ({
+    slug: e.id,
+    label: e.data.condition[locale],
+    category: e.data.category[locale],
+    protocol: e.data.protocol,
+    evidenceLevel: e.data.evidenceLevel,
+    emerging: e.data.tier === "emerging",
+    href: `/fr/indications/${e.id}/`,
+  }));
+
+const longevityOrder = ["telomere", "senescence", "cognitive", "stemcells", "athletic", "collagen"];
+const longevityRows = longevityOrder
+  .map((id) => longevity.find((l) => l.id === id))
+  .filter((e): e is NonNullable<typeof e> => e !== undefined)
+  .map((e) => ({
+    slug: e.id,
+    label: e.data.title[locale],
+    category: "Longévité",
+    protocol: e.data.protocol,
+    evidenceLevel: "—",
+    href: `/fr/longevity/${e.id}/`,
+  }));
+
+const evidenceBadge = (level: string) =>
+  level === "A"
+    ? "bg-emerald-100 text-emerald-800 border-emerald-200"
+    : level === "B"
+      ? "bg-sky-100 text-sky-800 border-sky-200"
+      : "bg-slate-100 text-slate-600 border-slate-200";
+---
+
+<IndexLayout
+  title="Tableau comparatif des protocoles — HBOT Science"
+  description="Comparaison des protocoles d'HBOT pour l'ensemble des indications approuvées par l'UHMS ou fondées sur des données émergentes et pour les applications en longévité : pression (ATA), nombre de séances, durée, fréquence et fondement des preuves."
+  locale={locale}
+  pathname={pathname}
+  badge="Référence"
+  pageHeading="Comparaison des protocoles"
+  pageSubtitle="Comparaison des protocoles d'HBOT pour les indications approuvées par l'UHMS ou fondées sur des données émergentes et pour les applications en longévité. Cmd-P / Ctrl-P permet une impression propre au format PDF."
+  badgeColor="navy"
+>
+  {/* FDA indication protocols */}
+  <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+    Indications : approuvées par l'UHMS et données émergentes ({fdaRows.length})
+  </h2>
+
+  <div class="overflow-x-auto rounded-lg border border-slate-200 mb-12">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-50 border-b border-slate-200">
+        <tr>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Indication</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Pression</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Durée</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Séances</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Fréquence</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Niveau</th>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Fondement</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          fdaRows.map((row, i) => (
+            <tr class:list={["border-b border-slate-100 last:border-b-0 hover:bg-slate-50/60 transition-colors", i % 2 === 0 ? "bg-white" : "bg-slate-50/30"]}>
+              <td class="px-4 py-3">
+                <a href={row.href} class="font-semibold text-slate-900 hover:text-teal-700">
+                  {row.label}
+                </a>
+                <p class="text-xs text-slate-500 mt-0.5">{row.category}{row.emerging && ` · ${t("emerging.tier.label", locale)}`}</p>
+              </td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
+              <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
+              <td class="px-3 py-3">
+                <span class:list={["inline-block px-2 py-0.5 text-xs font-semibold rounded border", evidenceBadge(row.evidenceLevel)]}>
+                  {row.evidenceLevel}
+                </span>
+              </td>
+              <td class="px-4 py-3 text-xs text-slate-600">{row.protocol.basis[locale]}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  {/* Longevity protocols */}
+  <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
+    Applications en longévité ({longevityRows.length})
+  </h2>
+
+  <div class="overflow-x-auto rounded-lg border border-slate-200">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-50 border-b border-slate-200">
+        <tr>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Application</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Pression</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Durée</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Séances</th>
+          <th class="text-left px-3 py-3 font-semibold text-slate-700">Fréquence</th>
+          <th class="text-left px-4 py-3 font-semibold text-slate-700">Fondement</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          longevityRows.map((row, i) => (
+            <tr class:list={["border-b border-slate-100 last:border-b-0 hover:bg-slate-50/60 transition-colors", i % 2 === 0 ? "bg-white" : "bg-slate-50/30"]}>
+              <td class="px-4 py-3">
+                <a href={row.href} class="font-semibold text-slate-900 hover:text-teal-700">
+                  {row.label}
+                </a>
+              </td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
+              <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.sessions[locale]}</td>
+              <td class="px-3 py-3 text-slate-700">{row.protocol.frequency[locale]}</td>
+              <td class="px-4 py-3 text-xs text-slate-600">{row.protocol.basis[locale]}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="mt-8 text-xs text-slate-500 max-w-3xl">
+    Tous les protocoles sont issus de publications évaluées par des pairs, citées
+    sur la page de détail de chaque indication. Les niveaux de preuve suivent les
+    critères de gradation de l'UHMS. Pour exporter ce tableau au format PDF,
+    utilisez la fonction d'impression de votre navigateur (Cmd-P / Ctrl-P).
+  </p>
+</IndexLayout>

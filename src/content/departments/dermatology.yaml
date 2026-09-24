@@ -4,6 +4,7 @@ name:
   de: "Dermatologie"
   it: "Dermatologia"
   es: "Dermatología"
+  fr: "Dermatologie"
 icon: "Bandage"
 color: "#b45309"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Verbrennungen, chronische Wunden, Hauttransplantate, dermatologische Entzündungen"
   it: "Ustioni, ferite croniche, innesti cutanei, infiammazioni dermatologiche"
   es: "Quemaduras, heridas crónicas, injertos cutáneos, inflamaciones dermatológicas"
+  fr: "Brûlures, plaies chroniques, greffes cutanées, inflammations dermatologiques"
 applications:
   - title:
       en: "Chronic Non-Healing Wounds"
@@ -19,6 +21,7 @@ applications:
       de: "Chronische nicht heilende Wunden"
       it: "Ferite croniche non cicatrizzanti"
       es: "Heridas crónicas que no cicatrizan"
+      fr: "Plaies chroniques non cicatrisantes"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Adjuvante HBOT bei chronischen nicht heilenden Wunden, einschließlich diabetischer Fußulzera und vaskulärer Ulzera. Die Evidenzbasis für die Heilung chronischer Wunden ist die robusteste dermatologische HBOT-Anwendung."
       it: "HBOT adiuvante per ferite croniche non cicatrizzanti, comprese le ulcere del piede diabetico e le ulcere vascolari. La base di evidenza per la guarigione delle ferite croniche è l'applicazione dermatologica più solida dell'HBOT."
       es: "HBOT adyuvante para heridas crónicas que no cicatrizan, incluidas las úlceras de pie diabético y las úlceras vasculares. La base de evidencia para la cicatrización de heridas crónicas es la aplicación dermatológica más sólida de la HBOT."
+      fr: "HBOT adjuvante dans les plaies chroniques non cicatrisantes, notamment les ulcères du pied diabétique et les ulcères vasculaires. Les données relatives à la cicatrisation des plaies chroniques constituent l'application dermatologique de l'HBOT la mieux étayée."
     evidence: "Level A"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[9]"
@@ -70,6 +79,7 @@ applications:
       de: "Strahlendermatitis & Strahlenschäden des Weichgewebes"
       it: "Radiodermatite e danno radiogeno dei tessuti molli"
       es: "Radiodermatitis y lesión por radiación de tejidos blandos"
+      fr: "Radiodermite et lésions radiques des tissus mous"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -78,6 +88,7 @@ applications:
       de: "Behandlung der Strahlendermatitis und der verzögerten Weichgewebeheilung nach Strahlentherapie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe."
       it: "Trattamento della radiodermatite e della guarigione ritardata dei tessuti molli dopo radioterapia. Promuove l'angiogenesi nel tessuto ipossico, ipovascolare, ipocellulare."
       es: "Tratamiento de la radiodermatitis y de la cicatrización retardada de los tejidos blandos tras radioterapia. Promueve la angiogénesis en el tejido hipóxico, hipovascular e hipocelular."
+      fr: "Traitement de la radiodermite et du retard de cicatrisation des tissus mous après radiothérapie. Favorise l'angiogenèse dans les tissus hypoxiques, hypovasculaires et hypocellulaires."
     evidence: "Level A"
     protocol:
       ata:
@@ -86,30 +97,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "20 – 40"
         el: "20 – 40"
         de: "20 – 40"
         it: "20 – 40"
         es: "20 – 40"
+        fr: "20 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[2]"
@@ -120,6 +136,7 @@ applications:
       de: "Gefährdete Hauttransplantate & Lappen"
       it: "Innesti cutanei e lembi compromessi"
       es: "Injertos cutáneos y colgajos comprometidos"
+      fr: "Greffes cutanées et lambeaux compromis"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -128,6 +145,7 @@ applications:
       de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
       it: "Adiuvante di salvataggio per innesti cutanei e lembi ischemici o congesti per via venosa. L'avvio più precoce, quando vengono identificati problemi di perfusione, è associato a esiti migliori; l'HBOT migliora l'apporto di ossigeno, l'angiogenesi, l'attività dei fibroblasti e il controllo dell'edema."
       es: "Adyuvante de rescate para injertos cutáneos y colgajos isquémicos o con congestión venosa. El inicio más precoz, cuando se identifican problemas de perfusión, se asocia a mejores resultados; la HBOT mejora el aporte de oxígeno, la angiogénesis, la actividad de los fibroblastos y el control del edema."
+      fr: "Adjuvant de sauvetage des greffes cutanées et des lambeaux ischémiques ou présentant une congestion veineuse. Une mise en route plus précoce, dès l'identification de troubles de la perfusion, est associée à de meilleurs résultats ; l'HBOT améliore l'apport en oxygène, l'angiogenèse, l'activité des fibroblastes et le contrôle de l'œdème."
     evidence: "Level B"
     protocol:
       ata:
@@ -136,30 +154,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[9]"
@@ -171,6 +194,7 @@ applications:
       de: "Verbrennungen & nekrotisierende Weichgewebeinfektion"
       it: "Ustioni e infezione necrotizzante dei tessuti molli"
       es: "Quemaduras e infección necrosante de tejidos blandos"
+      fr: "Brûlures et infection nécrosante des tissus mous"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -179,6 +203,7 @@ applications:
       de: "Adjuvante Behandlung bei nekrotisierender Fasziitis, Fournier-Gangrän und schweren Verbrennungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
       it: "Trattamento adiuvante per fascite necrotizzante, gangrena di Fournier e ustioni gravi. Riduce la mortalità e la perdita di tessuto se associato a debridement chirurgico e terapia antibiotica."
       es: "Tratamiento adyuvante para la fascitis necrosante, la gangrena de Fournier y las quemaduras graves. Reduce la mortalidad y la pérdida de tejido cuando se combina con el desbridamiento quirúrgico y la antibioticoterapia."
+      fr: "Traitement adjuvant de la fasciite nécrosante, de la gangrène de Fournier et des brûlures graves. Réduit la mortalité et la perte tissulaire lorsqu'il est associé au débridement chirurgical et à l'antibiothérapie."
     evidence: "Level A"
     protocol:
       ata:
@@ -187,30 +212,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[2]"
@@ -222,6 +252,7 @@ applications:
       de: "Entzündliche Dermatosen"
       it: "Dermatosi infiammatorie"
       es: "Dermatosis inflamatorias"
+      fr: "Dermatoses inflammatoires"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -230,6 +261,7 @@ applications:
       de: "Evidenz auf Fall- und Kleinkohorten-Ebene bei atopischer Dermatitis (Übersichtsarbeit 2025 + pädiatrische Studie) und Psoriasis (Fallberichte 2009). Weitere entzündliche Erkrankungen (Hidradenitis suppurativa, livedoide Vaskulopathie, Pyoderma gangraenosum) verfügen über frühe klinische Berichte, jedoch fehlen robuste Studien. HBOT wird als adjuvante, nicht als Erstlinientherapie positioniert."
       it: "Evidenze a livello di casi clinici e piccole coorti nella dermatite atopica (revisione 2025 + studio pediatrico) e nella psoriasi (casi clinici 2009). Altre condizioni infiammatorie (idrosadenite suppurativa, vasculopatia livedoide, pioderma gangrenoso) dispongono di segnalazioni cliniche in fase iniziale ma mancano di studi solidi. L'HBOT è posizionata come adiuvante, non di prima linea."
       es: "Evidencia a nivel de casos clínicos y pequeñas cohortes en la dermatitis atópica (revisión de 2025 + estudio pediátrico) y la psoriasis (casos clínicos de 2009). Otras afecciones inflamatorias (hidradenitis supurativa, vasculopatía livedoide, pioderma gangrenoso) cuentan con informes clínicos en fase inicial pero carecen de ensayos sólidos. La HBOT se posiciona como adyuvante, no de primera línea."
+      fr: "Données issues de cas cliniques et de petites cohortes dans la dermatite atopique (revue de 2025 + étude pédiatrique) et le psoriasis (cas cliniques de 2009). D'autres affections inflammatoires (hidradénite suppurée, vasculopathie livédoïde, pyoderma gangrenosum) font l'objet de rapports cliniques préliminaires mais manquent d'essais solides. L'HBOT est positionnée comme traitement adjuvant, et non de première intention."
     evidence: "Level C"
     protocol:
       ata:
@@ -238,30 +270,35 @@ applications:
         de: "2.0 – 2.8 ATA"
         it: "2.0 – 2.8 ATA"
         es: "2.0 – 2.8 ATA"
+        fr: "2.0 – 2.8 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "6 – 30 (highly variable)"
         el: "6 – 30 (πολύ μεταβλητές)"
         de: "6 – 30 (stark variabel)"
         it: "6 – 30 (molto variabile)"
         es: "6 – 30 (muy variable)"
+        fr: "6 – 30 (très variable)"
       frequency:
         en: "Daily, protocol-dependent"
         el: "Καθημερινά, εξαρτάται από το πρωτόκολλο"
         de: "Täglich, protokollabhängig"
         it: "Quotidiano, in base al protocollo"
         es: "Diariamente, según el protocolo"
+        fr: "Quotidienne, selon le protocole"
       basis:
         en: "Case Reports & Small Studies"
         el: "Αναφορές Περιπτώσεων & Μικρές Μελέτες"
         de: "Fallberichte & Kleine Studien"
         it: "Casi clinici e studi di piccole dimensioni"
         es: "Casos clínicos y estudios de pequeño tamaño"
+        fr: "Cas cliniques et petites études"
     refs:
       - "[33]"
       - "[34]"
@@ -274,3 +311,4 @@ metaDescription:
   de: "HBOT in der Dermatologie — von der Wund- und Verbrennungsheilung sowie der Unterstützung von Hauttransplantaten bis zur aufkommenden Forschung bei entzündlichen Hauterkrankungen."
   it: "HBOT in dermatologia — dalla guarigione di ferite e ustioni e dal supporto agli innesti cutanei alla ricerca emergente sulle malattie infiammatorie della pelle."
   es: "HBOT en dermatología — desde la cicatrización de heridas y quemaduras y el apoyo a injertos cutáneos hasta la investigación emergente sobre enfermedades inflamatorias de la piel."
+  fr: "HBOT en dermatologie — de la cicatrisation des plaies et des brûlures et du soutien aux greffes cutanées à la recherche émergente sur les maladies inflammatoires de la peau."

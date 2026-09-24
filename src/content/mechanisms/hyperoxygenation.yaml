@@ -4,6 +4,7 @@ title:
   de: "Hyperoxygenierung & Vasokonstriktion"
   it: "Iperossigenazione & Vasocostrizione"
   es: "Hiperoxigenación y vasoconstricción"
+  fr: "Hyperoxygénation et vasoconstriction"
 icon: "Droplets"
 color: "teal"
 summary:
@@ -12,12 +13,14 @@ summary:
   de: "HBOT kehrt die Gewebehypoxie um und induziert zugleich eine Vasokonstriktion, wodurch Ödeme reduziert werden, ohne die Sauerstoffversorgung zu beeinträchtigen."
   it: "L'HBOT inverte l'ipossia tissutale inducendo al contempo una vasocostrizione, riducendo l'edema senza compromettere l'apporto di ossigeno."
   es: "HBOT revierte la hipoxia tisular induciendo al mismo tiempo vasoconstricción, reduciendo el edema sin comprometer el aporte de oxígeno."
+  fr: "L'HBOT corrige l'hypoxie tissulaire tout en induisant une vasoconstriction, ce qui réduit l'œdème sans compromettre l'apport d'oxygène."
 detail:
   en: "At 3.0 ATA breathing 100% oxygen, dissolved plasma oxygen increases by approximately 42%, providing sufficient oxygen to sustain cellular respiration even in the absence of hemoglobin. This is particularly beneficial in compartment syndrome and traumatic brain injury."
   el: "Στα 3,0 ATA με αναπνοή 100% οξυγόνου, το διαλυμένο οξυγόνο πλάσματος αυξάνεται κατά ~42%, παρέχοντας επαρκές οξυγόνο για κυτταρική αναπνοή ακόμα και χωρίς αιμοσφαιρίνη. Αυτό είναι ιδιαίτερα ωφέλιμο στο σύνδρομο διαμερίσματος και στο τραυματικό εγκεφαλικό τραύμα."
   de: "Bei 3,0 ATA und Atmung von 100 % Sauerstoff steigt der im Plasma gelöste Sauerstoff um etwa 42 % und liefert ausreichend Sauerstoff zur Aufrechterhaltung der Zellatmung, selbst in Abwesenheit von Hämoglobin. Dies ist besonders vorteilhaft beim Kompartmentsyndrom und beim Schädel-Hirn-Trauma."
   it: "A 3,0 ATA con respirazione di ossigeno al 100%, l'ossigeno disciolto nel plasma aumenta di circa il 42%, fornendo ossigeno sufficiente a sostenere la respirazione cellulare anche in assenza di emoglobina. Ciò è particolarmente vantaggioso nella sindrome compartimentale e nel trauma cranico."
   es: "A 3.0 ATA respirando oxígeno al 100%, el oxígeno disuelto en el plasma aumenta aproximadamente un 42%, aportando oxígeno suficiente para sostener la respiración celular incluso en ausencia de hemoglobina. Esto es particularmente beneficioso en el síndrome compartimental y el traumatismo craneoencefálico."
+  fr: "À 3,0 ATA sous oxygène à 100 %, l'oxygène dissous dans le plasma augmente d'environ 42 %, ce qui fournit suffisamment d'oxygène pour maintenir la respiration cellulaire même en l'absence d'hémoglobine. Cela est particulièrement bénéfique dans le syndrome des loges et le traumatisme crânien."
 refs:
   - "[1]"
 updated: "2026-05-30"
@@ -27,9 +30,11 @@ answerBox:
   de: "Die Hyperoxygenierung ist die unmittelbarste Wirkung der HBOT: Das Atmen von 100 % Sauerstoff unter Druck löst weit mehr Sauerstoff direkt im Blutplasma und kehrt die Gewebehypoxie selbst dort um, wo die Versorgung über Erythrozyten beeinträchtigt ist. Eine paradoxe Vasokonstriktion reduziert die Schwellung, während die Netto-Sauerstoffversorgung steigt — die Grundlage für die Behandlung von Ischämie und Quetschverletzung."
   it: "L'iperossigenazione è l'effetto più immediato della HBOT: respirare ossigeno al 100% sotto pressione disciogli molto più ossigeno direttamente nel plasma sanguigno, invertendo l'ipossia tissutale anche dove la consegna tramite globuli rossi è compromessa. Una paradossale vasocostrizione riduce l'edema mentre l'apporto netto di ossigeno aumenta — la base per il trattamento dell'ischemia e delle lesioni da schiacciamento."
   es: "La hiperoxigenación es el efecto más inmediato de la HBOT: respirar oxígeno al 100% bajo presión disuelve mucho más oxígeno directamente en el plasma sanguíneo, revirtiendo la hipoxia tisular incluso donde el aporte mediante glóbulos rojos está afectado. Una vasoconstricción paradójica reduce el edema mientras aumenta el aporte neto de oxígeno — la base para tratar la isquemia y la lesión por aplastamiento."
+  fr: "L'hyperoxygénation est l'effet le plus immédiat de l'HBOT : respirer de l'oxygène à 100 % sous pression dissout bien davantage d'oxygène directement dans le plasma sanguin, ce qui corrige l'hypoxie tissulaire même lorsque l'apport par les globules rouges est altéré. Une vasoconstriction paradoxale réduit l'œdème tandis que l'apport net en oxygène augmente — c'est le fondement du traitement de l'ischémie et des lésions par écrasement."
 metaDescription:
   en: "Hyperoxygenation under pressure dissolves extra oxygen into plasma, reversing tissue hypoxia even where circulation is impaired — HBOT's core mechanism."
   el: "Η υπεροξυγόνωση υπό πίεση διαλυτοποιεί επιπλέον οξυγόνο στο πλάσμα, αναστρέφοντας την ιστική υποξία ακόμη και όταν η κυκλοφορία είναι διαταραγμένη — ο πυρήνας του μηχανισμού της HBOT."
   de: "Hyperoxygenierung unter Druck löst zusätzlichen Sauerstoff im Plasma und kehrt die Gewebehypoxie selbst bei beeinträchtigter Durchblutung um — der Kernmechanismus der HBOT."
   it: "L'iperossigenazione sotto pressione disciogli ossigeno aggiuntivo nel plasma, invertendo l'ipossia tissutale anche con circolazione compromessa — il meccanismo centrale della HBOT."
   es: "La hiperoxigenación bajo presión disuelve oxígeno adicional en el plasma, revirtiendo la hipoxia tisular incluso con la circulación afectada — el mecanismo central de la HBOT."
+  fr: "L'hyperoxygénation sous pression dissout un surcroît d'oxygène dans le plasma et corrige l'hypoxie tissulaire même lorsque la circulation est altérée — le mécanisme central de l'HBOT."

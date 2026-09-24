@@ -1,0 +1,185 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "fr" as const;
+const prefix = "/fr";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Sécurité et contre-indications de l'HBOT",
+  description:
+    "Contre-indications absolues et relatives, événements indésirables, dépistage préalable au traitement et critères d'arrêt de l'oxygénothérapie hyperbare.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Sécurité et contre-indications — HBOT Science"
+  description="Contre-indications absolues et relatives, événements indésirables, dépistage préalable au traitement et critères d'arrêt de l'oxygénothérapie hyperbare."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Référence</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Sécurité et contre-indications
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      L'oxygénothérapie hyperbare est une intervention médicale généralement
+      bien tolérée, avec un petit nombre de contre-indications absolues, un
+      ensemble plus large de contre-indications relatives et un profil
+      d'événements indésirables bien défini. La synthèse ci-dessous est
+      destinée à servir de référence clinique ; elle ne remplace pas
+      l'évaluation propre à chaque patient.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Contre-indications absolues
+      </h2>
+      <p class="text-slate-700 mb-3">
+        La seule contre-indication absolue universellement reconnue dans la
+        littérature de médecine hyperbare est le <strong>pneumothorax non
+        traité</strong>. Les cycles de compression et de décompression peuvent
+        le transformer en pneumothorax sous tension. Un pneumothorax traité et
+        stabilisé ne constitue pas une contre-indication absolue ; la décision
+        clinique doit mettre en balance l'urgence de l'indication et le risque
+        pulmonaire.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Précautions relatives ou contextuelles liées à la chimiothérapie</strong> :
+        l'administration concomitante de doxorubicine (cardiotoxicité), de
+        bléomycine (toxicité pulmonaire), de cisplatine (altération de la
+        cicatrisation) et de disulfirame (interfère avec la neutralisation des
+        espèces réactives de l'oxygène) est abordée avec prudence et peut être
+        considérée comme une contre-indication absolue pendant l'exposition
+        active au médicament.
+      </p>
+      <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Contre-indications relatives
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>BPCO sévère avec rétention de dioxyde de carbone</strong> — prise en charge par surveillance des gaz du sang artériel et évaluation individuelle du rapport bénéfice-risque.</li>
+        <li><strong>Chirurgie récente de l'oreille moyenne ou des sinus</strong> — un dysfonctionnement de la trompe d'Eustache augmente le risque de barotraumatisme ; un avis ORL et une évaluation préalable au traitement sont recommandés.</li>
+        <li><strong>Infection active des voies respiratoires supérieures ou maladie fébrile</strong> — différer le traitement jusqu'à la résolution lorsque l'indication le permet.</li>
+        <li><strong>Claustrophobie</strong> — prise en charge par un accompagnement avant le traitement, une exposition progressive et le choix du caisson (les caissons multiplaces sont mieux tolérés que les monoplaces en cas d'anxiété).</li>
+        <li><strong>Antécédents de troubles épileptiques</strong> — augmentent le risque de toxicité de l'oxygène sur le système nerveux central ; une adaptation du protocole (pression plus basse, séances plus courtes, pauses d'air) peut être nécessaire.</li>
+        <li><strong>Grossesse</strong> — l'HBOT programmée au premier trimestre est déconseillée ; les indications d'urgence (intoxication au monoxyde de carbone) priment sur la contre-indication relative.</li>
+        <li><strong>Antécédents de névrite optique</strong> — un risque de progression a été décrit.</li>
+        <li><strong>Diabète</strong> — surveillance glycémique étroite requise ; l'HBOT peut abaisser la glycémie pendant les séances.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Événements indésirables
+      </h2>
+      <p class="text-slate-700 mb-3">
+        La revue systématique de Heyboer et al. (2017) demeure la
+        quantification la plus complète des effets indésirables de l'HBOT dans
+        la littérature publiée.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Barotraumatisme de l'oreille moyenne</strong> — de loin l'événement indésirable le plus fréquent, généralement mineur et spontanément résolutif avec un apprentissage rapide des manœuvres d'équilibrage de la pression ; les cas graves (hémotympan, perforation) sont peu fréquents.</li>
+        <li><strong>Barotraumatisme sinusien (barosinusite)</strong> — moins fréquent que les atteintes de l'oreille moyenne ; pris en charge par décongestionnants et compression plus lente.</li>
+        <li><strong>Barotraumatisme pulmonaire</strong> — rare mais grave ; le risque est réduit par une sélection rigoureuse des patients et l'exclusion des pathologies bulleuses.</li>
+        <li><strong>Toxicité de l'oxygène sur le système nerveux central</strong> — se manifeste par une crise convulsive généralisée pendant la séance ; rare avec les protocoles modernes (≤2,5 ATA, ≤90 min). La prise en charge standard consiste à réduire l'oxygène inspiré, à ramener le caisson à la pression du niveau de la mer une fois la crise terminée, puis à procéder à une réévaluation attentive.</li>
+        <li><strong>Toxicité pulmonaire de l'oxygène</strong> — cumulative et dose-dépendante ; pertinente lors des cures prolongées.</li>
+        <li><strong>Myopie réversible / modification de la réfraction</strong> — décrite lors des cures prolongées (généralement citée comme se résolvant en quelques semaines à quelques mois après la fin de la cure).</li>
+        <li><strong>Anxiété liée au confinement</strong> — prise en charge par le choix du caisson, une musique douce et une exposition avant le traitement.</li>
+        <li><strong>Hypoglycémie</strong> — chez les patients diabétiques sous insuline ou sulfamides hypoglycémiants ; surveiller et adapter si nécessaire.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[44]", "[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Dépistage préalable au traitement
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Le dépistage standard préalable au traitement dans les services d'HBOT
+        comprend généralement :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Examen de la membrane tympanique et vérification de la fonction tubaire (trompe d'Eustache).</li>
+        <li>Antécédents sinusiens ; avis ORL le cas échéant.</li>
+        <li>Imagerie thoracique en présence de facteurs de risque pulmonaires.</li>
+        <li>Revue des traitements à la recherche d'agents chimiothérapeutiques et de disulfirame.</li>
+        <li>Statut de grossesse (le cas échéant).</li>
+        <li>Antécédents de crises convulsives.</li>
+        <li>Dépistage de la claustrophobie / de l'anxiété.</li>
+        <li>Modalités de surveillance glycémique chez les patients diabétiques.</li>
+        <li>Évaluation cardiaque chez les patients atteints d'une coronaropathie ou d'une insuffisance cardiaque congestive significative.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Critères d'arrêt
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Le traitement doit être interrompu ou substantiellement modifié dans
+        les circonstances suivantes :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Nouveau pneumothorax au cours d'une séance.</li>
+        <li>Épisode de toxicité de l'oxygène sur le système nerveux central (crise convulsive) — adaptation du protocole ou arrêt.</li>
+        <li>Échec de l'équilibrage de la pression de l'oreille moyenne malgré l'apprentissage et un avis ORL.</li>
+        <li>Événement indésirable grave persistant sans mesure d'atténuation identifiable.</li>
+        <li>Retrait à l'initiative du patient en raison d'une anxiété ou d'une intolérance ne pouvant être prise en charge par les mesures de soutien habituelles.</li>
+        <li>Administration concomitante d'un agent chimiothérapeutique relevant d'une contre-indication absolue et ne pouvant être suspendu.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[9]", "[44]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Cette page est une référence clinique. Elle ne remplace pas
+      l'évaluation propre à chaque patient par un praticien qualifié en
+      médecine hyperbare. Les indications individuelles, les comorbidités et
+      les traitements concomitants doivent être examinés avant le traitement.
+    </p>
+  </article>
+</LandingLayout>

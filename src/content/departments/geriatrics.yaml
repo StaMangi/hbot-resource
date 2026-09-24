@@ -4,6 +4,7 @@ name:
   de: "Geriatrische Beurteilung"
   it: "Valutazione geriatrica"
   es: "Valoración geriátrica"
+  fr: "Évaluation gériatrique"
 icon: "Users"
 color: "#065f46"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Körperliche Leistungsfähigkeit, kognitives Altern"
   it: "Prestazione fisica, invecchiamento cognitivo"
   es: "Rendimiento físico, envejecimiento cognitivo"
+  fr: "Performance physique, vieillissement cognitif"
 applications:
   - title:
       en: "Physical Performance Enhancement"
@@ -19,6 +21,7 @@ applications:
       de: "Verbesserung der körperlichen Leistungsfähigkeit"
       it: "Miglioramento della prestazione fisica"
       es: "Mejora del rendimiento físico"
+      fr: "Amélioration de la performance physique"
     type: "Research"
     typeColor: "blue"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Eine randomisierte kontrollierte Studie zeigte, dass HBOT die maximale körperliche Leistungsfähigkeit und die kardiale Perfusion bei sitzend lebenden älteren Erwachsenen verbessert und so die Belastbarkeit und die kardiovaskuläre Funktion steigert."
       it: "Uno studio clinico randomizzato controllato (RCT) ha dimostrato che l'HBOT migliora la prestazione fisica massimale e la perfusione cardiaca negli anziani sedentari, potenziando la capacità di esercizio e la funzione cardiovascolare."
       es: "Un ensayo clínico aleatorizado (ECA) demostró que la HBOT mejora el rendimiento físico máximo y la perfusión cardiaca en adultos mayores sedentarios, potenciando la capacidad de ejercicio y la función cardiovascular."
+      fr: "Un essai contrôlé randomisé (ECR) a démontré que l'HBOT améliore la performance physique maximale et la perfusion cardiaque chez des personnes âgées sédentaires, en renforçant la capacité d'effort et la fonction cardiovasculaire."
     evidence: "Level A (RCT)"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "RCT (Doenyas-Barak et al., 2024)"
         el: "ΤΕΔ (Doenyas-Barak et al., 2024)"
         de: "RKS (Doenyas-Barak et al., 2024)"
         it: "RCT (Doenyas-Barak et al., 2024)"
         es: "ECA (Doenyas-Barak et al., 2024)"
+        fr: "ECR (Doenyas-Barak et al., 2024)"
     refs:
       - "[21]"
   - title:
@@ -67,6 +76,7 @@ applications:
       de: "Prävention des kognitiven Abbaus"
       it: "Prevenzione del declino cognitivo"
       es: "Prevención del deterioro cognitivo"
+      fr: "Prévention du déclin cognitif"
     type: "Research"
     typeColor: "blue"
     description:
@@ -75,6 +85,7 @@ applications:
       de: "HBOT kehrt die altersbedingte zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe, wodurch der kognitive Abbau in alternden Populationen möglicherweise verhindert oder verlangsamt werden kann."
       it: "L'HBOT inverte l'ipoperfusione cerebrale legata all'età e promuove l'angiogenesi nel tessuto cerebrale, potenzialmente prevenendo o rallentando il declino cognitivo nelle popolazioni che invecchiano."
       es: "La HBOT revierte la hipoperfusión cerebral asociada a la edad y promueve la angiogénesis en el tejido cerebral, lo que potencialmente previene o ralentiza el deterioro cognitivo en poblaciones que envejecen."
+      fr: "L'HBOT corrige l'hypoperfusion cérébrale liée à l'âge et favorise l'angiogenèse dans le tissu cérébral, ce qui pourrait prévenir ou ralentir le déclin cognitif chez les populations vieillissantes."
     evidence: "Level B"
     protocol:
       ata:
@@ -83,30 +94,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
         es: "60"
+        fr: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
         de: "RKS (Hadanny et al., 2020)"
         it: "RCT (Hadanny et al., 2020)"
         es: "ECA (Hadanny et al., 2020)"
+        fr: "ECR (Hadanny et al., 2020)"
     refs:
       - "[4]"
       - "[5]"
@@ -116,6 +132,7 @@ applications:
       de: "Umkehr der zellulären Alterung"
       it: "Inversione dell'invecchiamento cellulare"
       es: "Reversión del envejecimiento celular"
+      fr: "Inversion du vieillissement cellulaire"
     type: "Research"
     typeColor: "blue"
     description:
@@ -124,6 +141,7 @@ applications:
       de: "Erster menschlicher Nachweis einer Telomerverlängerung (>20 %) und Beseitigung seneszenter Zellen durch 60 HBOT-Sitzungen bei gesunden älteren Erwachsenen, was eine neuartige Anti-Aging-Intervention darstellt."
       it: "Prima evidenza sull'uomo di allungamento dei telomeri (>20%) e di eliminazione delle cellule senescenti attraverso 60 sedute di HBOT in anziani sani, che rappresenta un nuovo intervento anti-invecchiamento."
       es: "Primera evidencia en humanos de alargamiento de los telómeros (>20%) y de eliminación de células senescentes a través de 60 sesiones de HBOT en adultos mayores sanos, lo que representa una nueva intervención antienvejecimiento."
+      fr: "Premières données chez l'humain d'un allongement des télomères (>20 %) et d'une élimination des cellules sénescentes au moyen de 60 séances d'HBOT chez des personnes âgées en bonne santé, ce qui représente une nouvelle intervention anti-âge."
     evidence: "Level B"
     protocol:
       ata:
@@ -132,30 +150,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
         es: "60"
+        fr: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Hadanny et al., 2020 (RCT)"
         el: "Hadanny et al., 2020 (ΤΕΔ)"
         de: "Hadanny et al., 2020 (RKS)"
         it: "Hadanny et al., 2020 (RCT)"
         es: "Hadanny et al., 2020 (ECA)"
+        fr: "Hadanny et al., 2020 (ECR)"
     refs:
       - "[3]"
 updated: "2026-05-30"
@@ -165,3 +188,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der Geriatrie — aufkommende Forschung zu körperlicher Leistungsfähigkeit und kognitivem Altern bei älteren Erwachsenen, präsentiert als in Erprobung statt als etablierte Versorgung."
   it: "Ossigenoterapia iperbarica in geriatria — ricerca emergente su prestazione fisica e invecchiamento cognitivo negli adulti più anziani, presentata come sperimentale piuttosto che come pratica consolidata."
   es: "Oxigenoterapia hiperbárica en geriatría — investigación emergente sobre el rendimiento físico y el envejecimiento cognitivo en adultos mayores, presentada como investigacional y no como atención establecida."
+  fr: "Oxygénothérapie hyperbare en gériatrie — recherche émergente sur la performance physique et le vieillissement cognitif chez les personnes âgées, présentée comme expérimentale plutôt que comme une prise en charge établie."

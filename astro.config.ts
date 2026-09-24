@@ -26,7 +26,7 @@ export default defineConfig({
   compressHTML: true,
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "el", "de", "it", "es"],
+    locales: ["en", "el", "de", "it", "es", "fr"],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -39,7 +39,7 @@ export default defineConfig({
     sitemap({
       i18n: {
         defaultLocale: "en",
-        locales: { en: "en", el: "el", de: "de", it: "it", es: "es" },
+        locales: { en: "en", el: "el", de: "de", it: "it", es: "es", fr: "fr" },
       },
     }),
     // Pagefind MUST be last — it indexes the built dist/ HTML after all other

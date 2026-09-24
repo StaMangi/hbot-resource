@@ -4,6 +4,7 @@ name:
   de: "HNO (Hals-Nasen-Ohren-Heilkunde)"
   it: "ORL (Otorinolaringoiatria)"
   es: "ORL (Otorrinolaringología)"
+  fr: "ORL (oto-rhino-laryngologie)"
 icon: "Ear"
 color: "#0891b2"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Plötzlicher Hörverlust, Tinnitus"
   it: "Ipoacusia improvvisa, acufene"
   es: "Hipoacusia súbita, acúfenos"
+  fr: "Surdité brusque, acouphènes"
 applications:
   - title:
       en: "Idiopathic Sudden Sensorineural Hearing Loss"
@@ -19,6 +21,7 @@ applications:
       de: "Idiopathischer plötzlicher sensorineuraler Hörverlust"
       it: "Ipoacusia neurosensoriale improvvisa idiopatica"
       es: "Hipoacusia neurosensorial súbita idiopática"
+      fr: "Surdité brusque idiopathique (neurosensorielle)"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "FDA-zugelassene adjuvante Therapie (2011) bei Versagen der Kortikosteroidtherapie. Kehrt die kochleäre Hypoxie um und reduziert den endolymphatischen Hydrops, wodurch die Hörerholungsraten verbessert werden."
       it: "Trattamento adiuvante approvato dalla FDA (2011) quando la terapia con corticosteroidi fallisce. Inverte l'ipossia cocleare e riduce l'idrope endolinfatico, migliorando i tassi di recupero uditivo."
       es: "Tratamiento adyuvante aprobado por la FDA (2011) cuando fracasa la terapia con corticosteroides. Revierte la hipoxia coclear y reduce el hidrops endolinfático, mejorando las tasas de recuperación auditiva."
+      fr: "Traitement adjuvant approuvé par la FDA (2011) en cas d'échec de la corticothérapie. Corrige l'hypoxie cochléaire et réduit l'hydrops endolymphatique, améliorant les taux de récupération auditive."
     evidence: "Level B"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
         es: "10 – 20"
+        fr: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
       - "[20]"
@@ -68,6 +77,7 @@ applications:
       de: "Tinnitus"
       it: "Acufene"
       es: "Acúfenos"
+      fr: "Acouphènes"
     type: "Research"
     typeColor: "blue"
     description:
@@ -76,6 +86,7 @@ applications:
       de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus. Ein Cochrane-Review fand jedoch keine Evidenz für einen Nutzen bei chronischem Tinnitus und empfiehlt HBOT für diesen Zweck nicht."
       it: "Uso sperimentale per l'acufene cronico associato a ipossia cocleare. Alcuni studi clinici mostrano un miglioramento dei punteggi di gravità dell'acufene. Tuttavia, una revisione Cochrane non ha trovato evidenze di beneficio per l'acufene cronico e non raccomanda l'HBOT a tale scopo."
       es: "Uso experimental para los acúfenos crónicos asociados a hipoxia coclear. Algunos estudios clínicos muestran una mejora en las puntuaciones de gravedad de los acúfenos. Sin embargo, una revisión Cochrane no encontró evidencia de beneficio en los acúfenos crónicos y no recomienda la HBOT con este fin."
+      fr: "Utilisation expérimentale dans les acouphènes chroniques associés à une hypoxie cochléaire. Certaines études cliniques montrent une amélioration des scores de sévérité des acouphènes. Toutefois, une revue Cochrane n'a trouvé aucune preuve de bénéfice dans les acouphènes chroniques et ne recommande pas l'HBOT dans cette indication."
     evidence: "Level C"
     protocol:
       ata:
@@ -84,30 +95,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "10 – 20"
         el: "10 – 20"
         de: "10 – 20"
         it: "10 – 20"
         es: "10 – 20"
+        fr: "10 – 20"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+        fr: "Recherche clinique"
     refs:
       - "[2]"
       - "[20]"
@@ -118,3 +134,4 @@ metaDescription:
   de: "HBOT in der HNO — FDA-zugelassene adjuvante Behandlung des idiopathischen Hörsturzes und Forschung zum assoziierten Tinnitus."
   it: "HBOT in ORL — trattamento adiuvante approvato dalla FDA per la sordità improvvisa neurosensoriale idiopatica e ricerca sul tinnito associato."
   es: "HBOT en ORL — tratamiento adyuvante aprobado por la FDA para la hipoacusia neurosensorial súbita idiopática e investigación sobre el tinnitus asociado."
+  fr: "HBOT en ORL — traitement adjuvant approuvé par la FDA de la surdité brusque idiopathique (neurosensorielle), et recherche sur les acouphènes associés."
