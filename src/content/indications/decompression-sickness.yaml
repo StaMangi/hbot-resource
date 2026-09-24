@@ -58,7 +58,8 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[6]"
+  - "[2]"
+  - "[9]"
 updated: "2026-05-30"
 answerBox:
   en: "Decompression sickness (\"the bends\") occurs when dissolved nitrogen forms bubbles in the blood and tissues after rapid pressure changes, affecting divers and compressed-air workers. Hyperbaric oxygen therapy is the FDA-approved primary treatment: pressure shrinks the bubbles while oxygen accelerates nitrogen elimination and re-oxygenates affected tissue."

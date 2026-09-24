@@ -58,6 +58,8 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
+  - "[9]"
+  - "[13]"
   - "[7]"
 updated: "2026-05-30"
 answerBox:

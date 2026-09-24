@@ -61,6 +61,8 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
+      - "[9]"
+      - "[13]"
       - "[7]"
   - title:
       en: "Radiation Dermatitis & Soft-Tissue Radiation Injury"
@@ -110,7 +112,8 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[12]"
+      - "[2]"
+      - "[9]"
   - title:
       en: "Compromised Skin Grafts & Flaps"
       el: "Διακυβευμένα Δερματικά Μοσχεύματα & Κρημνοί"
@@ -159,8 +162,9 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[13]"
+      - "[9]"
       - "[33]"
+      - "[38]"
   - title:
       en: "Burns & Necrotizing Soft-Tissue Infection"
       el: "Εγκαύματα & Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
@@ -209,7 +213,8 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[10]"
+      - "[2]"
+      - "[9]"
       - "[33]"
   - title:
       en: "Inflammatory Dermatoses"

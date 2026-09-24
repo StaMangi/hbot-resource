@@ -61,6 +61,7 @@ applications:
         es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
+      - "[20]"
   - title:
       en: "Tinnitus"
       el: "Εμβοές"
@@ -70,11 +71,11 @@ applications:
     type: "Research"
     typeColor: "blue"
     description:
-      en: "Investigational use for chronic tinnitus associated with cochlear hypoxia. Some clinical studies show improvement in tinnitus severity scores."
-      el: "Ερευνητική χρήση για χρόνιες εμβοές που σχετίζονται με κοχλιακή υποξία. Ορισμένες κλινικές μελέτες δείχνουν βελτίωση στις βαθμολογίες σοβαρότητας εμβοών."
-      de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus."
-      it: "Uso sperimentale per l'acufene cronico associato a ipossia cocleare. Alcuni studi clinici mostrano un miglioramento dei punteggi di gravità dell'acufene."
-      es: "Uso experimental para los acúfenos crónicos asociados a hipoxia coclear. Algunos estudios clínicos muestran una mejora en las puntuaciones de gravedad de los acúfenos."
+      en: "Investigational use for chronic tinnitus associated with cochlear hypoxia. Some clinical studies show improvement in tinnitus severity scores. However, a Cochrane review found no evidence of benefit for chronic tinnitus and does not recommend HBOT for this purpose."
+      el: "Ερευνητική χρήση για χρόνιες εμβοές που σχετίζονται με κοχλιακή υποξία. Ορισμένες κλινικές μελέτες δείχνουν βελτίωση στις βαθμολογίες σοβαρότητας εμβοών. Ωστόσο, μια ανασκόπηση Cochrane δεν βρήκε στοιχεία οφέλους για τις χρόνιες εμβοές και δεν συνιστά την HBOT για αυτόν τον σκοπό."
+      de: "Investigative Anwendung bei chronischem Tinnitus im Zusammenhang mit kochleärer Hypoxie. Einige klinische Studien zeigen eine Verbesserung der Schweregrad-Scores des Tinnitus. Ein Cochrane-Review fand jedoch keine Evidenz für einen Nutzen bei chronischem Tinnitus und empfiehlt HBOT für diesen Zweck nicht."
+      it: "Uso sperimentale per l'acufene cronico associato a ipossia cocleare. Alcuni studi clinici mostrano un miglioramento dei punteggi di gravità dell'acufene. Tuttavia, una revisione Cochrane non ha trovato evidenze di beneficio per l'acufene cronico e non raccomanda l'HBOT a tale scopo."
+      es: "Uso experimental para los acúfenos crónicos asociados a hipoxia coclear. Algunos estudios clínicos muestran una mejora en las puntuaciones de gravedad de los acúfenos. Sin embargo, una revisión Cochrane no encontró evidencia de beneficio en los acúfenos crónicos y no recomienda la HBOT con este fin."
     evidence: "Level C"
     protocol:
       ata:
@@ -109,6 +110,7 @@ applications:
         es: "Investigación clínica"
     refs:
       - "[2]"
+      - "[20]"
 updated: "2026-05-30"
 metaDescription:
   en: "HBOT in ENT — FDA-approved adjunctive treatment for idiopathic sudden sensorineural hearing loss, and research into associated tinnitus."
