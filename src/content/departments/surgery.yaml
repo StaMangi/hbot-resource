@@ -251,10 +251,12 @@ applications:
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+    indicationSlug: "acute-thermal-burns"
     refs:
       - "[1]"
       - "[2]"
       - "[9]"
+      - "[57]"
   - title:
       en: "Therapeutic Angiogenesis (Cardiac)"
       el: "Θεραπευτική Αγγειογένεση (Καρδιακή)"

@@ -48,12 +48,12 @@ const evidenceBadge = (level: string) =>
 
 <IndexLayout
   title="Protocol Comparison Matrix — HBOT Science"
-  description="Side-by-side comparison of HBOT protocols across all FDA-approved and emerging indications and longevity applications: pressure (ATA), session count, duration, frequency, and evidence basis."
+  description="Side-by-side comparison of HBOT protocols across all UHMS-approved and emerging indications and longevity applications: pressure (ATA), session count, duration, frequency, and evidence basis."
   locale={locale}
   pathname={pathname}
   badge="Reference"
   pageHeading="Protocol Comparison"
-  pageSubtitle="Side-by-side comparison of HBOT protocols across FDA-approved and emerging indications and longevity applications. Cmd-P / Ctrl-P prints cleanly to PDF."
+  pageSubtitle="Side-by-side comparison of HBOT protocols across UHMS-approved and emerging indications and longevity applications. Cmd-P / Ctrl-P prints cleanly to PDF."
   badgeColor="navy"
 >
   {/* FDA indication protocols */}
@@ -61,7 +61,7 @@ const evidenceBadge = (level: string) =>
     class="text-xl font-semibold text-slate-900 mb-4"
     style="font-family: var(--font-display)"
   >
-    Indications: FDA-approved and emerging ({fdaRows.length})
+    Indications: UHMS-approved and emerging ({fdaRows.length})
   </h2>
 
   <div class="overflow-x-auto rounded-lg border border-slate-200 mb-12">

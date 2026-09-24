@@ -79,6 +79,12 @@ const indications = defineCollection({
     // `category` below is the orthogonal medical-domain axis (Wound Care,
     // Sensory Disorders, etc.) — used for the inner card grouping.
     tier: z.enum(["fda-approved", "emerging"]),
+    // UHMS indication number (Hyperbaric Medicine Indications Manual, 15th ed.)
+    // for "fda-approved"-tier entries — the tier key predates the relabel to
+    // "UHMS-approved". CRAO and problem wounds share #6 (arterial
+    // insufficiencies), so the site's UHMS count is the number of DISTINCT
+    // values, not of pages.
+    uhms: z.number().int().min(1).max(15).optional(),
     category: bilingual,
     condition: bilingual,
     description: bilingual,

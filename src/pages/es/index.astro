@@ -12,17 +12,24 @@ const locale = "es" as const;
 
 const title = `${SITE_NAME} — Guía de la HBOT basada en la evidencia`;
 const description =
-  "Guía basada en la evidencia sobre la oxigenoterapia hiperbárica. Mecanismos, indicaciones aprobadas por la FDA, protocolos clínicos, aplicaciones de longevidad y literatura curada.";
+  "Guía basada en la evidencia sobre la oxigenoterapia hiperbárica. Mecanismos, indicaciones aprobadas por la UHMS, protocolos clínicos, aplicaciones de longevidad y literatura curada.";
 
 const indications = await getCollection("indications");
+// Was a hardcoded "258" with no source; now the size of the verified bibliography.
+const referenceCount = (await getCollection("references")).length;
 const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+// Distinct UHMS indication numbers: CRAO and problem wounds share #6, so
+// pages ≠ indications.
+const uhmsCount = new Set(
+  indications.filter((e) => e.data.tier === "fda-approved").map((e) => e.data.uhms),
+).size;
 const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
 const totalIndications = fdaCount + emergingCount;
 
 const stats = [
-  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: String(uhmsCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
   { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
-  { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
+  { value: String(referenceCount), label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
   { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
 ];
 
@@ -64,7 +71,7 @@ const jsonLd = {
           la oxigenoterapia hiperbárica.
         </h1>
         <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
-          Mecanismos, indicaciones aprobadas por la FDA, protocolos clínicos,
+          Mecanismos, indicaciones aprobadas por la UHMS, protocolos clínicos,
           aplicaciones de longevidad y literatura curada. Sin marketing,
           sin chatbot — solo lo que la literatura respalda.
         </p>
@@ -98,7 +105,7 @@ const jsonLd = {
         icon="lucide:stethoscope"
         eyebrow="Para hospitales y clínicas"
         title="Integración clínica"
-        body="Indicaciones aprobadas por la FDA, niveles de evidencia, mapeo de aplicaciones por servicio, protocolos y recomendaciones estratégicas para la integración hospitalaria."
+        body="Indicaciones aprobadas por la UHMS, niveles de evidencia, mapeo de aplicaciones por servicio, protocolos y recomendaciones estratégicas para la integración hospitalaria."
         cta="Explore el ámbito clínico"
         variant="clinical"
       />
@@ -142,7 +149,7 @@ const jsonLd = {
           href="/es/indications/"
           icon="lucide:list-checks"
           title="Indicaciones"
-          body={`${totalIndications} indicaciones en dos niveles de evidencia — ${fdaCount} aprobadas por la FDA (reconocidas por la UHMS) y ${emergingCount} emergentes — con niveles de evidencia, protocolos y referencias clave.`}
+          body={`${totalIndications} indicaciones en dos niveles de evidencia — ${fdaCount} correspondientes a las ${uhmsCount} indicaciones aprobadas por la UHMS y ${emergingCount} emergentes — con niveles de evidencia, protocolos y referencias clave.`}
         />
         <HomeLibraryTile
           href="/es/evidence/"
