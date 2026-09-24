@@ -31,12 +31,12 @@ const iconMap: Record<string, string> = {
       <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
         <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
       </div>
-      <h3
+      <h2
         class="text-base font-semibold text-slate-900"
         style="font-family: var(--font-display)"
       >
         {entry.data.name[locale]}
-      </h3>
+      </h2>
     </div>
     <p class="text-sm text-slate-600 leading-relaxed">
       {entry.data.rationale[locale]}
