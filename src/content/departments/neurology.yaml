@@ -4,6 +4,7 @@ name:
   de: "Neurologie"
   it: "Neurologia"
   es: "Neurología"
+  fr: "Neurologie"
 icon: "Brain"
 color: "#7c3aed"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "SHT, Schlaganfall, Demenz, kognitive Förderung"
   it: "Trauma cranico, ictus, demenza, potenziamento cognitivo"
   es: "TCE, ictus, demencia, potenciación cognitiva"
+  fr: "TC, AVC, démence, amélioration cognitive"
 applications:
   - title:
       en: "Mild Traumatic Brain Injury (mTBI)"
@@ -19,6 +21,7 @@ applications:
       de: "Leichtes Schädel-Hirn-Trauma (mSHT)"
       it: "Trauma cranico lieve (mTBI)"
       es: "Traumatismo craneoencefálico leve (mTBI)"
+      fr: "Traumatisme crânien léger (TCL)"
     type: "Research"
     typeColor: "blue"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Evidenz Stufe B aus klinischen Studien, die Verbesserungen neurokognitiver Defizite, postkommotioneller Symptome und der Hirn-Mikrostruktur bei Patienten mit leichtem SHT belegen."
       it: "Evidenza di Livello B da studi clinici che dimostrano miglioramenti nei deficit neurocognitivi, nei sintomi post-commozione cerebrale e nella microstruttura cerebrale nei pazienti con mTBI."
       es: "Evidencia de Nivel B procedente de ensayos clínicos que demuestran mejoras en los déficits neurocognitivos, los síntomas posconmoción cerebral y la microestructura cerebral en pacientes con mTBI."
+      fr: "Données de niveau B issues d'essais cliniques démontrant des améliorations des déficits neurocognitifs, des symptômes post-commotionnels et de la microstructure cérébrale chez les patients atteints de TCL."
     evidence: "Level B"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "1.5 – 2.0 ATA"
         it: "1.5 – 2.0 ATA"
         es: "1.5 – 2.0 ATA"
+        fr: "1.5 – 2.0 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Level B Evidence"
         el: "Τεκμηρίωση Επιπέδου Β"
         de: "Evidenz Stufe B"
         it: "Evidenza di Livello B"
         es: "Evidencia de Nivel B"
+        fr: "Niveau de preuve B"
     indicationSlug: "traumatic-brain-injury"
     refs:
       - "[15]"
@@ -68,6 +77,7 @@ applications:
       de: "Schlaganfallrehabilitation"
       it: "Recupero dall'ictus"
       es: "Recuperación del ictus"
+      fr: "Récupération après un AVC"
     type: "Research"
     typeColor: "blue"
     description:
@@ -76,6 +86,7 @@ applications:
       de: "Investigative adjuvante Therapie zur Rehabilitation nach ischämischem Schlaganfall. HBOT fördert die Neuroplastizität, reduziert die peri-infarktale Hypoxie und kann funktionelle Ergebnisse verbessern."
       it: "Terapia adiuvante sperimentale per il recupero dall'ictus ischemico. L'HBOT promuove la neuroplasticità, riduce l'ipossia peri-infartuale e può migliorare gli esiti funzionali."
       es: "Terapia adyuvante experimental para la recuperación del ictus isquémico. La HBOT promueve la neuroplasticidad, reduce la hipoxia periinfarto y puede mejorar los resultados funcionales."
+      fr: "Traitement adjuvant expérimental de la récupération après un AVC ischémique. L'HBOT favorise la neuroplasticité, réduit l'hypoxie péri-infarctus et peut améliorer les résultats fonctionnels."
     evidence: "Level B"
     protocol:
       ata:
@@ -84,30 +95,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+        fr: "Recherche clinique"
     indicationSlug: "stroke-recovery"
     refs:
       - "[49]"
@@ -119,6 +135,7 @@ applications:
       de: "Vaskuläre Demenz"
       it: "Demenza vascolare"
       es: "Demencia vascular"
+      fr: "Démence vasculaire"
     type: "Research"
     typeColor: "blue"
     description:
@@ -127,6 +144,7 @@ applications:
       de: "HBOT kehrt die chronische zerebrale Minderperfusion um und fördert die Angiogenese im Hirngewebe. Klinische Studien zeigen Verbesserungen der kognitiven Funktion bei Patienten mit vaskulärer Demenz."
       it: "L'HBOT inverte l'ipoperfusione cerebrale cronica e promuove l'angiogenesi nel tessuto cerebrale. Studi clinici mostrano miglioramenti della funzione cognitiva nei pazienti con demenza vascolare."
       es: "La HBOT revierte la hipoperfusión cerebral crónica y promueve la angiogénesis en el tejido cerebral. Los estudios clínicos muestran mejoras de la función cognitiva en pacientes con demencia vascular."
+      fr: "L'HBOT corrige l'hypoperfusion cérébrale chronique et favorise l'angiogenèse dans le tissu cérébral. Des études cliniques montrent une amélioration de la fonction cognitive chez les patients atteints de démence vasculaire."
     evidence: "Level B"
     protocol:
       ata:
@@ -135,30 +153,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
         es: "60"
+        fr: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+        fr: "Recherche clinique"
     refs:
       - "[16]"
   - title:
@@ -167,6 +190,7 @@ applications:
       de: "Kognitive Förderung beim gesunden Altern"
       it: "Potenziamento cognitivo nell'invecchiamento sano"
       es: "Potenciación cognitiva en el envejecimiento sano"
+      fr: "Amélioration cognitive au cours du vieillissement en bonne santé"
     type: "Research"
     typeColor: "blue"
     description:
@@ -175,6 +199,7 @@ applications:
       de: "Eine randomisierte kontrollierte Studie zeigte signifikante kognitive Verbesserungen bei gesunden älteren Erwachsenen, einschließlich Verbesserungen des Gedächtnisses und der Verarbeitungsgeschwindigkeit, die mit einem erhöhten zerebralen Blutfluss korrelieren."
       it: "Uno studio clinico randomizzato controllato (RCT) ha dimostrato significativi potenziamenti cognitivi in anziani sani, compresi miglioramenti della memoria e della velocità di elaborazione correlati a un aumento del flusso ematico cerebrale."
       es: "Un ensayo clínico aleatorizado (ECA) demostró potenciaciones cognitivas significativas en adultos mayores sanos, incluidas mejoras de la memoria y de la velocidad de procesamiento correlacionadas con un aumento del flujo sanguíneo cerebral."
+      fr: "Un essai contrôlé randomisé (ECR) a démontré des améliorations cognitives significatives chez des personnes âgées en bonne santé, notamment de la mémoire et de la vitesse de traitement, corrélées à une augmentation du débit sanguin cérébral."
     evidence: "Level A (RCT)"
     protocol:
       ata:
@@ -183,30 +208,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "60"
         el: "60"
         de: "60"
         it: "60"
         es: "60"
+        fr: "60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "RCT (Hadanny et al., 2020)"
         el: "ΤΕΔ (Hadanny et al., 2020)"
         de: "RKS (Hadanny et al., 2020)"
         it: "RCT (Hadanny et al., 2020)"
         es: "ECA (Hadanny et al., 2020)"
+        fr: "ECR (Hadanny et al., 2020)"
     refs:
       - "[4]"
   - title:
@@ -215,6 +245,7 @@ applications:
       de: "Neurodegenerative Erkrankungen"
       it: "Malattie neurodegenerative"
       es: "Enfermedades neurodegenerativas"
+      fr: "Maladies neurodégénératives"
     type: "Research"
     typeColor: "orange"
     description:
@@ -223,6 +254,7 @@ applications:
       de: "Aufkommende präklinische und frühe klinische Evidenz für die Alzheimer- und Parkinson-Krankheit. HBOT reduziert die Neuroinflammation und fördert die Neurogenese."
       it: "Evidenze emergenti precliniche e cliniche iniziali per la malattia di Alzheimer e la malattia di Parkinson. L'HBOT riduce la neuroinfiammazione e promuove la neurogenesi."
       es: "Evidencia emergente preclínica y clínica inicial para la enfermedad de Alzheimer y la enfermedad de Parkinson. La HBOT reduce la neuroinflamación y promueve la neurogénesis."
+      fr: "Données émergentes précliniques et cliniques préliminaires dans la maladie d'Alzheimer et la maladie de Parkinson. L'HBOT réduit la neuro-inflammation et favorise la neurogenèse."
     evidence: "Level C"
     protocol:
       ata:
@@ -231,30 +263,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40 – 60"
         el: "40 – 60"
         de: "40 – 60"
         it: "40 – 60"
         es: "40 – 60"
+        fr: "40 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Preclinical / Early Phase"
         el: "Προκλινικό / Πρώιμη Φάση"
         de: "Präklinisch / Frühe Phase"
         it: "Preclinico / Fase iniziale"
         es: "Preclínico / Fase inicial"
+        fr: "Préclinique / Phase précoce"
     refs:
       - "[8]"
   - title:
@@ -263,6 +300,7 @@ applications:
       de: "Long COVID"
       it: "Long COVID (Sindrome post-COVID)"
       es: "COVID persistente (Long COVID)"
+      fr: "COVID long"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -271,6 +309,7 @@ applications:
       de: "Anhaltende kognitive Dysfunktion, Brain Fog, Fatigue, Schlafstörungen und Schmerzen nach SARS-CoV-2-Infektion. Eine randomisierte kontrollierte Studie berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen, wobei die Vorteile bei einer Nachbeobachtung über ein Jahr anhielten. Die Evidenz stützt sich derzeit auf eine einzelne Forschungsgruppe; eine unabhängige Replikation steht aus."
       it: "Disfunzione cognitiva persistente, brain fog, affaticamento, disturbi del sonno e dolore dopo infezione da SARS-CoV-2. Uno studio clinico randomizzato controllato (RCT) ha riportato miglioramenti significativi dopo 40 sedute di HBOT, con benefici mantenuti al follow-up a un anno. L'evidenza è attualmente ancorata a un singolo gruppo di ricerca; è in corso una replicazione indipendente."
       es: "Disfunción cognitiva persistente, «niebla mental», fatiga, trastornos del sueño y dolor tras la infección por SARS-CoV-2. Un ensayo clínico aleatorizado (ECA) informó mejoras significativas tras 40 sesiones de HBOT, con beneficios mantenidos en el seguimiento a un año. La base de evidencia se sustenta actualmente en un único grupo de investigación; se está llevando a cabo una replicación independiente."
+      fr: "Dysfonction cognitive persistante, « brouillard cérébral », fatigue, troubles du sommeil et douleurs après une infection par le SARS-CoV-2. Un essai contrôlé randomisé (ECR) a rapporté des améliorations significatives après 40 séances d'HBOT, avec des bénéfices maintenus au cours du suivi à un an. Les données reposent actuellement sur un seul groupe de recherche ; une réplication indépendante est en cours."
     evidence: "Level B"
     protocol:
       ata:
@@ -279,30 +318,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40"
         el: "40"
         de: "40"
         it: "40"
         es: "40"
+        fr: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
         de: "5×/Woche"
         it: "5×/settimana"
         es: "5×/semana"
+        fr: "5×/semaine"
       basis:
         en: "RCT (Zilberman-Itskovich et al., 2022)"
         el: "ΤΕΔ (Zilberman-Itskovich et al., 2022)"
         de: "RKS (Zilberman-Itskovich et al., 2022)"
         it: "RCT (Zilberman-Itskovich et al., 2022)"
         es: "ECA (Zilberman-Itskovich et al., 2022)"
+        fr: "ECR (Zilberman-Itskovich et al., 2022)"
     refs:
       - "[25]"
       - "[26]"
@@ -314,6 +358,7 @@ applications:
       de: "Fibromyalgie"
       it: "Fibromialgia"
       es: "Fibromialgia"
+      fr: "Fibromyalgie"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -322,6 +367,7 @@ applications:
       de: "Chronisches zentrales Sensibilisierungssyndrom mit weitverbreiteten Schmerzen, Tender Points, Fatigue, Schlafstörungen und kognitiven Symptomen. Eine prospektive kontrollierte Studie von 2015 berichtete über signifikante Verbesserungen nach 40 HBOT-Sitzungen bei 2,0 ATA; zwei unabhängige Meta-Analysen aus 2023 bestätigen Verbesserungen bei Funktion, Tender Points, Fatigue, Schlaf und Lebensqualität über gepoolte randomisierte Daten hinweg."
       it: "Sindrome cronica da sensibilizzazione centrale con dolore diffuso, tender points, affaticamento, disturbi del sonno e sintomi cognitivi. Uno studio controllato prospettico del 2015 ha riportato miglioramenti significativi dopo 40 sedute di HBOT a 2.0 ATA, con due metanalisi indipendenti del 2023 che confermano miglioramenti in funzione, tender points, affaticamento, sonno e qualità della vita su dati randomizzati aggregati."
       es: "Síndrome de sensibilización central crónica con dolor generalizado, puntos sensibles, fatiga, trastornos del sueño y síntomas cognitivos. Un ensayo controlado prospectivo de 2015 informó mejoras significativas tras 40 sesiones de HBOT a 2.0 ATA, con dos metaanálisis independientes de 2023 que confirman mejoras en la función, los puntos sensibles, la fatiga, el sueño y la calidad de vida en datos aleatorizados agrupados."
+      fr: "Syndrome chronique de sensibilisation centrale associant douleurs diffuses, points douloureux, fatigue, troubles du sommeil et symptômes cognitifs. Un essai contrôlé prospectif de 2015 a rapporté des améliorations significatives après 40 séances d'HBOT à 2,0 ATA, et deux méta-analyses indépendantes de 2023 ont confirmé des améliorations de la fonction, des points douloureux, de la fatigue, du sommeil et de la qualité de vie sur des données randomisées regroupées."
     evidence: "Level B"
     protocol:
       ata:
@@ -330,30 +376,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "40"
         el: "40"
         de: "40"
         it: "40"
         es: "40"
+        fr: "40"
       frequency:
         en: "5×/week"
         el: "5×/εβδομάδα"
         de: "5×/Woche"
         it: "5×/settimana"
         es: "5×/semana"
+        fr: "5×/semaine"
       basis:
         en: "Prospective Controlled Trial (Efrati et al., 2015)"
         el: "Προοπτική Ελεγχόμενη Δοκιμή (Efrati et al., 2015)"
         de: "Prospektive Kontrollierte Studie (Efrati et al., 2015)"
         it: "Studio controllato prospettico (Efrati et al., 2015)"
         es: "Ensayo controlado prospectivo (Efrati et al., 2015)"
+        fr: "Essai contrôlé prospectif (Efrati et al., 2015)"
     refs:
       - "[29]"
       - "[30]"
@@ -366,3 +417,4 @@ metaDescription:
   de: "HBOT in der Neurologie — Anwendungen und Evidenz bei Schädel-Hirn-Trauma, Schlaganfall-Rehabilitation, Demenz und kognitiver Verbesserung, mit Evidenzgraden pro Erkrankung."
   it: "HBOT in neurologia — applicazioni ed evidenze su trauma cranico, recupero da ictus, demenza e potenziamento cognitivo, con i livelli di evidenza indicati per ciascuna condizione."
   es: "HBOT en neurología — aplicaciones y evidencia en traumatismo craneoencefálico, recuperación tras ictus, demencia y mejora cognitiva, con los niveles de evidencia indicados para cada condición."
+  fr: "HBOT en neurologie — applications et données dans le traumatisme crânien, la récupération après un AVC, la démence et l'amélioration cognitive, avec le niveau de preuve indiqué pour chaque affection."

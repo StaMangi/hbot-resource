@@ -4,6 +4,7 @@ name:
   de: "Plastische Chirurgie"
   it: "Chirurgia plastica"
   es: "Cirugía plástica"
+  fr: "Chirurgie plastique"
 icon: "Sparkles"
 color: "#9f1239"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Gefährdete Transplantate/Lappen, postoperative Erholung, Strahlenschäden, rekonstruktive Fälle"
   it: "Innesti/lembi compromessi, recupero post-procedurale, danno radiogeno, casi ricostruttivi"
   es: "Injertos/colgajos comprometidos, recuperación posprocedimiento, lesión por radiación, casos reconstructivos"
+  fr: "Greffes/lambeaux compromis, récupération post-intervention, lésions radiques, cas de reconstruction"
 applications:
   - title:
       en: "Compromised Skin Grafts & Flaps"
@@ -19,6 +21,7 @@ applications:
       de: "Gefährdete Hauttransplantate & Lappen"
       it: "Innesti cutanei e lembi compromessi"
       es: "Injertos cutáneos y colgajos comprometidos"
+      fr: "Greffes cutanées et lambeaux compromis"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Salvage-Adjuvans bei ischämischen oder venös gestauten Hauttransplantaten und Lappen. Eine frühere Initiierung bei erkannten Perfusionsproblemen ist mit besseren Ergebnissen assoziiert; HBOT verbessert die Sauerstoffversorgung, die Angiogenese, die Fibroblastenaktivität und die Ödemkontrolle."
       it: "Adiuvante di salvataggio per innesti cutanei e lembi ischemici o congesti per via venosa. L'avvio più precoce, quando vengono identificati problemi di perfusione, è associato a esiti migliori; l'HBOT migliora l'apporto di ossigeno, l'angiogenesi, l'attività dei fibroblasti e il controllo dell'edema."
       es: "Adyuvante de rescate para injertos cutáneos y colgajos isquémicos o con congestión venosa. El inicio más precoz, cuando se identifican problemas de perfusión, se asocia a mejores resultados; la HBOT mejora el aporte de oxígeno, la angiogénesis, la actividad de los fibroblastos y el control del edema."
+      fr: "Adjuvant de sauvetage des greffes cutanées et des lambeaux ischémiques ou présentant une congestion veineuse. Une mise en route plus précoce, dès l'identification de troubles de la perfusion, est associée à de meilleurs résultats ; l'HBOT améliore l'apport en oxygène, l'angiogenèse, l'activité des fibroblastes et le contrôle de l'œdème."
     evidence: "Level B"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[9]"
@@ -69,6 +78,7 @@ applications:
       de: "Schwierige postoperative Wunden"
       it: "Ferite postoperatorie complesse"
       es: "Heridas postoperatorias complejas"
+      fr: "Plaies postopératoires difficiles"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -77,6 +87,7 @@ applications:
       de: "Adjuvante HBOT bei postoperativen Wunden mit verzögerter Heilung, insbesondere in kompromittierten Gewebebetten (strahlengeschädigt, ischämisch oder kontaminiert). Verweist auf die FDA-zugelassene Indikation Problemwunden; der plastisch-chirurgische Kontext betont die frühe Intervention, wenn die operative Revision allein nicht ausreicht."
       it: "HBOT adiuvante per ferite postoperatorie con guarigione ritardata, in particolare in letti tissutali compromessi (danneggiati da radiazioni, ischemici o contaminati). Rimanda all'indicazione delle ferite problematiche approvata dalla FDA; il contesto della chirurgia plastica sottolinea l'intervento precoce quando la revisione chirurgica da sola è insufficiente."
       es: "HBOT adyuvante para heridas postoperatorias con cicatrización retardada, en particular en lechos tisulares comprometidos (dañados por radiación, isquémicos o contaminados). Remite a la indicación de heridas problemáticas aprobada por la FDA; el contexto de la cirugía plástica destaca la intervención precoz cuando la revisión quirúrgica por sí sola es insuficiente."
+      fr: "HBOT adjuvante dans les plaies postopératoires à cicatrisation retardée, en particulier sur des lits tissulaires compromis (lésés par irradiation, ischémiques ou contaminés). Renvoie à l'indication « plaies chroniques sélectionnées » approuvée par la FDA ; dans le contexte de la chirurgie plastique, l'accent est mis sur une intervention précoce lorsque la reprise chirurgicale seule est insuffisante."
     evidence: "Level A"
     protocol:
       ata:
@@ -85,30 +96,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[9]"
@@ -118,6 +134,7 @@ applications:
       de: "Strahlengeschädigtes Gewebe"
       it: "Tessuto danneggiato da radiazioni"
       es: "Tejido dañado por radiación"
+      fr: "Tissus lésés par irradiation"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -126,6 +143,7 @@ applications:
       de: "HBOT bei Strahlennekrose des Weichgewebes vor oder nach rekonstruktiver Chirurgie. Fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem Gewebe und verbessert die Ergebnisse rekonstruktiver Eingriffe an strahlengeschädigtem Gewebe."
       it: "HBOT per la necrosi radiogena dei tessuti molli prima o dopo la chirurgia ricostruttiva. Promuove l'angiogenesi nel tessuto ipossico, ipovascolare, ipocellulare e migliora gli esiti della ricostruzione su tessuto danneggiato da radiazioni."
       es: "HBOT para la necrosis radiogénica de los tejidos blandos antes o después de la cirugía reconstructiva. Promueve la angiogénesis en el tejido hipóxico, hipovascular e hipocelular y mejora los resultados de la reconstrucción sobre tejido dañado por radiación."
+      fr: "HBOT dans la radionécrose des tissus mous avant ou après une chirurgie reconstructrice. Favorise l'angiogenèse dans les tissus hypoxiques, hypovasculaires et hypocellulaires et améliore les résultats des reconstructions en territoire irradié."
     evidence: "Level A"
     protocol:
       ata:
@@ -134,30 +152,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
         es: "30 – 60"
+        fr: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[2]"
@@ -168,6 +191,7 @@ applications:
       de: "Verbrennungen & nekrotisierende Weichgewebeinfektion"
       it: "Ustioni e infezione necrotizzante dei tessuti molli"
       es: "Quemaduras e infección necrosante de tejidos blandos"
+      fr: "Brûlures et infection nécrosante des tissus mous"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -176,6 +200,7 @@ applications:
       de: "Adjuvante Behandlung schwerer Verbrennungen, nekrotisierender Fasziitis und traumatischer Weichgewebsverletzungen. Reduziert Sterblichkeit und Gewebeverlust in Kombination mit chirurgischem Débridement und Antibiotikatherapie."
       it: "Trattamento adiuvante per ustioni gravi, fascite necrotizzante e lesione traumatica dei tessuti molli. Riduce la mortalità e la perdita di tessuto se associato a debridement chirurgico e terapia antibiotica."
       es: "Tratamiento adyuvante para quemaduras graves, fascitis necrosante y lesión traumática de los tejidos blandos. Reduce la mortalidad y la pérdida de tejido cuando se combina con el desbridamiento quirúrgico y la antibioticoterapia."
+      fr: "Traitement adjuvant des brûlures graves, de la fasciite nécrosante et des lésions traumatiques des tissus mous. Réduit la mortalité et la perte tissulaire lorsqu'il est associé au débridement chirurgical et à l'antibiothérapie."
     evidence: "Level A"
     protocol:
       ata:
@@ -184,30 +209,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[1]"
       - "[2]"
@@ -219,6 +249,7 @@ applications:
       de: "Ästhetische & Rekonstruktive Erholung"
       it: "Recupero estetico e ricostruttivo"
       es: "Recuperación estética y reconstructiva"
+      fr: "Récupération esthétique et reconstructrice"
     type: "Emerging Evidence"
     typeColor: "amber"
     description:
@@ -227,6 +258,7 @@ applications:
       de: "Evidenz vergleichender Ergebnisse in der ästhetischen und rekonstruktiven Erholung. Eine Facelift-Fall–Kontroll-Studie von 2023 (n=20) berichtete über eine durchschnittliche Wundheilung von 13,3 vs. 36,9 Tagen (p<0,001), wenn HBOT innerhalb von 24 h nach der Operation begonnen wurde. Fallserien zu kosmetischen und rekonstruktiven ischämischen Weichgewebewunden berichten einen konsistenten Salvage-Nutzen. HBOT wird als Salvage- und Erholungs-Adjuvans positioniert, nicht als routinemäßiger Verstärker unkomplizierter kosmetischer Chirurgie."
       it: "Evidenze di esito comparativo nel recupero estetico e ricostruttivo. Uno studio caso-controllo del 2023 sul facelift (n=20) ha riportato una guarigione media della ferita di 13.3 vs 36.9 giorni (P<.001) quando l'HBOT veniva avviata entro 24 ore dall'intervento. Serie di casi in ferite ischemiche dei tessuti molli estetiche e ricostruttive riportano un beneficio di salvataggio costante. L'HBOT è posizionata come adiuvante di salvataggio e recupero, non come potenziatore di routine della chirurgia estetica non complicata."
       es: "Evidencia de resultados comparativos en la recuperación estética y reconstructiva. Un estudio de casos y controles de 2023 sobre lifting facial (n=20) informó una cicatrización media de la herida de 13.3 frente a 36.9 días (P<.001) cuando la HBOT se iniciaba en las primeras 24 horas tras la intervención. Las series de casos en heridas isquémicas de los tejidos blandos estéticas y reconstructivas informan un beneficio de rescate constante. La HBOT se posiciona como adyuvante de rescate y recuperación, no como potenciador de rutina de la cirugía estética no complicada."
+      fr: "Données de résultats comparatifs dans la récupération esthétique et reconstructrice. Une étude cas-témoins de 2023 sur le lifting facial (n=20) a rapporté une durée moyenne de cicatrisation de 13,3 contre 36,9 jours (P<0,001) lorsque l'HBOT était débutée dans les 24 h suivant l'intervention. Des séries de cas portant sur des plaies ischémiques des tissus mous en chirurgie esthétique et reconstructrice rapportent un bénéfice de sauvetage constant. L'HBOT est positionnée comme adjuvant de sauvetage et de récupération, et non comme un moyen d'optimisation systématique de la chirurgie esthétique non compliquée."
     evidence: "Level B"
     protocol:
       ata:
@@ -235,30 +267,35 @@ applications:
         de: "2.0 – 2.5 ATA"
         it: "2.0 – 2.5 ATA"
         es: "2.0 – 2.5 ATA"
+        fr: "2.0 – 2.5 ATA"
       duration:
         en: "60 – 90 min"
         el: "60 – 90 min"
         de: "60 – 90 min"
         it: "60 – 90 min"
         es: "60 – 90 min"
+        fr: "60 – 90 min"
       sessions:
         en: "5 – 10 (aesthetic) / 20 – 30 (graft/flap salvage)"
         el: "5 – 10 (αισθητική) / 20 – 30 (διάσωση μοσχεύματος/κρημνού)"
         de: "5 – 10 (ästhetisch) / 20 – 30 (Transplantat-/Lappen-Rettung)"
         it: "5 – 10 (estetica) / 20 – 30 (salvataggio innesto/lembo)"
         es: "5 – 10 (estética) / 20 – 30 (rescate de injerto/colgajo)"
+        fr: "5 – 10 (esthétique) / 20 – 30 (sauvetage de greffe/lambeau)"
       frequency:
         en: "Once daily; within 24 h of surgery for salvage cases"
         el: "Μία φορά την ημέρα· εντός 24 ωρών από τη χειρουργική επέμβαση για περιπτώσεις διάσωσης"
         de: "Einmal täglich; innerhalb von 24 h nach OP bei Rettungsfällen"
         it: "Una volta al giorno; entro 24 ore dall'intervento per i casi di salvataggio"
         es: "Una vez al día; en las primeras 24 h tras la intervención en los casos de rescate"
+        fr: "Une fois par jour ; dans les 24 h suivant l'intervention pour les cas de sauvetage"
       basis:
         en: "Case–Control Study (Neel et al., 2023) + Reviews"
         el: "Μελέτη Ασθενών–Μαρτύρων (Neel et al., 2023) + Ανασκοπήσεις"
         de: "Fall–Kontroll-Studie (Neel et al., 2023) + Übersichten"
         it: "Studio caso-controllo (Neel et al., 2023) + revisioni"
         es: "Estudio de casos y controles (Neel et al., 2023) + revisiones"
+        fr: "Étude cas-témoins (Neel et al., 2023) + revues"
     refs:
       - "[37]"
       - "[38]"
@@ -271,3 +308,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der plastischen und rekonstruktiven Chirurgie — Rettung kompromittierter Transplantate und Lappen, postoperative Erholung und Behandlung von Strahlenschäden."
   it: "Ossigenoterapia iperbarica in chirurgia plastica e ricostruttiva — salvataggio di innesti e lembi compromessi, recupero post-procedurale e gestione del danno radiogeno."
   es: "Oxigenoterapia hiperbárica en cirugía plástica y reconstructiva — rescate de injertos y colgajos comprometidos, recuperación posprocedimiento y manejo de la lesión radiogénica."
+  fr: "Oxygénothérapie hyperbare en chirurgie plastique et reconstructrice — sauvetage des greffes et lambeaux compromis, récupération post-intervention et prise en charge des lésions radiques."

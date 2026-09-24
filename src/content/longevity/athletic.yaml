@@ -4,6 +4,7 @@ title:
   de: "Sportliche Leistung & Erholung"
   it: "Prestazione atletica & Recupero"
   es: "Rendimiento atlético y recuperación"
+  fr: "Performance sportive et récupération"
 icon: "Zap"
 stat: "50%"
 statLabel:
@@ -12,6 +13,7 @@ statLabel:
   de: "Schnellere Muskelregeneration"
   it: "Recupero muscolare più rapido"
   es: "Recuperación muscular más rápida"
+  fr: "Récupération musculaire plus rapide"
 color: "teal"
 summary:
   en: "Systematic review and meta-analysis demonstrates consistent benefits including 30-50% faster muscle recovery, reduced exercise-induced muscle damage, decreased inflammation markers, and enhanced endurance capacity."
@@ -19,12 +21,14 @@ summary:
   de: "Systematische Übersichtsarbeit und Meta-Analyse zeigen konsistente Vorteile, darunter eine 30–50 % schnellere Muskelregeneration, reduzierte trainingsinduzierte Muskelschäden, verringerte Entzündungsmarker und gesteigerte Ausdauerleistung."
   it: "Una revisione sistematica e metanalisi dimostra benefici coerenti, tra cui un recupero muscolare più rapido del 30-50%, una riduzione del danno muscolare indotto dall'esercizio, una diminuzione dei marcatori infiammatori e una maggiore capacità di resistenza."
   es: "Una revisión sistemática y metaanálisis demuestra beneficios coherentes, incluida una recuperación muscular un 30-50% más rápida, una reducción del daño muscular inducido por el ejercicio, una disminución de los marcadores inflamatorios y una mayor capacidad de resistencia."
+  fr: "Une revue systématique avec méta-analyse montre des bénéfices constants, notamment une récupération musculaire 30-50 % plus rapide, une réduction des lésions musculaires induites par l'exercice, une diminution des marqueurs de l'inflammation et une capacité d'endurance accrue."
 mechanism:
   en: "HBOT increases oxygen availability to muscle tissue, accelerating ATP production and enhancing natural repair mechanisms. It reduces pro-inflammatory cytokines (IL-6, TNF-α) that impede recovery and promotes satellite cell activation for muscle regeneration."
   el: "Η HBOT αυξάνει διαθεσιμότητα οξυγόνου στον μυϊκό ιστό, επιταχύνοντας παραγωγή ATP και ενισχύοντας φυσικούς μηχανισμούς επισκευής. Μειώνει προ-φλεγμονώδεις κυτοκίνες (IL-6, TNF-α) που εμποδίζουν αποκατάσταση και προάγει ενεργοποίηση δορυφορικών κυττάρων για μυϊκή αναγέννηση."
   de: "HBOT erhöht die Sauerstoffverfügbarkeit im Muskelgewebe, beschleunigt die ATP-Produktion und verstärkt die natürlichen Reparaturmechanismen. Sie reduziert proinflammatorische Zytokine (IL-6, TNF-α), die die Erholung behindern, und fördert die Aktivierung von Satellitenzellen für die Muskelregeneration."
   it: "L'HBOT aumenta la disponibilità di ossigeno per il tessuto muscolare, accelerando la produzione di ATP e potenziando i meccanismi di riparazione naturali. Riduce le citochine pro-infiammatorie (IL-6, TNF-α) che ostacolano il recupero e promuove l'attivazione delle cellule satelliti per la rigenerazione muscolare."
   es: "HBOT aumenta la disponibilidad de oxígeno para el tejido muscular, acelerando la producción de ATP y potenciando los mecanismos de reparación naturales. Reduce las citocinas proinflamatorias (IL-6, TNF-α) que dificultan la recuperación y promueve la activación de las células satélite para la regeneración muscular."
+  fr: "L'HBOT augmente la disponibilité de l'oxygène pour le tissu musculaire, accélérant la production d'ATP et renforçant les mécanismes naturels de réparation. Elle réduit les cytokines pro-inflammatoires (IL-6, TNF-α) qui freinent la récupération et favorise l'activation des cellules satellites pour la régénération musculaire."
 protocol:
   ata:
     en: "1.5 – 2.4 ATA"
@@ -32,30 +36,35 @@ protocol:
     de: "1.5 – 2.4 ATA"
     it: "1.5 – 2.4 ATA"
     es: "1.5 – 2.4 ATA"
+    fr: "1.5 – 2.4 ATA"
   duration:
     en: "60 – 90 min"
     el: "60 – 90 min"
     de: "60 – 90 min"
     it: "60 – 90 min"
     es: "60 – 90 min"
+    fr: "60 – 90 min"
   sessions:
     en: "10 – 20 per cycle"
     el: "10 – 20 ανά κύκλο"
     de: "10 – 20 pro Zyklus"
     it: "10 – 20 per ciclo"
     es: "10 – 20 por ciclo"
+    fr: "10 – 20 par cycle"
   frequency:
     en: "Post-exercise or daily"
     el: "Μετά την άσκηση ή καθημερινά"
     de: "Nach dem Training oder täglich"
     it: "Post-esercizio o quotidiano"
     es: "Después del ejercicio o diariamente"
+    fr: "Après l'exercice ou quotidiennement"
   basis:
     en: "Systematic Review & Meta-Analysis"
     el: "Συστηματική Ανασκόπηση & Μετα-Ανάλυση"
     de: "Systematische Übersichtsarbeit & Meta-Analyse"
     it: "Revisione sistematica & Metanalisi"
     es: "Revisión sistemática y metaanálisis"
+    fr: "Revue systématique et méta-analyse"
 refs:
   - "[22]"
 updated: "2026-05-30"
@@ -65,3 +74,4 @@ answerBox:
   de: "Hyperbarer Sauerstoff wird als Erholungshilfe für Sportler untersucht. Eine systematische Übersicht und Metaanalyse berichtete eine 30–50 % schnellere Muskelerholung, reduzierte trainingsbedingte Muskelschädigung, niedrigere Entzündungsmarker und verbesserte Ausdauer. Die Evidenz wächst, ist aber vorläufig; HBOT ist ein Adjuvans zu, nicht ein Ersatz für etablierte Erholungspraktiken."
   it: "L'ossigeno iperbarico è studiato come ausilio al recupero per atleti. Una revisione sistematica con metanalisi ha riportato un recupero muscolare più rapido del 30–50%, riduzione del danno muscolare indotto dall'esercizio, marcatori infiammatori più bassi e migliorata resistenza. L'evidenza è in crescita ma preliminare; l'HBOT è un adiuvante e non un sostituto delle pratiche di recupero consolidate."
   es: "El oxígeno hiperbárico se estudia como ayuda a la recuperación para deportistas. Una revisión sistemática con metaanálisis informó una recuperación muscular un 30–50% más rápida, reducción del daño muscular inducido por el ejercicio, menores marcadores de inflamación y mejora de la resistencia. La evidencia está creciendo pero es preliminar; la HBOT es un adyuvante, no un sustituto, de las prácticas de recuperación establecidas."
+  fr: "L'oxygène hyperbare est étudié comme aide à la récupération chez les sportifs. Une revue systématique avec méta-analyse a rapporté une récupération musculaire 30–50 % plus rapide, une réduction des lésions musculaires induites par l'exercice, une baisse des marqueurs de l'inflammation et une amélioration de l'endurance. Les données s'étoffent mais restent préliminaires ; l'HBOT est un adjuvant aux pratiques de récupération établies, et non un substitut."

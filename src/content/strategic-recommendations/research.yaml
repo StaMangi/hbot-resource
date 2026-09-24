@@ -4,6 +4,7 @@ title:
   de: "Klinische Forschungsinitiativen"
   it: "Iniziative di ricerca clinica"
   es: "Iniciativas de investigación clínica"
+  fr: "Initiatives de recherche clinique"
 icon: "FlaskConical"
 priority: "Medium"
 description:
@@ -12,6 +13,7 @@ description:
   de: "Aufbau klinischer Forschungspartnerschaften zur Durchführung von Studien zu aufkommenden Indikationen, um zur internationalen Evidenzbasis der Hyperbarmedizin beizutragen."
   it: "Istituire partnership di ricerca clinica per condurre studi su indicazioni emergenti, contribuendo alla base di evidenza internazionale della medicina iperbarica."
   es: "Establecer alianzas de investigación clínica para realizar ensayos sobre indicaciones emergentes, contribuyendo a la base de evidencia internacional de la medicina hiperbárica."
+  fr: "Établir des partenariats de recherche clinique afin de mener des essais sur les indications émergentes, en contribuant à la base de preuves internationale en médecine hyperbare."
 actions:
   en:
     - "IBD clinical trial with Gastroenterology"
@@ -38,3 +40,8 @@ actions:
     - "Programa de investigación sobre trastornos neurológicos"
     - "Estudio de cohorte sobre la mejora cognitiva en el envejecimiento"
     - "Programa de seguimiento de biomarcadores de longevidad"
+  fr:
+    - "Essai clinique sur les MICI avec la gastro-entérologie"
+    - "Programme de recherche sur les troubles neurologiques"
+    - "Étude de cohorte sur l'amélioration cognitive au cours du vieillissement"
+    - "Programme de suivi des biomarqueurs de longévité"

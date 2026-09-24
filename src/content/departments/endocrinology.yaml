@@ -4,6 +4,7 @@ name:
   de: "Endokrinologie & Stoffwechsel"
   it: "Endocrinologia e metabolismo"
   es: "Endocrinología y metabolismo"
+  fr: "Endocrinologie et métabolisme"
 icon: "Zap"
 color: "#d97706"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Diabetischer Fuß, Metabolisches Syndrom, Nephropathie"
   it: "Piede diabetico, sindrome metabolica, nefropatia"
   es: "Pie diabético, síndrome metabólico, nefropatía"
+  fr: "Pied diabétique, syndrome métabolique, néphropathie"
 applications:
   - title:
       en: "Diabetic Foot Ulcers"
@@ -19,6 +21,7 @@ applications:
       de: "Diabetische Fußulzera"
       it: "Ulcere del piede diabetico"
       es: "Úlceras de pie diabético"
+      fr: "Ulcères du pied diabétique"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Die anerkannteste HBOT-Anwendung. Verbessert die vollständigen Heilungsraten bei ischämischen diabetischen Fußulzera signifikant und reduziert die Amputationsraten in Kombination mit der Standard-Wundversorgung."
       it: "L'applicazione dell'HBOT più riconosciuta. Migliora significativamente i tassi di guarigione completa nelle ulcere ischemiche del piede diabetico, riducendo i tassi di amputazione se associata alla cura standard delle ferite."
       es: "La aplicación de HBOT más reconocida. Mejora significativamente las tasas de cicatrización completa en las úlceras isquémicas de pie diabético, reduciendo las tasas de amputación cuando se combina con el cuidado estándar de las heridas."
+      fr: "Application de l'HBOT la plus reconnue. Améliore significativement les taux de cicatrisation complète des ulcères ischémiques du pied diabétique, en réduisant les taux d'amputation lorsqu'elle est associée aux soins standard des plaies."
     evidence: "Level A"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
         es: "30 – 40"
+        fr: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
       - "[13]"
@@ -69,6 +78,7 @@ applications:
       de: "Diabetische Nephropathie"
       it: "Nefropatia diabetica"
       es: "Nefropatía diabética"
+      fr: "Néphropathie diabétique"
     type: "Research"
     typeColor: "orange"
     description:
@@ -77,6 +87,7 @@ applications:
       de: "Präklinische und frühe klinische Studien zeigen, dass HBOT Biomarker von Zellstress und Nierenschäden in diabetischen Modellen unterdrückt und auf renoprotektive Effekte hindeutet."
       it: "Studi preclinici e clinici iniziali dimostrano che l'HBOT sopprime i biomarcatori dello stress cellulare e del danno renale nei modelli diabetici, suggerendo effetti renoprotettivi."
       es: "Los estudios preclínicos y clínicos iniciales demuestran que la HBOT suprime los biomarcadores de estrés celular y de daño renal en modelos diabéticos, lo que sugiere efectos renoprotectores."
+      fr: "Des études précliniques et cliniques préliminaires démontrent que l'HBOT supprime les biomarqueurs du stress cellulaire et de l'atteinte rénale dans des modèles diabétiques, ce qui suggère des effets néphroprotecteurs."
     evidence: "Level C"
     protocol:
       ata:
@@ -85,30 +96,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Clinical Research"
         el: "Κλινική Έρευνα"
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+        fr: "Recherche clinique"
     refs:
       - "[18]"
   - title:
@@ -117,6 +133,7 @@ applications:
       de: "Insulinsensitivität & Metabolisches Syndrom"
       it: "Sensibilità all'insulina e sindrome metabolica"
       es: "Sensibilidad a la insulina y síndrome metabólico"
+      fr: "Sensibilité à l'insuline et syndrome métabolique"
     type: "Research"
     typeColor: "orange"
     description:
@@ -125,6 +142,7 @@ applications:
       de: "Aufkommende Evidenz deutet darauf hin, dass HBOT die Insulinsensitivität verbessern und Marker des metabolischen Syndroms durch verbesserte mitochondriale Funktion und reduzierte Entzündung vermindern kann."
       it: "Evidenze emergenti suggeriscono che l'HBOT può migliorare la sensibilità all'insulina e ridurre i marcatori della sindrome metabolica attraverso una migliore funzione mitocondriale e una ridotta infiammazione."
       es: "La evidencia emergente sugiere que la HBOT puede mejorar la sensibilidad a la insulina y reducir los marcadores del síndrome metabólico mediante una mejor función mitocondrial y una menor inflamación."
+      fr: "Des données émergentes suggèrent que l'HBOT peut améliorer la sensibilité à l'insuline et réduire les marqueurs du syndrome métabolique grâce à une meilleure fonction mitochondriale et à une réduction de l'inflammation."
     evidence: "Level C"
     protocol:
       ata:
@@ -133,30 +151,35 @@ applications:
         de: "2.0 ATA"
         it: "2.0 ATA"
         es: "2.0 ATA"
+        fr: "2.0 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "20 – 30"
         el: "20 – 30"
         de: "20 – 30"
         it: "20 – 30"
         es: "20 – 30"
+        fr: "20 – 30"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "Investigational"
         el: "Ερευνητικό"
         de: "Investigativ"
         it: "Sperimentale"
         es: "Experimental"
+        fr: "Expérimental"
     refs:
       - "[18]"
 updated: "2026-05-30"
@@ -166,3 +189,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der Endokrinologie — von der FDA-zugelassenen Heilung diabetischer Fußwunden bis zur aufkommenden Forschung bei metabolischem Syndrom und diabetischer Nephropathie."
   it: "Ossigenoterapia iperbarica in endocrinologia — dalla guarigione delle ulcere del piede diabetico approvata dalla FDA alla ricerca emergente sulla sindrome metabolica e sulla nefropatia diabetica."
   es: "Oxigenoterapia hiperbárica en endocrinología — desde la cicatrización aprobada por la FDA de las úlceras del pie diabético hasta la investigación emergente sobre el síndrome metabólico y la nefropatía diabética."
+  fr: "Oxygénothérapie hyperbare en endocrinologie — de la cicatrisation des plaies du pied diabétique, approuvée par la FDA, à la recherche émergente sur le syndrome métabolique et la néphropathie diabétique."

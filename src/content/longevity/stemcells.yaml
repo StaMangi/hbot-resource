@@ -4,6 +4,7 @@ title:
   de: "Stammzellen-Mobilisierung"
   it: "Mobilizzazione delle cellule staminali"
   es: "Movilización de células madre"
+  fr: "Mobilisation des cellules souches"
 icon: "Sparkles"
 stat: "8×"
 statLabel:
@@ -12,6 +13,7 @@ statLabel:
   de: "Anstieg zirkulierender Stammzellen"
   it: "Aumento delle cellule staminali circolanti"
   es: "Aumento de las células madre circulantes"
+  fr: "Augmentation des cellules souches circulantes"
 color: "navy"
 summary:
   en: "HBOT mobilizes bone marrow stem cells into circulation at rates up to 8-fold above baseline, enhancing the body's regenerative capacity for tissue repair and organ maintenance."
@@ -19,12 +21,14 @@ summary:
   de: "HBOT mobilisiert Knochenmarks-Stammzellen in den Kreislauf in Raten von bis zum 8-Fachen des Ausgangswertes und stärkt damit die regenerative Kapazität des Körpers zur Geweberreparatur und Organerhaltung."
   it: "L'HBOT mobilizza le cellule staminali del midollo osseo nel circolo a tassi fino a 8 volte superiori al valore basale, potenziando la capacità rigenerativa dell'organismo per la riparazione tissutale e il mantenimento degli organi."
   es: "HBOT moviliza las células madre de la médula ósea hacia la circulación a tasas de hasta 8 veces por encima del valor basal, potenciando la capacidad regenerativa del organismo para la reparación tisular y el mantenimiento de los órganos."
+  fr: "L'HBOT mobilise les cellules souches de la moelle osseuse dans la circulation à des niveaux pouvant atteindre 8 fois la valeur initiale, renforçant la capacité régénérative de l'organisme pour la réparation tissulaire et le maintien des organes."
 mechanism:
   en: "Hyperoxia activates endothelial nitric oxide synthase (eNOS), which triggers stem cell mobilization from bone marrow niches. Increased circulating stem progenitor cells (SPCs) differentiate into various cell types to repair damaged tissues."
   el: "Η υπεροξία ενεργοποιεί ενδοθηλιακή συνθάση μονοξειδίου αζώτου (eNOS), η οποία ενεργοποιεί κινητοποίηση βλαστοκυττάρων από θέσεις μυελού οστών. Αυξημένα κυκλοφορούντα πρόδρομα βλαστοκύτταρα (SPCs) διαφοροποιούνται σε διάφορους τύπους κυττάρων για επισκευή κατεστραμμένων ιστών."
   de: "Die Hyperoxie aktiviert die endotheliale Stickstoffmonoxid-Synthase (eNOS), die die Stammzell-Mobilisierung aus den Knochenmarksnischen auslöst. Vermehrt zirkulierende Stamm- und Progenitorzellen (SPCs) differenzieren sich in verschiedene Zelltypen zur Reparatur geschädigter Gewebe."
   it: "L'iperossia attiva la sintasi endoteliale dell'ossido nitrico (eNOS), che innesca la mobilizzazione delle cellule staminali dalle nicchie del midollo osseo. L'aumento delle cellule staminali progenitrici circolanti (SPC) si differenzia in vari tipi cellulari per riparare i tessuti danneggiati."
   es: "La hiperoxia activa la óxido nítrico sintasa endotelial (eNOS), que desencadena la movilización de las células madre desde los nichos de la médula ósea. El aumento de las células madre progenitoras circulantes (SPC) se diferencia en diversos tipos celulares para reparar los tejidos dañados."
+  fr: "L'hyperoxie active la NO synthase endothéliale (eNOS), qui déclenche la mobilisation des cellules souches à partir des niches de la moelle osseuse. Les cellules souches progénitrices circulantes (SPC), plus nombreuses, se différencient en divers types cellulaires pour réparer les tissus lésés."
 protocol:
   ata:
     en: "2.0 – 2.4 ATA"
@@ -32,30 +36,35 @@ protocol:
     de: "2.0 – 2.4 ATA"
     it: "2.0 – 2.4 ATA"
     es: "2.0 – 2.4 ATA"
+    fr: "2.0 – 2.4 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
     es: "90 min"
+    fr: "90 min"
   sessions:
     en: "20 – 40"
     el: "20 – 40"
     de: "20 – 40"
     it: "20 – 40"
     es: "20 – 40"
+    fr: "20 – 40"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
     es: "Una vez al día, 5×/semana"
+    fr: "Une fois par jour, 5×/semaine"
   basis:
     en: "Thom et al., 2006 / Clinical Research"
     el: "Thom et al., 2006 / Κλινική Έρευνα"
     de: "Thom et al., 2006 / Klinische Forschung"
     it: "Thom et al., 2006 / Ricerca clinica"
     es: "Thom et al., 2006 / Investigación clínica"
+    fr: "Thom et al., 2006 / Recherche clinique"
 refs:
   - "[6]"
 updated: "2026-05-30"
@@ -65,3 +74,4 @@ answerBox:
   de: "Hyperbarer Sauerstoff kann die körpereigenen Reparaturzellen mobilisieren. Studien zeigen, dass HBOT Knochenmark-Stammzellen in einer Rate bis zum Achtfachen des Ausgangswerts in die Zirkulation freisetzt — ein möglicher Mechanismus seiner regenerativen Wirkungen. Es handelt sich um eine Beobachtung im Forschungsstadium und nicht um eine eigenständige Therapie."
   it: "L'ossigeno iperbarico può mobilitare le cellule riparatrici dell'organismo. Gli studi mostrano che l'HBOT rilascia cellule staminali del midollo osseo nella circolazione fino a otto volte oltre il valore basale, offrendo un possibile meccanismo per i suoi effetti rigenerativi. Si tratta di un'osservazione in fase di ricerca, non di una terapia autonoma."
   es: "El oxígeno hiperbárico puede movilizar las células reparadoras del propio organismo. Los estudios muestran que la HBOT libera células madre de la médula ósea a la circulación a tasas de hasta ocho veces respecto al valor basal, ofreciendo un posible mecanismo para sus efectos regenerativos. Se trata de una observación en fase de investigación más que de una terapia independiente."
+  fr: "L'oxygène hyperbare peut mobiliser les propres cellules réparatrices de l'organisme. Des études montrent que l'HBOT libère des cellules souches de la moelle osseuse dans la circulation à des niveaux pouvant atteindre huit fois la valeur initiale, ce qui constitue un mécanisme possible de ses effets régénératifs. Il s'agit d'une observation au stade de la recherche plutôt que d'une thérapie à part entière."

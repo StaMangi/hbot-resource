@@ -4,6 +4,7 @@ name:
   de: "Internistische Onkologie"
   it: "Oncologia medica"
   es: "Oncología médica"
+  fr: "Oncologie médicale"
 icon: "Activity"
 color: "#b45309"
 shortDesc:
@@ -12,6 +13,7 @@ shortDesc:
   de: "Strahlenschäden, Tumorsensibilisierung"
   it: "Danno radiogeno, radiosensibilizzazione tumorale"
   es: "Lesión por radiación, radiosensibilización tumoral"
+  fr: "Lésions radiques, radiosensibilisation tumorale"
 applications:
   - title:
       en: "Delayed Radiation Injury"
@@ -19,6 +21,7 @@ applications:
       de: "Verzögerte Strahlenschäden"
       it: "Danno radiogeno tardivo"
       es: "Lesión por radiación tardía"
+      fr: "Lésions radiques tardives"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -27,6 +30,7 @@ applications:
       de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe. Eine retrospektive Studie von 2025 an 45 Patienten mit soliden Tumoren, die wegen Komplikationen der Krebstherapie mit HBOT behandelt wurden, fand keinen Zusammenhang zwischen der Zahl der Sitzungen und Metastasen oder Mortalität."
       it: "Trattamento standard di cura per l'osteoradionecrosi e la necrosi radiogena dei tessuti molli. L'HBOT promuove l'angiogenesi nel tessuto irradiato ipossico, ipovascolare, ipocellulare. Uno studio retrospettivo del 2025 su 45 pazienti con tumori solidi trattati con HBOT per complicanze delle terapie oncologiche non ha rilevato alcuna associazione tra il numero di sedute e metastasi o mortalità."
       es: "Tratamiento estándar de atención para la osteorradionecrosis y la necrosis radiogénica de los tejidos blandos. La HBOT promueve la angiogénesis en el tejido irradiado hipóxico, hipovascular e hipocelular. Un estudio retrospectivo de 2025 en 45 pacientes con tumores sólidos tratados con HBOT por complicaciones del tratamiento oncológico no halló asociación entre el número de sesiones y las metástasis o la mortalidad."
+      fr: "Traitement de référence de l'ostéoradionécrose et de la radionécrose des tissus mous. L'HBOT favorise l'angiogenèse dans les tissus irradiés hypoxiques, hypovasculaires et hypocellulaires. Une étude rétrospective de 2025 portant sur 45 patients atteints de tumeurs solides, traités par HBOT pour des complications de traitements anticancéreux, n'a trouvé aucune association entre le nombre de séances et la survenue de métastases ou la mortalité."
     evidence: "Level A"
     protocol:
       ata:
@@ -35,30 +39,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 60"
         el: "30 – 60"
         de: "30 – 60"
         it: "30 – 60"
         es: "30 – 60"
+        fr: "30 – 60"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / FDA-Approved"
         el: "UHMS / FDA-Εγκεκριμένο"
         de: "UHMS / FDA-zugelassen"
         it: "UHMS / Approvato dalla FDA"
         es: "UHMS / Aprobado por la FDA"
+        fr: "UHMS / Approuvé par la FDA"
     refs:
       - "[9]"
       - "[17]"
@@ -68,6 +77,7 @@ applications:
       de: "Strahlenzystitis & Strahlenproktitis"
       it: "Cistite e proctite radiogena"
       es: "Cistitis y proctitis por radiación"
+      fr: "Cystite et rectite radiques"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -76,6 +86,7 @@ applications:
       de: "Zugelassene adjuvante Therapie bei strahleninduzierter hämorrhagischer Zystitis und Proktitis; reduziert Blutungen und fördert die Schleimhautheilung."
       it: "Trattamento adiuvante approvato per la cistite e la proctite emorragica indotte da radiazioni, che riduce il sanguinamento e promuove la guarigione della mucosa."
       es: "Tratamiento adyuvante aprobado para la cistitis y la proctitis hemorrágica inducidas por radiación, que reduce el sangrado y promueve la cicatrización de la mucosa."
+      fr: "Traitement adjuvant approuvé de la cystite hémorragique et de la rectite radio-induites, qui réduit les saignements et favorise la cicatrisation muqueuse."
     evidence: "Level A"
     protocol:
       ata:
@@ -84,30 +95,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
         es: "30 – 40"
+        fr: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[9]"
   - title:
@@ -116,6 +132,7 @@ applications:
       de: "Tumor-Strahlensensibilisierung"
       it: "Radiosensibilizzazione tumorale"
       es: "Radiosensibilización tumoral"
+      fr: "Radiosensibilisation tumorale"
     type: "Research"
     typeColor: "orange"
     description:
@@ -124,6 +141,7 @@ applications:
       de: "Experimentell. Hypoxische Tumoren sind strahlenresistent, und HBOT in Kombination mit Strahlentherapie wurde untersucht, um diese Resistenz zu überwinden. Ein Cochrane-Review von 19 Studien (2.286 Teilnehmende) fand bei Kopf-Hals-Tumoren eine bessere lokale Tumorkontrolle und eine geringere Mortalität — möglicherweise nur bei ungewöhnlichen Fraktionierungsschemata —, jedoch keinen klaren Nutzen bei Zervix- oder Blasenkarzinom sowie ein deutlich erhöhtes Risiko schwerer strahlenbedingter Gewebeschäden und sauerstofftoxischer Krampfanfälle."
       it: "Sperimentale. I tumori ipossici resistono alla radioterapia, e l'HBOT associata alla radioterapia è stata studiata per superare questa resistenza. Una revisione Cochrane di 19 studi (2.286 partecipanti) ha rilevato un migliore controllo locale del tumore e una minore mortalità nei tumori della testa e del collo — forse solo con schemi di frazionamento insoliti — ma nessun beneficio chiaro nel carcinoma della cervice o della vescica, e un rischio significativamente maggiore di gravi danni tissutali da radiazioni e di crisi convulsive da tossicità dell'ossigeno."
       es: "Experimental. Los tumores hipóxicos son resistentes a la radioterapia, y la HBOT asociada a la radioterapia se ha estudiado como forma de superar esta resistencia. Una revisión Cochrane de 19 ensayos (2286 participantes) halló un mejor control local del tumor y una menor mortalidad en el cáncer de cabeza y cuello —posiblemente solo con esquemas de fraccionamiento inusuales—, pero ningún beneficio claro en el cáncer de cuello uterino o de vejiga, y un riesgo significativamente mayor de lesión tisular grave por radiación y de convulsiones por toxicidad del oxígeno."
+      fr: "Expérimental. Les tumeurs hypoxiques résistent à la radiothérapie, et l'HBOT administrée avec la radiothérapie a été étudiée comme moyen de surmonter cette résistance. Une revue Cochrane de 19 essais (2 286 participants) a constaté un meilleur contrôle tumoral local et une mortalité plus faible dans les cancers de la tête et du cou — peut-être uniquement avec des schémas de fractionnement inhabituels — mais aucun bénéfice net dans les cancers du col de l'utérus ou de la vessie, ainsi qu'un risque significativement plus élevé de lésions tissulaires radiques sévères et de crises convulsives liées à la toxicité de l'oxygène."
     evidence: "Level C"
     protocol:
       ata:
@@ -132,30 +150,35 @@ applications:
         de: "In Studien unterschiedlich"
         it: "Variabile tra gli studi"
         es: "Variable entre ensayos"
+        fr: "Variable selon les essais"
       duration:
         en: "Varied across trials"
         el: "Διέφερε μεταξύ δοκιμών"
         de: "In Studien unterschiedlich"
         it: "Variabile tra gli studi"
         es: "Variable entre ensayos"
+        fr: "Variable selon les essais"
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
         de: "Pro Strahlenzyklus"
         it: "Per ciclo di radioterapia"
         es: "Por ciclo de radioterapia"
+        fr: "Par cure de radiothérapie"
       frequency:
         en: "With each radiation fraction"
         el: "Με κάθε κλάσμα ακτινοβολίας"
         de: "Mit jeder Strahlenfraktion"
         it: "A ogni frazione di radioterapia"
         es: "Con cada fracción de radioterapia"
+        fr: "À chaque fraction de radiothérapie"
       basis:
         en: "Bennett et al., 2018 (Cochrane review)"
         el: "Bennett et al., 2018 (ανασκόπηση Cochrane)"
         de: "Bennett et al., 2018 (Cochrane-Review)"
         it: "Bennett et al., 2018 (revisione Cochrane)"
         es: "Bennett et al., 2018 (revisión Cochrane)"
+        fr: "Bennett et al., 2018 (revue Cochrane)"
     refs:
       - "[63]"
   - title:
@@ -164,6 +187,7 @@ applications:
       de: "Komplikationen der Brustbestrahlung"
       it: "Complicanze da radioterapia mammaria"
       es: "Complicaciones de la radioterapia mamaria"
+      fr: "Complications de la radiothérapie mammaire"
     type: "FDA-Approved"
     typeColor: "green"
     description:
@@ -172,6 +196,7 @@ applications:
       de: "Wirksame Behandlung der späten Strahlentoxizität bei Brustkrebspatientinnen, einschließlich Strahlendermatitis und Gewebenekrose nach brusterhaltender Operation."
       it: "Trattamento efficace della tossicità radiogena tardiva nelle pazienti con cancro al seno, compresa la radiodermatite e la necrosi tissutale dopo chirurgia conservativa della mammella."
       es: "Tratamiento eficaz de la toxicidad por radiación tardía en pacientes con cáncer de mama, incluida la radiodermatitis y la necrosis tisular tras cirugía conservadora de la mama."
+      fr: "Traitement efficace de la toxicité radique tardive chez les patients atteints d'un cancer du sein, notamment la radiodermite et la nécrose tissulaire après chirurgie mammaire conservatrice."
     evidence: "Level A"
     protocol:
       ata:
@@ -180,30 +205,35 @@ applications:
         de: "2.0 – 2.4 ATA"
         it: "2.0 – 2.4 ATA"
         es: "2.0 – 2.4 ATA"
+        fr: "2.0 – 2.4 ATA"
       duration:
         en: "90 min"
         el: "90 min"
         de: "90 min"
         it: "90 min"
         es: "90 min"
+        fr: "90 min"
       sessions:
         en: "30 – 40"
         el: "30 – 40"
         de: "30 – 40"
         it: "30 – 40"
         es: "30 – 40"
+        fr: "30 – 40"
       frequency:
         en: "Once daily, 5×/week"
         el: "Μία φορά την ημέρα, 5×/εβδομάδα"
         de: "Einmal täglich, 5×/Woche"
         it: "Una volta al giorno, 5×/settimana"
         es: "Una vez al día, 5×/semana"
+        fr: "Une fois par jour, 5×/semaine"
       basis:
         en: "UHMS / Standard of Care"
         el: "UHMS / Πρότυπο Θεραπείας"
         de: "UHMS / Standardtherapie"
         it: "UHMS / Standard di cura"
         es: "UHMS / Estándar de atención"
+        fr: "UHMS / Traitement de référence"
     refs:
       - "[9]"
 updated: "2026-05-30"
@@ -213,3 +243,4 @@ metaDescription:
   de: "Hyperbare Sauerstofftherapie in der Onkologie — etabliertes Management der Strahlenschädigung und aufkommende Forschung zur Tumor-Radiosensibilisierung, mit Unterscheidung FDA-zugelassener und in Erprobung befindlicher Anwendungen."
   it: "Ossigenoterapia iperbarica in oncologia — gestione consolidata del danno radiogeno e ricerca emergente sulla radiosensibilizzazione tumorale, con distinzione tra usi approvati dalla FDA e sperimentali."
   es: "Oxigenoterapia hiperbárica en oncología — manejo consolidado de la lesión radiogénica e investigación emergente sobre la radiosensibilización tumoral, con distinción entre usos aprobados por la FDA e investigacionales."
+  fr: "Oxygénothérapie hyperbare en oncologie — prise en charge établie des lésions radiques et recherche émergente sur la radiosensibilisation tumorale, en distinguant les usages approuvés par la FDA des usages expérimentaux."

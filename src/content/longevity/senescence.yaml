@@ -4,6 +4,7 @@ title:
   de: "Beseitigung Seneszenter Zellen"
   it: "Eliminazione delle cellule senescenti"
   es: "Eliminación de células senescentes"
+  fr: "Élimination des cellules sénescentes"
 icon: "Trash2"
 stat: "37%"
 statLabel:
@@ -12,6 +13,7 @@ statLabel:
   de: "Reduktion seneszenter T-Zellen"
   it: "Riduzione dei linfociti T senescenti"
   es: "Reducción de linfocitos T senescentes"
+  fr: "Réduction des lymphocytes T sénescents"
 color: "navy"
 summary:
   en: "The same landmark study demonstrated significant reduction in senescent (dysfunctional) immune cells — the first senolytic effect demonstrated through a non-pharmacological intervention."
@@ -19,12 +21,14 @@ summary:
   de: "Dieselbe wegweisende Studie zeigte eine signifikante Reduktion seneszenter (dysfunktionaler) Immunzellen — der erste senolytische Effekt, der durch eine nicht-pharmakologische Intervention nachgewiesen wurde."
   it: "Lo stesso studio di riferimento ha dimostrato una riduzione significativa delle cellule immunitarie senescenti (disfunzionali) — il primo effetto senolitico dimostrato attraverso un intervento non farmacologico."
   es: "El mismo estudio de referencia demostró una reducción significativa de las células inmunitarias senescentes (disfuncionales) — el primer efecto senolítico demostrado mediante una intervención no farmacológica."
+  fr: "La même étude de référence a montré une réduction significative des cellules immunitaires sénescentes (dysfonctionnelles) — le premier effet sénolytique démontré au moyen d'une intervention non pharmacologique."
 mechanism:
   en: "HBOT induces selective apoptosis of senescent cells through ROS-mediated signaling pathways. Senescent cells accumulate with age and drive the 'inflammaging' phenotype associated with age-related diseases."
   el: "Η HBOT επάγει εκλεκτική απόπτωση γηρασμένων κυττάρων μέσω σηματοδοτικών μονοπατιών μεσολαβούμενων από ROS. Τα γηρασμένα κύτταρα συσσωρεύονται με την ηλικία και οδηγούν τον φαινότυπο 'φλεγμονώδους γήρανσης' που σχετίζεται με ηλικιακές παθήσεις."
   de: "HBOT induziert die selektive Apoptose seneszenter Zellen über ROS-vermittelte Signalwege. Seneszente Zellen sammeln sich im Alter an und treiben den „Inflammaging\"-Phänotyp, der mit altersbedingten Erkrankungen in Verbindung steht."
   it: "L'HBOT induce l'apoptosi selettiva delle cellule senescenti attraverso vie di segnalazione mediate dalle ROS. Le cellule senescenti si accumulano con l'età e guidano il fenotipo dell'\"inflammaging\" associato alle malattie legate all'invecchiamento."
   es: "HBOT induce la apoptosis selectiva de las células senescentes a través de vías de señalización mediadas por ROS. Las células senescentes se acumulan con la edad e impulsan el fenotipo de «inflammaging» asociado a las enfermedades relacionadas con el envejecimiento."
+  fr: "L'HBOT induit une apoptose sélective des cellules sénescentes par des voies de signalisation médiées par les ROS. Les cellules sénescentes s'accumulent avec l'âge et entretiennent le phénotype d'« inflammaging » associé aux maladies liées à l'âge."
 protocol:
   ata:
     en: "2.0 ATA"
@@ -32,30 +36,35 @@ protocol:
     de: "2.0 ATA"
     it: "2.0 ATA"
     es: "2.0 ATA"
+    fr: "2.0 ATA"
   duration:
     en: "90 min"
     el: "90 min"
     de: "90 min"
     it: "90 min"
     es: "90 min"
+    fr: "90 min"
   sessions:
     en: "60"
     el: "60"
     de: "60"
     it: "60"
     es: "60"
+    fr: "60"
   frequency:
     en: "Once daily, 5×/week"
     el: "Μία φορά την ημέρα, 5×/εβδομάδα"
     de: "Einmal täglich, 5×/Woche"
     it: "Una volta al giorno, 5×/settimana"
     es: "Una vez al día, 5×/semana"
+    fr: "Une fois par jour, 5×/semaine"
   basis:
     en: "Hadanny et al., 2020 (RCT)"
     el: "Hadanny et al., 2020 (ΤΕΔ)"
     de: "Hadanny et al., 2020 (RKS)"
     it: "Hadanny et al., 2020 (RCT)"
     es: "Hadanny et al., 2020 (ECA)"
+    fr: "Hadanny et al., 2020 (ECR)"
 refs:
   - "[3]"
 updated: "2026-05-30"
@@ -65,3 +74,4 @@ answerBox:
   de: "Seneszente „Zombie\"-Zellen sammeln sich mit dem Alter an und treiben Entzündung voran. In derselben Forschung bei gesunden älteren Erwachsenen reduzierte hyperbarer Sauerstoff die Zahl seneszenter Immunzellen (T-Zellen) — die erste senolytische Wirkung, die durch eine nicht-pharmakologische Intervention gezeigt wurde. Das Ergebnis ist vielversprechend, aber früh und stellt keine etablierte Anti-Aging-Behandlung dar."
   it: "Le cellule senescenti «zombie» si accumulano con l'età e alimentano l'infiammazione. Nella stessa ricerca su adulti più anziani sani, l'ossigeno iperbarico ha ridotto il numero di cellule immunitarie senescenti (linfociti T) — il primo effetto senolitico mostrato da un intervento non farmacologico. Il risultato è promettente ma precoce e non costituisce un trattamento antinvecchiamento consolidato."
   es: "Las células senescentes «zombi» se acumulan con la edad e impulsan la inflamación. En la misma investigación en adultos mayores sanos, el oxígeno hiperbárico redujo el número de células inmunitarias senescentes (linfocitos T) — el primer efecto senolítico mostrado por una intervención no farmacológica. El resultado es prometedor pero temprano, y no constituye un tratamiento antienvejecimiento establecido."
+  fr: "Les cellules sénescentes, dites « zombies », s'accumulent avec l'âge et entretiennent l'inflammation. Dans les mêmes travaux menés chez des adultes âgés en bonne santé, l'oxygène hyperbare a réduit le nombre de cellules immunitaires (lymphocytes T) sénescentes — le premier effet sénolytique mis en évidence avec une intervention non pharmacologique. Ce résultat est prometteur mais préliminaire, et ne constitue pas un traitement anti-âge établi."
