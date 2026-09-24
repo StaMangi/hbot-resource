@@ -1,0 +1,182 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import RefTags from "@/components/RefTags.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "fr" as const;
+const prefix = "/fr";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Conception de programmes de longévité",
+  description:
+    "Recommandations à l'intention des opérateurs pour concevoir des programmes d'HBOT éthiques et fondés sur les données probantes dans le contexte de la longévité et du bien-être.",
+  inLanguage: locale,
+  audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="Conception de programmes — HBOT Science"
+  description="Recommandations à l'intention des opérateurs pour concevoir des programmes d'HBOT éthiques et fondés sur les données probantes dans le contexte de la longévité et du bien-être — dépistage des patients, choix du protocole, mesure des résultats, limites des allégations, observance."
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Référence pour les opérateurs</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      Conception de programmes
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Cette page présente des recommandations à l'intention des opérateurs
+      pour concevoir des programmes d'HBOT éthiques et fondés sur les données
+      probantes dans le contexte de la longévité et du bien-être. Il ne s'agit
+      pas d'un protocole clinique, et elle ne remplace pas l'évaluation du
+      patient conduite par un clinicien. Les programmes conçus pour un usage
+      de bien-être se situent en dehors des indications approuvées par la
+      FDA ; l'ensemble de cette page est rédigé en cohérence avec ce cadre.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Dépistage des patients
+      </h2>
+      <p class="text-slate-700 mb-3">
+        L'entrée dans le programme doit suivre une évaluation préalable
+        structurée qui couvre les mêmes aspects de sécurité que l'HBOT
+        clinique (voir la page <a
+          href="/fr/safety/"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >Sécurité et contre-indications</a
+        >). Au minimum :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Antécédents médicaux complets (cardiaques, pulmonaires, neurologiques, oncologiques).</li>
+        <li>Revue des traitements en cours (agents chimiothérapeutiques, disulfirame, insuline et sulfamides hypoglycémiants).</li>
+        <li>Évaluation de la membrane tympanique et de la trompe d'Eustache.</li>
+        <li>Statut de grossesse, le cas échéant.</li>
+        <li>Dépistage de la claustrophobie / de l'anxiété.</li>
+        <li>Définition des objectifs : cognition, récupération sportive, fatigue / sommeil, bien-être général — des objectifs distincts ont des implications différentes en matière de protocole.</li>
+        <li>Discussion sur des attentes réalistes : l'HBOT dans le cadre du bien-être ne constitue le traitement d'aucune affection approuvée par la FDA ; les effets sont modestes, variables d'un individu à l'autre et exigent une observance soutenue.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Choix du protocole
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Les protocoles du programme doivent être alignés sur les données
+        disponibles pour l'objectif visé. Retenez le protocole cité dans la
+        source plutôt que d'improviser :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Amélioration cognitive</strong> — 60 séances, 2,0 ATA, 90 min, 5×/semaine (ECR de Hadanny 2020 chez des adultes âgés en bonne santé).</li>
+        <li><strong>Allongement des télomères / sénescence cellulaire</strong> — 60 séances, 2,0 ATA, 90 min, 5×/semaine.</li>
+        <li><strong>Récupération sportive</strong> — cures courtes (10 à 20 séances par cycle, après l'effort ou quotidiennes) ; les données sont préliminaires.</li>
+        <li><strong>Bien-être général / fatigue</strong> — il n'existe aucun protocole validé spécifique au bien-être ; le cas échéant, le protocole cognition/longévité est la référence citée la plus proche.</li>
+      </ul>
+      <div class="mt-4">
+        <RefTags refs={["[4]", "[3]", "[8]"]} prefix={prefix} />
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Normes de fréquence et de durée
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programme de bien-être standard</strong> : 40 à 60 séances sur 12 à 14 semaines, à raison de 5×/semaine, 90 min par séance, 2,0 ATA.</li>
+        <li><strong>Phase d'entretien</strong> : non standardisée. Certains opérateurs proposent des séances d'entretien mensuelles ; le bénéfice d'un entretien n'est pas établi.</li>
+        <li><strong>Structure des cycles</strong> : des semaines continues de 5 jours avec repos le week-end constituent le rythme le plus cité ; un rythme quotidien sur 7 jours n'est pas mieux étayé et augmente le risque d'événements indésirables.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Mesure des résultats
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Ce qu'un opérateur peut mesurer de manière éthique dépend de ce
+        qu'étayent les données sous-jacentes. Mesurer avec prudence ; rendre
+        compte avec honnêteté.
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li><strong>Programmes cognitifs</strong> : batteries cognitives validées (vitesse de traitement de l'information, attention, mémoire) mesurées avant et après.</li>
+        <li><strong>Programmes télomères / sénescence</strong> : la mesure en laboratoire de la longueur des télomères est réalisable mais coûteuse ; la plupart des opérateurs ne la proposent pas en routine. L'énergie ou le sommeil autodéclarés ne remplacent pas les marqueurs biologiques.</li>
+        <li><strong>Récupération sportive</strong> : échelles subjectives de récupération, clairance du lactate lorsqu'elle est mesurable, suivi du sommeil.</li>
+        <li><strong>Bien-être général</strong> : mesures validées des résultats rapportés par le patient (p. ex. SF-36, PROMIS) ; éviter les questionnaires ad hoc non validés sur le plan psychométrique.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Limites des allégations
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Les allégations suivantes ne doivent <strong>pas</strong> être
+        formulées au sujet d'un programme d'HBOT de bien-être. Chacune se situe
+        soit explicitement en dehors des données disponibles, soit en
+        contradiction active avec la littérature actuelle :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Effets « anticancéreux » — l'HBOT est contre-indiquée avec plusieurs agents chimiothérapeutiques et n'est pas un traitement oncologique.</li>
+        <li>Traitement du trouble du spectre de l'autisme, de la sclérose en plaques, de la paralysie cérébrale ou de la maladie de Lyme — aucune de ces affections ne constitue une indication de l'HBOT étayée par des données probantes.</li>
+        <li>Présentations de type « détox », « remède anti-âge » ou « réparation de l'ADN » — langage marketing dépourvu de fondement scientifique.</li>
+        <li>Allégations spécifiques d'allongement de la durée de vie ou d'« inversion de l'âge biologique » — les données sous-jacentes sur la longueur des télomères ne se traduisent pas en allégations sur la durée de vie.</li>
+        <li>Traitement d'affections psychiatriques en dehors de celles pour lesquelles des données existent (p. ex. les données sur le TSPT sont mitigées).</li>
+        <li>Utilisation au cours du premier trimestre de grossesse, sauf pour les indications d'urgence.</li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="text-2xl font-semibold text-slate-900 mb-4"
+        style="font-family: var(--font-display)"
+      >
+        Observance et assiduité
+      </h2>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>Une assiduité inférieure à ~80 % des séances programmées réduit la probabilité d'un bénéfice mesurable ; cela doit être posé comme une attente du programme lors du consentement.</li>
+        <li>Les motifs d'abandon doivent être suivis : barotraumatisme de l'oreille moyenne, anxiété, difficultés d'organisation, absence perçue de bénéfice.</li>
+        <li>Politique de reprise : un programme interrompu peut reprendre dans un délai de 4 à 6 semaines sans remise à zéro significative du cycle ; des interruptions plus longues justifient une reprise à partir de l'évaluation initiale.</li>
+        <li>Documentation : chaque séance est consignée avec la pression, la durée, l'heure de début, les événements indésirables et la tolérance rapportée par le patient.</li>
+      </ul>
+    </section>
+
+    <p class="mt-12 text-sm text-slate-500 leading-relaxed">
+      Ces recommandations reflètent les données actuelles et les normes de
+      pratique. Elles constituent une référence pour les opérateurs, et non un
+      avis réglementaire. Les réglementations locales en matière de santé et
+      de protection des consommateurs s'appliquent et peuvent imposer des
+      exigences supplémentaires concernant la conception des programmes et la
+      formulation des allégations.
+    </p>
+  </article>
+</LandingLayout>

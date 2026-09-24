@@ -1,0 +1,202 @@
+---
+import LandingLayout from "@/layouts/LandingLayout.astro";
+import LastUpdated from "@/components/LastUpdated.astro";
+
+const pathname = Astro.url.pathname;
+const locale = "fr" as const;
+
+const description =
+  "Comment HBOT Science vérifie son contenu : chaque citation renvoie à un DOI fonctionnel et est contrôlée au moment de la compilation, les chiffres sont reproduits à l'identique, les données sont graduées A/B/C et les usages expérimentaux sont signalés comme tels. Indépendance éditoriale.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "À propos de HBOT Science",
+  description,
+  inLanguage: locale,
+  publisher: {
+    "@type": "Organization",
+    name: "IN2050 Ltd",
+    address: { "@type": "PostalAddress", addressCountry: "CY" },
+    identifier: "HE416406",
+  },
+};
+---
+
+<LandingLayout
+  title="À propos — HBOT Science"
+  description={description}
+  locale={locale}
+  pathname={pathname}
+  jsonLd={jsonLd}
+>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <p class="text-xs uppercase tracking-widest text-slate-500">Politique éditoriale</p>
+    <h1
+      class="mt-3 text-4xl font-semibold text-slate-900"
+      style="font-family: var(--font-display)"
+    >
+      À propos de HBOT Science
+    </h1>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      HBOT Science est une ressource de référence indépendante consacrée à
+      l'oxygénothérapie hyperbare. Elle rassemble des informations fondées sur
+      les données probantes concernant les indications approuvées par l'UHMS,
+      les applications cliniques émergentes, les mécanismes d'action, les
+      protocoles de traitement et les aspects de sécurité, à l'intention des
+      cliniciens, des chercheurs et des lecteurs avertis.
+    </p>
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Le site ne fournit ni avis médical, ni recommandation de traitement
+      individuelle, ni caution commerciale. Il s'agit d'une référence
+      scientifique — pas d'une clinique, pas d'un annuaire, pas d'un canal
+      marketing.
+    </p>
+
+    <section class="mt-12">
+      <h2
+        id="editorial-standards"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
+        style="font-family: var(--font-display)"
+      >
+        Normes éditoriales
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Chaque affirmation de ce site s'appuie sur une source évaluée par les
+        pairs ou sur une autorité clinique reconnue (UHMS, Cochrane, FDA,
+        recommandations de sociétés savantes). Les références sont vérifiées au
+        moment de la compilation auprès du registre DOI de CrossRef — une
+        citation erronée ou inventée ne peut pas être publiée.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Les affirmations quantitatives (tailles d'effet, effectifs, durées) sont
+        reprises directement de la source citée. Nous ne paraphrasons pas les
+        chiffres, n'arrondissons pas les pourcentages et ne résumons pas les
+        résultats d'une manière qui ferait disparaître les réserves sous-jacentes.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Lorsque les données sont préliminaires, issues d'une source unique ou
+        controversées, le site le dit clairement. Nous utilisons un cadre de
+        preuve à trois niveaux — Niveau A (plusieurs essais contrôlés randomisés
+        [ECR] de haute qualité ou revues systématiques), Niveau B (un ECR solide
+        ou des données méta-analytiques cohérentes), Niveau C (données au niveau
+        du cas, de petites cohortes ou données translationnelles). Les usages
+        expérimentaux sont signalés comme expérimentaux. Les affirmations
+        reposant sur des données insuffisantes ne sont tout simplement pas
+        formulées.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        id="evidence-framework"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
+        style="font-family: var(--font-display)"
+      >
+        Cadre de preuve
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Le site classe les indications de l'HBOT en deux catégories, qui
+        reflètent des bases de preuve différentes.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Les indications approuvées par l'UHMS</strong> sont les quinze affections pour lesquelles l'Undersea and Hyperbaric Medical Society (UHMS) reconnaît l'HBOT comme traitement de référence ou traitement adjuvant. Treize d'entre elles figurent également sur la liste de la FDA américaine des affections pour lesquelles les caissons hyperbares sont autorisés par la FDA ; aux États-Unis, Medicare couvre un ensemble plus restreint. Chacune est étayée par des données de Niveau A ou de Niveau B, et les protocoles de traitement sont exposés dans le manuel des indications de l'UHMS.
+      </p>
+      <p class="text-slate-700 mb-3">
+        <strong>Les indications à données émergentes</strong> sont des
+        affections pour lesquelles des données cliniques évaluées par les pairs
+        étayent un usage expérimental de l'HBOT, mais pour lesquelles les
+        données n'atteignent pas encore le seuil requis pour une approbation par
+        la FDA ou une reconnaissance par l'UHMS. Elles reposent généralement sur
+        des données de Niveau B ou de Niveau C — groupes de recherche uniques
+        dans l'attente d'une réplication indépendante, études pilotes dans
+        l'attente d'essais complets, ou données au niveau du cas dans des
+        sous-populations définies. Elles sont présentées à titre de contexte
+        clinique. Les décisions thérapeutiques portant sur des indications à
+        données émergentes nécessitent une évaluation individuelle du patient
+        et ne relèvent pas du traitement de référence.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        id="editorial-publisher"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
+        style="font-family: var(--font-display)"
+      >
+        Éditeur
+      </h2>
+      <p class="text-slate-700 mb-3">
+        HBOT Science est publié par IN2050 Ltd, société immatriculée à Chypre
+        (HE416406) exerçant dans le secteur de l'hôtellerie de bien-être.
+        IN2050 a des intérêts commerciaux dans des services d'HBOT. Les
+        décisions éditoriales de ce site sont prises indépendamment de ces
+        intérêts commerciaux.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        id="corrections-and-updates"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
+        style="font-family: var(--font-display)"
+      >
+        Corrections et mises à jour
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Les erreurs de fait, de citation ou d'interprétation sont corrigées dès
+        qu'elles sont identifiées. Les corrections importantes sont signalées
+        sur la page concernée et dans l'historique des commits du site, qui est
+        public. Les modifications mineures (typographie, orthographe, mise en
+        forme) sont appliquées sans mention.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Le site est mis à jour à mesure que de nouvelles données évaluées par
+        les pairs deviennent disponibles. Une indication peut changer de
+        catégorie de preuve lorsque les données se renforcent ou que de
+        nouveaux essais publient leurs résultats. Lorsque la présentation
+        éditoriale d'une indication change substantiellement, la modification
+        est consignée dans l'historique des commits.
+      </p>
+      <p class="text-slate-700 mb-3">
+        Pour signaler une erreur ou proposer une correction, écrivez à :
+        <a
+          href="mailto:info@hbotscience.org"
+          class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+          >info@hbotscience.org</a
+        >
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        id="scope-and-limits"
+        class="text-2xl font-semibold text-slate-900 mb-4 scroll-mt-20"
+        style="font-family: var(--font-display)"
+      >
+        Champ et limites
+      </h2>
+      <p class="text-slate-700 mb-3">
+        Ce site fournit des informations de référence sur l'oxygénothérapie
+        hyperbare. Il ne :
+      </p>
+      <ul class="list-disc pl-6 text-slate-700 space-y-2">
+        <li>fournit pas d'avis médical individuel ni de recommandation de traitement.</li>
+        <li>pose pas de diagnostic et ne remplace pas l'évaluation clinique par un praticien qualifié.</li>
+        <li>cautionne, ne recommande ni ne compare aucun prestataire, centre ou produit d'HBOT en particulier.</li>
+        <li>fournit pas de tarifs, d'informations commerciales ni d'indications sur l'accès au traitement.</li>
+        <li>fournit pas de conseil juridique sur la réglementation, les autorisations ou la conformité en matière d'HBOT.</li>
+        <li>fournit pas d'orientation en matière d'assurance ou de remboursement.</li>
+        <li>fournit pas de conseil sur l'ouverture, l'exploitation ou la conception d'installations d'HBOT.</li>
+      </ul>
+      <p class="mt-4 text-slate-700">
+        Les patients qui envisagent l'HBOT, quelle qu'en soit l'indication,
+        doivent consulter un médecin qualifié ou un spécialiste en médecine
+        hyperbare. Les décisions thérapeutiques exigent l'évaluation des
+        antécédents médicaux individuels, des comorbidités et des traitements
+        concomitants.
+      </p>
+    </section>
+    <LastUpdated date="2026-05-30" locale={locale} />
+  </article>
+</LandingLayout>
