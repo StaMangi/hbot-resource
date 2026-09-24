@@ -59,6 +59,7 @@ applications:
         de: "Evidenz Stufe B"
         it: "Evidenza di Livello B"
         es: "Evidencia de Nivel B"
+    indicationSlug: "traumatic-brain-injury"
     refs:
       - "[15]"
   - title:
@@ -107,6 +108,7 @@ applications:
         de: "Klinische Forschung"
         it: "Ricerca clinica"
         es: "Investigación clínica"
+    indicationSlug: "stroke-recovery"
     refs:
       - "[16]"
   - title:
