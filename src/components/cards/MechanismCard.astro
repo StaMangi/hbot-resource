@@ -33,12 +33,12 @@ const iconBg = isTeal ? "bg-teal-100 text-teal-700" : "bg-slate-100 text-slate-7
     <div class={`w-10 h-10 rounded-lg ${iconBg} flex items-center justify-center mb-4`}>
       <Icon name={iconMap[entry.data.icon] ?? "lucide:circle"} class="w-5 h-5" />
     </div>
-    <h3
+    <h2
       class="text-lg font-semibold text-slate-900 leading-snug group-hover:text-teal-700 transition-colors"
       style="font-family: var(--font-display)"
     >
       {entry.data.title[locale]}
-    </h3>
+    </h2>
     <p class="mt-2 text-sm text-slate-600 leading-relaxed line-clamp-3">
       {entry.data.summary[locale]}
     </p>
