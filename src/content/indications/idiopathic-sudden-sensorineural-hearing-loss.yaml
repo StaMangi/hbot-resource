@@ -58,7 +58,8 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[14]"
+  - "[9]"
+  - "[20]"
 updated: "2026-05-30"
 answerBox:
   en: "This is an unexplained, rapid loss of hearing thought to involve reduced oxygen supply to the inner ear. Hyperbaric oxygen therapy is FDA-approved as an adjunct — typically when corticosteroids alone fail — reversing cochlear hypoxia and reducing endolymphatic fluid pressure to improve the chance of hearing recovery."

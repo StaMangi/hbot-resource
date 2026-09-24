@@ -110,7 +110,9 @@ applications:
         es: "Investigación clínica"
     indicationSlug: "stroke-recovery"
     refs:
-      - "[16]"
+      - "[49]"
+      - "[50]"
+      - "[24]"
   - title:
       en: "Vascular Dementia"
       el: "Αγγειακή Άνοια"

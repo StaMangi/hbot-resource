@@ -59,6 +59,7 @@ protocol:
 refs:
   - "[1]"
   - "[2]"
+  - "[9]"
 updated: "2026-05-30"
 answerBox:
   en: "Air or gas embolism occurs when gas bubbles enter the bloodstream and obstruct arterial flow, often during diving, surgery, or catheter procedures. Hyperbaric oxygen therapy is an FDA-approved primary treatment: increased pressure shrinks the bubbles while 100% oxygen speeds nitrogen washout, restoring circulation to oxygen-deprived tissue."

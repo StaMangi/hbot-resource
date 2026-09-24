@@ -58,7 +58,9 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[10]"
+  - "[2]"
+  - "[9]"
+  - "[33]"
 updated: "2026-05-30"
 answerBox:
   en: "Necrotising soft-tissue infections, including necrotising fasciitis and Fournier's gangrene, destroy tissue rapidly and are life-threatening. Hyperbaric oxygen therapy is FDA-approved as an adjunct to urgent surgery and antibiotics: high tissue-oxygen levels suppress the responsible bacteria, support immune defence, and help limit the spread of tissue loss."

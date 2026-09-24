@@ -58,6 +58,7 @@ protocol:
     es: "UHMS / Estándar de urgencia"
 refs:
   - "[1]"
+  - "[9]"
   - "[19]"
 updated: "2026-05-30"
 answerBox:

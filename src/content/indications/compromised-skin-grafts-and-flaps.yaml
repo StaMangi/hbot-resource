@@ -58,7 +58,9 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[13]"
+  - "[9]"
+  - "[38]"
+  - "[33]"
 updated: "2026-05-30"
 answerBox:
   en: "When a skin graft or surgical flap is at risk of failing from inadequate blood supply, hyperbaric oxygen therapy can act as salvage treatment. FDA-approved for this use, it raises oxygen to the threatened tissue, reduces hypoxic damage, and supports graft survival — improving the odds that compromised grafts and flaps take."

@@ -61,7 +61,7 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[13]"
+      - "[9]"
       - "[38]"
   - title:
       en: "Difficult Postoperative Wounds"
@@ -111,7 +111,7 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[7]"
+      - "[9]"
   - title:
       en: "Radiation-Injured Tissue"
       el: "Ακτινικά Βλαμμένος Ιστός"
@@ -160,7 +160,8 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[12]"
+      - "[2]"
+      - "[9]"
   - title:
       en: "Burns & Necrotizing Soft-Tissue Infection"
       el: "Εγκαύματα & Νεκρωτικές Λοιμώξεις Μαλακών Ιστών"
@@ -209,7 +210,9 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[10]"
+      - "[2]"
+      - "[9]"
+      - "[33]"
   - title:
       en: "Aesthetic & Reconstructive Recovery"
       el: "Αισθητική & Επανορθωτική Αποκατάσταση"

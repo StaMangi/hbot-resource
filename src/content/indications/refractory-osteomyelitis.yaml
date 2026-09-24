@@ -58,7 +58,7 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[11]"
+  - "[9]"
 updated: "2026-05-30"
 answerBox:
   en: "Refractory osteomyelitis is a chronic bone infection that persists despite antibiotics and surgery. Hyperbaric oxygen therapy is FDA-approved as an adjunct: it raises oxygen in poorly perfused, infected bone, strengthens the immune cells that clear bacteria, and supports new blood-vessel growth and healing where conventional treatment has stalled."

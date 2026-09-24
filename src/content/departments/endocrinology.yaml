@@ -62,6 +62,7 @@ applications:
     refs:
       - "[9]"
       - "[13]"
+      - "[7]"
   - title:
       en: "Diabetic Nephropathy"
       el: "Διαβητική Νεφροπάθεια"

@@ -61,7 +61,8 @@ applications:
         es: "UHMS / Estándar de atención"
     refs:
       - "[1]"
-      - "[12]"
+      - "[2]"
+      - "[9]"
   - title:
       en: "Endometriosis"
       el: "Ενδομητρίωση"

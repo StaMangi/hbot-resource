@@ -58,7 +58,8 @@ protocol:
     es: "UHMS / Estándar de atención"
 refs:
   - "[1]"
-  - "[12]"
+  - "[2]"
+  - "[9]"
 updated: "2026-05-30"
 answerBox:
   en: "Radiation therapy can damage tissue and bone months or years later, causing conditions such as osteoradionecrosis. Hyperbaric oxygen therapy is FDA-approved for delayed radiation injury: by driving new blood-vessel growth into poorly perfused, irradiated tissue, it improves oxygen supply and supports healing of soft-tissue and bony necrosis."
