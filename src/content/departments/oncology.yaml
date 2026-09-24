@@ -22,11 +22,11 @@ applications:
     type: "FDA-Approved"
     typeColor: "green"
     description:
-      en: "Standard-of-care treatment for osteoradionecrosis and soft tissue radiation necrosis. HBOT promotes angiogenesis in hypoxic, hypovascular, hypocellular irradiated tissue."
-      el: "Θεραπεία πρότυπου φροντίδας για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Η HBOT προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ακτινοβολημένο ιστό."
-      de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe."
-      it: "Trattamento standard di cura per l'osteoradionecrosi e la necrosi radiogena dei tessuti molli. L'HBOT promuove l'angiogenesi nel tessuto irradiato ipossico, ipovascolare, ipocellulare."
-      es: "Tratamiento estándar de atención para la osteorradionecrosis y la necrosis radiogénica de los tejidos blandos. La HBOT promueve la angiogénesis en el tejido irradiado hipóxico, hipovascular e hipocelular."
+      en: "Standard-of-care treatment for osteoradionecrosis and soft tissue radiation necrosis. HBOT promotes angiogenesis in hypoxic, hypovascular, hypocellular irradiated tissue. A 2025 retrospective study of 45 patients with solid tumours treated with HBOT for cancer-treatment complications found no association between the number of sessions and metastasis or mortality."
+      el: "Θεραπεία πρότυπου φροντίδας για οστεοακτινονέκρωση και νέκρωση μαλακών ιστών από ακτινοβολία. Η HBOT προάγει αγγειογένεση σε υποξικό, υποαγγειακό, υποκυτταρικό ακτινοβολημένο ιστό. Μια αναδρομική μελέτη του 2025 σε 45 ασθενείς με συμπαγείς όγκους που έλαβαν HBOT για επιπλοκές της αντικαρκινικής θεραπείας δεν βρήκε συσχέτιση μεταξύ του αριθμού των συνεδριών και των μεταστάσεων ή της θνησιμότητας."
+      de: "Standardtherapie bei Osteoradionekrose und Strahlennekrose des Weichgewebes. HBOT fördert die Angiogenese in hypoxischem, hypovaskulärem, hypozellulärem bestrahltem Gewebe. Eine retrospektive Studie von 2025 an 45 Patienten mit soliden Tumoren, die wegen Komplikationen der Krebstherapie mit HBOT behandelt wurden, fand keinen Zusammenhang zwischen der Zahl der Sitzungen und Metastasen oder Mortalität."
+      it: "Trattamento standard di cura per l'osteoradionecrosi e la necrosi radiogena dei tessuti molli. L'HBOT promuove l'angiogenesi nel tessuto irradiato ipossico, ipovascolare, ipocellulare. Uno studio retrospettivo del 2025 su 45 pazienti con tumori solidi trattati con HBOT per complicanze delle terapie oncologiche non ha rilevato alcuna associazione tra il numero di sedute e metastasi o mortalità."
+      es: "Tratamiento estándar de atención para la osteorradionecrosis y la necrosis radiogénica de los tejidos blandos. La HBOT promueve la angiogénesis en el tejido irradiado hipóxico, hipovascular e hipocelular. Un estudio retrospectivo de 2025 en 45 pacientes con tumores sólidos tratados con HBOT por complicaciones del tratamiento oncológico no halló asociación entre el número de sesiones y las metástasis o la mortalidad."
     evidence: "Level A"
     protocol:
       ata:
@@ -61,6 +61,7 @@ applications:
         es: "UHMS / Aprobado por la FDA"
     refs:
       - "[9]"
+      - "[17]"
   - title:
       en: "Radiation Cystitis & Proctitis"
       el: "Ακτινοβολική Κυστίτιδα & Πρωκτίτιδα"
@@ -110,7 +111,7 @@ applications:
     refs:
       - "[9]"
   - title:
-      en: "Tumor Radiosensitization"
+      en: "Tumour Radiosensitisation"
       el: "Ακτινοευαισθητοποίηση Όγκου"
       de: "Tumor-Strahlensensibilisierung"
       it: "Radiosensibilizzazione tumorale"
@@ -118,25 +119,25 @@ applications:
     type: "Research"
     typeColor: "orange"
     description:
-      en: "Investigational use as neoadjuvant therapy to sensitize hypoxic solid tumors to radiotherapy and chemotherapy. Hypoxic tumor microenvironments are resistant to radiation; HBOT may reverse this resistance."
-      el: "Ερευνητική χρήση ως νεοεπικουρική θεραπεία για ευαισθητοποίηση υποξικών συμπαγών όγκων σε ακτινοθεραπεία και χημειοθεραπεία. Υποξικά μικροπεριβάλλοντα όγκων αντιστέκονται στην ακτινοβολία· η HBOT μπορεί να αντιστρέψει αυτή την αντίσταση."
-      de: "Investigative Anwendung als neoadjuvante Therapie zur Sensibilisierung hypoxischer solider Tumoren gegenüber Strahlen- und Chemotherapie. Hypoxische Tumormikromilieus sind strahlenresistent; HBOT kann diese Resistenz umkehren."
-      it: "Uso sperimentale come terapia neoadiuvante per sensibilizzare i tumori solidi ipossici alla radioterapia e alla chemioterapia. I microambienti tumorali ipossici sono resistenti alle radiazioni; l'HBOT può invertire questa resistenza."
-      es: "Uso experimental como terapia neoadyuvante para sensibilizar los tumores sólidos hipóxicos a la radioterapia y la quimioterapia. Los microambientes tumorales hipóxicos son resistentes a la radiación; la HBOT puede revertir esta resistencia."
+      en: "Investigational. Hypoxic tumours resist radiotherapy, and HBOT given with radiotherapy has been studied as a way to overcome this. A Cochrane review of 19 trials (2,286 participants) found better local tumour control and lower mortality in head and neck cancer — possibly only with unusual fractionation schemes — but no clear benefit in cervical or bladder cancer, and a significantly higher risk of severe radiation tissue injury and oxygen-toxicity seizures."
+      el: "Ερευνητική χρήση. Οι υποξικοί όγκοι αντιστέκονται στην ακτινοθεραπεία, και η HBOT σε συνδυασμό με ακτινοθεραπεία έχει μελετηθεί ως τρόπος υπέρβασης αυτής της αντίστασης. Μια ανασκόπηση Cochrane 19 δοκιμών (2.286 συμμετέχοντες) βρήκε καλύτερο τοπικό έλεγχο του όγκου και χαμηλότερη θνησιμότητα στον καρκίνο κεφαλής και τραχήλου —πιθανώς μόνο με ασυνήθη σχήματα κλασματοποίησης— αλλά κανένα σαφές όφελος στον καρκίνο του τραχήλου της μήτρας ή της ουροδόχου κύστης, και σημαντικά αυξημένο κίνδυνο σοβαρής ακτινικής βλάβης των ιστών και σπασμών από τοξικότητα οξυγόνου."
+      de: "Experimentell. Hypoxische Tumoren sind strahlenresistent, und HBOT in Kombination mit Strahlentherapie wurde untersucht, um diese Resistenz zu überwinden. Ein Cochrane-Review von 19 Studien (2.286 Teilnehmende) fand bei Kopf-Hals-Tumoren eine bessere lokale Tumorkontrolle und eine geringere Mortalität — möglicherweise nur bei ungewöhnlichen Fraktionierungsschemata —, jedoch keinen klaren Nutzen bei Zervix- oder Blasenkarzinom sowie ein deutlich erhöhtes Risiko schwerer strahlenbedingter Gewebeschäden und sauerstofftoxischer Krampfanfälle."
+      it: "Sperimentale. I tumori ipossici resistono alla radioterapia, e l'HBOT associata alla radioterapia è stata studiata per superare questa resistenza. Una revisione Cochrane di 19 studi (2.286 partecipanti) ha rilevato un migliore controllo locale del tumore e una minore mortalità nei tumori della testa e del collo — forse solo con schemi di frazionamento insoliti — ma nessun beneficio chiaro nel carcinoma della cervice o della vescica, e un rischio significativamente maggiore di gravi danni tissutali da radiazioni e di crisi convulsive da tossicità dell'ossigeno."
+      es: "Experimental. Los tumores hipóxicos son resistentes a la radioterapia, y la HBOT asociada a la radioterapia se ha estudiado como forma de superar esta resistencia. Una revisión Cochrane de 19 ensayos (2286 participantes) halló un mejor control local del tumor y una menor mortalidad en el cáncer de cabeza y cuello —posiblemente solo con esquemas de fraccionamiento inusuales—, pero ningún beneficio claro en el cáncer de cuello uterino o de vejiga, y un riesgo significativamente mayor de lesión tisular grave por radiación y de convulsiones por toxicidad del oxígeno."
     evidence: "Level C"
     protocol:
       ata:
-        en: "2.0 – 2.5 ATA"
-        el: "2.0 – 2.5 ATA"
-        de: "2.0 – 2.5 ATA"
-        it: "2.0 – 2.5 ATA"
-        es: "2.0 – 2.5 ATA"
+        en: "Varied across trials"
+        el: "Διέφερε μεταξύ δοκιμών"
+        de: "In Studien unterschiedlich"
+        it: "Variabile tra gli studi"
+        es: "Variable entre ensayos"
       duration:
-        en: "90 min"
-        el: "90 min"
-        de: "90 min"
-        it: "90 min"
-        es: "90 min"
+        en: "Varied across trials"
+        el: "Διέφερε μεταξύ δοκιμών"
+        de: "In Studien unterschiedlich"
+        it: "Variabile tra gli studi"
+        es: "Variable entre ensayos"
       sessions:
         en: "Per radiation course"
         el: "Ανά κύκλο ακτινοθεραπείας"
@@ -144,19 +145,19 @@ applications:
         it: "Per ciclo di radioterapia"
         es: "Por ciclo de radioterapia"
       frequency:
-        en: "Prior to each radiation fraction"
-        el: "Πριν από κάθε κλάσμα ακτινοβολίας"
-        de: "Vor jeder Strahlenfraktion"
-        it: "Prima di ogni frazione di radioterapia"
-        es: "Antes de cada fracción de radioterapia"
+        en: "With each radiation fraction"
+        el: "Με κάθε κλάσμα ακτινοβολίας"
+        de: "Mit jeder Strahlenfraktion"
+        it: "A ogni frazione di radioterapia"
+        es: "Con cada fracción de radioterapia"
       basis:
-        en: "Investigational"
-        el: "Ερευνητικό"
-        de: "Investigativ"
-        it: "Sperimentale"
-        es: "Experimental"
+        en: "Bennett et al., 2018 (Cochrane review)"
+        el: "Bennett et al., 2018 (ανασκόπηση Cochrane)"
+        de: "Bennett et al., 2018 (Cochrane-Review)"
+        it: "Bennett et al., 2018 (revisione Cochrane)"
+        es: "Bennett et al., 2018 (revisión Cochrane)"
     refs:
-      - "[17]"
+      - "[63]"
   - title:
       en: "Breast Radiation Complications"
       el: "Επιπλοκές Ακτινοθεραπείας Μαστού"

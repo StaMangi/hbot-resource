@@ -9,6 +9,12 @@ const locale = "en" as const;
 
 const all = await getCollection("research-studies");
 const studies = all.sort((a, b) => a.data.legacyId - b.data.legacyId);
+
+// Banner counts, computed from the bibliography so they can't drift (they were
+// hardcoded "8+ / 5+ / 258+" — 258 had no source; the site cites far fewer).
+const references = await getCollection("references");
+const rctCount = references.filter((r) => /randomi[sz]ed controlled trial|\bRCT\b/i.test(r.data.type)).length;
+const reviewCount = references.filter((r) => /systematic review|meta-analysis/i.test(r.data.type)).length;
 ---
 
 <IndexLayout
@@ -56,17 +62,17 @@ const studies = all.sort((a, b) => a.data.legacyId - b.data.legacyId);
       </div>
       <div class="grid grid-cols-1 gap-3 text-sm">
         <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-          <p class="text-2xl font-bold text-teal-300">8+</p>
+          <p class="text-2xl font-bold text-teal-300">{rctCount}</p>
           <p class="text-xs font-semibold">{t("evidence.stat.rcts", locale)}</p>
           <p class="text-xs text-slate-300">{t("evidence.stat.rcts.sub", locale)}</p>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-          <p class="text-2xl font-bold text-teal-300">5+</p>
+          <p class="text-2xl font-bold text-teal-300">{reviewCount}</p>
           <p class="text-xs font-semibold">{t("evidence.stat.meta", locale)}</p>
           <p class="text-xs text-slate-300">{t("evidence.stat.meta.sub", locale)}</p>
         </div>
         <div class="bg-white/5 border border-white/10 rounded-lg p-3">
-          <p class="text-2xl font-bold text-teal-300">258+</p>
+          <p class="text-2xl font-bold text-teal-300">{references.length}</p>
           <p class="text-xs font-semibold">{t("evidence.stat.citations", locale)}</p>
           <p class="text-xs text-slate-300">{t("evidence.stat.citations.sub", locale)}</p>
         </div>

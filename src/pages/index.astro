@@ -12,21 +12,28 @@ const locale = "en" as const;
 
 const title = `${SITE_NAME} — Evidence-Based HBOT Reference`;
 const description =
-  "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, FDA-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.";
+  "Evidence-based hyperbaric oxygen therapy reference. Mechanisms, UHMS-approved indications, clinical protocols, longevity applications, and peer-reviewed evidence.";
 
 // Build-time counts — drive the homepage tile copy. Phase 5 audit fix:
 // homepage previously had hardcoded "Fourteen" + "Twenty-four" which went
 // stale as Phase 4 added 5 emerging indications and 20 references. Compute
 // at build instead to keep these in sync with the collections forever.
 const indications = await getCollection("indications");
+// Was a hardcoded "258" with no source; now the size of the verified bibliography.
+const referenceCount = (await getCollection("references")).length;
 const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+// Distinct UHMS indication numbers: CRAO and problem wounds share #6, so
+// pages ≠ indications.
+const uhmsCount = new Set(
+  indications.filter((e) => e.data.tier === "fda-approved").map((e) => e.data.uhms),
+).size;
 const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
 const totalIndications = fdaCount + emergingCount;
 
 const stats = [
-  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: String(uhmsCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
   { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
-  { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
+  { value: String(referenceCount), label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
   { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
 ];
 
@@ -68,7 +75,7 @@ const jsonLd = {
           hyperbaric oxygen therapy.
         </h1>
         <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
-          Mechanisms, FDA-approved indications, clinical protocols, longevity
+          Mechanisms, UHMS-approved indications, clinical protocols, longevity
           applications, and peer-reviewed evidence. No marketing, no chatbot —
           only what the literature supports.
         </p>
@@ -102,7 +109,7 @@ const jsonLd = {
         icon="lucide:stethoscope"
         eyebrow="For hospitals & clinics"
         title="Clinical Integration"
-        body="FDA-approved indications, evidence levels, departmental application mapping, protocol summaries, and strategic recommendations for hospital integration."
+        body="UHMS-approved indications, evidence levels, departmental application mapping, protocol summaries, and strategic recommendations for hospital integration."
         cta="Explore clinical"
         variant="clinical"
       />
@@ -145,7 +152,7 @@ const jsonLd = {
           href="/indications/"
           icon="lucide:list-checks"
           title="Indications"
-          body={`${totalIndications} indications across two evidence tiers — ${fdaCount} FDA-approved (UHMS-recognised) and ${emergingCount} emerging — with evidence levels, protocols, and key references.`}
+          body={`${totalIndications} indications across two evidence tiers — ${fdaCount} covering the ${uhmsCount} UHMS-approved indications and ${emergingCount} emerging — with evidence levels, protocols, and key references.`}
         />
         <HomeLibraryTile
           href="/evidence/"

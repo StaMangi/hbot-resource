@@ -12,17 +12,24 @@ const locale = "de" as const;
 
 const title = `${SITE_NAME} — Evidenzbasierter HBOT-Leitfaden`;
 const description =
-  "Evidenzbasierter Leitfaden zur hyperbaren Sauerstofftherapie. Mechanismen, FDA-zugelassene Indikationen, klinische Protokolle, Longevity-Anwendungen und kuratierte Literatur.";
+  "Evidenzbasierter Leitfaden zur hyperbaren Sauerstofftherapie. Mechanismen, UHMS-anerkannte Indikationen, klinische Protokolle, Longevity-Anwendungen und kuratierte Literatur.";
 
 const indications = await getCollection("indications");
+// Was a hardcoded "258" with no source; now the size of the verified bibliography.
+const referenceCount = (await getCollection("references")).length;
 const fdaCount = indications.filter((e) => e.data.tier === "fda-approved").length;
+// Distinct UHMS indication numbers: CRAO and problem wounds share #6, so
+// pages ≠ indications.
+const uhmsCount = new Set(
+  indications.filter((e) => e.data.tier === "fda-approved").map((e) => e.data.uhms),
+).size;
 const emergingCount = indications.filter((e) => e.data.tier === "emerging").length;
 const totalIndications = fdaCount + emergingCount;
 
 const stats = [
-  { value: String(fdaCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
+  { value: String(uhmsCount), label: t("stat.fda.label", locale), sub: t("stat.fda.sub", locale) },
   { value: ">20%", label: t("stat.telomere.label", locale), sub: t("stat.telomere.sub", locale) },
-  { value: "258", label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
+  { value: String(referenceCount), label: t("stat.citations.label", locale), sub: t("stat.citations.sub", locale) },
   { value: "2.0–3.0 ATA", label: t("stat.pressure.label", locale), sub: t("stat.pressure.sub", locale) },
 ];
 
@@ -64,7 +71,7 @@ const jsonLd = {
           hyperbaren Sauerstofftherapie.
         </h1>
         <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
-          Mechanismen, FDA-zugelassene Indikationen, klinische Protokolle,
+          Mechanismen, UHMS-anerkannte Indikationen, klinische Protokolle,
           Longevity-Anwendungen und kuratierte Literatur. Ohne Marketing, ohne
           Chatbot — nur das, was die Literatur stützt.
         </p>
@@ -98,7 +105,7 @@ const jsonLd = {
         icon="lucide:stethoscope"
         eyebrow="Für Krankenhäuser & Kliniken"
         title="Klinische Integration"
-        body="FDA-zugelassene Indikationen, Evidenzstufen, Anwendungs-Mapping nach Abteilung, Protokolle und strategische Empfehlungen für die Krankenhaus-Integration."
+        body="UHMS-anerkannte Indikationen, Evidenzstufen, Anwendungs-Mapping nach Abteilung, Protokolle und strategische Empfehlungen für die Krankenhaus-Integration."
         cta="Klinik erkunden"
         variant="clinical"
       />
@@ -142,7 +149,7 @@ const jsonLd = {
           href="/de/indications/"
           icon="lucide:list-checks"
           title="Indikationen"
-          body={`${totalIndications} Indikationen auf zwei Evidenzstufen — ${fdaCount} FDA-zugelassen (UHMS-anerkannt) und ${emergingCount} aufkommend — mit Evidenzstufen, Protokollen und Schlüsselreferenzen.`}
+          body={`${totalIndications} Indikationen auf zwei Evidenzstufen — ${fdaCount} zu den ${uhmsCount} UHMS-anerkannten Indikationen und ${emergingCount} aufkommend — mit Evidenzstufen, Protokollen und Schlüsselreferenzen.`}
         />
         <HomeLibraryTile
           href="/de/evidence/"
