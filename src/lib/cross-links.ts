@@ -39,13 +39,18 @@ const refKey = (raw: string): string | null => {
 const entryKey = (collection: CrossRefCollection, slug: string): string =>
   `${collection}/${slug}`;
 
+// getCollection() order is not stable between builds, and everything below
+// (Related top-5 tie-breaks, "Cited in" list order) depends on iteration
+// order. Sort by slug so identical content always builds identical pages.
+const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
+
 export async function buildCrossLinkIndex(): Promise<CrossLinkIndex> {
   if (cache) return cache;
 
-  const mechanisms = await getCollection("mechanisms");
-  const indications = await getCollection("indications");
-  const departments = await getCollection("departments");
-  const longevity = await getCollection("longevity");
+  const mechanisms = (await getCollection("mechanisms")).sort(byId);
+  const indications = (await getCollection("indications")).sort(byId);
+  const departments = (await getCollection("departments")).sort(byId);
+  const longevity = (await getCollection("longevity")).sort(byId);
 
   // Forward index: every entry → set of ref nums it cites.
   const refsForEntry = new Map<string, Set<string>>();
@@ -120,7 +125,14 @@ export async function buildCrossLinkIndex(): Promise<CrossLinkIndex> {
     }
 
     const sorted = Array.from(overlaps.values())
-      .sort((a, b) => b.count - a.count)
+      // Most shared refs first; equal scores fall back to a stable key order.
+      .sort(
+        (a, b) =>
+          b.count - a.count ||
+          entryKey(a.entry.collection, a.entry.slug).localeCompare(
+            entryKey(b.entry.collection, b.entry.slug),
+          ),
+      )
       .slice(0, 5)
       .map((o) => o.entry);
 
