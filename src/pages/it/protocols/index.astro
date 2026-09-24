@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { t } from "@/i18n";
 import IndexLayout from "@/layouts/IndexLayout.astro";
 
 const pathname = Astro.url.pathname;
@@ -16,6 +17,7 @@ const fdaRows = indications
     category: e.data.category[locale],
     protocol: e.data.protocol,
     evidenceLevel: e.data.evidenceLevel,
+    emerging: e.data.tier === "emerging",
     href: `/it/indications/${e.id}/`,
   }));
 
@@ -42,16 +44,16 @@ const evidenceBadge = (level: string) =>
 
 <IndexLayout
   title="Confronto dei protocolli — HBOT Science"
-  description="Confronto dei protocolli HBOT per tutte le indicazioni approvate dalla FDA e le applicazioni di longevità: pressione (ATA), numero di sedute, durata, frequenza e base di evidenza."
+  description="Confronto dei protocolli HBOT per tutte le indicazioni approvate dalla FDA ed emergenti e le applicazioni di longevità: pressione (ATA), numero di sedute, durata, frequenza e base di evidenza."
   locale={locale}
   pathname={pathname}
   badge="Riferimento"
   pageHeading="Confronto dei protocolli"
-  pageSubtitle="Confronto dei protocolli HBOT per tutte le indicazioni approvate dalla FDA e le applicazioni di longevità. Cmd-P / Ctrl-P per stampare/PDF."
+  pageSubtitle="Confronto dei protocolli HBOT per tutte le indicazioni approvate dalla FDA ed emergenti e le applicazioni di longevità. Cmd-P / Ctrl-P per stampare/PDF."
   badgeColor="navy"
 >
   <h2 class="text-xl font-semibold text-slate-900 mb-4" style="font-family: var(--font-display)">
-    Indicazioni approvate dalla FDA ({fdaRows.length})
+    Indicazioni: approvate dalla FDA ed emergenti ({fdaRows.length})
   </h2>
 
   <div class="overflow-x-auto rounded-lg border border-slate-200 mb-12">
@@ -75,7 +77,7 @@ const evidenceBadge = (level: string) =>
                 <a href={row.href} class="font-semibold text-slate-900 hover:text-teal-700">
                   {row.label}
                 </a>
-                <p class="text-xs text-slate-500 mt-0.5">{row.category}</p>
+                <p class="text-xs text-slate-500 mt-0.5">{row.category}{row.emerging && ` · ${t("emerging.tier.label", locale)}`}</p>
               </td>
               <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.ata[locale]}</td>
               <td class="px-3 py-3 text-slate-700 whitespace-nowrap">{row.protocol.duration[locale]}</td>
